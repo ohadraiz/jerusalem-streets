@@ -169,7 +169,7 @@ OSM DE / Esri / OpenTopoMap עובדים גם בלי Referer; CARTO מחזיר �
 - [x] ✅ **ראשי (בדיקות):** דפדפן חיה — `http://localhost` (OSM), ללא Referer (מעבר ל-OSM DE), `file://` אמיתי (Chrome headless), מתג רשת · smoke 73/73 · `tests/store.test.js` 21/21 · `tools/verify.js` 35/35 · גיבוי `backups/map.js.before-tile-chain-2026-10-21.js` · BOARD 050 עודכן.
 - [ ] 🟡 **הבודק:** ביקורת המימוש — פרטיות, CSP, נגישות הבאנר, מקרי קצה, תאיכות חוזה (`JLMAPI`/DOM/LOD/זום).
   **הפעלת הסוכן נכשלה חמש פעמים במגבלת קצב**; הראשי ביצע הערכה עצמית והעבירה ל-`docs/agents/channels/shifu.md` — הבודק נדרש להפעיל אותה ולהכריע אם לסגור את הסבב.
-- [ ] ⟪ **פיצי (בחופש):** `Referrer-Policy` (`strict-origin-when-cross-origin`) + CSP (`img-src` **וגם** `connect-src` לשלושת המארחים) + מדיניות מטמון אריחים לפריסה.
+- [ ] ⟪ **פיצי (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.
 
 ---
 
@@ -186,9 +186,7 @@ OSM DE / Esri / OpenTopoMap עובדים גם בלי Referer; CARTO מחזיר �
   `http://localhost:8787` → OSM, 10 אריחים, אפס בקשות ל-CDN · smoke 84/84 · store 21/21 · `tools/verify.js` 34/34 · `node --check` ✅.
 - [x] ✅ **הראשי (תיעוד):** `README.md`/`README.en.md` — "פשוט לפתוח `index.html`"; הודעת `file://` במפה אינה מנחה להריץ `node serve.js`; BOARD 053.
 - [ ] ⏸ **הבודק:** ביקורת סבב 050 עדיין ממתינה (מגבלת קצב) — ראו `docs/agents/channels/shifu.md`.
-- [ ] ⏸ **העלאה לרשת (מחכה להפעלה):** HTTPS · `Referrer-Policy: strict-origin-when-cross-origin` ·
-  CSP (`script-src 'self'`, `img-src`/`connect-src` לשלושת המארחים + `data:`) · manifest · Service Worker לקבצי האפליקציה בלבד
-  (בלי מטמון אריחים מעבר לכותרי השרת, לפי מדיניות OSM). בעלות: מובריליס/פיצי.
+- [x] ✅ **העלאה לרשת (בוצע):** ריפו ציבורי + GitHub Pages מ-main/root — הכתובת הפעילה: https://ohadraiz.github.io/jerusalem-streets/ (ראו BOARD 055).
 
 ---
 
@@ -203,5 +201,5 @@ OSM DE / Esri / OpenTopoMap עובדים גם בלי Referer; CARTO מחזיר �
 - [x] ✅ **הראשי (בדיקות):** SW נרשם והפעיל (scope `/`) · מטמון 13 קבצים + `geo.js`/`data.js` · **שרת כבוי → האפליקציה נטענת במלואה מהמטמון** ·
   manifest תקין עם `application/manifest+json` · תיקון: תשובת 5xx מנסה מטמון לפני שמוחזרת · `node --check` ✅ · smoke 84/84 · store 23/23 · verify 34/34.
 - [x] ✅ **הראשי (מדריך):** `docs/agents/teams/online-deployment.md` — אירוח ללא פקודות, כותרות HTTP חובה, התנהגות לפי מקור, צעדי המשתמש.
-- [ ] ⏸ **המשתמש:** לבחור מארח (Netlify Drop / Cloudflare Pages / GitHub Pages) ודומיין — ללא פקודות, רק העלאת תיקייה.
-- [ ] ⏸ **פיצי (בחופש):** הגדרת כותרות HTTP במארח לפי §3 במדריך, בדיקת ההעלאה בדפדפן אמת, והגדרת גרסאות/גלילה חזרה.
+- [x] ✅ **המשתמש (בוצע):** הריפו הופך לציבורי ו-GitHub Pages נפעל מ-main/root. **הכתובת הפעילה: https://ohadraiz.github.io/jerusalem-streets/** — אומת בדפדפן: ספק OSM, 10 אריחים, ייחוג יחיד, Service Worker פעיל, אין שגיאות קונסול.
+- [ ] ⟪ **פיצי (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.

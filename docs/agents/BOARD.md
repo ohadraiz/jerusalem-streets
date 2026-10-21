@@ -624,3 +624,23 @@ GovMap API. כל מקור עם רישיון, עלות ואימות בפועל.
 - **שער:** `node --check` (map.js/sw.js/sw-register.js) ✅ · smoke 84/84 ✅ · store 23/23 ✅ · `tools/verify.js` 34/34 ✅ · דפדפן אמת (מקוון + לא מקוון) ✅.
 - **לא בוצע:** לא הועלה שום דבר לשרת, לא נפתח חשבון, לא נבחר דומיין — ממתין להחלטת המשתמש (מארח/דומיין). צוות ההפצה בחופש.
 **סטטוס:** הקוד מוכן להעלאה; ההעלאה עצמה ממתינה להמשתמש.
+
+### 055 · הראשי + גבאי · ביצוע · סגור
+**העלאה לרשת בפועל — GitHub Pages פעיל (2026-10-21):**
+- **גבאי:** שערי איכות (verify 35/35 · store 24/24 · smoke 84/84 · `node --check` על 15 קבצים) → commit `27142b2`
+  ("Add tile provider chain, vendored Leaflet and PWA support", 70 קבצים) → push ל-`main` → **סנכרון אומת**
+  (`HEAD == origin/main`, `ahead/behind 0/0`, ו-`git ls-remote` מאשר את אותו SHA בשרת). קובץ זבל בשורש הוצא מהאינדקס
+  (`git rm --cached`, לא נמחק מהדיסק) ונוסף ל-`.gitignore`.
+- **הראשי (דרך GitHub API, ללא `gh`):** `gh` אינו מותקן, והריפו היה **פרטי** (Pages לריפו פרטי דורש תוכנית Pro).
+  באישור המשתמש: הריפו הופך ל**ציבורי** (`PATCH /repos/… {"private": false}` → `visibility: public`), ו-Pages נפעל מ-`main`/root
+  (`POST /repos/…/pages`) עם HTTPS מוחלק.
+- **הכתובת הפעילה:** `https://ohadraiz.github.io/jerusalem-streets/`
+- **אימות חי (דפדפן):** האפליקציה נטענת, `provider: "osm"` (יש Referer — OSM מגיש אריחים אמיתיים), 10 אריחים,
+  ייחוג יחיד, אין באנר, אין שגיאות קונסול; **Service Worker נרשם, `activated` ושולט בדף**; manifest נגש `application/manifest+json`;
+  `sw.js` נגש `application/javascript`.
+- **בדיקת HEAD של המפה באתר:** הדפדפן שולח `Referer: https://ohadraiz.github.io/` → OSM מחזיר 13,317 בייט עם `max-age` → OSM נשאר הספק הראשי.
+- **השלכות הפריסה הציבורית:** כל תוכן הריפו גלוי — כולל `docs/agents/` (20 קבצי הערכות פנימיות), `tools/`, `.opencode/agents/`
+  והדשבורדים `guli.html`/`tasks.html`. **בדיקת סודות:** אין בעץ קבצי `.env`/טוקנים/מפתחות. לצמצום חשיפה בעתיד אפשר להוציא את
+  התיקיות הפנימיות מהעץ או לפרסם ענף `gh-pages` נפרד (כלי עזר: `tools/prepare-publish.js`).
+- **סטטוס:** סגור — האפליקציה פועלת ברשת. ממתין: ביקורת הבודק לסבב 050 (מגבלת קצב — הערכה עצמית ב-`channels/shifu.md`)
+  והחלטת המשתמש על ניקוי עץ הריפו הציבורי.

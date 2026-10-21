@@ -17,6 +17,8 @@ npm test           # בדיקות שכבת האחסון
 
 ## העלאה לרשת
 
+**האתר כבר עלה:** `https://ohadraiz.github.io/jerusalem-streets/` (GitHub Pages, ענף `main`).
+
 זהו אתר סטטי: **אין build ואין תלויות** — מעלים את התיקייה כולה למארח סטטי עם HTTPS ומקבלים כתובת, בלי פקודות.
 מדריך מלא (אפשרויות אירוש, כותרות HTTP חובה, CSP, PWA ומטמון): [`docs/agents/teams/online-deployment.md`](docs/agents/teams/online-deployment.md).
 

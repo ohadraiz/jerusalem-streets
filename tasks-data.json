@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:17:59.807Z",
+  "generatedAt": "2026-10-21T13:23:24.896Z",
   "teams": [
     {
       "key": "UI/UX",
@@ -132,7 +132,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 29,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "MOB-2",
@@ -162,7 +194,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 30,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "MOB-3",
@@ -192,7 +256,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 31,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "MOB-4",
@@ -222,7 +318,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 32,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "MOB-5",
@@ -252,7 +380,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 33,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "REL-1",
@@ -282,7 +442,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 34,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "REL-2",
@@ -312,7 +504,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 35,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "REL-3",
@@ -342,7 +566,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 36,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "REL-4",
@@ -372,7 +628,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 37,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "REL-5",
@@ -402,7 +690,39 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 38,
-      "context": "צוות מובייל והפצה"
+      "context": "צוות מובייל והפצה",
+      "agentsEnriched": [
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-1",
@@ -431,7 +751,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 58,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-2",
@@ -460,7 +806,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 59,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-3",
@@ -489,7 +861,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 60,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-4",
@@ -518,7 +916,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 61,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-5",
@@ -547,7 +971,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 62,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-6",
@@ -576,7 +1026,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 63,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-7",
@@ -605,7 +1081,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 64,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "UX-8",
@@ -634,7 +1136,33 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 65,
-      "context": "צוות UI/UX"
+      "context": "צוות UI/UX",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "DEV-1",
@@ -662,7 +1190,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 93,
-      "context": "צוות פיתוח"
+      "context": "צוות פיתוח",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        }
+      ]
     },
     {
       "id": "DEV-2",
@@ -690,7 +1238,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 94,
-      "context": "צוות פיתוח"
+      "context": "צוות פיתוח",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        }
+      ]
     },
     {
       "id": "DEV-3",
@@ -718,7 +1286,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 95,
-      "context": "צוות פיתוח"
+      "context": "צוות פיתוח",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        }
+      ]
     },
     {
       "id": "DEV-4",
@@ -746,7 +1334,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 96,
-      "context": "צוות פיתוח"
+      "context": "צוות פיתוח",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        }
+      ]
     },
     {
       "id": "DEV-5",
@@ -774,7 +1382,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 97,
-      "context": "צוות פיתוח"
+      "context": "צוות פיתוח",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        }
+      ]
     },
     {
       "id": "NET-1",
@@ -802,7 +1430,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 106,
-      "context": "צוות חיבור לרשת"
+      "context": "צוות חיבור לרשת",
+      "agentsEnriched": [
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        },
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "NET-2",
@@ -830,7 +1478,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 107,
-      "context": "צוות חיבור לרשת"
+      "context": "צוות חיבור לרשת",
+      "agentsEnriched": [
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        },
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "NET-3",
@@ -858,7 +1526,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 108,
-      "context": "צוות חיבור לרשת"
+      "context": "צוות חיבור לרשת",
+      "agentsEnriched": [
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        },
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "NET-4",
@@ -886,7 +1574,27 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 109,
-      "context": "צוות חיבור לרשת"
+      "context": "צוות חיבור לרשת",
+      "agentsEnriched": [
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        },
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "RSCH-1",
@@ -913,7 +1621,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 119,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "RSCH-2",
@@ -940,7 +1662,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 120,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "RSCH-3",
@@ -967,7 +1703,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 121,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "RSCH-4",
@@ -994,7 +1744,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 122,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "MKT-1",
@@ -1021,7 +1785,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 123,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "MKT-2",
@@ -1048,7 +1826,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 124,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "MKT-3",
@@ -1075,7 +1867,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 125,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "MKT-4",
@@ -1102,7 +1908,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 126,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "MKT-5",
@@ -1129,7 +1949,21 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 127,
-      "context": "צוות מחקר ותוכן"
+      "context": "צוות מחקר ותוכן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "ראשי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-1",
@@ -1155,7 +1989,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 55,
-      "context": "סבב 046.1 — ליטוש UX (בביצוע)"
+      "context": "סבב 046.1 — ליטוש UX (בביצוע)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-2",
@@ -1180,7 +2028,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 63,
-      "context": "סבב 046.2 — חיווי קולי וחוויה אינטראקטיבית (ביצוע)"
+      "context": "סבב 046.2 — חיווי קולי וחוויה אינטראקטיבית (ביצוע)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-3",
@@ -1205,7 +2061,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 71,
-      "context": "סבב 046.3 — 4 הצעות אינטראקטיביות (ביצוע)"
+      "context": "סבב 046.3 — 4 הצעות אינטראקטיביות (ביצוע)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-4",
@@ -1231,7 +2095,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 110,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-5",
@@ -1256,7 +2134,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 115,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "GEN-6",
@@ -1282,7 +2168,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 116,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-7",
@@ -1307,7 +2207,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 117,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "GEN-8",
@@ -1333,7 +2241,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 118,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-9",
@@ -1359,7 +2281,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 119,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-10",
@@ -1385,7 +2321,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 120,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
+      "agentsEnriched": [
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        }
+      ]
     },
     {
       "id": "GEN-11",
@@ -1411,7 +2361,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 128,
-      "context": "4. החלטות משתמש פתוחות"
+      "context": "4. החלטות משתמש פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-12",
@@ -1437,7 +2401,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 129,
-      "context": "4. החלטות משתמש פתוחות"
+      "context": "4. החלטות משתמש פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-13",
@@ -1463,7 +2441,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 130,
-      "context": "4. החלטות משתמש פתוחות"
+      "context": "4. החלטות משתמש פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-14",
@@ -1489,7 +2481,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 136,
-      "context": "4.1 מחקר שבילים ומדרגות inhabited"
+      "context": "4.1 מחקר שבילים ומדרגות inhabited",
+      "agentsEnriched": [
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-15",
@@ -1515,7 +2521,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 137,
-      "context": "4.1 מחקר שבילים ומדרגות inhabited"
+      "context": "4.1 מחקר שבילים ומדרגות inhabited",
+      "agentsEnriched": [
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-16",
@@ -1542,7 +2562,27 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 143,
-      "context": "5. החלטות טכניות פתוחות"
+      "context": "5. החלטות טכניות פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הבודק",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-17",
@@ -1569,7 +2609,27 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 144,
-      "context": "5. החלטות טכניות פתוחות"
+      "context": "5. החלטות טכניות פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "מפי",
+          "status": "waiting",
+          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+          "updated": "2026-10-21T09:48:52.295Z"
+        }
+      ]
     },
     {
       "id": "GEN-18",
@@ -1595,7 +2655,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 145,
-      "context": "5. החלטות טכניות פתוחות"
+      "context": "5. החלטות טכניות פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "מובי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-19",
@@ -1621,7 +2695,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 146,
-      "context": "5. החלטות טכניות פתוחות"
+      "context": "5. החלטות טכניות פתוחות",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-20",
@@ -1647,7 +2735,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 153,
-      "context": "6. נדחה"
+      "context": "6. נדחה",
+      "agentsEnriched": [
+        {
+          "name": "החוקר",
+          "status": "working",
+          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
+          "updated": "2026-10-21T11:00:00+03:00"
+        },
+        {
+          "name": "קיפי",
+          "status": "working",
+          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-21",
@@ -1673,7 +2775,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 154,
-      "context": "6. נדחה"
+      "context": "6. נדחה",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-22",
@@ -1699,7 +2815,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 155,
-      "context": "6. נדחה"
+      "context": "6. נדחה",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המעצב",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-23",
@@ -1725,7 +2855,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 156,
-      "context": "6. נדחה"
+      "context": "6. נדחה",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-24",
@@ -1751,7 +2895,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 170,
-      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)"
+      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        },
+        {
+          "name": "המגשר",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-25",
@@ -1777,7 +2935,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 172,
-      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)"
+      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)",
+      "agentsEnriched": [
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-26",
@@ -1802,7 +2974,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 188,
-      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)"
+      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-27",
@@ -1828,7 +3008,21 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 189,
-      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)"
+      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)",
+      "agentsEnriched": [
+        {
+          "name": "פיצי",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        },
+        {
+          "name": "מובריליס",
+          "status": "unknown",
+          "note": "",
+          "updated": null
+        }
+      ]
     },
     {
       "id": "GEN-28",
@@ -1853,7 +3047,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 206,
-      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)"
+      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     },
     {
       "id": "GEN-29",
@@ -1878,7 +3080,15 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 207,
-      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)"
+      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
+          "updated": "2026-10-21T10:32:37.262Z"
+        }
+      ]
     }
   ],
   "sources": [
@@ -1891,5 +3101,5 @@
       "label": "משימות כלליות פתוחות"
     }
   ],
-  "agentStatusSource": null
+  "agentStatusSource": "2026-10-21T13:21:55.419Z"
 }

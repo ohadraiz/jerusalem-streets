@@ -165,6 +165,26 @@ h3{margin:0;font-size:1.22rem;line-height:1.3;font-weight:740}
   border-radius:999px;background:var(--gray-bg);color:var(--gray);
   font-size:.72rem;font-weight:700;
 }
+
+/* Agent work status (working vs on break) */
+.agent__work-status{
+  margin:12px 0 8px;padding:10px 14px;border-radius:10px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:.85rem;line-height:1.4;
+}
+.agent__work-status.working{
+  background:var(--green-bg);border:1px solid #bcd9c6;color:var(--green);
+}
+.agent__work-status.on-break{
+  background:var(--amber-bg);border:1px solid #e7d3a6;color:var(--amber);
+}
+.work-status__label{
+  font-weight:700;display:inline-flex;align-items:center;gap:6px;
+}
+.work-status__reason{
+  font-size:.8rem;opacity:.8;display:inline-flex;align-items:center;gap:4px;
+}
+
 .agent__block{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
 h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
 .ticks{margin:0;padding:0;list-style:none}
@@ -366,11 +386,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>ציבי, שיפי, קיפי</strong> · אימות חי UI/UX, סגירת משימות פתוחות <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -423,11 +452,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>התחלת מחקר &#39;הידעת?&#39; — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>מפי, ציבי, צירי, ראשי, קיפי</strong> · מחקר &#39;הידעת?&#39; + פיצ&#39;רים מאפליקציות דומות <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -473,11 +511,20 @@ footer.page a{font-weight:600}
       <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>מוקפא</span>
     </header>
 
+    
+    <div class="agent__work-status on-break">
+      <span class="work-status__label">לא פעיל</span>
+      <span class="work-status__reason">סטטוס: ממתין לדיווח</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>ראשי, קיפי</strong> · רישום הקפאות אצל קיפי <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -516,11 +563,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — ביקורת UI/UX</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>ראשי, ציבי, צירי</strong> · ביקורת סופית UI/UX <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -573,11 +629,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — ראש צוות UI/UX</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>ראשי, שיפו</strong> · אימות UI/UX סופי, סגירת משימות <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -616,11 +681,20 @@ footer.page a{font-weight:600}
       <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>ממתין לדיווח</span>
     </header>
 
+    
+    <div class="agent__work-status on-break">
+      <span class="work-status__label">לא פעיל</span>
+      <span class="work-status__reason">סטטוס: ממתין לדיווח</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>הראשי, שיפו ומפי</strong> · ניווט שכונות, שילוב visited-change ושאלת &#39;אחר&#39; <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -666,11 +740,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — תשאול וסנכרון</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>תשאול סוכנים על סטטוס נוכחי; סנכרון עם הפקח על דשבורד המשימות; עדכון state.json</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>הפקח, הראשי, חוקר, בודק, מעצב, מגשר, קיפי</strong> · בירור סטטוס NET-1, DEV-1, RSCH-1/3, תשאול שוטף <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -723,11 +806,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — מעקב הקפאות</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>ראשי</strong> · רישום הקפאות לצוותים אחרים <span class="talk-state">פתוח</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -766,11 +858,20 @@ footer.page a{font-weight:600}
       <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — דשבורד מוכן</span>
     </header>
 
+    
+    <div class="agent__work-status working">
+      <span class="work-status__label">🟢 בעבודה</span>
+      <span class="work-status__reason">מדווח על משימה נוכחית</span>
+    </div>
+  
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>דשבורד המשימות הושלם — 59 משימות ב-7 צוותים, כל הפילטרים והפיצ&#39;רים עובדים. ממתין לבדיקת דפדפן חיה סופית.</p>
     <p class="agent__talk">
       <span class="label">עם מי</span>
       <span class="agent__talk-body"><strong>המתעד, הראשי</strong> · דשבורד משימות מוכן ב-tasks.html, סנכרון עם guli.html בוצע <span class="talk-state">סגור</span></span>
     </p>
+
+    
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -1399,7 +1500,7 @@ graph TD
 <footer class="page">
   <div class="wrap">
     <p>הדף נבנה על ידי <strong>גולי</strong> מתוך <a href="docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
-    <p>נבנה לאחרונה: <time dir="ltr" datetime="2026-10-21T16:11:36+03:00">21 באוקטובר 2026, 16:11</time> · <a href="agents.html">ללוח הסוכנים הכללי</a></p>
+    <p>נבנה לאחרונה: <time dir="ltr" datetime="2026-10-21T16:27:54+03:00">21 באוקטובר 2026, 16:27</time> · <a href="agents.html">ללוח הסוכנים הכללי</a></p>
   </div>
 </footer>
 

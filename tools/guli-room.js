@@ -42,6 +42,38 @@ const AGENT_DEPENDENCIES = {
   inspector: ["main", "guli"]
 };
 
+/* Agent name mapping: state.json uses old names; tasks-data.json uses new names */
+const STATE_TO_TASKS_NAME = {
+  // state.json name -> tasks-data.json name
+  "שיפו": "הבודק",
+  "ציבי": "המעצב",
+  "צירי": "המגשר",
+  "גולי": "המתעד",
+  "טופי": "מובריליס",
+  "פזי": "פיצי",
+  // names that are the same in both:
+  "הראשי": "הראשי",
+  "החוקר": "החוקר",
+  "מפי": "מפי",
+  "קיפי": "קיפי",
+  "מובי": "מובי",
+  "הפקח": "הפקח",
+};
+
+function getTasksName(stateName) {
+  return STATE_TO_TASKS_NAME[stateName] || stateName;
+}
+
+function filterAgentTasks(tasks, stateAgentName) {
+  const tasksName = getTasksName(stateAgentName);
+  // Also include the state name itself in case it's used in tasks
+  const names = [tasksName, stateAgentName];
+  return tasks.filter(t => 
+    (t.agents || []).some(a => names.includes(a)) || 
+    names.includes(t.owner)
+  );
+}
+
 function readAgentChannel(agentId) {
   const channelPath = path.join(CHANNELS_DIR, `${agentId}.md`);
   try {
@@ -74,6 +106,47 @@ const STATUS = {
   unknown: { label: "טרם דווח", className: "is-unknown" },
   done: { label: "סיים", className: "is-done" }
 };
+
+/* ---------- agent work status helpers ---------- */
+
+function computeAgentWorkStatus(agent, tasksData) {
+  // Standby teams (Mobile/Deploy)
+  const standbyTeams = ["Mobile/Deploy"];
+  const agentTeams = (agent.nextTasks || []).map(t => t).join(" ") + " " + (agent.currentTask || "");
+  
+  // Check if agent belongs to a standby team
+  const isStandbyTeam = standbyTeams.some(team => 
+    agentTeams.includes(team) || 
+    (agent.role && agent.role.includes(team))
+  );
+  
+  // If status is not active, they're not working
+  if (agent.status !== "active") {
+    return { working: false, label: "לא פעיל", reason: "סטטוס: " + (STATUS[agent.status]?.label || agent.status) };
+  }
+  
+  // If on standby team
+  if (isStandbyTeam) {
+    return { working: false, label: "🏖️ בחופש", reason: "צוות בהמתנה (standby)" };
+  }
+  
+  // Active but no current task reported
+  if (!agent.currentTask || agent.currentTask.trim() === "" || agent.currentTask === "טרם דווח") {
+    return { working: false, label: "⏸ ללא משימה נוכחית", reason: "פעיל אבל אין דיווח על משימה" };
+  }
+  
+  // Has tasks assigned from tasks-data.json
+  const tasks = tasksData && tasksData.tasks ? tasksData.tasks : [];
+  const agentTasks = filterAgentTasks(tasks, agent.name);
+  const activeTasks = agentTasks.filter(t => t.status?.key === 'progress' || t.status?.key === 'pending');
+  
+  if (activeTasks.length > 0) {
+    return { working: true, label: "🟢 בעבודה", reason: `${activeTasks.length} משימות בביצוע/ממתין` };
+  }
+  
+  // Active with current task reported
+  return { working: true, label: "🟢 בעבודה", reason: "מדווח על משימה נוכחית" };
+}
 
 const BLOCKER_SEVERITY = {
   blocker: { label: "חוסם", className: "is-blocker", order: 0 },
@@ -276,7 +349,27 @@ function renderTalk(talk) {
     </p>`;
 }
 
-function renderAgent(agent) {
+function renderAgent(agent, tasksData) {
+  const tasks = tasksData && tasksData.tasks ? tasksData.tasks : [];
+  
+  // Compute task stats for this agent
+  const agentTasks = filterAgentTasks(tasks, agent.name);
+  const taskCounts = {
+    total: agentTasks.length,
+    high: agentTasks.filter(t => t.priority?.key === 'high').length,
+    medium: agentTasks.filter(t => t.priority?.key === 'medium').length,
+    low: agentTasks.filter(t => t.priority?.key === 'low').length,
+    done: agentTasks.filter(t => t.status?.key === 'done').length,
+    progress: agentTasks.filter(t => t.status?.key === 'progress').length,
+    pending: agentTasks.filter(t => t.status?.key === 'pending').length,
+    blocked: agentTasks.filter(t => t.status?.key === 'blocked').length,
+  };
+  
+  const teams = [...new Set(agentTasks.map(t => t.team).filter(Boolean))];
+  
+  // Compute work status (working vs on break)
+  const workStatus = computeAgentWorkStatus(agent, tasksData);
+  
   const nextTasks = Array.isArray(agent.nextTasks) && agent.nextTasks.length
     ? `<ul class="ticks">${agent.nextTasks.slice(0, 3).map((task) => `<li>${esc(task)}</li>`).join("")}</ul>`
     : `<p class="empty-line">טרם דווחו משימות המשך.</p>`;
@@ -304,6 +397,31 @@ function renderAgent(agent) {
     ? `<span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="${esc(agent.reportedAt)}">${esc(dateTimeLabel(agent.reportedAt))}</time>${agent.reportedAtNote ? ` · ${esc(agent.reportedAtNote)}` : ""}</span>`
     : `<span class="agent__reported">דיווח אחרון: טרם דווח</span>`;
 
+  // Task summary HTML
+  const taskSummaryHtml = taskCounts.total > 0 ? `
+    <div class="agent__task-summary">
+      <h4>משימות (${taskCounts.total})</h4>
+      <div class="task-counts">
+        <span class="task-count task-count--high" title="עדיפות גבוהה">🔴 ${taskCounts.high}</span>
+        <span class="task-count task-count--medium" title="עדיפות בינונית">🟡 ${taskCounts.medium}</span>
+        <span class="task-count task-count--low" title="עדיפות נמוכה">🟢 ${taskCounts.low}</span>
+        <span class="task-count task-count--done" title="הושלמו">✅ ${taskCounts.done}</span>
+        <span class="task-count task-count--progress" title="בביצוע">🟡 ${taskCounts.progress}</span>
+        <span class="task-count task-count--pending" title="ממתין">⬜ ${taskCounts.pending}</span>
+        <span class="task-count task-count--blocked" title="חסום">⏸ ${taskCounts.blocked}</span>
+      </div>
+      ${teams.length ? `<div class="agent__teams">צוותים: ${teams.map(esc).join(" · ")}</div>` : ""}
+    </div>
+  ` : "";
+
+  // Work status badge HTML
+  const workStatusHtml = `
+    <div class="agent__work-status ${workStatus.working ? 'working' : 'on-break'}">
+      <span class="work-status__label">${workStatus.label}</span>
+      <span class="work-status__reason">${workStatus.reason}</span>
+    </div>
+  `;
+
   return `<article class="agent ${STATUS[agent.status] ? STATUS[agent.status].className : "is-unknown"}" id="agent-${esc(agent.id)}">
     <header class="agent__head">
       <span class="agent__initial" aria-hidden="true">${esc(agent.initial || agent.name.slice(0, 1))}</span>
@@ -314,8 +432,12 @@ function renderAgent(agent) {
       ${renderStatus(agent)}
     </header>
 
+    ${workStatusHtml}
+
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>${esc(agent.currentTask || "טרם דווח")}</p>
     ${renderTalk(agent.talkingWith)}
+
+    ${taskSummaryHtml}
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -519,9 +641,10 @@ function renderAIPrompt(prompt) {
   </div>`;
 }
 
-function buildHtml(state) {
+function buildHtml(state, tasksData) {
   const meta = state.meta || {};
   const agents = Array.isArray(state.agents) ? state.agents : [];
+  const tasks = tasksData && tasksData.tasks ? tasksData.tasks : [];
   const active = agents.filter((agent) => agent.status === "active").length;
   const waiting = agents.filter((agent) => agent.status !== "active").length;
   const blockers = Array.isArray(state.blockers) ? state.blockers : [];
@@ -696,6 +819,26 @@ h3{margin:0;font-size:1.22rem;line-height:1.3;font-weight:740}
   border-radius:999px;background:var(--gray-bg);color:var(--gray);
   font-size:.72rem;font-weight:700;
 }
+
+/* Agent work status (working vs on break) */
+.agent__work-status{
+  margin:12px 0 8px;padding:10px 14px;border-radius:10px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  font-size:.85rem;line-height:1.4;
+}
+.agent__work-status.working{
+  background:var(--green-bg);border:1px solid #bcd9c6;color:var(--green);
+}
+.agent__work-status.on-break{
+  background:var(--amber-bg);border:1px solid #e7d3a6;color:var(--amber);
+}
+.work-status__label{
+  font-weight:700;display:inline-flex;align-items:center;gap:6px;
+}
+.work-status__reason{
+  font-size:.8rem;opacity:.8;display:inline-flex;align-items:center;gap:4px;
+}
+
 .agent__block{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
 h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
 .ticks{margin:0;padding:0;list-style:none}
@@ -1028,6 +1171,37 @@ function writeHeartbeat(mode, state, extra) {
   return heartbeat;
 }
 
+const TASKS_DATA_PATH = path.join(ROOT, "tasks-data.json");
+const AGENT_STATUS_OUT_PATH = path.join(ROOT, "agent-status.json");
+
+function readTasksData() {
+  try {
+    const content = fs.readFileSync(TASKS_DATA_PATH, "utf8");
+    return JSON.parse(content);
+  } catch (err) {
+    return null;
+  }
+}
+
+function generateAgentStatus(state) {
+  const agents = Array.isArray(state.agents) ? state.agents : [];
+  const agentStatus = { generatedAt: new Date().toISOString(), agents: {} };
+  for (const agent of agents) {
+    let status = "unknown";
+    if (agent.status === "active") status = "working";
+    else if (agent.status === "waiting") status = "waiting";
+    else if (agent.status === "blocked") status = "blocked";
+    else if (agent.status === "done") status = "done";
+    
+    agentStatus.agents[agent.name] = {
+      status,
+      note: agent.currentTask || agent.conclusion || "",
+      updated: agent.reportedAt || agent.talkingWith?.lastChannelUpdate || null
+    };
+  }
+  return agentStatus;
+}
+
 function build(mode) {
   const state = readJson(STATE_PATH);
   const errors = validateState(state);
@@ -1035,7 +1209,16 @@ function build(mode) {
     throw new Error(`state.json invalid:\n- ${errors.join("\n- ")}`);
   }
 
-  const html = buildHtml(state);
+  // Read tasks data from Inspector
+  const tasksData = readTasksData();
+  
+  // Generate agent-status.json for Inspector to consume
+  const agentStatus = generateAgentStatus(state);
+  writeFileAtomic(AGENT_STATUS_OUT_PATH, JSON.stringify(agentStatus, null, 2));
+  console.log(`[guli] wrote agent-status.json`);
+  
+  // Pass tasks data to HTML builder
+  const html = buildHtml(state, tasksData);
   writeFileAtomic(OUT_PATH, html);
   lastBuildAt = new Date().toISOString();
   writeHeartbeat(mode || "build", state);

@@ -19,6 +19,8 @@ The local server is optional: it is convenient for development, for exercising t
 
 ## Deploying online
 
+**The site is already live:** `https://ohadraiz.github.io/jerusalem-streets/` (GitHub Pages, `main` branch).
+
 This is a static site: **no build step and no dependencies** — upload the whole folder to any static host with HTTPS and you get a URL, no commands involved.
 Full guide (hosting options, required HTTP headers, CSP, PWA and caching): [`docs/agents/teams/online-deployment.md`](docs/agents/teams/online-deployment.md).
 
