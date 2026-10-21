@@ -9,3 +9,5 @@ node_modules/
 Thumbs.db
 .DS_Store
 *.log
+# Measurement scratch output (shared across agents, not part of the project)
+*.measure-*-out.json

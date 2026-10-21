@@ -43,7 +43,7 @@ for (const file of jsFiles) {
 
 try {
   const output = execFileSync(process.execPath, [path.join(root, "tests", "store.test.js")], { encoding: "utf8" });
-  check("בדיקות אחסון", /17\/17 עברו/.test(output), output.trim().split("\n").pop());
+  check("בדיקות אחסון", /24\/24 עברו/.test(output), output.trim().split("\n").pop());
 } catch (error) {
   check("בדיקות אחסון", false, String(error.stdout || error.message).slice(-200));
 }

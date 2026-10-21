@@ -25,8 +25,47 @@
   var API = window.JLMAPI || null;
 
   var CENTER = [31.7683, 35.2137]; // רק כגיבוי אם bbox לא קיים — לא מקור נתונים
-  var TILE_URL = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
-  var TILE_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+
+  // שרשרת ספקי אריחים (BOARD 050): OSM (רק http/https) → OSM DE → OpenTopoMap → קווים בלי רקע.
+  // OSM דורש Referer; לכן file:// מתחיל מ-OSM DE. Esri/CARTO/OSM FR נפסלו בסבב 050.
+  var TILE_PROVIDERS = [
+    {
+      id: "osm",
+      name: "OSM",
+      url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      maxNativeZoom: 19,
+      requiresReferer: true, // תיעוד בלבד — ההכרעה תמיד אמפירית ב-probe
+      // z18 ולא z12: אריחי מרכז ירושלים ב-z12 נשמרים במטמון ה-CDN ולכן עוברים גם בלי Referer.
+      // הבדיקה עצמה היא HEAD (ר' probeTiles) — HEAD לא מוגש ממטמון ה-CDN, ולכן גם אריח
+      // שכבר נשמר כ-GET אמיתי מחזיר את חתימת החסימה (6,987B + no-cache) כשאין Referer.
+      // אריח המרכז האמיתי (Referer) נמדד 13,317B — מעל סף 8,000 בפער בטוח.
+      probe: { z: 18, x: 156713, y: 106653 },
+      attr: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    },
+    {
+      id: "osm-de",
+      name: "OSM DE",
+      url: "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
+      maxNativeZoom: 18,
+      requiresReferer: false,
+      probe: { z: 16, x: 39178, y: 26664 }, // 29,463B ללא Referer (נמדד)
+      // נוסח סגנון OSM DE לא נמדד (wiki 503) — נוסח שמרני; הייחוג הכללי של OSM מחייב תמיד
+      attr: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://github.com/giggls/openstreetmap-carto-de">OpenStreetMap DE</a> (CC-BY-SA 4.0)'
+    },
+    {
+      id: "opentopomap",
+      name: "OpenTopoMap",
+      url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+      maxNativeZoom: 17,
+      subdomains: ["a", "b", "c"],
+      requiresReferer: false,
+      probe: { z: 16, x: 39178, y: 26664 }, // 35,756B ללא Referer (נמדד)
+      attr: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)'
+    }
+  ];
+  var PROBE_MIN_BYTES = 8000; // אריחי הבדיקה הייעודיים נמדדו 13–35KB; חסימה/placeholder ≤7.2KB.
+                               // בדיקת הגודל משנית: היא מוגנת ע"י דרישת max-age מפורש (ר' probeTiles).
+  var PROBE_TIMEOUT_MS = 8000; // probe תלוי לא יחסום את השרשרת לנצח
 
   var TILE_ERROR_THRESHOLD = 3;
   var LOD_STREET_LIMIT = 1500; // מעל: בזום נמוך (לפני LOD_ZOOM) מוצגים רק מבוקרים
@@ -55,10 +94,6 @@
   function leafletHitRadius() {
     return coarsePointer() ? LEAFLET_HIT_RADIUS_COARSE : LEAFLET_HIT_RADIUS;
   }
-  // חתימת החסימה השקטה של OSM: HTTP 200 עם תמונת "Request blocked" (~6,987 בייט)
-  var TILE_BLOCK_SIZE_MIN = 6800;
-  var TILE_BLOCK_SIZE_MAX = 7200;
-
   var el = {
     canvas: document.getElementById("map-canvas"),
     empty: document.getElementById("map-empty"),
@@ -77,12 +112,14 @@
 
   /* ---------- עזרים ---------- */
 
-  function showBanner(text) {
+  function showBanner(text, kind) {
+    bannerKind = kind || "plain";
     el.banner.textContent = text;
     el.banner.hidden = false;
   }
 
   function hideBanner() {
+    bannerKind = "none";
     if (el.banner.hidden) return;
     el.banner.hidden = true;
     el.banner.textContent = "";
@@ -286,41 +323,77 @@
   }
 
   /* =========================================================
-      בדיקת אריחים חסומים בשקט (probeTiles)
-      החסימה המתוארת ב-026: השרת מחזיר HTTP 200 עם תמונת "Request blocked"
+      שרשרת ספקי אריחים ובדיקת חסימה שקטה (probeTiles)
+      חסימת OSM המתוארת ב-026: HTTP 200 עם תמונת "Request blocked"
       (~6,987 בייט, cache-control: no-cache) — `tileerror` לא נורה בדרך כלל.
-      ה-probe מריץ fetch על אריח בתצוגה הנוכחית וקורא שתי כותרות ספורות
-      (cache-control ו-content-length — שתיהן קריאות גם ב-CORS).
-      probe כושל (רשת/CORS) לא זורק ולא משנה כלום — נשארים במסלול tileerror.
+      כל ספק נבדק ב-HEAD על אריח בדיקה ייעודי; חסימה → מעבר לספק הבא.
+      HEAD לא מוגש ממטמון ה-CDN, ולכן לא מסתיר חסימת Referer גם באריח פופולרי.
+      כשל רשת/CORS אינו חסימה — לא מחליפים ספק ולא מציגים באנר.
       ========================================================= */
 
-  var tilesBlocked = false; // נוהל חסימה שאותר: האריחים מוסרים עד "נסה שוב"
+  var tilesBlocked = false; // כל הספקים מוצו: האריחים מוסרים עד "נסה שוב"
+  var bannerKind = "none";  // none | plain | tileerror | network | transition | final
   var probeBusy = false;
+  var probeSeq = 0;         // מבטל תשובות probe ישנות אחרי אתחול מחדש
+  var switchBusy = false;
+  var tileChain = null;     // ספקים זמינים לסשן (file:// מסנן את OSM)
+  var chainIdx = 0;         // אינדקס הספק הפעיל בתוך tileChain
+  var provider = null;      // רשומת הספק הפעיל
+  var exhausted = Object.create(null); // מזהי ספקים שנפסלו בסשן
+  var chainExhausted = false;
 
-  /** כתובת אריח של מרכז התצוגה הנוכחית — מחושב, לא קבוע */
-  function tileProbeUrl() {
-    var lat = CENTER[0];
-    var lng = CENTER[1];
-    var zoom = 12;
+  function isFileProtocol() {
+    return Boolean(window.location && window.location.protocol === "file:");
+  }
 
-    if (map && typeof map.getCenter === "function") {
-      try {
-        var c = map.getCenter();
-        if (c && typeof c.lat === "number" && isFinite(c.lat)) {
-          lat = c.lat;
-          lng = typeof c.lng === "number" && isFinite(c.lng) ? c.lng : lng;
-          var z = map.getZoom();
-          if (typeof z === "number" && isFinite(z) && z >= 0 && z <= 19) zoom = z;
-        }
-      } catch (error) { /* נשארים בברירות המחדל */ }
+  /** בניית השרשרת לסשן: ב-file:// אין Referer, לכן OSM מדולג */
+  function buildTileChain() {
+    var chain = [];
+    for (var i = 0; i < TILE_PROVIDERS.length; i++) {
+      if (TILE_PROVIDERS[i].id === "osm" && isFileProtocol()) continue;
+      chain.push(TILE_PROVIDERS[i]);
     }
+    return chain;
+  }
 
-    var n = Math.pow(2, zoom);
-    var x = Math.floor(mercX(lng) * n);
-    var y = Math.floor(mercY(Math.max(-85.05112878, Math.min(85.05112878, lat))) * n);
-    x = Math.max(0, Math.min(n - 1, x));
-    y = Math.max(0, Math.min(n - 1, y));
-    return "https://tile.openstreetmap.org/" + zoom + "/" + x + "/" + y + ".png";
+  function ensureTileChain() {
+    if (!tileChain) {
+      tileChain = buildTileChain();
+      chainIdx = 0;
+      exhausted = Object.create(null);
+      chainExhausted = false;
+    }
+    return tileChain;
+  }
+
+  /** אתחול מחדש של מצב השרשרת (טעינה ראשונה/ניסיון Leaflet חוזר) */
+  function resetTileChainState() {
+    chainIdx = 0;
+    provider = null;
+    exhausted = Object.create(null);
+    chainExhausted = false;
+    tilesBlocked = false;
+    probeBusy = false;
+    probeSeq += 1;
+    switchBusy = false;
+    tileErrors = 0;
+    tileBannerShown = false;
+  }
+
+  /** כתובת אריח לספק מסוים (עבור ה-probe; Leaflet מחליף {s} לבד בשכבה) */
+  function tileUrlFor(p, z, x, y) {
+    var url = p.url;
+    if (url.indexOf("{s}") !== -1) {
+      var subs = p.subdomains && p.subdomains.length ? p.subdomains : ["a"];
+      url = url.replace("{s}", subs[0]);
+    }
+    return url.replace("{z}", z).replace("{x}", x).replace("{y}", y);
+  }
+
+  /** אריח בדיקה קבוע לכל ספק — לא לפי התצוגה הנוכחית */
+  function tileProbeUrl(p) {
+    var q = p.probe;
+    return tileUrlFor(p, q.z, q.x, q.y);
   }
 
   /** באנר חסימה: טקסט + כפתור "נסה שוב". באנר אחד בכל רגע — הקיים נעלם קודם. */
@@ -340,72 +413,212 @@
     el.banner.appendChild(text);
     el.banner.appendChild(retry);
     el.banner.hidden = false;
+    bannerKind = "final";
   }
 
-  /** מצב חסום: מוריד את האריחים (הקווים שלנו נשארים) ומציג באנר עם "נסה שוב" */
+  function finalBlockedMessage() {
+    var names = [];
+    for (var i = 0; i < tileChain.length; i++) names.push(tileChain[i].name);
+    var message =
+      "כל ספקי האריחים אינם זמינים כרגע מהדפדפן הזה (" + names.join(", ") + "). " +
+      "מוצגים קווי הרחובות בלי רקע — המפה והרשימה ממשיכות לעבוד; \"נסה שוב\" מנסה מחדש מהתחלה.";
+    if (isFileProtocol()) {
+      message += " המפה נפתחה כקובץ מקומי (file://) — הרשימה והקווים עובדים תמיד; אריחי הרקע דורשים חיבור לאינטרנט.";
+    }
+    return message;
+  }
+
+  /** מצב סופי: מוריד את האריחים (הקווים שלנו נשארים) ומציג באנר עם "נסה שוב" */
   function markTilesBlocked(message) {
-    if (!tilesBlocked) tilesBlocked = true;
+    tilesBlocked = true;
     if (map && tiles && map.hasLayer(tiles)) map.removeLayer(tiles);
     showBlockedBanner(message);
   }
 
-  /** "נסה שוב": איפוס מצבים, החזרת האריחים למסך, והרצת probe מחדש */
+  /** החלפת שכבה לספק הבא — remove-then-add כדי שהייחוג יתעדכן ולא יוכפל */
+  function switchProvider(index, options) {
+    if (switchBusy || probeBusy || !window.L || !map) return;
+    var next = tileChain[index];
+    if (!next) return;
+
+    switchBusy = true;
+    try {
+      if (tiles) {
+        if (typeof tiles.off === "function") tiles.off("tileerror", onTileError);
+        if (map.hasLayer(tiles)) map.removeLayer(tiles);
+      }
+
+      var layerOptions = {
+        maxZoom: 19,
+        maxNativeZoom: next.maxNativeZoom,
+        attribution: next.attr
+      };
+      if (next.subdomains) layerOptions.subdomains = next.subdomains;
+
+      tiles = window.L.tileLayer(next.url, layerOptions);
+      tiles.on("tileerror", onTileError);
+
+      provider = next;
+      chainIdx = index;
+      tileErrors = 0;
+      tileBannerShown = false;
+      tilesBlocked = false;
+
+      if (!networkOff) tiles.addTo(map);
+
+      if (options && options.reason) {
+        var fromName = options.from ? options.from.name : "הקודם";
+        showBanner(
+          "אריחי המפה מהספק " + fromName + " חסומים מהדפדפן הזה (" + options.reason +
+          ") — נבדק ספק חלופי: " + next.name + "…",
+          "transition"
+        );
+      }
+    } catch (error) {
+      switchBusy = false;
+      exhausted[next.id] = true;
+      advanceProvider("שגיאה בהחלפת ספק");
+      return;
+    }
+
+    switchBusy = false;
+    probeTiles();
+  }
+
+  /** הספק הנוכחי נחשב חסום: מסמנים כמוצה ועוברים לבא בתור; אין → באנר סופי */
+  function advanceProvider(reason) {
+    if (switchBusy || chainExhausted) return;
+    if (provider) exhausted[provider.id] = true;
+
+    var nextIndex = -1;
+    for (var i = 0; i < tileChain.length; i++) {
+      if (!exhausted[tileChain[i].id]) { nextIndex = i; break; }
+    }
+
+    if (nextIndex === -1) {
+      chainExhausted = true;
+      markTilesBlocked(finalBlockedMessage());
+      return;
+    }
+
+    switchProvider(nextIndex, { reason: reason, from: provider });
+  }
+
+  /** "נסה שוב": לפני מוצה — probe לספק הנוכחי; אחרי מוצה — מחזור מלא מהתחלה */
   function retryTilesProbe() {
+    if (probeBusy || switchBusy) return;
+    if (mode !== "leaflet" || networkOff || !map) return;
+
+    if (chainExhausted) {
+      exhausted = Object.create(null);
+      chainExhausted = false;
+      chainIdx = 0;
+      tilesBlocked = false;
+      tileErrors = 0;
+      tileBannerShown = false;
+      hideBanner();
+      switchProvider(0, null);
+      return;
+    }
+
     tilesBlocked = false;
     tileErrors = 0;
     tileBannerShown = false;
     hideBanner();
-    if (mode !== "leaflet" || networkOff || !map || !tiles) return;
+    if (!tiles) {
+      switchProvider(chainIdx, null);
+      return;
+    }
     if (!map.hasLayer(tiles)) tiles.addTo(map);
     probeTiles();
   }
 
-  /** probe אחרי אתחול, ושוב אחרי התור של 3 tileerror */
-  function probeTiles() {
-    if (mode !== "leaflet" || !map || networkOff || tilesBlocked || probeBusy) return;
+  /** probe אחרי אתחול/החלפה, ושוב אחרי 3 tileerror */
+  function probeTiles(method) {
+    if (mode !== "leaflet" || !map || networkOff || tilesBlocked || probeBusy || switchBusy) return;
     if (!tiles || !map.hasLayer(tiles)) return;
-
-    // פתיחה מ-file:// — הדפדפן לא שולח Referer ו-OSM חוסם כל אריח; אין טעם וגם אין אריחים
-    if (window.location && window.location.protocol === "file:") {
-      markTilesBlocked(
-        "המפה נפתחה כקובץ מקומי (file://) — הדפדפן אינו שולח Referer ו-OSM חוסם את האריחים. " +
-        "הריצו `node serve.js` ופתחו דרך http://localhost:8787"
-      );
-      return;
-    }
-
+    if (!provider) return;
     if (typeof window.fetch !== "function") return; // בלי fetch — נשארים במסלול tileerror
+
+    var probeMethod = method || "HEAD";
 
     var probeUrl;
     try {
-      probeUrl = tileProbeUrl();
+      probeUrl = tileProbeUrl(provider);
     } catch (error) {
       return; // אם חישוב האריח נכשל — ממשיכים כרגיל, שום דבר לא נשבר
     }
 
+    var seq = probeSeq + 1;
+    probeSeq = seq;
     probeBusy = true;
+    var probeProvider = provider;
+    var controller = typeof window.AbortController === "function" ? new window.AbortController() : null;
+    var timer = null;
+    if (controller) {
+      timer = window.setTimeout(function () {
+        try { controller.abort(); } catch (error) { /* לא קריטי */ }
+      }, PROBE_TIMEOUT_MS);
+    }
     function finishProbe() {
-      probeBusy = false;
+      if (timer) {
+        window.clearTimeout(timer);
+        timer = null;
+      }
+      if (seq === probeSeq) probeBusy = false;
     }
 
-    window.fetch(probeUrl, { mode: "cors", cache: "no-store" }).then(function (res) {
+    // HEAD: כותרות בלבד, בלי הורדת תמונה; HEAD גם לא מוגש ממטמון ה-CDN ולכן לא מסתיר חסימה.
+    var fetchOptions = { method: probeMethod, mode: "cors" };
+    if (controller) fetchOptions.signal = controller.signal;
+
+    window.fetch(probeUrl, fetchOptions).then(function (res) {
       finishProbe();
-      if (tilesBlocked || networkOff || !res || !res.ok) return;
+      if (seq !== probeSeq) return;
+      if (tilesBlocked || networkOff || provider !== probeProvider) return;
+      if (!res || !res.ok) {
+        // שרת שלא תומך ב-HEAD (405/501) — זו אינה חסימה: בודקים עם GET (אותן כותרות)
+        if (res && (res.status === 405 || res.status === 501) && probeMethod === "HEAD") {
+          probeTiles("GET");
+          return;
+        }
+        advanceProvider("התשובה היא HTTP " + (res && res.status ? res.status : "שגיאה"));
+        return;
+      }
+
+      var blockedReason = "";
       try {
         var headers = res.headers || null;
-        var cc = headers && typeof headers.get === "function" ? headers.get("cache-control") || "" : "";
-        var cl = headers && typeof headers.get === "function" ? Number(headers.get("content-length") || 0) : 0;
-        var ccSuspect = /no-cache/i.test(cc);
-        var sizeSuspect = cl >= TILE_BLOCK_SIZE_MIN && cl <= TILE_BLOCK_SIZE_MAX;
-        if (ccSuspect || sizeSuspect) {
-          markTilesBlocked(
-            "אריחי המפה חסומים מהדפדפן הזה — הקווים שלנו מוצגים ללא רקע. " +
-            "(אריח חוזר עם " + (ccSuspect ? "\"no-cache\"" : "תמונת שגיאה של " + cl + " בייט") + ")"
-          );
+        var getHeader = headers && typeof headers.get === "function"
+          ? function (name) { return headers.get(name); }
+          : null;
+        var cc = getHeader ? getHeader("cache-control") || "" : "";
+        var ct = getHeader ? getHeader("content-type") || "" : "";
+        var clRaw = getHeader ? getHeader("content-length") : null;
+        var cl = clRaw === null || clRaw === "" ? null : Number(clRaw);
+
+        if (ct && !/^image\//i.test(ct)) {
+          blockedReason = "התשובה אינה תמונה";
+        } else if (/no-cache/i.test(cc)) {
+          // אות החסימה החזק של OSM: 200 + no-cache (לא לפי גודל בלבד)
+          blockedReason = "\"no-cache\"";
+        } else if (cl !== null && isFinite(cl) && cl < PROBE_MIN_BYTES && !/max-age/i.test(cc)) {
+          // אות משני: תמונת placeholder קטנה. אריח תקין מגיע עם max-age — לא ייפל מזה
+          blockedReason = "תמונת שגיאה של " + cl + " בייט";
         }
-      } catch (error) { /* כותרות לא זמינות — מנוטרל */ }
+      } catch (error) { /* כותרות לא זמינות — לא מפילים ספק */ }
+
+      if (blockedReason) {
+        advanceProvider(blockedReason);
+      } else {
+        hideBanner();
+      }
     }, function () {
+      // כשל רשת/CORS: לא חסימה — אין החלפה ואין סימון exhausted.
+      // אם הוצגה הודעת-מעבר, מסירים אותה כדי לא להשאיר "בודק ספק חלופי" תקוע.
       finishProbe();
+      if (seq !== probeSeq) return;
+      if (bannerKind === "transition") hideBanner();
     });
   }
 
@@ -416,16 +629,19 @@
     if (mode === "leaflet") {
       if (off) {
         if (tiles && map && map.hasLayer(tiles)) map.removeLayer(tiles);
-        showBanner("מצב ללא רשת: מוצגים רק קווי הרחובות, בלי אריחי רקע.");
+        showBanner("מצב ללא רשת: מוצגים רק קווי הרחובות, בלי אריחי רקע.", "network");
       } else {
         tileErrors = 0;
         tileBannerShown = false;
-        // אם זיהוי חסימה פעיל — לא מחזירים אריחים בשקט; רק "נסה שוב" מחזיר
-        if (!tilesBlocked && tiles && map && !map.hasLayer(tiles)) tiles.addTo(map);
-        if (tilesBlocked) {
-          // הבאנר של החסימה חייב להישאר מוצג — האריחים עדיין חסומים
-          showBlockedBanner("אריחי המפה חסומים מהדפדפן הזה — הקווים שלנו מוצגים ללא רקע.");
+        if (chainExhausted) {
+          // אין החזרה שקטה: הבאנר הסופי והאריחים הכבויים נשארים עד "נסה שוב"
+          markTilesBlocked(finalBlockedMessage());
+        } else if (tilesBlocked) {
+          showBlockedBanner(finalBlockedMessage());
+        } else if (!tiles) {
+          switchProvider(chainIdx, null);
         } else {
+          if (!map.hasLayer(tiles)) tiles.addTo(map);
           hideBanner();
           probeTiles(); // לוודא שהחסימה מזוהה גם אחרי הדלקה בזמן אמת
         }
@@ -844,17 +1060,20 @@
   }
 
   function onTileError() {
-    if (networkOff || tilesBlocked) return;
+    if (networkOff || tilesBlocked || switchBusy) return;
     tileErrors += 1;
     if (tileErrors >= TILE_ERROR_THRESHOLD && !tileBannerShown) {
       tileBannerShown = true;
-      showBanner("אריחי המפה לא נטענו לאחרונה — מוצגים רק קווי הרחובות שלנו, על רקע ריק.");
+      showBanner("אריחי המפה לא נטענו לאחרונה — מוצגים רק קווי הרחובות שלנו, על רקע ריק.", "tileerror");
       // אולי זו דווקא החסימה השקטה (HTTP 200 עם תמונת שגיאה) — probe מרכב ומשדרג
       probeTiles();
     }
   }
 
   function initLeaflet() {
+    ensureTileChain();
+    resetTileChainState();
+
     map = window.L.map(el.canvas, {
       preferCanvas: true,
       scrollWheelZoom: true, // גלגלת מעל המפה מקרבת; Leaflet עושה preventDefault — העמוד לא נגלל
@@ -870,13 +1089,8 @@
       try { el.canvas.style.setProperty("touch-action", "none"); } catch (e) { /* לא קריטי */ }
     }
 
-    tiles = window.L.tileLayer(TILE_URL, {
-      maxZoom: 19,
-      attribution: TILE_ATTR
-    });
-    tiles.on("tileerror", onTileError);
-
-    if (!networkOff) tiles.addTo(map);
+    // השכבה הראשונה נבחרת לפי השרשרת (file:// מדלג על OSM) ונבדקת ב-probe
+    switchProvider(chainIdx, null);
 
     group = window.L.layerGroup().addTo(map);
 
@@ -921,8 +1135,7 @@
       resizeObserver.observe(el.canvas);
     }
 
-    // זיהוי חסימה שקטה (HTTP 200 עם תמונת שגיאה): probe אחד אחרי האתחול
-    probeTiles();
+    // ה-probe הראשון כבר הופעל ב-switchProvider (לפני setView — הוא קבוע על z12)
   }
 
   /* =========================================================
@@ -1452,6 +1665,10 @@
       buildFallbackStreets();
       requestFallbackDraw();
       refreshStatus();
+    } else {
+      // הטעינה הראשונה הייתה ריקה (אין רחובות), ולכן המפה מעולם לא אותחלה.
+      // ייבוא/הוספה החזירו רחובות — מאתחלים עכשיו במקום להשאיר מפה מתה.
+      init();
     }
   }
 
@@ -1570,6 +1787,18 @@
     zoomToArea: zoomToArea,
     isReady: function () {
       return mode !== null;
+    },
+    // חשיפה לקורא בלבד (בדיקות/אבחון) — לא משנה התנהגות
+    tileProviderState: function () {
+      return {
+        provider: provider ? provider.id : null,
+        chain: tileChain ? tileChain.map(function (p) { return p.id; }) : [],
+        exhausted: Object.keys(exhausted),
+        chainExhausted: chainExhausted,
+        blocked: tilesBlocked,
+        banner: bannerKind,
+        networkOff: networkOff
+      };
     }
   };
 

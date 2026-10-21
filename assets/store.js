@@ -20,7 +20,14 @@
   }
 
   function emptyState() {
-    return { schema: SCHEMA, visited: emptyVisited(), custom: [], deleted: [], manualCompletions: {} };
+    return {
+      schema: SCHEMA,
+      visited: emptyVisited(),
+      custom: [],
+      deleted: [],
+      manualCompletions: {},
+      settings: { voice: true, sound: true }
+    };
   }
 
   function cleanText(value, maxLength) {
@@ -42,7 +49,9 @@
         var record = input.visited[id];
         if (!validId(id) || !isPlainObject(record)) return;
         var date = typeof record.date === "string" && DATE_RE.test(record.date) ? record.date : "";
-        out.visited[id] = { date: date, note: cleanText(record.note, MAX_NOTE) };
+        var rating = typeof record.rating === "number" ? Math.max(0, Math.min(5, Math.round(record.rating))) : 0;
+         var mood = cleanText(record.mood, 20);
+         out.visited[id] = { date: date, note: cleanText(record.note, MAX_NOTE), rating: rating, mood: mood };
       });
     }
 
@@ -71,12 +80,20 @@
     // סיום ידני של שכונות: area -> { note, completedAt }
     if (isPlainObject(input.manualCompletions)) {
       Object.keys(input.manualCompletions).forEach(function (area) {
+        if (!validId(area) || area === "__proto__" || area === "constructor" || area === "prototype") return;
         var rec = input.manualCompletions[area];
         if (!isPlainObject(rec)) return;
         var note = cleanText(rec.note, MAX_NOTE);
         var completedAt = typeof rec.completedAt === "string" && DATE_RE.test(rec.completedAt) ? rec.completedAt : new Date().toISOString().split("T")[0];
         out.manualCompletions[area] = { note: note, completedAt: completedAt };
       });
+    }
+
+    /* הגדרות המשתמש (חיווי קולי + צלילים) — ברירת המחדל: שניהם מופעלים. שדה אופציונלי לאחור */
+    out.settings = { voice: true, sound: true };
+    if (isPlainObject(input.settings)) {
+      if (typeof input.settings.voice === "boolean") out.settings.voice = input.settings.voice;
+      if (typeof input.settings.sound === "boolean") out.settings.sound = input.settings.sound;
     }
 
     return out;
@@ -120,7 +137,11 @@
     }
 
     var state = sanitize(parsed);
-    var kept = Object.keys(state.visited).length + state.custom.length + state.deleted.length;
+    var kept =
+      Object.keys(state.visited).length +
+      state.custom.length +
+      state.deleted.length +
+      Object.keys(state.manualCompletions).length;
 
     // JSON תקין אבל הסניטציה זרקה את כל התוכן — נתייחס לזה כקורופציה, לא כמצב ריק
     if (countRawEntries(parsed) > 0 && kept === 0) {
@@ -181,16 +202,21 @@
     var hasVisited = isPlainObject(parsed.visited);
     var hasCustom = Array.isArray(parsed.custom);
     var hasDeleted = Array.isArray(parsed.deleted);
-    if (!hasVisited && !hasCustom && !hasDeleted) {
+    var hasManual = isPlainObject(parsed.manualCompletions);
+    if (!hasVisited && !hasCustom && !hasDeleted && !hasManual) {
       return {
         ok: false,
         state: emptyState(),
-        error: "הקובץ אינו נראה כגיבוי של היומן (חסרים שדות visited, custom או deleted)"
+        error: "הקובץ אינו נראה כגיבוי של היומן (חסרים שדות visited, custom, deleted או manualCompletions)"
       };
     }
 
     var state = sanitize(parsed);
-    var entries = Object.keys(state.visited).length + state.custom.length + state.deleted.length;
+    var entries =
+      Object.keys(state.visited).length +
+      state.custom.length +
+      state.deleted.length +
+      Object.keys(state.manualCompletions).length;
     if (entries === 0) {
       return { ok: false, state: emptyState(), error: "הקובץ תקין אבל ריק — לא בוצעה החלפה" };
     }

@@ -38,7 +38,8 @@ const AGENT_DEPENDENCIES = {
   tsiri: ["mappy"],
   tsibi: ["main", "chiki"],
   shifu: ["main", "tsiri", "tsibi"],
-  guli: ["main", "mappy", "chiki", "tsiri", "tsibi", "shifu", "tsibi"]
+  guli: ["main", "mappy", "chiki", "tsiri", "tsibi", "shifu", "tsibi"],
+  inspector: ["main", "guli"]
 };
 
 function readAgentChannel(agentId) {
@@ -821,12 +822,13 @@ footer.page a{font-weight:600}
 
 <header class="masthead">
   <div class="wrap">
-    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים</p>
-    <h1>מה קורה בחדר</h1>
+    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים · <strong>הדף של גולי</strong></p>
+    <h1>מה קורה בחדר — גולי</h1>
     <p class="lead">${esc(meta.nowLine || "טרם דווח מה קורה בחדר.")}</p>
     <div class="masthead__bar">
       <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>${active} פעילים · ${waiting} ממתינים</span>
       ${openBlockers ? `<span class="pulse pulse--alert"><span class="pulse__dot" aria-hidden="true"></span>${openBlockers} חסמים פתוחים</span>` : ""}
+      <a href="tasks.html" class="btn" style="background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700;">📋 דשבורד המשימות (הפקח)</a>
       <span class="time-note">עודכן <time dir="ltr" datetime="${esc(updatedAt)}">${esc(dateTimeLabel(updatedAt))}</time></span>
       <span id="relative-time" class="time-note" data-updated="${esc(updatedAt)}"></span>
       <button class="btn" type="button" id="refresh">רענון הדף</button>
@@ -875,6 +877,18 @@ footer.page a{font-weight:600}
       <p class="section__hint">חץ מלא = תלות עבודה; חץ מקווקו = תקשורת נוכחית. ירוק = פעיל, כתום = ממתין, אפור = טרם דווח.</p>
     </div>
     ${renderFlow(agents, AGENT_DEPENDENCIES)}
+  </section>
+
+  <section aria-labelledby="tasks-title">
+    <div class="section__head">
+      <h2 id="tasks-title">דשבורד המשימות</h2>
+      <p class="section__hint">כל משימות הצוותים במקום אחד — מסודר לפי צוות, עדיפות וסטטוס, עם חיפוש והדפסה.</p>
+    </div>
+    <div class="room-note">
+      <p><strong>הפקח</strong> מארגן את המשימות בדשבורד נפרד: <a href="tasks.html">tasks.html</a>.</p>
+      <p>הדשבורד נבנה על ידי <code>tools/tasks-dashboard.js</code> מתוך <a href="docs/TEAMS.md">docs/TEAMS.md</a>
+        ו-<a href="docs/agents/TASKS.md">docs/agents/TASKS.md</a> — מקור יחיד, ללא build וללא תלויות.</p>
+    </div>
   </section>
 
   <section aria-labelledby="sources-title">

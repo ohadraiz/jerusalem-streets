@@ -8,12 +8,21 @@ A small browser app (no dependencies, no build step) for marking every street in
 
 ## Running
 
+**Just open `index.html` in a browser** — the app runs straight from the file, with no install, no build step and no server. Every library is vendored locally (`assets/vendor/leaflet`), and the map also works from `file://` (tiles come from OSM DE, because OSM blocks requests without a Referer).
+
 ```bash
-npm start          # http://localhost:8787
+npm start          # http://localhost:8787 — local dev server, for development and tests only
 npm test           # storage-layer tests
 ```
 
-You can also open `index.html` straight from disk — but a local server is recommended, since some browsers restrict `localStorage` on `file://`.
+The local server is optional: it is convenient for development, for exercising the `http://` path (where OSM is the primary tile provider) and for preparing the online deployment. On `file://` some browsers (Safari) restrict `localStorage` — the app detects that and shows a notice instead of breaking.
+
+## Deploying online
+
+This is a static site: **no build step and no dependencies** — upload the whole folder to any static host with HTTPS and you get a URL, no commands involved.
+Full guide (hosting options, required HTTP headers, CSP, PWA and caching): [`docs/agents/teams/online-deployment.md`](docs/agents/teams/online-deployment.md).
+
+Once installed (PWA) the app also opens **with no internet connection** — after one visit the list, the marks and the map are cached locally; only the background tiles need a connection.
 
 ## Features
 
@@ -32,7 +41,9 @@ index.html            single screen (RTL)
 assets/data.js        seed street list
 assets/store.js       storage: load, sanitize, persist, backup, export/import
 assets/app.js         filtering, rendering, events, statistics
+assets/map.js         map layer (Leaflet) + tile-provider chain + local canvas fallback
 assets/styles.css     styling (CSS variables, light/dark)
+assets/vendor/leaflet Leaflet 1.9.4, vendored locally (BSD-2-Clause) so the file works without a CDN
 serve.js              static dev server (no dependencies)
 tests/store.test.js   unit tests for the storage layer
 .opencode/agents/     the project's agents (shifu, mappy)

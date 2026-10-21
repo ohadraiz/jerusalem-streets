@@ -93,6 +93,45 @@ test("מצב אחסון שמכיל רק מחיקות נטען תקין", () => {
   assert.deepEqual(loaded.state.deleted, ["yafo"]);
 });
 
+test("מצב אחסון שמכיל רק סיום ידני נטען תקין", () => {
+  reset();
+  storage.setItem(
+    Store.KEY,
+    JSON.stringify({
+      visited: {},
+      custom: [],
+      deleted: [],
+      manualCompletions: { "רמות": { note: "הסתובבתי ברגל", completedAt: "2026-01-02" } }
+    })
+  );
+  const loaded = Store.load();
+  assert.equal(loaded.status, "ok");
+  assert.equal(loaded.state.manualCompletions["רמות"].note, "הסתובבתי ברגל");
+  assert.equal(loaded.state.manualCompletions["רמות"].completedAt, "2026-01-02");
+});
+
+test("גיבוי שמכיל רק סיום ידני מתקבל", () => {
+  reset();
+  const result = Store.fromJSON(
+    JSON.stringify({ visited: {}, custom: [], deleted: [], manualCompletions: { "רמות": { note: "", completedAt: "2026-01-02" } } })
+  );
+  assert.equal(result.ok, true);
+  assert.equal(result.state.manualCompletions["רמות"].completedAt, "2026-01-02");
+});
+
+test("סניטציה של סיום ידני: הערה נחתכת ותאריך לא תקין מוחלף", () => {
+  reset();
+  const result = Store.fromJSON(
+    JSON.stringify({
+      visited: { yafo: { date: "2026-01-02", note: "" } },
+      manualCompletions: { "רמות": { note: "x".repeat(900), completedAt: "21/10/2026" } }
+    })
+  );
+  assert.equal(result.ok, true);
+  assert.equal(result.state.manualCompletions["רמות"].note.length, 500);
+  assert.match(result.state.manualCompletions["רמות"].completedAt, /^\d{4}-\d{2}-\d{2}$/);
+});
+
 test("JSON פגום לא נמחק בשקט ומחזיר status=corrupt", () => {
   reset();
   storage.setItem(Store.KEY, "{broken");
@@ -133,6 +172,16 @@ test("מזהה __proto__ לא מזהם את prototype", () => {
   assert.equal(result.ok, true);
   assert.equal(Object.prototype.hasOwnProperty.call(result.state.visited, "__proto__"), true);
   assert.equal({}.date, undefined);
+});
+
+test("מפתח __proto__ ב-manualCompletions לא מזהם את prototype", () => {
+  reset();
+  const result = Store.fromJSON(
+    '{"visited":{"yafo":{"date":"2026-01-02","note":""}},"manualCompletions":{"__proto__":{"note":"x","completedAt":"2026-01-02"}}}'
+  );
+  assert.equal(result.ok, true);
+  assert.equal(Object.prototype.hasOwnProperty.call(result.state.manualCompletions, "__proto__"), false);
+  assert.equal({}.note, undefined);
 });
 
 test("תאריך לא תקין מוחלף במחרוזת ריקה", () => {
@@ -197,6 +246,28 @@ test("אובדן חלקי בסניטציה לא מסומן corrupt", () => {
   const loaded = Store.load();
   assert.equal(loaded.status, "ok");
   assert.equal(Object.keys(loaded.state.visited).length, 1);
+});
+
+test("חיווי קולי מופעל כברירת מחדל", () => {
+  reset();
+  const empty = Store.emptyState();
+  assert.equal(empty.settings.voice, true);
+  const loaded = Store.load();
+  assert.equal(loaded.state.settings.voice, true);
+});
+
+test("כיבוי חיווי קולי נשמר", () => {
+  reset();
+  Store.save({ schema: 1, visited: {}, custom: [], deleted: [], manualCompletions: {}, settings: { voice: false } });
+  const loaded = Store.load();
+  assert.equal(loaded.state.settings.voice, false);
+});
+
+test("גיבוי ישן בלי הגדרות נטען עם ברירת מחדל (חיווי מופעל)", () => {
+  reset();
+  storage.setItem(Store.KEY, JSON.stringify({ visited: { yafo: { date: "2026-01-02", note: "" } }, custom: [] }));
+  const loaded = Store.load();
+  assert.equal(loaded.state.settings.voice, true);
 });
 
 let failed = 0;

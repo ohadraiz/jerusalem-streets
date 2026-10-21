@@ -328,3 +328,107 @@
 
 - לשיפו: בדיקת מכשיר סלולרי — pinch-zoom וגרירה על המפה (Chrome מובייל), ושהעמוד לא "בורח" בגרירה בתוך 260px המפה.
 - לשיפו/ציבי: האם "מגע על המפה = מפה, מחוץ לה = גלילה" מאושר בחוויה, או שמועדפת גלילת-עמוד במגע גם מעל המפה (דורש שינוי ה-`touch-action` שהוספתי)?
+
+---
+---
+
+## צירי → ראשי · מפרט מימוש מדויק: שרשרת ספקי אריחים ב-`assets/map.js` (BOARD 050) · מפרט · 2026-10-21
+
+**היקף:** שרשרת מחייבת OSM (ברירת מחדל ב-http/https) → OSM DE → OpenTopoMap → הרינדור בלי אריחים (הקווים שלנו, ממילא מהקנבס של Leaflet ב-preferCanvas). ב-`file://` מתחילים מ-OSM DE. **OSM FR ו-Esri מחוץ למערך** (fair-use לא אומת / חשבון+token). הקוד בסגנון ES5 של הקובץ; כל גישה ל-`L` מאחורי בדיקה; אין DOM חדש, אין localStorage, אין שינוי סכמה.
+
+### מפרט ממוספר (לפי 12 סעיפי המשימה)
+
+1. **רשומת ספק — מחליף את `TILE_URL`/`TILE_ATTR` (map.js:28–29) ב-`TILE_PROVIDERS`:**
+   | id | url | maxNativeZoom | `{s}` | requiresReferer |
+   |----|-----|---------------|--------|-----------------|
+   | `osm` | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` | 19 | — | `true` |
+   | `osm-de` | `https://tile.openstreetmap.de/{z}/{x}/{y}.png` | 18 | — | `false` |
+   | `opentopomap` | `https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png` | 17 | `a,b,c` | `false` |
+   - `attr` מדויק לכל רשומה. `osm` (קיים היום): `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors`. `opentopomap` (מילים מהאתר): `Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, SRTM | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)`. `osm-de` (**נוסח מוצע — לא נמדד, wiki 503**): `&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Map style: &copy; <a href="https://github.com/giggls/openstreetmap-carto-de">OpenStreetMap DE</a> (CC-BY-SA 4.0)`.
+   - `requiresReferer` — **לתיעוד בלבד, לא מכריע:** אסור לדלג על ספק לפיו, כי חסימה אפשרית גם עם Referer (IP/רשת ארגונית — 050). ההכרעה תמיד אמפירית ב-probe.
+   - `name` לתצוגה בבאנרים; אין רשומות מתות/קוד של FR/Esri.
+2. **בחירת ספק התחלתי:** `tileChain()` אחד לסשן — מסנן את `osm` כאשר `location.protocol === 'file:'`. משתני מצב חדשים: `chain[]`, `chainIdx`, `exhausted[]` (מזהים שמוצו הסשן), `chainExhausted`. ללא `localStorage` (מקביל להחלטה 011 — סשן בלבד).
+3. **probe גנרי — החלפת `tileProbeUrl()` (map.js:301–324):** URL אחד קבוע — אריח מרכז ירושלים **z12 = `12/2448/1666`** (המדוד אצל החוקר; מחושב מ-`CENTER` 31.7683,35.2137 ב-z12, לא מהתצוגה הנוכחית); לפי תבנית ה-URL של הספק (החלפת `{s}` מתוך `subdomains[0]`). בדיקות על `fetch(url, { mode: "cors" })` (ACAO `*` נמדד בכולם):
+   - `!res.ok` → חסום. `content-type` לא נפתח ב-`image/` → חסום. `cache-control` מכיל `no-cache` → חסום. `content-length` **נוכח** וקטן מ-`PROBE_MIN_BYTES = 8000` → חסום. **חסר** `content-length` → דילוג על בדיקת הגודל (לא כישלון).
+   - סף ה-8000 (מוצדק במדידות): אריחים אמיתיים z12 נמדדו 44,105 / 47,566 / 54,346 בייט; כל התמונות המזויפות/placeholder שנמדדו ≤ 7,200 בייט (OSM 6,987, OpenTopoMap-placeholder 4,343, CARTO 2,049).
+   - **הפרדה חסום/רשת:** כשל fetch (TypeError), תגובה אטומה או כותרות לא קריאות → "לא ידוע": שקט, אין החלפה, אין באנר, אין רשום ל-`exhausted` — ההתנהגות שקיימת היום ב-`probeTiles`.
+   - **הסרת `cache: "no-store"`** מה-fetch (map.js:391): אסור לפי מדיניות OSM לשלוח `Cache-Control: no-cache` (חוקר §1/§6). תמונות חסימה נושאות `no-cache` מהשרת ולא נשמרות ממילא; אריחים אמיתיים נשמרים לפי `max-age` — בהתאם להוראות השימוש.
+4. **החלפה בזמן ריצה:** `advanceProvider()` דוחף את ה-id הנוכחי ל-`exhausted`, מוצא הבא ב-`chain` שאינו ב-`exhausted` (סריקה לינארית); אין → `chainExhausted = true` + `markTilesBlocked(הודעה סופית ידידותית)` (הקווים נשארים מוצגים — גיבוי). `switchProvider(nextIdx)`:
+   - guard כפול: לא נכנסים להחלפה כש-`probeBusy`/`switchBusy` פעילים — קריאה נוספת נזנחת (בלי תור). `switchBusy` מתנקה בסוף ה-probe של הספק החדש.
+   - סדר מדויק: `tiles.off("tileerror")` → אם `map.hasLayer(tiles)` `removeLayer` → `tiles = window.L.tileLayer(p.url, { attribution: p.attr, maxZoom: 19, maxNativeZoom: p.maxNativeZoom, subdomains: p.subdomains || undefined })` → `tiles.on("tileerror", onTileError)` → איפוס `tileErrors=0, tileBannerShown=false, tilesBlocked=false, probeBusy=false` → `hideBanner()` → אם `!networkOff` `addTo(map)` → הודעת-מעבר (`showBanner` טקסט בלבד, **בלי כפתור**) → `probeTiles()` מידית.
+   - הצלחת probe → `hideBanner()` (שקט). כשל → הבאנר-מעבר מוחלף ע"י הודעת המעבר הבאה. המעבר תמיד קדימה בלבד — אין חזרה אחורה לספק שמוצה ואין לולאה (מספר המעברים לסשן ≤ מספר הספקים). מעבר מופעל **רק** מ-probe-מאומת או מ"נסה שוב"; לא מ-`tileerror` גולמי.
+   - `initLeaflet` לא יוצר את השכבה ישירות — קורא ל-`switchProvider(chainIdx)` על אינדקס הפתיחה (הסרת שכבה שלא קיימת עדיין היא no-op).
+5. **maxNativeZoom:** השכבה ממשיכה להחזיק `maxZoom: 19` בכל ספק (תקרת הזום הגלובלית לא קטנה) ומוסיפה `maxNativeZoom` לפי רשומה. `zoomToStreet(id,16)` ממשיך זום-16 בדיוק (map.js:800 ללא שינוי); מעל `maxNativeZoom` של ספק Leaflet מותח אריחים (חדות נמוכה משהו — מקובל), ואין דריסת התנהגות ה-LOD.
+6. **ייחוג דינמי:** כל שכבה נעזרת ב-`attribution` מרשומתה. remove-then-add ⇒ Leaflet מציב מחדש את בקר-ה-attribute — בדיקה חזותית שיש ייחוג יחיד (לא כפול). `TILE_ATTR` מוסר לגמרי ולא נשאר אף שימוש בו. הייחוג מתוך מיכל `dir="ltr"` — שמירה על טקסט לטיני בלבד בנוסחאות (כולל הפרדה ` | `) כדי לא לשבור bidi.
+7. **כפתור "נסה שוב" (קיים map.js:327–343):** סמנטיקה חדשה: לפני מוצה — איפוס מונים, החזרת השכבה האקטיבית ו-probe של **הספק הנוכחי**; אם אומתה חסימה — מעבר צעד-אחד לספק הבא (לחיצה = צעד). במצב `chainExhausted` — הכפתור מבצע מחזור מלא: איפוס `exhausted[]`, חזרה לאינדקס הפתיחה, `switchProvider` + probe. הצפת לחיצות: single-flight (`probeBusy`/`switchBusy`) — מקסימום מעבר אחד בזמן בדיקת ספק. בכל מצב אין מסך לבן; לחיצה שנייה מנסה שוב באותם כללים, בלי שינוי מצב נוסף תוך בדיקה פעילה.
+8. **מצב "ללא רשת":** `setNetwork(false)` — הסרת אריחים + הבאנר הקיים (ואסור probe). `setNetwork(true)`: אם `chainExhausted` — אין החזרת אריחים בשקט והבאנר הסופי משוחזר; אחרת — הוספת השכבה האקטיבית + probe. ללא שינוי נוסף: המתג, `aria-pressed` וההצמדה בין באנר למצב האריחים בפועל נשמרים בכל ההחלפות.
+9. **הודעות באנר בעברית:**
+   - מעבר: "אריחי המפה מהספק {name} חסומים מהדפדפן הזה ({reason}) — נבדק ספק חלופי: {next}…" כש-`{reason}` הוא הסימן שנמדד: `no-cache` / `תמונת שגיאה של N בייט` / `התשובה אינה תמונה`.
+   - סופי: "כל ספקי האריחים אינם זמינים כרגע מהדפדפן הזה (OSM, OSM DE, OpenTopoMap). מוצגים קווי הרחובות בלי רקע — המפה והרשימה ממשיכים לעבוד; ״נסה שוב״ מנסה מחדש מהתחלה."
+   - מצב `file://` **בהודעה הסופית בלבד:** מתווספת שורה: " המפה נפתחה כקובץ מקומי (file://) — הריצו `node serve.js` ופתחו דרך http://localhost:8787." ההוצאה מה-early-out של היום ב-`probeTiles` (map.js:369–375): ב-`file://` אין הודעה מיוחדת כל עוד OSM DE עובד (נמדד: תקין בלי Referer).
+   - כשל רשת: **אי-הודעה מ-probe** (סעיף 3). הבאנר קיים רק ממסלול 3-`tileerror` עם הטקסט הקיים ללא שינוי.
+10. **אסור לשבור (רשימת-ביקורת):** `JLMAPI`/`JLMBus`/`JLM_GEO` · מזהי DOM (`#map-canvas` ב-dir="ltr", `#map-empty`, `#map-banner`, `#map-status`, `#map-network-toggle`, `.map-legend__swatch--visited`/`--pending`) · LOD 12 (`LOD_ZOOM`, `LOD_STREET_LIMIT=1500`) · `zoomToStreet(id,16)` / `zoomToArea(area)` (חתימות, מעברים והדגשות) · שכבות פגיעה + click→`JLMAPI.toggle` · פופאפ DOM-בטוח · מסלול הקנבס (wheel/touch/keyboard מהסבבים קודמים) · מפתחות `window.JLMMap` הקיימים (`isReady,refresh,setNetwork,zoomToArea,zoomToStreet`) — מותרת **הוספה** בלבד: `tileProviderState()` (קורא לבדיקות), לא שינוי בקיימים.
+11. **בדיקות חובה:**
+    - `node --check assets/map.js` · הסמוקים הקיימים ללא רגרסיה (בסיס 94; הרחבות סביבו 119/119 ו-31/31 לפי הערוץ).
+    - מקרים חדשים (stub: `fetch` mock עם תשובות המדודות; spy על `L.tileLayer`): 1) `file://` → ראשון `osm-de`, אפס בקשות ל-`tile.openstreetmap.org`. 2) http → ראשון `osm`. 3) חסימת OSM (200+`no-cache`+~6,987B) → הוספת שכבת `osm-de`, `exhausted=["osm"]`, הודעת מעבר. 4) חסימת osm-de → הוספת `opentopomap` עם `maxNativeZoom:17` ו-`subdomains`. 5) שלושתם חסומים → `chainExhausted`, באנר סופי + "נסה שוב", אין החלפות נוספות (אימות מניית קריאות ההחלפה). 6) fetch-כשל → אין מעבר, אין באנר, אין הרשמה ל-`exhausted`. 7) content-length חסר → לא כושל מהגודל לבדו; תשובה תקינה (cc תקין, `image/*`) → השכבה נשארת. 8) "נסה שוב": צעד-אחד לפני מוצה; מחזור-מלא אחרי מוצה; לחיצות מרובות → single-flight. 9) מקור ה-options: `maxNativeZoom` 19/18/17 לכל ספק; `zoomToStreet(id,16)` זום-16 בדיוק. 10) ייחוג: ה-attribution של הספק הפעיל, יחיד בבקר.
+    - **דורש דפדפן אמת (שיפו/ראשי):** probe קורא כותרות חיות (CORS אמת מול ACAO `*`) · חסימה חיה (OSM בלי Referer או DevTools חוסם לפי ספק) · `file://` חיה עם OSM DE · תצוגה חזותית של ייחוג יחיד ונכון · תזמון אמת של `tileerror`→probe.
+12. **סיכונים ומקרי קצה:** probe כפול (באתחול + מהסף של 3 `tileerror`) — single-flight קיים; מעבר בזמן `zoomend`/רינדור — שכבת האריחים בלתי-תלויה ב-`group` (שתי שכבות עצמאיות), `drawLeaflet` לא מושפע; `tileerror` מהשכבה הישנה במהלך ההחלפה — `off()` טרם removal + איפוס מונים; attribution כפול — נבדק חזותית; תמונת חסימה עתידית מעל 8,000 בייט או עם `max-age` — לא תזוהה (גם כיום לא תזוהה); נוסח-הייחוג המדויק של OSM DE **לא נמדד** (wiki 503 — נוסח שמרני); תנאי fair-use של OSM DE ו-rate-limit פעיל — לא נמדדו; כשל רשת אזורי שיוחזר כתשובת-HTTP נלווית-חסימה — לא צפוי (probe הוא בקשה יחידה, לא סריקה שלמה).
+
+### מה אני צריך ממפי
+- כלום חדש: כל המדדים כבר אומתו ע"י החוקר. שארית-פתוחה: לאמת את נוסח הייחוג המדויק של OSM DE ברגע ש-`wiki.openstreetmap.org` חוזר לפעול (שדרוג שדה `attr` בלבד, ללא בקשה נוספת מהאפליקציה).
+
+### מה אני צריך משיפו
+- בסבב האימות (אחרי מימוש המפרט): probe חי (אריח אמת ואריח חסום-חי), ריצת `file://` חיה, חסימת כל הספקים (DevTools) → באנר סופי ידידותי + "נסה שוב" מבצע מחזור; תצוגת RTL של הייחוג.
+
+### תוכנית יישום (ממוספרת, לסוכן הראשי)
+1. `assets/map.js` → להחליף `TILE_URL`/`TILE_ATTR` ב-`TILE_PROVIDERS` (רשומות + `attr` מדויק, סעיף 1); לאמת אפס שימושים נותרים בשני הקבועים.
+2. `assets/map.js` → `tileChain()` + מצב `chain/chainIdx/exhausted/chainExhausted` (סעיף 2); אתחול פעם-אחת.
+3. `assets/map.js` → probe גנרי: URL קבוע `12/2448/1666` לפי ספק; בדיקות המדוד המחייבות + הסרת `cache:"no-store"` + ביטול ה-early-out ל-`file://` (סעיף 3, map.js:301–324, map.js:369–375, map.js:391).
+4. `assets/map.js` → `advanceProvider()`/`switchProvider()` וחיבורן ל-`markTilesBlocked`/`retryTilesProbe`/`onTileError` בזמני פעולת מסלול (סעיף 4).
+5. `assets/map.js` → `initLeaflet`: בניית השכבה דרך `switchProvider(chainIdx)` במקום Direct עם `maxZoom:19`+`TILE_ATTR` (map.js:873–877, סעיפים 5–6).
+6. `assets/map.js` → הודעות באנר לפי סעיף 9 + סמנטיקת "נסה שוב" לפי סעיף 7 + `setNetwork` לפי סעיף 8.
+7. `assets/map.js` → הוספת `JLMMap.tileProviderState()` לבדיקות + הרצת בדיקות סעיף 11 (`node --check` + smoke stub) ורישום דוח בערוץ.
+8. הראשי: לאפשר ביקורת-דפדפן לשיפו (סעיף 11 — "דורש דפדפן אמת") ולעדכן/לסגור את רשומה 050 בלוח לפי סיכום הבדיקות.
+
+**שאלות (עד 3):**
+1. "נסה שוב" אחרי מוצה — מאשר מחזור מלא ידני מהתחלה (עמדתי: כן), או להשבית את הכפתור במצב הסופי?
+2. לאשר הוספת `JLMMap.tileProviderState()` כחשיפה לקורא לבדיקות (הוספה בלתי-שוברת לחוזה).
+3. להחליט: מותר גם מעבר ספק אוטומטי יחיד מיד באתחול (probe נוסף — סה"כ 2 בקשות בפתיחת סשן), או שהמעבר האוטומטי הראשון ימתין לאישור חוויתי?
+
+---
+
+## הראשי → צירי · דוח מימוש והסטות מהמפרט: שרשרת ספקי אריחים (BOARD 050) · דוח · 2026-10-21
+
+**סטטוס:** הושלם ב-`assets/map.js`; `node --check` עבר; smoke 84/84; store 21/21; `tools/verify.js` עובר במלואו (33/33 בריצה האחרונה); בדיקות דפדפן אמת (http, no-referrer, all-blocked, file://) עברו. ממתין לביקורת הבודק (הפעלת הסוכן נכשלה במגבלת קצב — הערכה עצמית של הראשי הועברה ל-`docs/agents/channels/shifu.md`).
+
+### מה מומש
+- `TILE_PROVIDERS` (osm/osm-de/opentopomap) + `tileChain()` לסינון OSM ב-`file://`; מצב `chainIdx/exhausted/chainExhausted` לסשן בלבד.
+- `probeTiles()`: HEAD, CORS, `AbortController` 8s, seq למניעת תשובות ישנות; `!res.ok` / `content-type` לא image / `cache-control: no-cache` / `content-length < 8000` → חסום; כשל רשת/CORS → שקט, בלי החלפה.
+- `advanceProvider`/`switchProvider`: remove-then-add, `maxNativeZoom` 19/18/17, ייחוג דינמי, `tileerror` listener מוסר לפני removal, single-flight (`probeBusy`/`switchBusy`).
+- `retryTilesProbe`: צעד-אחד לפני מוצה; מחזור מלא אחרי מוצה; `setNetwork` משחזר באנר סופי ולא מחזיר אריחים בשקט.
+- `JLMMap.tileProviderState()` (קריאה בלבד) + `banner` באבחון.
+- באנרים בעברית; כפתור "נסה שוב" ב-DOM; `file://` מוסיף הנחיית `node serve.js` רק בהודעה הסופית.
+
+### הסטות מהמפרט (עם ראיות)
+1. **z12 GET → HEAD על אריח ייעודי לכל ספק.** מדידה חיה ב-2026-10-21: אריח z12 `2448/1666` מוגש ממטמון CDN כאמיתי גם בלי Referer (37,565/44,451 B, `max-age`, `x-cache: HIT`), ולכן probe z12 GET מחזיר false negative. HEAD לא מוגש ממטמון ה-CDN: HEAD בלי Referer על אריח z18 שנשמר כ-GET אמיתי מחזיר **6,987 B + no-cache**.
+   - OSM: z18 `156713/106653` — אמיתי 13,317 B, חסום 6,987 B.
+   - OSM DE: z16 `39178/26664` — 29,463 B ללא Referer.
+   - OpenTopoMap: z16 `39178/26664` — 35,756 B ללא Referer.
+   - HEAD נתמך בכל השלושה (OSM: `access-control-allow-methods: GET, HEAD, OPTIONS`); חוסך הורדת תמונה.
+2. **`switchBusy` מתנקה לפני ה-probe האסינכרוני; ה-single-flight נשען על `probeBusy`** (המפרט ביקש switchBusy עד סוף ה-probe). אין מסלול שמאפשר מעבר כפול: `advanceProvider` נקרא רק אחרי `finishProbe`, ו-`switchProvider` בודק גם `probeBusy`.
+3. **`resetTileChainState()`** באתחול/ניסיון Leaflet חוזר — מונע מצב `chainExhausted` ישן לאחר כשל אתחול.
+4. **`bannerKind`**: כשל probe של ספק חלופי מסיר הודעת-מעבר תקועה; באנרי tileerror/network/סופי נשמרים.
+5. **שני חיזוקים מול כלל החוקר ("גודל בלבד לא מספיק") ומול ספק שאינו תומך ב-HEAD:** גודל התשובה הוא אות **משני** בלבד (חסימה רק כשאין `max-age` מפורש — אחרת אריח תקין קטן, כמו z19 מרכזי של OSM ב-5,276 בייט, היה נפל); ותשובת 405/501 (שרת שאינו תומך ב-HEAD) מפנה לבדיקה עם GET במקום להפיל ספק תקין. שניהם מכוסים ב-smoke (84/84).
+
+### בדיקות אמת
+- **http://localhost:8787** (Referer): `provider=osm`, 11 אריחי OSM, ייחוג יחיד, אין שגיאות קונסול; `zoomToStreet`/`zoomToArea` עובדים.
+- **http://localhost:8788** עם `Referrer-Policy: no-referrer` (מדמה file:// מבחינת Referer): OSM HEAD → 6,987+no-cache; מעבר ל-OSM DE; 10 אריחי OSM DE; ייחוג OSM DE יחיד; אין שגיאות.
+- **file:// אמיתי** (Chrome headless, עותק זמני): `provider=osm-de`, שרשרת `[osm-de, opentopomap]`, **אפס בקשות ל-OSM**, 7 אריחי OSM DE, אין באנר.
+- מתג רשת: off → באנר + 0 אריחים; on → 10 אריחים, באנר נעלם.
+- **כל הספקים חסומים (דפדפן אמת, `fetch` מוטפה לתשובת חסימה):** `chainExhausted=true` + `blocked=true`, באנר סופי בעברית עם כפתור "נסה שוב" יחיד, 0 אריחים על המפה, ייחוג ללא ספק; לחיצה על "נסה שוב" מחזורת את השרשרת מהתחלה ומחזירה את הבאנר הסופי — בלי כפתור כפול ובלי שגיאות קונסול.
+- כל הספקים חסומים וכשל-רשת מכוסים ב-smoke (73/73), כולל "נסה שוב" מלא/צעד-אחד.
+
+### פתוח
+- נוסח הייחוג המדויק של OSM DE (wiki 503) — נוסח שמרני; לשדרג כשהאתר חוזר.
+- פריסה (פיצי, בחופש): `Referrer-Policy` **לא** `no-referrer`/`same-origin`; CSP צריך `img-src` **וגם `connect-src`** לשלושת המארחים ול-`data:` (ה-probe הוא fetch HEAD).
+- ביקורת הבודק.

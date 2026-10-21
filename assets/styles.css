@@ -1017,6 +1017,13 @@ summary,
   display: none;
 }
 
+/* סיום ידני — צבע מובחן (כתום) מול "הושלמה" (ירוק). הטקסט שונה גם כן, כך שהמצב לא נעול רק על צבע */
+.area-group__badge--manual {
+  color: var(--accent-text);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
 .area-group__toggle {
   grid-area: toggle;
   font: inherit;
@@ -1489,6 +1496,9 @@ summary,
   z-index: 60;
   display: flex;
   align-items: center;
+  /* הטקסט והכפתורים יכולים לעבור לשתי שורות — הניסוח המדויק של הכפתור ארוך יותר */
+  flex-wrap: wrap;
+  align-content: flex-start;
   gap: 0.6rem;
   padding: 0.65rem 0.9rem;
   background: var(--ink);
@@ -1503,7 +1513,8 @@ summary,
 
 .toast__text {
   margin: 0;
-  flex: 1 1 auto;
+  /* בסיס רחב — כשאין מקום לטקסט ולכפתורים בשורה אחת, הטקסט עובר לשורה מלאה והכפתורים מתאחדים מתחתיו */
+  flex: 1 1 12rem;
   min-width: 0;
   font-size: 0.9rem;
 }
@@ -1520,7 +1531,118 @@ summary,
   border-color: var(--stone-50);
 }
 
-/* ---------- Footer ---------- */
+/* כפתור חיווי קולי פעיל — נראה בבירור שהמצב דלוק */
+.btn.is-active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+/* ---------- חגיגת אבן דרך (ויזואלית בלבד — לא קול) ---------- */
+
+.celebration {
+  position: fixed;
+  inset-block-start: 1.2rem;
+  inset-inline: 0;
+  margin-inline: auto;
+  z-index: 70;
+  width: max-content;
+  max-width: min(92vw, 32rem);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--stone-50);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(-12px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.celebration.is-show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.celebration__emoji {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.celebration__text {
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .celebration {
+    display: none;
+  }
+}
+
+.achievements {
+  border: 1px solid var(--stone-300);
+  border-radius: 10px;
+  padding: 0.5rem 0.75rem;
+  background: var(--stone-50);
+}
+
+.achievements__summary {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievements__count {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.achievements__list {
+  list-style: none;
+  padding: 0.5rem 0 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 0.5rem;
+}
+
+.achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem 0.35rem;
+  border-radius: 8px;
+  background: var(--stone-100);
+  text-align: center;
+}
+
+.achievement.is-locked {
+  opacity: 0.4;
+  filter: grayscale(0.6);
+}
+
+.achievement__icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.achievement__title {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.achievement__desc {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
 
 .footer {
   max-width: 940px;
@@ -1623,6 +1745,11 @@ summary,
   .btn--small {
     min-height: 44px;
     padding: 0.45rem 0.8rem;
+  }
+
+  /* ה-toast במובייל: הטקסט בשורה מלאה, שני הכפתורים ("בטל…" ו"סגירה") בשורה מתחתיו */
+  .toast__text {
+    flex: 1 1 100%;
   }
 
   /* iOS מזום אוטומטית את הדף כשמקלדים בשדה עם גופן קטן מ-16px — לכן כל שדה הקלט 16px ומעלה */
@@ -1751,6 +1878,41 @@ summary,
   textarea {
     font-size: 16px;
   }
+
+  /* יעדי מגע — לפחות 44px גם בטאבלט מגע ברוחב 1024/1280, לא רק מתחת ל-620px */
+  .btn,
+  .btn--small,
+  .segmented__btn,
+  .chip,
+  .banner__close,
+  .result-count,
+  .searchbar__clear,
+  .street__visit,
+  .street__delete {
+    min-height: 44px;
+  }
+
+  /* יעדים צרים — רוחב מובטח גם כן */
+  .banner__close,
+  .result-count,
+  .searchbar__clear,
+  .street__visit,
+  .street__delete,
+  .chip {
+    min-width: 44px;
+  }
+
+  /* שמות שכונות ורחובות — גובה מגע, כמו במובייל */
+  .area-group__name,
+  .street__name {
+    min-height: 2.75rem;
+  }
+
+  .street__maps {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 /* מסך נמוך (מחשב נייד במצב לרוחב) — המפה נמוכה כדי לא לבלוע את המסך */
@@ -1766,3 +1928,9 @@ summary,
     animation-duration: 0.01ms !important;
   }
 }
+.street__rating { display: flex; gap: 0.15rem; align-items: center; }
+.street__star { background: transparent; border: 0; padding: 0.1rem 0.2rem; font-size: 1rem; color: var(--stone-300); cursor: pointer; line-height: 1; min-width: 28px; min-height: 28px; }
+.street__star.is-on { color: #d4a017; }
+.street__moods { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.street__mood { font-size: 0.78rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--stone-50); color: var(--ink); cursor: pointer; min-height: 30px; }
+.street__mood.is-on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-text); }
