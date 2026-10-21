@@ -994,7 +994,7 @@ footer.page a{font-weight:600}
       <p class="section__hint">מה עושה עכשיו, עם מי מדבר, מה אחר כך ומה כבר נסגר.</p>
     </div>
     <div class="agents">
-      ${agents.map(renderAgent).join("\n")}
+      ${agents.map(agent => renderAgent(agent, tasksData)).join("\n")}
     </div>
   </section>
 

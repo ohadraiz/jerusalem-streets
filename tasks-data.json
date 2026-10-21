@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:23:24.896Z",
+  "generatedAt": "2026-10-21T13:29:41.504Z",
   "teams": [
     {
       "key": "UI/UX",
@@ -2913,7 +2913,7 @@
     },
     {
       "id": "GEN-25",
-      "title": "⟪ **פיצי (בחופש):** `Referrer-Policy` (`strict-origin-when-cross-origin`) + CSP (`img-src` **וגם** `connect-src` לשלושת המארחים) + מדיניות מטמון אריחים לפריסה.",
+      "title": "⟪ **פיצי (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.",
       "description": "",
       "team": "Mobile/Deploy",
       "agents": [
@@ -2986,7 +2986,7 @@
     },
     {
       "id": "GEN-27",
-      "title": "**העלאה לרשת (מחכה להפעלה):** HTTPS · `Referrer-Policy: strict-origin-when-cross-origin` ·",
+      "title": "⟪ **פיצי (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.",
       "description": "",
       "team": "Mobile/Deploy",
       "agents": [
@@ -3000,15 +3000,15 @@
         "note": ""
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "⬜",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 189,
-      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)",
+      "line": 205,
+      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
       "agentsEnriched": [
         {
           "name": "פיצי",
@@ -3023,72 +3023,6 @@
           "updated": null
         }
       ]
-    },
-    {
-      "id": "GEN-28",
-      "title": "**המשתמש:** לבחור מארח (Netlify Drop / Cloudflare Pages / GitHub Pages) ודומיין — ללא פקודות, רק העלאת תיקייה.",
-      "description": "",
-      "team": "החלטות",
-      "agents": [
-        "הראשי"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 206,
-      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
-        }
-      ]
-    },
-    {
-      "id": "GEN-29",
-      "title": "**פיצי (בחופש):** הגדרת כותרות HTTP במארח לפי §3 במדריך, בדיקת ההעלאה בדפדפן אמת, והגדרת גרסאות/גלילה חזרה.",
-      "description": "",
-      "team": "החלטות",
-      "agents": [
-        "הראשי"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 207,
-      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
-        }
-      ]
     }
   ],
   "sources": [
@@ -3101,5 +3035,5 @@
       "label": "משימות כלליות פתוחות"
     }
   ],
-  "agentStatusSource": "2026-10-21T13:21:55.419Z"
+  "agentStatusSource": "2026-10-21T13:29:27.914Z"
 }
