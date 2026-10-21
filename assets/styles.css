@@ -1,0 +1,1766 @@
+:root {
+  --stone-50: #fbf8f3;
+  --stone-100: #f4ede2;
+  --stone-200: #e6d9c5;
+  --stone-300: #d3bf9f;
+  --stone-500: #a98a5f;
+  --stone-700: #6f5637;
+  --ink: #241d15;
+  --ink-soft: #5b4c3a;
+  --accent: #b5601f;
+  --accent-text: #8a4512;
+  --accent-soft: #f6e3d3;
+  --good: #2f7d5c;
+  --good-soft: #dff0e7;
+  --danger: #a63a2c;
+  --focus: #6b3a0b;
+  --btn-primary-bg: #8a4512;
+  --btn-primary-fg: #ffffff;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(60, 44, 27, 0.08);
+  --font: "Segoe UI", "Arial Hebrew", "Helvetica Neue", Arial, sans-serif;
+  /* גובה סרגל החיפוש הדביק — מתעדכן מ-JS (ui.js) כדי שיעדי גלילה לא ייכנסו מתחתיו */
+  --sticky-h: 4.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --stone-50: #17140f;
+    --stone-100: #201c16;
+    --stone-200: #2e2820;
+    --stone-300: #453b2d;
+    --stone-500: #b99a6c;
+    --stone-700: #e3d2b6;
+    --ink: #f3ece1;
+    --ink-soft: #b9ab96;
+    --accent: #e08b3f;
+    --accent-text: #e08b3f;
+    --accent-soft: #3a2817;
+    --good: #6fc39a;
+    --good-soft: #1d3329;
+    --danger: #e5776a;
+    --focus: #ffcf9e;
+    --btn-primary-bg: #e08b3f;
+    --btn-primary-fg: #171208;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--stone-50);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-tap-highlight-color: rgba(138, 69, 18, 0.16);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: -999px;
+  top: 0;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: var(--stone-50);
+  z-index: 10;
+  border-radius: 0 0 var(--radius) 0;
+}
+
+.skip-link:focus {
+  inset-inline-start: 0;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  background:
+    radial-gradient(1200px 400px at 80% -20%, rgba(181, 96, 31, 0.22), transparent 60%),
+    linear-gradient(180deg, var(--stone-100), var(--stone-50));
+  border-bottom: 1px solid var(--stone-200);
+}
+
+.hero__inner {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2.25rem;
+}
+
+.hero__eyebrow {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.hero__subtitle {
+  margin: 0.75rem 0 1.75rem;
+  max-width: 46ch;
+  color: var(--ink-soft);
+}
+
+.progress {
+  margin-bottom: 0.5rem;
+}
+
+.progress__track {
+  height: 10px;
+  background: var(--stone-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress__track span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: var(--good);
+  transition: width 320ms ease;
+}
+
+.progress__text {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Layout ---------- */
+
+/* flex ולא grid: כך שהשדה הדביק (sticky) יכול לנוע בכל אורך הדף ולא רק בתוך התא שלו */
+.layout {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ---------- Banner ---------- */
+
+.banner {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--danger);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.banner[hidden] {
+  display: none;
+}
+
+.banner__close {
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  margin-inline-start: auto;
+  background: transparent;
+  border: 1px solid var(--stone-300);
+  border-radius: 8px;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0.35rem 0.6rem;
+  min-height: 2.2rem;
+}
+
+.banner__close:hover {
+  color: var(--ink);
+  border-color: var(--stone-500);
+  background: var(--stone-50);
+}
+
+/* ---------- שדה חיפוש (הפעולה המרכזית) ---------- */
+
+.searchbar {
+  background: var(--stone-100);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1rem 1.15rem;
+  box-shadow: var(--shadow);
+}
+
+.searchbar__control {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.field__input--search {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 3rem;
+  font-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.field__input--search::-webkit-search-cancel-button,
+.field__input--search::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.searchbar__clear {
+  flex: 0 0 auto;
+  align-self: stretch;
+}
+
+.searchbar__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.8rem;
+  margin: 0.55rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.result-count {
+  font: inherit;
+  font-weight: 700;
+  color: var(--accent-text);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.15rem 0.35rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.result-count:hover {
+  color: var(--ink);
+  border-color: var(--stone-300);
+}
+
+.searchbar__hint {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Toolbar ---------- */
+
+.toolbar,
+.stats,
+.map-section,
+.list-section {
+  background: var(--stone-100);
+  border: 1px solid var(--stone-200);
+  border-radius: var(--radius);
+  padding: 1.15rem;
+  box-shadow: var(--shadow);
+}
+
+.toolbar__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: flex-end;
+}
+
+.toolbar__row + .toolbar__row {
+  margin-top: 0.9rem;
+}
+
+.toolbar__row--split {
+  justify-content: space-between;
+}
+
+.toolbar__summary {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.toolbar__summary[hidden] {
+  display: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.field--grow {
+  flex: 1 1 16rem;
+}
+
+.field__label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.field__input {
+  font: inherit;
+  color: inherit;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-300);
+  border-radius: 10px;
+  padding: 0.6rem 0.75rem;
+  min-height: 2.6rem;
+  max-width: 100%;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+#area-filter {
+  width: 100%;
+  min-width: 11rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* מגע מהיר: ללייט וללחיצה כפולה — בלי לחסום גלילה או צביטה */
+button,
+a,
+summary,
+[role="button"] {
+  touch-action: manipulation;
+}
+
+.field__input:focus-visible,
+.btn:focus-visible,
+.segmented__btn:focus-visible,
+.street__name:focus-visible,
+.street__visit:focus-visible,
+.street__maps:focus-visible,
+.street__delete:focus-visible,
+.area-group__name:focus-visible,
+.area-group__toggle:focus-visible,
+.street__field input:focus-visible,
+#street-list:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.segmented {
+  display: inline-flex;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-300);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.segmented__btn {
+  font: inherit;
+  font-size: 0.9rem;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.segmented__btn.is-active {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--stone-50);
+  color: var(--ink);
+  border: 1px solid var(--stone-300);
+  border-radius: 10px;
+  padding: 0.45rem 0.9rem;
+  transition: transform 120ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.btn:hover {
+  border-color: var(--stone-500);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+/* כפתור משני — לא נראה כמו פעולה הרסנית */
+.btn--quiet {
+  background: transparent;
+  color: var(--ink-soft);
+  border-style: dashed;
+}
+
+.btn--quiet:hover {
+  color: var(--ink);
+  border-color: var(--ink-soft);
+  border-style: solid;
+}
+
+.btn--small {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+}
+
+/* מצב לחוץ — למשל "מצב ללא רשת" של המפה */
+.btn[aria-pressed="true"] {
+  background: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+}
+
+.btn--primary {
+  background: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+}
+
+.btn--primary:hover {
+  filter: brightness(0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn--primary:hover {
+    filter: brightness(1.08);
+  }
+}
+
+.btn--danger {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: transparent;
+}
+
+.btn--danger:hover {
+  background: var(--danger);
+  color: var(--stone-50);
+}
+
+/* ---------- Stats ---------- */
+
+.stats__cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+  gap: 0.75rem;
+}
+
+.stat {
+  background: var(--stone-50);
+  border: 1px solid var(--stone-200);
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.stat__value {
+  font-size: 1.65rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.stat__label {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.stat--good .stat__value {
+  color: var(--good);
+}
+
+.stat--accent .stat__value {
+  color: var(--accent-text);
+}
+
+.stats__summary {
+  margin: 0.85rem 0 0;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+/* קיצורי התחלה — שבועיות קליקה שמובילות לסינון */
+.quick {
+  margin-top: 0.9rem;
+}
+
+.quick__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.quick__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.quick__item {
+  list-style: none;
+}
+
+.chip {
+  font: inherit;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  background: var(--stone-50);
+  color: var(--ink);
+  border: 1px solid var(--stone-300);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  min-height: 2.4rem;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--accent);
+  background: var(--stone-100);
+}
+
+.chip__name {
+  font-weight: 600;
+}
+
+.chip__count {
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+/* פירוט מלא לפי שכונה — מקופל כברירת מחדל */
+.breakdown {
+  margin-top: 1.1rem;
+  border-top: 1px solid var(--stone-200);
+  padding-top: 0.85rem;
+}
+
+.breakdown__summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.4rem;
+  border-radius: 8px;
+  list-style-position: inside;
+}
+
+.breakdown__summary::after {
+  content: "▾";
+  margin-inline-start: auto;
+  color: var(--ink-soft);
+  transition: transform 160ms ease;
+}
+
+.breakdown[open] .breakdown__summary::after {
+  transform: rotate(180deg);
+}
+
+.breakdown__count {
+  color: var(--ink-soft);
+  font-weight: 400;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.breakdown__list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.15rem;
+}
+
+.breakdown__item {
+  list-style: none;
+}
+
+.breakdown__row {
+  display: grid;
+  grid-template-columns: 9rem 1fr 3.2rem;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  font: inherit;
+  font-size: 0.88rem;
+  text-align: start;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.3rem 0.35rem;
+  cursor: pointer;
+}
+
+.breakdown__row:hover {
+  background: var(--stone-50);
+}
+
+.breakdown__area {
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breakdown__bar {
+  height: 7px;
+  background: var(--stone-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.breakdown__bar span {
+  display: block;
+  height: 100%;
+  background: var(--good);
+  border-radius: 999px;
+}
+
+.breakdown__value {
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  text-align: start;
+}
+
+/* ---------- Map ---------- */
+
+.map-section__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.map-section__title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.map-hint {
+  margin: -0.4rem 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.map-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--stone-300);
+  background: var(--stone-50);
+}
+
+#map-canvas {
+  height: 420px;
+  width: 100%;
+  background: var(--stone-100);
+}
+
+.map-empty {
+  margin: 0;
+  padding: 2rem 1.25rem;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.map-banner {
+  margin: 0.75rem 0 0;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--stone-300);
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.map-banner__retry {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.75rem;
+  min-height: 2.2rem;
+  background: var(--stone-50);
+  border-color: var(--stone-500);
+}
+
+.map-banner__retry:hover {
+  border-color: var(--accent);
+}
+
+.map-legend {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.map-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.map-legend__swatch {
+  display: inline-block;
+  width: 1.1rem;
+  height: 0.3rem;
+  border-radius: 999px;
+}
+
+.map-legend__swatch--visited {
+  background: #2f7d5c;
+  height: 0.42rem;
+}
+
+/* "עוד לא": צבע מלא (ללא שקיפות) + קו מקווקו — כדי שלא יהיה מבוסס צבע בלבד */
+.map-legend__swatch--pending {
+  background: repeating-linear-gradient(
+    to right,
+    var(--accent) 0 0.3rem,
+    transparent 0.3rem 0.55rem
+  );
+  height: 0.3rem;
+  border-radius: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .map-legend__swatch--visited {
+    background: #6fc39a;
+  }
+}
+
+/* התאמות ל-Leaflet: RTL בפופאפ, צבעי רקע לפי ערכת הנושא */
+.leaflet-container {
+  background: var(--stone-100);
+  font-family: var(--font);
+  font-size: 0.9rem;
+}
+
+.leaflet-container:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+/* אזור הלחיצה המוגדל של קווי הרחובות */
+.leaflet-interactive {
+  cursor: pointer;
+}
+
+.leaflet-popup-content {
+  direction: rtl;
+  margin: 0.7rem 0.9rem;
+  line-height: 1.45;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-tooltip {
+  border-radius: 10px;
+  color: var(--ink);
+}
+
+.map-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.map-popup__title {
+  font-size: 1rem;
+}
+
+.map-popup__area {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+}
+
+.map-popup__state {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.map-popup__state.is-visited {
+  color: #2f7d5c;
+  font-weight: 600;
+}
+
+.leaflet-control-attribution {
+  direction: ltr;
+  font-size: 0.65rem;
+}
+
+/* יעד מגע 44px גם לבקרי הזום של Leaflet (ברירת המחדל 30px) */
+.leaflet-control-zoom a,
+.leaflet-touch .leaflet-control-zoom a {
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 1.5rem;
+}
+
+/* בקרי הזום במצב המפה החלופית (מצוירים ב-JS) — בפינה, כדי שלא יכסו רחובות */
+#map-canvas > div[role="group"] {
+  position: absolute;
+  inset-block-end: 0.5rem;
+  inset-inline-start: 0.5rem;
+  display: flex;
+  gap: 0.3rem;
+  z-index: 2;
+}
+
+#map-canvas > div[role="group"] .map-fallback__btn {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+}
+
+/* ---------- Street list ---------- */
+
+.list-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.6rem 1.1rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--stone-200);
+}
+
+.view-toggle {
+  flex: 0 0 auto;
+}
+
+.view-toggle .segmented__btn {
+  min-width: 7.5rem;
+}
+
+.field--sort {
+  flex: 0 0 auto;
+}
+
+.field--sort[hidden] {
+  display: none;
+}
+
+.field--sort .field__input {
+  min-width: 11.5rem;
+}
+
+.list-hint {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- אקורדיון שכונות ---------- */
+
+.area-group {
+  list-style: none;
+  border: 1px solid var(--stone-200);
+  border-radius: 12px;
+  background: var(--stone-50);
+  overflow: hidden;
+}
+
+.area-group.is-done {
+  border-color: var(--good);
+}
+
+.area-group__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto 6rem auto auto;
+  grid-template-areas: "name count pct bar badge toggle";
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  padding: 0.45rem 0.6rem;
+}
+
+.area-group__name {
+  grid-area: name;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.35rem 0.25rem;
+  margin: 0;
+  text-align: start;
+  cursor: pointer;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.area-group__name:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.area-group__count {
+  grid-area: count;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.area-group__pct {
+  grid-area: pct;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  white-space: nowrap;
+  min-width: 3.4rem;
+  text-align: end;
+}
+
+.area-group__bar {
+  grid-area: bar;
+  height: 7px;
+  background: var(--stone-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.area-group__bar > span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--good);
+  border-radius: 999px;
+  transition: width 320ms ease;
+}
+
+.area-group__badge {
+  grid-area: badge;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--good);
+  border: 1px solid var(--good);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  white-space: nowrap;
+}
+
+.area-group__badge[hidden] {
+  display: none;
+}
+
+.area-group__toggle {
+  grid-area: toggle;
+  font: inherit;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--stone-300);
+  background: var(--stone-50);
+  color: var(--ink);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.area-group__toggle:hover {
+  border-color: var(--accent);
+}
+
+.area-group__toggle[aria-expanded="true"] {
+  background: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+}
+
+.area-group__toggle[aria-expanded="true"] > span {
+  transform: rotate(180deg);
+}
+
+.area-group__toggle > span {
+  transition: transform 160ms ease;
+}
+
+.area-panel {
+  border-top: 1px solid var(--stone-200);
+  padding: 0.75rem 0.7rem 0.85rem;
+  background: var(--stone-100);
+}
+
+.area-panel[hidden] {
+  display: none;
+}
+
+.area-panel__empty {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* כרטיס השכונה — התקדמות ייעודית ופעולות גורפות */
+.area-card {
+  background: var(--stone-50);
+  border: 1px solid var(--stone-200);
+  border-radius: 10px;
+  padding: 0.7rem 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.area-card__title {
+  margin: 0 0 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.area-card__bar {
+  display: block;
+  height: 8px;
+  background: var(--stone-200);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.area-card__bar > span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: var(--good);
+  border-radius: 999px;
+  transition: width 320ms ease;
+}
+
+.area-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.area-card__actions .btn[hidden] {
+  display: none;
+}
+
+.street-list__group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.list-section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.list-section__clear {
+  margin-inline-start: auto;
+}
+
+.list-section__title {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.list-section__count {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.empty {
+  margin: 0 0 1rem;
+  padding: 1.25rem;
+  text-align: center;
+  color: var(--ink-soft);
+  background: var(--stone-50);
+  border: 1px dashed var(--stone-300);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.empty[hidden] {
+  display: none;
+}
+
+.empty__text {
+  color: var(--ink);
+}
+
+.list-loading {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.list-loading[hidden] {
+  display: none;
+}
+
+.street-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.street-more {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.2rem;
+  list-style: none;
+}
+
+.street-more__btn {
+  width: 100%;
+  border: 1px dashed var(--stone-300);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  min-height: 2.75rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.street-more__btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.street-more__btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+  min-height: 2.75rem;
+  padding: 0.5rem 0.875rem;
+  border: 1px solid var(--stone-300);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+}
+
+.pagination__btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.pagination__btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.pagination__btn--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination__info {
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.street {
+  display: block;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-200);
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.street.is-visited {
+  border-color: var(--good);
+  background: var(--good-soft);
+}
+
+@media (prefers-color-scheme: dark) {
+  .street.is-visited {
+    background: var(--good-soft);
+  }
+}
+
+/* הדגשת הרחוב שאליו קפצנו מהרשימה */
+.street.is-highlighted {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.street__body {
+  min-width: 0;
+}
+
+.street__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.7rem;
+}
+
+/* שם הרחוב — כפתור ניווט: קופץ למפה ומדגיש את השורה */
+.street__name {
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.2rem 0;
+  margin: 0;
+  text-align: start;
+  cursor: pointer;
+}
+
+.street__name:hover {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.street__area {
+  font-size: 0.76rem;
+  color: var(--ink-soft);
+  background: var(--stone-100);
+  border: 1px solid var(--stone-200);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  white-space: nowrap;
+}
+
+/* סימון ביקור ישירות מהרשימה — פעולה נפרדת מניווט בשם הרחוב */
+.street__visit {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  min-height: 2.25rem;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--stone-300);
+  border-radius: 999px;
+  background: var(--stone-50);
+  color: var(--ink);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.street__visit:hover {
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.street__visit.is-visited {
+  background: var(--good);
+  border-color: var(--good);
+  color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .street__visit.is-visited {
+    color: var(--stone-50);
+  }
+}
+
+.street__maps {
+  font-size: 0.78rem;
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  margin-inline-start: auto;
+}
+
+.street__maps:hover {
+  color: var(--ink);
+}
+
+/* מחיקה ידנית מהרשימה — מורידה את הרחוב גם מהמפה, עם ביטול מיידי */
+.street__delete {
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--danger);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.street__delete:hover {
+  border-color: var(--danger);
+  background: var(--stone-50);
+}
+
+.street__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.street__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.street__field--grow {
+  flex: 1 1 12rem;
+}
+
+.street__field input {
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--ink);
+  background: var(--stone-50);
+  border: 1px solid var(--stone-300);
+  border-radius: 8px;
+  padding: 0.35rem 0.5rem;
+  min-height: 2.1rem;
+}
+
+/* ---------- Add form ---------- */
+
+.add-wrap {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed var(--stone-300);
+}
+
+.add-form__title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.4rem;
+  list-style-position: inside;
+}
+
+.add-form__title::after {
+  content: "▾";
+  margin-inline-start: auto;
+  color: var(--ink-soft);
+  transition: transform 160ms ease;
+}
+
+.add-wrap[open] .add-form__title::after {
+  transform: rotate(180deg);
+}
+
+.add-form {
+  margin-top: 0.9rem;
+}
+
+.add-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: flex-end;
+}
+
+/* ---------- Toast (ביטול פעולה) ---------- */
+
+.toast {
+  position: fixed;
+  inset-block-end: calc(1rem + env(safe-area-inset-bottom, 0px));
+  inset-inline: 1rem;
+  margin-inline: auto;
+  max-width: 34rem;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.65rem 0.9rem;
+  background: var(--ink);
+  color: var(--stone-50);
+  border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.toast[hidden] {
+  display: none;
+}
+
+.toast__text {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.9rem;
+}
+
+.toast .btn {
+  background: transparent;
+  color: var(--stone-50);
+  border-color: rgba(255, 255, 255, 0.45);
+  flex: 0 0 auto;
+}
+
+.toast .btn:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--stone-50);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 1.25rem calc(3rem + env(safe-area-inset-bottom, 0px));
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 620px) {
+  .hero__inner {
+    padding: 2.25rem 1rem 1.75rem;
+  }
+
+  .layout {
+    padding: 1.25rem 1rem 3rem;
+    gap: 1.25rem;
+  }
+
+  /* החיפוש נמצא מתחת למפה, ולכן נדביק בלי להסתיר אותו */
+  .searchbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 30;
+    margin-inline: -1rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 0;
+    border-inline: 0;
+    border-top: 0;
+    box-shadow: 0 6px 16px rgba(60, 44, 27, 0.14);
+  }
+
+  /* התווית נשארת לקוראי מסך אך מוסתרת מעיניים — הסרגל צריך להיות קצר כדי לא לכסות */
+  .searchbar .field__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .searchbar__control {
+    gap: 0.4rem;
+  }
+
+  .field__input--search {
+    min-height: 44px;
+  }
+
+  .searchbar__meta {
+    margin-top: 0.2rem;
+    font-size: 0.78rem;
+    gap: 0.3rem 0.6rem;
+  }
+
+  /* הרמז הכפול ("2,239 רחובות · 101 שכונות") כבר מופיע בכרטיס הסטטיסטיקה */
+  .searchbar__hint {
+    display: none;
+  }
+
+  .toolbar__row--split {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .segmented {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .segmented__btn {
+    flex: 1 1 auto;
+  }
+
+  .view-toggle {
+    width: 100%;
+  }
+
+  .view-toggle .segmented__btn {
+    min-width: 0;
+  }
+
+  /* יעדי מגע — לפחות 44px */
+  .btn,
+  .segmented__btn,
+  .chip,
+  .banner__close,
+  .result-count,
+  .searchbar__clear {
+    min-height: 44px;
+  }
+
+  .btn--small {
+    min-height: 44px;
+    padding: 0.45rem 0.8rem;
+  }
+
+  /* iOS מזום אוטומטית את הדף כשמקלדים בשדה עם גופן קטן מ-16px — לכן כל שדה הקלט 16px ומעלה */
+  input,
+  select,
+  textarea,
+  .field__input,
+  .street__field input {
+    font-size: 16px;
+  }
+
+  .breakdown__row {
+    grid-template-columns: 6.5rem 1fr 3rem;
+    padding: 0.4rem 0.35rem;
+    min-height: 44px;
+  }
+
+  .breakdown__summary,
+  .add-form__title {
+    min-height: 44px;
+  }
+
+  /* המפה: 30% מגובה המסך (לכל היותר 280px) — נוחה לגלול סביבה ולא בולעת את המסך */
+  #map-canvas {
+    height: clamp(200px, 30vh, 280px);
+  }
+
+  /* כותרת שכונה בשתי שורות — בלי גלילה אופקית ב-360px */
+  .area-group__head {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-areas:
+      "name  count badge"
+      "pct   bar   toggle";
+    gap: 0.3rem 0.6rem;
+    padding: 0.5rem 0.55rem;
+  }
+
+  /* הפס לא יכול לקפוץ לרוחב 0 — העמודה שלו צרה מדי */
+  .area-group__bar {
+    min-width: 3.5rem;
+  }
+
+  /* שם השכונה עשוי להיות ארוך — עד שתי שורות במקום להיחתך */
+  .area-group__name {
+    font-size: 0.98rem;
+    min-height: 2.75rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
+    line-height: 1.25;
+  }
+
+  .area-group__toggle {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* כפתורי הפעולות הגורפות — כל אחד ברוחב מלא */
+  .area-card__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .area-card__actions .btn {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .street__name {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .street__visit {
+    min-height: 44px;
+  }
+
+  .street__maps {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .street__delete {
+    min-height: 44px;
+    padding-inline: 0.75rem;
+  }
+
+  /* תאריך והערה — אחד מתחת לשני, ברוחב מלא */
+  .street__details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .street__field,
+  .street__field--grow {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .street__field input {
+    min-height: 44px;
+  }
+
+  /* יעדי גלילה לא נכנסים מתחת לסרגל הדביק (הגובה נמדד ב-JS ונכנס ל--sticky-h).
+     המפה לא ברשימה: כשהמפה על המסך הסרגל נעלם, ואין צורך במרווק נוסף */
+  .list-section,
+  .list-section__head,
+  #list-title {
+    scroll-margin-block-start: calc(var(--sticky-h, 4.5rem) + 0.5rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .actions .btn {
+    flex: 1 1 auto;
+  }
+}
+
+/* מכשיר מגע (טאבלט או טלפון ברוחב) — iOS מזום אוטומטית את הדף בשדה עם גופן קטן מ-16px */
+@media (hover: none) and (pointer: coarse) {
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* מסך נמוך (מחשב נייד במצב לרוחב) — המפה נמוכה כדי לא לבלוע את המסך */
+@media (max-height: 520px) and (orientation: landscape) {
+  #map-canvas {
+    height: 30vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

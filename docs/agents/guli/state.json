@@ -1,0 +1,622 @@
+{
+  "meta": {
+    "room": "חדר הסוכנים — יומן הרחובות ירושלים",
+    "round": "052",
+    "updatedAt": "2026-10-21T09:48:52.295Z",
+    "heartbeat": "2026-10-21T09:48:52.295Z",
+    "nowLine": "בחדר עכשיו: קיפי (סוכן חדש) הוקם למעקב אחר משימות מוקפאות; 3 אזורים תוקנו לפוליגון רשמי; סריקה נעצרה סופית; 2,424 רחובות, 95 שכונות, verify 32/32.",
+    "truthNote": "כל שורה בדף מגיעה מערוץ סוכן, מ-BOARD או מ-TASKS. מה שלא דווח מסומן 'טרם דווח'. הדף לא מפעיל סוכנים ולא מעריך קוד.",
+    "projectLine": "2,424 רחובות · 95 שכונות · 25,233+ נקודות · verify 32/32",
+    "projectSource": "docs/agents/BOARD.md §052"
+  },
+  "agents": [
+    {
+      "id": "main",
+      "name": "הראשי",
+      "initial": "ר",
+      "role": "מרכז העבודה: כותב BOARD, מכריע, מיישם נתונים ובדיקות",
+      "status": "active",
+      "statusLabel": "פעיל",
+      "reportedAt": "2026-10-21T09:48:52.295Z",
+      "reportedAtNote": "לפי זמן העדכון של BOARD.md",
+      "currentTask": "קיפי מונה למעקב הקפאות; 3 אזורים תוקנו; סריקה נעצרה; 2,424/95, verify 32/32.",
+      "talkingWith": {
+        "with": "קיפי, שיפו, ציבי, מפי, חיקי",
+        "topic": "הקפאות, ביקורות, אימות",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "סגירת ביקורת שיפו 036–037",
+        "אימות ציבי 390/430",
+        "עבודה עם קיפי על רשימת הקפאות"
+      ],
+      "completed": [
+        {
+          "task": "סבב 037 — 16 שבילים ומדרגות מיושבים",
+          "date": "2026-10-21",
+          "conclusion": "16 רשומות עם גיאומטריה מ-OSM נכנסו לנתונים; 2,154 רחובות, 94 שכונות ו-25,233 נקודות, verify 31/31."
+        },
+        {
+          "task": "מחיקה ידנית לכל רחוב + הסרת עיסוויה",
+          "date": "2026-10-21",
+          "conclusion": "state.deleted נשמר, הרחוב יורד מהרשימה, מהמפה ומהספירה, והביקור נשמר ל-undo; 2,138 רחובות ו-94 שכונות, verify 31/31."
+        },
+        {
+          "task": "סבב 034 — הסרת כבישים, מנהרות ושכונות חד-רחוב",
+          "date": "2026-10-21",
+          "conclusion": "ההסרה נעשתה מהנתונים הפעילים ולא בהסתרה; 118 רשומות נשמרו בארכיון הפיך עם paths וגיבוי לפני הסבב."
+        }
+      ],
+      "conclusion": "2,424 רחובות, 95 שכונות, verify 32/32. קיפי פעיל.",
+      "source": {
+        "label": "BOARD §036 · TASKS §1",
+        "href": "docs/agents/BOARD.md"
+      }
+    },
+    {
+      "id": "chiki",
+      "name": "חיקי",
+      "initial": "ח",
+      "role": "חוקר האינטרנט והמקורות: מאתר, מאמת בפועל ומעביר משימות",
+      "status": "waiting",
+      "statusLabel": "מוקפא",
+      "reportedAt": "2026-10-21T09:48:52.295Z",
+      "reportedAtNote": "לפי זמן העדכון של הערוץ",
+      "currentTask": "מוקפא — סריקה נעצרה סופית; ממתין להפעלה עתידית.",
+      "talkingWith": {
+        "with": "קיפי, ראשי",
+        "topic": "רישום הקפאות",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "המתנה להפעלה עתידית"
+      ],
+      "completed": [
+        {
+          "task": "מחקר inhabited — שבילים ומדרגות",
+          "date": "2026-10-21",
+          "conclusion": "מדרגות הבציר, שוני הלכות, בוני החומה והביכורים אומתו מול אינדקס הרחובות והכתובות העירוני; מדרגות המסיק נשארה HOLD בלי כתובות."
+        },
+        {
+          "task": "מדיניות אריחי OSM ומקורות רשמיים",
+          "date": "2026-10-21",
+          "conclusion": "החסימה המדודה מגיעה כ-HTTP 200 עם PNG תקין, ולכן tileerror לא יורה; נדרש probe על תוכן התשובה, לא על קוד הסטטוס."
+        }
+      ],
+      "conclusion": "סריקה נעצרה סופית; מוקפא אצל קיפי.",
+      "source": {
+        "label": "ערוץ chiki · TASKS §1",
+        "href": "docs/agents/channels/chiki.md"
+      }
+    },
+    {
+      "id": "mappy",
+      "name": "מפי",
+      "initial": "מ",
+      "role": "אחראי הנתונים והמפות: גיאומטריה, שכונות ואימות מספרי",
+      "status": "waiting",
+      "statusLabel": "מוקפא",
+      "reportedAt": "2026-10-21T09:48:52.295Z",
+      "reportedAtNote": "מיזוג הושלם",
+      "currentTask": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
+      "talkingWith": {
+        "with": "ראשי, קיפי",
+        "topic": "רישום הקפאות אצל קיפי",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "המתנה להחלטה עתידית"
+      ],
+      "completed": [
+        {
+          "task": "אודיט 034 — אחרי הסרת צירים",
+          "date": "2026-10-21",
+          "conclusion": "2,239 רחובות, 101 שכונות, 0 שכונות חד-רחוב ו-17 רשומות ארכיון תקינות; verify 29/29 בזמן האודיט."
+        }
+      ],
+      "conclusion": "סריקה נעצרה סופית; 9 HOLD + 13 remaining מועמדים מוקפאים אצל קיפי.",
+      "source": {
+        "label": "ערוץ mappy",
+        "href": "docs/agents/channels/mappy.md"
+      }
+    },
+    {
+      "id": "shifu",
+      "name": "שיפו",
+      "initial": "ש",
+      "role": "סוקר קוד חוזר: באגים, נגישות, RTL, ביצועים ופשטות",
+      "status": "active",
+      "statusLabel": "פעיל",
+      "reportedAt": "2026-10-21T09:30:37.109Z",
+      "reportedAtNote": "ביקורת 036–037 פתוחה",
+      "currentTask": "ביקורת 036–037: נתונים 2,458/95, גלילת מפה, מובייל 390/430, מחיקה ידנית, סיום ידני.",
+      "talkingWith": {
+        "with": "ראשי, צירי, ציבי",
+        "topic": "ביקורות קוד אחרי סריקה סופית",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "אימות גלילת מפה בלחיצת שכונה (360/390/430/1280)",
+        "ביקורת סיום ידני + מחיקה ידנית",
+        "ביקורת מיזוג נתונים סופי",
+        "ביקורת UI מובייל"
+      ],
+      "completed": [
+        {
+          "task": "ביקורת 035 — מחיקה ידנית של רחוב",
+          "date": "2026-10-21",
+          "conclusion": "חמשת תרחישי המחיקה, undo והייבוא תקינים באחסון; חוסם אחד: guard ב-map.js:1393 מחזיר מוקדם כשהרשימה מתרוקנת ולא מנקה שכבות."
+        },
+        {
+          "task": "ביקורת 034",
+          "date": "2026-10-21",
+          "conclusion": "אין חוסמים; שני תיקוני חובה הומלצו — 'כרגש' ולכידת פוקוס בסרגל המוסתר — והראשי יישם אותם."
+        },
+        {
+          "task": "ביקורת 031",
+          "date": "2026-10-21",
+          "conclusion": "כל סעיפי החוזה מיושמים ואין חוסמים; נותרו שני ממצאי 'חשוב' ואימות hashes עצמאי."
+        }
+      ],
+      "conclusion": "ממתין לביקורת 036–037.",
+      "source": {
+        "label": "ערוץ shifu · TASKS §1",
+        "href": "docs/agents/channels/shifu.md"
+      }
+    },
+    {
+      "id": "tsibi",
+      "name": "ציבי",
+      "initial": "צ",
+      "role": "אחראי UI/UX: שימושיות, נגישות, מובייל ו-RTL",
+      "status": "active",
+      "statusLabel": "פעיל",
+      "reportedAt": "2026-10-21T09:30:37.109Z",
+      "reportedAtNote": "אימות 390/430 + גלילת מפה פתוח",
+      "currentTask": "אימות 390/430, גלילת מפה בלחיצת שכונה, 'סיום ידני', נגישות מובייל.",
+      "talkingWith": {
+        "with": "ראשי, שיפו",
+        "topic": "UX/UI אחרי סריקה סופית",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "אימות גלילת מפה ב-360/390/430/1280",
+        "אימות 390/430: רשימה שטוחה, חיפוש, סימון, אקורדיון",
+        "נגישות: 44px יעדים, 16px קלט, AA contrast"
+      ],
+      "completed": [
+        {
+          "task": "סבב השלמה לפי שכונות",
+          "date": "2026-10-21",
+          "conclusion": "בכניסה 20 קבוצות סגורות ו-0 שורות רחוב; גורפת נשמרת בפעולה אחת ו-undo מחזיר תאריך והערה; 360px בלי גלילה אופקית, verify 25/25."
+        }
+      ],
+      "conclusion": "גלילת מפה וסיום ידני נוספו; אימות 390/430 פתוח.",
+      "source": {
+        "label": "ערוץ tsibi",
+        "href": "docs/agents/channels/tsibi.md"
+      }
+    },
+    {
+      "id": "tsiri",
+      "name": "צירי",
+      "initial": "צ",
+      "role": "אחראי המפה האינטרקטיבית: Leaflet, גיבוי קנבס וניווט",
+      "status": "waiting",
+      "statusLabel": "ממתין לדיווח",
+      "reportedAt": "2026-10-21T07:48:05+03:00",
+      "reportedAtNote": "לפי זמן העדכון של הערוץ",
+      "currentTask": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+      "talkingWith": {
+        "with": "הראשי, שיפו ומפי",
+        "topic": "ניווט שכונות, שילוב visited-change ושאלת 'אחר'",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "מעבר ל-URL אריחים יחיד במקום {s} לפי חיקי",
+        "בדיקת שילוב zoomToArea עם סימונים",
+        "בדיקת מגע אמיתית ל-pinch ולגרירה"
+      ],
+      "completed": [
+        {
+          "task": "ניווט לפי שכונות (029–030)",
+          "date": "2026-10-21",
+          "conclusion": "zoomToArea מחזיר false ולא מזיז מפה כשאין נתונים; smoke 119/119 ו-0 סימונים מניווט."
+        },
+        {
+          "task": "גלגלת זום ומובייל",
+          "date": "2026-10-21",
+          "conclusion": "גלגלת מעל המפה משנה זום ולא גוללת עמוד, גם במסלול הגיבוי; 31/31 smoke ובדיקת דפדפן אמיתית."
+        }
+      ],
+      "conclusion": "המפה מוכנה בשני המסלולים; מגע אמיתי ו-035 טרם נבדקו.",
+      "source": {
+        "label": "ערוץ tsiri",
+        "href": "docs/agents/channels/tsiri.md"
+      }
+    },
+    {
+      "id": "guli",
+      "name": "גולי",
+      "initial": "ג",
+      "role": "כרוז החדר: מקשיב, מתעד ומספר מה קורה",
+      "status": "active",
+      "statusLabel": "פעיל",
+      "reportedAt": "2026-10-21T08:48:01.908Z",
+      "reportedAtNote": "הדיווח שלי, לאחר העדכון",
+      "currentTask": "עדכן את החדר: כל הסוכנים פעילים, אימות 93 בעיצומו, רישיון GIS מוקפא.",
+      "talkingWith": {
+        "with": "כל הסוכנים (קריאה בלבד) והראשי",
+        "topic": "עדכון החדר אחרי 042",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "עדכון אחרי אימות 93 ומיזוג",
+        "מעקב אחרי verify וגיבוי",
+        "הרצת --watch ברקע"
+      ],
+      "completed": [
+        {
+          "task": "תשתית חדר הסוכנים",
+          "date": "2026-10-21",
+          "conclusion": "state, heartbeat, generator ו-guli.html נבנו; הדף נטען ב-360/390/430/1280 בלי גלילה אופקית ובלי תלות חיצונית."
+        }
+      ],
+      "conclusion": "החדר מעודכן למצב 042; כל הסוכנים פעילים, פוקוס על אימות 93.",
+      "source": {
+        "label": "ערוץ guli",
+        "href": "docs/agents/channels/guli.md"
+      }
+    },
+    {
+      "id": "kipi",
+      "name": "קיפי",
+      "initial": "ק",
+      "role": "אחראי מעקב הקפאות: רושם כל תהליך מוקפא, שומר הקשר, מאפשר חזרה עתידית",
+      "status": "active",
+      "statusLabel": "פעיל",
+      "reportedAt": "2026-10-21T09:48:52.295Z",
+      "reportedAtNote": "מונה כעת",
+      "currentTask": "בונה רשימת הקפאות מלאה מההחלטות האחרונות",
+      "talkingWith": {
+        "with": "ראשי",
+        "topic": "הקמת רשימת הקפאות",
+        "state": "פתוח"
+      },
+      "nextTasks": [
+        "רישום 9 HOLD (ממתינים לרישיון GIS)",
+        "רישום Tile Probe (מוקפא - החלטה 3)",
+        "רישום שכבת רשות מוניציפלית (מוקפא)",
+        "רישום גבולות שכונה (מוקפא - החלטה 4)",
+        "רישום סריקה (נעצרה סופית - החלטה 5)",
+        "רישום בדיקת מכשיר אמיתי (מוקפא)"
+      ],
+      "completed": [
+        {
+          "task": "מינוי סוכן הקפאות",
+          "date": "2026-10-21",
+          "conclusion": "קיפי מונה רשמית; מתחיל ברישום הקפאות."
+        }
+      ],
+      "conclusion": "קיפי פעיל; מתחיל ברישום כל ההקפאות.",
+      "source": {
+        "label": "הנחיית משתמש · BOARD §052",
+        "href": "docs/agents/BOARD.md"
+      }
+    }
+  ],
+  "timeline": [
+    {
+      "time": "2026-10-21T09:48:52.295Z",
+      "text": "החלטות משתמש: (1) 9 HOLD + סריקה + רישיון GIS + Tile Probe + גבולות → מוקפאים אצל קיפי (סוכן חדש). (2) 3 רחובות עודכנו לפוליגון רשמי: מיוחס→מקור ברוך, ארזי הבירה→מאה שערים (מוזג משמעון הצדיק), פרחי גילה→גילה. (3) Tile Probe מוקפא. (4) גבולות bbox נשארים. (5) סריקה נעצרה סופית. נוצר קיפי למעקב הקפאות. סה\"כ 2,424 רחובות, 95 שכונות, verify 32/32.",
+      "source": "הנחיית משתמש · BOARD §052"
+    },
+    {
+      "time": "2026-10-21T09:36:07.189Z",
+      "text": "הוסרו 33 שמות אנגלית וגשרים/מנהרות (Bab-Hutta Road, Ethiopian Monastery, King David Hotel, Military Road, Mamilla Avenue, שבעה ארצ'ז, גשר הולילנד, גשר החיים, מנהרת הכותל, מנהרת ידין, מנהרת כרם, מנהרת סיירת דוכיפת, ועוד) — סה\"כ 2,425 רחובות, 95 שכונות, verify 32/32.",
+      "source": "הנחיית משתמש · BOARD §051"
+    },
+    {
+      "time": "2026-10-21T09:30:37.109Z",
+      "text": "סריקה אוטומטית הסתיימה סופית: 6 רחובות אחרונים נוספו (הרובע המוסלמי 5, פסגת זאב 1) — סה\"כ 2,458 רחובות, 95 שכונות, verify 32/32. לא נותרו מועמדים ראויים.",
+      "source": "סריקה אוטומטית §049"
+    },
+    {
+      "time": "2026-10-21T09:28:18.948Z",
+      "text": "סריקה אוטומטית הסתיימה: 18 רחובות אחרונים נוספו (הרובע המוסלמי 13, גילה 1, הרובע הנוצרי 2, פסגת זאב 2) — סה\"כ 2,452 רחובות, 95 שכונות, verify 32/32. סריקה מוצתה.",
+      "source": "סריקה אוטומטית §048"
+    },
+    {
+      "time": "2026-10-21T09:26:33.225Z",
+      "text": "הוסר ראס אל-עמוד (12 רחובות). נוספה גלילה אוטומטית למפה כשלוחצים על שם שכונה (scrollIntoView smooth). סה\"כ 2,434 רחובות, 95 שכונות, verify 32/32.",
+      "source": "BOARD §047"
+    },
+    {
+      "time": "2026-10-21T09:23:51.560Z",
+      "text": "סריקה אוטומטית: 55 רחובות מגורים נוספים נוספו (מחנה ישראל, גילה, נחלאות, נוה יעקב, קוממיות, חומת שמואל, קרית שמואל, פת, רמת שלמה, בית וגן, עין כרם, ימין משה, ממילא, גבעת הורדים, קטמונים, קרית היובל, פסגת זאב, הרובע המוסלמי, רמת שלמה, בית וגן, עין כרם) — סה\"כ 2,446 רחובות, 96 שכונות, verify 32/32.",
+      "source": "סריקה אוטומטית §046"
+    },
+    {
+      "time": "2026-10-21T09:17:02.640Z",
+      "text": "הראשי הוסיף 142 רחובות מגורים נוספים (גילה, פסגת זאב, רמות, רחביה, מרכז העיר, בית הכרם, הרובעים, ועוד) — סה\"כ 2,391 רחובות, 98 שכונות, verify 32/32. גיבוי נוצר.",
+      "source": "BOARD §045"
+    },
+    {
+      "time": "2026-10-21T09:12:44.049Z",
+      "text": "הראשי הוסיף 4 רחובות שביקש המשתמש: ר' יעקב בי רב, משה ששון, הרב אברהם וילהלם, אהל משה — כולם עם גיאומטריית OSM ומופו לאזורים קיימים. סה\"כ 2,249 רחובות, 93 שכונות.",
+      "source": "BOARD §044"
+    },
+    {
+      "time": "2026-10-21T09:04:39.209Z",
+      "text": "הראשי מיזג 91 שבילים מיושבים חדשים (מתוך 93 של חיקי; 2 כבר היו באפליקציה). סה\"כ 2,245 רחובות, 94 שכונות, verify 32/32. גיבוי נוצר.",
+      "source": "BOARD §043"
+    },
+    {
+      "time": "2026-10-21T12:00:00+03:00",
+      "text": "כל 91 השבילים עם גיאומטריית OSM (ODbL); 2 כבר היו באפליקציה (לויד גורג, שץ); דו נואס נוסף כ-point-only עם גיאומטריה שנשלפה מ-OSM API.",
+      "source": "ערוץ mappy (מיזוג)"
+    },
+    {
+      "time": "2026-10-21T11:50:00+03:00",
+      "text": "כלל רישיון: כל מקור ללא רישיון מאומת מוקפא אוטומטית; רק OSM ODbL תקף.",
+      "source": "הנחיית משתמש · TASKS §4"
+    },
+    {
+      "time": "2026-10-21T08:48:01.908Z",
+      "text": "המשתמש הפעיל את כל הסוכנים (שיפו, ציבי, צירי, חיקי, מפי, גולי). רישיון GIS מוקפא. הראשי מוביל אימות 93 ומיזוג.",
+      "source": "BOARD §042"
+    },
+    {
+      "time": "2026-10-21T11:50:00+03:00",
+      "text": "כלל רישיון: כל מקור ללא רישיון מאומת מוקפא אוטומטית; רק OSM ODbL תקף.",
+      "source": "הנחיית משתמש · TASKS §4"
+    },
+    {
+      "time": "2026-10-21T11:35:00+03:00",
+      "text": "חסם רישיון שכבת רשות סומן 'נפתר' (מוקפא לפי הוראת המשתמש).",
+      "source": "BOARD §040 · TASKS §4"
+    },
+    {
+      "time": "2026-10-21T11:25:00+03:00",
+      "text": "מפי התחיל לאמת את 93 המועמדים של חיקי ולחפש שבילים מיושבים נוספים.",
+      "source": "ערוץ mappy (הפעלה מחדש)"
+    },
+    {
+      "time": "2026-10-21T08:26:49.431Z",
+      "text": "הראשי הקפיא את שיפו ואת ציבי לבקשת המשתמש, והפעיל את מפי לאיתור ואימות שבילים מיושבים עם בתים. החלטות צירים: רכבת נשארת, דרך אריאל שרון ודרך בית חורון נשארות, דרך מעלה אדומים מוסרת. שכבת רשות מוקפאת.",
+      "source": "BOARD §040"
+    },
+    {
+      "time": "2026-10-21T11:35:00+03:00",
+      "text": "חסם רישיון שכבת רשות סומן 'נפתר' (מוקפא לפי הוראת המשתמש).",
+      "source": "BOARD §040 · TASKS §4"
+    },
+    {
+      "time": "2026-10-21T11:25:00+03:00",
+      "text": "מפי התחיל לאמת את 93 המועמדים של חיקי ולחפש שבילים מיושבים נוספים.",
+      "source": "ערוץ mappy (הפעלה מחדש)"
+    },
+    {
+      "time": "2026-10-21T10:58:27+03:00",
+      "text": "חיקי דיווח על 93 מועמדים חדשים עם שם רשמי, כתובות מספריות ו-way-id ב-OSM; 9 נוספים ב-HOLD.",
+      "source": "ערוץ chiki"
+    },
+    {
+      "time": "2026-10-21T11:05:00+03:00",
+      "text": "הראשי הקפיא את שיפו ואת ציבי לבקשת המשתמש, והפעיל את מפי לאיתור ואימות שבילים מיושבים עם בתים.",
+      "source": "BOARD §039"
+    },
+    {
+      "time": "2026-10-21T10:58:27+03:00",
+      "text": "חיקי דיווח על 93 מועמדים חדשים עם שם רשמי, כתובות מספריות ו-way-id ב-OSM; 9 נוספים ב-HOLD.",
+      "source": "ערוץ chiki"
+    },
+    {
+      "time": "2026-10-21T10:55:00+03:00",
+      "text": "הראשי סגר את 038: מצב ריק תוקן, מבחן אחסון 17 נוסף, verify 32/32 וגיבוי עם 7 הביקורים.",
+      "source": "BOARD §038"
+    },
+    {
+      "time": "2026-10-21T10:55:00+03:00",
+      "text": "גולי עדכן את החדר אחרי 037 וביקורת 035, ובדק את הדף מחדש ב-360 וב-1280.",
+      "source": "ערוץ guli"
+    },
+    {
+      "time": "2026-10-21T10:46:59+03:00",
+      "text": "שיפו הגיש ביקורת 035: חמישה תרחישי מחיקה תקינים, אבל מחיקת הרחוב האחרון משאירה קו ופופאפ על המפה.",
+      "source": "ערוץ shifu"
+    },
+    {
+      "time": "2026-10-21T10:45:49+03:00",
+      "text": "הראשי סגר את 037: 16 שבילים ומדרגות מיושבים נכנסו לנתונים; 2,154 רחובות, 94 שכונות, verify 31/31.",
+      "source": "BOARD §037"
+    },
+    {
+      "time": "2026-10-21T10:42:00+03:00",
+      "text": "גולי התחיל לבנות את חדר הסוכנים: state, heartbeat, generator ודף.",
+      "source": "ערוץ guli"
+    },
+    {
+      "time": "2026-10-21T10:40:00+03:00",
+      "text": "הראשי רשם את 036: מחיקה ידנית ועיסוויה ירדו; 2,138 רחובות, 94 שכונות, 118 בארכיון, verify 31/31.",
+      "source": "BOARD §036"
+    },
+    {
+      "time": "2026-10-21T10:35:00+03:00",
+      "text": "חיקי דיווח על 26 רחובות מיושבים: 4 ודאיים, 22 נוספים ו-4 HOLD; ממתין לאימות מפי.",
+      "source": "ערוץ chiki"
+    },
+    {
+      "time": "2026-10-21T09:49:00+03:00",
+      "text": "שיפו סיים ביקורת 034 בלי חוסמים; שני תיקוני חובה הומלצו ויושמו.",
+      "source": "ערוץ shifu"
+    },
+    {
+      "time": "2026-10-21T07:48:00+03:00",
+      "text": "צירי ומפי עדכנו את הערוצים: מפה וגלגלת, ניווט שכונות ואודיט נתונים 034.",
+      "source": "ערוצי tsiri ו-mappy"
+    },
+    {
+      "time": "2026-10-21T03:34:00+03:00",
+      "text": "ציבי דיווח על סבב ההשלמה: אקורדיון, גורפת, חיפוש ומובייל 360.",
+      "source": "ערוץ tsibi"
+    }
+  ],
+  "sources": [
+    {
+      "label": "לוח הסוכנים — BOARD",
+      "href": "docs/agents/BOARD.md",
+      "note": "החלטות, סטטוסים ומספרי הפרויקט"
+    },
+    {
+      "label": "יומן המשימות — TASKS",
+      "href": "docs/agents/TASKS.md",
+      "note": "מה הושלם, מה בביצוע ומה חסום"
+    },
+    {
+      "label": "ערוץ chiki",
+      "href": "docs/agents/channels/chiki.md",
+      "note": "מחקר, מקורות ואימות HTTP"
+    },
+    {
+      "label": "ערוץ mappy",
+      "href": "docs/agents/channels/mappy.md",
+      "note": "אודיט נתונים וגיאומטריה"
+    },
+    {
+      "label": "ערוץ shifu",
+      "href": "docs/agents/channels/shifu.md",
+      "note": "ביקורות קוד"
+    },
+    {
+      "label": "ערוץ tsibi",
+      "href": "docs/agents/channels/tsibi.md",
+      "note": "יישום UI ומדידות"
+    },
+    {
+      "label": "ערוץ tsiri",
+      "href": "docs/agents/channels/tsiri.md",
+      "note": "מפה, ניווט שכונות וגלגלת"
+    },
+    {
+      "label": "לקחים — LESSONS",
+      "href": "docs/agents/LESSONS.md",
+      "note": "20 הבעיות היקרות והצ'קליסט לסבב הבא"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "municipal-layer-license",
+      "title": "שכבת רשות מוניציפלית — ממתינה לאישור רישיון בכתב",
+      "severity": "decision",
+      "status": "resolved",
+      "owner": "ראשי / מפי",
+      "impact": "3,241 קווים ו-115 פוליגוני שכונות מ-odata.org.il (ODbL מוצהר) זמינים, אבל צוות ה-GIS של עיריית ירושלים דורש אישור בכתב לפני שימוש כמקור ראשי. בלעדיו אי אפשר להחליף או להעשיר את נתוני OSM הקיימים בגיאומטריה עירונית רשמית.",
+      "nextStep": "הוקפא לפי הוראת המשתמש; OSM (ODbL) נשאר מקור האמת. ייפתח מחדש כשיהיה אישור כתוב.",
+      "source": "BOARD §040 · TASKS §4",
+      "updatedAt": "2026-10-21T11:35:00+03:00"
+    },
+    {
+      "id": "unlicensed-sources-frozen",
+      "title": "כל מקור ללא רישיון מאומת — מוקפא אוטומטית",
+      "severity": "decision",
+      "status": "resolved",
+      "owner": "ראשי / מפי / חיקי",
+      "impact": "אין להשתמש בגיאומטריה/שמות ממקור שאין לו רישיון ברור ומאומת (ODbL, CC-BY, אישור כתוב). רק OSM (ODbL) ומקורות עם אישור כתוב תקפים. זה כולל: שכבות GovMap (403/אין מפתח), data.gov.il (חסום בלי Referer), שכבות ArcGIS עירוניות בלי אישור, וכל מקור אחר ללא רישיון גלוי.",
+      "nextStep": "חיקי ומפי יבדקו רישיון לפני כל המלצה; הראשי לא ימזג נתונים בלי אישור רישיון מפורש.",
+      "source": "הנחיית משתמש 2026-10-21 · TASKS §4",
+      "updatedAt": "2026-10-21T11:50:00+03:00"
+    }
+  ],
+  "unsolvedProblems": [
+    {
+      "id": "mappy-inhabited-paths-verification",
+      "title": "Mappy: 93 inhabited paths verification taking too long / rate limited",
+      "description": "Mappy sub-agent hit rate limits while verifying 93 Chiki candidates + searching for additional inhabited paths. Need to verify: official municipal name, numeric addresses, OSM way IDs, geometry, correct area (94 existing areas). Three specific names: 'בתי ורשא' (0 addresses), 'חיים אלבוחר' (0 addresses, official name 'מבוא הרב חיים אלבוחר'), 'עזרת ישראל' (13 addresses, way 44201877). External dataset (street-data-all.json) is a discovery index only, not binding.",
+      "owner": "mappy",
+      "status": "stuck",
+      "blockedBy": "rate limits on municipal ArcGIS API; OSM API rate limits; manual verification needed",
+      "impact": "Cannot merge new paths into app data (assets/data.js, assets/geo.js) until verified. Current: 2,154 streets / 94 areas.",
+      "attempted": [
+        "Sub-agent launched twice, both hit rate limits",
+        "Municipal address index queried for 3 test names via HTTP",
+        "Chiki's 93 candidates documented with way IDs and address counts",
+        "Area assignments for 'מיוחס', 'ארזי הבירה', Gila flower streets need official polygon verification"
+      ],
+      "needs": "Local OSM PBF parsing for geometry + municipal address index dump (or alternative) to verify all 93 without API rate limits"
+    },
+    {
+      "id": "shifu-map-empty-state-blocker",
+      "title": "Shifu: map.js early return on empty street list leaves layers on map",
+      "description": "Shifu review 035 found: when all streets are deleted, map.js:1393 guard returns early and doesn't clear hit layers/popups. Fixed in code but needs re-verification across all viewports (360/390/430/1280).",
+      "owner": "shifu",
+      "status": "partially-fixed",
+      "blockedBy": "No real-device touch testing; only emulation/CDP",
+      "impact": "Empty map state shows stale layers; user sees lines/popups that shouldn't exist.",
+      "attempted": [
+        "Code fix applied to map.js handleVisitedReplace",
+        "Live test at 2,154 → 0 deletion: #map-empty shows correct message, but layer cleanup needs confirmation"
+      ],
+      "needs": "Real device testing at 360/390/430; CDP verification of layer cleanup on empty state"
+    },
+    {
+      "id": "mobile-390-430-verification",
+      "title": "Tsibi: 390px/430px mobile breakpoint not re-verified after recent changes",
+      "description": "360px verified OK. 390px and 430px breakpoints need re-verification for: flat list view, search, visit marking from list, accordion, bulk actions, sticky bar, map height 240-280px, no horizontal overflow, 44px touch targets, 16px inputs, AA contrast.",
+      "owner": "tsibi",
+      "status": "pending",
+      "blockedBy": "Real device unavailable; emulation only",
+      "impact": "Acceptance gate for 'הידעת' feature blocked (TASKS §3).",
+      "attempted": [
+        "CDP emulation at 360px passed",
+        "Desktop 1280px passed"
+      ],
+      "needs": "Real device or reliable emulation at 390/430; automated visual regression if possible"
+    },
+    {
+      "id": "municipal-layer-license",
+      "title": "Municipal ArcGIS layer (3,241 lines, 115 polygons) requires written license approval",
+      "description": "odata.org.il publishes Jerusalem municipal layers (streets, old city streets, neighborhood polygons) under declared ODbL, but GIS team requires written approval before use as primary source. Currently frozen per user instruction.",
+      "owner": "main / mappy",
+      "status": "frozen",
+      "blockedBy": "Bureaucratic process with Jerusalem municipality GIS team; no timeline",
+      "impact": "Cannot replace/enrich OSM geometry with official municipal geometry. OSM remains sole source.",
+      "attempted": [
+        "Confirmed ODbL declaration on odata.org.il",
+        "Confirmed GIS team requires written approval",
+        "User instruction: freeze until written approval obtained"
+      ],
+      "needs": "Written approval from Jerusalem municipality GIS team, or alternative licensed source"
+    },
+    {
+      "id": "real-device-touch-testing",
+      "title": "No real-device touch testing for map interactions",
+      "description": "All mobile/map touch testing done via Chrome DevTools emulation/CDP only. No physical phone/tablet testing for: pinch zoom, pan, tap on line (36px hit area), long press, scroll vs map drag distinction, iOS Safari behavior (16px input zoom prevention).",
+      "owner": "tsiri / tsibi / shifu",
+      "status": "blocked",
+      "blockedBy": "No physical device available in this environment",
+      "impact": "Cannot guarantee touch UX works on real iOS/Android; acceptance criteria for mobile incomplete.",
+      "attempted": [
+        "CDP touch emulation at 360px: pinch z13→14, drag, tap 10px off line works",
+        "Scroll-wheel zoom on desktop verified",
+        "Leaflet tap:false, touch-action CSS applied"
+      ],
+      "needs": "Physical device testing or cloud device farm (BrowserStack, Sauce Labs, etc.)"
+    },
+    {
+      "id": "why-here-agents-html-frozen",
+      "title": "why-here.html and agents.html frozen — stale counts",
+      "description": "User froze why-here.html (shows 2,154/25,233/31) and agents.html (old agent board). Guli's guli.html is the live replacement but not linked from frozen pages. why-here.html shows verify 31/31 but actual is 32/32.",
+      "owner": "main",
+      "status": "frozen",
+      "blockedBy": "User instruction: do not edit frozen pages",
+      "impact": "Users landing on frozen pages see outdated info. No redirect mechanism.",
+      "attempted": [
+        "Guli page built and verified at all breakpoints",
+        "Frozen pages explicitly marked as frozen in BOARD"
+      ],
+      "needs": "User decision: add banner/link on frozen pages pointing to guli.html, or accept staleness"
+    }
+  ],
+  "aiPrompt": "You are an expert full-stack developer helping with a Hebrew/RTL Jerusalem Street Journal web app (vanilla JS, Leaflet, localStorage, file:// compatible). The project uses a multi-agent system (Chiki=research, Mappy=data/geometry, Tsiri=map, Tsibi=UI/UX, Shifu=code review, Guli=coordination, Main=integration).\n\nCURRENT STATE:\n- 2,154 streets, 94 neighborhoods, 25,233 geometry points, verify 32/32 passing\n- Manual delete (soft delete via state.deleted) working, empty state handled\n- 16 inhabited paths/stairs added (2 Ein Kerem, 14 Jewish Quarter)\n- 93 new candidates from Chiki with municipal addresses + OSM way IDs need verification\n- All agents reactivated; frozen: why-here.html, agents.html\n- License rule: only OSM (ODbL) and sources with written approval\n\nUNSOLVED PROBLEMS (need your help):\n\n1. **MAPPY VERIFICATION BOTTLENECK**: 93 candidate paths with municipal addresses + OSM way IDs need verification without hitting API rate limits. Municipal ArcGIS (gisviewer.jerusalem.muni.il) requires browser UA + Referer, rate limits hard. OSM API also rate limits. Have local Geofabrik PBF (israel-latest.osm.pbf) parsed to 13,185 ways with way IDs. Need to verify all 93 candidates locally: match municipal name → OSM way ID → geometry → address proximity (<30m) → correct area (94 existing). Three edge cases: 'בתי ורשא' (0 addresses), 'חיים אלבוחר' (0 addresses, official 'מבוא הרב חיים אלבוחר'), 'עזרת ישראל' (13 addresses, way 44201877).\n\n2. **MAP EMPTY STATE LAYER CLEANUP**: When all 2,154 streets deleted, map.js early return leaves hit layers/popups on map. Fix applied but needs verification at 360/390/430/1280 viewports. No real device testing.\n\n3. **MOBILE 390/430PX RE-VERIFICATION**: 360px OK. Need 390/430px verification for flat list, search, visit marking, accordion, bulk actions, sticky bar, map 240-280px, no horizontal overflow, 44px touch targets, 16px inputs, AA contrast. Blocked: no real device.\n\n4. **MUNICIPAL LAYER LICENSE**: 3,241 municipal lines + 115 polygons available but Jerusalem GIS requires written approval. Frozen per user. OSM only source.\n\n5. **REAL DEVICE TOUCH TESTING**: Zero physical device testing. All via CDP emulation. Need pinch, pan, tap (36px hit), long press, scroll-vs-drag, iOS Safari 16px zoom prevention.\n\n6. **FROZEN PAGES STALE**: why-here.html (shows verify 31/31, actual 32/32) and agents.html frozen. Guli page live but not linked.\n\nTECH STACK: Vanilla ES modules, Leaflet 1.9.4 (preferCanvas), localStorage schema v1 (jlm-street-journal-v1), no build step, works from file://, RTL Hebrew, 94 areas accordion + flat A-Z list, search below map, visit marking from list + map.\n\nPlease provide:\n- Concrete code fixes for map.js empty-state cleanup\n- Local verification strategy for 93 paths using PBF + municipal address dump (how to obtain dump without rate limits)\n- CSS/JS fixes for 390/430px breakpoints\n- Workaround for municipal license (alternative licensed sources?)\n- Cloud device farm recommendation for touch testing\n- Whether to add redirect banner on frozen pages\n\nConstraints: No build step, no server, no external deps beyond Leaflet CDN (with SRI), file:// compatible, Hebrew RTL, preserve existing IDs (localStorage keys), 7 existing visits must survive merge."
+}

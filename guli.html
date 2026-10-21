@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>מה קורה בחדר — גולי</title>
+<meta name="description" content="חדר הסוכנים של יומן הרחובות ירושלים: מי עושה מה עכשיו, עם מי מדבר, מה הסתיים ומה נשאר.">
+<style>
+:root{
+  --paper:#f6f1e7;
+  --paper-deep:#ece2d1;
+  --card:#fffdf9;
+  --ink:#221d16;
+  --ink-soft:#4c4236;
+  --muted:#655a4b;
+  --line:#ddd2bf;
+  --line-strong:#c6b69d;
+  --accent:#8a4517;
+  --accent-soft:#f3e3d4;
+  --green:#1d5b3c;
+  --green-bg:#e2f0e6;
+  --amber:#6d4a0e;
+  --amber-bg:#faeed3;
+  --gray:#4b4438;
+  --gray-bg:#ece6da;
+  --focus:#165c8a;
+  --radius:18px;
+  --shadow:0 1px 0 rgba(34,29,22,.04), 0 10px 30px -22px rgba(34,29,22,.45);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(1100px 520px at 88% -12%, #efe0c8 0%, rgba(239,224,200,0) 62%),
+    radial-gradient(900px 420px at -5% 4%, #fbf6ec 0%, rgba(251,246,236,0) 58%),
+    var(--paper);
+  font-family:"Segoe UI","Arial Hebrew","Noto Sans Hebrew","Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  overflow-wrap:break-word;
+}
+img,svg{max-width:100%}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.skip{
+  position:absolute;inset-inline-start:-9999px;top:0;z-index:10;
+  background:var(--card);color:var(--ink);padding:12px 18px;border-radius:0 0 12px 0;
+}
+.skip:focus{inset-inline-start:0}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+.masthead{padding:clamp(28px,6vw,64px) 0 8px}
+.kicker{
+  display:flex;align-items:center;gap:10px;
+  margin:0 0 14px;color:var(--muted);font-size:.86rem;font-weight:600;
+}
+.kicker::before{content:"";width:34px;height:2px;background:var(--accent);border-radius:2px}
+h1{
+  margin:0;font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.05;
+  font-weight:750;letter-spacing:-.015em;
+}
+.lead{
+  max-width:62ch;margin:18px 0 0;font-size:clamp(1.05rem,2.4vw,1.28rem);
+  color:var(--ink-soft);line-height:1.55;
+}
+.masthead__bar{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;
+  margin-top:24px;padding-top:16px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:.9rem;
+}
+.pulse{
+  display:inline-flex;align-items:center;gap:8px;padding:5px 12px;
+  border:1px solid var(--line-strong);border-radius:999px;background:var(--card);
+  color:var(--ink-soft);font-weight:600;
+}
+.pulse__dot{
+  width:8px;height:8px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 0 4px rgba(29,91,60,.12);
+  animation:breathe 2.8s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 3px rgba(29,91,60,.12)}50%{box-shadow:0 0 0 6px rgba(29,91,60,.05)}}
+.btn{
+  min-height:44px;padding:10px 18px;border:1px solid var(--line-strong);
+  border-radius:999px;background:var(--card);color:var(--ink);
+  font:inherit;font-size:.92rem;font-weight:650;cursor:pointer;
+}
+.btn:hover{background:var(--paper-deep)}
+.btn:active{transform:translateY(1px)}
+.time-note{font-variant-numeric:tabular-nums}
+main{padding-bottom:24px}
+section{margin-top:clamp(32px,6vw,56px)}
+.section__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:16px}
+h2{margin:0;font-size:clamp(1.35rem,3.4vw,1.75rem);line-height:1.25;font-weight:740}
+.section__hint{margin:0;color:var(--muted);font-size:.9rem}
+.room{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:8px;margin:0;padding:0;list-style:none;
+}
+.room__item{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;
+  min-width:0;padding:10px 12px;border:1px solid var(--line);
+  border-radius:12px;background:var(--card);
+}
+.room__dot{width:9px;height:9px;border-radius:50%;background:var(--gray);flex:none}
+.room__item.is-active .room__dot{background:var(--green)}
+.room__item.is-waiting .room__dot{background:var(--amber)}
+.room__item.is-unknown .room__dot{background:var(--gray)}
+.room__name{font-weight:700;font-size:.95rem}
+.room__state{width:100%;color:var(--muted);font-size:.78rem;line-height:1.3}
+.agents{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));
+  gap:16px;align-items:start;
+}
+.agent{
+  position:relative;min-width:0;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;box-shadow:var(--shadow);
+}
+.agent::before{
+  content:"";position:absolute;inset-block:16px;inset-inline-start:0;
+  width:4px;border-radius:4px;background:var(--gray);
+}
+.agent.is-active::before{background:var(--green)}
+.agent.is-waiting::before{background:var(--amber)}
+.agent.is-unknown::before{background:var(--gray)}
+.agent__head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:12px}
+.agent__initial{
+  display:grid;place-items:center;width:44px;height:44px;flex:none;
+  border-radius:50%;background:var(--paper-deep);border:1px solid var(--line);
+  font-weight:750;font-size:1.1rem;color:var(--ink-soft);
+}
+.agent__id{min-width:0}
+h3{margin:0;font-size:1.22rem;line-height:1.3;font-weight:740}
+.agent__role{margin:2px 0 0;color:var(--muted);font-size:.82rem;line-height:1.4}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;padding:3px 9px;
+  border-radius:999px;border:1px solid transparent;font-size:.76rem;
+  font-weight:700;white-space:nowrap;line-height:1.4;
+}
+.chip__dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.chip.is-active{color:var(--green);background:var(--green-bg);border-color:#bcd9c6}
+.chip.is-waiting{color:var(--amber);background:var(--amber-bg);border-color:#e7d3a6}
+.chip.is-unknown{color:var(--gray);background:var(--gray-bg);border-color:#d6cbb8}
+.chip.is-done{color:var(--green);background:var(--green-bg);border-color:#bcd9c6}
+.label{
+  display:block;margin-bottom:2px;color:var(--muted);
+  font-size:.72rem;font-weight:700;line-height:1.3;
+}
+.agent__now{
+  margin:16px 0 10px;padding:12px 14px;border-radius:12px;
+  background:var(--accent-soft);color:var(--ink);
+  border:1px solid #e8d3bf;font-size:.97rem;line-height:1.5;
+}
+.agent__talk{
+  margin:0 0 4px;color:var(--ink-soft);font-size:.9rem;line-height:1.55;
+}
+.agent__talk .label{display:inline-block;margin:0 0 2px}
+.agent__talk-body{display:inline}
+.talk-state{
+  display:inline-block;margin-inline-start:4px;padding:1px 7px;
+  border-radius:999px;background:var(--gray-bg);color:var(--gray);
+  font-size:.72rem;font-weight:700;
+}
+.agent__block{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
+.ticks{margin:0;padding:0;list-style:none}
+.ticks li{position:relative;padding-inline-start:18px;margin:6px 0;font-size:.9rem;line-height:1.5}
+.ticks li::before{
+  content:"";position:absolute;inset-inline-start:2px;top:.58em;
+  width:7px;height:7px;border:1.5px solid var(--accent);border-radius:2px;
+  transform:rotate(45deg);
+}
+.done-list{margin:0;padding:0;list-style:none}
+.done{padding:8px 0;border-bottom:1px solid var(--line)}
+.done:last-child{border-bottom:0;padding-bottom:0}
+.done--empty{padding-top:0}
+.done__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0}
+.done__task{font-weight:650;font-size:.9rem}
+.done__date{color:var(--muted);font-size:.76rem;white-space:nowrap}
+.done__conclusion{margin:4px 0 0;color:var(--ink-soft);font-size:.86rem;line-height:1.5}
+.agent__conclusion{
+  margin:16px 0 0;padding:10px 14px;border-inline-start:3px solid var(--accent);
+  background:#fbf4ea;border-radius:0 10px 10px 0;
+}
+.agent__conclusion p{margin:0;font-size:.9rem;line-height:1.55}
+.agent__foot{
+  display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;
+  margin-top:16px;padding-top:12px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:.76rem;line-height:1.45;
+}
+.agent__source a{font-weight:650}
+.agent__reported{max-width:100%}
+.timeline{margin:0;padding:0;list-style:none;position:relative}
+.timeline::before{
+  content:"";position:absolute;inset-block:6px 6px;inset-inline-start:9px;
+  width:2px;background:var(--line-strong);
+}
+.timeline__item{
+  position:relative;display:grid;grid-template-columns:1fr;gap:2px;
+  padding:0 0 22px 0;padding-inline-start:32px;
+}
+.timeline__item::before{
+  content:"";position:absolute;inset-inline-start:4px;top:7px;
+  width:12px;height:12px;border-radius:50%;background:var(--card);
+  border:2px solid var(--accent);
+}
+.timeline__time{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
+.timeline__time time{font-weight:750;font-size:.95rem;font-variant-numeric:tabular-nums}
+.timeline__date{color:var(--muted);font-size:.76rem}
+.timeline__body p{margin:0;font-size:.94rem;line-height:1.55}
+.timeline__source{color:var(--muted);font-size:.76rem}
+.sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:8px;margin:0;padding:0;list-style:none}
+.source{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
+.source a,.source__plain{display:block;min-height:44px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.source a:hover{background:var(--paper-deep)}
+.source__label{display:block;font-weight:650;font-size:.92rem;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.source a:hover .source__label{color:var(--ink)}
+.source__note{display:block;color:var(--muted);font-size:.78rem;margin-top:2px;line-height:1.4}
+.source__plain .source__label{color:var(--ink);text-decoration:none}
+.empty-line{margin:0;color:var(--muted);font-size:.9rem}
+.unsolved{display:grid;gap:12px}
+.unsolved-item{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:16px;box-shadow:var(--shadow)}
+.unsolved-item.is-stuck{border-color:#e07a5f}
+.unsolved-item.is-partial{border-color:#81b29a}
+.unsolved-item.is-pending{border-color:#f2cc8f}
+.unsolved-item.is-frozen{border-color:#9cc0d1}
+.unsolved-item.is-blocked{border-color:#e07a5f}
+.unsolved__head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px}
+.unsolved__head h3{margin:0;font-size:1.05rem;font-weight:700}
+.unsolved__desc{margin:0 0 10px;color:var(--ink-soft);line-height:1.55}
+.unsolved__meta{display:flex;flex-wrap:wrap;gap:12px;font-size:.82rem;color:var(--muted);margin-bottom:10px}
+.unsolved__attempted{margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
+.unsolved__attempted summary{cursor:pointer;font-weight:600;color:var(--ink-soft);font-size:.85rem}
+.unsolved__attempted ul{margin:8px 0 0;padding-inline-start:20px;font-size:.85rem;color:var(--ink-soft)}
+.unsolved__attempted li{margin:4px 0}
+.unsolved__needs{margin-top:10px;padding:10px 12px;background:var(--accent-soft);border:1px solid #e8d3bf;border-radius:8px;color:var(--ink);font-size:.88rem;line-height:1.5}
+.ai-prompt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.ai-prompt__hint{margin:0 0 10px;color:var(--muted);font-size:.85rem}
+.ai-prompt__copy{margin-bottom:10px}
+.ai-prompt__text{margin:0;padding:12px;background:var(--paper-deep);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:.75rem;line-height:1.55;white-space:pre-wrap;word-break:break-word;max-height:400px}
+@media (max-width:420px){
+  .ai-prompt__text{font-size:.7rem}
+}
+.room-note{
+  margin-top:36px;padding:18px 20px;border:1px solid var(--line);
+  border-radius:var(--radius);background:rgba(255,253,249,.7);
+  color:var(--ink-soft);font-size:.9rem;
+}
+.room-note strong{color:var(--ink)}
+footer.page{
+  margin-top:32px;padding:22px 0 40px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:.82rem;line-height:1.6;
+}
+footer.page a{font-weight:600}
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+@media (min-width:700px){
+  .timeline__item{grid-template-columns:112px 1fr;gap:12px;padding-bottom:20px}
+  .timeline__time{display:block}
+  .timeline__date{display:block}
+}
+@media (max-width:420px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 24px)}
+  .agent{padding:16px}
+  .agent__head{grid-template-columns:auto 1fr;gap:10px}
+  .agent__head .chip{grid-column:1 / -1;justify-self:start}
+  .agent__initial{width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+@media print{
+  body{background:#fff}
+  .masthead__bar .btn{display:none}
+  .agent{break-inside:avoid;box-shadow:none}
+}
+.flow-diagram{overflow-x:auto;margin:16px 0;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+.flow-diagram pre.mermaid{margin:0;font-size:.8rem;line-height:1.6;font-family:inherit}
+.flow-legend{margin-top:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דלג לתוכן</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים</p>
+    <h1>מה קורה בחדר</h1>
+    <p class="lead">בחדר עכשיו: קיפי (סוכן חדש) הוקם למעקב אחר משימות מוקפאות; 3 אזורים תוקנו לפוליגון רשמי; סריקה נעצרה סופית; 2,424 רחובות, 95 שכונות, verify 32/32.</p>
+    <div class="masthead__bar">
+      <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>5 פעילים · 3 ממתינים</span>
+      
+      <span class="time-note">עודכן <time dir="ltr" datetime="2026-10-21T09:48:52.295Z">21 באוקטובר 2026, 09:48</time></span>
+      <span id="relative-time" class="time-note" data-updated="2026-10-21T09:48:52.295Z"></span>
+      <button class="btn" type="button" id="refresh">רענון הדף</button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section aria-labelledby="room-title">
+    <div class="section__head">
+      <h2 id="room-title">מי בחדר</h2>
+      <p class="section__hint">סטטוסים נגזרים מזמן הדיווח האחרון: מעל 15 דקות בלי עדכון — ממתין.</p>
+    </div>
+    <ul class="room"><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">הראשי</span>
+      <span class="room__state">פעיל</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">חיקי</span>
+      <span class="room__state">מוקפא</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">מפי</span>
+      <span class="room__state">מוקפא</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">שיפו</span>
+      <span class="room__state">פעיל</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">ציבי</span>
+      <span class="room__state">פעיל</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">צירי</span>
+      <span class="room__state">ממתין לדיווח</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">גולי</span>
+      <span class="room__state">פעיל</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">קיפי</span>
+      <span class="room__state">פעיל</span>
+    </li></ul>
+  </section>
+
+  <section aria-labelledby="agents-title">
+    <div class="section__head">
+      <h2 id="agents-title">הסוכנים, אחד אחד</h2>
+      <p class="section__hint">מה עושה עכשיו, עם מי מדבר, מה אחר כך ומה כבר נסגר.</p>
+    </div>
+    <div class="agents">
+      <article class="agent is-active" id="agent-main">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ר</span>
+      <div class="agent__id">
+        <h3>הראשי</h3>
+        <p class="agent__role">מרכז העבודה: כותב BOARD, מכריע, מיישם נתונים ובדיקות</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>קיפי מונה למעקב הקפאות; 3 אזורים תוקנו; סריקה נעצרה; 2,424/95, verify 32/32.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>קיפי, שיפו, ציבי, מפי, חיקי</strong> · הקפאות, ביקורות, אימות <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>סגירת ביקורת שיפו 036–037</li><li>אימות ציבי 390/430</li><li>עבודה עם קיפי על רשימת הקפאות</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סבב 037 — 16 שבילים ומדרגות מיושבים</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">16 רשומות עם גיאומטריה מ-OSM נכנסו לנתונים; 2,154 רחובות, 94 שכונות ו-25,233 נקודות, verify 31/31.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מחיקה ידנית לכל רחוב + הסרת עיסוויה</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">state.deleted נשמר, הרחוב יורד מהרשימה, מהמפה ומהספירה, והביקור נשמר ל-undo; 2,138 רחובות ו-94 שכונות, verify 31/31.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סבב 034 — הסרת כבישים, מנהרות ושכונות חד-רחוב</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">ההסרה נעשתה מהנתונים הפעילים ולא בהסתרה; 118 רשומות נשמרו בארכיון הפיך עם paths וגיבוי לפני הסבב.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>2,424 רחובות, 95 שכונות, verify 32/32. קיפי פעיל.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/BOARD.md">BOARD §036 · TASKS §1</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T09:48:52.295Z">21 באוקטובר 2026, 09:48</time> · לפי זמן העדכון של BOARD.md</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-chiki">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ח</span>
+      <div class="agent__id">
+        <h3>חיקי</h3>
+        <p class="agent__role">חוקר האינטרנט והמקורות: מאתר, מאמת בפועל ומעביר משימות</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>מוקפא</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>מוקפא — סריקה נעצרה סופית; ממתין להפעלה עתידית.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>קיפי, ראשי</strong> · רישום הקפאות <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>המתנה להפעלה עתידית</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מחקר inhabited — שבילים ומדרגות</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">מדרגות הבציר, שוני הלכות, בוני החומה והביכורים אומתו מול אינדקס הרחובות והכתובות העירוני; מדרגות המסיק נשארה HOLD בלי כתובות.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מדיניות אריחי OSM ומקורות רשמיים</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">החסימה המדודה מגיעה כ-HTTP 200 עם PNG תקין, ולכן tileerror לא יורה; נדרש probe על תוכן התשובה, לא על קוד הסטטוס.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>סריקה נעצרה סופית; מוקפא אצל קיפי.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/chiki.md">ערוץ chiki · TASKS §1</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T09:48:52.295Z">21 באוקטובר 2026, 09:48</time> · לפי זמן העדכון של הערוץ</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-mappy">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">מ</span>
+      <div class="agent__id">
+        <h3>מפי</h3>
+        <p class="agent__role">אחראי הנתונים והמפות: גיאומטריה, שכונות ואימות מספרי</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>מוקפא</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי, קיפי</strong> · רישום הקפאות אצל קיפי <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>המתנה להחלטה עתידית</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">אודיט 034 — אחרי הסרת צירים</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">2,239 רחובות, 101 שכונות, 0 שכונות חד-רחוב ו-17 רשומות ארכיון תקינות; verify 29/29 בזמן האודיט.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>סריקה נעצרה סופית; 9 HOLD + 13 remaining מועמדים מוקפאים אצל קיפי.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/mappy.md">ערוץ mappy</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T09:48:52.295Z">21 באוקטובר 2026, 09:48</time> · מיזוג הושלם</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-shifu">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ש</span>
+      <div class="agent__id">
+        <h3>שיפו</h3>
+        <p class="agent__role">סוקר קוד חוזר: באגים, נגישות, RTL, ביצועים ופשטות</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>ביקורת 036–037: נתונים 2,458/95, גלילת מפה, מובייל 390/430, מחיקה ידנית, סיום ידני.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי, צירי, ציבי</strong> · ביקורות קוד אחרי סריקה סופית <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אימות גלילת מפה בלחיצת שכונה (360/390/430/1280)</li><li>ביקורת סיום ידני + מחיקה ידנית</li><li>ביקורת מיזוג נתונים סופי</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ביקורת 035 — מחיקה ידנית של רחוב</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">חמשת תרחישי המחיקה, undo והייבוא תקינים באחסון; חוסם אחד: guard ב-map.js:1393 מחזיר מוקדם כשהרשימה מתרוקנת ולא מנקה שכבות.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ביקורת 034</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">אין חוסמים; שני תיקוני חובה הומלצו — &#39;כרגש&#39; ולכידת פוקוס בסרגל המוסתר — והראשי יישם אותם.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ביקורת 031</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">כל סעיפי החוזה מיושמים ואין חוסמים; נותרו שני ממצאי &#39;חשוב&#39; ואימות hashes עצמאי.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>ממתין לביקורת 036–037.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/shifu.md">ערוץ shifu · TASKS §1</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T09:30:37.109Z">21 באוקטובר 2026, 09:30</time> · ביקורת 036–037 פתוחה</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-tsibi">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">צ</span>
+      <div class="agent__id">
+        <h3>ציבי</h3>
+        <p class="agent__role">אחראי UI/UX: שימושיות, נגישות, מובייל ו-RTL</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>אימות 390/430, גלילת מפה בלחיצת שכונה, &#39;סיום ידני&#39;, נגישות מובייל.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי, שיפו</strong> · UX/UI אחרי סריקה סופית <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אימות גלילת מפה ב-360/390/430/1280</li><li>אימות 390/430: רשימה שטוחה, חיפוש, סימון, אקורדיון</li><li>נגישות: 44px יעדים, 16px קלט, AA contrast</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סבב השלמה לפי שכונות</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">בכניסה 20 קבוצות סגורות ו-0 שורות רחוב; גורפת נשמרת בפעולה אחת ו-undo מחזיר תאריך והערה; 360px בלי גלילה אופקית, verify 25/25.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>גלילת מפה וסיום ידני נוספו; אימות 390/430 פתוח.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/tsibi.md">ערוץ tsibi</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T09:30:37.109Z">21 באוקטובר 2026, 09:30</time> · אימות 390/430 + גלילת מפה פתוח</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-tsiri">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">צ</span>
+      <div class="agent__id">
+        <h3>צירי</h3>
+        <p class="agent__role">אחראי המפה האינטרקטיבית: Leaflet, גיבוי קנבס וניווט</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>ממתין לדיווח</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>הראשי, שיפו ומפי</strong> · ניווט שכונות, שילוב visited-change ושאלת &#39;אחר&#39; <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>מעבר ל-URL אריחים יחיד במקום {s} לפי חיקי</li><li>בדיקת שילוב zoomToArea עם סימונים</li><li>בדיקת מגע אמיתית ל-pinch ולגרירה</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ניווט לפי שכונות (029–030)</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">zoomToArea מחזיר false ולא מזיז מפה כשאין נתונים; smoke 119/119 ו-0 סימונים מניווט.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">גלגלת זום ומובייל</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">גלגלת מעל המפה משנה זום ולא גוללת עמוד, גם במסלול הגיבוי; 31/31 smoke ובדיקת דפדפן אמיתית.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>המפה מוכנה בשני המסלולים; מגע אמיתי ו-035 טרם נבדקו.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/tsiri.md">ערוץ tsiri</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T07:48:05+03:00">21 באוקטובר 2026, 07:48</time> · לפי זמן העדכון של הערוץ</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-guli">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ג</span>
+      <div class="agent__id">
+        <h3>גולי</h3>
+        <p class="agent__role">כרוז החדר: מקשיב, מתעד ומספר מה קורה</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>עדכן את החדר: כל הסוכנים פעילים, אימות 93 בעיצומו, רישיון GIS מוקפא.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>כל הסוכנים (קריאה בלבד) והראשי</strong> · עדכון החדר אחרי 042 <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>עדכון אחרי אימות 93 ומיזוג</li><li>מעקב אחרי verify וגיבוי</li><li>הרצת --watch ברקע</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">תשתית חדר הסוכנים</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">state, heartbeat, generator ו-guli.html נבנו; הדף נטען ב-360/390/430/1280 בלי גלילה אופקית ובלי תלות חיצונית.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>החדר מעודכן למצב 042; כל הסוכנים פעילים, פוקוס על אימות 93.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/guli.md">ערוץ guli</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T08:48:01.908Z">21 באוקטובר 2026, 08:48</time> · הדיווח שלי, לאחר העדכון</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-kipi">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ק</span>
+      <div class="agent__id">
+        <h3>קיפי</h3>
+        <p class="agent__role">אחראי מעקב הקפאות: רושם כל תהליך מוקפא, שומר הקשר, מאפשר חזרה עתידית</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
+    </header>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>בונה רשימת הקפאות מלאה מההחלטות האחרונות</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי</strong> · הקמת רשימת הקפאות <span class="talk-state">פתוח</span></span>
+    </p>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>רישום 9 HOLD (ממתינים לרישיון GIS)</li><li>רישום Tile Probe (מוקפא - החלטה 3)</li><li>רישום שכבת רשות מוניציפלית (מוקפא)</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מינוי סוכן הקפאות</span>
+            <time class="done__date" datetime="2026-10-21">21 באוקטובר 2026</time>
+          </p>
+          <p class="done__conclusion">קיפי מונה רשמית; מתחיל ברישום הקפאות.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>קיפי פעיל; מתחיל ברישום כל ההקפאות.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/BOARD.md">הנחיית משתמש · BOARD §052</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T09:48:52.295Z">21 באוקטובר 2026, 09:48</time> · מונה כעת</span>
+    </footer>
+  </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="timeline-title">
+    <div class="section__head">
+      <h2 id="timeline-title">ציר הזמן</h2>
+      <p class="section__hint">האירועים החדשים למעלה. כל שורה מציינת מאין היא מגיעה.</p>
+    </div>
+    <ol class="timeline">
+    <li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:48:52.295Z">09:48</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>החלטות משתמש: (1) 9 HOLD + סריקה + רישיון GIS + Tile Probe + גבולות → מוקפאים אצל קיפי (סוכן חדש). (2) 3 רחובות עודכנו לפוליגון רשמי: מיוחס→מקור ברוך, ארזי הבירה→מאה שערים (מוזג משמעון הצדיק), פרחי גילה→גילה. (3) Tile Probe מוקפא. (4) גבולות bbox נשארים. (5) סריקה נעצרה סופית. נוצר קיפי למעקב הקפאות. סה&quot;כ 2,424 רחובות, 95 שכונות, verify 32/32.</p>
+          <span class="timeline__source">הנחיית משתמש · BOARD §052</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:36:07.189Z">09:36</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הוסרו 33 שמות אנגלית וגשרים/מנהרות (Bab-Hutta Road, Ethiopian Monastery, King David Hotel, Military Road, Mamilla Avenue, שבעה ארצ&#39;ז, גשר הולילנד, גשר החיים, מנהרת הכותל, מנהרת ידין, מנהרת כרם, מנהרת סיירת דוכיפת, ועוד) — סה&quot;כ 2,425 רחובות, 95 שכונות, verify 32/32.</p>
+          <span class="timeline__source">הנחיית משתמש · BOARD §051</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:30:37.109Z">09:30</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>סריקה אוטומטית הסתיימה סופית: 6 רחובות אחרונים נוספו (הרובע המוסלמי 5, פסגת זאב 1) — סה&quot;כ 2,458 רחובות, 95 שכונות, verify 32/32. לא נותרו מועמדים ראויים.</p>
+          <span class="timeline__source">סריקה אוטומטית §049</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:28:18.948Z">09:28</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>סריקה אוטומטית הסתיימה: 18 רחובות אחרונים נוספו (הרובע המוסלמי 13, גילה 1, הרובע הנוצרי 2, פסגת זאב 2) — סה&quot;כ 2,452 רחובות, 95 שכונות, verify 32/32. סריקה מוצתה.</p>
+          <span class="timeline__source">סריקה אוטומטית §048</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:26:33.225Z">09:26</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הוסר ראס אל-עמוד (12 רחובות). נוספה גלילה אוטומטית למפה כשלוחצים על שם שכונה (scrollIntoView smooth). סה&quot;כ 2,434 רחובות, 95 שכונות, verify 32/32.</p>
+          <span class="timeline__source">BOARD §047</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:23:51.560Z">09:23</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>סריקה אוטומטית: 55 רחובות מגורים נוספים נוספו (מחנה ישראל, גילה, נחלאות, נוה יעקב, קוממיות, חומת שמואל, קרית שמואל, פת, רמת שלמה, בית וגן, עין כרם, ימין משה, ממילא, גבעת הורדים, קטמונים, קרית היובל, פסגת זאב, הרובע המוסלמי, רמת שלמה, בית וגן, עין כרם) — סה&quot;כ 2,446 רחובות, 96 שכונות, verify 32/32.</p>
+          <span class="timeline__source">סריקה אוטומטית §046</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:17:02.640Z">09:17</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי הוסיף 142 רחובות מגורים נוספים (גילה, פסגת זאב, רמות, רחביה, מרכז העיר, בית הכרם, הרובעים, ועוד) — סה&quot;כ 2,391 רחובות, 98 שכונות, verify 32/32. גיבוי נוצר.</p>
+          <span class="timeline__source">BOARD §045</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:12:44.049Z">09:12</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי הוסיף 4 רחובות שביקש המשתמש: ר&#39; יעקב בי רב, משה ששון, הרב אברהם וילהלם, אהל משה — כולם עם גיאומטריית OSM ומופו לאזורים קיימים. סה&quot;כ 2,249 רחובות, 93 שכונות.</p>
+          <span class="timeline__source">BOARD §044</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:04:39.209Z">09:04</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי מיזג 91 שבילים מיושבים חדשים (מתוך 93 של חיקי; 2 כבר היו באפליקציה). סה&quot;כ 2,245 רחובות, 94 שכונות, verify 32/32. גיבוי נוצר.</p>
+          <span class="timeline__source">BOARD §043</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T12:00:00+03:00">12:00</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>כל 91 השבילים עם גיאומטריית OSM (ODbL); 2 כבר היו באפליקציה (לויד גורג, שץ); דו נואס נוסף כ-point-only עם גיאומטריה שנשלפה מ-OSM API.</p>
+          <span class="timeline__source">ערוץ mappy (מיזוג)</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:50:00+03:00">11:50</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>כלל רישיון: כל מקור ללא רישיון מאומת מוקפא אוטומטית; רק OSM ODbL תקף.</p>
+          <span class="timeline__source">הנחיית משתמש · TASKS §4</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T08:48:01.908Z">08:48</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>המשתמש הפעיל את כל הסוכנים (שיפו, ציבי, צירי, חיקי, מפי, גולי). רישיון GIS מוקפא. הראשי מוביל אימות 93 ומיזוג.</p>
+          <span class="timeline__source">BOARD §042</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:50:00+03:00">11:50</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>כלל רישיון: כל מקור ללא רישיון מאומת מוקפא אוטומטית; רק OSM ODbL תקף.</p>
+          <span class="timeline__source">הנחיית משתמש · TASKS §4</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:35:00+03:00">11:35</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>חסם רישיון שכבת רשות סומן &#39;נפתר&#39; (מוקפא לפי הוראת המשתמש).</p>
+          <span class="timeline__source">BOARD §040 · TASKS §4</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:25:00+03:00">11:25</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>מפי התחיל לאמת את 93 המועמדים של חיקי ולחפש שבילים מיושבים נוספים.</p>
+          <span class="timeline__source">ערוץ mappy (הפעלה מחדש)</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T08:26:49.431Z">08:26</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי הקפיא את שיפו ואת ציבי לבקשת המשתמש, והפעיל את מפי לאיתור ואימות שבילים מיושבים עם בתים. החלטות צירים: רכבת נשארת, דרך אריאל שרון ודרך בית חורון נשארות, דרך מעלה אדומים מוסרת. שכבת רשות מוקפאת.</p>
+          <span class="timeline__source">BOARD §040</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:35:00+03:00">11:35</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>חסם רישיון שכבת רשות סומן &#39;נפתר&#39; (מוקפא לפי הוראת המשתמש).</p>
+          <span class="timeline__source">BOARD §040 · TASKS §4</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:25:00+03:00">11:25</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>מפי התחיל לאמת את 93 המועמדים של חיקי ולחפש שבילים מיושבים נוספים.</p>
+          <span class="timeline__source">ערוץ mappy (הפעלה מחדש)</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:58:27+03:00">10:58</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>חיקי דיווח על 93 מועמדים חדשים עם שם רשמי, כתובות מספריות ו-way-id ב-OSM; 9 נוספים ב-HOLD.</p>
+          <span class="timeline__source">ערוץ chiki</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T11:05:00+03:00">11:05</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי הקפיא את שיפו ואת ציבי לבקשת המשתמש, והפעיל את מפי לאיתור ואימות שבילים מיושבים עם בתים.</p>
+          <span class="timeline__source">BOARD §039</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:58:27+03:00">10:58</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>חיקי דיווח על 93 מועמדים חדשים עם שם רשמי, כתובות מספריות ו-way-id ב-OSM; 9 נוספים ב-HOLD.</p>
+          <span class="timeline__source">ערוץ chiki</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:55:00+03:00">10:55</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי סגר את 038: מצב ריק תוקן, מבחן אחסון 17 נוסף, verify 32/32 וגיבוי עם 7 הביקורים.</p>
+          <span class="timeline__source">BOARD §038</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:55:00+03:00">10:55</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>גולי עדכן את החדר אחרי 037 וביקורת 035, ובדק את הדף מחדש ב-360 וב-1280.</p>
+          <span class="timeline__source">ערוץ guli</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:46:59+03:00">10:46</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>שיפו הגיש ביקורת 035: חמישה תרחישי מחיקה תקינים, אבל מחיקת הרחוב האחרון משאירה קו ופופאפ על המפה.</p>
+          <span class="timeline__source">ערוץ shifu</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:45:49+03:00">10:45</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי סגר את 037: 16 שבילים ומדרגות מיושבים נכנסו לנתונים; 2,154 רחובות, 94 שכונות, verify 31/31.</p>
+          <span class="timeline__source">BOARD §037</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:42:00+03:00">10:42</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>גולי התחיל לבנות את חדר הסוכנים: state, heartbeat, generator ודף.</p>
+          <span class="timeline__source">ערוץ guli</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:40:00+03:00">10:40</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>הראשי רשם את 036: מחיקה ידנית ועיסוויה ירדו; 2,138 רחובות, 94 שכונות, 118 בארכיון, verify 31/31.</p>
+          <span class="timeline__source">BOARD §036</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T10:35:00+03:00">10:35</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>חיקי דיווח על 26 רחובות מיושבים: 4 ודאיים, 22 נוספים ו-4 HOLD; ממתין לאימות מפי.</p>
+          <span class="timeline__source">ערוץ chiki</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T09:49:00+03:00">09:49</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>שיפו סיים ביקורת 034 בלי חוסמים; שני תיקוני חובה הומלצו ויושמו.</p>
+          <span class="timeline__source">ערוץ shifu</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T07:48:00+03:00">07:48</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>צירי ומפי עדכנו את הערוצים: מפה וגלגלת, ניווט שכונות ואודיט נתונים 034.</p>
+          <span class="timeline__source">ערוצי tsiri ו-mappy</span>
+        </div>
+      </li><li class="timeline__item">
+        <div class="timeline__time">
+          <time dir="ltr" datetime="2026-10-21T03:34:00+03:00">03:34</time>
+          <span class="timeline__date">21 באוקטובר 2026</span>
+        </div>
+        <div class="timeline__body">
+          <p>ציבי דיווח על סבב ההשלמה: אקורדיון, גורפת, חיפוש ומובייל 360.</p>
+          <span class="timeline__source">ערוץ tsibi</span>
+        </div>
+      </li>
+  </ol>
+  </section>
+
+  <section aria-labelledby="blockers-title">
+    <div class="section__head">
+      <h2 id="blockers-title">חסמים ותקלות</h2>
+      <p class="section__hint">מה עוצר את העבודה עכשיו. חוסם = לא אפשרי להתקדם בלי לפתור; החלטה פתוחה = ממתינה להכרעה.</p>
+    </div>
+    <div class="blockers">
+    <article class="blocker is-decision is-resolved" id="blocker-municipal-layer-license">
+        <header class="blocker__head">
+          <h3>שכבת רשות מוניציפלית — ממתינה לאישור רישיון בכתב</h3>
+          <div class="blocker__chips">
+            <span class="chip is-decision">החלטה פתוחה</span>
+            <span class="chip is-resolved">נפתר</span>
+          </div>
+        </header>
+        <p class="blocker__impact">3,241 קווים ו-115 פוליגוני שכונות מ-odata.org.il (ODbL מוצהר) זמינים, אבל צוות ה-GIS של עיריית ירושלים דורש אישור בכתב לפני שימוש כמקור ראשי. בלעדיו אי אפשר להחליף או להעשיר את נתוני OSM הקיימים בגיאומטריה עירונית רשמית.</p>
+        <p class="blocker__next"><span class="label">הצעד הבא</span>הוקפא לפי הוראת המשתמש; OSM (ODbL) נשאר מקור האמת. ייפתח מחדש כשיהיה אישור כתוב.</p>
+        <footer class="blocker__foot">
+          <span>אחראי: <strong>ראשי / מפי</strong></span>
+          <span>מקור: BOARD §040 · TASKS §4</span>
+          <span>עודכן: 21 באוקטובר 2026, 11:35</span>
+        </footer>
+      </article><article class="blocker is-decision is-resolved" id="blocker-unlicensed-sources-frozen">
+        <header class="blocker__head">
+          <h3>כל מקור ללא רישיון מאומת — מוקפא אוטומטית</h3>
+          <div class="blocker__chips">
+            <span class="chip is-decision">החלטה פתוחה</span>
+            <span class="chip is-resolved">נפתר</span>
+          </div>
+        </header>
+        <p class="blocker__impact">אין להשתמש בגיאומטריה/שמות ממקור שאין לו רישיון ברור ומאומת (ODbL, CC-BY, אישור כתוב). רק OSM (ODbL) ומקורות עם אישור כתוב תקפים. זה כולל: שכבות GovMap (403/אין מפתח), data.gov.il (חסום בלי Referer), שכבות ArcGIS עירוניות בלי אישור, וכל מקור אחר ללא רישיון גלוי.</p>
+        <p class="blocker__next"><span class="label">הצעד הבא</span>חיקי ומפי יבדקו רישיון לפני כל המלצה; הראשי לא ימזג נתונים בלי אישור רישיון מפורש.</p>
+        <footer class="blocker__foot">
+          <span>אחראי: <strong>ראשי / מפי / חיקי</strong></span>
+          <span>מקור: הנחיית משתמש 2026-10-21 · TASKS §4</span>
+          <span>עודכן: 21 באוקטובר 2026, 11:50</span>
+        </footer>
+      </article>
+  </div>
+  </section>
+
+  <section aria-labelledby="flow-title">
+    <div class="section__head">
+      <h2 id="flow-title">תרשים זרימה — מי מחכה למי</h2>
+      <p class="section__hint">חץ מלא = תלות עבודה; חץ מקווקו = תקשורת נוכחית. ירוק = פעיל, כתום = ממתין, אפור = טרם דווח.</p>
+    </div>
+    <div class="flow-diagram">
+    <pre class="mermaid">
+graph TD
+  main["הראשי"]:::status-active
+  chiki["חיקי"]:::status-waiting
+  mappy["מפי"]:::status-waiting
+  shifu["שיפו"]:::status-active
+  tsibi["ציבי"]:::status-active
+  tsiri["צירי"]:::status-waiting
+  guli["גולי"]:::status-active
+  kipi["קיפי"]:::status-active
+  main --> mappy
+  main --> chiki
+  mappy --> chiki
+  tsiri --> mappy
+  tsibi --> main
+  tsibi --> chiki
+  shifu --> main
+  shifu --> tsiri
+  shifu --> tsibi
+  guli --> main
+  guli --> mappy
+  guli --> chiki
+  guli --> tsiri
+  guli --> tsibi
+  guli --> shifu
+  guli --> tsibi
+  main -.-> chiki
+  main -.-> mappy
+  main -.-> shifu
+  main -.-> tsibi
+  main -.-> kipi
+  chiki -.-> kipi
+  mappy -.-> kipi
+  shifu -.-> tsibi
+  shifu -.-> tsiri
+  tsibi -.-> shifu
+  tsiri -.-> main
+  tsiri -.-> mappy
+  tsiri -.-> shifu
+  guli -.-> main
+    classDef status-active fill:#e2f0e6,stroke:#1d5b3c,color:#1d5b3c;
+    classDef status-waiting fill:#faeed3,stroke:#6d4a0e,color:#6d4a0e;
+    classDef status-unknown fill:#ece6da,stroke:#4b4438,color:#4b4438;
+    classDef status-done fill:#e2f0e6,stroke:#1d5b3c,color:#1d5b3c;
+  </pre>
+  <p class="flow-legend">
+    <span class="chip is-active">פעיל</span>
+    <span class="chip is-waiting">ממתין</span>
+    <span class="chip is-unknown">טרם דווח</span>
+    <span style="margin-inline-start:16px">קו מלא = תלות; קו מקווקו = תקשורת נוכחית</span>
+  </p>
+</div>
+  </section>
+
+  <section aria-labelledby="sources-title">
+    <div class="section__head">
+      <h2 id="sources-title">מקורות</h2>
+      <p class="section__hint">הקבצים שמהם נבנה הדף. אפשר לפתוח כל אחד מהם.</p>
+    </div>
+    <ul class="sources">
+    <li class="source">
+        <a href="docs/agents/BOARD.md"><span class="source__label">לוח הסוכנים — BOARD</span><span class="source__note">החלטות, סטטוסים ומספרי הפרויקט</span></a>
+      </li><li class="source">
+        <a href="docs/agents/TASKS.md"><span class="source__label">יומן המשימות — TASKS</span><span class="source__note">מה הושלם, מה בביצוע ומה חסום</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/chiki.md"><span class="source__label">ערוץ chiki</span><span class="source__note">מחקר, מקורות ואימות HTTP</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/mappy.md"><span class="source__label">ערוץ mappy</span><span class="source__note">אודיט נתונים וגיאומטריה</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/shifu.md"><span class="source__label">ערוץ shifu</span><span class="source__note">ביקורות קוד</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/tsibi.md"><span class="source__label">ערוץ tsibi</span><span class="source__note">יישום UI ומדידות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/tsiri.md"><span class="source__label">ערוץ tsiri</span><span class="source__note">מפה, ניווט שכונות וגלגלת</span></a>
+      </li><li class="source">
+        <a href="docs/agents/LESSONS.md"><span class="source__label">לקחים — LESSONS</span><span class="source__note">20 הבעיות היקרות והצ&#39;קליסט לסבב הבא</span></a>
+      </li>
+  </ul>
+  </section>
+
+  <section aria-labelledby="unsolved-title">
+    <div class="section__head">
+      <h2 id="unsolved-title">בעיות לא פתורות — מה הסוכנים לא הצליחו לפתור</h2>
+      <p class="section__hint">רשימה מרוכזת של חסמים טכניים/בירוקרטיים שדורשים עזרה חיצונית או החלטה.</p>
+    </div>
+    <div class="unsolved">
+    <article class="unsolved-item is-stuck" id="unsolved-mappy-inhabited-paths-verification">
+        <header class="unsolved__head">
+          <h3>Mappy: 93 inhabited paths verification taking too long / rate limited</h3>
+          <span class="chip is-stuck">תקוע</span>
+        </header>
+        <p class="unsolved__desc">Mappy sub-agent hit rate limits while verifying 93 Chiki candidates + searching for additional inhabited paths. Need to verify: official municipal name, numeric addresses, OSM way IDs, geometry, correct area (94 existing areas). Three specific names: &#39;בתי ורשא&#39; (0 addresses), &#39;חיים אלבוחר&#39; (0 addresses, official name &#39;מבוא הרב חיים אלבוחר&#39;), &#39;עזרת ישראל&#39; (13 addresses, way 44201877). External dataset (street-data-all.json) is a discovery index only, not binding.</p>
+        <div class="unsolved__meta">
+          <span><strong>אחראי:</strong> mappy</span>
+          <span><strong>חוסם:</strong> rate limits on municipal ArcGIS API; OSM API rate limits; manual verification needed</span>
+          <span><strong>השפעה:</strong> Cannot merge new paths into app data (assets/data.js, assets/geo.js) until verified. Current: 2,154 streets / 94 areas.</span>
+        </div>
+        
+        <details class="unsolved__attempted">
+          <summary>מה נוסה (4)</summary>
+          <ul><li>Sub-agent launched twice, both hit rate limits</li><li>Municipal address index queried for 3 test names via HTTP</li><li>Chiki&#39;s 93 candidates documented with way IDs and address counts</li><li>Area assignments for &#39;מיוחס&#39;, &#39;ארזי הבירה&#39;, Gila flower streets need official polygon verification</li></ul>
+        </details>
+        <p class="unsolved__needs"><strong>מה נדרש:</strong> Local OSM PBF parsing for geometry + municipal address index dump (or alternative) to verify all 93 without API rate limits</p>
+      </article><article class="unsolved-item is-partial" id="unsolved-shifu-map-empty-state-blocker">
+        <header class="unsolved__head">
+          <h3>Shifu: map.js early return on empty street list leaves layers on map</h3>
+          <span class="chip is-partial">תוקן חלקית</span>
+        </header>
+        <p class="unsolved__desc">Shifu review 035 found: when all streets are deleted, map.js:1393 guard returns early and doesn&#39;t clear hit layers/popups. Fixed in code but needs re-verification across all viewports (360/390/430/1280).</p>
+        <div class="unsolved__meta">
+          <span><strong>אחראי:</strong> shifu</span>
+          <span><strong>חוסם:</strong> No real-device touch testing; only emulation/CDP</span>
+          <span><strong>השפעה:</strong> Empty map state shows stale layers; user sees lines/popups that shouldn&#39;t exist.</span>
+        </div>
+        
+        <details class="unsolved__attempted">
+          <summary>מה נוסה (2)</summary>
+          <ul><li>Code fix applied to map.js handleVisitedReplace</li><li>Live test at 2,154 → 0 deletion: #map-empty shows correct message, but layer cleanup needs confirmation</li></ul>
+        </details>
+        <p class="unsolved__needs"><strong>מה נדרש:</strong> Real device testing at 360/390/430; CDP verification of layer cleanup on empty state</p>
+      </article><article class="unsolved-item is-pending" id="unsolved-mobile-390-430-verification">
+        <header class="unsolved__head">
+          <h3>Tsibi: 390px/430px mobile breakpoint not re-verified after recent changes</h3>
+          <span class="chip is-pending">ממתין</span>
+        </header>
+        <p class="unsolved__desc">360px verified OK. 390px and 430px breakpoints need re-verification for: flat list view, search, visit marking from list, accordion, bulk actions, sticky bar, map height 240-280px, no horizontal overflow, 44px touch targets, 16px inputs, AA contrast.</p>
+        <div class="unsolved__meta">
+          <span><strong>אחראי:</strong> tsibi</span>
+          <span><strong>חוסם:</strong> Real device unavailable; emulation only</span>
+          <span><strong>השפעה:</strong> Acceptance gate for &#39;הידעת&#39; feature blocked (TASKS §3).</span>
+        </div>
+        
+        <details class="unsolved__attempted">
+          <summary>מה נוסה (2)</summary>
+          <ul><li>CDP emulation at 360px passed</li><li>Desktop 1280px passed</li></ul>
+        </details>
+        <p class="unsolved__needs"><strong>מה נדרש:</strong> Real device or reliable emulation at 390/430; automated visual regression if possible</p>
+      </article><article class="unsolved-item is-frozen" id="unsolved-municipal-layer-license">
+        <header class="unsolved__head">
+          <h3>Municipal ArcGIS layer (3,241 lines, 115 polygons) requires written license approval</h3>
+          <span class="chip is-frozen">מוקפא</span>
+        </header>
+        <p class="unsolved__desc">odata.org.il publishes Jerusalem municipal layers (streets, old city streets, neighborhood polygons) under declared ODbL, but GIS team requires written approval before use as primary source. Currently frozen per user instruction.</p>
+        <div class="unsolved__meta">
+          <span><strong>אחראי:</strong> main / mappy</span>
+          <span><strong>חוסם:</strong> Bureaucratic process with Jerusalem municipality GIS team; no timeline</span>
+          <span><strong>השפעה:</strong> Cannot replace/enrich OSM geometry with official municipal geometry. OSM remains sole source.</span>
+        </div>
+        
+        <details class="unsolved__attempted">
+          <summary>מה נוסה (3)</summary>
+          <ul><li>Confirmed ODbL declaration on odata.org.il</li><li>Confirmed GIS team requires written approval</li><li>User instruction: freeze until written approval obtained</li></ul>
+        </details>
+        <p class="unsolved__needs"><strong>מה נדרש:</strong> Written approval from Jerusalem municipality GIS team, or alternative licensed source</p>
+      </article><article class="unsolved-item is-blocked" id="unsolved-real-device-touch-testing">
+        <header class="unsolved__head">
+          <h3>No real-device touch testing for map interactions</h3>
+          <span class="chip is-blocked">חסום</span>
+        </header>
+        <p class="unsolved__desc">All mobile/map touch testing done via Chrome DevTools emulation/CDP only. No physical phone/tablet testing for: pinch zoom, pan, tap on line (36px hit area), long press, scroll vs map drag distinction, iOS Safari behavior (16px input zoom prevention).</p>
+        <div class="unsolved__meta">
+          <span><strong>אחראי:</strong> tsiri / tsibi / shifu</span>
+          <span><strong>חוסם:</strong> No physical device available in this environment</span>
+          <span><strong>השפעה:</strong> Cannot guarantee touch UX works on real iOS/Android; acceptance criteria for mobile incomplete.</span>
+        </div>
+        
+        <details class="unsolved__attempted">
+          <summary>מה נוסה (3)</summary>
+          <ul><li>CDP touch emulation at 360px: pinch z13→14, drag, tap 10px off line works</li><li>Scroll-wheel zoom on desktop verified</li><li>Leaflet tap:false, touch-action CSS applied</li></ul>
+        </details>
+        <p class="unsolved__needs"><strong>מה נדרש:</strong> Physical device testing or cloud device farm (BrowserStack, Sauce Labs, etc.)</p>
+      </article><article class="unsolved-item is-frozen" id="unsolved-why-here-agents-html-frozen">
+        <header class="unsolved__head">
+          <h3>why-here.html and agents.html frozen — stale counts</h3>
+          <span class="chip is-frozen">מוקפא</span>
+        </header>
+        <p class="unsolved__desc">User froze why-here.html (shows 2,154/25,233/31) and agents.html (old agent board). Guli&#39;s guli.html is the live replacement but not linked from frozen pages. why-here.html shows verify 31/31 but actual is 32/32.</p>
+        <div class="unsolved__meta">
+          <span><strong>אחראי:</strong> main</span>
+          <span><strong>חוסם:</strong> User instruction: do not edit frozen pages</span>
+          <span><strong>השפעה:</strong> Users landing on frozen pages see outdated info. No redirect mechanism.</span>
+        </div>
+        
+        <details class="unsolved__attempted">
+          <summary>מה נוסה (2)</summary>
+          <ul><li>Guli page built and verified at all breakpoints</li><li>Frozen pages explicitly marked as frozen in BOARD</li></ul>
+        </details>
+        <p class="unsolved__needs"><strong>מה נדרש:</strong> User decision: add banner/link on frozen pages pointing to guli.html, or accept staleness</p>
+      </article>
+  </div>
+  </section>
+
+  <section aria-labelledby="ai-prompt-title">
+    <div class="section__head">
+      <h2 id="ai-prompt-title">פרומפט למנוע AI חיצוני — העתק והדבק</h2>
+      <p class="section__hint">פרומפט מפורט באנגלית למנוע AI (Claude, GPT, Gemini, וכד') שיחפש פתרונות לבעיות הלא-פתורות.</p>
+    </div>
+    <p class="empty-line">אין פרומפט זמין.</p>
+  </section>
+
+  <aside class="room-note">
+    <strong>איך לקרוא את הדף.</strong> כל שורה בדף מגיעה מערוץ סוכן, מ-BOARD או מ-TASKS. מה שלא דווח מסומן &#39;טרם דווח&#39;. הדף לא מפעיל סוכנים ולא מעריך קוד.
+    מצב הפרויקט לפי docs/agents/BOARD.md §052: 2,424 רחובות · 95 שכונות · 25,233+ נקודות · verify 32/32.
+  </aside>
+</main>
+
+<footer class="page">
+  <div class="wrap">
+    <p>הדף נבנה על ידי <strong>גולי</strong> מתוך <a href="docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
+    <p>נבנה לאחרונה: <time dir="ltr" datetime="2026-10-21T12:48:52+03:00">21 באוקטובר 2026, 12:48</time> · <a href="agents.html">ללוח הסוכנים הכללי</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  var refresh = document.getElementById("refresh");
+  if (refresh) {
+    refresh.addEventListener("click", function () {
+      refresh.disabled = true;
+      refresh.textContent = "מרענן…";
+      window.location.reload();
+    });
+  }
+
+  // AI prompt copy button
+  var copyBtn = document.querySelector(".ai-prompt__copy");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var prompt = this.getAttribute("data-prompt");
+      if (prompt && navigator.clipboard) {
+        navigator.clipboard.writeText(prompt).then(function () {
+          var old = copyBtn.textContent;
+          copyBtn.textContent = "הועתק!";
+          setTimeout(function () { copyBtn.textContent = old; }, 1500);
+        }).catch(function () {
+          fallbackCopy(prompt);
+        });
+      } else {
+        fallbackCopy(prompt);
+      }
+    });
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+    var btn = document.querySelector(".ai-prompt__copy");
+    if (btn) {
+      var old = btn.textContent;
+      btn.textContent = "הועתק!";
+      setTimeout(function () { btn.textContent = old; }, 1500);
+    }
+  }
+
+  var target = document.getElementById("relative-time");
+  if (!target) return;
+  var raw = target.getAttribute("data-updated");
+  var then = raw ? new Date(raw).getTime() : NaN;
+  if (!isFinite(then)) return;
+
+  function label() {
+    var minutes = Math.round((Date.now() - then) / 60000);
+    if (minutes < 1) return "עכשיו";
+    if (minutes === 1) return "לפני דקה";
+    if (minutes < 60) return "לפני " + minutes + " דקות";
+    var hours = Math.round(minutes / 60);
+    if (hours === 1) return "לפני שעה";
+    if (hours < 24) return "לפני " + hours + " שעות";
+    var days = Math.round(hours / 24);
+    return days === 1 ? "לפני יום" : "לפני " + days + " ימים";
+  }
+
+  function paint() {
+    target.textContent = label();
+  }
+  paint();
+  window.setInterval(paint, 60000);
+})();
+</script>
+</body>
+</html>

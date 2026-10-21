@@ -1,0 +1,11 @@
+{
+  "name": "jlm-street-journal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "יומן ביקורים ברחובות ירושלים — אפליקציית דפדפן ללא תלויות",
+  "scripts": {
+    "start": "node serve.js",
+    "test": "node tests/store.test.js",
+    "verify": "node tools/verify.js"
+  }
+}

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="יומן ביקורים ברחובות ירושלים — סמנו כל רחוב שבו הייתם, הוסיפו תאריך והערה, ועקבו אחרי ההתקדמות." />
+    <title>רחובות ירושלים — יומן ביקורים</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#search">דלג לחיפוש</a>
+    <a class="skip-link" href="#street-list">דלג לרשימת הרחובות</a>
+
+    <header class="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow">יומן ביקורים</p>
+        <h1 class="hero__title">רחובות ירושלים</h1>
+        <p class="hero__subtitle">
+          כל רחוב בעיר הוא סיפור. סמנו את הרחובות שכבר הלכתם בהם, הוסיפו תאריך והערה — ותראו כמה עוד נשאר.
+        </p>
+
+        <div class="progress" aria-hidden="true">
+          <div class="progress__track"><span id="progress-bar"></span></div>
+        </div>
+        <p class="progress__text" id="progress-text">—</p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <div class="banner" id="storage-banner" role="alert" hidden>
+        <span id="storage-banner-text"></span>
+        <button type="button" class="banner__close" id="banner-close" aria-label="סגירת ההודעה">סגירה</button>
+      </div>
+
+      <section class="toolbar" aria-labelledby="toolbar-title">
+        <h2 class="visually-hidden" id="toolbar-title">סינון</h2>
+
+        <div class="toolbar__row">
+          <div class="field">
+            <label class="field__label" for="area-filter">שכונה</label>
+            <select id="area-filter" class="field__input"></select>
+          </div>
+
+          <div class="segmented" role="group" aria-label="סינון לפי סטטוס ביקור">
+            <button type="button" class="segmented__btn is-active" data-status="all" aria-pressed="true">הכול</button>
+            <button type="button" class="segmented__btn" data-status="visited" aria-pressed="false">ביקרתי</button>
+            <button type="button" class="segmented__btn" data-status="pending" aria-pressed="false">טרם ביקרתי</button>
+          </div>
+
+          <button type="button" class="btn btn--quiet" id="clear-filters" hidden>ניקוי סינון</button>
+        </div>
+
+        <div class="toolbar__row toolbar__row--split">
+          <p class="toolbar__summary" id="filter-summary" hidden></p>
+
+          <div class="actions">
+            <button type="button" class="btn" id="export-btn">ייצוא</button>
+            <button type="button" class="btn" id="import-btn">ייבוא</button>
+            <input type="file" id="import-input" accept="application/json,.json" hidden />
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-labelledby="stats-title">
+        <h2 class="visually-hidden" id="stats-title">סיכום</h2>
+
+        <ul class="stats__cards">
+          <li class="stat">
+            <span class="stat__value" id="stat-total">0</span>
+            <span class="stat__label">רחובות ברשימה</span>
+          </li>
+          <li class="stat stat--good">
+            <span class="stat__value" id="stat-visited">0</span>
+            <span class="stat__label">ביקרתי</span>
+          </li>
+          <li class="stat">
+            <span class="stat__value" id="stat-left">0</span>
+            <span class="stat__label">נשארו</span>
+          </li>
+          <li class="stat stat--accent">
+            <span class="stat__value" id="stat-pct">0%</span>
+            <span class="stat__label">השלמה</span>
+          </li>
+        </ul>
+
+        <p class="stats__summary" id="stats-summary"></p>
+
+        <div class="quick" id="quick-areas"></div>
+
+        <details class="breakdown" id="breakdown-details">
+          <summary class="breakdown__summary">
+            <span>פירוט לפי שכונה</span>
+            <span class="breakdown__count" id="breakdown-count"></span>
+          </summary>
+          <ul class="breakdown__list" id="area-breakdown"></ul>
+        </details>
+      </section>
+
+      <section class="map-section" id="map-section" aria-labelledby="map-title">
+        <div class="map-section__head">
+          <h2 class="map-section__title" id="map-title">המפה</h2>
+          <button type="button" class="btn" id="map-network-toggle" aria-pressed="false">מצב ללא רשת</button>
+        </div>
+
+        <p class="map-hint">
+          אזור הלחיצה על קווי הרחובות הורחב — לחיצה סמוך לרחוב תסמן אותו. אפשר גם לסמן מהרשימה, ולבטל מיד מההודעה שמופיעה למטה.
+        </p>
+
+        <div class="map-wrap">
+          <div
+            id="map-canvas"
+            dir="ltr"
+            role="application"
+            aria-label="מפת רחובות ירושלים. החצים מזיזים את המפה, פלוס ומינוס משנים זום."
+          ></div>
+          <p class="map-empty" id="map-empty" hidden>
+            אין עדיין קואורדינטות לרחובות האלה. המפה תופיע כשיהיו נתוני מיקום — הרשימה למטה עובדת גם בלעדיה.
+          </p>
+        </div>
+
+        <p class="map-banner" id="map-banner" role="status" hidden></p>
+
+        <ul class="map-legend">
+          <li><span class="map-legend__swatch map-legend__swatch--visited" aria-hidden="true"></span> ביקרתם</li>
+          <li><span class="map-legend__swatch map-legend__swatch--pending" aria-hidden="true"></span> עוד לא</li>
+        </ul>
+
+        <p class="visually-hidden" role="status" aria-live="polite" id="map-status"></p>
+      </section>
+
+      <section class="searchbar" aria-labelledby="search-label">
+        <div class="searchbar__row">
+          <div class="field field--grow">
+            <label class="field__label" id="search-label" for="search">חיפוש רחוב</label>
+            <div class="searchbar__control">
+              <input
+                id="search"
+                class="field__input field__input--search"
+                type="search"
+                placeholder="כתבו שם רחוב — למשל רחוב הרצל"
+                autocomplete="off"
+                spellcheck="false"
+              />
+              <button type="button" class="btn btn--quiet btn--small searchbar__clear" id="search-clear" hidden>
+                ניקוי
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="searchbar__meta">
+          <button type="button" class="result-count" id="result-count">מציג את כל הרחובות</button>
+          <span class="searchbar__hint" id="search-hint"></span>
+        </p>
+
+        <p class="visually-hidden" id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </section>
+
+      <section class="list-section" aria-labelledby="list-title">
+        <div class="list-section__head">
+          <h2 class="list-section__title" id="list-title">הרחובות</h2>
+          <p class="list-section__count" id="list-count"></p>
+          <button type="button" class="btn btn--quiet btn--small list-section__clear" id="list-clear" hidden>חזרה לכל הרחובות</button>
+        </div>
+
+        <div class="list-controls">
+          <div class="segmented view-toggle" role="group" aria-label="תצוגת רשימת הרחובות">
+            <button type="button" class="segmented__btn is-active" data-view="areas" aria-pressed="true">לפי שכונות</button>
+            <button type="button" class="segmented__btn" data-view="all" aria-pressed="false">כל הרחובות</button>
+          </div>
+
+          <div class="field field--sort">
+            <label class="field__label" for="area-sort">מיון שכונות</label>
+            <select id="area-sort" class="field__input">
+              <option value="remaining">כמעט הושלמה קודם</option>
+              <option value="alpha">אלפביתי</option>
+              <option value="large">גדול קודם</option>
+            </select>
+          </div>
+          <p class="list-hint" id="list-hint">סימון ביקור או מחיקה — ישירות בכל שורה. מחיקה מסירה את הרחוב גם מהמפה, ואפשר לבטל מיד.</p>
+        </div>
+
+        <p class="list-loading" id="list-loading">טוענים את רשימת הרחובות…</p>
+        <p class="empty" id="empty-state" hidden></p>
+
+        <ul class="street-list" id="street-list" tabindex="-1"></ul>
+
+        <details class="add-wrap">
+          <summary class="add-form__title">רחוב שאינו ברשימה?</summary>
+          <form class="add-form" id="add-form">
+            <div class="add-form__row">
+              <div class="field field--grow">
+                <label class="field__label" for="add-name">שם הרחוב</label>
+                <input id="add-name" class="field__input" name="name" maxlength="80" required />
+              </div>
+              <div class="field">
+                <label class="field__label" for="add-area">שכונה</label>
+                <input id="add-area" class="field__input" name="area" maxlength="80" list="area-options" placeholder="אחר" />
+                <datalist id="area-options"></datalist>
+              </div>
+              <button type="submit" class="btn btn--primary">הוספה</button>
+            </div>
+          </form>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>הנתונים נשמרים מקומית בדפדפן שלכם בלבד (localStorage). אין שרת ואין מעקב.</p>
+      <p>נתוני הרחובות והקואורדינטות: © OpenStreetMap contributors (ODbL).</p>
+    </footer>
+
+    <div class="toast" id="toast" hidden>
+      <p class="toast__text" id="toast-text"></p>
+      <button type="button" class="btn btn--small" id="toast-undo">בטל</button>
+      <button type="button" class="btn btn--quiet btn--small" id="toast-close">סגירה</button>
+    </div>
+
+    <p class="visually-hidden" role="status" aria-live="polite" id="live"></p>
+
+    <script src="assets/data.js" defer></script>
+    <script src="assets/store.js" defer></script>
+    <script src="assets/geo.js" defer></script>
+    <script src="assets/app.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="assets/map.js" defer></script>
+    <script src="assets/ui.js" defer></script>
+  </body>
+</html>

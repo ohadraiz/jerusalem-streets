@@ -1,0 +1,233 @@
+{
+  "light": {
+    "base": [
+      {
+        "sel": ".hero__eyebrow",
+        "ratio": 6.74,
+        "fontSize": "12.8px",
+        "large": false,
+        "need": 4.5,
+        "text": "יומן ביקורים"
+      },
+      {
+        "sel": ".hero__subtitle",
+        "ratio": 7.81,
+        "fontSize": "16px",
+        "large": false,
+        "need": 4.5,
+        "text": "כל רחוב בעיר הוא ס"
+      },
+      {
+        "sel": ".stat__label",
+        "ratio": 7.81,
+        "fontSize": "13.12px",
+        "large": false,
+        "need": 4.5,
+        "text": "רחובות ברשימה"
+      },
+      {
+        "sel": ".stat__value",
+        "ratio": 15.71,
+        "fontSize": "26.4px",
+        "large": true,
+        "need": 3,
+        "text": "2,424"
+      },
+      {
+        "sel": ".segmented__btn",
+        "ratio": 7.14,
+        "fontSize": "14.4px",
+        "large": false,
+        "need": 4.5,
+        "text": "הכול"
+      },
+      {
+        "sel": ".field__label",
+        "ratio": 7.11,
+        "fontSize": "12.8px",
+        "large": false,
+        "need": 4.5,
+        "text": "שכונה"
+      },
+      {
+        "sel": ".field__input",
+        "ratio": 15.71,
+        "fontSize": "16px",
+        "large": false,
+        "need": 4.5,
+        "text": "כל השכונות (2,424)"
+      },
+      {
+        "sel": ".map-hint",
+        "ratio": 7.11,
+        "fontSize": "13.12px",
+        "large": false,
+        "need": 4.5,
+        "text": "אזור הלחיצה על קוו"
+      },
+      {
+        "sel": ".map-legend",
+        "ratio": 7.11,
+        "fontSize": "13.12px",
+        "large": false,
+        "need": 4.5,
+        "text": "ביקרתם\n           "
+      },
+      {
+        "sel": ".result-count",
+        "ratio": 6.14,
+        "fontSize": "12.48px",
+        "large": false,
+        "need": 4.5,
+        "text": "מציג את כל הרחובות"
+      },
+      {
+        "sel": ".list-section__title",
+        "ratio": 14.31,
+        "fontSize": "18.4px",
+        "large": true,
+        "need": 3,
+        "text": "הרחובות"
+      },
+      {
+        "sel": ".list-section__count",
+        "ratio": 7.11,
+        "fontSize": "13.6px",
+        "large": false,
+        "need": 4.5,
+        "text": "95 שכונות · 2,424 "
+      },
+      {
+        "sel": ".list-hint",
+        "ratio": 7.11,
+        "fontSize": "13.12px",
+        "large": false,
+        "need": 4.5,
+        "text": "כדי לסמן ביקור — ל"
+      },
+      {
+        "sel": ".area-group__name",
+        "ratio": 15.71,
+        "fontSize": "15.68px",
+        "large": false,
+        "need": 4.5,
+        "text": "חומת שמואל - הר חו"
+      },
+      {
+        "sel": ".area-group__count",
+        "ratio": 7.81,
+        "fontSize": "13.76px",
+        "large": false,
+        "need": 4.5,
+        "text": "0/3"
+      },
+      {
+        "sel": ".area-group__pct",
+        "ratio": 7.81,
+        "fontSize": "13.12px",
+        "large": false,
+        "need": 4.5,
+        "text": "0.0%"
+      },
+      {
+        "sel": ".chip__name",
+        "ratio": 15.71,
+        "fontSize": "13.6px",
+        "large": false,
+        "need": 4.5,
+        "text": "רמות"
+      },
+      {
+        "sel": ".chip__count",
+        "ratio": 7.81,
+        "fontSize": "13.6px",
+        "large": false,
+        "need": 4.5,
+        "text": "93 רחובות"
+      },
+      {
+        "sel": ".breakdown__area",
+        "ratio": 7.11,
+        "fontSize": "14.08px",
+        "large": false,
+        "need": 4.5,
+        "text": "חומת שמואל - הר חו"
+      },
+      {
+        "sel": ".breakdown__value",
+        "ratio": 7.11,
+        "fontSize": "14.08px",
+        "large": false,
+        "need": 4.5,
+        "text": "0/3"
+      },
+      {
+        "sel": ".street-more__btn",
+        "ratio": 14.31,
+        "fontSize": "16px",
+        "large": false,
+        "need": 4.5,
+        "text": "הצג עוד 20 שכונות "
+      }
+    ],
+    "rows": [
+      {
+        "sel": ".area-card__title",
+        "ratio": 15.71,
+        "fontSize": "14.72px",
+        "large": false,
+        "need": 4.5,
+        "text": "שכונת חומת שמואל -"
+      },
+      {
+        "sel": ".street__name",
+        "ratio": 14.07,
+        "fontSize": "16px",
+        "large": false,
+        "need": 4.5,
+        "text": "אהרן כהן"
+      },
+      {
+        "sel": ".street__area",
+        "ratio": 7.11,
+        "fontSize": "12.16px",
+        "large": false,
+        "need": 4.5,
+        "text": "חומת שמואל - הר חו"
+      },
+      {
+        "sel": ".street__visit",
+        "ratio": 4.99,
+        "fontSize": "12.8px",
+        "large": false,
+        "need": 4.5,
+        "text": "ביקרתי ✓"
+      },
+      {
+        "sel": ".street__maps",
+        "ratio": 6.04,
+        "fontSize": "12.48px",
+        "large": false,
+        "need": 4.5,
+        "text": "פתח ב-Google Maps "
+      },
+      {
+        "sel": ".street__delete",
+        "ratio": 5.44,
+        "fontSize": "12.48px",
+        "large": false,
+        "need": 4.5,
+        "text": "מחק"
+      },
+      {
+        "sel": ".street__field span",
+        "ratio": 6.99,
+        "fontSize": "12px",
+        "large": false,
+        "need": 4.5,
+        "text": "תאריך ביקור"
+      }
+    ],
+    "scheme": "rgb(251, 248, 243)"
+  }
+}
