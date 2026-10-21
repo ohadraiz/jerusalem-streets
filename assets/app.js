@@ -1003,7 +1003,7 @@
     focusAreaControl(area, "area-focus");
     
     // Scroll map into view so user sees the focused area
-    var mapEl = document.getElementById("map");
+    var mapEl = document.getElementById("map-section");
     if (mapEl) {
       mapEl.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -1091,6 +1091,49 @@
     batch.forEach(function (item) {
       emitVisitedChange(item.id);
     });
+  }
+
+  /** סיום ידני של שכונה — המשתמש מצהיר שהשכונה הושלמה */
+  function completeAreaManually(area, note) {
+    var confirmed = window.confirm(
+      "לסמן את שכונת " + area + " כמושלמת ידנית? זה יוסיף תג \"הושלמה ידנית\" ויאפשר ביטול."
+    );
+    if (!confirmed) return;
+
+    var completedAt = today();
+    state.manualCompletions[area] = { note: note || "", completedAt: completedAt };
+    pushUndo({
+      type: "manual-complete",
+      area: area,
+      prev: state.manualCompletions[area] ? null : { note: "", completedAt: "" }
+    });
+    persist();
+
+    showToast("שכונת " + area + " סומנה כהושלמה ידנית", "בטל");
+    announce("שכונת " + area + " סומנה כהושלמה ידנית.");
+    renderList();
+    renderStats();
+    updateAreaUI(area);
+  }
+
+  /** ביטול סיום ידני של שכונה */
+  function undoManualCompletion(area) {
+    var confirmed = window.confirm("לבטל את הסיום הידני של שכונת " + area + "?");
+    if (!confirmed) return;
+
+    delete state.manualCompletions[area];
+    pushUndo({
+      type: "manual-complete",
+      area: area,
+      prev: { note: "", completedAt: "" }
+    });
+    persist();
+
+    showToast("הסיום הידני של שכונת " + area + " בוטל", "בטל");
+    announce("הסיום הידני של שכונת " + area + " בוטל.");
+    renderList();
+    renderStats();
+    updateAreaUI(area);
   }
 
   /** ביטול סימון גורפי של השכונה — שמירה אחת וביטול אחד */
@@ -1794,6 +1837,24 @@
       event.preventDefault();
       var gotoRow = goto.closest("[data-id]");
       if (gotoRow) gotoStreet(gotoRow.dataset.id);
+      return;
+    }
+
+    var manualComplete = target.closest('[data-action="manual-complete"]');
+    if (manualComplete) {
+      event.preventDefault();
+      var area = manualComplete.dataset.area;
+      var note = prompt("הערה לסיום ידני (אופציונלי):");
+      if (note === null) return; // cancelled
+      completeAreaManually(area, note);
+      return;
+    }
+
+    var manualUndo = target.closest('[data-action="manual-undo"]');
+    if (manualUndo) {
+      event.preventDefault();
+      var area = manualUndo.dataset.area;
+      undoManualCompletion(area);
       return;
     }
 

@@ -1313,6 +1313,8 @@ summary,
   margin: 0;
   text-align: start;
   cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .street__name:hover {
