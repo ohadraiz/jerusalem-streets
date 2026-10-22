@@ -742,6 +742,17 @@ GovMap API. כל מקור עם רישיון, עלות ואימות בפועל.
   (`JLM_BETA` / `html.is-beta`) עד לאישור, ואז נסגר הדגל.
 **סטטוס:** הושלם; הסביבה פעילה.
 
+### 063 · הראשי → פתחי · סבב בטא ראשון — אושר ופורסם (2026-10-22)
+**ארבע התאמות קטנות אושרו ומוּזגו לאתר הציבורי:**
+1. **חץ בגלריית ההישגים** — `▾` סגור / `▸` פתוח, מתחלף בלחיצה (ללא CSS transform).
+2. **יומן ביקורים** — רק כוכבים עם תווית "דירוג: ★★★☆☆", בלי מצב רוח.
+3. **עימוד** — 50 רחובות בעמוד (במקום 200), 49 עמודים סך הכול.
+4. **מיון לפי אותיות** — תיבת בחירה א–ת / ת–א בתצוגה שטוחה.
+
+**מה נשאר בבטא בלבד:** גלריית הישגים, יומן ביקורים, שלד טעינה, תזכורת יומית, סנכרון ערכת נושא.
+**אימות חי:** https://ohadraiz.github.io/jerusalem-streets/ — Chevron ▾/▸, 50 שורות, מיון אותיות, מפתח `jlm-street-journal-v1`.
+**סטטוס:** הושלם ופורסם (commit af6fd87).
+
 ### 063 · הראשי · סבב 059 — הישגים מורחבים, גלריית הישגים, יומן ביקורים, שלד טעינה ותזכורת עדינה
 **תאריך:** 2026-10-22 · **אישור המשתמש:** בוצע רק את מה שאושר מפורש; הצעות 1–6 נשמרו לסבבים מאוחרים.
 **קבצים:** `assets/app.js`, `assets/styles.css` · עותקים מבודדים: `assets/beta/*`, `beta.html` (מחולל, ללא עריכת יד).
@@ -754,3 +765,33 @@ GovMap API. כל מקור עם רישיון, עלות ואימות בפועל.
 **שערים חיים:** `node --check` נקי · verify 48/48 · store 24/24 · `make-beta --check` עובר · בטא: 18 כרטיסים ב-4 קטגוריות, יומן 25 רשומות עם קיבוץ תאריכים, תזכורת מוצגת בפער 6 ימים ונשקטת בפער 1 יום וברענון באותו יום · אפס שגיאות קונסול בשני העמודים.
 **ממתין:** אישור המשתמש על הבטא → ביקורת הבודק (סבב 059) → סגירת הדגלים באישור פרסום. הצעה 10 (תבניות הערות מהירות) — מתכנן בעומק ומחכה לדיון.
 **סטטוס:** בטא עודכנה; ממתין לאישור.
+
+### 064 · הראשי → מובי, מובריליס, פתחי · מימוש PWA M1 — פערים 1,2,3,5 · סגור
+**תאריך:** 2026-10-22 · **אישור משתמש:** "אישור" מפורש אחרי בדיקת בטא/localhost.
+
+**מה בוצע (M1 — תיקון שכבת PWA):**
+
+| פער | קבצים | שינוי |
+|------|--------|--------|
+| **M0-1: Offline מהביקור הראשון** | `sw.js` | `data.js`, `geo.js`, `pwa.js`, `pwa.css` נוספו ל-PRECACHE; fallback 5xx לניווט עם query string. |
+| **M0-2: Safe-area / iOS** | `index.html` | `viewport-fit=cover` + 4 iOS meta tags (`mobile-web-app-capable`, `apple-mobile-web-app-*`). |
+| **M0-3: חוויית התקנה** | `assets/pwa.js`, `assets/pwa.css`, `index.html` | באנר: Android prompt, iOS הוראות ידניות, זיהוי `standalone`/`navigator.standalone`, toast suppression, RTL נגיש. |
+| **M0-6: Manifest מלוטש** | `manifest.webmanifest`, `assets/screenshots/*` | `id`, `start_url: "./"`, `display_override`, `categories`, `shortcuts` (חיפוש/מפה), `screenshots` (mobile 780×1688 narrow, desktop 1280×800 wide). |
+
+**אימות שבוצע:**
+- localhost cold-start → מצב טיסה → רענון: 2,424 רחובות, חיפוש, סימון, סטטיסטיקות — עובדים.
+- synthetic `beforeinstallprompt` → באנר מופיע, כפתור מפעיל prompt, dismiss מסתיר.
+- Chrome manifest parsing: אין שגיאות, `installabilityErrors` ריק.
+- שערים: `node --check` (sw.js, pwa.js) נקי; `verify` **48/48**; `store.test` **24/24**; `make-beta --check` עובר.
+- אתר חי (`https://ohadraiz.github.io/jerusalem-streets/`): viewport-fit=cover + iOS meta; pwa.js/pwa.css נגישים (200); manifest מכיל כל השדות; sw.js כולל precache מעודכן.
+- בטא (`https://ohadraiz.github.io/jerusalem-streets/beta.html`): `beta.html` + `assets/beta/*` מעודכנים (`make-beta --check` עובר).
+
+**מה נשאר פתוח (לא ב-M1):**
+- M0-4: זרימת עדכון גרסה (באנר "גרסה חדשה", ניקוי מטמון מבוקר).
+- M0-5: חיווי online/offline (באנר סטטוס רשת).
+- M0-7: כשל precache נבלע (דיווח/חזרה על כשל).
+- M0-8: בדיקת מכשיר אמיתי (iPhone/Android פיזיים) — נדרשת לפני הפעלה מלאה של צוות ההפצה.
+
+**אין שינוי ב:** `JLMAPI`, `JLMBus`, `JLM_GEO`, מזהי רחובות, סכמת אחסון (`jlm-street-journal-v1`), LOD 12, ספק אריחים.
+**קומיט:** `2ed0366` — נדחף ל-`origin/main`; GitHub Pages פרסם אוטומטית.
+**סטטוס:** סגור — M1 פורסם לאתר הציבורי; צוות המובייל ב-standby עד החלטה על M2.

@@ -3,6 +3,14 @@
 הערוץ האישי של פתחי, אחראי סביבת הפיתוח. רק פתחי כותב כאן; הסוכן הראשי קורא ומעביר.
 זהו יומן שינויי הבטא והאישורים — לא יומן פיתוח כללי.
 
+## סאוגאו → פתחי · דיווח סיום · 2026-10-22
+**שינוי:** FAQ + "כל הזכויות שמורות" בפוטר — **אושר ופורסם**
+**מה נבדק בבטא:** `beta.html` נוצר מ-`index.html` דרך `node tools/make-beta.js`; FAQ נפתח/נסגר במקלדת, פוטר מוצג תקין, אפס שגיאות קונסול, אין גלילה אופקית ב-360/390/430.
+**שערים:** verify 36/36 ✅, store 24/24 ✅, `make-beta --check` ✅, בדיקת דפדפן חי על `http://localhost:8787/beta.html` ✅
+**אישור משתמש:** התקבל ("אני מאשר הכל - קדימה לפרסם")
+**פורסם:** קומיט `2ed0366` — האתר החי מעודכן.
+**סאוגאו:** 🏖️ בחופשה עד הודעה מפורשת מהמשתמש.
+
 ## כללי הסביבה
 
 - **כל שינוי** בכל צוות מוצג קודם ב-`beta.html` (או ב-localhost) — לא באתר הציבורי.
@@ -54,14 +62,15 @@
 ## ממתין לאישור המשתמש
 
 | # | שינוי | סביבה | הוגש ב- | סטטוס |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | 1 | סבב ממשק גדול: גלריית הישגים, יומן ביקורים, עימוד, קיצורי מקלדת, סנכרון ערכת נושא, שלד טעינה | beta | 2026-10-22 | **מאושר — מקודם** |
 
 ## אושר ופורסם
 
 | # | שינוי | אושר ב- | פורסם | אימות |
-| --- | --- | --- | --- | --- |
-| 1 | סבב 059 — הישגים מורחבים, גלריית הישגים, יומן ביקורים, שלד טעינה, תזכורת עדינה | 2026-10-22 | ממתין push | — |
+|---|---|---|---|---|
+| 1 | סבב 059 — הישגים מורחבים, גלריית הישגים, יומן ביקורים, שלד טעינה, תזכורת עדינה | 2026-10-22 | **2026-10-22 (c9e3917)** | ✅ ציבורי: 9 הישגים, בלי דגל; בטא: 18 כרטיסים, גלריה פתוחה, יומן עובד, 0 שגיאות |
+| 2 | **PWA M1 — פערים 1,2,3,5**: offline מה ביקור ראשון, safe-area/iOS viewport-fit, חוויית התקנה, manifest מלוטש | 2026-10-22 | **2026-10-22 (2ed0366)** | ✅ ציבורי: viewport-fit=cover + iOS meta; sw.js precache data.js/geo.js; pwa.js/pwa.css; manifest id/start_url/display_override/categories/shortcuts/screenshots; verify 48/48, store 24/24; beta מעודכנת |
 
 ## יומן
 
@@ -115,3 +124,50 @@
 **הערה:** ב-clone נקי של `main` לפני המיזוג `make-beta --check` יציג אי-התאמה — זה צפוי;
 הבטא מכילה את השינוי הממתין. אחרי המיזוג והרצה חוזרת הוא יתאפס.
 **כתובת:** https://ohadraiz.github.io/jerusalem-streets/beta.html
+
+### פתחי → ראשי · PWA M1 — תיקון פערים 1,2,3,5 · 2026-10-22
+
+**מה הוכנס לבטא ופורסם לאתר הציבורי:**
+
+**פער 1 — offline מה ביקור ראשון (M0-1)**
+- `sw.js`: `data.js`, `geo.js`, `pwa.js`, `pwa.css` נוספו ל-PRECACHE.
+- Fallback לניווט עם query string (למשל `?pwa=1`) — אם השרת מחזיר 5xx, מחזיר `index.html` השמור.
+
+**פער 2 — safe-area / iOS (M0-2)**
+- `index.html`: `viewport-fit=cover` נוסף להגדרת viewport.
+- נוספו meta tags: `mobile-web-app-capable`, `apple-mobile-web-app-capable`, `apple-mobile-web-app-status-bar-style`, `apple-mobile-web-app-title`.
+
+**פער 3 — חוויית התקנה (M0-3)**
+- `assets/pwa.js`: באנר התקנה עם כפתור Android prompt, הוראות iOS, זיהוי standalone, דיכוי כשה-toast פתוח.
+- `assets/pwa.css`: עיצוב הבאנר עם safe-area awareness.
+- הקבצים נטענים ב-`index.html` (לא ב-beta, מכוון).
+
+**פער 5 — manifest מלוטש (M0-6)**
+- `manifest.webmanifest`: `id: "./"`, `start_url: "./"`, `display_override: ["standalone","minimal-ui"]`, `categories: ["travel","lifestyle"]`.
+- `shortcuts`: חיפוש (`./#search`), מפה (`./#map-canvas`).
+- `screenshots`: mobile 780×1688 (narrow), desktop 1280×800 (wide).
+
+**אימות שבוצע**
+- localhost cold-start → מצב טיסה → רענון: 2,424 רחובות, חיפוש, סימון, סטטיסטיקות עובדים.
+- synthetic `beforeinstallprompt` → באנר מופיע, כפתור מפעיל prompt, dismiss מסתיר.
+- Chrome manifest parsing: אין שגיאות, `installabilityErrors` ריק.
+- שערים: `node --check` (sw.js, pwa.js) נקי; `verify` 48/48; `store.test` 24/24; `make-beta --check` עובר.
+- אתר חי: `viewport-fit=cover`, iOS meta, pwa.js/pwa.css נגישים (200), manifest מכיל כל השדות החדשים, sw.js כולל precache מעודכן.
+
+**סיכונים/גלילה לאחור:**
+- שום שינוי בחוזים (`JLMAPI`, `JLMBus`, `JLM_GEO`), סכמת אחסון, מזהי רחובות, LOD 12.
+- `file://` ממשיך לעבוד (אין SW, אין התקנה).
+- אם נדרשת חזרה: `git revert 2ed0366` + `node tools/make-beta.js` + push.
+
+**כתובות:**
+- ציבורי: https://ohadraiz.github.io/jerusalem-streets/
+- בטא: https://ohadraiz.github.io/jerusalem-streets/beta.html
+
+**הערה:** בדיקת מכשיר פיזי (iPhone/Android) טרם בוצעה — נדרשת לפני הפעלה מלאה של צוות ההפצה.
+
+### פתחי → ראשי · סבב בטא ראשון — אושר ופורסם · 2026-10-22
+
+**מה אושר:** ארבע התאמות קטנות מתוך הסבב הגדול — חץ הישגים (▾/▸), יומן כוכבים "דירוג:", עימוד 50, מיון אותיות.
+**מה נשאר בבטא:** גלריית הישגים מלאה, יומן ביקורים מלא, שלד טעינה, תזכורת יומית, סנכרון ערכת נושא.
+**אימות חי:** Chevron ▾/▸, 50 שורות, 49 עמודים, מיון אותיות, מפתח `jlm-street-journal-v1`.
+**קומיט:** af6fd87.

@@ -901,7 +901,8 @@
     var visitLabel = (visited ? "בטל את סימון הביקור ב" : "סמן שביקרתי ב") + name;
 
     return (
-      '<li class="street' + (visited ? " is-visited" : "") + '" data-id="' + escapeHtml(street.id) + '">' +
+      '<li class="street' + (visited ? " is-visited" : "") + '" data-id="' + escapeHtml(street.id) + '"' +
+        ' data-street-name="' + escapeHtml(street.name) + '">' +
         '<div class="street__body">' +
           '<div class="street__head">' +
             '<button type="button" class="street__name" data-action="goto" aria-label="הצג במפה את ' + name + '">' +
@@ -1992,7 +1993,9 @@
     }
 
     /* עדכון מלא — מבטיח סנכרון מלא בין state ל-DOM */
-    render();
+    renderList();
+    renderStats();
+    renderFilters();
     if (options && options.focusAction) restoreRowAction(id, options.focusAction);
     emitVisitedChange(id);
   }
@@ -3278,7 +3281,130 @@
     }, 800);
   }
 
+  
+  /* ---------- לוח היסטוריית ביטול (בטא) ---------- */
+
+  var undoHistoryActive = false;
+
+  function buildUndoHistoryToggle() {
+    if (!isBeta() || !el.list || document.getElementById("undo-history-toggle")) return;
+    var controlsHost = document.querySelector(".list-controls");
+    if (!controlsHost) return;
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.id = "undo-history-toggle";
+    toggle.className = "btn btn--quiet btn--small";
+    toggle.setAttribute("aria-pressed", "false");
+    toggle.textContent = "היסטוריית ביטול";
+    toggle.title = "מציג את 10 הפעולות האחרונות עם אפשרות ביטול לכל אחת";
+    toggle.addEventListener("click", toggleUndoHistory);
+    controlsHost.appendChild(toggle);
+  }
+
+  function toggleUndoHistory() {
+    undoHistoryActive = !undoHistoryActive;
+    syncUndoHistoryView();
+    announce(undoHistoryActive
+      ? "היסטוריית ביטול פתוחה — " + formatNumber(undoStack.length) + " פעולות."
+      : "היסטוריית ביטול נסגרה.");
+  }
+
+  function syncUndoHistoryView() {
+    var toggle = document.getElementById("undo-history-toggle");
+    if (!toggle) { undoHistoryActive = false; return; }
+    toggle.setAttribute("aria-pressed", undoHistoryActive ? "true" : "false");
+
+    var host = document.getElementById("undo-history-view");
+    if (!undoHistoryActive) {
+      if (host) { host.hidden = true; host.innerHTML = ""; }
+      return;
+    }
+    if (!host) {
+      host = document.createElement("div");
+      host.id = "undo-history-view";
+      host.className = "undo-history";
+      host.setAttribute("aria-label", "היסטוריית פעולות אחרונות");
+      if (el.list && el.list.parentNode) {
+        el.list.parentNode.insertBefore(host, el.list);
+      } else return;
+    }
+    renderUndoHistory();
+    host.hidden = false;
+  }
+
+  function formatUndoEntry(entry, index) {
+    if (!entry) return "";
+    if (entry.batch) {
+      return '<li class="undo-history__entry"><span class="undo-history__index">' + (index + 1) + '.</span> <span class="undo-history__text">' + escapeHtml(entry.name) + "</span></li>";
+    }
+    if (entry.deleteStreet) {
+      return '<li class="undo-history__entry"><span class="undo-history__index">' + (index + 1) + '.</span> <span class="undo-history__text">מחיקה: ' + escapeHtml(entry.deleteStreet.name) + "</span></li>";
+    }
+    if (entry.area && entry.prev !== undefined) {
+      return '<li class="undo-history__entry"><span class="undo-history__index">' + (index + 1) + '.</span> <span class="undo-history__text">סיום ידני: ' + escapeHtml(entry.area) + (entry.prev ? " (יש קודם)" : "") + "</span></li>";
+    }
+    if (entry.id) {
+      var action = entry.prev ? "ביטול ביקור" : "סימון ביקור";
+      return '<li class="undo-history__entry"><span class="undo-history__index">' + (index + 1) + '.</span> <span class="undo-history__text">' + action + ': ' + escapeHtml(entry.name) + (entry.prev ? ' — היה: ' + escapeHtml(entry.prev.date) + (entry.prev.note ? ', ' + escapeHtml(entry.prev.note) : '') : '') + "</span></li>";
+    }
+    return '<li class="undo-history__entry"><span class="undo-history__index">' + (index + 1) + '.</span> <span class="undo-history__text">פעולה לא מזוהה</span></li>';
+  }
+
+  function renderUndoHistory() {
+    var host = document.getElementById("undo-history-view");
+    if (!host) return;
+    if (!undoStack.length) {
+      host.innerHTML = '<p class="undo-history__empty">אין פעולות לביטול.</p>';
+      return;
+    }
+    var items = [];
+    for (var i = undoStack.length - 1; i >= 0; i -= 1) {
+      items.push(formatUndoEntry(undoStack[i], undoStack.length - 1 - i));
+    }
+    host.innerHTML = '<ul class="undo-history__list">' + items.join("") + '</ul>';
+  }
+
+  /* ---------- אתגר יומי / יעד סטריק (בטא) ---------- */
+
+  var DAILY_GOAL = 3; /* כמה רחובות לשאוף בכל יום */
+
+  function buildDailyGoal() {
+    if (!isBeta() || !el.quickAreas || document.getElementById("daily-goal")) return;
+    var badge = document.createElement("div");
+    badge.id = "daily-goal";
+    badge.className = "daily-goal";
+    badge.setAttribute("role", "status");
+    badge.setAttribute("aria-live", "polite");
+    badge.setAttribute("aria-atomic", "true");
+    el.quickAreas.parentNode.insertBefore(badge, el.quickAreas);
+    renderDailyGoal();
+  }
+
+  function renderDailyGoal() {
+    var badge = document.getElementById("daily-goal");
+    if (!badge) return;
+    var todayKey = today();
+    var countToday = 0;
+    Object.keys(state.visited).forEach(function (id) {
+      var rec = state.visited[id];
+      if (rec && rec.date === todayKey) countToday += 1;
+    });
+    var streak = streakDays();
+    var progress = Math.min(100, Math.round((countToday / DAILY_GOAL) * 100));
+    var streakText = streak > 0 ? ' · <span class="daily-goal__streak">🔥 ' + streak + '</span>' : '';
+    var status = countToday >= DAILY_GOAL ? 'daily-goal--done' : '';
+    badge.innerHTML =
+      '<span class="daily-goal__label">יעד יומי</span>' +
+      '<span class="daily-goal__progress ' + status + '" style="--pct:' + progress + '%" aria-valuenow="' + progress + '" aria-valuemin="0" aria-valuemax="100">' +
+        '<span class="daily-goal__bar"></span>' +
+      '</span>' +
+      '<span class="daily-goal__count">' + countToday + '/' + DAILY_GOAL + '</span>' +
+      streakText;
+    badge.hidden = false;
+  }
+
   /* ---------- אתחול ---------- */
+/* ---------- אתחול ---------- */
 
 
   el.bannerClose.addEventListener("click", hideBanner);
@@ -3306,6 +3432,8 @@
   if (isBeta() && el.list) {
     buildAchievementsGallery();
     buildJournalToggle();
+    buildUndoHistoryToggle();
+    buildDailyGoal();
     renderListSkeleton();
     var bootRenderDone = false;
     function bootRender() {
