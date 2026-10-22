@@ -4,12 +4,15 @@
   "description": "סמנו כל רחוב בירושלים שבו הייתם, עם תאריך והערה, ועקבו אחרי ההתקדמות לפי שכונה.",
   "lang": "he",
   "dir": "rtl",
-  "start_url": "./index.html",
+  "id": "./",
+  "start_url": "./",
   "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
   "background_color": "#fbf8f3",
   "theme_color": "#b5601f",
+  "categories": ["travel", "lifestyle"],
   "icons": [
     {
       "src": "assets/icons/icon-192.png",
@@ -28,6 +31,50 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "חיפוש רחוב",
+      "short_name": "חיפוש",
+      "description": "חיפוש מהיר של רחוב ביומן",
+      "url": "./#search",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "מפת הרחובות",
+      "short_name": "מפה",
+      "description": "פתיחת מפת הרחובות",
+      "url": "./#map-canvas",
+      "icons": [
+        {
+          "src": "assets/icons/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screenshots/jlm-mobile.png",
+      "sizes": "780x1688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "יומן הרחובות — תצוגה בנייד"
+    },
+    {
+      "src": "assets/screenshots/jlm-desktop.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "יומן הרחובות — תצוגה במחשב"
     }
   ]
 }

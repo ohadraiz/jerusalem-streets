@@ -115,6 +115,7 @@
           <summary class="achievements__summary">
             <span>הישגים</span>
             <span class="achievements__count" id="achievements-count"></span>
+            <span class="achievements__chevron" aria-hidden="true">▾</span>
           </summary>
           <ul class="achievements__list" id="achievements-list"></ul>
         </details>
@@ -213,6 +214,14 @@
               <option value="large">גדול קודם</option>
             </select>
           </div>
+
+          <div class="field field--street-sort" hidden>
+            <label class="field__label" for="street-sort">מיון לפי אותיות</label>
+            <select id="street-sort" class="field__input">
+              <option value="asc">א – ת</option>
+              <option value="desc">ת – א</option>
+            </select>
+          </div>
           <p class="list-hint" id="list-hint">סימון ביקור או מחיקה — ישירות בכל שורה. מחיקה מסירה את הרחוב גם מהמפה, ואפשר לבטל מיד.</p>
         </div>
 
@@ -241,6 +250,46 @@
       </section>
     </main>
 
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <h2 class="visually-hidden" id="faq-title">שאלות ותשובות</h2>
+      <details class="faq__item">
+        <summary class="faq__question">איך נשמרים הביקורים שלי?</summary>
+        <div class="faq__answer">
+          <p>כל הביקורים, התאריכים, ההערות וההגדרות נשמרים אך ורק ב-<code>localStorage</code> של הדפדפן שלכם, תחת המפתח <code>jlm-street-journal-v1</code>. אין שרת, אין חשבון משתמש, ואין שליחת נתונים החוצה. הנתונים נשארים אצלכם.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">איך מגבים או מעבירים את היומן למכשיר אחר?</summary>
+        <div class="faq__answer">
+          <p>בסרגל הכלים יש כפתור <strong>ייצוא</strong> שיוריד קובץ JSON עם כל הביקורים, ההערות, הסיומים הידניים וההגדרות. במכשיר השני לוחצים <strong>ייבוא</strong> ובוחרים את הקובץ — הכול משוחזר. הקובץ מכיל רק את הנתונים שלכם, בלי מידע מזהה.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">למה חסרים רחובות או שכונות?</summary>
+        <div class="faq__answer">
+          <p>הרשימה מבוססת על <strong>OpenStreetMap</strong> (רישיון ODbL) עם השלמות ממקורות עירוניים רשמיים. רחובות ללא גיאומטריה ב-OSM, כבישים מהירים, מנהרות, ושכונות שהוסרו לפי בקשה — אינם מופיעים. אם מצאתם רחוב חסר שיש לו בתים וכתובות — דווחו ונבדוק.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">האם אפשר להשתמש באפליקציה בלי אינטרנט?</summary>
+        <div class="faq__answer">
+          <p>כן. אחרי הטעינה הראשונה (או רענון) האפליקציה מותקנת כ-PWA ומטמינה את כל קבצי הקוד והנתונים (<code>data.js</code>, <code>geo.js</code>). הרשימה, החיפוש, הסימון והסטטיסטיקות עובדים אופליין. המפה דורשת חיבור כדי להוריד אריחים — במצב אופליין תוצג הודעה והמפה תהיה ריקה, אבל שאר הפונקציות זמינות.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__item__question">מה זה "סיום ידני" של שכונה?</summary>
+        <div class="faq__answer">
+          <p>כשלוחצים על כותרת שכונה באקורדיון, נפתח כפתור <strong>סיום ידני</strong>. הוא מאפשר לסמן את כל השכונה כמושלמת בבת אחת (עם אישור), גם אם לא ביקרתם בכל רחוב. הפעולה נרשמת בנפרד מהביקורים הרגילים, מופיעה תגית "הושלמה ידנית", ויש כפתור ביטול יחיד שמחזיר את המצב הקודם.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">האם האפליקציה נגישה לקוראי מסך ולמקלדת?</summary>
+        <div class="faq__answer">
+          <p>כן — זו מטרה מוצהרת. יש Skip links, היררכיית כותרות תקינה, <code>aria-live</code> להודעות, תוויות לכל שדה, פוקוס נראה, ניגודיות AA, יעדי מגע 44px במובייל, וקיצורי מקלדת (/, v, r, n, m, s, t, ?). נבדק עם NVDA/VoiceOver בסיסי — אם נתקלתם בבעיה, דווחו ונתקן.</p>
+        </div>
+      </details>
+    </section>
+
     <footer class="footer">
       <details class="shortcuts" id="shortcuts-details">
         <summary class="shortcuts__summary" aria-keyshortcuts="?">קיצורי מקלדת</summary>
@@ -264,8 +313,9 @@
         </p>
       </details>
 
-      <p>הנתונים נשמרים מקומית בדפדפן שלכם בלבד (localStorage). אין שרת ואין מעקב.</p>
-      <p>נתוני הרחובות והקואורדינטות: © OpenStreetMap contributors (ODbL).</p>
+      <p class="footer__privacy">הנתונים נשמרים מקומית בדפדפן שלכם בלבד (<code>localStorage</code>). אין שרת, אין מעקב, אין עוגיות צד ג'.</p>
+      <p class="footer__copyright">© 2026 אהד רייז — <strong>כל הזכויות שמורות</strong> על התוכן המקורי, הקוד והעיצוב של אפליקציה זו.</p>
+      <p class="footer__attribution">נתוני רחובות, קואורדינטות וגיאומטריה: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> — רישיון <abbr title="Open Database License">ODbL</abbr>. שכבת אריחי המפה: OpenStreetMap / OpenStreetMap DE / OpenTopoMap (לפי זמינות).</p>
     </footer>
 
     <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" id="live"></p>

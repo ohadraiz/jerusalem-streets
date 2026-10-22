@@ -14,12 +14,17 @@
 
 const CACHE_NAME = "jlm-shell-v1";
 
-/* הקבצים הקטנים שנטענים בכל פעם — מטמונים מיד בהתקנה */
+/* מעטפת האפליקציה + נתוני הרחובות והגיאומטריה — מטמונים כבר בהתקנה,
+   כדי שביקור ראשון יספיק לפתיחה מלאה במצב לא מקוון */
 const PRECACHE = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
   "./assets/styles.css",
+  "./assets/pwa.css",
+  "./assets/pwa.js",
+  "./assets/data.js",
+  "./assets/geo.js",
   "./assets/app.js",
   "./assets/store.js",
   "./assets/map.js",
@@ -70,9 +75,16 @@ self.addEventListener("fetch", (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {});
           return response;
         }
-        // שגיאת שרת (5xx, כולל 502 מפרוקסי) — מנסים מהמטמון לפני שמחזירים אותה
+        // שגיאת שרת (5xx, כולל 502 מפרוקסי) — מנסים מהמטמון לפני שמחזירים אותה.
+        // לניווט עם query string (למשל ?pwa=1) אין התאמה מדויקת, ולכן נופלים למעטפת.
         if (response && response.status >= 500) {
-          return caches.match(request).then((cached) => cached || response);
+          return caches.match(request).then((cached) => {
+            if (cached) return cached;
+            if (request.mode === "navigate") {
+              return caches.match("./index.html").then((shell) => shell || response);
+            }
+            return response;
+          });
         }
         return response;
       })

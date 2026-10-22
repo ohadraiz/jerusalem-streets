@@ -16,7 +16,7 @@
   var SEARCH_DEBOUNCE = 150;
   var UNDO_LIMIT = 10;
   var TOAST_TIMEOUT = 9000;
-  var PAGE_SIZE = 200;
+  var PAGE_SIZE = 50;
   var AREA_PAGE_SIZE = 20;
   var HIGHLIGHT_MS = 2600;
 
@@ -40,6 +40,7 @@
   var areaLimit = AREA_PAGE_SIZE;
   var sortMode = "remaining";
   var listView = "areas"; // "areas" | "all"
+  var streetSortMode = "asc"; // "asc" (א–ת) | "desc" (ת–א)
   var flatListPage = 1; // for paginated flat list
 
   /* שכונות שכבר חוגגו כ"הושלמה" בסשן הנוכחי — מונע חגיגה כפולה */
@@ -65,6 +66,7 @@
     area: document.getElementById("area-filter"),
     areaOptions: document.getElementById("area-options"),
     areaSort: document.getElementById("area-sort"),
+    streetSort: document.getElementById("street-sort"),
     areaSortWrap: null,
     listHint: document.getElementById("list-hint"),
     viewButtons: Array.prototype.slice.call(document.querySelectorAll("[data-view]")),
@@ -782,10 +784,11 @@
     return listView === "all" || isSearchMode();
   }
 
-  /** רחובות לתצוגה השטוחה — מסודרים א׳–ת, בלי לשנות את סדר הנתונים */
+  /** רחובות לתצוגה השטוחה — לפי מיון האותיות, בלי לשנות את סדר הנתונים */
   function flatStreets() {
     return visibleStreets().slice().sort(function (a, b) {
-      return String(a.name || "").localeCompare(String(b.name || ""), "he");
+      var order = String(a.name || "").localeCompare(String(b.name || ""), "he");
+      return streetSortMode === "desc" ? -order : order;
     });
   }
 
@@ -1149,6 +1152,7 @@
   /** מסתיר את מיון השכונות בתצוגה שטוחה ומעדכן את הרמז שמעל הרשימה */
   function syncListControls() {
     if (el.areaSortWrap) el.areaSortWrap.hidden = isFlatMode();
+    if (el.streetSort) el.streetSort.closest(".field--street-sort").hidden = !isFlatMode();
     if (!el.listHint) return;
 
     var text;
@@ -2358,6 +2362,15 @@
     });
   }
 
+  if (el.streetSort) {
+    el.streetSort.addEventListener("change", function () {
+      streetSortMode = el.streetSort.value;
+      flatListPage = 1;
+      renderList();
+      announce("הרחובות ממוינים לפי שם: " + el.streetSort.options[el.streetSort.selectedIndex].text + ".");
+    });
+  }
+
   el.viewButtons.forEach(function (button) {
     button.addEventListener("click", function () {
       setListView(button.dataset.view);
@@ -3174,8 +3187,6 @@
       return;
     }
 
-    var moods = [["😊", "נהדר"], ["🙂", "טוב"], ["😐", "בסדר"], ["😕", "פחות"]];
-
     var groups = [];
     var currentUserDate = null;
     var currentGroup = null;
@@ -3194,18 +3205,13 @@
         var stars = ratingOn > 0
           ? repeatText("★", ratingOn) + repeatText("☆", 5 - ratingOn)
           : "בלי דירוג";
-        var moodText = "";
-        moods.forEach(function (m) {
-          if (m[1] === entry.mood) moodText = m[0] + " " + m[1];
-        });
         return (
           '<li class="journal__entry">' +
             '<h3 class="journal__street">' + escapeHtml(entry.name) + "</h3>" +
             '<p class="journal__meta">' +
               escapeHtml(entry.area) +
               "<span class=\"journal__meta-sep\" aria-hidden=\"true\"> · </span>" +
-              '<span class="journal__stars" dir="ltr">' + stars + "</span>" +
-              (moodText ? "<span class=\"journal__meta-sep\" aria-hidden=\"true\"> · </span>" + escapeHtml(moodText) : "") +
+              '<span class="journal__stars" dir="ltr">דירוג: ' + stars + "</span>" +
             "</p>" +
             (entry.note ? '<p class="journal__note">' + escapeHtml(entry.note) + "</p>" : "") +
           "</li>"

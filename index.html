@@ -2,21 +2,35 @@
 <html lang="he" dir="rtl">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="רחובות ירושלים" />
     <meta name="description" content="יומן ביקורים ברחובות ירושלים — סמנו כל רחוב שבו הייתם, הוסיפו תאריך והערה, ועקבו אחרי ההתקדמות." />
     <title>רחובות ירושלים — יומן ביקורים</title>
     <!-- Leaflet מקומי (assets/vendor/leaflet) — כדי שהאפליקציה תעבוד גם מהקובץ המקומי, ללא CDN -->
     <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/pwa.css" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/icons/icon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/icons/icon-180.png" />
     <meta name="theme-color" content="#b5601f" />
   </head>
   <body>
+    <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
     <a class="skip-link" href="#search">דלג לחיפוש</a>
     <a class="skip-link" href="#street-list">דלג לרשימת הרחובות</a>
+
+    <!-- ה-toast בראש ה-DOM (אף על פי שהוא מוצג בתחתית המסך) — כדי שכפתור ה"בטל" יהיה
+         במרחק של 3 הקשות Tab מהתחלת הדף, ולא אחרי מאות שורות ברשימה. -->
+    <div class="toast" id="toast" role="group" aria-label="התראה וביטול פעולה" hidden>
+      <p class="toast__text" id="toast-text"></p>
+      <button type="button" class="btn btn--small" id="toast-undo" aria-keyshortcuts="u">בטל</button>
+      <button type="button" class="btn btn--quiet btn--small" id="toast-close">סגירה</button>
+    </div>
 
     <header class="hero">
       <div class="hero__inner">
@@ -33,7 +47,7 @@
       </div>
     </header>
 
-    <main class="layout">
+    <main class="layout" id="main">
       <div class="banner" id="storage-banner" role="alert" hidden>
         <span id="storage-banner-text"></span>
         <button type="button" class="banner__close" id="banner-close" aria-label="סגירת ההודעה">סגירה</button>
@@ -54,19 +68,20 @@
             <button type="button" class="segmented__btn" data-status="pending" aria-pressed="false">טרם ביקרתי</button>
           </div>
 
-          <button type="button" class="btn btn--quiet" id="clear-filters" hidden>ניקוי סינון</button>
+          <button type="button" class="btn btn--quiet" id="clear-filters" aria-keyshortcuts="n" hidden>ניקוי סינון</button>
         </div>
 
         <div class="toolbar__row toolbar__row--split">
           <p class="toolbar__summary" id="filter-summary" hidden></p>
 
-          <div class="actions">
-            <button type="button" class="btn" id="random-street" title="מציע רחוב שטרם ביקרתם בו">רחוב אקראי</button>
-            <button type="button" class="btn btn--quiet" id="voice-toggle" aria-pressed="false" title="חיווי קולי כשמסיימים רחוב או שכונה">🔊 חיווי קולי</button>
-            <button type="button" class="btn btn--quiet" id="sound-toggle" aria-pressed="false" title="צלילים ורטט כשמסיימים רחוב">🎵 צלילים</button>
+          <div class="actions" role="group" aria-label="פעולות והעדפות">
+            <button type="button" class="btn" id="random-street" title="מציע רחוב שטרם ביקרתם בו" aria-keyshortcuts="r">רחוב אקראי</button>
+            <button type="button" class="btn btn--quiet" id="voice-toggle" aria-pressed="false" title="חיווי קולי כשמסיימים רחוב או שכונה" aria-keyshortcuts="m">🔊 חיווי קולי</button>
+            <button type="button" class="btn btn--quiet" id="sound-toggle" aria-pressed="false" title="צלילים ורטט כשמסיימים רחוב" aria-keyshortcuts="s">🎵 צלילים</button>
+            <button type="button" class="btn btn--quiet" id="theme-toggle" aria-pressed="false" title="מעבר בין מצב בהיר למצב כהה" aria-keyshortcuts="t">🌗 מצב כהה</button>
             <button type="button" class="btn" id="export-btn">ייצוא</button>
             <button type="button" class="btn" id="import-btn">ייבוא</button>
-            <input type="file" id="import-input" accept="application/json,.json" hidden />
+            <input type="file" id="import-input" accept="application/json,.json" aria-label="קובץ גיבוי לייבוא" hidden />
           </div>
         </div>
       </section>
@@ -99,6 +114,7 @@
           <summary class="achievements__summary">
             <span>הישגים</span>
             <span class="achievements__count" id="achievements-count"></span>
+            <span class="achievements__chevron" aria-hidden="true">▾</span>
           </summary>
           <ul class="achievements__list" id="achievements-list"></ul>
         </details>
@@ -110,7 +126,7 @@
             <span>פירוט לפי שכונה</span>
             <span class="breakdown__count" id="breakdown-count"></span>
           </summary>
-          <ul class="breakdown__list" id="area-breakdown"></ul>
+          <ul class="breakdown__list" id="area-breakdown" aria-label="התקדמות לפי שכונה"></ul>
         </details>
       </section>
 
@@ -128,7 +144,8 @@
           <div
             id="map-canvas"
             dir="ltr"
-            role="application"
+            role="region"
+            tabindex="0"
             aria-label="מפת רחובות ירושלים. החצים מזיזים את המפה, פלוס ומינוס משנים זום."
           ></div>
           <p class="map-empty" id="map-empty" hidden>
@@ -146,7 +163,7 @@
         <p class="visually-hidden" role="status" aria-live="polite" id="map-status"></p>
       </section>
 
-      <section class="searchbar" aria-labelledby="search-label">
+      <section class="searchbar" role="search" aria-labelledby="search-label">
         <div class="searchbar__row">
           <div class="field field--grow">
             <label class="field__label" id="search-label" for="search">חיפוש רחוב</label>
@@ -158,6 +175,7 @@
                 placeholder="כתבו שם רחוב — למשל רחוב הרצל"
                 autocomplete="off"
                 spellcheck="false"
+                aria-keyshortcuts="/"
               />
               <button type="button" class="btn btn--quiet btn--small searchbar__clear" id="search-clear" hidden>
                 ניקוי
@@ -195,10 +213,18 @@
               <option value="large">גדול קודם</option>
             </select>
           </div>
+
+          <div class="field field--street-sort" hidden>
+            <label class="field__label" for="street-sort">מיון לפי אותיות</label>
+            <select id="street-sort" class="field__input">
+              <option value="asc">א – ת</option>
+              <option value="desc">ת – א</option>
+            </select>
+          </div>
           <p class="list-hint" id="list-hint">סימון ביקור או מחיקה — ישירות בכל שורה. מחיקה מסירה את הרחוב גם מהמפה, ואפשר לבטל מיד.</p>
         </div>
 
-        <p class="list-loading" id="list-loading">טוענים את רשימת הרחובות…</p>
+        <p class="list-loading" id="list-loading" role="status">טוענים את רשימת הרחובות…</p>
         <p class="empty" id="empty-state" hidden></p>
 
         <ul class="street-list" id="street-list" tabindex="-1"></ul>
@@ -223,18 +249,75 @@
       </section>
     </main>
 
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <h2 class="visually-hidden" id="faq-title">שאלות ותשובות</h2>
+      <details class="faq__item">
+        <summary class="faq__question">איך נשמרים הביקורים שלי?</summary>
+        <div class="faq__answer">
+          <p>כל הביקורים, התאריכים, ההערות וההגדרות נשמרים אך ורק ב-<code>localStorage</code> של הדפדפן שלכם, תחת המפתח <code>jlm-street-journal-v1</code>. אין שרת, אין חשבון משתמש, ואין שליחת נתונים החוצה. הנתונים נשארים אצלכם.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">איך מגבים או מעבירים את היומן למכשיר אחר?</summary>
+        <div class="faq__answer">
+          <p>בסרגל הכלים יש כפתור <strong>ייצוא</strong> שיוריד קובץ JSON עם כל הביקורים, ההערות, הסיומים הידניים וההגדרות. במכשיר השני לוחצים <strong>ייבוא</strong> ובוחרים את הקובץ — הכול משוחזר. הקובץ מכיל רק את הנתונים שלכם, בלי מידע מזהה.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">למה חסרים רחובות או שכונות?</summary>
+        <div class="faq__answer">
+          <p>הרשימה מבוססת על <strong>OpenStreetMap</strong> (רישיון ODbL) עם השלמות ממקורות עירוניים רשמיים. רחובות ללא גיאומטריה ב-OSM, כבישים מהירים, מנהרות, ושכונות שהוסרו לפי בקשה — אינם מופיעים. אם מצאתם רחוב חסר שיש לו בתים וכתובות — דווחו ונבדוק.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">האם אפשר להשתמש באפליקציה בלי אינטרנט?</summary>
+        <div class="faq__answer">
+          <p>כן. אחרי הטעינה הראשונה (או רענון) האפליקציה מותקנת כ-PWA ומטמינה את כל קבצי הקוד והנתונים (<code>data.js</code>, <code>geo.js</code>). הרשימה, החיפוש, הסימון והסטטיסטיקות עובדים אופליין. המפה דורשת חיבור כדי להוריד אריחים — במצב אופליין תוצג הודעה והמפה תהיה ריקה, אבל שאר הפונקציות זמינות.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__item__question">מה זה "סיום ידני" של שכונה?</summary>
+        <div class="faq__answer">
+          <p>כשלוחצים על כותרת שכונה באקורדיון, נפתח כפתור <strong>סיום ידני</strong>. הוא מאפשר לסמן את כל השכונה כמושלמת בבת אחת (עם אישור), גם אם לא ביקרתם בכל רחוב. הפעולה נרשמת בנפרד מהביקורים הרגילים, מופיעה תגית "הושלמה ידנית", ויש כפתור ביטול יחיד שמחזיר את המצב הקודם.</p>
+        </div>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__question">האם האפליקציה נגישה לקוראי מסך ולמקלדת?</summary>
+        <div class="faq__answer">
+          <p>כן — זו מטרה מוצהרת. יש Skip links, היררכיית כותרות תקינה, <code>aria-live</code> להודעות, תוויות לכל שדה, פוקוס נראה, ניגודיות AA, יעדי מגע 44px במובייל, וקיצורי מקלדת (/, v, r, n, m, s, t, ?). נבדק עם NVDA/VoiceOver בסיסי — אם נתקלתם בבעיה, דווחו ונתקן.</p>
+        </div>
+      </details>
+    </section>
+
     <footer class="footer">
-      <p>הנתונים נשמרים מקומית בדפדפן שלכם בלבד (localStorage). אין שרת ואין מעקב.</p>
-      <p>נתוני הרחובות והקואורדינטות: © OpenStreetMap contributors (ODbL).</p>
+      <details class="shortcuts" id="shortcuts-details">
+        <summary class="shortcuts__summary" aria-keyshortcuts="?">קיצורי מקלדת</summary>
+        <ul class="shortcuts__list">
+          <li><kbd>/</kbd> — מעבר לשדה החיפוש</li>
+          <li><kbd>Esc</kbd> — ניקוי החיפוש או הסינון; סגירת ההתראה; סגירת חלונית פתוחה</li>
+          <li><kbd>Enter</kbd> בחיפוש — קפיצה לרחוב הראשון בתוצאות</li>
+          <li><kbd>u</kbd> או <kbd>Ctrl</kbd>+<kbd>Z</kbd> — ביטול הפעולה האחרונה</li>
+          <li><kbd>↑</kbd> <kbd>↓</kbd> — תנועה בין רחובות ושכונות ברשימה</li>
+          <li><kbd>Home</kbd> <kbd>End</kbd> — קפיצה לרשומה הראשונה / האחרונה ברשימה</li>
+          <li><kbd>←</kbd> <kbd>→</kbd> — תנועה בין כפתורי הסינון</li>
+          <li><kbd>v</kbd> — סימון או ביטול ביקור ברחוב שבמיקוד</li>
+          <li><kbd>r</kbd> — רחוב אקראי</li>
+          <li><kbd>n</kbd> — ניקוי הסינון</li>
+          <li><kbd>m</kbd> / <kbd>s</kbd> — חיווי קולי / צלילים</li>
+          <li><kbd>t</kbd> — מעבר בין מצב בהיר למצב כהה</li>
+          <li><kbd>?</kbd> — פתיחה וסגירה של רשימת הקיצורים</li>
+        </ul>
+        <p class="shortcuts__note">
+          הקיצורים מופעלים לפי <strong>מקש המקלדת</strong> ולא לפי התו שמודפס עליו — כך שהם עובדים גם עם מקלדת עברית.
+        </p>
+      </details>
+
+      <p class="footer__privacy">הנתונים נשמרים מקומית בדפדפן שלכם בלבד (<code>localStorage</code>). אין שרת, אין מעקב, אין עוגיות צד ג'.</p>
+      <p class="footer__copyright">© 2026 אהד רייז — <strong>כל הזכויות שמורות</strong> על התוכן המקורי, הקוד והעיצוב של אפליקציה זו.</p>
+      <p class="footer__attribution">נתוני רחובות, קואורדינטות וגיאומטריה: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> — רישיון <abbr title="Open Database License">ODbL</abbr>. שכבת אריחי המפה: OpenStreetMap / OpenStreetMap DE / OpenTopoMap (לפי זמינות).</p>
     </footer>
 
-    <div class="toast" id="toast" hidden>
-      <p class="toast__text" id="toast-text"></p>
-      <button type="button" class="btn btn--small" id="toast-undo">בטל</button>
-      <button type="button" class="btn btn--quiet btn--small" id="toast-close">סגירה</button>
-    </div>
-
-    <p class="visually-hidden" role="status" aria-live="polite" id="live"></p>
+    <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" id="live"></p>
     <div class="celebration" id="celebration" aria-hidden="true" hidden></div>
 
     <script src="assets/data.js" defer></script>
@@ -245,5 +328,6 @@
     <script src="assets/map.js" defer></script>
     <script src="assets/ui.js" defer></script>
     <script src="assets/sw-register.js" defer></script>
+    <script src="assets/pwa.js" defer></script>
   </body>
 </html>
