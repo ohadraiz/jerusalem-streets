@@ -33,7 +33,7 @@ Every change is verified in **beta** first, never directly on the public site: `
 - `beta.html` is generated from `index.html`: `node tools/make-beta.js` (`--check` before publishing). Never edit it by hand.
 - Beta data is stored under a separate key (`jlm-street-journal-beta-v1`) and never touches the real journal.
 - The tool panel offers device sizes (390/430/820), 25 sample visits, reset, and JSON export/import.
-- Changes that affect the public site ship behind a flag (`window.JLM_BETA` / `html.is-beta`) until the user explicitly approves them. The process is coordinated by the **Pitchei** agent — [`.opencode/agents/pitchei.md`](.opencode/agents/pitchei.md).
+- Large changes are tested in beta using an isolated copy of the app files (`assets/beta/`), while the public site keeps loading `assets/*` — until the user explicitly approves. The process is coordinated by the **Pitchei** agent — [`.opencode/agents/pitchei.md`](.opencode/agents/pitchei.md).
 
 ## Features
 

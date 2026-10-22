@@ -1,0 +1,105 @@
+/* ---------- חוויית התקנה (PWA) ---------- */
+
+/*
+ * הבאנר נבנה על ידי assets/pwa.js רק כאשר ההתקנה רלוונטית.
+ * הוא יושב מעל safe-area, מתחת ל-toast, ואינו חוסם תוכן קבוע.
+ */
+
+.pwa-install {
+  position: fixed;
+  inset-block-end: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  inset-inline: 0.75rem;
+  z-index: 55;
+  width: auto;
+  max-width: 34rem;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+  padding: 0.85rem 1rem;
+  background: var(--stone-50);
+  color: var(--ink);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+  animation: pwa-install-in 200ms ease-out;
+}
+
+.pwa-install[hidden],
+.pwa-install.is-suppressed {
+  display: none;
+}
+
+.pwa-install__text {
+  flex: 1 1 14rem;
+  min-width: 0;
+}
+
+.pwa-install__title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pwa-install__body {
+  margin: 0.2rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.pwa-install__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-inline-start: auto;
+}
+
+.pwa-install__actions .btn {
+  flex: 0 0 auto;
+}
+
+/* כשההתראה פתוחה, הבאנר מפנה לה את המקום התחתון */
+body:has(.toast:not([hidden])) .pwa-install {
+  display: none;
+}
+
+/* מקום לתחתית הדף כדי שהבאנר לא יכסה את הפוטר */
+body.has-pwa-install {
+  padding-block-end: 5.5rem;
+}
+
+@keyframes pwa-install-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pwa-install {
+    animation: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .pwa-install__actions {
+    width: 100%;
+  }
+
+  .pwa-install__actions .btn {
+    flex: 1 1 auto;
+    min-height: 44px;
+  }
+
+  body.has-pwa-install {
+    padding-block-end: 8rem;
+  }
+}
