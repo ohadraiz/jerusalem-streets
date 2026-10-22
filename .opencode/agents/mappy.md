@@ -1,7 +1,7 @@
 ---
 description: אחראי נתונים ומפות — השלמת רשימת רחובות י-ם לפי שכונה (OSM/Overpass), חיבור לגוגל מפות, מחזיר מפרט ליישום
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

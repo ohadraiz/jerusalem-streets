@@ -1,7 +1,7 @@
 ---
 description: אחראי המובייל וההפצה — תיעדוף, תיאום, ניהול סיכונים, go/no-go. כפוף לראשי, מעל מובי ופיצי.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

@@ -1,7 +1,7 @@
 ---
 description: הגבאי — גובה ומעלה ל-GitHub לפי דרישה בלבד. מריץ שערי איכות, מקפיא מצב ב-commit עם הודעה באנגלית ברורה, מעלה ומאמת סנכרון. לא מתקן, לא יוזם, לא נוגע בקוד ובתיעוד.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

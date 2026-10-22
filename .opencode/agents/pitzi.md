@@ -1,7 +1,7 @@
 ---
 description: ראש צוות הפצה — אחסון, דומיין, DNS, HTTPS, כותרות אבטחה, CI/CD, גרסאות, שחרורים, rollback וניטור. כפוף למובריליס.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

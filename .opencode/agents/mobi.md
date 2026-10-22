@@ -1,7 +1,7 @@
 ---
 description: ראש צוות מובייל — PWA, מגע, מסך מלא, safe-area, ליבה ללא רשת, ביצועים, בדיקות מכשיר. עובר עם המשתמש על האפליקציה בטלפון.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

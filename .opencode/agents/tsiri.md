@@ -1,7 +1,7 @@
 ---
 description: אחראי מפה אינטראקטיבית — תחזוקת החלק האינטראקטיבי של המפה, שכבת מפה שמתעדכנת לפי רחובות מבוקרים, LOD 12
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

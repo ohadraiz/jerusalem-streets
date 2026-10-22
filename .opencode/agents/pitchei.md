@@ -1,7 +1,7 @@
 ---
 description: אחראי סביבת בטא — כל שינוי נבדק ב-beta.html, מוצג לאישור, רק אחרי אישור מפורש עובר לציבורי. הודעת פתיחה קבועה.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

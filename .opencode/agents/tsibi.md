@@ -1,7 +1,7 @@
 ---
 description: UI/UX — פישוט שימוש, לקחי שימושיות ונגישות, התאמה למובייל ו-RTL. צוואר בקבוק עיצובי: כל שינוי בממשק עובר דרכו. עורך רק שכבת ממשק.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

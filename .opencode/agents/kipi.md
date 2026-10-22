@@ -1,7 +1,7 @@
 ---
 description: סוכן מעקב הקפאות — רושם כל תהליך מוקפא, שומר הקשר מלא, מאפשר חזרה עתידית מסודרת. לא מבצע — רק רושם.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

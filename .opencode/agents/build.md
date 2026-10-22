@@ -1,7 +1,7 @@
 ---
 description: הסוכן הראשי של פרויקט "יומן הרחובות של ירושלים" — כתיבת קוד, עריכת קבצים, תיאום סוכני משנה
 mode: primary
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: subagent
     resource: "*"

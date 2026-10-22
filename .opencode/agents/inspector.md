@@ -1,7 +1,7 @@
 ---
 description: הפקח — מארגן המשימות. דשבורד HTML מאורגן לפי צוותים, RTL, פילטרים, חיפוש, מיון, הדפסה. עורך רק את כלי הדשבורד.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

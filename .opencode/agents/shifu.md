@@ -1,7 +1,7 @@
 ---
 description: סוקר קוד חוזר — באגים, נגישות, RTL, ביצועים, פשטות. לא עורך קבצים. מדבר עם סוכנים אחרים כשצריך.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

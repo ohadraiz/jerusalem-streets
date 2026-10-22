@@ -1,7 +1,7 @@
 ---
 description: חוקר האינטרנט — APIs, מאגרים, מסמכים, אימות בבקשות אמת, מעביר משימות ממוקדות לצוות
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

@@ -1,7 +1,7 @@
 ---
 description: משימות מחקר ומרובות-שלבים כלליות — ללא יכולת הפעלת סוכני משנה נוספים
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"

@@ -1,6 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "opencode/nemotron-3-ultra-free",
+  "model": "opencode-go/glm-5.3-flash",
   "default_agent": "build",
   "shell": "powershell",
   "formatter": true,
@@ -32,7 +32,7 @@
         { "action": "shell", "resource": "node tools/make-beta.js*", "effect": "allow" },
         { "action": "shell", "resource": "git*", "effect": "ask" }
       ],
-      "model": "opencode/nemotron-3-ultra-free",
+      "model": "opencode-go/glm-5.3-flash",
       "color": "#22d3ee"
     },
     "plan": {

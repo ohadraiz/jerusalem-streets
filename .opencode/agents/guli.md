@@ -1,7 +1,7 @@
 ---
 description: גולי (המתעד/המגשר) — כרוז החדר. תיעוד בזמן אמת של כל סוכן, בונה guli.html, מתאם עם המפקח. רשות ההקשר של הסוכנים.
 mode: subagent
-model: opencode/nemotron-3-ultra-free
+model: opencode-go/glm-5.3-flash
 permissions:
   - action: read
     resource: "*"
