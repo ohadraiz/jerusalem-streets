@@ -1,0 +1,12 @@
+street_id: hovevei-tzion
+street_name: חובבי ציון
+area: טלביה
+fact: הרחוב קרוי על שם תנועת חובבי ציון, אגודות ציוניות שקמו במזרח אירופה בסוף המאה ה-19 ודגלו בעלייה, בהתיישבות ובעבודה חקלאית בארץ ישראל.
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1506
+source: https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%91%D7%91%D7%99_%D7%A6%D7%99%D7%95%D7%9F
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/4719676
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal+place-article

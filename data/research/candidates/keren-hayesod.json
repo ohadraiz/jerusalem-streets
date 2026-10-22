@@ -1,0 +1,82 @@
+{
+  "street_id": "keren-hayesod",
+  "street_name": "קרן היסוד",
+  "area": "מחנה ישראל",
+  "lat": 31.773449,
+  "lng": 35.219953,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1508,
+      "name": "קרן היסוד",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "קרן היסוד",
+    "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%94%D7%99%D7%A1%D7%95%D7%93",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "קרן היסוד – המגבית המאוחדת לישראל היא המוסד הכספי המרכזי לפעולותיה של ההסתדרות הציונית בארץ ישראל, מרכזת את כל המגביות בחו\"ל (למעט ארצות הברית) לאיסוף תרומות לבניין הארץ.",
+    "wikibase_item": "Q1626788",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Keren Hayesod",
+    "url": "https://en.wikipedia.org/wiki/Keren_Hayesod",
+    "score": 4,
+    "extract": "Keren Hayesod – United Israel Appeal (Hebrew: קרן היסוד, lit. 'The Foundation Fund') is an official fundraising organization for the State of Israel. Founded in 1920, the organization's activities are governed by the Keren Hayesod Law of 1956, which grants it unique status as a registered corporation of Israel. \nAs one of the Zionist movement's four \"National Institutions\" alongside the World Zionist Organization, Jewish Agency, and Keren Kayemet, Keren Hayesod works in coordination with the Government of Israel to advance national priorities."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1447031120,
+    "name": "קרן היסוד",
+    "display_name": "קרן היסוד, ירושלים, מחנה ישראל, ירושלים, נפת ירושלים, מחוז ירושלים, 9214423, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7734659,
+    "lon": 35.2197417,
+    "distance": 20.062579807971904,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1447031120"
+  },
+  "fact": "הרחוב קרוי על שם קרן היסוד — המגבית המאוחדת לישראל, המוסד הכספי המרכזי של ההסתדרות הציונית לאיסוף תרומות לבניין הארץ.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — קרן היסוד",
+      "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%94%D7%99%D7%A1%D7%95%D7%93",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1447031120",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום.",
+    "שם הרחוב זהה לשם המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

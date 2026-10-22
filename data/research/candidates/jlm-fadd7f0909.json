@@ -1,0 +1,80 @@
+{
+  "street_id": "jlm-fadd7f0909",
+  "street_name": "גולדה מאיר",
+  "area": "רמות ב'",
+  "lat": 31.809753,
+  "lng": 35.202463,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": {
+    "title": "כביש 436",
+    "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_436",
+    "score": 9,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים"
+    ],
+    "extract": "כביש 436 הוא כביש אורך אזורי בישראל. חלקו הצפוני הוא כביש בינעירוני מצפון לירושלים ואורכו 7 ק\"מ. חלקו הדרומי הוא כביש עירוני ראשי בירושלים הקרוי גם \"שדרות גולדה מאיר\" ואורכו הוא 5 ק\"מ. אורכו הכולל של כביש 436 הוא 12 ק\"מ.",
+    "wikibase_item": "Q12408444",
+    "coordinates": {
+      "lat": 31.83105556,
+      "lon": 35.18569444,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q42992",
+      "label": "גולדה מאיר",
+      "description": "ראש הממשלה ה-4 של מדינת ישראל",
+      "birth": 1898,
+      "death": 1978,
+      "url": "https://www.wikidata.org/wiki/Q42992",
+      "hewiki": "גולדה מאיר",
+      "enwiki": "Golda Meir"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 113814715,
+    "name": "גולדה מאיר",
+    "display_name": "גולדה מאיר, ירושלים, רמות א', ירושלים, נפת ירושלים, מחוז ירושלים, 9754901, ישראל",
+    "category": "highway",
+    "type": "primary",
+    "lat": 31.8115374,
+    "lon": 35.2029848,
+    "distance": 204.4507718586625,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/113814715"
+  },
+  "fact": "חלקו הדרומי של כביש 436, באורך 5 ק\"מ, קרוי \"שדרות גולדה מאיר\" ומכונה \"כביש רמות\"; הוא עורק תחבורה ראשי בעיר החוצה את שכונת רמות.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כביש 436",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_436",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/113814715",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

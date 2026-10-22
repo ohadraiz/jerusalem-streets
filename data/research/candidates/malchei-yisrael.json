@@ -1,0 +1,94 @@
+{
+  "street_id": "malchei-yisrael",
+  "street_name": "מלכי ישראל",
+  "area": "מקור ברוך",
+  "lat": 31.790301,
+  "lng": 35.211721,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 305,
+      "name": "מלכי ישראל",
+      "score": 4
+    },
+    {
+      "code": 1708,
+      "name": "מלכי",
+      "score": 2
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב מלכי ישראל (ירושלים)",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%9C%D7%9B%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_(%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D)",
+    "score": 13,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים",
+      "קואורדינטה 157מ׳"
+    ],
+    "extract": "רחוב מלכי ישראל הוא רחובה המרכזי של שכונת גאולה בירושלים.",
+    "wikibase_item": "Q6743893",
+    "coordinates": {
+      "lat": 31.78994444,
+      "lon": 35.21333333,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Malkhei Yisrael Street",
+    "url": "https://en.wikipedia.org/wiki/Malkhei_Yisrael_Street",
+    "score": 6,
+    "extract": "Malkhei Yisrael Street (Hebrew: רחוב מלכי ישראל, Rechov Malkhei Yisrael, lit. \"Kings of Israel Street\"), also spelled Malchei Yisrael, is an east–west street in the Geula neighborhood of north-central Jerusalem. Its eastern flank, which abuts Mea Shearim Street at an intersection called Kikar HaShabbat (Sabbath Square), is the main shopping district for Haredi Jewish residents of northern Jerusalem. The remainder of the street, which extends to Sarei Yisrael Street at its western end, includes the historic Schneller Compound and numerous Haredi and Hasidic yeshivas, girls' schools, and synagogues."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 774633431,
+    "name": "מלכי ישראל",
+    "display_name": "מלכי ישראל, ירושלים, מקור ברוך, ירושלים, נפת ירושלים, מחוז ירושלים, 9432531, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7902812,
+    "lon": 35.2123404,
+    "distance": 58.58316121053775,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/774633431"
+  },
+  "fact": "רחוב מלכי ישראל, באורך קילומטר, הוא רחובה הראשי של שכונת גאולה ומרכזה המסחרי של הקהילה החרדית; שמו מנציח את מלכי ישראל.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב מלכי ישראל (ירושלים)",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%9C%D7%9B%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/774633431",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים",
+    "קואורדינטה 157מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

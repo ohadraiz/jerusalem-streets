@@ -1,0 +1,61 @@
+{
+  "street_id": "jlm-a7ce72f236",
+  "street_name": "שער יפו",
+  "area": "הרובע הארמני",
+  "lat": 31.776594,
+  "lng": 35.227263,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": {
+    "title": "שער יפו",
+    "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 41מ׳"
+    ],
+    "extract": "שער יפו (בערבית: باب الخليل, תעתיק: \"באב אל ח'ליל\", תרגום: שער חברון) הוא אחד משמונת שערי ירושלים בחומת העיר העתיקה.\n\nבתקופה הצלבנית הוא נקרא גם 'שער דוד', על שם המצודה הקרויה מגדל דוד הסמוכה לו. השער קבוע באמצע החומה המערבית של העיר העתיקה בירושלים, ונקרא על שם הדרך העתיקה המוליכה ממנו מערבה אל העיר יפו (היום – רחוב יפו) ונמל יפו, שהיה הנמל הראשי של ארץ ישראל עד לתקופת המנדט הבריטי. שם השער בערבית מתייחס לדרך חברון העתיקה, היוצאת משער יפו דרומה ומוליכה אל הערים בית לחם וחברון. שתי דרכים עתיקות אלו מהוות גם כיום עורקי תחבורה ראשיים בירושלים.",
+    "wikibase_item": "Q312812",
+    "coordinates": {
+      "lat": 31.776528,
+      "lon": 35.227694,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Jaffa Gate",
+    "url": "https://en.wikipedia.org/wiki/Jaffa_Gate",
+    "score": 8,
+    "extract": "Jaffa Gate (Hebrew: שער יפו, romanized: Sha'ar Yafo; Arabic: باب الخليل, romanized: Bāb al-Khalīl, \"Hebron Gate\") is one of the seven main open gates of the Old City of Jerusalem.\nThe name Jaffa Gate is currently used for both the historical Ottoman gate from 1538, and for the wide gap in the city wall adjacent to it to the south. The old gate has the layout of a medieval gate tower with an L-shaped entryway, which was secured at both ends (north and east) with heavy doors.\nThe breach in the wall was created in 1898 by the Ottoman authorities in order to allow German emperor Wilhelm II to enter the city triumphally. The breach and the ramp leading to it now allow cars to access the Old City from the west.\nThe L-shape of the historical gateway was a classical defensive measure designed to slow oncoming attackers, with its outer gate oriented in the direction of Jaffa Road, from which travellers including pilgrims arrived at the end of their journey from the port of Jaffa."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": null,
+  "fact": "השם \"שער יפו\" מתייחס לשער יפו: שער יפו (בערבית: باب الخليل, תעתיק: \"באב אל ח'ליל\", תרגום: שער חברון) הוא אחד משמונת שערי ירושלים בחומת העיר העתיקה. שם השער בערבית מתייחס לדרך חברון העתיקה, היוצאת משער יפו דרומה ומוליכה אל הערים בית לחם וחברון.",
+  "fact_type": "name-origin",
+  "confidence": "low",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95",
+      "kind": "content"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 41מ׳",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום."
+  ],
+  "needs_review": true
+}

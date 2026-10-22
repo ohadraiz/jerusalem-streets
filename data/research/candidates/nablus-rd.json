@@ -1,0 +1,87 @@
+{
+  "street_id": "nablus-rd",
+  "street_name": "שכם",
+  "area": "שייח' ג'ראח",
+  "lat": 31.79351,
+  "lng": 35.230199,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 4162,
+      "name": "דרך שכם",
+      "score": 3
+    }
+  ],
+  "wikipedia": {
+    "title": "דרך שכם",
+    "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%A9%D7%9B%D7%9D",
+    "score": 9,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים"
+    ],
+    "extract": "דרך שכם הוא שמו של רחוב בירושלים, על תוואי הדרך ההיסטורית שיצאה מירושלים צפונה לעבר העיר שכם. תחילתו של הרחוב בשער שכם בעיר העתיקה, משם הוא חוצה את העיר לעבר שכונותיה הצפוניות. יחד עם דרך יריחו, דרך יפו, דרך עזה, דרך בית לחם ודרך חברון הוא מהווה חלק מרשת הדרכים שבעבר קישרו את ירושלים עם ערים אחרות, וכיום מהוות חלק ממארג רחובות העיר.",
+    "wikibase_item": "Q6956970",
+    "coordinates": {
+      "lat": 31.78713611,
+      "lon": 35.23031667,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Nablus Road",
+    "url": "https://en.wikipedia.org/wiki/Nablus_Road",
+    "score": 6,
+    "extract": "Nablus Road  (Arabic: شارع نابلس, romanized: Shari' Nablus, Hebrew: דרך שכם, Derekh Shekhem, \"Shechem Road\") is one of the oldest roads in Jerusalem. Originating at the Damascus Gate of the Old City, the road extends through several northern neighborhoods of East Jerusalem and passes notable landmarks."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 692609426,
+    "name": "שכם",
+    "display_name": "שכם, ירושלים, שייח' ג'ראח, ירושלים, נפת ירושלים, מחוז ירושלים, 9711769, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7915468,
+    "lon": 35.2287921,
+    "distance": 255.60609431702514,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/692609426"
+  },
+  "fact": "דרך שכם עוקבת אחר תוואי הדרך ההיסטורית שיצאה משער שכם צפונה, לעבר העיר שכם.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דרך שכם",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%A9%D7%9B%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/692609426",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

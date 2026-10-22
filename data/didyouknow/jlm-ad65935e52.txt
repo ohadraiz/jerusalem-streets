@@ -1,0 +1,11 @@
+street_id: jlm-ad65935e52
+street_name: רבי עקיבא
+area: נחלת שבעה
+fact: רבי עקיבא בן יוסף, מגדולי התנאים ותומך מרד בר כוכבא, נהרג בין 132 ל-136; הרחוב קרוי על שמו.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%A2%D7%A7%D7%99%D7%91%D7%90
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/5032135
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,75 @@
+{
+  "street_id": "pinsker",
+  "street_name": "פינסקר",
+  "area": "טלביה",
+  "lat": 31.769022,
+  "lng": 35.218942,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1501,
+      "name": "פינסקר",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q962710",
+      "label": "יהודה לייב פינסקר",
+      "description": "רופא, פעיל ציוני-רוסי",
+      "birth": 1821,
+      "death": 1891,
+      "url": "https://www.wikidata.org/wiki/Q962710",
+      "hewiki": "יהודה לייב פינסקר",
+      "enwiki": "Leon Pinsker"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 260350235,
+    "name": "פינסקר",
+    "display_name": "פינסקר, ירושלים, טלביה, ירושלים, נפת ירושלים, מחוז ירושלים, 9219005, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7687625,
+    "lon": 35.2187018,
+    "distance": 36.718437937442005,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/260350235"
+  },
+  "fact": "הרחוב קרוי על שם יהודה לייב פינסקר (1821–1891), רופא והוגה דעות, מראשי חיבת ציון ומחבר \"אוטואמנציפציה!\".",
+  "fact_type": "municipal+person-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 1501)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1501",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — יהודה לייב פינסקר",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%A4%D7%99%D7%A0%D7%A1%D7%A7%D7%A8",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/260350235",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

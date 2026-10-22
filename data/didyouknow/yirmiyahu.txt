@@ -1,0 +1,11 @@
+street_id: yirmiyahu
+street_name: ירמיהו
+area: רוממה
+fact: רחוב ירמיהו, כביש 417, הוא באורך 1.7 ק"מ; למרות סמיכותו לשכונות חרדיות, הוא פתוח לתנועת רכב בשבתות.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A8%D7%9E%D7%99%D7%94%D7%95_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/962315881
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

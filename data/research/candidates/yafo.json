@@ -1,0 +1,91 @@
+{
+  "street_id": "yafo",
+  "street_name": "יפו",
+  "area": "נחלאות",
+  "lat": 31.784134,
+  "lng": 35.213216,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 612,
+      "name": "יפו",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב יפו",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A4%D7%95",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 390מ׳"
+    ],
+    "extract": "רחוב יפו הוא רחוב מרכזי בירושלים, בעל היסטוריה רבת שנים. ראשיתו בדרך יפו, הציר דרכו היו יוצאים מן העיר העתיקה של ירושלים, מערבה לכיוון העיר יפו ששימשה כעיר הנמל של ירושלים. במשך עשרות שנים במאה ה-19 ובמאה ה-20 היה הרחוב רחובה הראשי של ירושלים שמחוץ לחומות ומרכז העסקים הראשי (מע\"ר) שלה. עם השקת הרכבת הקלה בירושלים בראשית העשור השני של המאה ה-21, נותר הרחוב כציר תחבורה ראשי בעיר וכרחוב המרכזי במרכז העיר שלה.\nהרחוב חוצה את העיר ממזרח למערב. תחילתו בשער יפו שבחומת העיר העתיקה, דרך מרכז העיר, ועד צומת היציאה מירושלים בשדרות ויצמן. לאורך הרחוב כמה כיכרות ואתרים ידועים של העיר, בהם: כיכר צה\"ל, כיכר ספרא, כיכר ציון, כיכר הדוידקה, צומת יפו-המלך ג'ורג' (צומת האיקסים), התחנה המרכזית, וכן דרכי גישה למדרחוב העירוני – מדרחוב בן-יהודה וכן לשוק מחנה יהודה. לכל אורכו מצויים מאות חנויות ובתי עסק שונים.\nמאז 2007 חלק מרחוב יפו הוא המדרחוב הארוך בישראל, באורך כקילומטר וחצי, בין כיכר צה\"ל לשוק מחנה יהודה, שבאמצעו עוברת הרכבת הקלה.\nעקב התמורות הרבות שחלו ברחוב לאורך השנים כתב עליו האדריכל וחוקר ירושלים דוד קרויאנקר כך: ”במשך כ-150 שנה מהווה עקומת העליות והמורדות בתולדות רחוב יפו בבואה נאמנה של תהליכי שגשוג והידרדרות, בירושלים בכלל ובמרכז העיר בפרט.”",
+    "wikibase_item": "Q2091860",
+    "coordinates": {
+      "lat": 31.78644167,
+      "lon": 35.21010833,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Jaffa Road",
+    "url": "https://en.wikipedia.org/wiki/Jaffa_Road",
+    "score": 10,
+    "extract": "Jaffa Road, also called Jaffa Street (Hebrew: רחוב יפו, romanized: Rehov Yaffo; Arabic: شارع يافا) is one of the longest and oldest major streets in Jerusalem. It crosses the city from east to west, from the Old City walls to downtown Jerusalem, the western portal of Jerusalem and the Jerusalem–Tel Aviv highway. It is lined with shops, businesses, and restaurants. It joins with Ben Yehuda Street and King George Street to form the Downtown Triangle central business district. Major landmarks along Jaffa Road are Tzahal Square (IDF square), Safra Square (city hall), Zion Square, Davidka Square, the triple intersection (Hameshulash) at King George V Street and Straus Street, the Ben Yehuda Street pedestrian mall, the Mahane Yehuda market, and the Jerusalem Central Bus Station. Most of Jaffa Road has been redeveloped as a car-free pedestrian mall served by the Jerusalem Light Rail. The Jerusalem–Yitzhak Navon railway station is located directly adjacent to the Central Bus Station."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 263353093,
+    "name": "יפו",
+    "display_name": "יפו, ירושלים, זכרון משה, ירושלים, נפת ירושלים, מחוז ירושלים, 9422904, ישראל",
+    "category": "highway",
+    "type": "pedestrian",
+    "lat": 31.7846365,
+    "lon": 35.2150863,
+    "distance": 185.4004237494385,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/263353093"
+  },
+  "fact": "רחוב יפו נסלל ב-1869 לקראת ביקור הקיסר פרנץ יוזף, ומאז 2007 חלקו הוא המדרחוב הארוך בישראל — כ-1.5 קילומטרים בין כיכר צה\"ל לשוק מחנה יהודה.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב יפו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A4%D7%95",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/263353093",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 390מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

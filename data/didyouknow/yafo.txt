@@ -1,0 +1,11 @@
+street_id: yafo
+street_name: יפו
+area: נחלאות
+fact: רחוב יפו נסלל ב-1869 לקראת ביקור הקיסר פרנץ יוזף, ומאז 2007 חלקו הוא המדרחוב הארוך בישראל — כ-1.5 קילומטרים בין כיכר צה"ל לשוק מחנה יהודה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A4%D7%95
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/263353093
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

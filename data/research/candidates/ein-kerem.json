@@ -1,0 +1,89 @@
+{
+  "street_id": "ein-kerem",
+  "street_name": "עין כרם",
+  "area": "קרית היובל",
+  "lat": 31.770185,
+  "lng": 35.174727,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1401,
+      "name": "עין כרם",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "עין כרם",
+    "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%9B%D7%A8%D7%9D",
+    "score": 11,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "עין כרם (בערבית: عين كارم; ההגייה הרשמית של השם העברי היא עֵין כֶּרֶם, אך ההגייה הנפוצה היא עֵין כָּרֶם, בעקבות הערבית) היא שכונה בפאתיה הדרום-מערביים של ירושלים. המקום היה מיושב כבר מן התקופה הכנענית; בין המאה ה-14 ועד למלחמת העצמאות שכן במקום כפר ערבי שננטש במהלך המלחמה. בבתים הריקים יושבו עולים חדשים, ובמסגרת הרחבתה של ירושלים הוכרז הכפר כשכונה של העיר. גם כיום יש לשכונה עדיין אופי כפרי, בשל ניתוקה היחסי מהעיר והיותה מוקפת הרים, עמקים ויערות. עין כרם נחשבת גם למקום מקודש לנצרות ואתר צליינות לעולי רגל, מהיותה נודעת כמקום הולדתו של יוחנן המטביל; יש במקום מספר כנסיות ומנזרים, אותם פוקדים תיירים רבים.",
+    "wikibase_item": "Q1022487",
+    "coordinates": {
+      "lat": 31.766728,
+      "lon": 35.161996,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Ein Karem",
+    "url": "https://en.wikipedia.org/wiki/Ein_Karem",
+    "score": 4,
+    "extract": "Ein Karem (Hebrew: עין כרם, romanized: ʿEin Kārem; Arabic: عين كارم, romanized: ʿAyn Kārim) also Ein Kerem or Ain Karem, is a former Palestinian village southwest of Jerusalem, presently a neighborhood in the outskirts of the modern city, within the Jerusalem District in Israel. It is the site of the Hadassah Medical Center.\nEin Karem was an important Jewish village during the late Second Temple period, during which it became important to Christianity. Christian tradition holds that John the Baptist was born in Ein Karem, following the biblical verse in Luke saying John's family lived in a \"town in the hill country of Judea\". Probably because of its location between Bethlehem and Jerusalem, this location was a very comfortable one for a pilgrimage, and this led to the establishment of many churches and monasteries in the area.\nDuring the years of Ottoman and later British Mandate, Ein Karem was a Palestinian Arab village. It was depopulated during the 1948 Arab-Israeli War. After the war it became once again a Jewish settlement. Today, Ein Karem is a vibrant bohemian neighborhood of Jerusalem, with a population of 2,000 (2010).\nIt has retained a very high-level of authenticity, its natural environment remains intact, and its old houses are still inhabited and preserved. It attracts three million visitors a year, one-third of them pilgrims from around the world. Alongside its religious landmarks, Ein Karem is also known for its fine art, culinary, and musical scenes."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 927271334,
+    "name": "עין כרם",
+    "display_name": "עין כרם, ירושלים, רמת דניה, ירושלים, נפת ירושלים, מחוז ירושלים, 9768112, ישראל",
+    "category": "highway",
+    "type": "primary",
+    "lat": 31.7699974,
+    "lon": 35.1803539,
+    "distance": 532.3440846681633,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/927271334"
+  },
+  "fact": "עין כרם נחשבת למקום הולדתו של יוחנן המטביל ולאתר צליינות נוצרי; בשטחה כנסיות ומנזרים רבים.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עין כרם",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%9B%D7%A8%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/927271334",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום.",
+    "הרחוב קרוי על שם השכונה; אין מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

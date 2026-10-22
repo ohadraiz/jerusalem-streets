@@ -1,0 +1,10 @@
+street_id: herzl
+street_name: הרצל
+area: בית הכרם
+fact: שדרות הרצל קרויות על שם בנימין זאב הרצל (1860–1904), מייסד התנועה הציונית והקונגרסים הציוניים; השדרה מובילה אל הר הרצל.
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1021
+source: https://www.openstreetmap.org/way/88824343
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal-street-page

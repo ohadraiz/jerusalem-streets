@@ -1,0 +1,91 @@
+{
+  "street_id": "neviim",
+  "street_name": "הנביאים",
+  "area": "מגרש הרוסים",
+  "lat": 31.783672,
+  "lng": 35.223776,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 348,
+      "name": "הנביאים",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב הנביאים",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 52מ׳"
+    ],
+    "extract": "רחוב הנביאים (באנגלית: Street of Prophets; בערבית: طريق الأنبياء) הוא אחד הרחובות המרכזיים בירושלים, אוכלס במהלך המחצית השנייה של המאה ה-19 כחלק מהיציאה מהחומות ונסלל עם תחילת המנדט הבריטי. הרחוב כולל פניני אדריכלות והיסטוריה מן המאה ה-19 ומתחילת המאה ה-20, שמקורן בתרבויות ובדתות שונות. תור הזהב של רחוב הנביאים החל בשלהי המאה ה-19 והסתיים ב-1917, עם נפילת שלטון האימפריה העות'מאנית בארץ ישראל. הרחוב והאזור כולו נחשבו עד אז ליוקרתיים ביותר, דבר שהתבטא בהקמת קונסוליות, בתי חולים, מוסדות חינוך ודת ובתי מגורים מפוארים.\nהחל ממאורעות תרפ\"ט (1929) החלה ירידה במעמד הרחוב, והוא פוצל למעשה בין אזור יהודי במערב הרחוב ובמרכזו, לבין אזור ערבי בחלקו המזרחי. בימי העיר המחולקת, בשנים 1948–1967, חצה קו התפר את הרחוב בחלקו המזרחי, כשממערב לקו היה הרחוב בשטח ישראל וממזרח לקו בשטח ירדן. מאז איחוד העיר במלחמת ששת הימים הוזנח הרחוב, ועיריית ירושלים מתכננת להרחיבו ולהופכו לציר תנועה ראשי.",
+    "wikibase_item": "Q2902295",
+    "coordinates": {
+      "lat": 31.7839,
+      "lon": 35.2233,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Street of the Prophets",
+    "url": "https://en.wikipedia.org/wiki/Street_of_the_Prophets",
+    "score": 10,
+    "extract": "Street of the Prophets (Hebrew: רחוב הנביאים, Rehov HaNevi'im) is an east–west axis road in Jerusalem beginning outside Damascus Gate and ending at Davidka Square. Located to the north of Jaffa Road, it bisects the neighborhood of Musrara.\nDuring its heyday in the late 19th century and early 20th century, Street of the Prophets was a favorite address for hospitals, churches, monasteries, hospices, government offices, foreign consulates, and wealthy Christian, Jewish and Muslim residents.\nToday the street still boasts the same heterogeneous mix of residents and workers, as well as schools, hospitals, churches and government offices. The elegant 19th-century architecture gives Street of the Prophets the appellation of \"most beautiful street outside the Old City\", while its historic buildings make it the most popular site for guided tours outside the Old City.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 235952682,
+    "name": "הנביאים",
+    "display_name": "הנביאים, ירושלים, מורשה, ירושלים, נפת ירושלים, מחוז ירושלים, 9511208, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7839605,
+    "lon": 35.2251852,
+    "distance": 137.0066401586765,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/235952682"
+  },
+  "fact": "את השם \"רחוב הנביאים\" בחרה ועדה בריטית שבה היו נציגים נוצרים, יהודים ומוסלמים — כדי שכל אחת משלוש הדתות תזדהה עם \"הנביאים\" שלה.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב הנביאים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/235952682",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 52מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

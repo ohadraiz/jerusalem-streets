@@ -1,0 +1,71 @@
+{
+  "street_id": "alkalai",
+  "street_name": "אלקלעי",
+  "area": "טלביה",
+  "lat": 31.76978,
+  "lng": 35.218455,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1507,
+      "name": "אלקלעי",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q6369475",
+      "label": "קרן אלקלעי-גוט",
+      "description": "משוררת, פרופ' לספרות אנגלית באוני' ת\"א",
+      "birth": 1945,
+      "death": null,
+      "url": "https://www.wikidata.org/wiki/Q6369475",
+      "hewiki": "קרן אלקלעי-גוט",
+      "enwiki": "Karen Alkalay-Gut"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 738253607,
+    "name": "אלקלעי",
+    "display_name": "אלקלעי, ירושלים, טלביה, ירושלים, נפת ירושלים, מחוז ירושלים, 9214705, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7697277,
+    "lon": 35.2184536,
+    "distance": 5.817000457165017,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/738253607"
+  },
+  "fact": "הרחוב קרוי על שם הרב יהודה אלקלעי (1798–1878), מבשר הציונות המעשית והמדינית, שפעל להתיישבות בארץ ישראל כ-50 שנה לפני הרצל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יהודה אלקלעי",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%9C%D7%A7%D7%9C%D7%A2%D7%99",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/738253607",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה.",
+    "שם הרחוב זהה לשם הרב; לא נמצא מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

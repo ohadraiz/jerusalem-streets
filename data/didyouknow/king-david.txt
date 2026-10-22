@@ -1,0 +1,11 @@
+street_id: king-david
+street_name: דוד המלך
+area: ימין משה
+fact: בתקופת המנדט נקרא הרחוב "דרך הקדוש יוליאן", על שם יוליאנוס העני — ולא על שם יוליאנוס הכופר, כפי שסוברים בטעות.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%93%D7%95%D7%93_%D7%94%D7%9E%D7%9C%D7%9A
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/917439802
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

@@ -1,0 +1,55 @@
+{
+  "street_id": "scopus-rd",
+  "street_name": "שדרות שיירת הר הצופים",
+  "area": "הר הצופים",
+  "lat": 31.794796,
+  "lng": 35.238305,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1341791475,
+    "name": "שיירת הר הצופים",
+    "display_name": "שיירת הר הצופים, ירושלים, הר הצופים, ירושלים, נפת ירושלים, מחוז ירושלים, 9711769, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.794924,
+    "lon": 35.2382025,
+    "distance": 17.216800445207276,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1341791475"
+  },
+  "fact": "השדרות מנציחות את שיירת הדסה (שיירת הר הצופים), שיצאה ב-13 באפריל 1948 להר הצופים והותקפה בשייח' גראח; 77–80 מנוסעיה נהרגו.",
+  "fact_type": "history-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שיירת הדסה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%99%D7%99%D7%A8%D7%AA_%D7%94%D7%93%D7%A1%D7%94",
+      "kind": "content"
+    },
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 4392)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=4392",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1341791475",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "אין מקור תוכן; העובדה עוסקת רק במיקום ובשם."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

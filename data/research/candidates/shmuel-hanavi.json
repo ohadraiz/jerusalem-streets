@@ -1,0 +1,96 @@
+{
+  "street_id": "shmuel-hanavi",
+  "street_name": "שמואל הנביא",
+  "area": "מעלות דפנה",
+  "lat": 31.793266,
+  "lng": 35.221983,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 116,
+      "name": "שמואל הנביא",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "שמואל הנביא (שכונה)",
+    "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%91%D7%99%D7%90_(%D7%A9%D7%9B%D7%95%D7%A0%D7%94)",
+    "score": 15,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 194מ׳"
+    ],
+    "extract": "שמואל הנביא היא שכונה בירושלים שנקראה על שם הדמות המקראית של שמואל הנביא.",
+    "wikibase_item": "Q2904253",
+    "coordinates": {
+      "lat": 31.795,
+      "lon": 35.22222222,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Shmuel HaNavi (neighborhood)",
+    "url": "https://en.wikipedia.org/wiki/Shmuel_HaNavi_(neighborhood)",
+    "score": 8,
+    "extract": "Shmuel HaNavi (Hebrew: שיכון שמואל הנביא, Shikun Shmuel HaNavi, lit. \"Samuel the Prophet neighborhood\") is a neighborhood in north-central Jerusalem. It is bordered by the Sanhedria Cemetery to the north, Maalot Dafna to the east, Arzei HaBira to the south, and the Bukharan Quarter to the west. It is named after Shmuel HaNavi (Samuel the Prophet) Street, which runs along its western border and is the main road leading to the tomb of Samuel the prophet (Hebrew: Shmuel HaNavi) just outside Jerusalem's city limits."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 217282021,
+    "name": "שמואל הנביא",
+    "display_name": "שמואל הנביא, ירושלים, מעלות דפנה, ירושלים, נפת ירושלים, מחוז ירושלים, 9534811, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.793734,
+    "lon": 35.2215944,
+    "distance": 63.69407047778381,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/217282021"
+  },
+  "fact": "השכונה, ועל שמה הרחוב, נקראה על שם שמואל הנביא; בנבי סמואל, סמוך לירושלים, מצוי על פי המסורת קברו.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמואל הנביא (שכונה)",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%91%D7%99%D7%90_%28%D7%A9%D7%9B%D7%95%D7%A0%D7%94%29",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — נבי סמואל",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%91%D7%99_%D7%A1%D7%9E%D7%95%D7%90%D7%9C",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/217282021",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 194מ׳",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום.",
+    "שם הרחוב נגזר משם השכונה; אין מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

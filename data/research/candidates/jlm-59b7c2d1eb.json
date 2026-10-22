@@ -1,0 +1,97 @@
+{
+  "street_id": "jlm-59b7c2d1eb",
+  "street_name": "הצבי",
+  "area": "רוממה",
+  "lat": 31.79012,
+  "lng": 35.20198,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 916,
+      "name": "הצבי",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "הצבי",
+    "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A6%D7%91%D7%99",
+    "score": 11,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "\"הצבי\" היה עיתון שנוסד על ידי אליעזר בן-יהודה בשנת 1884 בירושלים והופיע מאז בגלגולים שונים עד ימי מלחמת העולם הראשונה (1915). בשער העיתון הוא הוצג כ\"עיתון לחדשות, ספרות, מדעי הלשון וענייני המדינות\".",
+    "wikibase_item": "Q1513432",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "HaZvi",
+    "url": "https://en.wikipedia.org/wiki/HaZvi",
+    "score": 4,
+    "extract": "HaZvi (Hebrew: הַצְּבִי, also Hatzevi and Hazewi, literally 'The Gazelle') was a Hebrew-language newspaper published in Jerusalem from 1884 to 1914 by Eliezer Ben-Yehuda, a  pioneer of the revival of Hebrew as a spoken tongue."
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q12233801",
+      "label": "צבי אלימלך שפירא (בלאז'וב)",
+      "description": "",
+      "birth": 1841,
+      "death": 1924,
+      "url": "https://www.wikidata.org/wiki/Q12233801",
+      "hewiki": "צבי אלימלך שפירא (בלאז'וב)",
+      "enwiki": null
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1047637089,
+    "name": "הצבי",
+    "display_name": "הצבי, ירושלים, רוממה, ירושלים, נפת ירושלים, מחוז ירושלים, 9432531, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7898972,
+    "lon": 35.2019661,
+    "distance": 24.80903825104486,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1047637089"
+  },
+  "fact": "הרחוב קרוי על שם העיתון \"הצבי\", שייסד אליעזר בן-יהודה ב-1884 והופיע עד 1915.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "המכלול — שמות רחובות בירושלים",
+      "url": "https://www.hamichlol.org.il/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — הצבי",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A6%D7%91%D7%99",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1047637089",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

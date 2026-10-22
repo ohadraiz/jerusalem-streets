@@ -1,0 +1,11 @@
+street_id: jlm-3e1320b1bd
+street_name: דרך אריאל שרון
+area: יפה נוף
+fact: דרך אריאל שרון היא כביש 16, שנפתח לתנועה ב-1 בספטמבר 2022 ומחבר את כביש 1 ממערב אל מרכז ירושלים.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_16
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/560364014
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

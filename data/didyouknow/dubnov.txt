@@ -1,0 +1,12 @@
+street_id: dubnov
+street_name: דובנוב
+area: טלביה
+fact: הרחוב קרוי על שם שמעון דובנוב (1860–1941), היסטוריון יהודי, אבי ההיסטוריוגרפיה היהודית החילונית ומחבר "דברי ימי עם עולם".
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1629
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%93%D7%95%D7%91%D7%A0%D7%95%D7%91
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/88826833
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal+person-article

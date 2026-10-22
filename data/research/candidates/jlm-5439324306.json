@@ -1,0 +1,53 @@
+{
+  "street_id": "jlm-5439324306",
+  "street_name": "קרית משה",
+  "area": "קרית משה",
+  "lat": 31.786166,
+  "lng": 35.19493,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1004,
+      "name": "קרית משה",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1054996861,
+    "name": "קרית משה",
+    "display_name": "קרית משה, ירושלים, קרית משה, ירושלים, נפת ירושלים, מחוז ירושלים, 9546105, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7857753,
+    "lon": 35.1961495,
+    "distance": 123.18014557199486,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1054996861"
+  },
+  "fact": "הרחוב מופה ב-OpenStreetMap בשם \"קרית משה\" בשכונת קרית משה.",
+  "fact_type": "osm-only",
+  "confidence": "low",
+  "sources": [
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1054996861",
+      "kind": "identity"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "אין מקור תוכן; העובדה עוסקת רק במיקום ובשם."
+  ],
+  "needs_review": true
+}

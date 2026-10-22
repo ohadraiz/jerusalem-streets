@@ -770,6 +770,23 @@
     });
 
     wrap.appendChild(find);
+
+    /* קישור קטן ל"הידעת?" — תמיד ב-DOM אך מוסתר אם לרחוב אין עובדה מאומתת.
+       החלון הצף נפתח ע"י JLMFacts (assets/dyk-facts.js). */
+    if (window.JLMFacts) {
+      var dyk = document.createElement("button");
+      dyk.type = "button";
+      dyk.className = "btn map-popup__dyk";
+      dyk.textContent = "הידעת?";
+      dyk.setAttribute("aria-label", "תגלית על רחוב " + street.name);
+      dyk.setAttribute("aria-haspopup", "dialog");
+      dyk.hidden = !window.JLMFacts.has(street.id);
+      dyk.addEventListener("click", function () {
+        window.JLMFacts.open(street.id, dyk);
+      });
+      wrap.appendChild(dyk);
+    }
+
     return wrap;
   }
 

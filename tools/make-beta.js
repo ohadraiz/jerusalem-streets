@@ -39,6 +39,7 @@ const COPIES = [
   "app.js",
   "map.js",
   "ui.js",
+  "dyk-facts.js",
   "sw-register.js"
 ];
 

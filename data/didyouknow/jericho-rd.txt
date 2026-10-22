@@ -1,0 +1,11 @@
+street_id: jericho-rd
+street_name: יריחו
+area: מעלה הזיתים
+fact: דרך יריחו, כביש 417, עוקבת אחר הדרך ההיסטורית מירושלים ליריחו.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%99%D7%A8%D7%99%D7%97%D7%95
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/115627983
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

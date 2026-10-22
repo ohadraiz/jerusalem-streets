@@ -1,0 +1,10 @@
+street_id: jlm-fadd7f0909
+street_name: גולדה מאיר
+area: רמות ב'
+fact: חלקו הדרומי של כביש 436, באורך 5 ק"מ, קרוי "שדרות גולדה מאיר" ומכונה "כביש רמות"; הוא עורק תחבורה ראשי בעיר החוצה את שכונת רמות.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_436
+source: https://www.openstreetmap.org/way/113814715
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

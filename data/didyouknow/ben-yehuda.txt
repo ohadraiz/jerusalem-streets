@@ -1,0 +1,12 @@
+street_id: ben-yehuda
+street_name: בן יהודה
+area: נחלאות
+fact: הבריטים תכננו לקרוא לרחוב על שם דמות תרבותית בריטית, אך עם סיום סלילתו ב-1922 נפטר אליעזר בן-יהודה, מחייה השפה העברית, והם החליטו להנציח את שמו.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/1429804311
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

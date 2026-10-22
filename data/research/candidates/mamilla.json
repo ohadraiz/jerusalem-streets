@@ -1,0 +1,90 @@
+{
+  "street_id": "mamilla",
+  "street_name": "ממילא",
+  "area": "מחנה ישראל",
+  "lat": 31.777204,
+  "lng": 35.225005,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 454,
+      "name": "ממילא",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "ממילא",
+    "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%9E%D7%99%D7%9C%D7%90",
+    "score": 15,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 190מ׳"
+    ],
+    "extract": "ממילא היא שכונה בלב ירושלים, בעמק המקשר בין שער יפו בעיר העתיקה לבין העיר החדשה. השכונה הוקמה בסוף המאה ה-19 כשכונת סוחרים ובעלי מלאכה יהודים וערבים, ושגשגה כחלק מהמרכז המסחרי של העיר. בין השנים 1948–1967 הייתה השכונה צמודה לשטח ההפקר בין ישראל וירדן, ושנים רבות נחשבה לשכונת מצוקה. לאחר מלחמת ששת הימים הוחלט להרסה ולבנות את המתחם מחדש בחלוקה לאזורי מגורים, מלונאות, מסחר ומשרדים, באחד ממיזמי הבנייה הגדולים, היקרים והארוכים בתולדות העיר המודרנית.\nממילא ממוקמת במרכז קו התפר בין מזרח ירושלים ומערבה, קרקע שבשנות ה-2000 נחשבה לאחד מהשטחים היקרים בישראל. מיזם שיקומה ובינויה היה כרוך בהשקעות עתק, ולווה בקונפליקטים משפטיים, עסקיים ודתיים עזים שהביאו לעיכובים רבים בהשלמתו. הוויכוח סביב המתחם שכך מעט מסוף 2006, עת הושגו פשרות בנוגע לבנייה באזור ועם חידוש אינטנסיבי של העבודות במקום. רק בסוף העשור הראשון של המאה ה-21, הושלמו אזורי המגורים והמלונאות, ונפתחו לקהל הרחב מתחם הבילוי, הקניות ובתי הקפה.",
+    "wikibase_item": "Q2915238",
+    "coordinates": {
+      "lat": 31.77611667,
+      "lon": 35.22345556,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Mamilla",
+    "url": "https://en.wikipedia.org/wiki/Mamilla",
+    "score": 8,
+    "extract": "Mamilla (Hebrew: ממילא) is a neighbourhood of Jerusalem that was established in the late 19th century outside the Old City, west of the Jaffa Gate. Until 1948 it was a mixed Jewish–Arab business district. Between 1948 and 1967, it was located along the armistice line between the Israeli and Jordanian-held sector of the city, and many buildings were destroyed by Jordanian shelling. The Israeli government approved an urban renewal project for Mamilla, apportioning land for residential and commercial zones, including hotels and office space. The Mamilla Mall opened in 2007."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 29256018,
+    "name": "ממילא",
+    "display_name": "ממילא, ירושלים, מחנה ישראל, ירושלים, נפת ירושלים, מחוז ירושלים, 9120402, ישראל",
+    "category": "highway",
+    "type": "pedestrian",
+    "lat": 31.7775175,
+    "lon": 35.2251192,
+    "distance": 36.4927910240895,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/29256018"
+  },
+  "fact": "ממילא היא השכונה בעמק שבין שער יפו לעיר החדשה; בסוף המאה ה-19 היא קמה כשכונת סוחרים ובעלי מלאכה יהודים וערבים, וב-1948–1967 הייתה צמודה לשטח ההפקר בין ישראל לירדן.",
+  "fact_type": "place-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ממילא",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%9E%D7%99%D7%9C%D7%90",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/29256018",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 190מ׳",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

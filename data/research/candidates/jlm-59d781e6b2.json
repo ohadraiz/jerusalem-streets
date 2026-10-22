@@ -1,0 +1,84 @@
+{
+  "street_id": "jlm-59d781e6b2",
+  "street_name": "יוסף קארו",
+  "area": "בית ישראל",
+  "lat": 31.791094,
+  "lng": 35.223378,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": {
+    "title": "יוסף קארו",
+    "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%90%D7%A8%D7%95",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "רבי יוסף קארו (מכונה גם השולחן ערוך, הבית יוסף, מרן והמחבר; 1488, ה'רמ\"ח – 24 במרץ 1575, י\"ג בניסן ה'של\"ה), מגדולי הפוסקים, מחבר השולחן ערוך, כסף משנה והבית יוסף. עסק גם בקבלה. מקובל לסמנו כפותח תקופת האחרונים.",
+    "wikibase_item": "Q467148",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Joseph Karo",
+    "url": "https://en.wikipedia.org/wiki/Joseph_Karo",
+    "score": 4,
+    "extract": "Joseph ben Ephraim Karo, also spelled Yosef Caro, or Qaro (Hebrew: יוסף קארו; 1488 – March 24, 1575, 13 Nisan 5335 A.M.), was a prominent Sephardic Jewish rabbi renowned as the author of the last great codification of Jewish law, the Beit Yosef, and its popular analogue, the Shulhan Arukh. Karo is regarded as the preeminent halakhic authority of his time, and is often referred to by the honorific titles HaMechaber (Hebrew: הַמְחַבֵּר, lit. 'the author') and Maran (Jewish Babylonian Aramaic: מָרַן, lit. 'our master')."
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q467148",
+      "label": "יוסף קארו",
+      "description": "רב ספרדי מחבר השולחן ערוך",
+      "birth": 1488,
+      "death": 1575,
+      "url": "https://www.wikidata.org/wiki/Q467148",
+      "hewiki": "יוסף קארו",
+      "enwiki": "Joseph Karo"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1098609017,
+    "name": "יוסף קארו",
+    "display_name": "יוסף קארו, ירושלים, בית ישראל, ירושלים, נפת ירושלים, מחוז ירושלים, 9522901, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7910993,
+    "lon": 35.2233198,
+    "distance": 5.532128589233821,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1098609017"
+  },
+  "fact": "הרחוב קרוי על שם הרב יוסף קארו (1488–1575), מגדולי הפוסקים ומחבר \"בית יוסף\" ו\"שולחן ערוך\"; בעבר נקרא \"העלייה\".",
+  "fact_type": "municipal+person-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 117)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=117",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — יוסף קארו",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%90%D7%A8%D7%95",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1098609017",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

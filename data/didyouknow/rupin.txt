@@ -1,0 +1,11 @@
+street_id: rupin
+street_name: רופין
+area: קרית הממשלה
+fact: הרחוב קרוי על שם ארתור רופין (1876–1943), כלכלן וסוציולוג, מנהל המשרד הארצישראלי ומראשי ההתיישבות הציונית בארץ ישראל.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%A8%D7%95%D7%A4%D7%99%D7%9F
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/1094279291
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

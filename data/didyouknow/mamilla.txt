@@ -1,0 +1,11 @@
+street_id: mamilla
+street_name: ממילא
+area: מחנה ישראל
+fact: ממילא היא השכונה בעמק שבין שער יפו לעיר החדשה; בסוף המאה ה-19 היא קמה כשכונת סוחרים ובעלי מלאכה יהודים וערבים, וב-1948–1967 הייתה צמודה לשטח ההפקר בין ישראל לירדן.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%9E%D7%99%D7%9C%D7%90
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/29256018
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: place-article

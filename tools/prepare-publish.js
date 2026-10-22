@@ -21,7 +21,7 @@ const target = path.resolve(process.argv[2] || path.join(ROOT, "publish"));
 
 /* מה נכנס לפריסה: רק מה שהדפדפן צריך כדי להריץ את האפליקציה */
 const FILES = ["index.html", "manifest.webmanifest", "sw.js"];
-const DIRS = ["assets"];
+const DIRS = ["assets", "data/didyouknow"];
 
 function copyFile(from, to) {
   fs.mkdirSync(path.dirname(to), { recursive: true });

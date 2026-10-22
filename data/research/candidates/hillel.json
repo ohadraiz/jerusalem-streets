@@ -1,0 +1,91 @@
+{
+  "street_id": "hillel",
+  "street_name": "הלל",
+  "area": "נחלת שבעה",
+  "lat": 31.779972,
+  "lng": 35.218356,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 432,
+      "name": "הלל",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב הלל",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 80מ׳"
+    ],
+    "extract": "רחוב הלל הוא רחוב מרכזי בירושלים, המהווה חלק חשוב מן המע\"ר של ירושלים. הרחוב משמש כציר תנועה המקשר בין רחוב המלך ג'ורג' החמישי לרחוב בן-סירא ולממילא, במקביל למדרחוב בן-יהודה. חלקו התחתון של הרחוב גובל מצידו האחד בשכונת נחלת שבעה ומצידו השני בגן העצמאות.",
+    "wikibase_item": "Q2905224",
+    "coordinates": {
+      "lat": 31.77976667,
+      "lon": 35.21916389,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Hillel Street",
+    "url": "https://en.wikipedia.org/wiki/Hillel_Street",
+    "score": 10,
+    "extract": "Hillel Street (Hebrew: רחוב הלל, Rehov Hillel) is one of the central streets of Jerusalem. It connects King George Street to the small Ben Sira Street and the Mamilla neighbourhood and is parallel to Ben Yehuda Street. The lower part of the road is between Independence Park and the Nahalat Shiva neighborhood.\nThe street was named for Hillel the Elder, and a street parallel to it is called Shammai Street (after Shammai the Elder). Most of the buildings on the street date from the British Mandate period and follow the architectural style of that time. \nIt is located in the business district. There are shops, cafes, pubs and office buildings. On the street there are the first two original cafés of the chains Aroma Espresso Bar and Café Hillel (which got its name from the street).\nAmong the notable buildings are: \n\nHotel Eden, former offices of the Bank of Israel and today the Ministry of Immigrant Absorption\nJerusalem Hotel Tower (Migdal Yerushalayim)\nItalian Synagogue and the Umberto Nahon Museum of Italian Jewish Art\nBeit Agron, which houses the offices of the foreign press of the government"
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 701478867,
+    "name": "הלל",
+    "display_name": "הלל, ירושלים, מגרש הרוסים, ירושלים, נפת ירושלים, מחוז ירושלים, 9458132, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7801017,
+    "lon": 35.2184756,
+    "distance": 18.324809116618564,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/701478867"
+  },
+  "fact": "בתקופת המנדט היה הרחוב חלק מרחוב בצלאל; לאחר קום המדינה הוסב שמו ל\"הלל\" על שם הלל הזקן, ובסמוך לו נקרא רחוב שמאי על שם בן-פלוגתו.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב הלל",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/701478867",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 80מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

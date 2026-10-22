@@ -1,0 +1,509 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-22",
+  "status": "approved",
+  "count": 50,
+  "streets": [
+    {
+      "order": 1,
+      "id": "yafo",
+      "name": "יפו",
+      "area": "נחלאות",
+      "nameEn": "Jaffa",
+      "category": "מרכז העיר",
+      "why": "הרחוב הראשי ההיסטורי של ירושלים מחוץ לחומות; ציר מסחר ותחבורה מרכזי.",
+      "status": "approved"
+    },
+    {
+      "order": 2,
+      "id": "ben-yehuda",
+      "name": "בן יהודה",
+      "area": "נחלאות",
+      "nameEn": "Ben Yehuda",
+      "category": "מרכז העיר",
+      "why": "רחוב המדרחוב המרכזי; סמל התחדשות מרכז העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 3,
+      "id": "king-george",
+      "name": "המלך ג׳ורג׳",
+      "area": "מחנה ישראל",
+      "nameEn": "George HaMelekh",
+      "category": "מרכז העיר",
+      "why": "ציר מסחר מרכזי; אחד הרחובות המוכרים בירושלים.",
+      "status": "approved"
+    },
+    {
+      "order": 4,
+      "id": "bezalel",
+      "name": "בצלאל",
+      "area": "נחלאות",
+      "nameEn": "Bezalel",
+      "category": "מרכז העיר",
+      "why": "רחוב תרבותי-מסחרי, סמוך לבצלאל ולשוק מחנה יהודה.",
+      "status": "approved"
+    },
+    {
+      "order": 5,
+      "id": "nahlat-shiva",
+      "name": "נחלת שבעה",
+      "area": "נחלת שבעה",
+      "nameEn": "Nahalat Shiva",
+      "category": "מרכז העיר",
+      "why": "השכונה היהודית הראשונה מחוץ לחומות; רחוב בעל היסטוריה.",
+      "status": "approved"
+    },
+    {
+      "order": 6,
+      "id": "jlm-bd7d4bff5b",
+      "name": "כיכר ציון",
+      "area": "נחלת שבעה",
+      "nameEn": "Zion Square",
+      "category": "מרכז העיר",
+      "why": "כיכר ציון — הצומת הסמלי של מרכז העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 7,
+      "id": "shivtei-yisrael",
+      "name": "שבטי ישראל",
+      "area": "מורשה",
+      "nameEn": "Shivtei Israel",
+      "category": "מרכז העיר",
+      "why": "רחוב מרכזי בין מרכז העיר לשכונות הצפוניות.",
+      "status": "approved"
+    },
+    {
+      "order": 8,
+      "id": "neviim",
+      "name": "הנביאים",
+      "area": "מגרש הרוסים",
+      "nameEn": "HaNeviim",
+      "category": "מרכז העיר",
+      "why": "רחוב היסטורי שליד מגרש הרוסים.",
+      "status": "approved"
+    },
+    {
+      "order": 9,
+      "id": "keren-hayesod",
+      "name": "קרן היסוד",
+      "area": "מחנה ישראל",
+      "nameEn": "Keren HaYesod",
+      "category": "מרכז העיר",
+      "why": "ציר מרכזי בין מרכז העיר לרחביה ולמושבה הגרמנית.",
+      "status": "approved"
+    },
+    {
+      "order": 10,
+      "id": "agron",
+      "name": "אגרון",
+      "area": "מחנה ישראל",
+      "nameEn": "Agron",
+      "category": "מרכז העיר",
+      "why": "רחוב מרכזי בגבול מחנה ישראל ורחביה.",
+      "status": "approved"
+    },
+    {
+      "order": 11,
+      "id": "hillel",
+      "name": "הלל",
+      "area": "נחלת שבעה",
+      "nameEn": "Hillel",
+      "category": "מרכז העיר",
+      "why": "רחוב מרכזי בנחלת שבעה.",
+      "status": "approved"
+    },
+    {
+      "order": 12,
+      "id": "shamai",
+      "name": "שמאי",
+      "area": "נחלת שבעה",
+      "nameEn": "Shammai",
+      "category": "מרכז העיר",
+      "why": "רחוב מרכזי בנחלת שבעה.",
+      "status": "approved"
+    },
+    {
+      "order": 13,
+      "id": "mamilla",
+      "name": "ממילא",
+      "area": "מחנה ישראל",
+      "nameEn": "Mamilla",
+      "category": "מרכז העיר",
+      "why": "רחוב היסטורי בדרך לשער יפו; כיום מתחם ממילא.",
+      "status": "approved"
+    },
+    {
+      "order": 14,
+      "id": "jlm-59b7c2d1eb",
+      "name": "הצבי",
+      "area": "רוממה",
+      "nameEn": "HaTsvi",
+      "category": "מרכז העיר",
+      "why": "רחוב הצבי — ציר ברוממה, בין מרכז העיר לשכונות הצפוניות.",
+      "status": "approved"
+    },
+    {
+      "order": 15,
+      "id": "jlm-96fd290e1d",
+      "name": "הרכבת",
+      "area": "בקעה",
+      "nameEn": "HaRakevet",
+      "category": "מרכז העיר",
+      "why": "רחוב הרכבת — על תוואי הרכבת ההיסטורית לירושלים.",
+      "status": "approved"
+    },
+    {
+      "order": 16,
+      "id": "king-david",
+      "name": "דוד המלך",
+      "area": "ימין משה",
+      "nameEn": "David HaMelekh",
+      "category": "מרכז העיר",
+      "why": "רחוב דוד המלך — ציר מלונות ותיירות במערב העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 17,
+      "id": "even-ezra",
+      "name": "אבן עזרא",
+      "area": "רחביה",
+      "nameEn": "Ibn Ezra",
+      "category": "רחביה",
+      "why": "רחוב בלב רחביה, מהשכונות המתוכננות הראשונות.",
+      "status": "approved"
+    },
+    {
+      "order": 18,
+      "id": "ramban",
+      "name": "רמב\"ן",
+      "area": "רחביה",
+      "nameEn": "Ramban",
+      "category": "רחביה",
+      "why": "רחוב בלב רחביה; קרויה על שם הרמב״ן.",
+      "status": "approved"
+    },
+    {
+      "order": 19,
+      "id": "aza",
+      "name": "עזה",
+      "area": "רחביה",
+      "nameEn": "Aza",
+      "category": "רחביה",
+      "why": "רחוב עזה — ציר מרכזי בין רחביה לטלביה.",
+      "status": "approved"
+    },
+    {
+      "order": 20,
+      "id": "emek-refaim",
+      "name": "עמק רפאים",
+      "area": "המושבה הגרמנית",
+      "nameEn": "Emek Refaim",
+      "category": "המושבה הגרמנית",
+      "why": "הרחוב הראשי של המושבה הגרמנית; מסחר, קפה והיסטוריה.",
+      "status": "approved"
+    },
+    {
+      "order": 21,
+      "id": "bethlehem-rd",
+      "name": "דרך בית לחם",
+      "area": "תלפיות",
+      "nameEn": "Beit Lehem",
+      "category": "תלפיות",
+      "why": "דרך בית לחם — ציר היסטורי דרומה מהעיר.",
+      "status": "approved"
+    },
+    {
+      "order": 22,
+      "id": "hebron-rd",
+      "name": "חברון",
+      "area": "תלפיות",
+      "nameEn": "Hebron",
+      "category": "תלפיות",
+      "why": "דרך חברון — ציר היסטורי לדרום הר חברון.",
+      "status": "approved"
+    },
+    {
+      "order": 23,
+      "id": "herzl",
+      "name": "הרצל",
+      "area": "בית הכרם",
+      "nameEn": "Herzl",
+      "category": "בית הכרם",
+      "why": "רחוב הרצל — ציר מרכזי בבית הכרם.",
+      "status": "approved"
+    },
+    {
+      "order": 24,
+      "id": "hamaayan",
+      "name": "המעיין",
+      "area": "עין כרם",
+      "nameEn": "HaMaayan",
+      "category": "עין כרם",
+      "why": "הרחוב הראשי של עין כרם; כפר הררי היסטורי.",
+      "status": "approved"
+    },
+    {
+      "order": 25,
+      "id": "ein-kerem",
+      "name": "עין כרם",
+      "area": "קרית היובל",
+      "nameEn": "Ein Kerem",
+      "category": "קרית היובל",
+      "why": "רחוב עין כרם — מחבר את השכונה לכפר עין כרם.",
+      "status": "approved"
+    },
+    {
+      "order": 26,
+      "id": "tel-hai",
+      "name": "תל חי",
+      "area": "המושבה היוונית",
+      "nameEn": "Tel Hai",
+      "category": "המושבה היוונית",
+      "why": "רחוב תל חי — בלב המושבה היוונית.",
+      "status": "approved"
+    },
+    {
+      "order": 27,
+      "id": "hovevei-tzion",
+      "name": "חובבי ציון",
+      "area": "טלביה",
+      "nameEn": "Khovevei Zion",
+      "category": "טלביה",
+      "why": "רחוב חובבי ציון — בלב טלביה.",
+      "status": "approved"
+    },
+    {
+      "order": 28,
+      "id": "jabotinsky",
+      "name": "ז'בוטינסקי",
+      "area": "טלביה",
+      "nameEn": "Jabotinsky",
+      "category": "טלביה",
+      "why": "רחוב ז׳בוטינסקי — ציר מרכזי בטלביה.",
+      "status": "approved"
+    },
+    {
+      "order": 29,
+      "id": "pinsker",
+      "name": "פינסקר",
+      "area": "טלביה",
+      "nameEn": "Pinsker",
+      "category": "טלביה",
+      "why": "רחוב פינסקר — בלב טלביה.",
+      "status": "approved"
+    },
+    {
+      "order": 30,
+      "id": "dubnov",
+      "name": "דובנוב",
+      "area": "טלביה",
+      "nameEn": "Dubnov",
+      "category": "טלביה",
+      "why": "רחוב דובנוב — בלב טלביה.",
+      "status": "approved"
+    },
+    {
+      "order": 31,
+      "id": "alkalai",
+      "name": "אלקלעי",
+      "area": "טלביה",
+      "nameEn": "Alkalai",
+      "category": "טלביה",
+      "why": "רחוב אלקלעי — בלב טלביה.",
+      "status": "approved"
+    },
+    {
+      "order": 32,
+      "id": "malchei-yisrael",
+      "name": "מלכי ישראל",
+      "area": "מקור ברוך",
+      "nameEn": "Malkhei Israel",
+      "category": "מקור ברוך",
+      "why": "רחוב מלכי ישראל — ציר מסחר ותחבורה חרדי מרכזי.",
+      "status": "approved"
+    },
+    {
+      "order": 33,
+      "id": "mea-shearim",
+      "name": "מאה שערים",
+      "area": "בתי אונגרין",
+      "nameEn": "MeA SheArim",
+      "category": "בתי אונגרין",
+      "why": "רחוב מאה שערים — סמל השכונה החרדית ההיסטורית.",
+      "status": "approved"
+    },
+    {
+      "order": 34,
+      "id": "harav-kook",
+      "name": "הרב קוק",
+      "area": "נחלת שבעה",
+      "nameEn": "HaRav Kook",
+      "category": "נחלת שבעה",
+      "why": "רחוב הרב קוק — קרוי על שם הראי״ה קוק.",
+      "status": "approved"
+    },
+    {
+      "order": 35,
+      "id": "yirmiyahu",
+      "name": "ירמיהו",
+      "area": "רוממה",
+      "nameEn": "Yirmiyahu",
+      "category": "רוממה",
+      "why": "רחוב ירמיהו — ציר ראשי בצפון-מערב העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 36,
+      "id": "bar-ilan",
+      "name": "בר אילן",
+      "area": "תל ארזה",
+      "nameEn": "Bar Ilan",
+      "category": "תל ארזה",
+      "why": "רחוב בר אילן — ציר מרכזי בצפון העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 37,
+      "id": "shmuel-hanavi",
+      "name": "שמואל הנביא",
+      "area": "מעלות דפנה",
+      "nameEn": "Shmuel HaNavi",
+      "category": "מעלות דפנה",
+      "why": "רחוב שמואל הנביא — ציר מרכזי בצפון העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 38,
+      "id": "weizmann",
+      "name": "שדרות ויצמן",
+      "area": "רוממה",
+      "nameEn": "Sderot Weizmann",
+      "category": "רוממה",
+      "why": "שדרות ויצמן — ציר מרכזי ברוממה.",
+      "status": "approved"
+    },
+    {
+      "order": 39,
+      "id": "jlm-fadd7f0909",
+      "name": "גולדה מאיר",
+      "area": "רמות ב'",
+      "nameEn": "Golda Meir",
+      "category": "רמות ב׳",
+      "why": "רחוב גולדה מאיר — ציר ראשי בשכונות הצפוניות.",
+      "status": "approved"
+    },
+    {
+      "order": 40,
+      "id": "scopus-rd",
+      "name": "שדרות שיירת הר הצופים",
+      "area": "הר הצופים",
+      "nameEn": "Sderot Shayeret Har HaTsofim",
+      "category": "הר הצופים",
+      "why": "שדרות שיירת הר הצופים — ציר היסטורי להר הצופים.",
+      "status": "approved"
+    },
+    {
+      "order": 41,
+      "id": "nablus-rd",
+      "name": "שכם",
+      "area": "שייח' ג'ראח",
+      "nameEn": "Shechem",
+      "category": "שייח׳ ג׳ראח",
+      "why": "דרך שכם — ציר היסטורי צפונה מהעיר העתיקה.",
+      "status": "approved"
+    },
+    {
+      "order": 42,
+      "id": "jericho-rd",
+      "name": "יריחו",
+      "area": "מעלה הזיתים",
+      "nameEn": "Jericho",
+      "category": "מעלה הזיתים",
+      "why": "דרך יריחו — ציר היסטורי מזרחה, מעל נחל קדרון.",
+      "status": "approved"
+    },
+    {
+      "order": 43,
+      "id": "jlm-3e1320b1bd",
+      "name": "דרך אריאל שרון",
+      "area": "יפה נוף",
+      "nameEn": "Derekh Ariel Sharon",
+      "category": "יפה נוף",
+      "why": "דרך אריאל שרון — ציר תחבורה ראשי במערב העיר.",
+      "status": "approved"
+    },
+    {
+      "order": 44,
+      "id": "jlm-4c7502b52c",
+      "name": "ויה דולורוזה",
+      "area": "הרובע המוסלמי",
+      "nameEn": "Via Dolorosa",
+      "category": "הרובע המוסלמי",
+      "why": "ויה דולורוזה — התוואי הנוצרי המפורסם בעיר העתיקה.",
+      "status": "approved"
+    },
+    {
+      "order": 45,
+      "id": "jlm-f811da3b76",
+      "name": "הקארדו",
+      "area": "הרובע היהודי",
+      "nameEn": "HaKardo",
+      "category": "הרובע היהודי",
+      "why": "הקארדו — הרחוב הראשי של ירושלים הרומית-ביזנטית.",
+      "status": "approved"
+    },
+    {
+      "order": 46,
+      "id": "jlm-a8bc7eb12b",
+      "name": "חב\"ד",
+      "area": "הרובע היהודי",
+      "nameEn": "Habad Street",
+      "category": "הרובע היהודי",
+      "why": "רחוב חב״ד — ברובע היהודי שבעיר העתיקה.",
+      "status": "approved"
+    },
+    {
+      "order": 47,
+      "id": "jlm-59d781e6b2",
+      "name": "יוסף קארו",
+      "area": "בית ישראל",
+      "nameEn": "Yosef Karo",
+      "category": "בית ישראל",
+      "why": "רחוב יוסף קארו — קרוי על שם מחבר השולחן ערוך.",
+      "status": "approved"
+    },
+    {
+      "order": 48,
+      "id": "jlm-ad65935e52",
+      "name": "רבי עקיבא",
+      "area": "נחלת שבעה",
+      "nameEn": "Rabbi Akiva",
+      "category": "נחלת שבעה",
+      "why": "רחוב רבי עקיבא — קרוי על שם התנא.",
+      "status": "approved"
+    },
+    {
+      "order": 49,
+      "id": "rupin",
+      "name": "רופין",
+      "area": "קרית הממשלה",
+      "nameEn": "Ruppin",
+      "category": "קרית הממשלה",
+      "why": "רחוב רופין — ציר ממשל ומוסדות.",
+      "status": "approved"
+    },
+    {
+      "order": 50,
+      "id": "har-tzion",
+      "name": "הר ציון",
+      "area": "ימין משה",
+      "nameEn": "Har Tzion",
+      "category": "הר ציון",
+      "why": "רחוב הר ציון — הדרך ההיסטורית להר ציון שמחוץ לחומות.",
+      "status": "approved"
+    }
+  ],
+  "approvedAt": "2026-10-22"
+}

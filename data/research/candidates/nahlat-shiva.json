@@ -1,0 +1,97 @@
+{
+  "street_id": "nahlat-shiva",
+  "street_name": "נחלת שבעה",
+  "area": "נחלת שבעה",
+  "lat": 31.781264,
+  "lng": 35.220324,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 444,
+      "name": "נחלת שבעה",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "נחלת שבעה",
+    "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A9%D7%91%D7%A2%D7%94",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 141מ׳"
+    ],
+    "extract": "נחלת שבעה היא שכונה ותיקה במרכז ירושלים, שקמה בשנת 1869 (תרכ\"ט) כחלק מתהליך \"היציאה מן החומות\" - ההתיישבות היהודית מחוץ לחומות העיר העתיקה. הייתה זו השכונה השלישית שנוסדה במסגרת זו, לאחר משכנות שאננים ומחנה ישראל. מאז פברואר 1989, לאחר השלמת עבודות שיקום ושימור, השכונה היא אחד ממוקדי הבילוי של העיר, וברחובותיה הצרים של השכונה ניתן למצוא מסעדות, פאבים ובתי קפה רבים.",
+    "wikibase_item": "Q2918285",
+    "coordinates": {
+      "lat": 31.780373,
+      "lon": 35.219266,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Nahalat Shiv'a",
+    "url": "https://en.wikipedia.org/wiki/Nahalat_Shiv'a",
+    "score": 8,
+    "extract": "Nahalat Shiv'a (Hebrew: נחלת שבעה) is a former courtyard neighborhood in Jerusalem. It was the third Jewish neighborhood built outside the walls of the Old City of Jerusalem in the 1860s. Today it is a crowded pedestrian promenade lined with sidewalk cafes. It is adjacent to the Downtown Triangle of central Jerusalem."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 437353262,
+    "name": "נחלת שבעה",
+    "display_name": "נחלת שבעה, ירושלים, מגרש הרוסים, ירושלים, נפת ירושלים, מחוז ירושלים, 9458132, ישראל",
+    "category": "highway",
+    "type": "pedestrian",
+    "lat": 31.7812978,
+    "lon": 35.2202546,
+    "distance": 7.560266266374307,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/437353262"
+  },
+  "fact": "הרחוב קרוי על שם שכונת נחלת שבעה, מהשכונות היהודיות הראשונות מחוץ לחומות (1869), כדי להנציח את שמה.",
+  "fact_type": "municipal+street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 444)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=444",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — נחלת שבעה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A9%D7%91%D7%A2%D7%94",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/437353262",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 141מ׳",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

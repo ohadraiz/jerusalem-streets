@@ -1,0 +1,10 @@
+street_id: hamaayan
+street_name: המעיין
+area: עין כרם
+fact: רחוב המעיין קרוי על שם מעיין מרים בעין כרם; לפי המסורת הנוצרית, ליד המעיין פגשה אלישבע, אם יוחנן המטביל, את מרים, אם ישוע.
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1380
+source: https://www.openstreetmap.org/way/226745158
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal-street-page

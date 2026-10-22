@@ -1,0 +1,11 @@
+street_id: bezalel
+street_name: בצלאל
+area: נחלאות
+fact: הרחוב קרוי על שם בית הספר לאמנות "בצלאל", שהוקם ב-1906 על ידי פרופ' בוריס שץ ושכן בשני מבנים בקצהו המזרחי של הרחוב.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A6%D7%9C%D7%90%D7%9C
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/866095818
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

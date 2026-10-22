@@ -1,0 +1,100 @@
+{
+  "street_id": "har-tzion",
+  "street_name": "הר ציון",
+  "area": "ימין משה",
+  "lat": 31.772427,
+  "lng": 35.22788,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1715,
+      "name": "הר ציון",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "הר ציון",
+    "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8_%D7%A6%D7%99%D7%95%D7%9F",
+    "score": 15,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 114מ׳"
+    ],
+    "extract": "הַר צִיּוֹן הוא הר המתנשא בדרום-מערב העיר העתיקה של ירושלים מחוץ לחומותיה, ועם זאת הוא חלק בלתי נפרד מן העיר העתיקה. ההיסטוריה של ההר מתחילה כבר בתקופה הכנענית והיבוסית. על ההר אתרים חשובים ליהדות, לנצרות ולאסלאם, אתרי מורשת קרב, מוזיאונים ובתי קברות. על פי חלק ממסורות שלוש הדתות, אחד המבנים על ההר, הוא מקום קבורתו של דוד המלך.",
+    "wikibase_item": "Q332444",
+    "coordinates": {
+      "lat": 31.77175833,
+      "lon": 35.22879167,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Mount Zion",
+    "url": "https://en.wikipedia.org/wiki/Mount_Zion",
+    "score": 8,
+    "extract": "Mount Zion (Hebrew: הַר צִיּוֹן, Har Ṣīyyōn; Arabic: جبل صهيون, Jabal Ṣihyawn) is a hill in Jerusalem located just outside the walls of the Old City to the south. The term Mount Zion has been used in the Hebrew Bible first for the City of David (2 Samuel 5:7, 1 Chronicles 11:5; 1 Kings 8:1, 2 Chronicles 5:2) and later for the Temple Mount, but its meaning has shifted and it is now used as the name of ancient Jerusalem's Western Hill. In a wider sense, the term Zion is also used for the entire Land of Israel.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q6578518",
+      "label": "נחומי הרציון",
+      "description": "מוזיקולוג ישראלי",
+      "birth": 1941,
+      "death": null,
+      "url": "https://www.wikidata.org/wiki/Q6578518",
+      "hewiki": "נחומי הרציון",
+      "enwiki": null
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 984820251,
+    "name": "חטיבת ירושלים",
+    "display_name": "חטיבת ירושלים, ירושלים, הר ציון, ירושלים, נפת ירושלים, מחוז ירושלים, 9114001, ישראל",
+    "category": "highway",
+    "type": "trunk",
+    "lat": 31.7730522,
+    "lon": 35.2267698,
+    "distance": 125.8856432653887,
+    "nameOk": false,
+    "url": "https://www.openstreetmap.org/way/984820251"
+  },
+  "fact": "הר ציון, שעל שמו נקרא הרחוב, הוא ההר שמחוץ לחומות העיר העתיקה; על פי חלק ממסורות שלוש הדתות, אחד ממבניו הוא מקום קבורת דוד המלך.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הר ציון",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8_%D7%A6%D7%99%D7%95%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/984820251",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 114מ׳",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום.",
+    "שם הרחוב זהה לשם ההר; לא נמצא מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

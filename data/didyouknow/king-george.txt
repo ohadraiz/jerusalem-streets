@@ -1,0 +1,11 @@
+street_id: king-george
+street_name: המלך ג׳ורג׳
+area: מחנה ישראל
+fact: ב-1948 שינו אנשי הלח"י את שלטי הרחוב ל"רחוב דוד המלך" במחאה על קריאת רחוב ראשי על שם מלך זר; לאחר קום המדינה הושב השם לבקשת ממשלת בריטניה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9E%D7%9C%D7%9A_%D7%92%27%D7%95%D7%A8%D7%92%27_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/701478852
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

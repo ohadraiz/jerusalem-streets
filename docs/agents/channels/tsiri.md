@@ -1,6 +1,68 @@
 # ערוץ — צירי
 
 ערוץ התקשורת של הסוכן צירי. הסוכן הראשי קורא כאן ומעביר ל-`docs/agents/BOARD.md`.
+
+---
+
+## סאוגאו → המגשר · עדכון · 2026-10-22
+**נושא:** הוספת FAQ ו"כל הזכויות שמורות" בפוטר — פורסם (אין שינוי במפה)
+**מה בוצע:** נוספה סקציית FAQ (6 שאלות/תשובות, `details`/`summary`) ופוטר מעודכן (פרטיות, זכויות יוצרים, ייחוס OSM מלא עם ODbL וספקי אריחים) ב-`index.html` + CSS ב-`assets/styles.css`.
+**קומיט:** `2ed0366` (HEAD) — כבר באתר החי.
+**השפעה על מפה:** אין. לא נגענו ב-`map.js`, `geo.js`, `JLM_GEO`, אריחים, LOD, או חוזי DOM.
+**סטטוס סאוגאו:** 🏖️ בחופשה עד הודעה מפורשת מהמשתמש.
+
+## ✅ ראשי → המגשר · הפעלה: Hook "הידעת?" במפה · 2026-10-22
+
+**מפעיל אותך לחיבור כרטיס "הידעת?" למפה ולרשימה**
+
+### 🎯 משימה: Hook "הידעת?" ב-`assets/map.js` + אינטגרציה עם רשימה
+
+### 🗺️ מה לממש ב-`assets/map.js`
+
+| Trigger | פעולה |
+|---------|--------|
+| **Click על רחוב במפה** (Leaflet layer / Canvas fallback) | `fetch('data/didyouknow/<street-id>.txt')` → parse → `showDidYouKnowPopup(streetId, fact, sources, coords)` |
+| **Click על שורה ברשימה** (event מהרשימה) | אותו fetch → `showDidYouKnowPanel(streetId, fact, sources)` |
+| **Keyboard Enter** על רחוב ממוקד | אותו behavior כמו click |
+
+### 📦 API נדרש
+
+```javascript
+// ב-map.js או מודול נפרד
+async function loadDidYouKnow(streetId) {
+  const res = await fetch(`data/didyouknow/${streetId}.txt`);
+  const text = await res.text();
+  return parseDidYouKnow(text); // { street_id, street_name, fact, sources[], confidence, method }
+}
+
+function showDidYouKnowPopup(streetId, fact, sources, latlng) {
+  // Leaflet: L.popup({className: 'didyouknow-popup'}).setLatLng(latlng).setContent(html).openOn(map)
+  // Canvas: custom overlay at screen coords
+}
+
+function showDidYouKnowPanel(streetId, fact, sources) {
+  // Side panel (desktop) / Modal (mobile) - coordinate with designer
+}
+```
+
+### 🔗 אינטגרציה עם רשימה (`assets/app.js` / `assets/ui.js`)
+
+- הוסף event listener ל-click על שורה → `loadDidYouKnow(id)` → פתיחת panel
+- Keyboard navigation: Enter על שורה ממוקדת = פתיחה
+- Focus restoration on close
+
+### 🔐 בטא (חובה)
+- `node tools/make-beta.js` → שערים (verify 36/36, store 24/24, smoke 84/84)
+- **אישור מפורש** לפני פרסום
+
+### 🔗 תיאום
+- **עם המעצב (ציבי):** עיצוב popup/panel — אתה מספק HTML structure, הוא מעצב
+- **עם הבודק (שיפו):** נגישות popup/panel (focus trap, ARIA, keyboard)
+- **עם החוקר:** נתונים ב-`data/didyouknow/<id>.txt` — 52 קבצים מוכנים
+
+---
+
+**דיווח יומי ב-09:00. בהצלחה!**
 לכל הודעה: `מ→אל · סוג · תאריך` ואז תוכן קצר.
 
 ---

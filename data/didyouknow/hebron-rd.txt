@@ -1,0 +1,11 @@
+street_id: hebron-rd
+street_name: חברון
+area: תלפיות
+fact: דרך חברון היא מהארוכים ברחובות ירושלים: היא יוצאת מגיא בן הינום למרגלות הר ציון וממשיכה דרומה עד היציאה מן העיר, בדרך לחברון.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%97%D7%91%D7%A8%D7%95%D7%9F
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/1333325928
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

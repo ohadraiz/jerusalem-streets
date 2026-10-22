@@ -1,0 +1,11 @@
+street_id: malchei-yisrael
+street_name: מלכי ישראל
+area: מקור ברוך
+fact: רחוב מלכי ישראל, באורך קילומטר, הוא רחובה הראשי של שכונת גאולה ומרכזה המסחרי של הקהילה החרדית; שמו מנציח את מלכי ישראל.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%9C%D7%9B%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/774633431
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

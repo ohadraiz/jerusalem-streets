@@ -1,0 +1,86 @@
+{
+  "street_id": "shamai",
+  "street_name": "שמאי",
+  "area": "נחלת שבעה",
+  "lat": 31.781129,
+  "lng": 35.218549,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 436,
+      "name": "שמאי",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "שמאי גלנדר",
+    "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%90%D7%99_%D7%92%D7%9C%D7%A0%D7%93%D7%A8",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "שמאי גֶלַנְדֶר (25 במאי 1931 – 26 במאי 2019) היה סופר עברי, חוקר מקרא, מוזיקאי והומוריסט, חבר קיבוץ מזרע.",
+    "wikibase_item": "Q6700419",
+    "coordinates": null
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q467138",
+      "label": "שמאי הזקן",
+      "description": "אב בית הדין האחרון בתקופת הזוגות ואחד מבני הזוג הלל ושמאי",
+      "birth": -48,
+      "death": 30,
+      "url": "https://www.wikidata.org/wiki/Q467138",
+      "hewiki": "שמאי הזקן",
+      "enwiki": "Shammai"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 44109576,
+    "name": "שמאי",
+    "display_name": "שמאי, ירושלים, מגרש הרוסים, ירושלים, נפת ירושלים, מחוז ירושלים, 9458132, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7811769,
+    "lon": 35.2192994,
+    "distance": 71.12977399615576,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/44109576"
+  },
+  "fact": "רחוב שמאי נקרא על שם שמאי הזקן, אב בית הדין האחרון בתקופת הזוגות; הוא סמוך לרחוב הלל, הקרוי על שם בן-פלוגתו.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב הלל",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — שמאי הזקן",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%90%D7%99_%D7%94%D7%96%D7%A7%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/44109576",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "הערך \"שמאי גלנדר\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
+    "קיים ברשימה הרשמית: סמל רחוב 436"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

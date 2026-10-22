@@ -1,0 +1,84 @@
+{
+  "street_id": "jlm-a8bc7eb12b",
+  "street_name": "חב\"ד",
+  "area": "הרובע היהודי",
+  "lat": 31.773618,
+  "lng": 35.230734,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 4365,
+      "name": "חב\"ד",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב חב\"ד (העיר העתיקה)",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%97%D7%91%22%D7%93_(%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94)",
+    "score": 13,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים",
+      "קואורדינטה 148מ׳"
+    ],
+    "extract": "רְחוֹב חַבָּ\"ד הוא רחוב עיקרי והארוך ביותר ברובע היהודי בעיר העתיקה בירושלים. קרוי על שמה של חסידות חב\"ד, ובו בית הכנסת ובית המדרש של חב\"ד.\nהרחוב, ומקבילו (הנמוך ממנו) רחוב היהודים, בנויים לאורך ציר הקארדו של העיר העתיקה ומעליו; הם גבוהים בכ-2–5 מטר ממפלס החיים בתקופה הרומאית והביזנטית.\n\n",
+    "wikibase_item": "Q16129043",
+    "coordinates": {
+      "lat": 31.77494444,
+      "lon": 35.23075,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1545832724,
+    "name": "חב\"ד",
+    "display_name": "חב\"ד, ירושלים, העיר העתיקה, ירושלים, נפת ירושלים, מחוז ירושלים, 9751494, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.773476,
+    "lon": 35.2307179,
+    "distance": 15.862859153707623,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1545832724"
+  },
+  "fact": "רחוב חב\"ד הוא הרחוב הארוך והראשי ברובע היהודי; הוא קרוי על שם חסידות חב\"ד, שבו נמצאים בית הכנסת ובית המדרש שלה.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב חב\"ד (העיר העתיקה)",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%97%D7%91%22%D7%93_%28%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94%29",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1545832724",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים",
+    "קואורדינטה 148מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

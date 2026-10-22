@@ -1,0 +1,12 @@
+street_id: nahlat-shiva
+street_name: נחלת שבעה
+area: נחלת שבעה
+fact: הרחוב קרוי על שם שכונת נחלת שבעה, מהשכונות היהודיות הראשונות מחוץ לחומות (1869), כדי להנציח את שמה.
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=444
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A9%D7%91%D7%A2%D7%94
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/437353262
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal+street-article

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T13:29:41.504Z",
+  "generatedAt": "2026-10-22T09:34:34.589Z",
   "teams": [
     {
       "key": "UI/UX",
@@ -91,7 +91,7 @@
       "label": "Mobile/Deploy",
       "icon": "📱",
       "sourceTitle": "צוות מובייל והפצה",
-      "note": "🏖️ בחופש — standby",
+      "note": "📱 מובייל פעיל · 🏖️ הפצה ב-standby",
       "standby": true,
       "owner": "מובריליס",
       "owners": [
@@ -123,10 +123,10 @@
         "note": "גבוהה"
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": "ממתין להפעלה"
+        "key": "done",
+        "label": "הושלם",
+        "marker": "✅",
+        "note": "הושלם — דוח בערוץ מובי"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -142,9 +142,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -154,15 +154,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -188,7 +188,7 @@
         "key": "blocked",
         "label": "חסום",
         "marker": "⏸",
-        "note": ""
+        "note": "ממתין ל-M1"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -204,9 +204,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -216,15 +216,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -250,7 +250,7 @@
         "key": "blocked",
         "label": "חסום",
         "marker": "⏸",
-        "note": ""
+        "note": "ממתין ל-M1"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -266,9 +266,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -278,15 +278,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -312,7 +312,7 @@
         "key": "blocked",
         "label": "חסום",
         "marker": "⏸",
-        "note": ""
+        "note": "ממתין ל-M1"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -328,9 +328,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -340,15 +340,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -374,7 +374,7 @@
         "key": "blocked",
         "label": "חסום",
         "marker": "⏸",
-        "note": ""
+        "note": "ממתין למכשיר אמיתי"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -390,9 +390,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -402,15 +402,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -433,10 +433,10 @@
         "note": "גבוהה"
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": "ממתין להפעלה"
+        "key": "pending",
+        "label": "ממתין",
+        "note": "",
+        "marker": "⬜"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -452,9 +452,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -464,15 +464,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -495,10 +495,10 @@
         "note": "גבוהה"
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": ""
+        "key": "pending",
+        "label": "ממתין",
+        "note": "",
+        "marker": "⬜"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -514,9 +514,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -526,15 +526,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -557,10 +557,10 @@
         "note": "גבוהה"
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": ""
+        "key": "pending",
+        "label": "ממתין",
+        "note": "",
+        "marker": "⬜"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -576,9 +576,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -588,15 +588,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -619,10 +619,10 @@
         "note": "בינונית"
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": ""
+        "key": "pending",
+        "label": "ממתין",
+        "note": "",
+        "marker": "⬜"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -638,9 +638,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -650,15 +650,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -681,10 +681,10 @@
         "note": "בינונית"
       },
       "status": {
-        "key": "blocked",
-        "label": "חסום",
-        "marker": "⏸",
-        "note": ""
+        "key": "pending",
+        "label": "ממתין",
+        "note": "",
+        "marker": "⬜"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -700,9 +700,9 @@
         },
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "פיצי",
@@ -712,15 +712,15 @@
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -755,27 +755,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -810,27 +810,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -865,27 +865,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -920,27 +920,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -975,27 +975,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -1030,27 +1030,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -1085,27 +1085,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -1140,27 +1140,27 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -1195,20 +1195,20 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         }
       ]
     },
@@ -1243,20 +1243,20 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         }
       ]
     },
@@ -1291,20 +1291,20 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         }
       ]
     },
@@ -1339,20 +1339,20 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         }
       ]
     },
@@ -1387,20 +1387,20 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         }
       ]
     },
@@ -1434,21 +1434,21 @@
       "agentsEnriched": [
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         },
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -1482,21 +1482,21 @@
       "agentsEnriched": [
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         },
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -1530,21 +1530,21 @@
       "agentsEnriched": [
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         },
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -1578,21 +1578,21 @@
       "agentsEnriched": [
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         },
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -1626,8 +1626,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1667,8 +1667,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1708,8 +1708,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1749,8 +1749,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1790,8 +1790,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1831,8 +1831,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1872,8 +1872,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1913,8 +1913,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1954,8 +1954,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "ראשי",
@@ -1994,14 +1994,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2033,8 +2033,8 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2066,8 +2066,8 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2099,15 +2099,15 @@
       "agentsEnriched": [
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2139,8 +2139,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -2173,14 +2173,14 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2212,8 +2212,8 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -2246,14 +2246,14 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2285,15 +2285,15 @@
       "agentsEnriched": [
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2325,15 +2325,15 @@
       "agentsEnriched": [
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         }
       ]
     },
@@ -2366,14 +2366,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2406,14 +2406,14 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2446,14 +2446,14 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2487,13 +2487,13 @@
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         }
       ]
     },
@@ -2527,13 +2527,13 @@
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2566,21 +2566,21 @@
       "agentsEnriched": [
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         },
         {
           "name": "הבודק",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2614,20 +2614,20 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "מפי",
           "status": "waiting",
           "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T09:48:52.295Z"
+          "updated": "2026-10-21T12:48:52+03:00"
         }
       ]
     },
@@ -2659,15 +2659,15 @@
       "agentsEnriched": [
         {
           "name": "מובי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
+          "updated": "2026-10-21T03:34:48+03:00"
         },
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2700,14 +2700,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         }
       ]
     },
@@ -2740,14 +2740,14 @@
         {
           "name": "החוקר",
           "status": "working",
-          "note": "התחלת מחקר 'הידעת?' — עובדה מעניינת אחת לכל רחוב (2,424 רחובות), משמעות שמות, מחקר אפליקציות דומות. תקשורת עם מפי/ציבי/צירי/ראשי.",
-          "updated": "2026-10-21T11:00:00+03:00"
+          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
+          "updated": "2026-10-22T09:15:00+03:00"
         },
         {
           "name": "קיפי",
           "status": "working",
           "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2780,14 +2780,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         }
       ]
     },
@@ -2820,14 +2820,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המעצב",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -2860,14 +2860,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         }
       ]
     },
@@ -2900,14 +2900,14 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         },
         {
           "name": "המגשר",
-          "status": "unknown",
-          "note": "",
-          "updated": null
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
         }
       ]
     },
@@ -2979,8 +2979,8 @@
         {
           "name": "הראשי",
           "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת שיפו/ציבי, נגישות סופית.",
-          "updated": "2026-10-21T10:32:37.262Z"
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
         }
       ]
     },
@@ -3023,6 +3023,178 @@
           "updated": null
         }
       ]
+    },
+    {
+      "id": "GEN-28",
+      "title": "**סבב ביקורת נפרד למנגנוני ה-gamification** שנוספו במקביל (הישגים, דירוג כוכבים, מצב רוח, צלילים, רעידות) — לא אומתו בסבב הזה.",
+      "description": "",
+      "team": "החלטות",
+      "agents": [
+        "הראשי"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "⬜",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 220,
+      "context": "10. סבב פיתוח — תיקון אבני הדרך (BOARD 056)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        }
+      ]
+    },
+    {
+      "id": "GEN-29",
+      "title": "**פתחי:** בקשת האישור הראשונה — קישור ל-beta, מה לבדוק, סיכון וגלילה לאחור.",
+      "description": "",
+      "team": "החלטות",
+      "agents": [
+        "הראשי"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "⏳",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 247,
+      "context": "12. סבב פיתוח — סביבת בטא ושער אישור (BOARD 062)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        }
+      ]
+    },
+    {
+      "id": "GEN-30",
+      "title": "**פתחי:** הצגת סבב 059 בבטא למשתמש וקבלת אישור מפורש לפני כל קידום.",
+      "description": "",
+      "team": "החלטות",
+      "agents": [
+        "הראשי"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "⏳",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 257,
+      "context": "סבב 059 — בטא: הישגים, יומן, שלד טעינה ותזכורת",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        }
+      ]
+    },
+    {
+      "id": "GEN-31",
+      "title": "ביקורת נגישות/RTL/ביצועים לאחר אישור המשתמש על כיוון הבטא.",
+      "description": "",
+      "team": "DEV",
+      "agents": [
+        "הראשי",
+        "המגשר"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "⏳",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 258,
+      "context": "סבב 059 — בטא: הישגים, יומן, שלד טעינה ותזכורת",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        },
+        {
+          "name": "המגשר",
+          "status": "waiting",
+          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
+          "updated": "2026-10-21T07:48:05+03:00"
+        }
+      ]
+    },
+    {
+      "id": "GEN-32",
+      "title": "🧭 **דיון עתידי:** תבניות הערות מהירות (הצעה 10) — להגדיר מילון תגים, שילוב עם טקסט חופשי, עריכה/מחיקה וייצוא, לפני מימוש.",
+      "description": "",
+      "team": "החלטות",
+      "agents": [
+        "הראשי"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "⬜",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 259,
+      "context": "סבב 059 — בטא: הישגים, יומן, שלד טעינה ותזכורת",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        }
+      ]
     }
   ],
   "sources": [
@@ -3035,5 +3207,5 @@
       "label": "משימות כלליות פתוחות"
     }
   ],
-  "agentStatusSource": "2026-10-21T13:29:27.914Z"
+  "agentStatusSource": "2026-10-22T07:08:04.774Z"
 }

@@ -1,0 +1,68 @@
+{
+  "street_id": "weizmann",
+  "street_name": "שדרות ויצמן",
+  "area": "רוממה",
+  "lat": 31.789641,
+  "lng": 35.198703,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": {
+    "title": "שדרות ויצמן (ירושלים)",
+    "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%95%D7%99%D7%A6%D7%9E%D7%9F_(%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D)",
+    "score": 13,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "שדרות חיים ויצמן הן כביש הכניסה המרכזי לירושלים מצד מערב, הקרויות על שמו של נשיא מדינת ישראל הראשון, חיים ויצמן.",
+    "wikibase_item": "Q124807021",
+    "coordinates": null
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 953939257,
+    "name": "שדרות ויצמן",
+    "display_name": "שדרות ויצמן, ירושלים, רוממה, ירושלים, נפת ירושלים, מחוז ירושלים, 9546522, ישראל",
+    "category": "highway",
+    "type": "primary",
+    "lat": 31.7895521,
+    "lon": 35.1989017,
+    "distance": 21.222783193697037,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/953939257"
+  },
+  "fact": "שדרות ויצמן קרויות על שם חיים ויצמן (1874–1952), הנשיא הראשון של מדינת ישראל, מיוזמי הצהרת בלפור ומייסד מכון ויצמן.",
+  "fact_type": "municipal-street-page",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 1077)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1077",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/953939257",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,712 @@
+{
+  "_meta": {
+    "title": "מחקר השוואתי — אפליקציות ומשחקי רחובות/עיר",
+    "target_app": "יומן רחובות ירושלים (PWA מקומית, ללא שרת וללא חשבון)",
+    "compiled_by": "החוקר (chiki)",
+    "access_date": "2026-10-22",
+    "license_note": "כל העובדות נבדקו מול מקורות רשמיים/מקורות משני; מה שלא אומת מסומן במפורש",
+    "unverified_note": "מקורות שהחזירו 403 לבקשה ישירה סומנו blocked ולא נחשבו למאומתים באופן מלא",
+    "coverage": "12 אפליקציות/פרויקטים; לכל אחת לפחות 2 מקורות עצמאיים"
+  },
+  "apps": [
+    {
+      "id": "pokemon-go",
+      "name": "Pokémon GO",
+      "vendor": "Scopely Explore (לשעבר Niantic), בשיתוף Nintendo ו-The Pokémon Company",
+      "category": "משחק מיקום AR",
+      "url": "https://pokemongo.com/en",
+      "what_it_does": "משחק AR מבוסס GPS שבו השחקן אוסף פוקימון בעולם האמיתי, מאמן אותו ומתמודד באמצעות ריידים וגימים. סמלים ממוקמים בפוקיסטופים ובאתרי עניין.",
+      "mechanics": {
+        "collection": "לכידת פוקימון מהעולם האמיתי + אינדוקס (Pokédex) — 951 מינים במשחק נכון ל-20.07.2026",
+        "completion": "מילוי האינדוקס; איסוף מדליות אינדוקס לפי אזור",
+        "streaks": "רצף ימי של מלכודות",
+        "levels": "רמות מבוססות XP; רמה 5 פותחת גימים",
+        "maps": "מפת עולם לפי GPS עם פוקיסטופים, גימים, לוקציות (Lure), ריידים",
+        "challenges": "Research Tasks, חקירות יומיות, Community Day חודשי",
+        "bosses": "Team GO Rocket, ריידים Elite ו-Super Mega",
+        "time": "אירועים מתוזמנים (Community Day חודשי), Incense יומי, Lucky Egg"
+      },
+      "rewards": {
+        "points": "XP, מטבעות (Coins), Stardust, Candy",
+        "badges": "מדליות אינדוקס לפי אזור וסוג",
+        "levels": "רמות XP עם פרסים",
+        "unlockables": "בגדים לאווטר, פוזות, כדורי מכה",
+        "social": "קבוצות Valor/Mystic/Instinct, ריידים קבוצתיים, לוחות מובילים"
+      },
+      "social_model": {
+        "sharing": "ריידים עם חברים, גימים בקבוצות צבע, טרייד",
+        "competition": "Team GO Rocket, לוחות מובילים גלובליים",
+        "community": "Community Day חודשי, קבוצות פאן, תוכן יוצרים",
+        "leaderboards": "יש",
+        "location_sharing": "המיקום נחשף באופן מתמשר לשחקנים אחרים במפה — סיכון פרטיות מרכזי",
+        "privacy": "מיקום רציף חשוף; דוחות מחמשת חקירות אומתו על ידי מדענים"
+      },
+      "ui_ux": {
+        "home": "מפה מלאה עם אווטר; המשך במסך",
+        "map": "מפת עולם מבוססת מיקום עם צפיפות סמלים",
+        "progress": "אינדוקס, מדליות, רמות — כולם על המסך הראשי",
+        "onboarding": "בחירת אווטר + הסבר קצר, בלי הכרה עמוקה",
+        "mobile": "מצוין — דור 10 שנים של ליטוש"
+      },
+      "what_does_not_work": [
+        "קריסות תכנוניות ותקלות שרת בהשקה; ציטוט GameSpot: initial iteration is a buggy mess on all levels",
+        "עומק מכניקה דל וללא עומק",
+        "מיקום רציף חשוף — סיכון בטיחות ופרטיות (האירועים בוואקאנדה)",
+        "לחץ כלכלי: גרסת Steam 2025 קיבלה ביקורות overwhelmingly negative",
+        "אירועים חוזרים יוצרים עומס ולא מרגילים כמו חיפוש אמיתי"
+      ],
+      "lessons": [
+        {"lesson": "מדליית אינדוקס לפי אזור: תג אחד קטן שנושא את כל ההישג", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "רצף ימי של סימון רחובות (מתעדכן מתאריכי הביקור)", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "Community Day חודשי: אירוע ממוקד שמניע משתמשים לצאת לשטח", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "לא לחשוף מיקום רציף באופן ציבורי — סיכון אבטחה", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://pokemongo.com/en", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://support.pokemon.com/hc/en-us", "type": "official-help", "status": 403, "accessed": "2026-10-22", "note": "חסום לרובוטים — לא אומת"}
+      ]
+    },    {
+      "id": "geocaching",
+      "name": "Geocaching",
+      "vendor": "Groundspeak Inc.",
+      "category": "משחק אוצרים גיאוגרפי (GPS)",
+      "url": "https://www.geocaching.com/",
+      "what_it_does": "משחק אוצרים בעולם האמיתי: מתחבאים קופסאות עם ספר לוג, ומשתמשים מאתרים אותן לפי GPS ומתעדים ביקור. האתר הרשמי טוען לכמעט 3 מיליון קאשים פעילים בעולם, במדינות רבות ובכל שבעת היבשות.",
+      "mechanics": {
+        "collection": "אתר קופסה + מילוי ספר לוג (logbook) + טריידבלים (פריטים להחלפה)",
+        "completion": "עמודי הנחה מסוגדים (Groundspeak), מצבי מסתתרים (mystery), אתגרים",
+        "streaks": "Streak של הקאשים לפי תאריך",
+        "levels": "אין רמות — יש סטטוס חבר, Premium ודירות (Found/Placed)",
+        "maps": "מפת הקאשים עם סינון לפי סוג/דרגת קושי/גודל",
+        "challenges": "Adventure Lab, Challenge Caches, סדרי קושי 1–5 כוכבים, סוגים: Traditional, Mystery, Multi-cache, Earth, Letterbox, Wherigo, Virtual",
+        "bosses": "אין",
+        "time": "הקאשים קבועים; הפעילות נקודתית ולא מבוססת זמן"
+      },
+      "rewards": {
+        "points": "נקודת find לכל קאש; אין מערכת נקודות קבועה",
+        "badges": "Travel Bugs, תגי גרפיים באפליקציה",
+        "levels": "אין",
+        "unlockables": "פרסי קופסות והחלפות",
+        "social": "דירות של קאשים לפי אזור, תגי Owner, אירועי CITO"
+      },
+      "social_model": {
+        "sharing": "ספר לוג פיזי בקופסה — מסורת הליבה של הקהילה",
+        "competition": "ליגות ודירות שנתיות באתר",
+        "community": "מתנדבי ביקורת (cache reviewers), קבוצות ועידות, CITO (Clean It Up Out There)",
+        "leaderboards": "דירות לפי מדינה/אזור באתר",
+        "location_sharing": "הקופסה עצמה היא הפרסום; המיקום מפורסם רק למי שמחזיק קופסה",
+        "privacy": "הקופסה עלולה להיתפס לסם או לפצצה — מומלץ לסמן"
+      },
+      "ui_ux": {
+        "home": "מפת קאשים עם מסננים עשירים",
+        "map": "מסננים רבים (קושי, סוג, גודל, מרחק, Premium) — התקדמות המוצר",
+        "progress": "ספר קאשים, דירות, רצף, אוסף Travel Bugs",
+        "onboarding": "3 שלבים ברורים באתר: חשבון, איתור, שיתוף חוויה",
+        "mobile": "אפליקציה רשמית + c:geo (קוד פתוח, אנדרואיד) כחלופה"
+      },
+      "what_does_not_work": [
+        "מודל freemium חד: חברי Premium נדרשים לראות את כל הקאשים וכלי הניתוב",
+        "מחירי מנויים גבוהים ושינויים כואבים — תלונות ב-App Store על מנוי חד-פעמי שהפך למנוי",
+        "משימות מציאה דורשות פענוח אינטליגנטי — חסימה קשה לחדשנים",
+        "חסימת 99%: עיר שלא מסתיימת כי חלק מהרחובות לא נגישים ברגל"
+      ],
+      "lessons": [
+        {"lesson": "ספר לוג דיגיטלי: כל סימון רחוב הוא גם סיפור קצר שניתן לשתף", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "סינון חזק במפה: סוג/קושי/גודל/מרחק — הכיוונים שהמשתמש מחפש", "fit": "גבוהה", "complexity": "בינונית"},
+        {"lesson": "דירות אזוריות (כמו 50 קאשים בני ברק) במקום ריצה גלובלית", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "מודל Premium שלילי: רחובות שחסרים אינם חסומים — במקום זה, ערך וקיצורים", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://www.geocaching.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/Geocaching", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://newsroom.geocaching.com/premium", "type": "official-newsroom", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://apps.apple.com/us/app/id329541503", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.geocaching.com/play", "type": "official", "status": 200, "accessed": "2026-10-22", "note": "העמוד מציג 883 geocaches around Tel Aviv לפי מיקום IP"}
+      ]
+    },
+    {
+      "id": "munzee",
+      "name": "Munzee",
+      "vendor": "Freeze Tag Games",
+      "category": "משחק ציד קודי QR גיאוגרפי",
+      "url": "https://www.munzee.com/",
+      "what_it_does": "משחק ציד אוצרים שבו השחקנים מדביקים קודי QR (Munzee) במקומות בעולם האמיתי וסורקים אותם. קיימים גם Munzee וירטואליים — נקודות GPS שנרכשות ונכלפות בקרבת מקום.",
+      "mechanics": {
+        "collection": "ציד (capture) והטמנה (deploy) של Munzee פיזיים ווירטואליים",
+        "completion": "סוגים ייחודיים של Munzee; כל capture נכנס לאוסף",
+        "streaks": "Daily Stroll יומי עם Cappy (Shooting Stars)",
+        "levels": "דרגות מבוססות נקודות, גלובליות",
+        "maps": "מפת Munzee גלובלית עם סמלים רב-סוגיים",
+        "challenges": "משימות חודשיות של קלאן (Clan Wars), אירועים מקומיים",
+        "bosses": "Clan Wars חודשיות בין קלאנים",
+        "time": "Daily Stroll יומי; סבבים חודשיים"
+      },
+      "rewards": {
+        "points": "נקודות לכל capture ולכל deploy (משתנות לפי סוג)",
+        "badges": "תגים להשגמת יעדים; תגים בלעדיים לאירועים",
+        "levels": "דרגות גלובליות לפי נקודות",
+        "unlockables": "חנויות: רכישת Munzee וירטואליים, Premium Membership",
+        "social": "קלאנים, לוחות מובילים גלובליים, אירועים מקומיים"
+      },
+      "social_model": {
+        "sharing": "השחקן שהטמין מקבל נקודות גם כשמישהו אחר לוכד — מודל שכפול שממניע צמיחת מפה",
+        "competition": "לוחות מובילים גלובליים + Clan Wars",
+        "community": "קלאנים, אירועים מאורגנים על ידי שחקנים, תוכן מהבלוג",
+        "leaderboards": "כן — גלובלי וקלאני",
+        "location_sharing": "המשתמש מטמין במקום ציבורי — חשיפת מיקום",
+        "privacy": "נקודות GPS פומביות של מטמינים — סיכון בינוני-גבוה"
+      },
+      "ui_ux": {
+        "home": "מפה + מרכז יומי (Cappy's Camp)",
+        "map": "מפת סמלים עשירה, סינון לפי סוג וקלאן",
+        "progress": "נקודות, דרגה, תגים, קלאן, לוח מובילים",
+        "onboarding": "המשחק נכנס דרך דמויות משחק (יוניקורן) — עוטף משימות במשחק",
+        "mobile": "Android + iOS; עדכונים שבועיים"
+      },
+      "what_does_not_work": [
+        "המשחק דורש סריקה פיזית של QR — חסם לחלוטין ללא תכנון מראש",
+        "נקודות ודרגות מבוססות deploy — ערוץ למניפולציה",
+        "התלות בשרת מרכזי — כשל בשרת משבית את כל המשחק",
+        "הממשק הוא SPA שאינו נטען ללא JavaScript"
+      ],
+      "lessons": [
+        {"lesson": "מודל שכפול: מי שמסמן רחוב מקבל נקודות — אפשר להפוך למקדם תגובה ללא שרת", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "דמויות משחק (Cappy) כמעטפי למשימות — הופכים סימון למסע", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "קלאנים לפי שכונה או אזור — קהילה מקומית בלי חשבון, אם יש רשימת שמות קבועה", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "משימה יומית קבועה (Daily Stroll) מייצרת חזרה יומית", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://www.munzee.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/Munzee", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://play.google.com/store/apps/details?id=com.freezetag.munzee", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://munzeeblog.com/", "type": "official-blog", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },    {
+      "id": "citystrides",
+      "name": "CityStrides",
+      "vendor": "James Chevalier (פרויקט עצמאי)",
+      "category": "מעקב השלמת רחובות (מבוסס Strava/OSM)",
+      "url": "https://citystrides.com/",
+      "what_it_does": "יישום רשת שמקבל מפעילויות GPS ממכשירי ריצה והליכה (Strava, Garmin, COROS ועוד), מצלב אותן עם נתוני הרחובות של OpenStreetMap ומסמן אילו רחובות הושלמו. נוצר ב-2013 כדי לעקוב אחרי ניסיון לרוץ כל רחוב בהוליק, מאס.",
+      "mechanics": {
+        "collection": "סימון רחוב אוטומטי לפי צמידות לצומת (node) ב-OSM",
+        "completion": "רחוב נחשב מושלם כאשר 90% מהצמידים שלו מסומנים; ברחובים קצרים נדרשים כל הצמידים",
+        "streaks": "אין",
+        "levels": "אין רמות ואין תגים בתוך האפליקציה",
+        "maps": "LifeMap — מפה אישית של כל מה שרצת בעיר; מפת עיר עם רחובות מתויגים",
+        "challenges": "Challenges עירוניים (רשימה באתר)",
+        "bosses": "אין",
+        "time": "אין מגבלת זמן; קיימים אירועים שנתיים: Global Running Day, National Walking Day, Nodevember"
+      },
+      "rewards": {
+        "points": "אין נקודות",
+        "badges": "Badges (מופיעים בתפריט הראשי) — המה מדויק לא אומת",
+        "levels": "אין",
+        "unlockables": "Route Builder, Node Hunter, LifeMap Live, Challenges, ReRun Sync Now, Weather — בתוכנית Supporter",
+        "social": "Leaderboard אזורי, השוואת התקדמות עם משתמשים אחרים בעיר"
+      },
+      "social_model": {
+        "sharing": "שיתוף מסלולים; קישורי Route ציבוריים",
+        "competition": "השוואת התקדמות עם משתמשים אחרים באותה עיר — תחרות ברירת מחדל",
+        "community": "פורום קהילה (community.citystrides.com) ותוכנית הפניות",
+        "leaderboards": "כן — אזורי (עיר)",
+        "location_sharing": "הנתונים נשמרים בחשבון המשתמש בשרת CityStrides",
+        "privacy": "חשבון מחויב + חיבור לשירותי צד שלישי (Strava) — עלות פרטיות משמעותית"
+      },
+      "ui_ux": {
+        "home": "דף מכירות עם מספרים חיים: 92,721 אנשים / 107,057 ערים / 6,904,466 רחובות מושלמים",
+        "map": "LifeMap + מפת עיר; Node Hunter מציג רחובות שחסרים",
+        "progress": "אחוז השלמה לכל עיר + מספר רחובות; אין פסים ורמות",
+        "onboarding": "חיבור חשבון מכשיר ריצה, בחירת עיר, התחלה",
+        "mobile": "חוויית דפדפן; אין אפליקציה ניידת עצמאית"
+      },
+      "what_does_not_work": [
+        "תלות חובה בשירותי צד שלישי (Strava) — בלי חשבון וללא מכשיר מסונכרן אין נתונים",
+        "לפי ביקורות: אין תיעוד הליכה עצמאי; כל מה שזה על המכשיר",
+        "מחיר תמיכה: 5$ לחודש או 50$ לשנה לפיצ'רים מרכזיים (Node Hunter, Route Builder)",
+        "חסם 99%: רחובות לא נגישים ברגל משאירים את העיר ב-99%",
+        "אין מדרגות, תגים או השגים — מנוע השימור חלש יותר"
+      ],
+      "lessons": [
+        {"lesson": "מספרים חיים בדף הבית כדרבן להצטרפות — גרסה מקומית: רחובות שסיימת באזור", "fit": "בינונית", "complexity": "נמוכה"},
+        {"lesson": "כלל השלמה גמיש (90% מהצמידים) + אפשרות לסמן ידנית — גמישות מול קודקודים", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "Node Hunter: כלי מצא לי את הרחוב הבא שמציע יעד לפי קרבה", "fit": "גבוהה", "complexity": "בינונית"},
+        {"lesson": "Route Builder: בניית מסלול מתוכנן לפי רחובות חסרים באזור", "fit": "בינונית", "complexity": "בינונית"}
+      ],
+      "sources": [
+        {"url": "https://citystrides.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://citystrides.com/pricing", "type": "official-pricing", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/CityStrides", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://appsforstrava.com/blog/wandrer-vs-citystrides", "type": "review", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://fog-breaker.com/en/blog/apps-like-citystrides", "type": "review", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://community.citystrides.com/", "type": "community", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },
+    {
+      "id": "runeverystreet",
+      "name": "RunEveryStreet",
+      "vendor": "Joe Morrisroe (פרויקט אישי, ניו יורק)",
+      "category": "פרויקט אמנות ואתגרי רחובות — לא אפליקציה",
+      "url": "https://www.runeverystreet.com/",
+      "what_it_does": "זהו אינו אפליקציה אלא אתר אישי של הרץ ג'ו מוריסרו, המתעד את סדרת אתגרי רוץ כל רחוב בניו יורק. מאז 2010 הוא ריצה מעל 10,000 מיילים; הפרויקטים כוללים ריצת כל רחובות מנהטן (2011), כל קו רכבת תת-קרקעי (2012), כל אזור קהילתי (2013), כל פארק (2014), הרחובות הארוכים ביותר (2015), כל שכונה (2016) ו-49 ולצות לחמשת הבורוים (2017).",
+      "mechanics": {
+        "collection": "ריצה והליכה פיזית ברחובות; אין סימון דיגיטלי באפליקציה",
+        "completion": "כל אתגר מוגדר לפי יחידת תחום (רחובות, פארקים, שכונות, קווי רכבת)",
+        "streaks": "אין",
+        "levels": "אין",
+        "maps": "מפות תוצאה לכל פרויקט באתר",
+        "challenges": "שבעה אתגרים שנתיים מתועדים (2011–2017)",
+        "bosses": "אין",
+        "time": "עשרות שנים של מאמץ מתמשך"
+      },
+      "rewards": {
+        "points": "אין",
+        "badges": "אין",
+        "levels": "אין",
+        "unlockables": "אין",
+        "social": "קהילת Reddit (r/runeverystreet), טוויטר מהדרך, אירועים וגלריה"
+      },
+      "social_model": {
+        "sharing": "תיעוד ציבורי של המסעות באתר וברדיט",
+        "competition": "לא תחרות מובנית; הרעיון עצמו הוא האתגר",
+        "community": "קהילת Reddit; תנועת every-street שהמשפיעה שכפלה את הרעיון",
+        "leaderboards": "אין",
+        "location_sharing": "לא",
+        "privacy": "אין"
+      },
+      "ui_ux": {
+        "home": "דף תדמית עם תפריט פרויקטים וגלריה",
+        "map": "מפות תוצאה לכל פרויקט",
+        "progress": "אין באפליקציה; התקדמות מוצגת כיצירות",
+        "onboarding": "אין",
+        "mobile": "אין אפליקציה — אתר בלבד"
+      },
+      "what_does_not_work": [
+        "אין אפליקציה, אין מעקב ואין אימות — אי אפשר להתחיל או להמשיך של מי שלי",
+        "אין קהילה בתוך המוצר; כל הקהילה ברדיט ובחמיגיות",
+        "האתר אינו מתוחזק באופן פעיל; העודכון האחרון בתפריט הפרויקטים הוא 2017"
+      ],
+      "lessons": [
+        {"lesson": "הפרויקטים לפי יחידת תחום (כל פארק, כל שכונה, כל רחוב) הם דפוס תכנון חזק — קיים כבר ביומן רחובות ברמת השכונה", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "מדד עליון של רחובות שסיימת — הצטברות גדולה יותר מפעילות יומית", "fit": "בינונית", "complexity": "נמוכה"},
+        {"lesson": "גלריית תוצאות כדרך להפיץ: באפליקציה, מסלולים מושלמים שניתן לשתף", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "אין אימות אוטומטי, ולכן המשתמש חייב לסמן ידנית — יתרון: אפשר להוסיף רחובות חדשים בלי עדכון נתונים", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://www.runeverystreet.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.runeverystreet.com/about", "type": "official-about", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.reddit.com/r/runeverystreet/", "type": "community", "status": 200, "accessed": "2026-10-22", "note": "דף הקהילה הציבורי נטען; תוכן הפוסטים דורש התחברות"}
+      ]
+    },    {
+      "id": "jerusalem-trail",
+      "name": "Jerusalem Trail",
+      "vendor": "שביל ירושלים — מסלול מסומן (הדומיין שוויקיפדיה מצטט הפך לדומיין חנייה)",
+      "category": "שביל טיול עירוני מסומן",
+      "url": "https://en.wikipedia.org/wiki/Jerusalem_Trail",
+      "what_it_does": "שביל הליכה ורכיבה שמקיף את ירושלים, נפתח לציבור ב-2006, באורך כ-42 קילומטרים לפי ויקיפדיה (ויקיטייל מציין 38 קילומטרים). השביל מסומן בקו זהב בין שני קווים כחולים ועובר בגנים לאומיים, באתרי תיירות ובשכונות מכל העדים.",
+      "mechanics": {
+        "collection": "לא משחק — מסלול מסומן בשטח",
+        "completion": "סיום מלא של הלולאה (מומלץ 2–3 ימים) או מקטעים בודדים",
+        "streaks": "אין",
+        "levels": "אין",
+        "maps": "מפה ו-GPS; סימוני שטח",
+        "challenges": "מקטעים יומיים לפי אזור",
+        "bosses": "אין",
+        "time": "לולאה מלאה = 2–3 ימים; מקטע בודד = כמה שעות"
+      },
+      "rewards": {
+        "points": "אין",
+        "badges": "אין",
+        "levels": "אין",
+        "unlockables": "אין",
+        "social": "אין מנגנון קהילתי באפליקציה; אירועי הליכה מקומיים בעיר"
+      },
+      "social_model": {
+        "sharing": "אין",
+        "competition": "אין",
+        "community": "לא ממוקשר במוצר",
+        "leaderboards": "אין",
+        "location_sharing": "אין",
+        "privacy": "אין"
+      },
+      "ui_ux": {
+        "home": "אין אפליקציה; דפי מידע טקסטואליים",
+        "map": "מפות ו-GPS; ויקיפדיה מפנה לשביל ב-Google Maps",
+        "progress": "אין",
+        "onboarding": "אין",
+        "mobile": "לא נמצאה אפליקציה רשמית במחקר זה"
+      },
+      "what_does_not_work": [
+        "הדומיין www.jerusalemtrail.com שאליו מפנה ויקיפדיה הפך לדומיין חנייה — דף lander של חברת רישיון דומיינים; קישור שבור",
+        "אין אפליקציה, אין סימון התקדמות, אין מסלולים מותאמים",
+        "ויקיטייל מציין שסימוני השביל באזורים עירוניים עלולים להיות חסרים או פגומים — צריך מפת ברירת מחדל ללא רשת"
+      ],
+      "lessons": [
+        {"lesson": "סימון שטח (זהב-כחול-זהב) כערך לזיהוי אתה על שביל ירושלים — אימות מקומי ללא צורך", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "מסלולים קבועים ומסומנים = מסלולי שכונה מוכנים להשלמה, עם תור אורך קבוע", "fit": "גבוהה", "complexity": "בינונית"},
+        {"lesson": "קישורים שבורים הם סיכון מוביל — כל קישור חיצוני באפליקציה צריך בדיקה תקופתית", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://en.wikipedia.org/wiki/Jerusalem_Trail", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikivoyage.org/wiki/Jerusalem_Trail", "type": "wiki-travel", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.jerusalemtrail.com/", "type": "official-domain", "status": 200, "accessed": "2026-10-22", "note": "דומיין חנייה — ריבוי ל-lander"},
+        {"url": "https://cityofdavid.org.il/en/the-jerusalem-trail/", "type": "tourism-official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.jerusalemtourism.org/things-to-do-in-jerusalem/", "type": "tourism", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },
+    {
+      "id": "voicemap",
+      "name": "VoiceMap",
+      "vendor": "VoiceMap Pte. Ltd. (סינגפור)",
+      "category": "סיורי אודיו מודיעים לפי GPS",
+      "url": "https://voicemap.me/",
+      "what_it_does": "פלטפורמה לסיורי אודיו עצמיים שמתפקדים כפודקאסט שנע במקום: האודיו מתנגן אוטומטית לפי GPS. המספרים בחנות האפליקציות: יותר מ-700 יעדים ויותר מ-2,100 סיורים (חינמיים ובתשלום) ב-80 מדינות; האתר מציין 11 סיורים בישראל ב-5 יעדים.",
+      "mechanics": {
+        "collection": "סיורים קנויים או חינמיים; נקודות (sites) לאורך המסלול",
+        "completion": "סיום סיור = סימון רשימת הנקודות שנגנבו",
+        "streaks": "אין",
+        "levels": "אין",
+        "maps": "מפה מובנית עם אופציית עברה (directions)",
+        "challenges": "אין",
+        "bosses": "אין",
+        "time": "משך הסיור מוגדר; ניתן להפסיל ולהמשיך"
+      },
+      "rewards": {
+        "points": "אין נקודות",
+        "badges": "דירות וביקורות משתמשים (Trustpilot: 4.8 מתוך 5 מתוך 149 ביקורות)",
+        "levels": "אין",
+        "unlockables": "רכישת סיורים; מנוי Pro ו-Premium עם מנהל הורדות — 0.62$ להורדה ב-Pro ו-0.31$ ב-Premium",
+        "social": "דירות משתמשים, ביקורות מדורגים, אפשרות למפרסם סיורים"
+      },
+      "social_model": {
+        "sharing": "מפרסמים עצמאיים יכולים לפרסם סיורים — ציבוריים או פרטיים, חינמיים או בתשלום",
+        "competition": "אין",
+        "community": "קהילת מפרסמים ומבקרים; דירות",
+        "leaderboards": "אין",
+        "location_sharing": "המשתמש צורך את המסלול; המיקום נשלח לשרת לצורך הפעלת האודיו",
+        "privacy": "נדרש חשבון; הסיור עצמו עובד אופליין אחרי הורדה"
+      },
+      "ui_ux": {
+        "home": "רשימת סיורים לפי יעד עם תמונות ודירות",
+        "map": "מפת נקודות + כיוון; העיקרון: התמקדו בסביבה, לא במסך",
+        "progress": "סיום סיור; כפתור Resume להמשך מאותה נקודה",
+        "onboarding": "הורדת סיור, מעבר למצב עברה, Start",
+        "mobile": "מצוין; גרסת Android ו-iOS עם ניגון אוטומטי"
+      },
+      "what_does_not_work": [
+        "העמוד הראשי מחזיר 403 לבקשות אוטומטיות — הגנת בוטים; נגישות לאינדוקס ירוקה",
+        "מודל קרדיטים להורדה מבלבל; חלק מהסיורים דורשים רכישה נפרדת",
+        "ביקורות מזכירים תקלות הורדה, שביל לא מפותח, הודעת השהיה חוזרת וניתוקים באודיו",
+        "הסיור תלוי ב-GPS ובמפה — רגיש לרמת אות לא יציבה בשטח עירוני"
+      ],
+      "lessons": [
+        {"lesson": "הפעלת אודיו לפי מרחק מהרחוב (trigger) — דורשת אות מדויקת; מתאים לסיפור רחוב קצר בעברית", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "Resume — חזרה לנקודה האחרונה: פשוט והכי חשוב למסלול הליכה", "fit": "בינונית", "complexity": "נמוכה"},
+        {"lesson": "עבודה אופליין מלאה אחרי הורדה — חובה בהקשר של רחובות ירושלים", "fit": "גבוהה", "complexity": "בינונית"},
+        {"lesson": "הימנע ממודל קרדיטים וממחירים חיוביים בחינם — ערך תוכן חינם או מימון ציבורי", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://apps.apple.com/us/app/voicemap-audio-tours-guides/id852027939", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://play.google.com/store/apps/details?id=me.voicemap.android", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://support.voicemap.me/", "type": "official-help", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://voicemap.me/", "type": "official", "status": 403, "accessed": "2026-10-22", "note": "חסום לרובוטים — המספרים אומתו דרך חנויות האפליקציות"},
+        {"url": "https://tourinabox.com/blog/best-self-guided-tour-apps/", "type": "review", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },
+    {
+      "id": "pocketguide",
+      "name": "PocketGuide",
+      "vendor": "PocketGuide Inc. (הונגריה)",
+      "category": "מדריך עיר קולי + AI",
+      "url": "https://pocketguide.io/",
+      "what_it_does": "מדריך עיר קולי שממקם את המשתמש ומפעיל הקלטה אוטומטית של מדריך מקומי. לאחרונה האתר, בעברית, מתאר מעבר ל-AI: צילום תמונה, זיהוי המקום על ידי AI, וסיפור קצר עם מקורות.",
+      "mechanics": {
+        "collection": "מדריכי עיר לפי יעד — לפי חנות האפליקציות יותר מ-150 ערים ויעדי תיירות, ב-5 שפות",
+        "completion": "סיום סיור או מסלול",
+        "streaks": "אין",
+        "levels": "אין",
+        "maps": "מפה עם נקודות עניין; מצב מידי קרובים",
+        "challenges": "אין",
+        "bosses": "אין",
+        "time": "אין מגבלת זמן; המדריך מציע את הקרוב בזמן אמת"
+      },
+      "rewards": {
+        "points": "ב-Pocket Guide Companion (אפליקציית הקשר) מופיע ציון נקודות על ביקור במקומות — לא אומת בפועל",
+        "badges": "לא אומת",
+        "levels": "לא אומת",
+        "unlockables": "יצירת יומן או וידאו 3D של הסיור ושיתוףו",
+        "social": "שיתוף חוויות ברשת חברתית"
+      },
+      "social_model": {
+        "sharing": "שיתוף My Diary — סרטוני 3D של הסיור",
+        "competition": "אין",
+        "community": "מפרסמים מקומיים יוצרים תוכן; דפי Travelers in the Cities",
+        "leaderboards": "לא אומת",
+        "location_sharing": "המשתמש ממוקם רציפות כדי להפעיל הקלטה",
+        "privacy": "משתמש חייב חשבון; האפליקציה החדשה מבקשת צילומי מצלמה"
+      },
+      "ui_ux": {
+        "home": "תפריט עירים ומדריכים",
+        "map": "מפה עם נקודות והפעלה אוטומטית",
+        "progress": "מצב מידי קרובים והיסטוריית סיורים",
+        "onboarding": "בחירת מדריך, הורדה, הפעלה",
+        "mobile": "iOS ו-Android; המוצר המקורי מתמקד בללא קריאת מסך"
+      },
+      "what_does_not_work": [
+        "שינוי כיוון בולט ממדריך קולי ל-AI לזיהוי תמונה — אי-עקביות במסר ובקהילה",
+        "האתר הרשמי מציג בעברית בלבד — אין נוכחות עברית או ערבית מאומתת",
+        "העמוד הרשמי הוא SPA שאינו נטען ללא JavaScript — לא ניתן לחלץ תוכן בבקשת HTTP רגילה",
+        "אין נקודות, תגים או דירות מאומתים במוצר העיקרי"
+      ],
+      "lessons": [
+        {"lesson": "אירוע מקומי (אירוע או מסיבת שכונה) שמייצר סימון רחובות ממוקד", "fit": "גבוהה", "complexity": "בינונית"},
+        {"lesson": "מצב מידי קרובים — רשימת רחובות להליכה לפי קרבה ומרחק", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "יומן ויזואלי של המסלול לשיתוף — הפיכת התקדמות לתוכן", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "בדיקת עקביות מותג לפני השקת פיצ'ר — מעבר כיוון בלי הכנה פוגע באמון", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://pocketguide.io/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://apps.apple.com/us/app/pocketguide-audio-travel-guide/id422547188", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://play.google.com/store/apps/details?id=hu.pocketguide", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://pocketguideapp.com/en/worldroutes", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://apps.apple.com/us/app/pocket-guide-companion/id6689512517", "type": "app-store", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },    {
+      "id": "geoguessr",
+      "name": "GeoGuessr",
+      "vendor": "GeoGuessr AB (שטוקהולם)",
+      "category": "משחק גיאוגרפיה מבוסס Street View",
+      "url": "https://www.geoguessr.com/",
+      "what_it_does": "משחק שבו השחקן מנחש את מיקומו מתמונות Google Street View וממקם סיכה על מפה. קיימים מצבי משחק רבים (Duels, Battle Royale, Streaks, Explorer) ותחרות עולמיות.",
+      "mechanics": {
+        "collection": "אוסף ידע גיאוגרפי — meta: סימני דרכים, רישיונות, כתב, ארכיטקטורה, כיוון נסיעה",
+        "completion": "5 סיבובים במצב קלאסי; ניקוד עד 5,000 לסיבוב ועד 25,000 למשחק מושלם",
+        "streaks": "Country Streak ו-City Streak — רצף זיהוי עד טעות",
+        "levels": "אין רמות; יש Explorer Mode עם מדליות לפי דיוק במדינה",
+        "maps": "Street View + מפת Google מוטמעת לסיכה; מפות מותאמות אישיות",
+        "challenges": "Tournaments עד 32 שחקנים, Team Duels, World Cup",
+        "bosses": "Battle Royale — last-one-standing",
+        "time": "משחק קלאסי = 5 סיבובים; טורנירים לאורך השנה"
+      },
+      "rewards": {
+        "points": "נקודות לדיוק, עד 5,000 לסיבוב",
+        "badges": "מדליות ב-Explorer Mode",
+        "levels": "אין רמות; יש Pro ו-Elite",
+        "unlockables": "Pro: משחק ללא הגבלה, מפות מותאמות, מצבי תחרות; Elite: אווטרים, loot, emotes",
+        "social": "לוחות מובילים, אירועי Esports, קהילת יוצרים שבונה מפות"
+      },
+      "social_model": {
+        "sharing": "שיתוף מפות אישיות ותוצאות; סטרימינג",
+        "competition": "כן, חזק מאוד: World Championship מאז 2023, טורנירים ומפרסם גדל",
+        "community": "קהילת metas חיצונית, מפות שנבנו על ידי קהילה, ספר/קורס של GeoGuessr",
+        "leaderboards": "כן",
+        "location_sharing": "לא חושף מיקום אישי; המשחק מבוסס תמונה",
+        "privacy": "משתמש ב-Google Street View — תלות בתנאי השימוש של Google"
+      },
+      "ui_ux": {
+        "home": "תפריט מצבים עם תצוגה מקדימה",
+        "map": "מפה מוטמעת עם סיכה — מקסימלית ומדויקת",
+        "progress": "סטטיסטיקות, מדליות, דירות",
+        "onboarding": "מצב מתחילים קצר + מדריך meta",
+        "mobile": "iOS, Android ו-Steam; גרסת Steam ב-2025 קיבלה ביקורות overwhelmingly negative"
+      },
+      "what_does_not_work": [
+        "מוניטציזציה: מנוי חובה אחרי כמה שעות חינם; גרסת Steam 2025 הייתה לפי IGN המשחק הגרוע ביותר בכל הזמנים ב-Venue",
+        "ניקוד לפי דיוק בלבד — חסר משוב אישי וקהילתי קצר",
+        "תלות בתנאי השימוש של Google Street View — שינוי מדיניות משפיע ישירות על המוצר",
+        "חוסר תוכן מקומי: אין משימות לפי שכונה או עיר"
+      ],
+      "lessons": [
+        {"lesson": "ניקוד לפי דיוק במקום מדידה כמותית — כאן הניקוד צריך להיות סימבולי, למשל נבחר רחוב = 10 נקודות", "fit": "בינונית", "complexity": "נמוכה"},
+        {"lesson": "מצב Streak שמפספס יום = איבוד הרצף — מנוע חזרה חזק", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "תחרות קבוצתית מתוזמנת כמנוע קהילה — אפשר אתגר שכונה חודשי", "fit": "גבוהה", "complexity": "בינונית"},
+        {"lesson": "לא לחייב מנוי בין המשתמשים — הסקאנדל של GeoGuessr ב-Steam הוא אזהרה", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://www.geoguessr.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/GeoGuessr", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.geoguessr.com/terms", "type": "official-terms", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://help.geoguessr.com/", "type": "official-help", "status": 403, "accessed": "2026-10-22", "note": "חסום לרובוטים — לא אומת"},
+        {"url": "https://geoguessr.zendesk.com/hc/en-us/categories/360003341218-General", "type": "official-help", "status": 403, "accessed": "2026-10-22", "note": "חסום לרובוטים — לא אומת"}
+      ]
+    },
+    {
+      "id": "seterra",
+      "name": "Seterra",
+      "vendor": "GeoGuessr (נרכשה ב-2022; בעבר מעצמאית)",
+      "category": "חידוני גיאוגרפיה על מפה",
+      "url": "https://www.seterra.com/",
+      "what_it_does": "אתר ואפליקציה לחידוני גיאוגרפיה: זיהוי מדינות, בירות, דגלים, אגמים וערים על מפה. לפי האתר: יותר מ-400 חידונים מותאמים, בהיסטוריה של 1997, ביותר מ-40 שפות. מאז 2022 הוא חלק מ-GeoGuessr ומוגש תחת geoguessr.com.",
+      "mechanics": {
+        "collection": "קטגוריות גיאוגרפיה: מדינות, דגלים, בירות, ערים, מאפיינים פיזיים",
+        "completion": "100% בקטגוריה = מדליה",
+        "streaks": "אין",
+        "levels": "אין",
+        "maps": "מפה עם סיכות; מצבי משחק: Pin, Type (תיוג), Place the labels (התאמה), Review",
+        "challenges": "חידונים מותאמים אישית; חידוני אזור",
+        "bosses": "אין",
+        "time": "מדוודים ומדורגים לפי דיוק"
+      },
+      "rewards": {
+        "points": "ניקוד לכיון שונים; מדדים מדורגים",
+        "badges": "מדליה לכל קטגוריה ב-100%",
+        "levels": "אין",
+        "unlockables": "Printables להדפסה, רשימת מועדפים, חידונים מותאמים",
+        "social": "לוחות מובילים לכל אתגר"
+      },
+      "social_model": {
+        "sharing": "שיתוף קישור לחידון; חומרי לימוד להדפסה",
+        "competition": "לוחות מובילים",
+        "community": "קהילת חינוכית והומסית; שימוש ביתי ב-אלה על ידי מורים",
+        "leaderboards": "כן — לכל חידון",
+        "location_sharing": "לא",
+        "privacy": "לא נדרש חשבון לשחק בסיסי; נדרש לשמירת התקדמות"
+      },
+      "ui_ux": {
+        "home": "רשימת קטגוריות עם אחוז השלמה ומדליה",
+        "map": "מסך המשחק עצמו הוא המפה — אין מפה נפרדת",
+        "progress": "אחוז ומדליה לכל קטגוריה, מוצגים ברשימת הבית",
+        "onboarding": "מיידי — בחירת קטגוריה ומשחק",
+        "mobile": "אפליקציות iOS ו-Android; ממשק עברי נתמך לפי רשימת השפות"
+      },
+      "what_does_not_work": [
+        "המעבר לבעלות GeoGuessr גורם לבלבול בין המותגים; הדף הרשמי של Seterra מוגש בתחת geoguessr.com/quiz/seterra",
+        "התוכן ממוקד על גיאוגרפיה עולמית — אין כיסוי עירוני או שכונתי",
+        "אין קשר בין החידון לחיים האמיתיים — אין מדידת התקדמות בשטח"
+      ],
+      "lessons": [
+        {"lesson": "מדליה לכל קטגוריה (שכונה = קטגוריה) שנותנת תחושת 100% מושלם", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "מצב Review: תרגול רק הפריטים שנפסלו — מנגנון חינוכי יעיל", "fit": "בינונית", "complexity": "נמוכה"},
+        {"lesson": "מצב Type — תיוג ידני של שמות; יכול להפוך לסיפור רחוב מקומי", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "מצבי משחק מגוונים על אותו מסך מפה (Pin, Type, Match) — מבטיח חידוש באותו מסך", "fit": "בינונית", "complexity": "בינונית"}
+      ],
+      "sources": [
+        {"url": "https://www.seterra.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://www.geoguessr.com/quiz/seterra", "type": "official", "status": 200, "accessed": "2026-10-22", "note": "מוגש תחת GeoGuessr"},
+        {"url": "https://en.wikipedia.org/wiki/Seterra", "type": "wiki", "status": 200, "accessed": "2026-10-22", "note": "דף הוויקיפדיה מפנה ל-GeoGuessr"},
+        {"url": "https://apps.apple.com/us/app/seterra-geography-full/id1093460065", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://play.google.com/store/apps/details?id=com.seterra", "type": "app-store", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },    {
+      "id": "nextdoor",
+      "name": "Nextdoor",
+      "vendor": "Nextdoor Holdings, Inc.",
+      "category": "רשת חברתית היפר-מקומית",
+      "url": "https://nextdoor.com/",
+      "what_it_does": "רשת חברתית לפי שכונה: משתמשים מתחברים לשכונה שלהם ומשתפים המלצות, אירועים, חיפושי עזרה ועדכוני ביטחון. החברה דורשת שם מלא וכתובת אמיתית; לפי החברה, ב-2024 היו 88 מיליון שכונתיים.",
+      "mechanics": {
+        "collection": "פרסומים ותגובות בתוך קבוצת שכונה",
+        "completion": "אין",
+        "streaks": "אין",
+        "levels": "אין",
+        "maps": "מפת שכונות (Private Neighborhood Pages)",
+        "challenges": "אין; ב-2025 נוספו News, Alerts ו-Ask",
+        "bosses": "אין",
+        "time": "אירועים חיים (חדשות והתראות); תגובות מיידיות"
+      },
+      "rewards": {
+        "points": "אין",
+        "badges": "אין",
+        "levels": "אין",
+        "unlockables": "אין",
+        "social": "כל הערך של המוצר הוא חברתי: קרובים מאומתים, קבוצות, מודרטורים מקומיים"
+      },
+      "social_model": {
+        "sharing": "שיתוף מיקום מדויק וכתובת — מהרהבת חשובה בהיסטוריית המוצר",
+        "competition": "אין",
+        "community": "חזק מאוד: קבוצות שכונה, מודרטורים מקומיים (National Leads Forum), פורום משתמשים",
+        "leaderboards": "אין",
+        "location_sharing": "מיקום רציף וכתובת — רף הסיכון הגבוה ביותר במאגר זה",
+        "privacy": "חובה להזין שם מלא וכתובת; דיווחי BBC על פגיעה בפרטיות של משתמשי Streetlife; תלונות על spook alerts ופרופילינג גזעי"
+      },
+      "ui_ux": {
+        "home": "פיד שכונתי עם סדר עדיפויות לקרובים מאומתים",
+        "map": "מפת שכונות; אפשרות להסתיר מיקום מדויק",
+        "progress": "אין",
+        "onboarding": "אימות כתובת לפני כניסה — חסימה גדולה לכניסה",
+        "mobile": "אפליקציית iOS ו-Android; ב-2025 הושקה the new Nextdoor"
+      },
+      "what_does_not_work": [
+        "חשיפת כתובת גמורה כברירת מחדל גררה נזק אמיתי — דיווח BBC",
+        "אימות כתובת כתנאי לכניסה — חסם אמין, במיוחד למשתמשים חדשים",
+        "שימוש ב-spook alerts (התראות על אנשים חשודים) ופרופילינג גזעי — הוביל להסרת העברה למשטרה",
+        "מודרטורים מקומיים ללא הכשרה — תלונות על הסתברות גזעית",
+        "פרסום ממוקד מאז 2017 הכניס אינטרסים שלא תאמו לרוח שכונתיים"
+      ],
+      "lessons": [
+        {"lesson": "קבוצת שכונה כקבוצת וידאו מקומית, בלי חשבון — אפשר לוח מושגים מקומי", "fit": "בינונית", "complexity": "בינונית"},
+        {"lesson": "לעולם אין לדרוש זיהוי אמיתי או כתובת — זה הסיכון העיקרי במודל שכונתי", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "מודרטורים מקומיים ללא אימון הם סיכון — אם יש קהילה, צריך כללים והדרכה", "fit": "בינונית", "complexity": "נמוכה"},
+        {"lesson": "לא להוסיף מודל פרסום או מוניטיזציה מבוסס מיקום — סיכון אמון בקהילת ירושלים", "fit": "גבוהה", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://nextdoor.com/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/Nextdoor", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://about.nextdoor.com/press-releases/nextdoor-publishes-2025-transparency-report", "type": "official-newsroom", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://help.nextdoor.com/s/article/Privacy-Policy-2024", "type": "official-help", "status": 200, "accessed": "2026-10-22"}
+      ]
+    },
+    {
+      "id": "streetcomplete",
+      "name": "StreetComplete",
+      "vendor": "Tobias Knorr (westnordost), קוד פתוח",
+      "category": "עורך OpenStreetMap מבוסס משימות",
+      "url": "https://streetcomplete.app/",
+      "what_it_does": "אפליקציית סקר של OpenStreetMap שמוצאת נתונים חסרים בסביבה ומציגה אותם כמשימות (quests). המשתמש עונה על שאלה פשוטה בשטח, והתשובה מתווספת ל-OpenStreetMap בשמו.",
+      "mechanics": {
+        "collection": "פתרון משימות — סוגים רבים: שעות פתיחה, שם רחוב, שירותים, נגישות",
+        "completion": "פתרון משימה משפרת את OSM; אין השלמת עיר",
+        "streaks": "אין",
+        "levels": "נקודות ודירה ארצית ועולמית",
+        "maps": "מפת משימות עם סמלים מסומנים לפי סוג",
+        "challenges": "משימות לפי סוג; רכיב משלים StreetMeasure למדידות AR",
+        "bosses": "אין",
+        "time": "משימות קיימות תמיד — אין סבבים"
+      },
+      "rewards": {
+        "points": "נקודות לכל משימה פתורה",
+        "badges": "כוכבים (star counter) לפי סוג משימה",
+        "levels": "דירה ארצית ועולמית",
+        "unlockables": "נקודות וכוכבים מובילים לדירות; ללא תשלום",
+        "social": "דירות, צ׳אט Slack (#streetcomplete), תרומה ל-OSM"
+      },
+      "social_model": {
+        "sharing": "התרומה מופיעה ב-OpenStreetMap בשם המשתמש, ללא חשיפת מיקום רציף באפליקציה",
+        "competition": "דירות ארציות ועולמיות",
+        "community": "קהילת OSM, צ׳אט, תרגומים",
+        "leaderboards": "כן — דירה ארצית ועולמית",
+        "location_sharing": "מזהה תורם ב-OSM בלבד",
+        "privacy": "מזהה ציבורי; אין דורש כתובת"
+      },
+      "ui_ux": {
+        "home": "מפה עם סמלי משימות; כל משימה = שאלה אחת ותשובה",
+        "map": "מפת משימות עם צבע וסמל לפי סוג; מצבי מצלמה נעול וחופשי",
+        "progress": "מוניטור משימות: נקודות, כוכבים לכל סוג, דירה",
+        "onboarding": "משימה אחת = מסך אחד; אין צורך בידע מקדים",
+        "mobile": "Android; גרסת iOS בפיתוח לפי ויקיפדיה. זמין גם ב-F-Droid"
+      },
+      "what_does_not_work": [
+        "היקף מצומצם בכוונה: אי אפשר לשנות גיאומטריה, רק מאפיינים",
+        "דרושת קצב — בפנים חסרים קווים של רחובות זמינים",
+        "iOS אינו זמין לפי ויקיפדיה — חסם למשתמשי אי-פון",
+        "הדיווח notes דורש צילום תמונה — חסם במקומות חסומים"
+      ],
+      "lessons": [
+        {"lesson": "עיקרון משימה אחת = שאלה אחת — מסך קצר, בלי עומק, בלי טעויות", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "כוכבים לפי סוג פעילות — תגים שנאספים אוטומטית ללא תכנון", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "דירה לפי אזור (שכונה או עיר) במקום דירה עולמית — השוואה רלוונטית", "fit": "גבוהה", "complexity": "נמוכה"},
+        {"lesson": "אם אין אפשרות לענות (רחוב לא נגיש או חסום), לאפשר דיווח עם סיבה — במקום להתעלם", "fit": "בינונית", "complexity": "נמוכה"}
+      ],
+      "sources": [
+        {"url": "https://streetcomplete.app/", "type": "official", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://en.wikipedia.org/wiki/StreetComplete", "type": "wiki", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://github.com/streetcomplete/StreetComplete", "type": "source", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://wiki.openstreetmap.org/wiki/StreetComplete/FAQ", "type": "official-faq", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://f-droid.org/packages/de.westnordost.streetcomplete/index.html.en", "type": "app-store", "status": 200, "accessed": "2026-10-22"},
+        {"url": "https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete", "type": "app-store", "status": 200, "accessed": "2026-10-22"}
+      ]
+    }
+  ]
+}

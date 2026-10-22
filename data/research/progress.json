@@ -1,0 +1,1097 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-22T10:21:57.796Z",
+  "streets": {
+    "jlm-49d0327d14": {
+      "id": "jlm-49d0327d14",
+      "name": "הציפורן",
+      "area": "גילה",
+      "status": "ok",
+      "fact_type": "osm-only",
+      "confidence": "low",
+      "content_sources": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/104526195"
+      ],
+      "candidate": "data/research/candidates/jlm-49d0327d14.json",
+      "lastRun": "2026-10-22T07:15:15.973Z",
+      "attempts": 2,
+      "lastError": null,
+      "finalized": true
+    },
+    "jlm-a7ce72f236": {
+      "id": "jlm-a7ce72f236",
+      "name": "שער יפו",
+      "area": "הרובע הארמני",
+      "status": "ok",
+      "fact_type": "name-origin",
+      "confidence": "low",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95"
+      ],
+      "candidate": "data/research/candidates/jlm-a7ce72f236.json",
+      "lastRun": "2026-10-22T07:15:15.997Z",
+      "attempts": 2,
+      "lastError": null,
+      "finalized": true
+    },
+    "jlm-e6d8607535": {
+      "id": "jlm-e6d8607535",
+      "name": "ישעיהו",
+      "area": "זכרון משה",
+      "status": "ok",
+      "fact_type": "name-origin",
+      "confidence": "low",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/773806272"
+      ],
+      "candidate": "data/research/candidates/jlm-e6d8607535.json",
+      "lastRun": "2026-10-22T07:17:50.849Z",
+      "attempts": 2,
+      "lastError": null,
+      "finalized": true
+    },
+    "jlm-66f37cb451": {
+      "id": "jlm-66f37cb451",
+      "name": "דרך הר הזיתים",
+      "area": "שייח' ג'ראח",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1263614660"
+      ],
+      "candidate": "data/research/candidates/jlm-66f37cb451.json",
+      "lastRun": "2026-10-22T07:17:50.866Z",
+      "attempts": 2,
+      "lastError": null
+    },
+    "jlm-5439324306": {
+      "id": "jlm-5439324306",
+      "name": "קרית משה",
+      "area": "קרית משה",
+      "status": "no-fact",
+      "fact_type": "osm-only",
+      "confidence": "low",
+      "content_sources": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/1054996861",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-5439324306.json",
+      "lastRun": "2026-10-22T07:17:50.880Z",
+      "attempts": 2,
+      "lastError": null
+    },
+    "yafo": {
+      "id": "yafo",
+      "name": "יפו",
+      "area": "נחלאות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A4%D7%95",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/263353093"
+      ],
+      "candidate": "data/research/candidates/yafo.json",
+      "lastRun": "2026-10-22T09:08:00.748Z",
+      "reviewedAt": "2026-10-22T10:21:57.702Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "ramban": {
+      "id": "ramban",
+      "name": "רמב\"ן",
+      "area": "רחביה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A8%D7%9E%D7%91%22%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/44128109"
+      ],
+      "candidate": "data/research/candidates/ramban.json",
+      "lastRun": "2026-10-22T09:11:00.066Z",
+      "reviewedAt": "2026-10-22T10:21:57.744Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-a8bc7eb12b": {
+      "id": "jlm-a8bc7eb12b",
+      "name": "חב\"ד",
+      "area": "הרובע היהודי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%97%D7%91%22%D7%93_%28%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94%29",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1545832724"
+      ],
+      "candidate": "data/research/candidates/jlm-a8bc7eb12b.json",
+      "lastRun": "2026-10-22T09:16:01.012Z",
+      "reviewedAt": "2026-10-22T10:21:57.789Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "ben-yehuda": {
+      "id": "ben-yehuda",
+      "name": "בן יהודה",
+      "area": "נחלאות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1429804311"
+      ],
+      "candidate": "data/research/candidates/ben-yehuda.json",
+      "lastRun": "2026-10-22T09:08:00.765Z",
+      "reviewedAt": "2026-10-22T10:21:57.706Z",
+      "attempts": 5,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "king-george": {
+      "id": "king-george",
+      "name": "המלך ג׳ורג׳",
+      "area": "מחנה ישראל",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9E%D7%9C%D7%9A_%D7%92%27%D7%95%D7%A8%D7%92%27_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/701478852"
+      ],
+      "candidate": "data/research/candidates/king-george.json",
+      "lastRun": "2026-10-22T09:08:03.972Z",
+      "reviewedAt": "2026-10-22T10:21:57.710Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "bezalel": {
+      "id": "bezalel",
+      "name": "בצלאל",
+      "area": "נחלאות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A6%D7%9C%D7%90%D7%9C",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/866095818"
+      ],
+      "candidate": "data/research/candidates/bezalel.json",
+      "lastRun": "2026-10-22T09:08:06.904Z",
+      "reviewedAt": "2026-10-22T10:21:57.713Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "nahlat-shiva": {
+      "id": "nahlat-shiva",
+      "name": "נחלת שבעה",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "municipal+street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=444",
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A9%D7%91%D7%A2%D7%94",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/437353262"
+      ],
+      "candidate": "data/research/candidates/nahlat-shiva.json",
+      "lastRun": "2026-10-22T09:08:10.011Z",
+      "reviewedAt": "2026-10-22T10:21:57.718Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-bd7d4bff5b": {
+      "id": "jlm-bd7d4bff5b",
+      "name": "כיכר ציון",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A6%D7%99%D7%95%D7%9F",
+        "https://www.openstreetmap.org/way/44202035"
+      ],
+      "candidate": "data/research/candidates/jlm-bd7d4bff5b.json",
+      "lastRun": "2026-10-22T09:09:01.537Z",
+      "reviewedAt": "2026-10-22T10:21:57.721Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "shivtei-yisrael": {
+      "id": "shivtei-yisrael",
+      "name": "שבטי ישראל",
+      "area": "מורשה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%91%D7%98%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C",
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=501",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1429768121"
+      ],
+      "candidate": "data/research/candidates/shivtei-yisrael.json",
+      "lastRun": "2026-10-22T09:09:05.162Z",
+      "reviewedAt": "2026-10-22T10:21:57.723Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "neviim": {
+      "id": "neviim",
+      "name": "הנביאים",
+      "area": "מגרש הרוסים",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/235952682"
+      ],
+      "candidate": "data/research/candidates/neviim.json",
+      "lastRun": "2026-10-22T09:09:08.756Z",
+      "reviewedAt": "2026-10-22T10:21:57.725Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "keren-hayesod": {
+      "id": "keren-hayesod",
+      "name": "קרן היסוד",
+      "area": "מחנה ישראל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%94%D7%99%D7%A1%D7%95%D7%93",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1447031120"
+      ],
+      "candidate": "data/research/candidates/keren-hayesod.json",
+      "lastRun": "2026-10-22T09:09:10.086Z",
+      "reviewedAt": "2026-10-22T10:21:57.726Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "agron": {
+      "id": "agron",
+      "name": "אגרון",
+      "area": "מחנה ישראל",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%92%D7%A8%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/810509458"
+      ],
+      "candidate": "data/research/candidates/agron.json",
+      "lastRun": "2026-10-22T09:10:02.019Z",
+      "reviewedAt": "2026-10-22T10:21:57.728Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "hillel": {
+      "id": "hillel",
+      "name": "הלל",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/701478867"
+      ],
+      "candidate": "data/research/candidates/hillel.json",
+      "lastRun": "2026-10-22T09:10:05.629Z",
+      "reviewedAt": "2026-10-22T10:21:57.730Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "shamai": {
+      "id": "shamai",
+      "name": "שמאי",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C",
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%90%D7%99_%D7%94%D7%96%D7%A7%D7%9F",
+        "https://www.openstreetmap.org/way/44109576"
+      ],
+      "candidate": "data/research/candidates/shamai.json",
+      "lastRun": "2026-10-22T09:10:05.658Z",
+      "reviewedAt": "2026-10-22T10:21:57.731Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "mamilla": {
+      "id": "mamilla",
+      "name": "ממילא",
+      "area": "מחנה ישראל",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%9E%D7%99%D7%9C%D7%90",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/29256018"
+      ],
+      "candidate": "data/research/candidates/mamilla.json",
+      "lastRun": "2026-10-22T09:10:05.684Z",
+      "reviewedAt": "2026-10-22T10:21:57.733Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-59b7c2d1eb": {
+      "id": "jlm-59b7c2d1eb",
+      "name": "הצבי",
+      "area": "רוממה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.hamichlol.org.il/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A6%D7%91%D7%99",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1047637089"
+      ],
+      "candidate": "data/research/candidates/jlm-59b7c2d1eb.json",
+      "lastRun": "2026-10-22T09:10:08.422Z",
+      "reviewedAt": "2026-10-22T10:21:57.734Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-96fd290e1d": {
+      "id": "jlm-96fd290e1d",
+      "name": "הרכבת",
+      "area": "בקעה",
+      "status": "ok",
+      "fact_type": "municipal+street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1767",
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%97%D7%A0%D7%AA_%D7%94%D7%A8%D7%9B%D7%91%D7%AA_%D7%94%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%A8%D7%99%D7%AA_%D7%A9%D7%9C_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+        "https://www.openstreetmap.org/way/1411652367"
+      ],
+      "candidate": "data/research/candidates/jlm-96fd290e1d.json",
+      "lastRun": "2026-10-22T09:10:08.465Z",
+      "reviewedAt": "2026-10-22T10:21:57.736Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "king-david": {
+      "id": "king-david",
+      "name": "דוד המלך",
+      "area": "ימין משה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%93%D7%95%D7%93_%D7%94%D7%9E%D7%9C%D7%9A",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/917439802"
+      ],
+      "candidate": "data/research/candidates/king-david.json",
+      "lastRun": "2026-10-22T09:10:10.864Z",
+      "reviewedAt": "2026-10-22T10:21:57.737Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "even-ezra": {
+      "id": "even-ezra",
+      "name": "אבן עזרא",
+      "area": "רחביה",
+      "status": "ok",
+      "fact_type": "municipal+street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=806",
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%90%D7%91%D7%9F_%D7%A2%D7%96%D7%A8%D7%90",
+        "https://www.openstreetmap.org/way/120419556"
+      ],
+      "candidate": "data/research/candidates/even-ezra.json",
+      "lastRun": "2026-10-22T09:10:10.900Z",
+      "reviewedAt": "2026-10-22T10:21:57.741Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "aza": {
+      "id": "aza",
+      "name": "עזה",
+      "area": "רחביה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%A2%D7%96%D7%94_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/88499115"
+      ],
+      "candidate": "data/research/candidates/aza.json",
+      "lastRun": "2026-10-22T09:11:02.710Z",
+      "reviewedAt": "2026-10-22T10:21:57.745Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "emek-refaim": {
+      "id": "emek-refaim",
+      "name": "עמק רפאים",
+      "area": "המושבה הגרמנית",
+      "status": "ok",
+      "fact_type": "municipal+street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1636",
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A2%D7%9E%D7%A7_%D7%A8%D7%A4%D7%90%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1413079199"
+      ],
+      "candidate": "data/research/candidates/emek-refaim.json",
+      "lastRun": "2026-10-22T09:11:06.333Z",
+      "reviewedAt": "2026-10-22T10:21:57.747Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "bethlehem-rd": {
+      "id": "bethlehem-rd",
+      "name": "דרך בית לחם",
+      "area": "תלפיות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%91%D7%99%D7%AA_%D7%9C%D7%97%D7%9D",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1022644851"
+      ],
+      "candidate": "data/research/candidates/bethlehem-rd.json",
+      "lastRun": "2026-10-22T09:12:00.754Z",
+      "reviewedAt": "2026-10-22T10:21:57.748Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "hebron-rd": {
+      "id": "hebron-rd",
+      "name": "חברון",
+      "area": "תלפיות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%97%D7%91%D7%A8%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1333325928"
+      ],
+      "candidate": "data/research/candidates/hebron-rd.json",
+      "lastRun": "2026-10-22T09:12:03.408Z",
+      "reviewedAt": "2026-10-22T10:21:57.750Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "herzl": {
+      "id": "herzl",
+      "name": "הרצל",
+      "area": "בית הכרם",
+      "status": "ok",
+      "fact_type": "municipal-street-page",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1021",
+        "https://www.openstreetmap.org/way/88824343"
+      ],
+      "candidate": "data/research/candidates/herzl.json",
+      "lastRun": "2026-10-22T09:12:03.437Z",
+      "reviewedAt": "2026-10-22T10:21:57.751Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "hamaayan": {
+      "id": "hamaayan",
+      "name": "המעיין",
+      "area": "עין כרם",
+      "status": "ok",
+      "fact_type": "municipal-street-page",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1380",
+        "https://www.openstreetmap.org/way/226745158"
+      ],
+      "candidate": "data/research/candidates/hamaayan.json",
+      "lastRun": "2026-10-22T09:12:07.714Z",
+      "reviewedAt": "2026-10-22T10:21:57.754Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "ein-kerem": {
+      "id": "ein-kerem",
+      "name": "עין כרם",
+      "area": "קרית היובל",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%9B%D7%A8%D7%9D",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/927271334"
+      ],
+      "candidate": "data/research/candidates/ein-kerem.json",
+      "lastRun": "2026-10-22T09:12:07.734Z",
+      "reviewedAt": "2026-10-22T10:21:57.756Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "tel-hai": {
+      "id": "tel-hai",
+      "name": "תל חי",
+      "area": "המושבה היוונית",
+      "status": "ok",
+      "fact_type": "municipal+place-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1622",
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%9C_%D7%97%D7%99",
+        "https://www.openstreetmap.org/way/4741745"
+      ],
+      "candidate": "data/research/candidates/tel-hai.json",
+      "lastRun": "2026-10-22T09:12:07.755Z",
+      "reviewedAt": "2026-10-22T10:21:57.759Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "hovevei-tzion": {
+      "id": "hovevei-tzion",
+      "name": "חובבי ציון",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "municipal+place-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1506",
+        "https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%91%D7%91%D7%99_%D7%A6%D7%99%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/4719676"
+      ],
+      "candidate": "data/research/candidates/hovevei-tzion.json",
+      "lastRun": "2026-10-22T09:13:00.810Z",
+      "reviewedAt": "2026-10-22T10:21:57.760Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jabotinsky": {
+      "id": "jabotinsky",
+      "name": "ז'בוטינסקי",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "municipal+person-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1514",
+        "https://he.wikipedia.org/wiki/%D7%96%D7%90%D7%91_%D7%96%27%D7%91%D7%95%D7%98%D7%99%D7%A0%D7%A1%D7%A7%D7%99",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1044747890"
+      ],
+      "candidate": "data/research/candidates/jabotinsky.json",
+      "lastRun": "2026-10-22T09:13:00.831Z",
+      "reviewedAt": "2026-10-22T10:21:57.761Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "pinsker": {
+      "id": "pinsker",
+      "name": "פינסקר",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "municipal+person-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1501",
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%A4%D7%99%D7%A0%D7%A1%D7%A7%D7%A8",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/260350235"
+      ],
+      "candidate": "data/research/candidates/pinsker.json",
+      "lastRun": "2026-10-22T09:13:00.851Z",
+      "reviewedAt": "2026-10-22T10:21:57.763Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "dubnov": {
+      "id": "dubnov",
+      "name": "דובנוב",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "municipal+person-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1629",
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%93%D7%95%D7%91%D7%A0%D7%95%D7%91",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/88826833"
+      ],
+      "candidate": "data/research/candidates/dubnov.json",
+      "lastRun": "2026-10-22T09:13:00.869Z",
+      "reviewedAt": "2026-10-22T10:21:57.764Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "alkalai": {
+      "id": "alkalai",
+      "name": "אלקלעי",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%9C%D7%A7%D7%9C%D7%A2%D7%99",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/738253607"
+      ],
+      "candidate": "data/research/candidates/alkalai.json",
+      "lastRun": "2026-10-22T09:13:03.639Z",
+      "reviewedAt": "2026-10-22T10:21:57.765Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "malchei-yisrael": {
+      "id": "malchei-yisrael",
+      "name": "מלכי ישראל",
+      "area": "מקור ברוך",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%9C%D7%9B%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/774633431"
+      ],
+      "candidate": "data/research/candidates/malchei-yisrael.json",
+      "lastRun": "2026-10-22T09:13:06.277Z",
+      "reviewedAt": "2026-10-22T10:21:57.767Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "mea-shearim": {
+      "id": "mea-shearim",
+      "name": "מאה שערים",
+      "area": "בתי אונגרין",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D",
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/44088322"
+      ],
+      "candidate": "data/research/candidates/mea-shearim.json",
+      "lastRun": "2026-10-22T09:13:06.294Z",
+      "reviewedAt": "2026-10-22T10:21:57.768Z",
+      "attempts": 4,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "harav-kook": {
+      "id": "harav-kook",
+      "name": "הרב קוק",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%99%D7%A6%D7%97%D7%A7_%D7%94%D7%9B%D7%94%D7%9F_%D7%A7%D7%95%D7%A7",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/774633438"
+      ],
+      "candidate": "data/research/candidates/harav-kook.json",
+      "lastRun": "2026-10-22T09:13:06.308Z",
+      "reviewedAt": "2026-10-22T10:21:57.769Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "yirmiyahu": {
+      "id": "yirmiyahu",
+      "name": "ירמיהו",
+      "area": "רוממה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A8%D7%9E%D7%99%D7%94%D7%95_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/962315881"
+      ],
+      "candidate": "data/research/candidates/yirmiyahu.json",
+      "lastRun": "2026-10-22T09:13:08.976Z",
+      "reviewedAt": "2026-10-22T10:21:57.771Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "bar-ilan": {
+      "id": "bar-ilan",
+      "name": "בר אילן",
+      "area": "תל ארזה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A8-%D7%90%D7%99%D7%9C%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1334868293"
+      ],
+      "candidate": "data/research/candidates/bar-ilan.json",
+      "lastRun": "2026-10-22T09:14:00.137Z",
+      "reviewedAt": "2026-10-22T10:21:57.772Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "shmuel-hanavi": {
+      "id": "shmuel-hanavi",
+      "name": "שמואל הנביא",
+      "area": "מעלות דפנה",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%91%D7%99%D7%90_%28%D7%A9%D7%9B%D7%95%D7%A0%D7%94%29",
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%91%D7%99_%D7%A1%D7%9E%D7%95%D7%90%D7%9C",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/217282021"
+      ],
+      "candidate": "data/research/candidates/shmuel-hanavi.json",
+      "lastRun": "2026-10-22T09:14:00.151Z",
+      "reviewedAt": "2026-10-22T10:21:57.774Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "weizmann": {
+      "id": "weizmann",
+      "name": "שדרות ויצמן",
+      "area": "רוממה",
+      "status": "ok",
+      "fact_type": "municipal-street-page",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1077",
+        "https://www.openstreetmap.org/way/953939257"
+      ],
+      "candidate": "data/research/candidates/weizmann.json",
+      "lastRun": "2026-10-22T09:14:02.961Z",
+      "reviewedAt": "2026-10-22T10:21:57.775Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-fadd7f0909": {
+      "id": "jlm-fadd7f0909",
+      "name": "גולדה מאיר",
+      "area": "רמות ב'",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_436",
+        "https://www.openstreetmap.org/way/113814715"
+      ],
+      "candidate": "data/research/candidates/jlm-fadd7f0909.json",
+      "lastRun": "2026-10-22T09:14:02.974Z",
+      "reviewedAt": "2026-10-22T10:21:57.776Z",
+      "attempts": 5,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "scopus-rd": {
+      "id": "scopus-rd",
+      "name": "שדרות שיירת הר הצופים",
+      "area": "הר הצופים",
+      "status": "ok",
+      "fact_type": "history-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%99%D7%99%D7%A8%D7%AA_%D7%94%D7%93%D7%A1%D7%94",
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=4392",
+        "https://www.openstreetmap.org/way/1341791475"
+      ],
+      "candidate": "data/research/candidates/scopus-rd.json",
+      "lastRun": "2026-10-22T09:14:02.984Z",
+      "reviewedAt": "2026-10-22T10:21:57.778Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "nablus-rd": {
+      "id": "nablus-rd",
+      "name": "שכם",
+      "area": "שייח' ג'ראח",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%A9%D7%9B%D7%9D",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/692609426"
+      ],
+      "candidate": "data/research/candidates/nablus-rd.json",
+      "lastRun": "2026-10-22T09:14:06.409Z",
+      "reviewedAt": "2026-10-22T10:21:57.780Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jericho-rd": {
+      "id": "jericho-rd",
+      "name": "יריחו",
+      "area": "מעלה הזיתים",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%99%D7%A8%D7%99%D7%97%D7%95",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/115627983"
+      ],
+      "candidate": "data/research/candidates/jericho-rd.json",
+      "lastRun": "2026-10-22T09:14:10.081Z",
+      "reviewedAt": "2026-10-22T10:21:57.782Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-3e1320b1bd": {
+      "id": "jlm-3e1320b1bd",
+      "name": "דרך אריאל שרון",
+      "area": "יפה נוף",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_16",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/560364014"
+      ],
+      "candidate": "data/research/candidates/jlm-3e1320b1bd.json",
+      "lastRun": "2026-10-22T09:14:10.092Z",
+      "reviewedAt": "2026-10-22T10:21:57.784Z",
+      "attempts": 6,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-4c7502b52c": {
+      "id": "jlm-4c7502b52c",
+      "name": "ויה דולורוזה",
+      "area": "הרובע המוסלמי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%94_%D7%93%D7%95%D7%9C%D7%95%D7%A8%D7%95%D7%96%D7%94",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/582488415"
+      ],
+      "candidate": "data/research/candidates/jlm-4c7502b52c.json",
+      "lastRun": "2026-10-22T09:15:02.625Z",
+      "reviewedAt": "2026-10-22T10:21:57.786Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f811da3b76": {
+      "id": "jlm-f811da3b76",
+      "name": "הקארדו",
+      "area": "הרובע היהודי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A7%D7%90%D7%A8%D7%93%D7%95_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://www.openstreetmap.org/way/290723470"
+      ],
+      "candidate": "data/research/candidates/jlm-f811da3b76.json",
+      "lastRun": "2026-10-22T09:15:05.805Z",
+      "reviewedAt": "2026-10-22T10:21:57.787Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-59d781e6b2": {
+      "id": "jlm-59d781e6b2",
+      "name": "יוסף קארו",
+      "area": "בית ישראל",
+      "status": "ok",
+      "fact_type": "municipal+person-article",
+      "confidence": "high",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=117",
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%90%D7%A8%D7%95",
+        "https://www.openstreetmap.org/way/1098609017"
+      ],
+      "candidate": "data/research/candidates/jlm-59d781e6b2.json",
+      "lastRun": "2026-10-22T09:16:01.032Z",
+      "reviewedAt": "2026-10-22T10:21:57.791Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-ad65935e52": {
+      "id": "jlm-ad65935e52",
+      "name": "רבי עקיבא",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%A2%D7%A7%D7%99%D7%91%D7%90",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/5032135"
+      ],
+      "candidate": "data/research/candidates/jlm-ad65935e52.json",
+      "lastRun": "2026-10-22T09:16:01.051Z",
+      "reviewedAt": "2026-10-22T10:21:57.793Z",
+      "attempts": 2,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "rupin": {
+      "id": "rupin",
+      "name": "רופין",
+      "area": "קרית הממשלה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%A8%D7%95%D7%A4%D7%99%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/1094279291"
+      ],
+      "candidate": "data/research/candidates/rupin.json",
+      "lastRun": "2026-10-22T09:16:01.073Z",
+      "reviewedAt": "2026-10-22T10:21:57.794Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "har-tzion": {
+      "id": "har-tzion",
+      "name": "הר ציון",
+      "area": "ימין משה",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A8_%D7%A6%D7%99%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/984820251"
+      ],
+      "candidate": "data/research/candidates/har-tzion.json",
+      "lastRun": "2026-10-22T09:16:01.090Z",
+      "reviewedAt": "2026-10-22T10:21:57.795Z",
+      "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    }
+  }
+}

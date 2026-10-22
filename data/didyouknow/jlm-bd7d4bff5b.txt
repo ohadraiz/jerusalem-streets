@@ -1,0 +1,10 @@
+street_id: jlm-bd7d4bff5b
+street_name: כיכר ציון
+area: נחלת שבעה
+fact: הכיכר קיבלה את שמה מקולנוע "ציון", שפעל במקום מ-1912 עד שנהרס ב-1972.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A6%D7%99%D7%95%D7%9F
+source: https://www.openstreetmap.org/way/44202035
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

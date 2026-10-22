@@ -1,0 +1,182 @@
+{
+  "street_id": "ben-yehuda",
+  "street_name": "בן יהודה",
+  "area": "נחלאות",
+  "lat": 31.780938,
+  "lng": 35.21511,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 426,
+      "name": "בן יהודה",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב בן-יהודה (ירושלים)",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94_(%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D)",
+    "score": 13,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים",
+      "קואורדינטה 244מ׳"
+    ],
+    "extract": "רחוב בן-יהודה הוא רחוב מסחר ראשי בלב מרכז העסקים הראשי של ירושלים, המהווה את אחת הצלעות של \"המשולש הירושלמי\". הרחוב מקשר את כיכר ציון שעל רחוב יפו לרחוב קינג ג'ורג', ובהמשך לרחוב בצלאל. בשנות ה-80 של המאה ה-20 הוסב חלקו העיקרי למדרחוב, יחד עם מספר רחובות קטנים סמוכים.",
+    "wikibase_item": "Q2916849",
+    "coordinates": {
+      "lat": 31.7815,
+      "lon": 35.2176,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Ben Yehuda Street (Jerusalem)",
+    "url": "https://en.wikipedia.org/wiki/Ben_Yehuda_Street_(Jerusalem)",
+    "score": 10,
+    "extract": "Ben Yehuda Street (Hebrew: רחוב בן יהודה), known as the \"Midrachov\" (Hebrew: מדרחוב), is arguably the most famous street in Jerusalem, along with Jaffa Road. Ben Yehuda Street joins with Jaffa Road and King George Street in the heart of downtown Jerusalem to form the main Downtown Triangle central business district. Closed to vehicular traffic, the street is now Jerusalem's most popular pedestrian mall. The street runs from the intersection of King George Street east to Zion Square and Jaffa Road. The street is named after the founder of Modern Hebrew, Eliezer Ben-Yehuda."
+  },
+  "wikidata": {
+    "place": {
+      "id": "Q2916849",
+      "label": "רחוב בן-יהודה",
+      "description": "רחוב במרכז ירושלים",
+      "coord": {
+        "lat": 31.7815,
+        "lon": 35.2176
+      },
+      "distance": 243.5170258008587,
+      "type": "place",
+      "url": "https://www.wikidata.org/wiki/Q2916849",
+      "sitelinks": {
+        "arwiki": {
+          "site": "arwiki",
+          "title": "شارع ابن يهودا (القدس)",
+          "badges": []
+        },
+        "azwiki": {
+          "site": "azwiki",
+          "title": "Ben Yehuda küçəsi (Qüds)",
+          "badges": []
+        },
+        "commonswiki": {
+          "site": "commonswiki",
+          "title": "Category:Ben Yehuda Street, Jerusalem",
+          "badges": []
+        },
+        "cswiki": {
+          "site": "cswiki",
+          "title": "Ben Jehudova ulice",
+          "badges": []
+        },
+        "enwiki": {
+          "site": "enwiki",
+          "title": "Ben Yehuda Street (Jerusalem)",
+          "badges": []
+        },
+        "eswiki": {
+          "site": "eswiki",
+          "title": "Calle Ben Yehuda",
+          "badges": []
+        },
+        "euwiki": {
+          "site": "euwiki",
+          "title": "Ben Yehuda kalea",
+          "badges": []
+        },
+        "frwiki": {
+          "site": "frwiki",
+          "title": "Rue Ben Yehuda",
+          "badges": []
+        },
+        "hewiki": {
+          "site": "hewiki",
+          "title": "רחוב בן-יהודה (ירושלים)",
+          "badges": []
+        },
+        "idwiki": {
+          "site": "idwiki",
+          "title": "Jalan Ben Yehuda (Yerusalem)",
+          "badges": []
+        },
+        "mkwiki": {
+          "site": "mkwiki",
+          "title": "Улица Бен Џехуда",
+          "badges": []
+        },
+        "ruwiki": {
+          "site": "ruwiki",
+          "title": "Бен-Йехуда (улица)",
+          "badges": []
+        },
+        "ukwiki": {
+          "site": "ukwiki",
+          "title": "Вулиця Бен-Єгуди (Єрусалим)",
+          "badges": []
+        },
+        "yiwiki": {
+          "site": "yiwiki",
+          "title": "בן יהודה גאס",
+          "badges": []
+        },
+        "zhwiki": {
+          "site": "zhwiki",
+          "title": "本耶胡达街 (耶路撒冷)",
+          "badges": []
+        }
+      }
+    },
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1429804311,
+    "name": "בן יהודה",
+    "display_name": "בן יהודה, ירושלים, נחלאות, ירושלים, נפת ירושלים, מחוז ירושלים, 9458306, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7807585,
+    "lon": 35.2143898,
+    "distance": 70.94140592735604,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1429804311"
+  },
+  "fact": "הבריטים תכננו לקרוא לרחוב על שם דמות תרבותית בריטית, אך עם סיום סלילתו ב-1922 נפטר אליעזר בן-יהודה, מחייה השפה העברית, והם החליטו להנציח את שמו.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב בן-יהודה (ירושלים)",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — אליעזר בן-יהודה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1429804311",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים",
+    "קואורדינטה 244מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

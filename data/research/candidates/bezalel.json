@@ -1,0 +1,95 @@
+{
+  "street_id": "bezalel",
+  "street_name": "בצלאל",
+  "area": "נחלאות",
+  "lat": 31.781469,
+  "lng": 35.211918,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 643,
+      "name": "בצלאל",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב בצלאל",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A6%D7%9C%D7%90%D7%9C",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 43מ׳"
+    ],
+    "extract": "רחוב בצלאל הוא רחוב עירוני בשכונת נחלאות שבירושלים, המחבר את רחוב המלך ג'ורג' שבמרכז העיר לשדרות בן צבי ולאזור רוממה והכניסה לעיר. הרחוב קרוי על שם בית הספר לאמנות \"בצלאל\", שהוקם על ידי פרופ' בוריס שץ ב-1906 ושכן בשני מבנים בקצה המזרחי של הרחוב.",
+    "wikibase_item": "Q25492470",
+    "coordinates": {
+      "lat": 31.7816,
+      "lon": 35.21149,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q18759744",
+      "label": "בצלאל סמוטריץ'",
+      "description": "שר האוצר ושר במשרד הביטחון; יו\"ר מפלגת הציונות הדתית",
+      "birth": 1981,
+      "death": null,
+      "url": "https://www.wikidata.org/wiki/Q18759744",
+      "hewiki": "בצלאל סמוטריץ'",
+      "enwiki": "Bezalel Smotrich"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 866095818,
+    "name": "בצלאל",
+    "display_name": "בצלאל, ירושלים, נחלאות, ירושלים, נפת ירושלים, מחוז ירושלים, 9458306, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7810229,
+    "lon": 35.2128183,
+    "distance": 98.50076742388188,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/866095818"
+  },
+  "fact": "הרחוב קרוי על שם בית הספר לאמנות \"בצלאל\", שהוקם ב-1906 על ידי פרופ' בוריס שץ ושכן בשני מבנים בקצהו המזרחי של הרחוב.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב בצלאל",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A6%D7%9C%D7%90%D7%9C",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/866095818",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 43מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

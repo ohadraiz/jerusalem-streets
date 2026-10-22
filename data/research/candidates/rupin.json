@@ -1,0 +1,71 @@
+{
+  "street_id": "rupin",
+  "street_name": "רופין",
+  "area": "קרית הממשלה",
+  "lat": 31.776199,
+  "lng": 35.204714,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1101,
+      "name": "דרך רופין",
+      "score": 3
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q215779",
+      "label": "ארתור רופין",
+      "description": "מנהיג ציוני",
+      "birth": 1876,
+      "death": 1943,
+      "url": "https://www.wikidata.org/wiki/Q215779",
+      "hewiki": "ארתור רופין",
+      "enwiki": "Arthur Ruppin"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1094279291,
+    "name": "רופין",
+    "display_name": "רופין, ירושלים, קרית הממשלה, ירושלים, נפת ירושלים, מחוז ירושלים, 9218812, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7751183,
+    "lon": 35.2039283,
+    "distance": 141.2679659529574,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1094279291"
+  },
+  "fact": "הרחוב קרוי על שם ארתור רופין (1876–1943), כלכלן וסוציולוג, מנהל המשרד הארצישראלי ומראשי ההתיישבות הציונית בארץ ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ארתור רופין",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%A8%D7%95%D7%A4%D7%99%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1094279291",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה.",
+    "שם הרחוב זהה לשם רופין; לא נמצא מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

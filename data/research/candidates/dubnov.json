@@ -1,0 +1,75 @@
+{
+  "street_id": "dubnov",
+  "street_name": "דובנוב",
+  "area": "טלביה",
+  "lat": 31.768191,
+  "lng": 35.219184,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1629,
+      "name": "דובנוב",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q213693",
+      "label": "שמעון דובנוב",
+      "description": "היסטריון יהודי רוסי",
+      "birth": 1860,
+      "death": 1941,
+      "url": "https://www.wikidata.org/wiki/Q213693",
+      "hewiki": "שמעון דובנוב",
+      "enwiki": "Simon Dubnow"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 88826833,
+    "name": "דובנוב",
+    "display_name": "דובנוב, ירושלים, טלביה, ירושלים, נפת ירושלים, מחוז ירושלים, 9214705, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7683344,
+    "lon": 35.2200451,
+    "distance": 82.9520816231927,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/88826833"
+  },
+  "fact": "הרחוב קרוי על שם שמעון דובנוב (1860–1941), היסטוריון יהודי, אבי ההיסטוריוגרפיה היהודית החילונית ומחבר \"דברי ימי עם עולם\".",
+  "fact_type": "municipal+person-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 1629)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1629",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — שמעון דובנוב",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%93%D7%95%D7%91%D7%A0%D7%95%D7%91",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/88826833",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

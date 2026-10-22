@@ -1,0 +1,684 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-22T10:21:57.796Z",
+  "accessDate": "2026-10-22",
+  "list": "data/research/pilot-50.json",
+  "summary": {
+    "total": 50,
+    "approved": 50,
+    "rejected": 0,
+    "high": 42,
+    "medium": 8,
+    "low": 0,
+    "contentSources": 67
+  },
+  "streets": [
+    {
+      "street_id": "yafo",
+      "street_name": "יפו",
+      "status": "approved",
+      "fact": "רחוב יפו נסלל ב-1869 לקראת ביקור הקיסר פרנץ יוזף, ומאז 2007 חלקו הוא המדרחוב הארוך בישראל — כ-1.5 קילומטרים בין כיכר צה\"ל לשוק מחנה יהודה.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A4%D7%95"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "ben-yehuda",
+      "street_name": "בן יהודה",
+      "status": "approved",
+      "fact": "הבריטים תכננו לקרוא לרחוב על שם דמות תרבותית בריטית, אך עם סיום סלילתו ב-1922 נפטר אליעזר בן-יהודה, מחייה השפה העברית, והם החליטו להנציח את שמו.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29",
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%91%D7%9F-%D7%99%D7%94%D7%95%D7%93%D7%94"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "king-george",
+      "street_name": "המלך ג׳ורג׳",
+      "status": "approved",
+      "fact": "ב-1948 שינו אנשי הלח\"י את שלטי הרחוב ל\"רחוב דוד המלך\" במחאה על קריאת רחוב ראשי על שם מלך זר; לאחר קום המדינה הושב השם לבקשת ממשלת בריטניה.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9E%D7%9C%D7%9A_%D7%92%27%D7%95%D7%A8%D7%92%27_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "bezalel",
+      "street_name": "בצלאל",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם בית הספר לאמנות \"בצלאל\", שהוקם ב-1906 על ידי פרופ' בוריס שץ ושכן בשני מבנים בקצהו המזרחי של הרחוב.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A6%D7%9C%D7%90%D7%9C"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "nahlat-shiva",
+      "street_name": "נחלת שבעה",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם שכונת נחלת שבעה, מהשכונות היהודיות הראשונות מחוץ לחומות (1869), כדי להנציח את שמה.",
+      "confidence": "high",
+      "method": "municipal+street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=444",
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A9%D7%91%D7%A2%D7%94"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-bd7d4bff5b",
+      "street_name": "כיכר ציון",
+      "status": "approved",
+      "fact": "הכיכר קיבלה את שמה מקולנוע \"ציון\", שפעל במקום מ-1912 עד שנהרס ב-1972.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A6%D7%99%D7%95%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "shivtei-yisrael",
+      "street_name": "שבטי ישראל",
+      "status": "approved",
+      "fact": "הרחוב נסלל ב-1930 ונקרא \"סנט פול\" על שם הכנסייה שבו; לאחר מלחמת העצמאות, כשהקו העירוני חצה אותו, הוסב שמו ל\"שבטי ישראל\".",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%91%D7%98%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C",
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=501"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "neviim",
+      "street_name": "הנביאים",
+      "status": "approved",
+      "fact": "את השם \"רחוב הנביאים\" בחרה ועדה בריטית שבה היו נציגים נוצרים, יהודים ומוסלמים — כדי שכל אחת משלוש הדתות תזדהה עם \"הנביאים\" שלה.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%99%D7%9D"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "keren-hayesod",
+      "street_name": "קרן היסוד",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם קרן היסוד — המגבית המאוחדת לישראל, המוסד הכספי המרכזי של ההסתדרות הציונית לאיסוף תרומות לבניין הארץ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9F_%D7%94%D7%99%D7%A1%D7%95%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "agron",
+      "street_name": "אגרון",
+      "status": "approved",
+      "fact": "הרחוב נקרא בעבר \"רחוב ממילא\"; בינואר 1960 הוסב שמו ל\"אגרון\" על שם גרשון אגרון, ראש העירייה ומייסד \"הג'רוזלם פוסט\", שנפטר שנה קודם.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%92%D7%A8%D7%95%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "hillel",
+      "street_name": "הלל",
+      "status": "approved",
+      "fact": "בתקופת המנדט היה הרחוב חלק מרחוב בצלאל; לאחר קום המדינה הוסב שמו ל\"הלל\" על שם הלל הזקן, ובסמוך לו נקרא רחוב שמאי על שם בן-פלוגתו.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "shamai",
+      "street_name": "שמאי",
+      "status": "approved",
+      "fact": "רחוב שמאי נקרא על שם שמאי הזקן, אב בית הדין האחרון בתקופת הזוגות; הוא סמוך לרחוב הלל, הקרוי על שם בן-פלוגתו.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%9C%D7%9C",
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%90%D7%99_%D7%94%D7%96%D7%A7%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "mamilla",
+      "street_name": "ממילא",
+      "status": "approved",
+      "fact": "ממילא היא השכונה בעמק שבין שער יפו לעיר החדשה; בסוף המאה ה-19 היא קמה כשכונת סוחרים ובעלי מלאכה יהודים וערבים, וב-1948–1967 הייתה צמודה לשטח ההפקר בין ישראל לירדן.",
+      "confidence": "high",
+      "method": "place-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%9E%D7%99%D7%9C%D7%90"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-59b7c2d1eb",
+      "street_name": "הצבי",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם העיתון \"הצבי\", שייסד אליעזר בן-יהודה ב-1884 והופיע עד 1915.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.hamichlol.org.il/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A6%D7%91%D7%99"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-96fd290e1d",
+      "street_name": "הרכבת",
+      "status": "approved",
+      "fact": "רחוב הרכבת קרוי על שם תחנת הרכבת ההיסטורית של ירושלים, שנחנכה ב-1892 כתחנת הקצה של קו יפו–ירושלים, פעלה כמעט ברציפות עד 1998, ומאז 2013 פועל במקום מתחם \"התחנה הראשונה\".",
+      "confidence": "high",
+      "method": "municipal+street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1767",
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%97%D7%A0%D7%AA_%D7%94%D7%A8%D7%9B%D7%91%D7%AA_%D7%94%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%A8%D7%99%D7%AA_%D7%A9%D7%9C_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "king-david",
+      "street_name": "דוד המלך",
+      "status": "approved",
+      "fact": "בתקופת המנדט נקרא הרחוב \"דרך הקדוש יוליאן\", על שם יוליאנוס העני — ולא על שם יוליאנוס הכופר, כפי שסוברים בטעות.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%93%D7%95%D7%93_%D7%94%D7%9E%D7%9C%D7%9A"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "even-ezra",
+      "street_name": "אבן עזרא",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם אברהם אבן עזרא (1089–1164), פרשן מקרא, משורר, בלשן ופילוסוף מתקופת תור הזהב בספרד, שעסק גם באסטרונומיה.",
+      "confidence": "high",
+      "method": "municipal+street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=806",
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%90%D7%91%D7%9F_%D7%A2%D7%96%D7%A8%D7%90"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "ramban",
+      "street_name": "רמב\"ן",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם רבי משה בן נחמן (הרמב\"ן), ואורכו כ-700 מטרים — מכיכר צרפת במערב ועד כיכר ריבלין במזרח.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A8%D7%9E%D7%91%22%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "aza",
+      "street_name": "עזה",
+      "status": "approved",
+      "fact": "דרך עזה נקראת על שם הדרך ההיסטורית משער יפו אל עזה; תושבי רחביה ממוצא גרמני כינו אותה \"גאזה-שטראסה\".",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%A2%D7%96%D7%94_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "emek-refaim",
+      "street_name": "עמק רפאים",
+      "status": "approved",
+      "fact": "הרחוב סלול לאורך ערוץ נחל רפאים; המושבה הגרמנית, שהוקמה ב-1873 לאורכו, הפכה אותו לרחוב הראשי שלה.",
+      "confidence": "high",
+      "method": "municipal+street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1636",
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A2%D7%9E%D7%A7_%D7%A8%D7%A4%D7%90%D7%99%D7%9D"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "bethlehem-rd",
+      "street_name": "דרך בית לחם",
+      "status": "approved",
+      "fact": "דרך בית לחם עוקבת אחר הדרך העתיקה לבית לחם, שנחשפה בחפירות ארכאולוגיות: היא החלה בשער יפו והמשיכה במתווה הנוכחי עד העיר בית לחם.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%91%D7%99%D7%AA_%D7%9C%D7%97%D7%9D"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "hebron-rd",
+      "street_name": "חברון",
+      "status": "approved",
+      "fact": "דרך חברון היא מהארוכים ברחובות ירושלים: היא יוצאת מגיא בן הינום למרגלות הר ציון וממשיכה דרומה עד היציאה מן העיר, בדרך לחברון.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%97%D7%91%D7%A8%D7%95%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "herzl",
+      "street_name": "הרצל",
+      "status": "approved",
+      "fact": "שדרות הרצל קרויות על שם בנימין זאב הרצל (1860–1904), מייסד התנועה הציונית והקונגרסים הציוניים; השדרה מובילה אל הר הרצל.",
+      "confidence": "high",
+      "method": "municipal-street-page",
+      "content_sources": 1,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1021"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "hamaayan",
+      "street_name": "המעיין",
+      "status": "approved",
+      "fact": "רחוב המעיין קרוי על שם מעיין מרים בעין כרם; לפי המסורת הנוצרית, ליד המעיין פגשה אלישבע, אם יוחנן המטביל, את מרים, אם ישוע.",
+      "confidence": "high",
+      "method": "municipal-street-page",
+      "content_sources": 1,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1380"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "ein-kerem",
+      "street_name": "עין כרם",
+      "status": "approved",
+      "fact": "עין כרם נחשבת למקום הולדתו של יוחנן המטביל ולאתר צליינות נוצרי; בשטחה כנסיות ומנזרים רבים.",
+      "confidence": "medium",
+      "method": "place-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%9B%D7%A8%D7%9D"
+      ],
+      "notes": "הרחוב קרוי על שם השכונה; אין מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "tel-hai",
+      "street_name": "תל חי",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם תל חי, שבה התחולל ב-1 במרץ 1920 קרב שבו נפל יוסף טרומפלדור; הקרב הפך לסמל ל\"מעטים מול רבים\".",
+      "confidence": "high",
+      "method": "municipal+place-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1622",
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%9C_%D7%97%D7%99"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "hovevei-tzion",
+      "street_name": "חובבי ציון",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם תנועת חובבי ציון, אגודות ציוניות שקמו במזרח אירופה בסוף המאה ה-19 ודגלו בעלייה, בהתיישבות ובעבודה חקלאית בארץ ישראל.",
+      "confidence": "high",
+      "method": "municipal+place-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1506",
+        "https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%91%D7%91%D7%99_%D7%A6%D7%99%D7%95%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jabotinsky",
+      "street_name": "ז'בוטינסקי",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם זאב ז'בוטינסקי (1880–1940), מנהיג ציוני, מייסד בית\"ר ומפקד האצ\"ל.",
+      "confidence": "high",
+      "method": "municipal+person-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1514",
+        "https://he.wikipedia.org/wiki/%D7%96%D7%90%D7%91_%D7%96%27%D7%91%D7%95%D7%98%D7%99%D7%A0%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "pinsker",
+      "street_name": "פינסקר",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם יהודה לייב פינסקר (1821–1891), רופא והוגה דעות, מראשי חיבת ציון ומחבר \"אוטואמנציפציה!\".",
+      "confidence": "high",
+      "method": "municipal+person-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1501",
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%A4%D7%99%D7%A0%D7%A1%D7%A7%D7%A8"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "dubnov",
+      "street_name": "דובנוב",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם שמעון דובנוב (1860–1941), היסטוריון יהודי, אבי ההיסטוריוגרפיה היהודית החילונית ומחבר \"דברי ימי עם עולם\".",
+      "confidence": "high",
+      "method": "municipal+person-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1629",
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%93%D7%95%D7%91%D7%A0%D7%95%D7%91"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "alkalai",
+      "street_name": "אלקלעי",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם הרב יהודה אלקלעי (1798–1878), מבשר הציונות המעשית והמדינית, שפעל להתיישבות בארץ ישראל כ-50 שנה לפני הרצל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%9C%D7%A7%D7%9C%D7%A2%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם הרב; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "malchei-yisrael",
+      "street_name": "מלכי ישראל",
+      "status": "approved",
+      "fact": "רחוב מלכי ישראל, באורך קילומטר, הוא רחובה הראשי של שכונת גאולה ומרכזה המסחרי של הקהילה החרדית; שמו מנציח את מלכי ישראל.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%9C%D7%9B%D7%99_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "mea-shearim",
+      "street_name": "מאה שערים",
+      "status": "approved",
+      "fact": "רחוב מאה שערים הוא רחובה הראשי של השכונה; שמה נגזר מהפסוק \"וימצא... מאה שערים\" (בראשית כו, יב), וחלק ממנו נקרא בתקופת המנדט \"רחוב גאולה\".",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D",
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "harav-kook",
+      "street_name": "הרב קוק",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם הרב אברהם יצחק הכהן קוק (1865–1935), הרב הראשי האשכנזי הראשון בארץ ישראל ומייסד ישיבת מרכז הרב.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%99%D7%A6%D7%97%D7%A7_%D7%94%D7%9B%D7%94%D7%9F_%D7%A7%D7%95%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם הרב; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "yirmiyahu",
+      "street_name": "ירמיהו",
+      "status": "approved",
+      "fact": "רחוב ירמיהו, כביש 417, הוא באורך 1.7 ק\"מ; למרות סמיכותו לשכונות חרדיות, הוא פתוח לתנועת רכב בשבתות.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%99%D7%A8%D7%9E%D7%99%D7%94%D7%95_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "bar-ilan",
+      "street_name": "בר אילן",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם הרב מאיר בר-אילן, מנהיג תנועת המזרחי; משנת 1988 הוא מסמל את המאבק בין חרדים לחילונים על נסיעה בשבת.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%A8-%D7%90%D7%99%D7%9C%D7%9F"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "shmuel-hanavi",
+      "street_name": "שמואל הנביא",
+      "status": "approved",
+      "fact": "השכונה, ועל שמה הרחוב, נקראה על שם שמואל הנביא; בנבי סמואל, סמוך לירושלים, מצוי על פי המסורת קברו.",
+      "confidence": "medium",
+      "method": "place-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%91%D7%99%D7%90_%28%D7%A9%D7%9B%D7%95%D7%A0%D7%94%29",
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%91%D7%99_%D7%A1%D7%9E%D7%95%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב נגזר משם השכונה; אין מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "weizmann",
+      "street_name": "שדרות ויצמן",
+      "status": "approved",
+      "fact": "שדרות ויצמן קרויות על שם חיים ויצמן (1874–1952), הנשיא הראשון של מדינת ישראל, מיוזמי הצהרת בלפור ומייסד מכון ויצמן.",
+      "confidence": "high",
+      "method": "municipal-street-page",
+      "content_sources": 1,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1077"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-fadd7f0909",
+      "street_name": "גולדה מאיר",
+      "status": "approved",
+      "fact": "חלקו הדרומי של כביש 436, באורך 5 ק\"מ, קרוי \"שדרות גולדה מאיר\" ומכונה \"כביש רמות\"; הוא עורק תחבורה ראשי בעיר החוצה את שכונת רמות.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_436"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "scopus-rd",
+      "street_name": "שדרות שיירת הר הצופים",
+      "status": "approved",
+      "fact": "השדרות מנציחות את שיירת הדסה (שיירת הר הצופים), שיצאה ב-13 באפריל 1948 להר הצופים והותקפה בשייח' גראח; 77–80 מנוסעיה נהרגו.",
+      "confidence": "high",
+      "method": "history-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%99%D7%99%D7%A8%D7%AA_%D7%94%D7%93%D7%A1%D7%94",
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=4392"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "nablus-rd",
+      "street_name": "שכם",
+      "status": "approved",
+      "fact": "דרך שכם עוקבת אחר תוואי הדרך ההיסטורית שיצאה משער שכם צפונה, לעבר העיר שכם.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%A9%D7%9B%D7%9D"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jericho-rd",
+      "street_name": "יריחו",
+      "status": "approved",
+      "fact": "דרך יריחו, כביש 417, עוקבת אחר הדרך ההיסטורית מירושלים ליריחו.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%99%D7%A8%D7%99%D7%97%D7%95"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-3e1320b1bd",
+      "street_name": "דרך אריאל שרון",
+      "status": "approved",
+      "fact": "דרך אריאל שרון היא כביש 16, שנפתח לתנועה ב-1 בספטמבר 2022 ומחבר את כביש 1 ממערב אל מרכז ירושלים.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%91%D7%99%D7%A9_16"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-4c7502b52c",
+      "street_name": "ויה דולורוזה",
+      "status": "approved",
+      "fact": "ויה דולורוזה היא הדרך שבה, לפי המסורת הנוצרית, צעד ישו מגזר הדין אל הצליבה; היא מתחילה ברובע המוסלמי ומסתיימת בכנסיית הקבר.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%94_%D7%93%D7%95%D7%9C%D7%95%D7%A8%D7%95%D7%96%D7%94"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-f811da3b76",
+      "street_name": "הקארדו",
+      "status": "approved",
+      "fact": "הקארדו היה הרחוב הראשי של ירושלים בתקופה הרומית והביזנטית, מצפון לדרום — משער שכם לשער האשפות; שרידיו משוחזרים ברובע היהודי.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A7%D7%90%D7%A8%D7%93%D7%95_%28%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D%29"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-a8bc7eb12b",
+      "street_name": "חב\"ד",
+      "status": "approved",
+      "fact": "רחוב חב\"ד הוא הרחוב הארוך והראשי ברובע היהודי; הוא קרוי על שם חסידות חב\"ד, שבו נמצאים בית הכנסת ובית המדרש שלה.",
+      "confidence": "high",
+      "method": "street-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%97%D7%91%22%D7%93_%28%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94%29"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-59d781e6b2",
+      "street_name": "יוסף קארו",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם הרב יוסף קארו (1488–1575), מגדולי הפוסקים ומחבר \"בית יוסף\" ו\"שולחן ערוך\"; בעבר נקרא \"העלייה\".",
+      "confidence": "high",
+      "method": "municipal+person-article",
+      "content_sources": 2,
+      "sources": [
+        "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=117",
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%90%D7%A8%D7%95"
+      ],
+      "notes": null
+    },
+    {
+      "street_id": "jlm-ad65935e52",
+      "street_name": "רבי עקיבא",
+      "status": "approved",
+      "fact": "רבי עקיבא בן יוסף, מגדולי התנאים ותומך מרד בר כוכבא, נהרג בין 132 ל-136; הרחוב קרוי על שמו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%A2%D7%A7%D7%99%D7%91%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם התנא; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "rupin",
+      "street_name": "רופין",
+      "status": "approved",
+      "fact": "הרחוב קרוי על שם ארתור רופין (1876–1943), כלכלן וסוציולוג, מנהל המשרד הארצישראלי ומראשי ההתיישבות הציונית בארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%A8%D7%95%D7%A4%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם רופין; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "har-tzion",
+      "street_name": "הר ציון",
+      "status": "approved",
+      "fact": "הר ציון, שעל שמו נקרא הרחוב, הוא ההר שמחוץ לחומות העיר העתיקה; על פי חלק ממסורות שלוש הדתות, אחד ממבניו הוא מקום קבורת דוד המלך.",
+      "confidence": "medium",
+      "method": "place-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A8_%D7%A6%D7%99%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם ההר; לא נמצא מאמר רחוב ישיר."
+    }
+  ]
+}

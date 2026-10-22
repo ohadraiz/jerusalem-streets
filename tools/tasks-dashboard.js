@@ -868,9 +868,9 @@ function buildHtml(data) {
   .tag--s-blocked { color: #6a3d8f; border-color: #c6a9dd; background: #f5edfb; }
 
   /* Agent status badges (from agent-status.json via Guli) */
-  .agent-status { display: inline-flex; align-items: center; gap: 4px; font-size: .75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid; white-space: nowrap; }
+  .agent-status { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px; font-size: .75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid; white-space: normal; max-width: 100%; overflow-wrap: anywhere; }
   .agent-status strong { font-weight: 700; }
-  .agent-status__note { opacity: .8; font-weight: 400; }
+  .agent-status__note { font-weight: 400; }
   .agent-status--active { color: #1d5b3c; border-color: #a6c9b3; background: #e9f1ea; }
   .agent-status--waiting { color: #6b5310; border-color: #d9c285; background: #fdf6e3; }
   .agent-status--blocked { color: #6a3d8f; border-color: #c6a9dd; background: #f5edfb; }

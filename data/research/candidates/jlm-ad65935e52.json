@@ -1,0 +1,91 @@
+{
+  "street_id": "jlm-ad65935e52",
+  "street_name": "רבי עקיבא",
+  "area": "נחלת שבעה",
+  "lat": 31.779567,
+  "lng": 35.218093,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 445,
+      "name": "רבי עקיבא",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רבי עקיבא",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%A2%D7%A7%D7%99%D7%91%D7%90",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "רבי עקיבא בן יוסף (נולד במאה הראשונה - מת בין שנת 132 לשנת 136 לספירה), מגדולי חכמי ישראל, היה תנא ארץ ישראלי, בן הדור השלישי של התנאים והיה מתומכי מרד בר כוכבא. מקובל כי נהרג על קידוש השם כאחד מעשרת הרוגי מלכות, אך יש מקורות מאוחרים לתקופתו שפיקפקו בכך. התגורר בבני ברק ובלוד.\n\nהיה בר פלוגתא של רבי ישמעאל, רבי טרפון, רבי יוחנן בן נורי ואחרים. פיתח שיטה לפירוש המקרא שעל פיה יש לייחס משמעות לכל מילה ואף לכל אות במקרא. הטביע את חותמו על הלכות רבות ועל ערכים במסורת ובחשיבה היהודית.",
+    "wikibase_item": "Q310821",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Rabbi Akiva",
+    "url": "https://en.wikipedia.org/wiki/Rabbi_Akiva",
+    "score": 4,
+    "extract": "Akiva ben Joseph (Mishnaic Hebrew: עֲקִיבָא בֶּן יוֹסֵף, ʿĂqīḇāʾ ben Yōsēp̄; c. 50 – 28 September 135 CE), also known as Rabbi Akiva (רַבִּי עֲקִיבָא), was a leading Jewish scholar and sage and a tanna of the latter part of the first century and the beginning of the second. Rabbi Akiva was a member of the Sanhedrin that determined the final canon of the Hebrew bible and played a decisive part in the inclusion of both the Song of Songs and Ecclesiastes. This canon was later adopted by early Christian writers. He was a leading contributor to the Mishnah and to Midrash Halakha. He is referred to in Tosafot as Rosh la-Hakhamim (\"Chief of the Sages\"). He was executed by the Romans in the aftermath of the Bar Kokhba revolt. He has also been described as a philosopher."
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q310821",
+      "label": "רבי עקיבא",
+      "description": "תנא בן הדור השלישי",
+      "birth": 50,
+      "death": 135,
+      "url": "https://www.wikidata.org/wiki/Q310821",
+      "hewiki": "רבי עקיבא",
+      "enwiki": "Rabbi Akiva"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 5032135,
+    "name": "רבי עקיבא",
+    "display_name": "רבי עקיבא, ירושלים, מחנה ישראל, ירושלים, נפת ירושלים, מחוז ירושלים, 9458132, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7792258,
+    "lon": 35.2180783,
+    "distance": 37.9651454411052,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/5032135"
+  },
+  "fact": "רבי עקיבא בן יוסף, מגדולי התנאים ותומך מרד בר כוכבא, נהרג בין 132 ל-136; הרחוב קרוי על שמו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבי עקיבא",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%A2%D7%A7%D7%99%D7%91%D7%90",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/5032135",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה.",
+    "שם הרחוב זהה לשם התנא; לא נמצא מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

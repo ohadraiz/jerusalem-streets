@@ -7,10 +7,9 @@
  * שימוש:
  *   node tools/guli-room.js               בנייה חד-פעמית
  *   node tools/guli-room.js --watch       בנייה מחדש בכל שינוי + heartbeat
- *   node tools/guli-room.js --interval=45 קצב בדיקת הקבצים בשניות (30–60)
+ *   node tools/guli-room.js --interval=45 קצב בדיקת הקבצים בשניות (10–600)
  *
- * ללא תלויות, ללא רשת. כל הנתיבים נגזרים ממיקום הקובץ, כך שאפשר
- * להריץ אותו מכל תיקיית עבודה.
+ * ללא תלויות, ללא רשת. כל הנתיבים נגזרים ממיקום הקובץ.
  */
 
 const fs = require("fs");
@@ -19,150 +18,101 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const STATE_PATH = path.join(ROOT, "docs", "agents", "guli", "state.json");
 const HEARTBEAT_PATH = path.join(ROOT, "docs", "agents", "guli", "heartbeat.json");
+const TASKS_DATA_PATH = path.join(ROOT, "tasks-data.json");
+const AGENT_STATUS_OUT_PATH = path.join(ROOT, "agent-status.json");
 const OUT_PATH = path.join(ROOT, "guli.html");
 const CHANNELS_DIR = path.join(ROOT, "docs", "agents", "channels");
 const STATIC_SOURCES = [
   path.join(ROOT, "docs", "agents", "BOARD.md"),
-  path.join(ROOT, "docs", "agents", "TASKS.md")
+  path.join(ROOT, "docs", "agents", "TASKS.md"),
+  path.join(ROOT, "docs", "TEAMS.md")
 ];
 
-// Polling interval: 5 minutes = 300 seconds
-const POLL_INTERVAL_MS = 5 * 60 * 1000;
-let lastPoll = 0;
+/* ---------- צוותים ---------- */
 
-// Dependency graph: who each agent is waiting for / blocked by
-const AGENT_DEPENDENCIES = {
-  main: ["mappy", "chiki"],
-  mappy: ["chiki"],
-  chiki: [],
-  tsiri: ["mappy"],
-  tsibi: ["main", "chiki"],
-  shifu: ["main", "tsiri", "tsibi"],
-  guli: ["main", "mappy", "chiki", "tsiri", "tsibi", "shifu", "tsibi"],
-  inspector: ["main", "guli"]
+const TEAMS = [
+  {
+    key: "management",
+    name: "הנהלה ובקרה",
+    icon: "🧭",
+    hint: "מובילים, מתעדפים ועוקבים אחרי הקפאות",
+    agents: ["main", "inspector", "kipi"]
+  },
+  {
+    key: "product",
+    name: "מוצר ועיצוב",
+    icon: "🎨",
+    hint: "ממשק, נגישות, RTL ובדיקות איכות",
+    agents: ["designer", "reviewer"]
+  },
+  {
+    key: "maps",
+    name: "מפות ונתונים",
+    icon: "🗺️",
+    hint: "גיאומטריה, ניווט ורחובות",
+    agents: ["mediator", "mappy"]
+  },
+  {
+    key: "research",
+    name: "מחקר ותוכן",
+    icon: "📚",
+    hint: "עובדות, שמות ומקורות לכל רחוב",
+    agents: ["researcher"]
+  },
+  {
+    key: "docs",
+    name: "תיעוד",
+    icon: "📝",
+    hint: "דף החדר, סטטוסים וסנכרון",
+    agents: ["documenter"]
+  },
+  {
+    key: "mobile",
+    name: "מובייל והפצה",
+    icon: "📱",
+    hint: "PWA, התקנה, שחרורים ופריסה",
+    agents: ["mobile", "deployer"]
+  }
+];
+
+const TEAM_OF = {};
+for (const team of TEAMS) {
+  for (const id of team.agents) TEAM_OF[id] = team;
+}
+
+/* שלבי מסלול העבודה — התרשים הוויזואלי */
+const FLOW_STAGES = [
+  { key: "research", title: "מחקר", hint: "עובדות, שמות ומקורות", agents: ["researcher"] },
+  { key: "design", title: "עיצוב", hint: "ממשק, נגישות ו-RTL", agents: ["designer"] },
+  { key: "build", title: "פיתוח ומפות", hint: "קוד, נתונים וגיאומטריה", agents: ["main", "mediator"] },
+  { key: "review", title: "בדיקה", hint: "באגים, ביצועים ונגישות", agents: ["reviewer"] },
+  { key: "ship", title: "תיעוד והפצה", hint: "דוחות, משימות ושחרור", agents: ["documenter", "inspector", "kipi", "mobile", "deployer"] }
+];
+
+const STATUS = {
+  active: { label: "פעיל", className: "is-active" },
+  waiting: { label: "ממתין", className: "is-waiting" },
+  unknown: { label: "טרם דווח", className: "is-unknown" },
+  done: { label: "סיים", className: "is-done" },
+  standby: { label: "בחופשה", className: "is-waiting" }
 };
 
-/* Agent name mapping: state.json uses old names; tasks-data.json uses new names */
+/* שמות ב-state.json מול השמות ב-tasks-data.json */
 const STATE_TO_TASKS_NAME = {
-  // state.json name -> tasks-data.json name
   "שיפו": "הבודק",
   "ציבי": "המעצב",
   "צירי": "המגשר",
   "גולי": "המתעד",
   "טופי": "מובריליס",
-  "פזי": "פיצי",
-  // names that are the same in both:
-  "הראשי": "הראשי",
-  "החוקר": "החוקר",
-  "מפי": "מפי",
-  "קיפי": "קיפי",
-  "מובי": "מובי",
-  "הפקח": "הפקח",
+  "פזי": "פיצי"
 };
-
-function getTasksName(stateName) {
-  return STATE_TO_TASKS_NAME[stateName] || stateName;
-}
-
-function filterAgentTasks(tasks, stateAgentName) {
-  const tasksName = getTasksName(stateAgentName);
-  // Also include the state name itself in case it's used in tasks
-  const names = [tasksName, stateAgentName];
-  return tasks.filter(t => 
-    (t.agents || []).some(a => names.includes(a)) || 
-    names.includes(t.owner)
-  );
-}
-
-function readAgentChannel(agentId) {
-  const channelPath = path.join(CHANNELS_DIR, `${agentId}.md`);
-  try {
-    const content = fs.readFileSync(channelPath, "utf8");
-    const lines = content.split("\n");
-    const lastUpdate = lines.find(l => l.startsWith("## ") && l.includes("·"));
-    return { channelPath, content, lastUpdate: lastUpdate || "אין עדכון" };
-  } catch (err) {
-    return { channelPath, content: null, lastUpdate: "קובץ לא נמצא" };
-  }
-}
-
-function pollAllAgents() {
-  const updates = {};
-  for (const agentId of Object.keys(AGENT_DEPENDENCIES)) {
-    if (agentId === "guli") continue;
-    updates[agentId] = readAgentChannel(agentId);
-  }
-  return updates;
-}
 
 const MONTHS = [
   "ינואר", "בפברואר", "במרץ", "באפריל", "במאי", "ביוני",
   "ביולי", "באוגוסט", "בספטמבר", "באוקטובר", "בנובמבר", "בדצמבר"
 ];
 
-const STATUS = {
-  active: { label: "פעיל", className: "is-active" },
-  waiting: { label: "ממתין לדיווח", className: "is-waiting" },
-  unknown: { label: "טרם דווח", className: "is-unknown" },
-  done: { label: "סיים", className: "is-done" }
-};
-
-/* ---------- agent work status helpers ---------- */
-
-function computeAgentWorkStatus(agent, tasksData) {
-  // Standby teams (Mobile/Deploy)
-  const standbyTeams = ["Mobile/Deploy"];
-  const agentTeams = (agent.nextTasks || []).map(t => t).join(" ") + " " + (agent.currentTask || "");
-  
-  // Check if agent belongs to a standby team
-  const isStandbyTeam = standbyTeams.some(team => 
-    agentTeams.includes(team) || 
-    (agent.role && agent.role.includes(team))
-  );
-  
-  // If status is not active, they're not working
-  if (agent.status !== "active") {
-    return { working: false, label: "לא פעיל", reason: "סטטוס: " + (STATUS[agent.status]?.label || agent.status) };
-  }
-  
-  // If on standby team
-  if (isStandbyTeam) {
-    return { working: false, label: "🏖️ בחופש", reason: "צוות בהמתנה (standby)" };
-  }
-  
-  // Active but no current task reported
-  if (!agent.currentTask || agent.currentTask.trim() === "" || agent.currentTask === "טרם דווח") {
-    return { working: false, label: "⏸ ללא משימה נוכחית", reason: "פעיל אבל אין דיווח על משימה" };
-  }
-  
-  // Has tasks assigned from tasks-data.json
-  const tasks = tasksData && tasksData.tasks ? tasksData.tasks : [];
-  const agentTasks = filterAgentTasks(tasks, agent.name);
-  const activeTasks = agentTasks.filter(t => t.status?.key === 'progress' || t.status?.key === 'pending');
-  
-  if (activeTasks.length > 0) {
-    return { working: true, label: "🟢 בעבודה", reason: `${activeTasks.length} משימות בביצוע/ממתין` };
-  }
-  
-  // Active with current task reported
-  return { working: true, label: "🟢 בעבודה", reason: "מדווח על משימה נוכחית" };
-}
-
-const BLOCKER_SEVERITY = {
-  blocker: { label: "חוסם", className: "is-blocker", order: 0 },
-  decision: { label: "החלטה פתוחה", className: "is-decision", order: 1 },
-  process: { label: "תהליך", className: "is-process", order: 2 },
-  warning: { label: "אזהרה", className: "is-warning", order: 3 }
-};
-
-const BLOCKER_STATUS = {
-  open: { label: "פתוח", className: "is-open" },
-  "in-progress": { label: "בטיפול", className: "is-in-progress" },
-  waiting: { label: "ממתין", className: "is-waiting" },
-  resolved: { label: "נפתר", className: "is-resolved" }
-};
-
-/* ---------- helpers ---------- */
+/* ---------- עזרים ---------- */
 
 function esc(value) {
   return String(value == null ? "" : value)
@@ -194,9 +144,22 @@ function parseIso(value) {
   };
 }
 
+function dateKey(value) {
+  const d = parseIso(value);
+  if (!d) return "";
+  return `${d.year}-${String(d.month).padStart(2, "0")}-${String(d.day).padStart(2, "0")}`;
+}
+
 function dateLabel(value) {
   const d = parseIso(value);
   if (!d) return "תאריך לא צוין";
+  const today = new Date();
+  const key = dateKey(value);
+  const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  const yesterday = new Date(today.getTime() - 86400000);
+  const yesterdayKey = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, "0")}-${String(yesterday.getDate()).padStart(2, "0")}`;
+  if (key === todayKey) return "היום";
+  if (key === yesterdayKey) return "אתמול";
   return `${d.day} ${MONTHS[d.month - 1] || ""} ${d.year}`.replace(/\s+/g, " ");
 }
 
@@ -205,15 +168,19 @@ function dateTimeLabel(value) {
   if (!d) return "טרם דווח";
   const date = `${d.day} ${MONTHS[d.month - 1] || ""} ${d.year}`;
   if (d.hour == null) return date;
-  const hh = String(d.hour).padStart(2, "0");
-  const mm = String(d.minute).padStart(2, "0");
-  return `${date}, ${hh}:${mm}`;
+  return `${date}, ${String(d.hour).padStart(2, "0")}:${String(d.minute).padStart(2, "0")}`;
 }
 
 function timeLabel(value) {
   const d = parseIso(value);
   if (!d || d.hour == null) return "";
   return `${String(d.hour).padStart(2, "0")}:${String(d.minute).padStart(2, "0")}`;
+}
+
+function timeMs(value) {
+  const d = parseIso(value);
+  if (!d) return 0;
+  return new Date(d.year, d.month - 1, d.day, d.hour || 0, d.minute || 0).getTime();
 }
 
 function isIso(value) {
@@ -244,6 +211,21 @@ function localIso(date) {
   ].join("");
 }
 
+function writeFileAtomic(file, content) {
+  const tmp = `${file}.tmp-${process.pid}`;
+  fs.writeFileSync(tmp, content, "utf8");
+  try {
+    fs.renameSync(tmp, file);
+  } catch (err) {
+    fs.writeFileSync(file, content, "utf8");
+    try {
+      fs.unlinkSync(tmp);
+    } catch (cleanupErr) {
+      /* ignore */
+    }
+  }
+}
+
 function channels() {
   try {
     return fs
@@ -256,39 +238,16 @@ function channels() {
   }
 }
 
+/* ---------- ניתוח state ---------- */
+
 function validateState(state) {
   const errors = [];
-  if (!state || typeof state !== "object") {
-    return ["state.json is not an object"];
-  }
+  if (!state || typeof state !== "object") return ["state.json is not an object"];
   if (!state.meta || typeof state.meta !== "object") errors.push("meta is missing");
   if (!state.meta || !isIso(state.meta.updatedAt)) errors.push("meta.updatedAt is not an ISO date");
   if (!Array.isArray(state.agents) || state.agents.length === 0) errors.push("agents must be a non-empty array");
   if (!Array.isArray(state.timeline)) errors.push("timeline must be an array");
   if (!Array.isArray(state.sources)) errors.push("sources must be an array");
-
-  if (state.blockers != null) {
-    if (!Array.isArray(state.blockers)) {
-      errors.push("blockers must be an array when present");
-    } else {
-      const seenBlockers = new Set();
-      state.blockers.forEach((blocker, index) => {
-        const where = `blockers[${index}]`;
-        if (!blocker || typeof blocker !== "object") {
-          errors.push(`${where} is not an object`);
-          return;
-        }
-        ["id", "title", "severity", "status", "owner", "impact", "nextStep", "source", "updatedAt"].forEach((key) => {
-          if (!(key in blocker)) errors.push(`${where}.${key} is missing`);
-        });
-        if (blocker.id && seenBlockers.has(blocker.id)) errors.push(`${where}.id is duplicated (${blocker.id})`);
-        if (blocker.id) seenBlockers.add(blocker.id);
-        if (!BLOCKER_SEVERITY[blocker.severity]) errors.push(`${where}.severity is unknown (${blocker.severity})`);
-        if (!BLOCKER_STATUS[blocker.status]) errors.push(`${where}.status is unknown (${blocker.status})`);
-        if (blocker.updatedAt && !isIso(blocker.updatedAt)) errors.push(`${where}.updatedAt is not an ISO date`);
-      });
-    }
-  }
 
   if (Array.isArray(state.agents)) {
     const seen = new Set();
@@ -313,22 +272,48 @@ function validateState(state) {
   return errors;
 }
 
-function writeFileAtomic(file, content) {
-  const tmp = `${file}.tmp-${process.pid}`;
-  fs.writeFileSync(tmp, content, "utf8");
-  try {
-    fs.renameSync(tmp, file);
-  } catch (err) {
-    fs.writeFileSync(file, content, "utf8");
-    try {
-      fs.unlinkSync(tmp);
-    } catch (cleanupErr) {
-      /* ignore */
-    }
-  }
+/* ---------- משימות ---------- */
+
+function getTasksName(stateName) {
+  return STATE_TO_TASKS_NAME[stateName] || stateName;
 }
 
-/* ---------- render ---------- */
+function filterAgentTasks(tasks, stateAgentName) {
+  const tasksName = getTasksName(stateAgentName);
+  const names = [tasksName, stateAgentName];
+  return tasks.filter((t) =>
+    (t.agents || []).some((a) => names.includes(a)) ||
+    names.includes(t.owner)
+  );
+}
+
+function agentTaskStats(agent, tasksData) {
+  const tasks = tasksData && Array.isArray(tasksData.tasks) ? tasksData.tasks : [];
+  const list = filterAgentTasks(tasks, agent.name);
+  const count = (key) => list.filter((t) => t.status && t.status.key === key).length;
+  const teamNames = new Set(list.map((t) => t.team).filter(Boolean));
+  return {
+    total: list.length,
+    high: list.filter((t) => t.priority && t.priority.key === "high").length,
+    done: count("done"),
+    progress: count("progress"),
+    pending: count("pending"),
+    blocked: count("blocked"),
+    teams: [...teamNames]
+  };
+}
+
+function workStatus(agent) {
+  if (agent.status !== "active") {
+    return { working: false, label: "לא פעיל כרגע", reason: STATUS[agent.status] ? STATUS[agent.status].label : "טרם דווח" };
+  }
+  if (!agent.currentTask || agent.currentTask === "טרם דווח") {
+    return { working: false, label: "פעיל, ללא משימה מדווחת", reason: "טרם דווחה משימה נוכחית" };
+  }
+  return { working: true, label: "בעבודה", reason: "מדווח על משימה נוכחית" };
+}
+
+/* ---------- רינדור ---------- */
 
 function renderStatus(agent) {
   const meta = STATUS[agent.status] || STATUS.unknown;
@@ -349,33 +334,29 @@ function renderTalk(talk) {
     </p>`;
 }
 
+function renderRoom(agents) {
+  return agents.map((agent) => {
+    const meta = STATUS[agent.status] || STATUS.unknown;
+    const team = TEAM_OF[agent.id];
+    return `<li class="room__item ${meta.className}">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">${esc(agent.name)}</span>
+      <span class="room__state">${esc(agent.statusLabel || meta.label)}${team ? ` · ${esc(team.name)}` : ""}</span>
+    </li>`;
+  }).join("");
+}
+
 function renderAgent(agent, tasksData) {
-  const tasks = tasksData && tasksData.tasks ? tasksData.tasks : [];
-  
-  // Compute task stats for this agent
-  const agentTasks = filterAgentTasks(tasks, agent.name);
-  const taskCounts = {
-    total: agentTasks.length,
-    high: agentTasks.filter(t => t.priority?.key === 'high').length,
-    medium: agentTasks.filter(t => t.priority?.key === 'medium').length,
-    low: agentTasks.filter(t => t.priority?.key === 'low').length,
-    done: agentTasks.filter(t => t.status?.key === 'done').length,
-    progress: agentTasks.filter(t => t.status?.key === 'progress').length,
-    pending: agentTasks.filter(t => t.status?.key === 'pending').length,
-    blocked: agentTasks.filter(t => t.status?.key === 'blocked').length,
-  };
-  
-  const teams = [...new Set(agentTasks.map(t => t.team).filter(Boolean))];
-  
-  // Compute work status (working vs on break)
-  const workStatus = computeAgentWorkStatus(agent, tasksData);
-  
+  const stats = agentTaskStats(agent, tasksData);
+  const status = workStatus(agent);
+  const team = TEAM_OF[agent.id];
+
   const nextTasks = Array.isArray(agent.nextTasks) && agent.nextTasks.length
     ? `<ul class="ticks">${agent.nextTasks.slice(0, 3).map((task) => `<li>${esc(task)}</li>`).join("")}</ul>`
     : `<p class="empty-line">טרם דווחו משימות המשך.</p>`;
 
   const completed = Array.isArray(agent.completed) && agent.completed.length
-    ? agent.completed.map((item) => `
+    ? agent.completed.slice(0, 3).map((item) => `
         <li class="done">
           <p class="done__head">
             <span class="done__task">${esc(item.task)}</span>
@@ -397,30 +378,22 @@ function renderAgent(agent, tasksData) {
     ? `<span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="${esc(agent.reportedAt)}">${esc(dateTimeLabel(agent.reportedAt))}</time>${agent.reportedAtNote ? ` · ${esc(agent.reportedAtNote)}` : ""}</span>`
     : `<span class="agent__reported">דיווח אחרון: טרם דווח</span>`;
 
-  // Task summary HTML
-  const taskSummaryHtml = taskCounts.total > 0 ? `
+  const taskSummary = stats.total > 0 ? `
     <div class="agent__task-summary">
-      <h4>משימות (${taskCounts.total})</h4>
+      <h4>משימות (${stats.total})</h4>
       <div class="task-counts">
-        <span class="task-count task-count--high" title="עדיפות גבוהה">🔴 ${taskCounts.high}</span>
-        <span class="task-count task-count--medium" title="עדיפות בינונית">🟡 ${taskCounts.medium}</span>
-        <span class="task-count task-count--low" title="עדיפות נמוכה">🟢 ${taskCounts.low}</span>
-        <span class="task-count task-count--done" title="הושלמו">✅ ${taskCounts.done}</span>
-        <span class="task-count task-count--progress" title="בביצוע">🟡 ${taskCounts.progress}</span>
-        <span class="task-count task-count--pending" title="ממתין">⬜ ${taskCounts.pending}</span>
-        <span class="task-count task-count--blocked" title="חסום">⏸ ${taskCounts.blocked}</span>
+        <span class="task-count" title="עדיפות גבוהה">🔴 ${stats.high} גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ ${stats.done} הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 ${stats.progress} בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ ${stats.pending} ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ ${stats.blocked} חסומות</span>
       </div>
-      ${teams.length ? `<div class="agent__teams">צוותים: ${teams.map(esc).join(" · ")}</div>` : ""}
-    </div>
-  ` : "";
+      ${stats.teams.length ? `<div class="agent__teams">צוותים: ${stats.teams.map(esc).join(" · ")}</div>` : ""}
+    </div>` : "";
 
-  // Work status badge HTML
-  const workStatusHtml = `
-    <div class="agent__work-status ${workStatus.working ? 'working' : 'on-break'}">
-      <span class="work-status__label">${workStatus.label}</span>
-      <span class="work-status__reason">${workStatus.reason}</span>
-    </div>
-  `;
+  const teamBadge = team
+    ? `<a class="agent__team" href="#team-${esc(team.key)}">${team.icon} ${esc(team.name)}</a>`
+    : "";
 
   return `<article class="agent ${STATUS[agent.status] ? STATUS[agent.status].className : "is-unknown"}" id="agent-${esc(agent.id)}">
     <header class="agent__head">
@@ -432,12 +405,18 @@ function renderAgent(agent, tasksData) {
       ${renderStatus(agent)}
     </header>
 
-    ${workStatusHtml}
+    <div class="agent__meta-row">
+      ${teamBadge}
+      <span class="agent__work-status ${status.working ? "working" : "on-break"}">
+        <span class="work-status__label">${status.working ? "🟢" : "⏸"} ${esc(status.label)}</span>
+        <span class="work-status__reason">${esc(status.reason)}</span>
+      </span>
+    </div>
 
     <p class="agent__now"><span class="label">מה עושה עכשיו</span>${esc(agent.currentTask || "טרם דווח")}</p>
     ${renderTalk(agent.talkingWith)}
 
-    ${taskSummaryHtml}
+    ${taskSummary}
 
     <div class="agent__block">
       <h4>המשימות הבאות</h4>
@@ -461,128 +440,141 @@ function renderAgent(agent, tasksData) {
   </article>`;
 }
 
-function renderRoom(agents) {
-  return agents.map((agent) => {
-    const meta = STATUS[agent.status] || STATUS.unknown;
-    return `<li class="room__item ${meta.className}">
-      <span class="room__dot" aria-hidden="true"></span>
-      <span class="room__name">${esc(agent.name)}</span>
-      <span class="room__state">${esc(agent.statusLabel || meta.label)}</span>
-    </li>`;
-  }).join("");
-}
+function renderTeamDashboard(agents, tasksData) {
+  const agentMap = Object.fromEntries(agents.map((a) => [a.id, a]));
+  const assigned = new Set();
 
-function renderBlockers(blockers) {
-  if (!Array.isArray(blockers) || !blockers.length) {
-    return `<p class="empty-line">טרם דווחו תקלות או חסמים.</p>`;
-  }
-
-  const sorted = blockers.slice().sort((a, b) => {
-    const aResolved = a.status === "resolved" ? 1 : 0;
-    const bResolved = b.status === "resolved" ? 1 : 0;
-    if (aResolved !== bResolved) return aResolved - bResolved;
-    const aSeverity = (BLOCKER_SEVERITY[a.severity] || { order: 9 }).order;
-    const bSeverity = (BLOCKER_SEVERITY[b.severity] || { order: 9 }).order;
-    return aSeverity - bSeverity;
-  });
-
-  return `<div class="blockers">
-    ${sorted.map((blocker) => {
-      const severity = BLOCKER_SEVERITY[blocker.severity] || { label: blocker.severity, className: "is-warning" };
-      const status = BLOCKER_STATUS[blocker.status] || { label: blocker.status, className: "is-open" };
-      const resolvedClass = blocker.status === "resolved" ? " is-resolved" : "";
-      return `<article class="blocker ${severity.className}${resolvedClass}" id="blocker-${esc(blocker.id)}">
-        <header class="blocker__head">
-          <h3>${esc(blocker.title)}</h3>
-          <div class="blocker__chips">
-            <span class="chip ${severity.className}">${esc(severity.label)}</span>
-            <span class="chip ${status.className}">${esc(status.label)}</span>
-          </div>
-        </header>
-        <p class="blocker__impact">${esc(blocker.impact)}</p>
-        <p class="blocker__next"><span class="label">הצעד הבא</span>${esc(blocker.nextStep)}</p>
-        <footer class="blocker__foot">
-          <span>אחראי: <strong>${esc(blocker.owner)}</strong></span>
-          <span>מקור: ${esc(blocker.source)}</span>
-          <span>עודכן: ${esc(dateTimeLabel(blocker.updatedAt))}</span>
-        </footer>
-      </article>`;
-    }).join("")}
-  </div>`;
-}
-
-function renderFlow(agents, deps) {
-  const agentMap = Object.fromEntries(agents.map(a => [a.id, a]));
-  const activeAgents = agents.filter(a => a.status === "active").map(a => a.id);
-  const waitingAgents = agents.filter(a => a.status !== "active").map(a => a.id);
-
-  // Build nodes for mermaid
-  const nodes = [];
-  const edges = [];
-
-  for (const [agentId, agent] of Object.entries(agentMap)) {
-    const status = agent.status || "unknown";
-    const label = agent.name || agentId;
-    nodes.push(`  ${agentId}["${esc(label)}"]:::status-${status}`);
-  }
-
-  for (const [agentId, waitingFor] of Object.entries(deps)) {
-    for (const depId of waitingFor) {
-      if (agentMap[depId]) {
-        edges.push(`  ${agentId} --> ${depId}`);
-      }
-    }
-  }
-
-  // Also add edges based on talkingWith state
-  for (const agent of agents) {
-    if (agent.talkingWith && agent.talkingWith.with) {
-      const withText = String(agent.talkingWith.with);
-      for (const depId of Object.keys(agentMap)) {
-        if (depId !== agent.id && withText.includes(agentMap[depId].name)) {
-          edges.push(`  ${agent.id} -.-> ${depId}`);
-        }
-      }
-    }
-  }
-
-  return `<div class="flow-diagram">
-    <pre class="mermaid">
-graph TD
-${nodes.join("\n")}
-${edges.join("\n")}
-    classDef status-active fill:#e2f0e6,stroke:#1d5b3c,color:#1d5b3c;
-    classDef status-waiting fill:#faeed3,stroke:#6d4a0e,color:#6d4a0e;
-    classDef status-unknown fill:#ece6da,stroke:#4b4438,color:#4b4438;
-    classDef status-done fill:#e2f0e6,stroke:#1d5b3c,color:#1d5b3c;
-  </pre>
-  <p class="flow-legend">
-    <span class="chip is-active">פעיל</span>
-    <span class="chip is-waiting">ממתין</span>
-    <span class="chip is-unknown">טרם דווח</span>
-    <span style="margin-inline-start:16px">קו מלא = תלות; קו מקווקו = תקשורת נוכחית</span>
-  </p>
-</div>`;
-}
-
-function renderTimeline(timeline) {
-  const items = Array.isArray(timeline) ? timeline.slice() : [];
-  if (!items.length) return `<p class="empty-line">טרם נרשמו אירועים.</p>`;
-  return `<ol class="timeline">
-    ${items.map((event) => {
-      const time = timeLabel(event.time);
-      return `<li class="timeline__item">
-        <div class="timeline__time">
-          <time dir="ltr" datetime="${esc(event.time)}">${esc(time || dateLabel(event.time))}</time>
-          <span class="timeline__date">${esc(dateLabel(event.time))}</span>
+  const sections = TEAMS.map((team) => {
+    const members = team.agents.filter((id) => agentMap[id]);
+    members.forEach((id) => assigned.add(id));
+    if (!members.length) return "";
+    const activeCount = members.filter((id) => agentMap[id].status === "active").length;
+    return `<section class="team-card" id="team-${esc(team.key)}" aria-labelledby="team-${esc(team.key)}-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">${team.icon}</span>
+        <div>
+          <h3 id="team-${esc(team.key)}-title">${esc(team.name)}</h3>
+          <p class="team-card__hint">${esc(team.hint)}</p>
         </div>
-        <div class="timeline__body">
-          <p>${esc(event.text)}</p>
-          <span class="timeline__source">${esc(event.source || "טרם אומת")}</span>
+        <span class="team-card__count">${activeCount}/${members.length} פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        ${members.map((id) => {
+          const agent = agentMap[id];
+          const meta = STATUS[agent.status] || STATUS.unknown;
+          const stats = agentTaskStats(agent, tasksData);
+          return `<li>
+            <a class="team-card__agent" href="#agent-${esc(agent.id)}">
+              <span class="team-card__initial" aria-hidden="true">${esc(agent.initial || agent.name.slice(0, 1))}</span>
+              <span class="team-card__body">
+                <span class="team-card__name">${esc(agent.name)}</span>
+                <span class="team-card__role">${esc(agent.role || "")}</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip ${meta.className}">${esc(meta.label)}</span>
+                ${stats.total ? `<span class="team-card__tasks">${stats.total} משימות · ${stats.done} הושלמו</span>` : ""}
+              </span>
+            </a>
+          </li>`;
+        }).join("")}
+      </ul>
+    </section>`;
+  }).join("\n");
+
+  const unassigned = agents.filter((agent) => !assigned.has(agent.id));
+  const extra = unassigned.length
+    ? `<section class="team-card" id="team-other">
+        <header class="team-card__head">
+          <span class="team-card__icon" aria-hidden="true">🔧</span>
+          <div><h3>ללא צוות</h3><p class="team-card__hint">סוכנים שטרם שויכו לצוות</p></div>
+        </header>
+        <ul class="team-card__list">
+          ${unassigned.map((agent) => `<li><a class="team-card__agent" href="#agent-${esc(agent.id)}"><span class="team-card__initial" aria-hidden="true">${esc(agent.initial || agent.name.slice(0, 1))}</span><span class="team-card__body"><span class="team-card__name">${esc(agent.name)}</span></span></a></li>`).join("")}
+        </ul>
+      </section>`
+    : "";
+
+  return `<section aria-labelledby="teams-title" id="teams">
+    <div class="section__head">
+      <h2 id="teams-title">דשבורד צוותים</h2>
+      <p class="section__hint">לחצו על סוכן כדי לקפוץ לכרטיס שלו. ${TEAMS.length} צוותים, ${agents.length} סוכנים.</p>
+    </div>
+    <div class="teams-grid">
+      ${sections}
+      ${extra}
+    </div>
+  </section>`;
+}
+
+function renderFlow(agents) {
+  const agentMap = Object.fromEntries(agents.map((a) => [a.id, a]));
+  return `<ol class="flow" aria-label="שלבי העבודה">
+    ${FLOW_STAGES.map((stage, index) => {
+      const members = stage.agents.filter((id) => agentMap[id]);
+      return `<li class="flow__stage">
+        <div class="flow__step" aria-hidden="true">${index + 1}</div>
+        <div class="flow__card">
+          <h3>${esc(stage.title)}</h3>
+          <p>${esc(stage.hint)}</p>
+          <div class="flow__agents">
+            ${members.map((id) => {
+              const agent = agentMap[id];
+              const meta = STATUS[agent.status] || STATUS.unknown;
+              return `<a class="flow__agent ${meta.className}" href="#agent-${esc(agent.id)}">
+                <span class="flow__dot" aria-hidden="true"></span>${esc(agent.name)}
+              </a>`;
+            }).join("")}
+          </div>
         </div>
       </li>`;
     }).join("")}
-  </ol>`;
+  </ol>
+  <p class="flow__legend">
+    <span class="chip is-active">פעיל</span>
+    <span class="chip is-waiting">ממתין</span>
+    <span class="chip is-unknown">טרם דווח</span>
+    <span class="flow__legend-text">החצים מסמנים את כיוון הזרימה; כל שם הוא קישור לכרטיס הסוכן.</span>
+  </p>`;
+}
+
+function renderTimeline(timeline) {
+  const items = (Array.isArray(timeline) ? timeline.slice() : [])
+    .filter((event) => event && event.time)
+    .sort((a, b) => timeMs(b.time) - timeMs(a.time));
+
+  if (!items.length) return `<p class="empty-line">טרם נרשמו אירועים.</p>`;
+
+  const groups = [];
+  let current = null;
+  for (const event of items) {
+    const key = dateKey(event.time);
+    if (!current || current.key !== key) {
+      current = { key, label: dateLabel(event.time), events: [] };
+      groups.push(current);
+    }
+    current.events.push(event);
+  }
+
+  return `<div class="timeline">
+    ${groups.map((group) => `<section class="timeline__day">
+      <h3 class="timeline__day-title">
+        <span>${esc(group.label)}</span>
+        <span class="timeline__day-count">${group.events.length} אירועים</span>
+      </h3>
+      <ol class="timeline__list">
+        ${group.events.map((event) => `<li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="${esc(event.time)}">${esc(timeLabel(event.time) || "—")}</time>
+            <span class="timeline__relative" data-time="${esc(event.time)}"></span>
+          </div>
+          <div class="timeline__body">
+            <p>${esc(event.text)}</p>
+            <span class="timeline__source">מקור: ${esc(event.source || "טרם אומת")}</span>
+          </div>
+        </li>`).join("")}
+      </ol>
+    </section>`).join("")}
+  </div>`;
 }
 
 function renderSources(sources) {
@@ -602,53 +594,13 @@ function renderSources(sources) {
   </ul>`;
 }
 
-function renderUnsolved(problems) {
-  if (!Array.isArray(problems) || !problems.length) {
-    return `<p class="empty-line">אין בעיות לא-פתורות מדווחות.</p>`;
-  }
-  return `<div class="unsolved">
-    ${problems.map((p) => {
-      const statusLabel = p.status === "stuck" ? "תקוע" : p.status === "partially-fixed" ? "תוקן חלקית" : p.status === "pending" ? "ממתין" : p.status === "frozen" ? "מוקפא" : p.status === "blocked" ? "חסום" : p.status;
-      const statusClass = p.status === "stuck" ? "is-stuck" : p.status === "partially-fixed" ? "is-partial" : p.status === "pending" ? "is-pending" : p.status === "frozen" ? "is-frozen" : p.status === "blocked" ? "is-blocked" : "";
-      return `<article class="unsolved-item ${statusClass}" id="unsolved-${esc(p.id)}">
-        <header class="unsolved__head">
-          <h3>${esc(p.title)}</h3>
-          <span class="chip ${statusClass}">${esc(statusLabel)}</span>
-        </header>
-        <p class="unsolved__desc">${esc(p.description)}</p>
-        <div class="unsolved__meta">
-          <span><strong>אחראי:</strong> ${esc(p.owner)}</span>
-          ${p.blockedBy ? `<span><strong>חוסם:</strong> ${esc(p.blockedBy)}</span>` : ""}
-          ${p.impact ? `<span><strong>השפעה:</strong> ${esc(p.impact)}</span>` : ""}
-        </div>
-        ${p.attempted && p.attempted.length ? `
-        <details class="unsolved__attempted">
-          <summary>מה נוסה (${p.attempted.length})</summary>
-          <ul>${p.attempted.map(a => `<li>${esc(a)}</li>`).join("")}</ul>
-        </details>` : ""}
-        ${p.needs ? `<p class="unsolved__needs"><strong>מה נדרש:</strong> ${esc(p.needs)}</p>` : ""}
-      </article>`;
-    }).join("")}
-  </div>`;
-}
-
-function renderAIPrompt(prompt) {
-  if (!prompt) return `<p class="empty-line">אין פרומפט זמין.</p>`;
-  return `<div class="ai-prompt">
-    <p class="ai-prompt__hint">לחץ על הכפתור להעתקה, או סמן והעתק ידנית.</p>
-    <button class="btn ai-prompt__copy" type="button" data-prompt="${esc(prompt)}">העתק פרומפט</button>
-    <pre class="ai-prompt__text" aria-label="פרומפט להעתקה">${esc(prompt)}</pre>
-  </div>`;
-}
+/* ---------- עמוד ---------- */
 
 function buildHtml(state, tasksData) {
   const meta = state.meta || {};
   const agents = Array.isArray(state.agents) ? state.agents : [];
-  const tasks = tasksData && tasksData.tasks ? tasksData.tasks : [];
   const active = agents.filter((agent) => agent.status === "active").length;
   const waiting = agents.filter((agent) => agent.status !== "active").length;
-  const blockers = Array.isArray(state.blockers) ? state.blockers : [];
-  const openBlockers = blockers.filter((blocker) => blocker.status !== "resolved").length;
   const updatedAt = meta.updatedAt || new Date().toISOString();
   const generatedAt = localIso(new Date());
 
@@ -659,7 +611,7 @@ function buildHtml(state, tasksData) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>מה קורה בחדר — גולי</title>
+<title>מה קורה בחדר — המתעד</title>
 <meta name="description" content="חדר הסוכנים של יומן הרחובות ירושלים: מי עושה מה עכשיו, עם מי מדבר, מה הסתיים ומה נשאר.">
 <style>
 :root{
@@ -684,7 +636,7 @@ function buildHtml(state, tasksData) {
   --shadow:0 1px 0 rgba(34,29,22,.04), 0 10px 30px -22px rgba(34,29,22,.45);
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{
   margin:0;
   color:var(--ink);
@@ -701,153 +653,121 @@ img,svg{max-width:100%}
 a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
 a:hover{color:var(--ink)}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
-.skip{
-  position:absolute;inset-inline-start:-9999px;top:0;z-index:10;
-  background:var(--card);color:var(--ink);padding:12px 18px;border-radius:0 0 12px 0;
-}
+.skip{position:absolute;inset-inline-start:-9999px;top:0;z-index:10;background:var(--card);color:var(--ink);padding:12px 18px;border-radius:0 0 12px 0}
 .skip:focus{inset-inline-start:0}
 .wrap{width:min(1080px,100% - 32px);margin-inline:auto}
 .masthead{padding:clamp(28px,6vw,64px) 0 8px}
-.kicker{
-  display:flex;align-items:center;gap:10px;
-  margin:0 0 14px;color:var(--muted);font-size:.86rem;font-weight:600;
-}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:var(--muted);font-size:.86rem;font-weight:600}
 .kicker::before{content:"";width:34px;height:2px;background:var(--accent);border-radius:2px}
-h1{
-  margin:0;font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.05;
-  font-weight:750;letter-spacing:-.015em;
-}
-.lead{
-  max-width:62ch;margin:18px 0 0;font-size:clamp(1.05rem,2.4vw,1.28rem);
-  color:var(--ink-soft);line-height:1.55;
-}
-.masthead__bar{
-  display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;
-  margin-top:24px;padding-top:16px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:.9rem;
-}
-.pulse{
-  display:inline-flex;align-items:center;gap:8px;padding:5px 12px;
-  border:1px solid var(--line-strong);border-radius:999px;background:var(--card);
-  color:var(--ink-soft);font-weight:600;
-}
-.pulse__dot{
-  width:8px;height:8px;border-radius:50%;background:var(--green);
-  box-shadow:0 0 0 4px rgba(29,91,60,.12);
-  animation:breathe 2.8s ease-in-out infinite;
-}
+h1{margin:0;font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.05;font-weight:750;letter-spacing:-.015em}
+.lead{max-width:62ch;margin:18px 0 0;font-size:clamp(1.05rem,2.4vw,1.28rem);color:var(--ink-soft);line-height:1.55}
+.masthead__bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.pulse{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--card);color:var(--ink-soft);font-weight:600}
+.pulse__dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(29,91,60,.12);animation:breathe 2.8s ease-in-out infinite}
 @keyframes breathe{0%,100%{box-shadow:0 0 0 3px rgba(29,91,60,.12)}50%{box-shadow:0 0 0 6px rgba(29,91,60,.05)}}
-.btn{
-  min-height:44px;padding:10px 18px;border:1px solid var(--line-strong);
-  border-radius:999px;background:var(--card);color:var(--ink);
-  font:inherit;font-size:.92rem;font-weight:650;cursor:pointer;
-}
-.btn:hover{background:var(--paper-deep)}
-.btn:active{transform:translateY(1px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--line-strong);border-radius:999px;background:var(--card);color:var(--ink);font:inherit;font-size:.92rem;font-weight:650;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--paper-deep);color:var(--ink)}
+.btn--primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn--primary:hover{background:#743a13;color:#fff}
 .time-note{font-variant-numeric:tabular-nums}
+.quicknav{margin-top:18px}
+.quicknav ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.quicknav a{display:inline-flex;align-items:center;min-height:44px;padding:4px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,253,249,.7);font-size:.86rem;font-weight:600;text-decoration:none}
+.quicknav a:hover{background:var(--card);border-color:var(--line-strong)}
 main{padding-bottom:24px}
-section{margin-top:clamp(32px,6vw,56px)}
+section{margin-top:clamp(32px,6vw,56px);scroll-margin-top:16px}
 .section__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:16px}
 h2{margin:0;font-size:clamp(1.35rem,3.4vw,1.75rem);line-height:1.25;font-weight:740}
 .section__hint{margin:0;color:var(--muted);font-size:.9rem}
-.room{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-  gap:8px;margin:0;padding:0;list-style:none;
-}
-.room__item{
-  display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;
-  min-width:0;padding:10px 12px;border:1px solid var(--line);
-  border-radius:12px;background:var(--card);
-}
+.room{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.room__item{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
 .room__dot{width:9px;height:9px;border-radius:50%;background:var(--gray);flex:none}
 .room__item.is-active .room__dot{background:var(--green)}
 .room__item.is-waiting .room__dot{background:var(--amber)}
 .room__item.is-unknown .room__dot{background:var(--gray)}
 .room__name{font-weight:700;font-size:.95rem}
 .room__state{width:100%;color:var(--muted);font-size:.78rem;line-height:1.3}
-.agents{
-  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));
-  gap:16px;align-items:start;
-}
-.agent{
-  position:relative;min-width:0;background:var(--card);
-  border:1px solid var(--line);border-radius:var(--radius);
-  padding:20px;box-shadow:var(--shadow);
-}
-.agent::before{
-  content:"";position:absolute;inset-block:16px;inset-inline-start:0;
-  width:4px;border-radius:4px;background:var(--gray);
-}
+
+/* דשבורד צוותים */
+.teams-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;align-items:start}
+.team-card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);scroll-margin-top:16px}
+.team-card__head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:10px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.team-card__icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent-soft);font-size:1.25rem;flex:none}
+.team-card__head h3{margin:0;font-size:1.08rem;line-height:1.3}
+.team-card__hint{margin:2px 0 0;color:var(--muted);font-size:.8rem;line-height:1.4}
+.team-card__count{color:var(--green);font-size:.76rem;font-weight:700;white-space:nowrap;background:var(--green-bg);border:1px solid #bcd9c6;border-radius:999px;padding:2px 8px}
+.team-card__list{margin:0;padding:0;list-style:none}
+.team-card__agent{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;min-height:56px;padding:9px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.team-card__list li:last-child .team-card__agent{border-bottom:0;padding-bottom:0}
+.team-card__agent:hover{background:var(--paper-deep);border-radius:8px}
+.team-card__initial{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--paper-deep);border:1px solid var(--line);font-weight:750;font-size:.95rem;color:var(--ink-soft);flex:none}
+.team-card__body{min-width:0;display:flex;flex-direction:column}
+.team-card__name{font-weight:700;font-size:.95rem}
+.team-card__role{color:var(--muted);font-size:.76rem;line-height:1.35;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.team-card__side{display:flex;flex-direction:column;align-items:flex-end;gap:2px;min-width:0;max-width:100%}
+.team-card__side .chip{white-space:normal;text-align:center}
+.team-card__tasks{color:var(--muted);font-size:.7rem;white-space:nowrap}
+
+/* תרשים זרימה */
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px;margin:0;padding:0;list-style:none;counter-reset:flow}
+.flow__stage{position:relative;min-width:0}
+.flow__stage:not(:last-child)::after{content:"⟵";position:absolute;top:42px;inset-inline-start:-21px;color:var(--accent);font-size:1.25rem;font-weight:700}
+.flow__step{display:grid;place-items:center;width:30px;height:30px;margin-bottom:8px;border-radius:50%;background:var(--accent);color:#fff;font-size:.85rem;font-weight:750}
+.flow__card{height:100%;padding:14px 12px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.flow__card h3{margin:0;font-size:.98rem;line-height:1.3}
+.flow__card p{margin:3px 0 10px;color:var(--muted);font-size:.76rem;line-height:1.35}
+.flow__agents{display:flex;flex-direction:column;gap:4px}
+.flow__agent{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:.78rem;font-weight:650;text-decoration:none;color:var(--ink);background:var(--paper)}
+.flow__agent:hover{border-color:var(--line-strong);background:var(--card)}
+.flow__agent.is-active{background:var(--green-bg);border-color:#bcd9c6;color:var(--green)}
+.flow__agent.is-waiting{background:var(--amber-bg);border-color:#e7d3a6;color:var(--amber)}
+.flow__agent.is-unknown{background:var(--gray-bg);border-color:#d6cbb8;color:var(--gray)}
+.flow__dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+.flow__legend{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 0;font-size:.8rem;color:var(--muted)}
+.flow__legend-text{margin-inline-start:4px}
+
+/* סוכנים */
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px;align-items:start}
+.agent{position:relative;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);scroll-margin-top:16px}
+.agent::before{content:"";position:absolute;inset-block:16px;inset-inline-start:0;width:4px;border-radius:4px;background:var(--gray)}
 .agent.is-active::before{background:var(--green)}
 .agent.is-waiting::before{background:var(--amber)}
 .agent.is-unknown::before{background:var(--gray)}
+.agent:target{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft),var(--shadow)}
 .agent__head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:12px}
-.agent__initial{
-  display:grid;place-items:center;width:44px;height:44px;flex:none;
-  border-radius:50%;background:var(--paper-deep);border:1px solid var(--line);
-  font-weight:750;font-size:1.1rem;color:var(--ink-soft);
-}
+.agent__initial{display:grid;place-items:center;width:44px;height:44px;flex:none;border-radius:50%;background:var(--paper-deep);border:1px solid var(--line);font-weight:750;font-size:1.1rem;color:var(--ink-soft)}
 .agent__id{min-width:0}
 h3{margin:0;font-size:1.22rem;line-height:1.3;font-weight:740}
 .agent__role{margin:2px 0 0;color:var(--muted);font-size:.82rem;line-height:1.4}
-.chip{
-  display:inline-flex;align-items:center;gap:6px;padding:3px 9px;
-  border-radius:999px;border:1px solid transparent;font-size:.76rem;
-  font-weight:700;white-space:nowrap;line-height:1.4;
-}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;border:1px solid transparent;font-size:.76rem;font-weight:700;white-space:nowrap;line-height:1.4}
 .chip__dot{width:7px;height:7px;border-radius:50%;background:currentColor}
 .chip.is-active{color:var(--green);background:var(--green-bg);border-color:#bcd9c6}
 .chip.is-waiting{color:var(--amber);background:var(--amber-bg);border-color:#e7d3a6}
 .chip.is-unknown{color:var(--gray);background:var(--gray-bg);border-color:#d6cbb8}
 .chip.is-done{color:var(--green);background:var(--green-bg);border-color:#bcd9c6}
-.label{
-  display:block;margin-bottom:2px;color:var(--muted);
-  font-size:.72rem;font-weight:700;line-height:1.3;
-}
-.agent__now{
-  margin:16px 0 10px;padding:12px 14px;border-radius:12px;
-  background:var(--accent-soft);color:var(--ink);
-  border:1px solid #e8d3bf;font-size:.97rem;line-height:1.5;
-}
-.agent__talk{
-  margin:0 0 4px;color:var(--ink-soft);font-size:.9rem;line-height:1.55;
-}
+.label{display:block;margin-bottom:2px;color:var(--muted);font-size:.72rem;font-weight:700;line-height:1.3}
+.agent__meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.agent__team{display:inline-flex;align-items:center;gap:5px;min-height:44px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);font-size:.78rem;font-weight:650;text-decoration:none}
+.agent__work-status{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:4px 10px;border-radius:999px;font-size:.78rem;line-height:1.4}
+.agent__work-status.working{background:var(--green-bg);border:1px solid #bcd9c6;color:var(--green)}
+.agent__work-status.on-break{background:var(--amber-bg);border:1px solid #e7d3a6;color:var(--amber)}
+.work-status__label{font-weight:700}
+.work-status__reason{opacity:.8}
+.agent__now{margin:14px 0 10px;padding:12px 14px;border-radius:12px;background:var(--accent-soft);color:var(--ink);border:1px solid #e8d3bf;font-size:.97rem;line-height:1.5}
+.agent__talk{margin:0 0 4px;color:var(--ink-soft);font-size:.9rem;line-height:1.55}
 .agent__talk .label{display:inline-block;margin:0 0 2px}
 .agent__talk-body{display:inline}
-.talk-state{
-  display:inline-block;margin-inline-start:4px;padding:1px 7px;
-  border-radius:999px;background:var(--gray-bg);color:var(--gray);
-  font-size:.72rem;font-weight:700;
-}
-
-/* Agent work status (working vs on break) */
-.agent__work-status{
-  margin:12px 0 8px;padding:10px 14px;border-radius:10px;
-  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
-  font-size:.85rem;line-height:1.4;
-}
-.agent__work-status.working{
-  background:var(--green-bg);border:1px solid #bcd9c6;color:var(--green);
-}
-.agent__work-status.on-break{
-  background:var(--amber-bg);border:1px solid #e7d3a6;color:var(--amber);
-}
-.work-status__label{
-  font-weight:700;display:inline-flex;align-items:center;gap:6px;
-}
-.work-status__reason{
-  font-size:.8rem;opacity:.8;display:inline-flex;align-items:center;gap:4px;
-}
-
+.talk-state{display:inline-block;margin-inline-start:4px;padding:1px 7px;border-radius:999px;background:var(--gray-bg);color:var(--gray);font-size:.72rem;font-weight:700}
+.agent__task-summary{margin-top:12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.agent__task-summary h4{margin:0 0 6px}
+.task-counts{display:flex;flex-wrap:wrap;gap:5px}
+.task-count{padding:1px 8px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.74rem;color:var(--ink-soft);white-space:nowrap}
+.agent__teams{margin-top:6px;color:var(--muted);font-size:.75rem}
 .agent__block{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
 h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
 .ticks{margin:0;padding:0;list-style:none}
 .ticks li{position:relative;padding-inline-start:18px;margin:6px 0;font-size:.9rem;line-height:1.5}
-.ticks li::before{
-  content:"";position:absolute;inset-inline-start:2px;top:.58em;
-  width:7px;height:7px;border:1.5px solid var(--accent);border-radius:2px;
-  transform:rotate(45deg);
-}
+.ticks li::before{content:"";position:absolute;inset-inline-start:2px;top:.58em;width:7px;height:7px;border:1.5px solid var(--accent);border-radius:2px;transform:rotate(45deg)}
 .done-list{margin:0;padding:0;list-style:none}
 .done{padding:8px 0;border-bottom:1px solid var(--line)}
 .done:last-child{border-bottom:0;padding-bottom:0}
@@ -856,37 +776,28 @@ h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
 .done__task{font-weight:650;font-size:.9rem}
 .done__date{color:var(--muted);font-size:.76rem;white-space:nowrap}
 .done__conclusion{margin:4px 0 0;color:var(--ink-soft);font-size:.86rem;line-height:1.5}
-.agent__conclusion{
-  margin:16px 0 0;padding:10px 14px;border-inline-start:3px solid var(--accent);
-  background:#fbf4ea;border-radius:0 10px 10px 0;
-}
+.agent__conclusion{margin:16px 0 0;padding:10px 14px;border-inline-start:3px solid var(--accent);background:#fbf4ea;border-radius:0 10px 10px 0}
 .agent__conclusion p{margin:0;font-size:.9rem;line-height:1.55}
-.agent__foot{
-  display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;
-  margin-top:16px;padding-top:12px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:.76rem;line-height:1.45;
-}
+.agent__foot{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.76rem;line-height:1.45}
 .agent__source a{font-weight:650}
 .agent__reported{max-width:100%}
-.timeline{margin:0;padding:0;list-style:none;position:relative}
-.timeline::before{
-  content:"";position:absolute;inset-block:6px 6px;inset-inline-start:9px;
-  width:2px;background:var(--line-strong);
-}
-.timeline__item{
-  position:relative;display:grid;grid-template-columns:1fr;gap:2px;
-  padding:0 0 22px 0;padding-inline-start:32px;
-}
-.timeline__item::before{
-  content:"";position:absolute;inset-inline-start:4px;top:7px;
-  width:12px;height:12px;border-radius:50%;background:var(--card);
-  border:2px solid var(--accent);
-}
-.timeline__time{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px}
-.timeline__time time{font-weight:750;font-size:.95rem;font-variant-numeric:tabular-nums}
-.timeline__date{color:var(--muted);font-size:.76rem}
-.timeline__body p{margin:0;font-size:.94rem;line-height:1.55}
-.timeline__source{color:var(--muted);font-size:.76rem}
+
+/* ציר זמן */
+.timeline{display:grid;gap:22px}
+.timeline__day-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 10px;font-size:1rem;color:var(--ink-soft)}
+.timeline__day-title::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+.timeline__day-count{color:var(--muted);font-size:.76rem;font-weight:600}
+.timeline__list{position:relative;margin:0;padding:0;list-style:none}
+.timeline__list::before{content:"";position:absolute;inset-block:8px 8px;inset-inline-start:7px;width:2px;background:var(--line-strong)}
+.timeline__item{position:relative;display:grid;grid-template-columns:1fr;gap:2px;padding:0 0 16px;padding-inline-start:30px}
+.timeline__item:last-child{padding-bottom:0}
+.timeline__item::before{content:"";position:absolute;inset-inline-start:2px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--card);border:2px solid var(--accent);z-index:1}
+.timeline__time{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.timeline__time time{font-weight:750;font-size:.92rem;font-variant-numeric:tabular-nums;color:var(--accent)}
+.timeline__relative{color:var(--muted);font-size:.74rem}
+.timeline__body{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow)}
+.timeline__body p{margin:0;font-size:.92rem;line-height:1.55}
+.timeline__source{display:block;margin-top:4px;color:var(--muted);font-size:.74rem}
 .sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:8px;margin:0;padding:0;list-style:none}
 .source{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
 .source a,.source__plain{display:block;min-height:44px;padding:12px 14px;text-decoration:none;color:var(--ink)}
@@ -896,48 +807,23 @@ h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
 .source__note{display:block;color:var(--muted);font-size:.78rem;margin-top:2px;line-height:1.4}
 .source__plain .source__label{color:var(--ink);text-decoration:none}
 .empty-line{margin:0;color:var(--muted);font-size:.9rem}
-.unsolved{display:grid;gap:12px}
-.unsolved-item{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:16px;box-shadow:var(--shadow)}
-.unsolved-item.is-stuck{border-color:#e07a5f}
-.unsolved-item.is-partial{border-color:#81b29a}
-.unsolved-item.is-pending{border-color:#f2cc8f}
-.unsolved-item.is-frozen{border-color:#9cc0d1}
-.unsolved-item.is-blocked{border-color:#e07a5f}
-.unsolved__head{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px}
-.unsolved__head h3{margin:0;font-size:1.05rem;font-weight:700}
-.unsolved__desc{margin:0 0 10px;color:var(--ink-soft);line-height:1.55}
-.unsolved__meta{display:flex;flex-wrap:wrap;gap:12px;font-size:.82rem;color:var(--muted);margin-bottom:10px}
-.unsolved__attempted{margin-top:10px;border-top:1px dashed var(--line);padding-top:10px}
-.unsolved__attempted summary{cursor:pointer;font-weight:600;color:var(--ink-soft);font-size:.85rem}
-.unsolved__attempted ul{margin:8px 0 0;padding-inline-start:20px;font-size:.85rem;color:var(--ink-soft)}
-.unsolved__attempted li{margin:4px 0}
-.unsolved__needs{margin-top:10px;padding:10px 12px;background:var(--accent-soft);border:1px solid #e8d3bf;border-radius:8px;color:var(--ink);font-size:.88rem;line-height:1.5}
-.ai-prompt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
-.ai-prompt__hint{margin:0 0 10px;color:var(--muted);font-size:.85rem}
-.ai-prompt__copy{margin-bottom:10px}
-.ai-prompt__text{margin:0;padding:12px;background:var(--paper-deep);border:1px solid var(--line);border-radius:8px;overflow-x:auto;font-size:.75rem;line-height:1.55;white-space:pre-wrap;word-break:break-word;max-height:400px}
-@media (max-width:420px){
-  .ai-prompt__text{font-size:.7rem}
-}
-.room-note{
-  margin-top:36px;padding:18px 20px;border:1px solid var(--line);
-  border-radius:var(--radius);background:rgba(255,253,249,.7);
-  color:var(--ink-soft);font-size:.9rem;
-}
+.room-note{margin-top:36px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,253,249,.7);color:var(--ink-soft);font-size:.9rem}
+.room-note p{margin:0 0 8px}
+.room-note p:last-child{margin-bottom:0}
 .room-note strong{color:var(--ink)}
-footer.page{
-  margin-top:32px;padding:22px 0 40px;border-top:1px solid var(--line);
-  color:var(--muted);font-size:.82rem;line-height:1.6;
-}
+footer.page{margin-top:32px;padding:22px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;line-height:1.6}
+footer.page p{margin:0 0 6px}
 footer.page a{font-weight:600}
-.sr-only{
-  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
-  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
-}
 @media (min-width:700px){
-  .timeline__item{grid-template-columns:112px 1fr;gap:12px;padding-bottom:20px}
-  .timeline__time{display:block}
-  .timeline__date{display:block}
+  .timeline__item{grid-template-columns:96px 1fr;gap:12px;align-items:start}
+  .timeline__time{display:block;padding-top:8px}
+  .timeline__relative{display:block}
+}
+@media (max-width:900px){
+  .flow{grid-template-columns:1fr;gap:14px}
+  .flow__stage:not(:last-child)::after{content:"↓";top:auto;bottom:-16px;inset-inline-start:8px;font-size:1.05rem}
+  .flow__step{position:absolute;inset-inline-start:0;top:0;margin:0;z-index:1}
+  .flow__card{padding-inline-start:42px}
 }
 @media (max-width:420px){
   body{font-size:16px}
@@ -946,18 +832,17 @@ footer.page a{font-weight:600}
   .agent__head{grid-template-columns:auto 1fr;gap:10px}
   .agent__head .chip{grid-column:1 / -1;justify-self:start}
   .agent__initial{width:40px;height:40px}
+  .team-card__head{grid-template-columns:auto 1fr}
+  .team-card__count{grid-column:1 / -1;justify-self:start}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
 @media print{
   body{background:#fff}
-  .masthead__bar .btn{display:none}
-  .agent{break-inside:avoid;box-shadow:none}
+  .masthead__bar .btn,.quicknav{display:none}
+  .agent,.team-card{break-inside:avoid;box-shadow:none}
 }
-.flow-diagram{overflow-x:auto;margin:16px 0;padding:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
-.flow-diagram pre.mermaid{margin:0;font-size:.8rem;line-height:1.6;font-family:inherit}
-.flow-legend{margin-top:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 </style>
 </head>
 <body>
@@ -965,17 +850,27 @@ footer.page a{font-weight:600}
 
 <header class="masthead">
   <div class="wrap">
-    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים · <strong>הדף של גולי</strong></p>
-    <h1>מה קורה בחדר — גולי</h1>
+    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים · <strong>הדף של המתעד</strong></p>
+    <h1>מה קורה בחדר</h1>
     <p class="lead">${esc(meta.nowLine || "טרם דווח מה קורה בחדר.")}</p>
     <div class="masthead__bar">
       <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>${active} פעילים · ${waiting} ממתינים</span>
-      ${openBlockers ? `<span class="pulse pulse--alert"><span class="pulse__dot" aria-hidden="true"></span>${openBlockers} חסמים פתוחים</span>` : ""}
-      <a href="tasks.html" class="btn" style="background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700;">📋 דשבורד המשימות (הפקח)</a>
+      <a href="tasks.html" class="btn btn--primary">📋 דשבורד המשימות (הפקח)</a>
+      <a href="index.html" class="btn">🗺️ לאפליקציה</a>
       <span class="time-note">עודכן <time dir="ltr" datetime="${esc(updatedAt)}">${esc(dateTimeLabel(updatedAt))}</time></span>
       <span id="relative-time" class="time-note" data-updated="${esc(updatedAt)}"></span>
       <button class="btn" type="button" id="refresh">רענון הדף</button>
     </div>
+    <nav class="quicknav" aria-label="קישורים מהירים">
+      <ul>
+        <li><a href="#room-title">מי בחדר</a></li>
+        <li><a href="#teams">צוותים</a></li>
+        <li><a href="#flow-title">מסלול העבודה</a></li>
+        <li><a href="#agents-title">הסוכנים</a></li>
+        <li><a href="#timeline-title">ציר הזמן</a></li>
+        <li><a href="#sources-title">מקורות</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
@@ -983,9 +878,19 @@ footer.page a{font-weight:600}
   <section aria-labelledby="room-title">
     <div class="section__head">
       <h2 id="room-title">מי בחדר</h2>
-      <p class="section__hint">סטטוסים נגזרים מזמן הדיווח האחרון: מעל 15 דקות בלי עדכון — ממתין.</p>
+      <p class="section__hint">תמונת מצב מהירה של כל הסוכנים והצוותים שלהם.</p>
     </div>
     <ul class="room">${renderRoom(agents)}</ul>
+  </section>
+
+  ${renderTeamDashboard(agents, tasksData)}
+
+  <section aria-labelledby="flow-title">
+    <div class="section__head">
+      <h2 id="flow-title">מסלול העבודה</h2>
+      <p class="section__hint">מחקר → עיצוב → פיתוח ומפות → בדיקה → תיעוד והפצה. כל שלב מציג את הסוכנים שפעילים בו.</p>
+    </div>
+    ${renderFlow(agents)}
   </section>
 
   <section aria-labelledby="agents-title">
@@ -994,44 +899,16 @@ footer.page a{font-weight:600}
       <p class="section__hint">מה עושה עכשיו, עם מי מדבר, מה אחר כך ומה כבר נסגר.</p>
     </div>
     <div class="agents">
-      ${agents.map(agent => renderAgent(agent, tasksData)).join("\n")}
+      ${agents.map((agent) => renderAgent(agent, tasksData)).join("\n")}
     </div>
   </section>
 
   <section aria-labelledby="timeline-title">
     <div class="section__head">
       <h2 id="timeline-title">ציר הזמן</h2>
-      <p class="section__hint">האירועים החדשים למעלה. כל שורה מציינת מאין היא מגיעה.</p>
+      <p class="section__hint">האירועים מסודרים מהחדש לישן, מקובצים לפי יום. כל שורה מציינת מאין היא מגיעה.</p>
     </div>
     ${renderTimeline(state.timeline)}
-  </section>
-
-  <section aria-labelledby="blockers-title">
-    <div class="section__head">
-      <h2 id="blockers-title">חסמים ותקלות</h2>
-      <p class="section__hint">מה עוצר את העבודה עכשיו. חוסם = לא אפשרי להתקדם בלי לפתור; החלטה פתוחה = ממתינה להכרעה.</p>
-    </div>
-    ${renderBlockers(blockers)}
-  </section>
-
-  <section aria-labelledby="flow-title">
-    <div class="section__head">
-      <h2 id="flow-title">תרשים זרימה — מי מחכה למי</h2>
-      <p class="section__hint">חץ מלא = תלות עבודה; חץ מקווקו = תקשורת נוכחית. ירוק = פעיל, כתום = ממתין, אפור = טרם דווח.</p>
-    </div>
-    ${renderFlow(agents, AGENT_DEPENDENCIES)}
-  </section>
-
-  <section aria-labelledby="tasks-title">
-    <div class="section__head">
-      <h2 id="tasks-title">דשבורד המשימות</h2>
-      <p class="section__hint">כל משימות הצוותים במקום אחד — מסודר לפי צוות, עדיפות וסטטוס, עם חיפוש והדפסה.</p>
-    </div>
-    <div class="room-note">
-      <p><strong>הפקח</strong> מארגן את המשימות בדשבורד נפרד: <a href="tasks.html">tasks.html</a>.</p>
-      <p>הדשבורד נבנה על ידי <code>tools/tasks-dashboard.js</code> מתוך <a href="docs/TEAMS.md">docs/TEAMS.md</a>
-        ו-<a href="docs/agents/TASKS.md">docs/agents/TASKS.md</a> — מקור יחיד, ללא build וללא תלויות.</p>
-    </div>
   </section>
 
   <section aria-labelledby="sources-title">
@@ -1042,38 +919,23 @@ footer.page a{font-weight:600}
     ${renderSources(state.sources)}
   </section>
 
-  <section aria-labelledby="unsolved-title">
-    <div class="section__head">
-      <h2 id="unsolved-title">בעיות לא פתורות — מה הסוכנים לא הצליחו לפתור</h2>
-      <p class="section__hint">רשימה מרוכזת של חסמים טכניים/בירוקרטיים שדורשים עזרה חיצונית או החלטה.</p>
-    </div>
-    ${renderUnsolved(state.unsolvedProblems)}
-  </section>
-
-  <section aria-labelledby="ai-prompt-title">
-    <div class="section__head">
-      <h2 id="ai-prompt-title">פרומפט למנוע AI חיצוני — העתק והדבק</h2>
-      <p class="section__hint">פרומפט מפורט באנגלית למנוע AI (Claude, GPT, Gemini, וכד') שיחפש פתרונות לבעיות הלא-פתורות.</p>
-    </div>
-    ${renderAIPrompt(meta.aiPrompt)}
-  </section>
-
   <aside class="room-note">
-    <strong>איך לקרוא את הדף.</strong> ${esc(meta.truthNote || "כל טענה מגיעה ממקור; מה שלא דווח מסומן בהתאם.")}
-    מצב הפרויקט לפי ${esc(meta.projectSource || "BOARD")}: ${esc(meta.projectLine || "טרם דווח")}.
+    <p><strong>איך לקרוא את הדף.</strong> ${esc(meta.truthNote || "כל טענה מגיעה ממקור; מה שלא דווח מסומן בהתאם.")}</p>
+    <p>מצב הפרויקט לפי ${esc(meta.projectSource || "BOARD")}: ${esc(meta.projectLine || "טרם דווח")}.</p>
   </aside>
 </main>
 
 <footer class="page">
   <div class="wrap">
-    <p>הדף נבנה על ידי <strong>גולי</strong> מתוך <a href="docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
-    <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="agents.html">ללוח הסוכנים הכללי</a></p>
+    <p>הדף נבנה על ידי <strong>המתעד</strong> מתוך <a href="docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
+    <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="index.html">האפליקציה</a></p>
   </div>
 </footer>
 
 <script>
 (function () {
   "use strict";
+
   var refresh = document.getElementById("refresh");
   if (refresh) {
     refresh.addEventListener("click", function () {
@@ -1083,48 +945,7 @@ footer.page a{font-weight:600}
     });
   }
 
-  // AI prompt copy button
-  var copyBtn = document.querySelector(".ai-prompt__copy");
-  if (copyBtn) {
-    copyBtn.addEventListener("click", function () {
-      var prompt = this.getAttribute("data-prompt");
-      if (prompt && navigator.clipboard) {
-        navigator.clipboard.writeText(prompt).then(function () {
-          var old = copyBtn.textContent;
-          copyBtn.textContent = "הועתק!";
-          setTimeout(function () { copyBtn.textContent = old; }, 1500);
-        }).catch(function () {
-          fallbackCopy(prompt);
-        });
-      } else {
-        fallbackCopy(prompt);
-      }
-    });
-  }
-  function fallbackCopy(text) {
-    var ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.opacity = "0";
-    document.body.appendChild(ta);
-    ta.select();
-    try { document.execCommand("copy"); } catch (e) {}
-    document.body.removeChild(ta);
-    var btn = document.querySelector(".ai-prompt__copy");
-    if (btn) {
-      var old = btn.textContent;
-      btn.textContent = "הועתק!";
-      setTimeout(function () { btn.textContent = old; }, 1500);
-    }
-  }
-
-  var target = document.getElementById("relative-time");
-  if (!target) return;
-  var raw = target.getAttribute("data-updated");
-  var then = raw ? new Date(raw).getTime() : NaN;
-  if (!isFinite(then)) return;
-
-  function label() {
+  function relative(then) {
     var minutes = Math.round((Date.now() - then) / 60000);
     if (minutes < 1) return "עכשיו";
     if (minutes === 1) return "לפני דקה";
@@ -1133,14 +954,28 @@ footer.page a{font-weight:600}
     if (hours === 1) return "לפני שעה";
     if (hours < 24) return "לפני " + hours + " שעות";
     var days = Math.round(hours / 24);
-    return days === 1 ? "לפני יום" : "לפני " + days + " ימים";
+    if (days === 1) return "לפני יום";
+    if (days < 30) return "לפני " + days + " ימים";
+    var months = Math.round(days / 30);
+    return months === 1 ? "לפני חודש" : "לפני " + months + " חודשים";
   }
 
-  function paint() {
-    target.textContent = label();
+  function paintRelative(el) {
+    var raw = el.getAttribute(el.tagName === "SPAN" && el.id === "relative-time" ? "data-updated" : "data-time");
+    var then = raw ? new Date(raw).getTime() : NaN;
+    if (isFinite(then)) el.textContent = relative(then);
   }
-  paint();
-  window.setInterval(paint, 60000);
+
+  var header = document.getElementById("relative-time");
+  if (header) paintRelative(header);
+
+  var stamps = document.querySelectorAll(".timeline__relative");
+  for (var i = 0; i < stamps.length; i++) paintRelative(stamps[i]);
+
+  window.setInterval(function () {
+    if (header) paintRelative(header);
+    for (var j = 0; j < stamps.length; j++) paintRelative(stamps[j]);
+  }, 60000);
 })();
 </script>
 </body>
@@ -1148,15 +983,14 @@ footer.page a{font-weight:600}
 `;
 }
 
-/* ---------- build / heartbeat ---------- */
+/* ---------- בנייה ו-heartbeat ---------- */
 
 let lastBuildAt = null;
 
 function writeHeartbeat(mode, state, extra) {
-  const now = new Date().toISOString();
   const previous = readJsonSafe(HEARTBEAT_PATH) || {};
   const heartbeat = {
-    beatAt: now,
+    beatAt: new Date().toISOString(),
     updatedAt: state && state.meta ? state.meta.updatedAt : previous.updatedAt || null,
     mode,
     pid: process.pid,
@@ -1171,13 +1005,9 @@ function writeHeartbeat(mode, state, extra) {
   return heartbeat;
 }
 
-const TASKS_DATA_PATH = path.join(ROOT, "tasks-data.json");
-const AGENT_STATUS_OUT_PATH = path.join(ROOT, "agent-status.json");
-
 function readTasksData() {
   try {
-    const content = fs.readFileSync(TASKS_DATA_PATH, "utf8");
-    return JSON.parse(content);
+    return JSON.parse(fs.readFileSync(TASKS_DATA_PATH, "utf8"));
   } catch (err) {
     return null;
   }
@@ -1192,11 +1022,12 @@ function generateAgentStatus(state) {
     else if (agent.status === "waiting") status = "waiting";
     else if (agent.status === "blocked") status = "blocked";
     else if (agent.status === "done") status = "done";
-    
+    else if (agent.status === "standby") status = "standby";
+
     agentStatus.agents[agent.name] = {
       status,
       note: agent.currentTask || agent.conclusion || "",
-      updated: agent.reportedAt || agent.talkingWith?.lastChannelUpdate || null
+      updated: agent.reportedAt || (agent.talkingWith && agent.talkingWith.lastChannelUpdate) || null
     };
   }
   return agentStatus;
@@ -1209,15 +1040,10 @@ function build(mode) {
     throw new Error(`state.json invalid:\n- ${errors.join("\n- ")}`);
   }
 
-  // Read tasks data from Inspector
   const tasksData = readTasksData();
-  
-  // Generate agent-status.json for Inspector to consume
-  const agentStatus = generateAgentStatus(state);
-  writeFileAtomic(AGENT_STATUS_OUT_PATH, JSON.stringify(agentStatus, null, 2));
-  console.log(`[guli] wrote agent-status.json`);
-  
-  // Pass tasks data to HTML builder
+  writeFileAtomic(AGENT_STATUS_OUT_PATH, `${JSON.stringify(generateAgentStatus(state), null, 2)}\n`);
+  console.log("[guli] wrote agent-status.json");
+
   const html = buildHtml(state, tasksData);
   writeFileAtomic(OUT_PATH, html);
   lastBuildAt = new Date().toISOString();
@@ -1231,7 +1057,7 @@ function build(mode) {
 /* ---------- watch ---------- */
 
 function watchPaths() {
-  return [STATE_PATH, ...STATIC_SOURCES, ...channels()];
+  return [STATE_PATH, TASKS_DATA_PATH, ...STATIC_SOURCES, ...channels()];
 }
 
 function snapshot() {
@@ -1273,10 +1099,9 @@ function main() {
 
   if (!options.watch) return;
 
-  console.log(`[guli] watching ${watchPaths().length} files every ${options.interval}s (heartbeat every 60s, agent poll every 300s). Ctrl+C to stop.`);
+  console.log(`[guli] watching ${watchPaths().length} files every ${options.interval}s (heartbeat every 60s). Ctrl+C to stop.`);
   let current = snapshot();
   let lastBeat = Date.now();
-  lastPoll = Date.now();
 
   const timer = setInterval(() => {
     let next;
@@ -1302,30 +1127,6 @@ function main() {
         }
       }
       return;
-    }
-
-    // Poll agents every 5 minutes
-    if (Date.now() - lastPoll >= POLL_INTERVAL_MS) {
-      lastPoll = Date.now();
-      console.log("[guli] polling agent channels...");
-      try {
-        const agentUpdates = pollAllAgents();
-        const state = readJsonSafe(STATE_PATH);
-        if (state && state.agents) {
-          // Update each agent's talkingWith with latest channel info
-          for (const agent of state.agents) {
-            const upd = agentUpdates[agent.id];
-            if (upd && upd.lastUpdate !== "אין עדכון" && upd.lastUpdate !== "קובץ לא נמצא") {
-              agent.talkingWith = agent.talkingWith || {};
-              agent.talkingWith.lastChannelUpdate = upd.lastUpdate;
-            }
-          }
-          writeJsonSafe(STATE_PATH, state);
-          build("poll");
-        }
-      } catch (err) {
-        console.error(`[guli] agent poll failed: ${err.message}`);
-      }
     }
 
     if (Date.now() - lastBeat >= 60000) {

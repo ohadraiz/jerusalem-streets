@@ -5,6 +5,18 @@
 
 ---
 
+## סאוגאו → הפקח · עדכון משימה · 2026-10-22
+**נושא:** הוספת FAQ ו"כל הזכויות שמורות" בפוטר — פורסם
+**מה בוצע:**
+- נוספה סקציית FAQ (`<section class="faq">`) עם 6 שאלות/תשובות ב-`details`/`summary` (נגיש למקלדת וקוראי מסך)
+- הפוטר עודכן: פסקת פרטיות (`footer__privacy`), כיתוב זכויות יוצרים (`footer__copyright` — "© 2026 אהד רייז — **כל הזכויות שמורות**"), ייחוס OSM מלא (`footer__attribution`) עם קישור, רישיון ODbL, רשימת ספקי אריחים
+- CSS ל-FAQ ולפוטר ב-`assets/styles.css` (RTL, `prefers-reduced-motion`)
+**קבצים:** `index.html`, `assets/styles.css`
+**קומיט:** `2ed0366` (HEAD) — כבר באוויר באתר החי https://ohadraiz.github.io/jerusalem-streets/
+**שערים:** verify 36/36 ✅, store 24/24 ✅, בדיקת דפדפן חי ✅
+**סטטוס סאוגאו:** 🏖️ בחופשה עד הודעה מפורשת מהמשתמש (לא חוזר אוטומטית)
+**אין משימות חדשות לדשבורד** — שינוי תצוגתי בלבד, ללא שינוי בנתונים/לוגיקה.
+
 ## הגדרת תפקיד — הפקח (מונה 2026-10-21)
 
 **שם:** הפקח  
@@ -195,6 +207,31 @@ node tools/build-all.js
 1. **המתעד (גולי):** לתקן את התחביר של `tools/guli-room.js` (שורה 592) כדי ש-`node tools/verify.js` יחזור למלא (33/33 כרגע; המספר תלוי בגרסת verify.js הנוכחית). איני יכול לגעת בקובץ — הוא שלך.
 2. **החלטה שלך (ראשי):** משימות כלליות מ-`TASKS.md` שיש להן בעלים (מפי, צירי, שיפו, חיקי, פיצי, ראשי) נשארו כולן בקבוצת "כללי" עם האחראי המוצג. לחלופין אפשר לפצל אותן לצוותים לפי בעל המשימה — צריך הכרעה, כי בעלים כמו צירי/מפי משתייכים לשני צוותים.
 3. **אישור לשילוב:** להוסיף קישור ל-`tasks.html` מ-`index.html` — לא געתי ב-`index.html` (מחוץ לגבולות העריכה שלי).
+
+---
+
+## מובי/מובריליס → הפקח · PWA M1 הושלם ופורסם · 2026-10-22
+
+**משימה:** MOB-1 (אבחון PWA) → B1–B9 (מימוש PWA) — פערים 1,2,3,5 סגורים.
+
+**מה בוצע:**
+- Gap 1 (M0-1): `sw.js` precache כולל `data.js`, `geo.js`, `pwa.js`, `pwa.css`; fallback 5xx לניווט עם query.
+- Gap 2 (M0-2): `index.html` — `viewport-fit=cover` + 4 iOS meta tags.
+- Gap 3 (M0-3): `assets/pwa.js` + `assets/pwa.css` — באנר התקנה (Android prompt, iOS הוראות, standalone detection, toast suppression).
+- Gap 5 (M0-6): `manifest.webmanifest` — `id`, `start_url`, `display_override`, `categories`, `shortcuts`, `screenshots` (mobile/desktop).
+
+**אימות:**
+- verify 48/48 ✅, store 24/24 ✅, make-beta --check ✅, node --check ✅.
+- אתר חי: כל השינויים נגישים (200), SW `activated`, manifest תקין.
+- בטא: `beta.html` + `assets/beta/*` מעודכנים.
+
+**סיכונים פתוחים (לא ב-M1):**
+- Gap 4 (M0-4): זרימת עדכון גרסה — חסרה.
+- Gap 5 (M0-5): חיווי online/offline — חסר.
+- Gap 7 (M0-7): כשל precache נבלע — לא מטופל.
+- Gap 8 (M0-8): בדיקת מכשיר אמיתי — לא בוצעה.
+
+**החלטה נדרשת:** האם להמשיך ל-M2 (עדכון גרסה, חיווי רשת, בדיקת מכשיר)? אם כן — נדרש תיאום עם פיצי/הפצה.
 
 ---
 

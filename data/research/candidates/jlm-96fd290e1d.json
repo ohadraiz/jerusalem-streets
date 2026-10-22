@@ -1,0 +1,84 @@
+{
+  "street_id": "jlm-96fd290e1d",
+  "street_name": "הרכבת",
+  "area": "בקעה",
+  "lat": 31.761412,
+  "lng": 35.218828,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1767,
+      "name": "הרכבת",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "הרכבת הקלה בירושלים",
+    "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%9B%D7%91%D7%AA_%D7%94%D7%A7%D7%9C%D7%94_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+    "score": 11,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "הרכבת הקלה בירושלים היא מערך תחבורה ציבורית להסעת המונים בירושלים באמצעות רכבת קלה. רשת הרכבות הקלות בירושלים מתוכננת לכלול שלושה קווים מרכזיים, שכוללים בתוכם מספר שלוחות ומסלולים שונים: הקו האדום (L1, L2) הקו הירוק (L3, L4, L5) והקו הכחול (L6, L7, L8).\nעל בסיס שלושת הקווים האלה מתוכננים להיבנות ברחבי העיר כעשרה קווים, עם כ-70 תחנות, כ-160 קרונות (כ-80 רכבות), כ-70 ק\"מ מסילות (חלק מהמסילות והתחנות משותף לכמה קווים) וחזון של כ-500 אלף נוסעים מדי יום בכל קווי הרכבת הקלה בעיר. זהו מערך הרכבת הקלה הראשון בישראל, המהווה חלק מתוכנית תחבורתית כוללת בירושלים, שמלבד הרכבת הקלה כוללת גם תכנון לבניית נתיבי תחבורה ציבורית (נת\"צ) וסלילת כבישי טבעת חיצוניים סביב העיר.\nרשת רכבות הקלה המתוכננת כבר החלה לפעול בשניים משלושת הקווים, הקו האדום (נווה יעקב–הדסה עין כרם) שנפתח בשנת 2011, הקו הירוק (הר הצופים–גילה) שנפתח בהדרגה החל מ-21 באוגוסט 2026, והקו הכחול (רמות–גילה) הצפוי להיפתח בהדרגה בין השנים 2029–2031.\nתוכנית האב של הרכבת הקלה הוכנה עוד בשנת 1995 תחת ראש העירייה אהוד אולמרט ואושרה על ידי הממשלה ב-1998. עבודות התשתית החלו בפועל בשנת 2000 ותוכננו להסתיים עד 2006. בפועל, נפתח לציבור חלקו הראשון של הקו האדום ב-19 באוגוסט 2011, וב-27 בפברואר 2025 נפתח במתכונתו המלאה. אורכו של הקו האדום 22 קילומטר, הוא כולל 34 תחנות, הראשונה בנווה יעקב והאחרונה בהדסה עין כרם. היקף הנוסעים הממוצע ברכבת עומד על כ-170 אלף נוסעים ביום. העבודות להקמת הקו הירוק והקו הכחול החלו ב-2019.\nהחברה הראשונה שהפעילה את הרכבת הקלה בירושלים היא חברת \"סיטיפס\" לאחר שזכתה באוקטובר 2002 במכרז ההקמה והתפעול של הקו האדום. בעקבות סכסוכה עם המדינה, באוגוסט 2019 נבחרה במכרז חברת \"כפיר\" להחליף את חברת \"סיטיפס\" בהפעלת הקו האדום, וכן זכתה במסגרת המכרז בביצוע הארכת הקו האדום והקמה והפעלה של הקו הירוק. באפריל 2021 החלה \"כפיר\" להפעיל את הקו האדום. במסגרת המכרז, סיפקה חברת \"CAF\" הספרדית 114 קרונות רכבת קלה מדגם \"Urbos 100\" ומערכות נלוות לניהול ושליטה ושדרגה את 46 הרכבות הוותיקות. בנוסף הוקמו שני מרכזי תחזוקה גדולים חדשים, דפו 25 ודפו בנווה יעקב והורחב הדפו בגבעה הצרפתית. הקו הכחול יוקם ויופעל על ידי חברת \"Jtrain\" בבעלות \"דן\" ו\"דניה סיבוס\".",
+    "wikibase_item": "Q403269",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Jerusalem Light Rail",
+    "url": "https://en.wikipedia.org/wiki/Jerusalem_Light_Rail",
+    "score": 7,
+    "extract": "The Jerusalem Light Rail (Hebrew: הרכבת הקלה בירושלים, HaRakevet HaKala Birushalayim, Arabic: قطار القدس الخفيف, Qiṭār Al-Quds Al-Khafīf) is a light rail system in Jerusalem. Currently, the Red Line is the only one in full operation, and the Green Line is partially operational (11 out of 35 planned stations), with several more light rail lines planned in Jerusalem.\nConstruction on the Red line began in 2002 and ended in 2010, when the testing phase began. It was built by the CityPass consortium, which operated it until 2019. The project required construction of the Jerusalem Chords Bridge as well as other renovation projects around Jerusalem.\nAfter repeated delays due to archaeological discoveries and technical issues, service began, initially free of charge, on August 19, 2011. It became fully operational on December 1, 2011. The line is 22.5 kilometers (14.0 mi) long with 35 stops. The last extensions to the red line were opened in February 2025 to the Israeli settlement of Neve Yaakov and to Hadassah Ein Kerem Hospital to the southwest.\nWith a total estimated cost for the Red Line's initial section of ₪3.8 billion (approx. US $1.1 billion), the project was criticized for budget overruns, for its route serving Jewish settlements in East Jerusalem and for contributing to air and noise pollution during construction.\nThe Green line's plans have been approved by the city of Jerusalem, with right-of-way clearing works underway. Construction tenders, including those for the red line extension, were awarded in August 2019 to TransJerusalem J-Net Ltd., owned by CAF and Shapir Engineering, and the first phase became operational in August 2026.\nThe Blue line has been approved and works on it have started in several locations.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1411652367,
+    "name": "הרכבת",
+    "display_name": "הרכבת, ירושלים, המושבה הגרמנית, ירושלים, נפת ירושלים, מחוז ירושלים, 9347102, ישראל",
+    "category": "highway",
+    "type": "living_street",
+    "lat": 31.7620793,
+    "lon": 35.2196315,
+    "distance": 106.19041818865746,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1411652367"
+  },
+  "fact": "רחוב הרכבת קרוי על שם תחנת הרכבת ההיסטורית של ירושלים, שנחנכה ב-1892 כתחנת הקצה של קו יפו–ירושלים, פעלה כמעט ברציפות עד 1998, ומאז 2013 פועל במקום מתחם \"התחנה הראשונה\".",
+  "fact_type": "municipal+street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 1767)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1767",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — תחנת הרכבת ההיסטורית של ירושלים",
+      "url": "https://he.wikipedia.org/wiki/%D7%AA%D7%97%D7%A0%D7%AA_%D7%94%D7%A8%D7%9B%D7%91%D7%AA_%D7%94%D7%94%D7%99%D7%A1%D7%98%D7%95%D7%A8%D7%99%D7%AA_%D7%A9%D7%9C_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1411652367",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "הערך \"הרכבת הקלה בירושלים\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
+    "קיים ברשימה הרשמית: סמל רחוב 1767"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

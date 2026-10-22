@@ -11,3 +11,7 @@ Thumbs.db
 *.log
 # Measurement scratch output (shared across agents, not part of the project)
 *.measure-*-out.json
+
+# מטמון מחקר — נבנה מחדש אוטומטית; לא נשמר בגיט
+data/research/cache/
+data/research/street-list-raw.csv

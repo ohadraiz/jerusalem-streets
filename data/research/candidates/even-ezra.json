@@ -1,0 +1,86 @@
+{
+  "street_id": "even-ezra",
+  "street_name": "אבן עזרא",
+  "area": "רחביה",
+  "lat": 31.774735,
+  "lng": 35.213842,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 806,
+      "name": "אבן עזרא",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "יוחנן אבן עזרא",
+    "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%97%D7%A0%D7%9F_%D7%90%D7%91%D7%9F_%D7%A2%D7%96%D7%A8%D7%90",
+    "score": 7,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "ישות ויקינתונים"
+    ],
+    "extract": "יוחנן (ג'ון) אבן עזרא (1875–1947) היה קבלן, איש עסקים ואיש ציבור ירושלמי, יוזם ומניח קו המים הראשון לירושלים בתקופת המנדט הבריטי, וחבר ועד העדה המערבית בעיר.",
+    "wikibase_item": "Q30527512",
+    "coordinates": null
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q270670",
+      "label": "אברהם אבן עזרא",
+      "description": "פרשן, משורר, בלשן, אסטרונום ואסטרולוג מימי הביניים",
+      "birth": 1089,
+      "death": 1167,
+      "url": "https://www.wikidata.org/wiki/Q270670",
+      "hewiki": "אברהם אבן עזרא",
+      "enwiki": "Abraham ibn Ezra"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 120419556,
+    "name": "אבן עזרא",
+    "display_name": "אבן עזרא, ירושלים, רחביה, ירושלים, נפת ירושלים, מחוז ירושלים, 9426222, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7738329,
+    "lon": 35.2141074,
+    "distance": 103.39876983630765,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/120419556"
+  },
+  "fact": "הרחוב קרוי על שם אברהם אבן עזרא (1089–1164), פרשן מקרא, משורר, בלשן ופילוסוף מתקופת תור הזהב בספרד, שעסק גם באסטרונומיה.",
+  "fact_type": "municipal+street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 806)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=806",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — אברהם אבן עזרא",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%90%D7%91%D7%9F_%D7%A2%D7%96%D7%A8%D7%90",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/120419556",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "ישות ויקינתונים",
+    "הערך \"יוחנן אבן עזרא\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
+    "קיים ברשימה הרשמית: סמל רחוב 806"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,12 @@
+street_id: pinsker
+street_name: פינסקר
+area: טלביה
+fact: הרחוב קרוי על שם יהודה לייב פינסקר (1821–1891), רופא והוגה דעות, מראשי חיבת ציון ומחבר "אוטואמנציפציה!".
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1501
+source: https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%A4%D7%99%D7%A0%D7%A1%D7%A7%D7%A8
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/260350235
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal+person-article

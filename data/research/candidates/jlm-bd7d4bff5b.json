@@ -1,0 +1,162 @@
+{
+  "street_id": "jlm-bd7d4bff5b",
+  "street_name": "כיכר ציון",
+  "area": "נחלת שבעה",
+  "lat": 31.781957,
+  "lng": 35.219601,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": {
+    "title": "כיכר ציון",
+    "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A6%D7%99%D7%95%D7%9F",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 9מ׳"
+    ],
+    "extract": "כיכר ציון היא כיכר במרכז ירושלים. הכיכר נמצאת בנקודת המפגש של רחוב יפו, רחוב בן-יהודה, רחוב החבצלת ושכונת נחלת שבעה. הכיכר משמשת כמקום מפגש לבליינים ולבני נוער ירושלמים.",
+    "wikibase_item": "Q8072556",
+    "coordinates": {
+      "lat": 31.7820361,
+      "lon": 35.2196139,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Zion Square",
+    "url": "https://en.wikipedia.org/wiki/Zion_Square",
+    "score": 10,
+    "extract": "Zion Square (Hebrew: כיכר ציון, romanized: Kikar Tziyon) is a public square in Jerusalem, located at the intersection of Jaffa Road, Ben Yehuda Street, Herbert Samuel Street, and Yoel Moshe Salomon Street.\nThe square is one of the vertices of the Downtown Triangle commercial district. Since the British Mandate era, Zion Square has been the focal point of the cultural life of downtown Jerusalem. The square is busy day and night with tourists, elderly immigrants, overseas students, local youth, street performers, and religious activists. In recent decades, the square has become a hangout for disaffected and homeless youth.\nFrom the 1930s to 2011, the square was a popular site for mass protests and demonstrations."
+  },
+  "wikidata": {
+    "place": {
+      "id": "Q8072556",
+      "label": "כיכר ציון",
+      "description": "כיכר בירושלים",
+      "coord": {
+        "lat": 31.7820361,
+        "lon": 35.2196139
+      },
+      "distance": 8.87963564527299,
+      "type": "place",
+      "url": "https://www.wikidata.org/wiki/Q8072556",
+      "sitelinks": {
+        "arwiki": {
+          "site": "arwiki",
+          "title": "ميدان صهيون",
+          "badges": [
+            "Q70894304"
+          ]
+        },
+        "arzwiki": {
+          "site": "arzwiki",
+          "title": "ميدان صهيون",
+          "badges": []
+        },
+        "bnwiki": {
+          "site": "bnwiki",
+          "title": "সিয়োন চত্বর",
+          "badges": []
+        },
+        "cswiki": {
+          "site": "cswiki",
+          "title": "Sijónské náměstí",
+          "badges": []
+        },
+        "enwiki": {
+          "site": "enwiki",
+          "title": "Zion Square",
+          "badges": [
+            "Q17437798"
+          ]
+        },
+        "eowiki": {
+          "site": "eowiki",
+          "title": "Placo Ciono",
+          "badges": []
+        },
+        "eswiki": {
+          "site": "eswiki",
+          "title": "Plaza Sion",
+          "badges": []
+        },
+        "euwiki": {
+          "site": "euwiki",
+          "title": "Sion plaza",
+          "badges": []
+        },
+        "fawiki": {
+          "site": "fawiki",
+          "title": "میدان صهیون",
+          "badges": []
+        },
+        "frwiki": {
+          "site": "frwiki",
+          "title": "Place de Sion",
+          "badges": []
+        },
+        "hewiki": {
+          "site": "hewiki",
+          "title": "כיכר ציון",
+          "badges": []
+        },
+        "ptwiki": {
+          "site": "ptwiki",
+          "title": "Praça Sião",
+          "badges": []
+        },
+        "zhwiki": {
+          "site": "zhwiki",
+          "title": "锡安广场",
+          "badges": []
+        }
+      }
+    },
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 44202035,
+    "name": "כיכר ציון",
+    "display_name": "כיכר ציון, ירושלים, מגרש הרוסים, ירושלים, נפת ירושלים, מחוז ירושלים, ישראל",
+    "category": "place",
+    "type": "square",
+    "lat": 31.7819655,
+    "lon": 35.2195673,
+    "distance": 3.322661967433691,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/44202035"
+  },
+  "fact": "הכיכר קיבלה את שמה מקולנוע \"ציון\", שפעל במקום מ-1912 עד שנהרס ב-1972.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כיכר ציון",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A6%D7%99%D7%95%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/44202035",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 9מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

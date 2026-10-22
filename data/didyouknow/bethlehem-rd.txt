@@ -1,0 +1,11 @@
+street_id: bethlehem-rd
+street_name: דרך בית לחם
+area: תלפיות
+fact: דרך בית לחם עוקבת אחר הדרך העתיקה לבית לחם, שנחשפה בחפירות ארכאולוגיות: היא החלה בשער יפו והמשיכה במתווה הנוכחי עד העיר בית לחם.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%91%D7%99%D7%AA_%D7%9C%D7%97%D7%9D
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/1022644851
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

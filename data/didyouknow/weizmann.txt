@@ -1,0 +1,10 @@
+street_id: weizmann
+street_name: שדרות ויצמן
+area: רוממה
+fact: שדרות ויצמן קרויות על שם חיים ויצמן (1874–1952), הנשיא הראשון של מדינת ישראל, מיוזמי הצהרת בלפור ומייסד מכון ויצמן.
+source: https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1077
+source: https://www.openstreetmap.org/way/953939257
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: municipal-street-page

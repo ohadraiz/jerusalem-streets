@@ -1,0 +1,83 @@
+{
+  "street_id": "jlm-e6d8607535",
+  "street_name": "ישעיהו",
+  "area": "זכרון משה",
+  "lat": 31.786935,
+  "lng": 35.218091,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 349,
+      "name": "ישעיהו",
+      "score": 4
+    },
+    {
+      "code": 359,
+      "name": "ישעיהו פרס",
+      "score": 2
+    }
+  ],
+  "wikipedia": {
+    "title": "ישעיהו",
+    "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "יְשַׁעְיָהוּ בֶּן־אָמוֹץ או יְשַׁעְיָהוּ הַנָבִיא (נכתב גם: יְשַׁעְיָה) היה נביא שפעל בממלכת יהודה באמצע תקופת בית ראשון. ישעיהו נחשב לאחד הנביאים החשובים, המרכזיים והמשפיעים בנבואה הישראלית הקלאסית. הוא פעל בתקופה שממלכת אשור הייתה בשיאה וממלכת יהודה נחלשה. רבות מנבואותיו מתייחסות למהלכים המדיניים בתקופה זו.\n\nישעיהו התנבא רבות על עמי האזור ועל חורבנם העתידי, זאת בנוסף לנבואותיו על ממלכת ישראל. מספר הסברים ניתנו לסיבה להתנבאות זו על הממלכות, כאשר יש הטוענים כי מדובר בנבואות שנועדו לרומם את רוחו של עם ישראל באמירה כי עמי האזור יפלו בעוד ישראל ישרדו, לעומתם יש הטוענים כי ישעיהו התנבא ישירות אל העמים המוזכרים בנבואה. מספר חוקרים אף טוענים כי חלק מהנבואות כלל לא נתחברו על ידי ישעיהו. לפי הטוענים כי ישעיהו התנבא ישירות אל העמים המוזכרים בנבואה, ייתכן שהיה נביא מוכר בעמי האזור ולא רק בישראל.",
+    "wikibase_item": "Q188794",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Isaiah",
+    "url": "https://en.wikipedia.org/wiki/Isaiah",
+    "score": 4,
+    "extract": "Isaiah (UK:  or US: ; Hebrew: יְשַׁעְיָהוּ, Yəšaʿyāhū, \"Yahweh is salvation\"; also known as Isaias or Esaias from Greek: Ἠσαΐας) was the Israelite prophet, dated to the 8th century BC, after whom the Book of Isaiah is named.\nThe text of the Book of Isaiah refers to Isaiah as \"the prophet\", but the exact relationship between the Book of Isaiah and the actual prophet Isaiah is complicated. The traditional view is that all 66 chapters of the book of Isaiah were written by one man, Isaiah, possibly in two periods between 740 BC and c. 686 BC, separated by approximately 15 years.\nAnother widely held view suggests that parts of the first half of the book (chapters 1–39) originated with the historical prophet, interspersed with prose commentaries written in the time of King Josiah 100 years later, and that the remainder of the book dates from immediately before and immediately after the end of the exile in Babylon in the 6th century BC (almost two centuries after the time of the historical prophet), and that perhaps these later chapters represent the work of an ongoing school of prophets who prophesied in accordance with his prophecies.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 773806272,
+    "name": "ישעיהו",
+    "display_name": "ישעיהו, ירושלים, זכרון משה, ירושלים, נפת ירושלים, מחוז ירושלים, 9522901, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7869637,
+    "lon": 35.2179366,
+    "distance": 14.938301669877896,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/773806272"
+  },
+  "fact": "השם \"ישעיהו\" מתייחס לישעיהו: ישעיהו בןאמוץ או ישעיהו הנביא (נכתב גם: ישעיה) היה נביא שפעל בממלכת יהודה באמצע תקופת בית ראשון. ישעיהו נחשב לאחד הנביאים החשובים, המרכזיים והמשפיעים בנבואה הישראלית הקלאסית.",
+  "fact_type": "name-origin",
+  "confidence": "low",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/773806272",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום."
+  ],
+  "needs_review": true
+}

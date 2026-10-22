@@ -1,0 +1,96 @@
+{
+  "street_id": "emek-refaim",
+  "street_name": "עמק רפאים",
+  "area": "המושבה הגרמנית",
+  "lat": 31.76487,
+  "lng": 35.220819,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1636,
+      "name": "עמק רפאים",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב עמק רפאים",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A2%D7%9E%D7%A7_%D7%A8%D7%A4%D7%90%D7%99%D7%9D",
+    "score": 17,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "כותרת תואמת",
+      "ישות ויקינתונים",
+      "קואורדינטה 245מ׳"
+    ],
+    "extract": "רחוב עמק רפאים הוא רחוב בדרום ירושלים העובר בשכונות המושבה הגרמנית והמושבה היוונית. תחילתו של הרחוב בהתפצלות מדרך בית לחם ליד גן הפעמון והתחנה הראשונה, והוא נמשך דרומה עד לצומת אורנים בקצה המושבה היוונית. לרחוב חשיבות מסחרית ותרבותית רבה, ולאורכו מסעדות, בתי קפה ובתי עסק רבים. בעתיד מתוכנן לעבור בו הקו הכחול של הרכבת הקלה בירושלים.\nהרחוב סלול לאורך ערוץ נחל רפאים, בחלקו העליון והשטוח המכונה עמק רפאים, ומכאן שמו.",
+    "wikibase_item": "Q7884739",
+    "coordinates": {
+      "lat": 31.76320278,
+      "lon": 35.21912222,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Emek Refaim",
+    "url": "https://en.wikipedia.org/wiki/Emek_Refaim",
+    "score": 8,
+    "extract": "Emek Refaim (Hebrew: עמק רפאים, English: Valley of Ghosts) is the German Colony, a neighborhood in  Jerusalem, as well as its main street.  It takes its name from the biblical Valley of Rephaim which began its descent from Jerusalem here."
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 1413079199,
+    "name": "עמק רפאים",
+    "display_name": "עמק רפאים, ירושלים, המושבה היוונית, ירושלים, נפת ירושלים, מחוז ירושלים, 9347102, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7627416,
+    "lon": 35.2184435,
+    "distance": 326.26412204442613,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/1413079199"
+  },
+  "fact": "הרחוב סלול לאורך ערוץ נחל רפאים; המושבה הגרמנית, שהוקמה ב-1873 לאורכו, הפכה אותו לרחוב הראשי שלה.",
+  "fact_type": "municipal+street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 1636)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1636",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — רחוב עמק רפאים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A2%D7%9E%D7%A7_%D7%A8%D7%A4%D7%90%D7%99%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/1413079199",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "קואורדינטה 245מ׳"
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

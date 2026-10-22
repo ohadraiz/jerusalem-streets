@@ -1,0 +1,86 @@
+{
+  "street_id": "hovevei-tzion",
+  "street_name": "חובבי ציון",
+  "area": "טלביה",
+  "lat": 31.770396,
+  "lng": 35.219033,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1506,
+      "name": "חובבי ציון",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "חובבי ציון",
+    "url": "https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%91%D7%91%D7%99_%D7%A6%D7%99%D7%95%D7%9F",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "חובבי ציון (או חיבת ציון) הוא שם כולל לאגודות לאומיות יהודיות שקמו במזרח אירופה בשלהי המאה ה-19, שדגלו בעלייה לארץ ישראל, בהתיישבות בה ובעבודה חקלאית. התנועה הייתה חוליה מקשרת רעיונית ומעשית בין הוגי \"מבשרי הציונות\" ובין התנועה הציונית המדינית, והייתה הגורם המרכזי שמאחורי מפעל ההתיישבות של העלייה הראשונה. חברי התנועה הציבו להם למטרה לרכוש קרקעות בארץ ישראל, לעבדן ולהקים בהן מושבות חקלאיות, מתוך תפיסה שלפיה תקומתו הלאומית והכלכלית של העם היהודי מותנית בשיבה לארצו ובמעבר לחיי יצרנות.\n\nצמיחתה של התנועה הושפעה משילוב של מגמות לאומיות באירופה, תהליכי אמנציפציה, והפוגרומים בדרום-מערב האימפריה הרוסית (\"סופות בנגב\", 1881), שהבהירו לפעילים כי נדרשת עשייה עצמאית להבטחת גורל העם. במישור הרעיוני שילבה התנועה בין תפיסות הפרודוקטיביזציה ותנועת ההשכלה לבין תאולוגיה של \"גאולה טבעית\" – תפיסה שלפיה הגאולה אינה תהליך ניסי ופסיבי שמקורו בשמיים בלבד, אלא תהליך הדרגתי המותנה באקטיביזם אנושי, בעלייה ובהפרחת השממה. מנהיגי התנועה והוגיה שאפו לחולל תמורה בזהות היהודית: המרת דמותו של \"היהודי הגלותי\" (המתאפיין בפסיביות ובמיקוד בחיים רוחניים בלבד) והחייאת דמותו של \"היהודי המקראי\", הממזג בין חיי רוח לבין עשייה חומרית, עבודת כפיים ועצמאות.\n\nעם מנהיגיה והוגיה הבולטים של התנועה נמנו יהודה לייב פינסקר (מחבר \"אוטואמנציפציה!\"), משה לייב לילינבלום, והרב שמואל מוהליבר, לצד אישי ציבור ורבנים נוספים כגון יחיאל מיכל פינס, זאב יעבץ והרב מרדכי גימפל יפה. אף שחזונה הניח את התשתית המעשית והרעיונית להתיישבות הציונית, התנועה נתקלה בקשיים ארגוניים וכלכליים חמורים, וכן במתחים ופערים רעיוניים עמוקים בין הגורמים המשכילים-חילוניים ובין הגורמים האורתודוקסיים; אלה התבטאו בדיונים סביב מעמד הפרקטיקה הדתית אל מול העבודה החקלאית (כגון פולמוס השמיטה והיתר המכירה). על אף מגבלותיה, הייתה \"חובבי ציון\" התנועה שהפכה את הכמיהה לציון לפעולה לאומית ומעשית בשטח.",
+    "wikibase_item": "Q1071744",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Lovers of Zion",
+    "url": "https://en.wikipedia.org/wiki/Lovers_of_Zion",
+    "score": 4,
+    "extract": "The Lovers of Zion, also Hovevei Zion (Hebrew: חובבי ציון) or Hibbat Zion (Hebrew: חיבת ציון, lit. 'Love of Zion'), were a variety of proto-Zionist organizations founded in 1881 in response to the anti-Jewish pogroms in the Russian Empire and were officially constituted as a group at a conference led by Leon Pinsker in 1884.\nThe organizations are now considered the forerunners and foundation-builders of modern Zionism. Many of the first groups were established in Eastern European countries in the early 1880s with the aim to promote Jewish immigration to Palestine, and advance Jewish settlement there, particularly agricultural. Most of them stayed away from politics.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 4719676,
+    "name": "חובבי ציון",
+    "display_name": "חובבי ציון, ירושלים, טלביה, ירושלים, נפת ירושלים, מחוז ירושלים, 9214705, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7703902,
+    "lon": 35.2190334,
+    "distance": 0.6460381683639193,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/4719676"
+  },
+  "fact": "הרחוב קרוי על שם תנועת חובבי ציון, אגודות ציוניות שקמו במזרח אירופה בסוף המאה ה-19 ודגלו בעלייה, בהתיישבות ובעבודה חקלאית בארץ ישראל.",
+  "fact_type": "municipal+place-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "עיריית ירושלים — שמות רחובות (סמל 1506)",
+      "url": "https://www.jerusalem.muni.il/he/city/streetnames/streets?street=1506",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית — חובבי ציון",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%91%D7%91%D7%99_%D7%A6%D7%99%D7%95%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/4719676",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "נדרש אימות שהרחוב נקרא על שם המושג/המקום."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}
