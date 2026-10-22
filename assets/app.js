@@ -557,19 +557,17 @@
       { id: "all", icon: "🏆", title: "כל העיר", desc: "כל הרחובות סומנו", category: "progress", progress: total > 0 ? [visited, total] : null, unlocked: visited >= total && total > 0 }
     ];
 
-    if (isBeta()) {
-      badges = badges.concat([
-        { id: "ten", icon: "🌱", title: "10 רחובות", desc: "10 רחובות סומנו", category: "progress", progress: [visited, 10], unlocked: visited >= 10 },
-        { id: "fifty", icon: "🏙️", title: "50 רחובות", desc: "50 רחובות סומנו", category: "progress", progress: [visited, 50], unlocked: visited >= 50 },
-        { id: "streak3", icon: "☀️", title: "רצף 3 ימים", desc: "3 ימים ברצף", category: "streak", progress: [streak, 3], unlocked: streak >= 3 },
-        { id: "streak14", icon: "🌋", title: "רצף 14 ימים", desc: "14 ימים ברצף", category: "streak", progress: [streak, 14], unlocked: streak >= 14 },
-        { id: "twoAreas", icon: "🚏", title: "שתי שכונות שלמות", desc: "שתי שכונות הושלמו במלואן", category: "areas", progress: [doneAreas, 2], unlocked: doneAreas >= 2 },
-        { id: "fiveAreas", icon: "🗺️", title: "חמש שכונות שלמות", desc: "חמש שכונות הושלמו במלואן", category: "areas", progress: [doneAreas, 5], unlocked: doneAreas >= 5 },
-        { id: "rated20", icon: "⭐", title: "דירוג עשיר", desc: "20 ביקורים קיבלו דירוג", category: "insight", progress: [ratedCount, 20], unlocked: ratedCount >= 20 },
-        { id: "chronicler", icon: "📓", title: "כרוניקן", desc: "10 הערות נכתבו מהשטח", category: "insight", progress: [notedCount, 10], unlocked: notedCount >= 10 },
-        { id: "bigDay", icon: "⚡", title: "יום ענק", desc: "10 ביקורים ביום אחד", category: "streak", progress: [maxDay, 10], unlocked: maxDay >= 10 }
-      ]);
-    }
+    badges = badges.concat([
+      { id: "ten", icon: "🌱", title: "10 רחובות", desc: "10 רחובות סומנו", category: "progress", progress: [visited, 10], unlocked: visited >= 10 },
+      { id: "fifty", icon: "🏙️", title: "50 רחובות", desc: "50 רחובות סומנו", category: "progress", progress: [visited, 50], unlocked: visited >= 50 },
+      { id: "streak3", icon: "☀️", title: "רצף 3 ימים", desc: "3 ימים ברצף", category: "streak", progress: [streak, 3], unlocked: streak >= 3 },
+      { id: "streak14", icon: "🌋", title: "רצף 14 ימים", desc: "14 ימים ברצף", category: "streak", progress: [streak, 14], unlocked: streak >= 14 },
+      { id: "twoAreas", icon: "🚏", title: "שתי שכונות שלמות", desc: "שתי שכונות הושלמו במלואן", category: "areas", progress: [doneAreas, 2], unlocked: doneAreas >= 2 },
+      { id: "fiveAreas", icon: "🗺️", title: "חמש שכונות שלמות", desc: "חמש שכונות הושלמו במלואן", category: "areas", progress: [doneAreas, 5], unlocked: doneAreas >= 5 },
+      { id: "rated20", icon: "⭐", title: "דירוג עשיר", desc: "20 ביקורים קיבלו דירוג", category: "insight", progress: [ratedCount, 20], unlocked: ratedCount >= 20 },
+      { id: "chronicler", icon: "📓", title: "כרוניקן", desc: "10 הערות נכתבו מהשטח", category: "insight", progress: [notedCount, 10], unlocked: notedCount >= 10 },
+      { id: "bigDay", icon: "⚡", title: "יום ענק", desc: "10 ביקורים ביום אחד", category: "streak", progress: [maxDay, 10], unlocked: maxDay >= 10 }
+    ]);
     return badges;
   }
 
@@ -2978,7 +2976,7 @@
   var galleryBadgesView = true; /* בברירת מחדל בבטא — מוצגת הגלריה */
 
   function buildAchievementsGallery() {
-    if (!isBeta() || !el.achievementsDetails) return;
+    if (!el.achievementsDetails) return;
     if (document.getElementById("achievements-view-toggle")) return;
 
     var toggle = document.createElement("button");
@@ -3028,7 +3026,6 @@
   }
 
   function renderAchievementsGallery(badges) {
-    if (!isBeta()) return;
     var gallery = document.getElementById("achievements-gallery");
     if (!gallery) return;
     syncGalleryToggle();
@@ -3077,7 +3074,7 @@
   var journalActive = false;
 
   function buildJournalToggle() {
-    if (!isBeta() || !el.list || document.getElementById("journal-toggle")) return;
+    if (!el.list || document.getElementById("journal-toggle")) return;
     var controlsHost = document.querySelector(".list-controls");
     if (!controlsHost) return;
     var toggle = document.createElement("button");
@@ -3240,7 +3237,7 @@
   /* ---------- שלד טעינה (skeleton) ---------- */
 
   function renderListSkeleton() {
-    if (!isBeta() || !el.list) return;
+    if (!el.list) return;
     var rows = [];
     for (var i = 0; i < 6; i += 1) {
       rows.push(
@@ -3258,9 +3255,8 @@
   /* ---------- תזכורת עדינה — פעם ביום, רק אם עברו שני ימים לפחות ---------- */
 
   function bootDailyReminder() {
-    if (!isBeta()) return;
     var memory = sessionMemory();
-    var dayKey = "jlm-beta-reminder-" + today();
+    var dayKey = "jlm-reminder-" + today();
     if (memory && memory.getItem(dayKey)) return;
 
     var last = lastActivityISO();
@@ -3287,7 +3283,7 @@
   var undoHistoryActive = false;
 
   function buildUndoHistoryToggle() {
-    if (!isBeta() || !el.list || document.getElementById("undo-history-toggle")) return;
+    if (!el.list || document.getElementById("undo-history-toggle")) return;
     var controlsHost = document.querySelector(".list-controls");
     if (!controlsHost) return;
     var toggle = document.createElement("button");
@@ -3369,7 +3365,7 @@
   var DAILY_GOAL = 3; /* כמה רחובות לשאוף בכל יום */
 
   function buildDailyGoal() {
-    if (!isBeta() || !el.quickAreas || document.getElementById("daily-goal")) return;
+    if (!el.quickAreas || document.getElementById("daily-goal")) return;
     var badge = document.createElement("div");
     badge.id = "daily-goal";
     badge.className = "daily-goal";
@@ -3428,8 +3424,8 @@
   syncStatusButtons();
   syncThemeColor();
 
-  /* בטא: משרטטים שלד, ורק אחרי הפריים הראשון רונדרים את הרשימה המלאה (בלי לחסום את הציור) */
-  if (isBeta() && el.list) {
+  /* משרטטים שלד, ורק אחרי הפריים הראשון רונדרים את הרשימה המלאה (בלי לחסום את הציור) */
+  if (el.list) {
     buildAchievementsGallery();
     buildJournalToggle();
     buildUndoHistoryToggle();
