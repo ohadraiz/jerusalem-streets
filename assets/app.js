@@ -16,7 +16,7 @@
   var SEARCH_DEBOUNCE = 150;
   var UNDO_LIMIT = 10;
   var TOAST_TIMEOUT = 9000;
-  var PAGE_SIZE = 200;
+  var PAGE_SIZE = 50;
   var AREA_PAGE_SIZE = 20;
   var HIGHLIGHT_MS = 2600;
 
@@ -32,12 +32,15 @@
   /* מחסנית ביטול — בזיכרון בלבד, לא נשמרת באחסון ולא משנה את הסכמה */
   var undoStack = [];
   var toastTimer = 0;
+  /* האלמנט שהיה ממוקד לפני שההתראה הופיעה — להחזרת הפוקוס כשההתראה נסגרת */
+  var toastReturnFocus = null;
 
   /* מצב האקורדיון והתצוגה — בזיכרון בלבד */
   var openAreas = new Set();
   var areaLimit = AREA_PAGE_SIZE;
   var sortMode = "remaining";
   var listView = "areas"; // "areas" | "all"
+  var streetSortMode = "asc"; // "asc" (א–ת) | "desc" (ת–א)
   var flatListPage = 1; // for paginated flat list
 
   /* שכונות שכבר חוגגו כ"הושלמה" בסשן הנוכחי — מונע חגיגה כפולה */
@@ -63,6 +66,7 @@
     area: document.getElementById("area-filter"),
     areaOptions: document.getElementById("area-options"),
     areaSort: document.getElementById("area-sort"),
+    streetSort: document.getElementById("street-sort"),
     areaSortWrap: null,
     listHint: document.getElementById("list-hint"),
     viewButtons: Array.prototype.slice.call(document.querySelectorAll("[data-view]")),
@@ -97,10 +101,12 @@
     toastClose: document.getElementById("toast-close"),
     voiceToggle: document.getElementById("voice-toggle"),
     soundToggle: document.getElementById("sound-toggle"),
+    themeToggle: document.getElementById("theme-toggle"),
     randomBtn: document.getElementById("random-street"),
     celebration: document.getElementById("celebration"),
     achievementsList: document.getElementById("achievements-list"),
     achievementsCount: document.getElementById("achievements-count"),
+    achievementsDetails: document.getElementById("achievements-details"),
     live: document.getElementById("live")
   };
 
@@ -368,6 +374,72 @@
     );
   }
 
+  /** התנהגות גלילה: "smooth" או "auto" — לפי העדפת תנועה מופחתת */
+  function scrollBehavior() {
+    return prefersReducedMotion() ? "auto" : "smooth";
+  }
+
+  /**
+   * גלילה חלקה רק למרחקים קצרים: קפיצה של כ־3,000 פיקסלים עם "smooth"
+   * נמשכת ב-Chrome כ־2.5 שניות, וזו נראית כמו תקיעה. לכן קפיצה ארוכה
+   * מתבצעת מיד ("auto"), ורק קפיצות קצרות מתחלקות בלי ניבוי.
+   */
+  var SMOOTH_SCROLL_LIMIT = 1200;
+
+  function scrollBehaviorFor(distance) {
+    if (prefersReducedMotion()) return "auto";
+    return Math.abs(distance || 0) > SMOOTH_SCROLL_LIMIT ? "auto" : "smooth";
+  }
+
+  /* ---------- מצב תצוגה: בהיר / כהה ---------- */
+
+  var themeMedia = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  /* null = לפי העדפת המערכת. הבחירה הידנית קיימת למשך השימוש בלבד —
+     היא לא נשמרת באחסון (המפתח והסכמה קפוחים) ולכן אינה נוצרת קבצים חדשים. */
+  var themeOverride = null;
+
+  function systemPrefersDark() {
+    return Boolean(themeMedia && themeMedia.matches);
+  }
+
+  function effectiveTheme() {
+    if (themeOverride) return themeOverride;
+    return systemPrefersDark() ? "dark" : "light";
+  }
+
+  function syncThemeButton() {
+    if (!el.themeToggle) return;
+    var dark = effectiveTheme() === "dark";
+    var label = dark ? "מעבר למצב בהיר" : "מעבר למצב כהה";
+    el.themeToggle.setAttribute("aria-pressed", dark ? "true" : "false");
+    el.themeToggle.textContent = dark ? "🌗 מצב בהיר" : "🌗 מצב כהה";
+    el.themeToggle.setAttribute("aria-label", label);
+    el.themeToggle.setAttribute("title", label);
+  }
+
+  /** צבע שורת הדפדפן (theme-color) — מתעדכן לפי הערכה האפקטיבית */
+  function syncThemeColor() {
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (!meta) return;
+    meta.setAttribute("content", effectiveTheme() === "dark" ? "#17140f" : "#b5601f");
+  }
+
+  /** מעבר בין בהיר לכהה — משותף לכפתור ולקיצור המקלדת */
+  function toggleTheme() {
+    applyTheme(effectiveTheme() === "dark" ? "light" : "dark");
+    announce(effectiveTheme() === "dark" ? "מצב כהה." : "מצב בהיר.");
+  }
+
+  function applyTheme(theme) {
+    themeOverride = theme;
+    var root = document.documentElement;
+    if (theme === "dark") root.setAttribute("data-theme", "dark");
+    else if (theme === "light") root.setAttribute("data-theme", "light");
+    else root.removeAttribute("data-theme");
+    syncThemeButton();
+    syncThemeColor();
+  }
+
   /** חגיגה ויזואלית קצרה (לא קול) — מושבתת אוטומטית בהעדפת תנועה מופחתת */
   function celebrate(text) {
     if (!el.celebration || prefersReducedMotion()) return;
@@ -388,7 +460,10 @@
    * שני האחוזים הם התקדמות כלל-עירית (רחובות שסומנו ÷ כל הרחובות הפעילים),
    * לא אחוז השכונה — אחרת 10 רחובות בשכונה קטנה היו משגיעים ל"10% מהרחובות".
    */
-  function checkMilestones(beforePercent, afterPercent) {
+  /** אבני דרך לפי התקדמות כלל-עירית: מקבל visited/total (לא אחוזים!) כדי למנוע טעות חוזה */
+  function checkMilestones(beforeVisited, beforeTotal, afterVisited, afterTotal) {
+    var beforePercent = beforeTotal ? (beforeVisited / beforeTotal) * 100 : 0;
+    var afterPercent = afterTotal ? (afterVisited / afterTotal) * 100 : 0;
     var marks = [10, 25, 50, 75, 90, 100];
     for (var i = 0; i < marks.length; i += 1) {
       var mark = marks[i];
@@ -430,9 +505,20 @@
   var unlockedBadges = new Set();
   var achievementsPrimed = false;
 
-  /** הישגים — מחושבים מההתקדמות (לא נשמרים בנפרד) */
-  function renderAchievements() {
-    if (!el.achievementsList) return;
+  /** קטגוריות ההישגים — מסדרות את הגלריה בסביבת הבטא */
+  var ACHIEVEMENT_CATEGORIES = [
+    { id: "progress", label: "התקדמות ברחובות" },
+    { id: "areas", label: "שכונות" },
+    { id: "streak", label: "קצב ורצף" },
+    { id: "insight", label: "התבוננות וסגנון" }
+  ];
+
+  /**
+   * הישגים — מחושבים מההתקדמות (לא נשמרים בנפרד).
+   * בסביבת הבטא: 9 הישגים נוספים + נתוני התקדמות לכל הישג, לגלריית ההישגים.
+   * באתר הציבורי — בדיוק אותם 9 הישגים ואותו סדר כמו קודם.
+   */
+  function buildBadges() {
     var streets = allStreets();
     var total = streets.length;
     var visited = countVisited();
@@ -442,17 +528,54 @@
     var anyAreaDone = rows.some(function (r) { return r.total > 0 && r.visited >= r.total; });
     var manualCount = Object.keys(state.manualCompletions || {}).length;
 
+    /* נתוני עזר להישגים המורחבים — נגזרים מהמצב הקיים, ללא שינוי סכימה */
+    var doneAreas = rows.filter(function (r) { return r.total > 0 && r.visited >= r.total; }).length;
+    var ratedCount = 0;
+    var notedCount = 0;
+    var perDay = Object.create(null);
+    Object.keys(state.visited).forEach(function (id) {
+      var rec = state.visited[id];
+      if (!rec) return;
+      if (Number(rec.rating || 0) > 0) ratedCount += 1;
+      if (String(rec.note || "").trim()) notedCount += 1;
+      if (rec.date) perDay[rec.date] = (perDay[rec.date] || 0) + 1;
+    });
+    var maxDay = 0;
+    Object.keys(perDay).forEach(function (day) {
+      if (perDay[day] > maxDay) maxDay = perDay[day];
+    });
+
     var badges = [
-      { id: "first", icon: "🚶", title: "צעד ראשון", desc: "סמנו את הרחוב הראשון", unlocked: visited >= 1 },
-      { id: "quarter", icon: "🏅", title: "רבע העיר", desc: "25% מהרחובות", unlocked: percent >= 25 },
-      { id: "half", icon: "🌟", title: "חצי העיר", desc: "50% מהרחובות", unlocked: percent >= 50 },
-      { id: "hundred", icon: "🎯", title: "100 רחובות", desc: "100 רחובות סומנו", unlocked: visited >= 100 },
-      { id: "area", icon: "🏘️", title: "שכונה שלמה", desc: "כל הרחובות בשכונה", unlocked: anyAreaDone },
-      { id: "manual", icon: "✍️", title: "סיום ידני", desc: "סיום ידני של שכונה", unlocked: manualCount > 0 },
-      { id: "streak7", icon: "🔥", title: "רצף 7 ימים", desc: "7 ימים ברצף", unlocked: streak >= 7 },
-      { id: "voice", icon: "🔊", title: "חיווי קולי", desc: "חיווי קולי מופעל", unlocked: settings().voice },
-      { id: "all", icon: "🏆", title: "כל העיר", desc: "כל הרחובות סומנו", unlocked: visited >= total && total > 0 }
+      { id: "first", icon: "🚶", title: "צעד ראשון", desc: "סמנו את הרחוב הראשון", category: "progress", progress: [visited, 1], unlocked: visited >= 1 },
+      { id: "quarter", icon: "🏅", title: "רבע העיר", desc: "25% מהרחובות", category: "progress", progress: [visited, Math.ceil(total * 0.25)], unlocked: percent >= 25 },
+      { id: "half", icon: "🌟", title: "חצי העיר", desc: "50% מהרחובות", category: "progress", progress: [visited, Math.ceil(total * 0.5)], unlocked: percent >= 50 },
+      { id: "hundred", icon: "🎯", title: "100 רחובות", desc: "100 רחובות סומנו", category: "progress", progress: [visited, 100], unlocked: visited >= 100 },
+      { id: "area", icon: "🏘️", title: "שכונה שלמה", desc: "כל הרחובות בשכונה", category: "areas", progress: [doneAreas, 1], unlocked: anyAreaDone },
+      { id: "manual", icon: "✍️", title: "סיום ידני", desc: "סיום ידני של שכונה", category: "areas", progress: [manualCount, 1], unlocked: manualCount > 0 },
+      { id: "streak7", icon: "🔥", title: "רצף 7 ימים", desc: "7 ימים ברצף", category: "streak", progress: [streak, 7], unlocked: streak >= 7 },
+      { id: "voice", icon: "🔊", title: "חיווי קולי", desc: "חיווי קולי מופעל", category: "insight", progress: null, unlocked: settings().voice },
+      { id: "all", icon: "🏆", title: "כל העיר", desc: "כל הרחובות סומנו", category: "progress", progress: total > 0 ? [visited, total] : null, unlocked: visited >= total && total > 0 }
     ];
+
+    if (isBeta()) {
+      badges = badges.concat([
+        { id: "ten", icon: "🌱", title: "10 רחובות", desc: "10 רחובות סומנו", category: "progress", progress: [visited, 10], unlocked: visited >= 10 },
+        { id: "fifty", icon: "🏙️", title: "50 רחובות", desc: "50 רחובות סומנו", category: "progress", progress: [visited, 50], unlocked: visited >= 50 },
+        { id: "streak3", icon: "☀️", title: "רצף 3 ימים", desc: "3 ימים ברצף", category: "streak", progress: [streak, 3], unlocked: streak >= 3 },
+        { id: "streak14", icon: "🌋", title: "רצף 14 ימים", desc: "14 ימים ברצף", category: "streak", progress: [streak, 14], unlocked: streak >= 14 },
+        { id: "twoAreas", icon: "🚏", title: "שתי שכונות שלמות", desc: "שתי שכונות הושלמו במלואן", category: "areas", progress: [doneAreas, 2], unlocked: doneAreas >= 2 },
+        { id: "fiveAreas", icon: "🗺️", title: "חמש שכונות שלמות", desc: "חמש שכונות הושלמו במלואן", category: "areas", progress: [doneAreas, 5], unlocked: doneAreas >= 5 },
+        { id: "rated20", icon: "⭐", title: "דירוג עשיר", desc: "20 ביקורים קיבלו דירוג", category: "insight", progress: [ratedCount, 20], unlocked: ratedCount >= 20 },
+        { id: "chronicler", icon: "📓", title: "כרוניקן", desc: "10 הערות נכתבו מהשטח", category: "insight", progress: [notedCount, 10], unlocked: notedCount >= 10 },
+        { id: "bigDay", icon: "⚡", title: "יום ענק", desc: "10 ביקורים ביום אחד", category: "streak", progress: [maxDay, 10], unlocked: maxDay >= 10 }
+      ]);
+    }
+    return badges;
+  }
+
+  function renderAchievements() {
+    if (!el.achievementsList) return;
+    var badges = buildBadges();
 
     var newly = [];
     badges.forEach(function (b) {
@@ -479,10 +602,13 @@
             '<span class="achievement__icon" aria-hidden="true">' + b.icon + "</span>" +
             '<span class="achievement__title">' + escapeHtml(b.title) + "</span>" +
             '<span class="achievement__desc">' + escapeHtml(b.desc) + "</span>" +
+            /* המצב "נעול" מסומן במילה, לא רק באטימות — כך שהוא קריא גם למי שאינו מבחין בצבע */
+            (b.unlocked ? "" : '<span class="achievement__lock">לא פתוח</span>') +
           "</li>"
         );
       }).join("");
     }
+    renderAchievementsGallery(badges);
   }
 
   /** "רחוב אקראי" — מציע רחוב שטרם ביקרתם בו, עובר אליו ומדגיש אותו */
@@ -501,7 +627,13 @@
     var row = findRow(pick.id);
     if (row) {
       highlightRow(pick.id);
-      row.scrollIntoView({ block: "center" });
+      if (typeof row.scrollIntoView === "function") {
+        var offset = row.getBoundingClientRect().top;
+        row.scrollIntoView({ block: "center", behavior: scrollBehaviorFor(offset) });
+      }
+      /* הפוקוס עובר לרחוב המוצע — כך מקלדת יכולה להמשיך משם (Enter למפה, "v" לסימון) */
+      var nameButton = row.querySelector('[data-action="goto"]');
+      if (nameButton) nameButton.focus({ preventScroll: true });
     }
     var text = "הצעה: אולי תבקרו ברחוב " + pick.name + (pick.area ? " ב" + pick.area : "") + ".";
     showToast(text, null);
@@ -652,10 +784,11 @@
     return listView === "all" || isSearchMode();
   }
 
-  /** רחובות לתצוגה השטוחה — מסודרים א׳–ת, בלי לשנות את סדר הנתונים */
+  /** רחובות לתצוגה השטוחה — לפי מיון האותיות, בלי לשנות את סדר הנתונים */
   function flatStreets() {
     return visibleStreets().slice().sort(function (a, b) {
-      return String(a.name || "").localeCompare(String(b.name || ""), "he");
+      var order = String(a.name || "").localeCompare(String(b.name || ""), "he");
+      return streetSortMode === "desc" ? -order : order;
     });
   }
 
@@ -795,14 +928,16 @@
                   '<input type="text" data-action="note" maxlength="500" aria-label="הערה על ' + name + '" placeholder="מה זכור לכם מהמקום?" value="' +
                     escapeHtml(record.note || "") + '" />' +
                 "</label>" +
-                '<div class="street__rating" role="radiogroup" aria-label="דירוג הביקור">' +
+                '<div class="street__rating" role="group" aria-label="דירוג הביקור ב' + name + '">' +
                   [1, 2, 3, 4, 5].map(function (n) {
-                    return '<button type="button" class="street__star' + (record.rating >= n ? " is-on" : "") + '" data-action="rate" data-id="' + escapeHtml(street.id) + '" data-rating="' + n + '" aria-pressed="' + (record.rating >= n ? "true" : "false") + '" aria-label="דירוג ' + n + ' מתוך 5">★</button>';
+                    var on = record.rating >= n;
+                    return '<button type="button" class="street__star' + (on ? " is-on" : "") + '" data-action="rate" data-id="' + escapeHtml(street.id) + '" data-rating="' + n + '" aria-pressed="' + (on ? "true" : "false") + '" aria-label="דירוג ' + n + ' מתוך 5">' + (on ? "★" : "☆") + "</button>";
                   }).join("") +
                 "</div>" +
-                '<div class="street__moods" role="group" aria-label="הרגשה">' +
+                '<div class="street__moods" role="group" aria-label="הרגשה ב' + name + '">' +
                   [["😊", "נהדר"], ["🙂", "טוב"], ["😐", "בסדר"], ["😕", "פחות"]].map(function (m) {
-                    return '<button type="button" class="street__mood' + (record.mood === m[1] ? " is-on" : "") + '" data-action="mood" data-id="' + escapeHtml(street.id) + '" data-mood="' + escapeHtml(m[1]) + '" aria-pressed="' + (record.mood === m[1] ? "true" : "false") + '">' + m[0] + " " + m[1] + "</button>";
+                    var on = record.mood === m[1];
+                    return '<button type="button" class="street__mood' + (on ? " is-on" : "") + '" data-action="mood" data-id="' + escapeHtml(street.id) + '" data-mood="' + escapeHtml(m[1]) + '" aria-pressed="' + (on ? "true" : "false") + '"><span class="street__mood__emoji" aria-hidden="true">' + m[0] + "</span> " + m[1] + "</button>";
                   }).join("") +
                 "</div>" +
               "</div>"
@@ -918,6 +1053,22 @@
     );
   }
 
+  /**
+   * סרגל העימוד — מופיע פעמיים (למעלה ולמטה). לכל אחד שם נגיש אחר,
+   * כדי שלא יהיו שני אזורי ניווט זהים בעץ הנגישות.
+   */
+  function paginationMarkup(totalPages, position) {
+    var prevBtn = flatListPage > 1
+      ? '<button type="button" class="pagination__btn" data-action="flat-prev" aria-label="עמוד קודם">‹ קודם</button>'
+      : '<span class="pagination__btn pagination__btn--disabled" aria-hidden="true">‹ קודם</span>';
+    var nextBtn = flatListPage < totalPages
+      ? '<button type="button" class="pagination__btn" data-action="flat-next" aria-label="עמוד הבא">הבא ›</button>'
+      : '<span class="pagination__btn pagination__btn--disabled" aria-hidden="true">הבא ›</span>';
+    var pageInfo = '<span class="pagination__info" aria-live="polite">עמוד ' + flatListPage + " מתוך " + totalPages + "</span>";
+    var label = position === "top" ? "דפדוף תוצאות — למעלה" : "דפדוף תוצאות — למטה";
+    return '<li class="pagination" role="navigation" aria-label="' + label + '">' + prevBtn + pageInfo + nextBtn + "</li>";
+  }
+
   /** תצוגה שטוחה — בשימוש חיפוש פעיל */
   function renderFlatList(streets) {
     var total = streets.length;
@@ -928,19 +1079,10 @@
     var start = (flatListPage - 1) * PAGE_SIZE;
     var slice = streets.slice(start, start + PAGE_SIZE);
 
-    var pagination = "";
-    if (totalPages > 1) {
-      var prevBtn = flatListPage > 1
-        ? '<button type="button" class="pagination__btn" data-action="flat-prev" aria-label="עמוד קודם">‹ קודם</button>'
-        : '<span class="pagination__btn pagination__btn--disabled" aria-hidden="true">‹ קודם</span>';
-      var nextBtn = flatListPage < totalPages
-        ? '<button type="button" class="pagination__btn" data-action="flat-next" aria-label="עמוד הבא">הבא ›</button>'
-        : '<span class="pagination__btn pagination__btn--disabled" aria-hidden="true">הבא ›</span>';
-      var pageInfo = '<span class="pagination__info" aria-live="polite">עמוד ' + flatListPage + ' מתוך ' + totalPages + '</span>';
-      pagination = '<div class="pagination" role="navigation" aria-label="דפדוף תוצאות">' + prevBtn + pageInfo + nextBtn + '</div>';
-    }
+    var pagination = totalPages > 1 ? paginationMarkup(totalPages, "top") : "";
 
-    el.list.innerHTML = pagination + slice.map(streetRow).join("") + pagination;
+    el.list.innerHTML =
+      pagination + slice.map(streetRow).join("") + (totalPages > 1 ? paginationMarkup(totalPages, "bottom") : "");
 
     el.count.textContent =
       formatNumber(total) + " רחובות" +
@@ -1010,6 +1152,7 @@
   /** מסתיר את מיון השכונות בתצוגה שטוחה ומעדכן את הרמז שמעל הרשימה */
   function syncListControls() {
     if (el.areaSortWrap) el.areaSortWrap.hidden = isFlatMode();
+    if (el.streetSort) el.streetSort.closest(".field--street-sort").hidden = !isFlatMode();
     if (!el.listHint) return;
 
     var text;
@@ -1058,6 +1201,9 @@
     if (Math.abs((window.scrollY || 0) - scrollY) > 1) {
       window.scrollTo(0, scrollY);
     }
+
+    /* בטא: בזמן תצוגת היומן הרשימה מוסתרת כולה — מצב-הריק שלה לא אמור להופיע */
+    if (journalActive && el.empty) el.empty.hidden = true;
 
     return result.count;
   }
@@ -1305,14 +1451,16 @@
   function scrollToList() {
     var title = document.getElementById("list-title");
     if (title && typeof title.scrollIntoView === "function") {
-      title.scrollIntoView({ block: "start", behavior: "smooth" });
+      var top = title.getBoundingClientRect().top;
+      title.scrollIntoView({ block: "start", behavior: scrollBehaviorFor(top) });
     }
   }
 
   function scrollToMap() {
     var section = el.mapSection;
     if (section && typeof section.scrollIntoView === "function") {
-      section.scrollIntoView({ block: "start", behavior: "smooth" });
+      var top = section.getBoundingClientRect().top;
+      section.scrollIntoView({ block: "start", behavior: scrollBehaviorFor(top) });
     }
   }
 
@@ -1373,13 +1521,10 @@
       renderList();
     }
     focusAreaControl(area, "area-focus");
-    
-    // Scroll map into view so user sees the focused area
-    var mapEl = document.getElementById("map-section");
-    if (mapEl) {
-      mapEl.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    
+
+    /* גלילה למפה כדי שהמשתמש יראה את השכונה שמוקדה */
+    scrollToMap();
+
     announce("ממוקד בשכונה " + area + ".");
   }
 
@@ -1462,8 +1607,8 @@
       speak("סומנו " + formatNumber(pending.length) + " רחובות בשכונה " + area + ".");
     }
     checkMilestones(
-      percentValue(cityBefore.visited, cityBefore.total),
-      percentValue(cityAfter.visited, cityAfter.total)
+      cityBefore.visited, cityBefore.total,
+      cityAfter.visited, cityAfter.total
     );
     playSound(completion && completion.kind === "done" ? "complete" : "mark");
     haptic(completion && completion.kind === "done" ? [40, 60, 40] : 15);
@@ -1551,7 +1696,7 @@
     var batch = [];
     marked.forEach(function (street) {
       var record = state.visited[street.id];
-      batch.push({ id: street.id, prev: { date: record.date, note: record.note } });
+      batch.push({ id: street.id, prev: { date: record.date, note: record.note, rating: record.rating, mood: record.mood } });
       delete state.visited[street.id];
     });
 
@@ -1749,7 +1894,8 @@
     if (!row) return false;
 
     if (typeof row.scrollIntoView === "function") {
-      row.scrollIntoView({ block: "center", behavior: "smooth" });
+      var offset = row.getBoundingClientRect().top;
+      row.scrollIntoView({ block: "center", behavior: scrollBehaviorFor(offset) });
     }
     highlightRow(id);
 
@@ -1791,7 +1937,7 @@
     /* עותק לפני השינוי — מאפשר לבטל את הפעולה ולהחזיר תאריך והערה */
     var wasVisited = isVisited(id);
     var prev = wasVisited
-      ? { date: state.visited[id].date, note: state.visited[id].note }
+      ? { date: state.visited[id].date, note: state.visited[id].note, rating: state.visited[id].rating, mood: state.visited[id].mood }
       : null;
 
     var message;
@@ -1838,8 +1984,8 @@
         speak("סומן ביקור ברחוב " + street.name + ".");
       }
       checkMilestones(
-        percentValue(cityBefore.visited, cityBefore.total),
-        percentValue(cityAfter.visited, cityAfter.total)
+        cityBefore.visited, cityBefore.total,
+        cityAfter.visited, cityAfter.total
       );
       playSound(completion && completion.kind === "done" ? "complete" : "mark");
       haptic(completion && completion.kind === "done" ? [40, 60, 40] : 15);
@@ -1904,6 +2050,12 @@
 
   function showToast(message, undoLabel) {
     if (!el.toast) return;
+    /* לפני שההתראה מופיעה — שומרים את מקום הפוקוס, כדי להחזיר אליו אם ההתראה
+       נסגרת (או מתפוגשת) בזמן שהפוקוס היה בתוך ההתראה */
+    if (el.toast.hidden) {
+      var active = document.activeElement;
+      toastReturnFocus = active && active !== document.body ? active : null;
+    }
     el.toastText.textContent = message;
     if (undoLabel) {
       el.toastUndo.textContent = undoLabel;
@@ -1918,13 +2070,27 @@
 
   function hideToast() {
     window.clearTimeout(toastTimer);
-    if (el.toast) el.toast.hidden = true;
+    if (!el.toast) return;
+    var hadFocus = el.toast.contains(document.activeElement);
+    el.toast.hidden = true;
+    if (!hadFocus) return;
+    /* הפוקוס היה בתוך ההתראה שנסגרה — מחזירים אותו למקום שממנו יצא */
+    var back = toastReturnFocus;
+    toastReturnFocus = null;
+    if (back && back.parentNode && typeof back.focus === "function") {
+      back.focus({ preventScroll: true });
+    } else if (el.list) {
+      el.list.focus({ preventScroll: true });
+    }
   }
 
   /** מחזיר את הרחובים למצבם לפני הפעולה האחרונה — כולל תאריך והערה */
   function undoLastAction() {
     var entry = undoStack.pop();
-    if (!entry) return;
+    if (!entry) {
+      announce("אין פעולה שאפשר לבטל.");
+      return;
+    }
 
     /* סיום ידני — משחזר את הרשומה הקודמת או מסיר אותה, בלי לגעת בביקורים */
     if (entry.type === "manual-complete") {
@@ -1971,7 +2137,7 @@
     if (entry.batch) {
       entry.batch.forEach(function (item) {
         if (item.prev) {
-          state.visited[item.id] = { date: item.prev.date, note: item.prev.note };
+          state.visited[item.id] = { date: item.prev.date, note: item.prev.note, rating: item.prev.rating || 0, mood: item.prev.mood || "" };
         } else if (Object.prototype.hasOwnProperty.call(state.visited, item.id)) {
           delete state.visited[item.id];
         }
@@ -1998,7 +2164,7 @@
     }
 
     if (entry.prev) {
-      state.visited[entry.id] = { date: entry.prev.date, note: entry.prev.note };
+      state.visited[entry.id] = { date: entry.prev.date, note: entry.prev.note, rating: entry.prev.rating || 0, mood: entry.prev.mood || "" };
     } else if (Object.prototype.hasOwnProperty.call(state.visited, entry.id)) {
       delete state.visited[entry.id];
     }
@@ -2075,6 +2241,10 @@
       if (el.voiceToggle) {
         el.voiceToggle.setAttribute("aria-pressed", settings().voice ? "true" : "false");
         el.voiceToggle.classList.toggle("is-active", settings().voice);
+      }
+      if (el.soundToggle) {
+        el.soundToggle.setAttribute("aria-pressed", settings().sound ? "true" : "false");
+        el.soundToggle.classList.toggle("is-active", settings().sound);
       }
 
       // מונע התנגשות בין מזהה מיובא למזהה של רחוב בסיס (שתי שורות עם אותו data-id)
@@ -2192,6 +2362,15 @@
     });
   }
 
+  if (el.streetSort) {
+    el.streetSort.addEventListener("change", function () {
+      streetSortMode = el.streetSort.value;
+      flatListPage = 1;
+      renderList();
+      announce("הרחובות ממוינים לפי שם: " + el.streetSort.options[el.streetSort.selectedIndex].text + ".");
+    });
+  }
+
   el.viewButtons.forEach(function (button) {
     button.addEventListener("click", function () {
       setListView(button.dataset.view);
@@ -2291,8 +2470,10 @@
           var stars = rateRow.querySelectorAll('.street__star');
           stars.forEach(function (star) {
             var n = Number(star.dataset.rating) || 0;
-            star.classList.toggle("is-on", n <= rating);
-            star.setAttribute("aria-pressed", n <= rating ? "true" : "false");
+            var on = n <= rating;
+            star.classList.toggle("is-on", on);
+            star.setAttribute("aria-pressed", on ? "true" : "false");
+            star.textContent = on ? "★" : "☆";
           });
         }
       }
@@ -2477,11 +2658,141 @@
       setSound(!settings().sound);
     });
   }
+  if (el.themeToggle) {
+    syncThemeButton();
+    el.themeToggle.addEventListener("click", function () {
+      toggleTheme();
+    });
+    /* שינוי העדפת המערכת — הכפתור מתעדכן כל עוד המשתמש לא בחר ידנית */
+    if (themeMedia) {
+      var onSchemeChange = function () {
+        if (!themeOverride) {
+          syncThemeButton();
+          syncThemeColor();
+        }
+      };
+      if (typeof themeMedia.addEventListener === "function") {
+        themeMedia.addEventListener("change", onSchemeChange);
+      } else if (typeof themeMedia.addListener === "function") {
+        themeMedia.addListener(onSchemeChange);
+      }
+    }
+  }
   if (el.randomBtn) {
     el.randomBtn.addEventListener("click", suggestRandomStreet);
   }
 
   /* ---------- קיצורי מקלדת ---------- */
+
+  /**
+   * חיצים — שני מסלולים:
+   * 1. בתוך קבוצת כפתורים (סינון/תצוגה): תנועה בין הכפתורים. ב-RTL, שמאל = הבא.
+   * 2. בתוך רשימת הרחובות: תנועה בין שורות (כותרות שכונות ושמות רחובות).
+   * מחזיר true אם האירוע נטפל ויש למנוע את ההתנהגות הרגילה של הדפדפן.
+   */
+  function handleArrowNavigation(event, isEditable) {
+    if (isEditable) return false;
+    var key = event.key;
+    if (
+      key !== "ArrowDown" && key !== "ArrowUp" && key !== "Home" && key !== "End" &&
+      key !== "ArrowLeft" && key !== "ArrowRight"
+    ) return false;
+
+    var active = document.activeElement;
+    if (!active || !active.closest) return false;
+
+    /* 1. קבוצת כפתורים */
+    var group = active.closest(".segmented");
+    if (group && (key === "ArrowLeft" || key === "ArrowRight")) {
+      var buttons = Array.prototype.slice.call(group.querySelectorAll(".segmented__btn"));
+      var index = buttons.indexOf(active);
+      if (index === -1) return false;
+      var step = key === "ArrowLeft" ? 1 : -1;
+      var next = buttons[(index + step + buttons.length) % buttons.length];
+      if (!next) return false;
+      event.preventDefault();
+      next.focus();
+      return true;
+    }
+
+    /* 2. רשימת הרחובות */
+    if (key === "ArrowLeft" || key === "ArrowRight") return false;
+    if (!el.list || !el.list.contains(active)) return false;
+
+    var items = Array.prototype.slice.call(el.list.querySelectorAll(".area-group__name, .street__name"));
+    if (!items.length) return false;
+
+    var current = items.indexOf(active);
+    if (current === -1) {
+      /* הפוקוס על כפתור אחר בשורה (סימון/מחיקה) — עוברים לשורה הזאת */
+      var host = active.closest(".area-group, .street");
+      var nameButton = host ? host.querySelector(".area-group__name, .street__name") : null;
+      current = items.indexOf(nameButton);
+    }
+    if (current === -1) return false;
+
+    var targetIndex;
+    if (key === "ArrowDown") targetIndex = current + 1;
+    else if (key === "ArrowUp") targetIndex = current - 1;
+    else if (key === "Home") targetIndex = 0;
+    else if (key === "End") targetIndex = items.length - 1;
+    else return false;
+
+    if (targetIndex < 0 || targetIndex >= items.length) return false;
+    event.preventDefault();
+    var target = items[targetIndex];
+    target.focus({ preventScroll: true });
+    if (typeof target.scrollIntoView === "function") {
+      target.scrollIntoView({ block: "nearest" });
+    }
+    return true;
+  }
+
+  /** פותח/סוגר את רשימת קיצורי המקלדת ומעביר אליה את הפוקוס */
+  function toggleShortcuts() {
+    var box = document.getElementById("shortcuts-details");
+    if (!box) return;
+    box.open = !box.open;
+    var summary = box.querySelector("summary");
+    if (box.open && summary) summary.focus();
+    announce(box.open ? "רשימת קיצורי המקלדת נפתחה." : "רשימת קיצורי המקלדת נסגרה.");
+  }
+
+  /**
+   * קיצורי מקלדת — לפי מקש פיזי (event.code) ולא רק לפי התו שמודפס עליו.
+   * כך הקיצורים עובדים גם עם מקלדת עברית, שבה התו המודפס הוא עברי.
+   * "/" ו"?" זהים בכל פריסת מקלדת, ולכן הם נבדקים לפי event.key בלבד.
+   */
+  var SHORTCUT_BY_KEY = {
+    "/": "search",
+    "?": "help",
+    r: "random",
+    m: "voice",
+    s: "sound",
+    v: "visit",
+    u: "undo",
+    t: "theme",
+    n: "clear"
+  };
+
+  var SHORTCUT_BY_CODE = {
+    KeyR: "random",
+    KeyM: "voice",
+    KeyS: "sound",
+    KeyV: "visit",
+    KeyU: "undo",
+    KeyT: "theme",
+    KeyN: "clear"
+  };
+
+  /** מזהה את הפעולה המבוקשת לפי האירוע; null אם אין קיצור מתאים */
+  function shortcutFor(event) {
+    var key = typeof event.key === "string" ? event.key.toLowerCase() : "";
+    if (key && Object.prototype.hasOwnProperty.call(SHORTCUT_BY_KEY, key)) return SHORTCUT_BY_KEY[key];
+    var code = event.code || "";
+    if (code && Object.prototype.hasOwnProperty.call(SHORTCUT_BY_CODE, code)) return SHORTCUT_BY_CODE[code];
+    return null;
+  }
 
   document.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) return;
@@ -2491,8 +2802,16 @@
     var isEditable =
       tag === "input" || tag === "textarea" || tag === "select" || (target && target.isContentEditable);
 
-    /* "/" מביא את המיקוד לחיפוש — אך לא בתוך שדה טקסט */
-    if (event.key === "/" && !isEditable && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    /* חיצים — תנועה בין שורות הרשימה ובין כפתורי קבוצת הסינון */
+    if (handleArrowNavigation(event, isEditable)) return;
+
+    /* קיצורים פועלים רק מחוץ לשדות טקסט וללא Ctrl/Alt/מטא */
+    var shortcut = (!isEditable && !event.ctrlKey && !event.metaKey && !event.altKey)
+      ? shortcutFor(event)
+      : null;
+
+    /* "/" — מעבר לשדה החיפוש */
+    if (shortcut === "search") {
       event.preventDefault();
       el.search.focus();
       el.search.select();
@@ -2500,28 +2819,46 @@
     }
 
     /* "r" — רחוב אקראי */
-    if (event.key === "r" && !isEditable && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    if (shortcut === "random") {
       event.preventDefault();
       suggestRandomStreet();
       return;
     }
 
     /* "m" — חיווי קולי */
-    if (event.key === "m" && !isEditable && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    if (shortcut === "voice") {
       event.preventDefault();
       setVoice(!settings().voice);
       return;
     }
 
     /* "s" — צלילים */
-    if (event.key === "s" && !isEditable && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    if (shortcut === "sound") {
       event.preventDefault();
       setSound(!settings().sound);
       return;
     }
 
+    /* "t" — מעבר בין מצב בהיר למצב כהה */
+    if (shortcut === "theme") {
+      event.preventDefault();
+      toggleTheme();
+      return;
+    }
+
+    /* "n" — ניקוי הסינון */
+    if (shortcut === "clear") {
+      event.preventDefault();
+      if (hasActiveFilters()) {
+        clearAllFilters({ focus: false });
+      } else {
+        announce("אין סינון פעיל לניקוי.");
+      }
+      return;
+    }
+
     /* "v" — סימון/ביטול ביקור של הרחוב במיקוד */
-    if (event.key === "v" && !isEditable && !event.ctrlKey && !event.metaKey && !event.altKey) {
+    if (shortcut === "visit") {
       var focusedRow = document.activeElement && document.activeElement.closest
         ? document.activeElement.closest(".street")
         : null;
@@ -2535,8 +2872,28 @@
       return;
     }
 
+    /* "u" או Ctrl+Z — ביטול הפעולה האחרונה (גם כשה-toast כבר נסגר) */
+    if (
+      (shortcut === "undo" ||
+        (event.ctrlKey && (event.key === "z" || event.key === "Z" || event.code === "KeyZ"))) &&
+      !isEditable && !event.metaKey && !event.altKey
+    ) {
+      event.preventDefault();
+      undoLastAction();
+      return;
+    }
+
+    /* "?" — פתיחה וסגירה של רשימת הקיצורים */
+    if (shortcut === "help") {
+      event.preventDefault();
+      toggleShortcuts();
+      return;
+    }
+
+
     if (event.key !== "Escape") return;
 
+    /* Esc בתוך שדה החיפוש — מנקה את החיפוש או את הסינון (לא סוגר את ההתראה) */
     if (document.activeElement === el.search) {
       event.preventDefault();
       if (el.search.value) {
@@ -2553,12 +2910,368 @@
       return;
     }
 
+    /* Esc מחוץ לשדות טקסט — סוגר קודם את ההתראה (בלי לבטל את הפעולה) */
+    if (!isEditable && el.toast && !el.toast.hidden) {
+      event.preventDefault();
+      hideToast();
+      announce("ההתראה נסגרה.");
+      return;
+    }
+
+    /* Esc — סוגר חלונית מקופלת פתוחה (רשימת הקיצורים או טופס ההוספה) לפני ניקוי הסינון */
+    if (!isEditable) {
+      var openBox = document.querySelector("#shortcuts-details[open], .add-wrap[open]");
+      if (openBox) {
+        event.preventDefault();
+        openBox.open = false;
+        var boxSummary = openBox.querySelector("summary");
+        if (boxSummary) boxSummary.focus();
+        announce("החלונית נסגרה.");
+        return;
+      }
+    }
+
     if (!isEditable && hasActiveFilters()) {
       clearAllFilters({ focus: false });
     }
   });
 
+  /* ==========================================================
+     סביבת בטא (window.JLM_BETA) — יכולות ניסיוניות עד לאישור פרסום.
+     הכל נבנה רק כשהדגל פעיל; באתר הציבורי שום דבר מהאזור הזה אינו קיים.
+     ========================================================== */
+
+  function isBeta() {
+    return Boolean(window.JLM_BETA);
+  }
+
+  /** התאריך המאוחר ביותר שבו סימנו ביקור או השלמה ידנית — "" אם אין */
+  function lastActivityISO() {
+    var latest = "";
+    Object.keys(state.visited).forEach(function (id) {
+      var d = state.visited[id] && state.visited[id].date;
+      if (d && d > latest) latest = d;
+    });
+    Object.keys(state.manualCompletions || {}).forEach(function (area) {
+      var d = state.manualCompletions[area] && state.manualCompletions[area].completedAt;
+      if (d && d > latest) latest = d;
+    });
+    return latest;
+  }
+
+  function parseIso(text) {
+    var match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text || ""));
+    if (!match) return null;
+    return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  }
+
+  /* תביעת האחסון הזמני של הדפדפן — אם היא חסומה, התזכורת תוצג בכל כניסה */
+  function sessionMemory() {
+    try {
+      var probe = window.sessionStorage;
+      probe.getItem("jlm-beta-probe");
+      return probe;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  /* ---------- גלריית ההישגים ---------- */
+
+  var galleryBadgesView = true; /* בברירת מחדל בבטא — מוצגת הגלריה */
+
+  function buildAchievementsGallery() {
+    if (!isBeta() || !el.achievementsDetails) return;
+    if (document.getElementById("achievements-view-toggle")) return;
+
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.id = "achievements-view-toggle";
+    toggle.className = "btn btn--quiet btn--small achievements__view-toggle";
+    toggle.textContent = "גלריית הישגים";
+    toggle.addEventListener("click", function () {
+      galleryBadgesView = !galleryBadgesView;
+      renderAchievements();
+      announce(galleryBadgesView
+        ? "מוצגת גלריית ההישגים, עם התקדמות לכל תג."
+        : "מוצגת הרשימה המקוצרת של ההישגים.");
+    });
+    el.achievementsDetails.appendChild(toggle);
+
+    var gallery = document.createElement("div");
+    gallery.id = "achievements-gallery";
+    gallery.setAttribute("aria-label", "גלריית ההישגים עם התקדמות לכל תג");
+    el.achievementsDetails.appendChild(gallery);
+
+    syncGalleryToggle(toggle);
+  }
+
+  function syncedGalleryToggle() {
+    return document.getElementById("achievements-view-toggle");
+  }
+
+  function syncGalleryToggle(toggle) {
+    var button = toggle || syncedGalleryToggle();
+    if (!button) return;
+    button.setAttribute("aria-pressed", galleryBadgesView ? "true" : "false");
+  }
+
+  function renderAchievementsGallery(badges) {
+    if (!isBeta()) return;
+    var gallery = document.getElementById("achievements-gallery");
+    if (!gallery) return;
+    syncGalleryToggle();
+    if (!galleryBadgesView) {
+      gallery.hidden = true;
+      gallery.innerHTML = "";
+      return;
+    }
+    gallery.hidden = false;
+
+    gallery.innerHTML = ACHIEVEMENT_CATEGORIES.map(function (category) {
+      var items = badges.filter(function (badge) { return badge.category === category.id; });
+      if (!items.length) return "";
+      return (
+        '<section class="badge-group" aria-label="' + escapeHtml(category.label) + '">' +
+          '<h3 class="badge-group__title">' + escapeHtml(category.label) + "</h3>" +
+          '<ul class="badge-group__list">' +
+            items.map(function (badge) {
+              var progress = badge.progress || null;
+              var target = progress ? Math.max(1, Number(progress[1]) || 1) : 0;
+              var current = progress ? Number(progress[0]) || 0 : 0;
+              var width = badge.unlocked ? 100 : progress ? Math.min(100, (current / target) * 100) : 0;
+              var stateText = badge.unlocked
+                ? "הושג"
+                : progress
+                  ? "עוד לא — " + formatNumber(Math.min(current, target)) + " מתוך " + formatNumber(target)
+                  : "טרם הושג";
+              return (
+                '<li class="badge-card' + (badge.unlocked ? " is-unlocked" : "") + '">' +
+                  '<span class="badge-card__icon" aria-hidden="true">' + badge.icon + "</span>" +
+                  '<span class="badge-card__title">' + escapeHtml(badge.title) + "</span>" +
+                  '<span class="badge-card__desc">' + escapeHtml(badge.desc) + "</span>" +
+                  '<span class="badge-card__bar" aria-hidden="true"><span style="width:' + width.toFixed(1) + '%"></span></span>' +
+                  '<span class="badge-card__state">' + escapeHtml(stateText) + "</span>" +
+                "</li>"
+              );
+            }).join("") +
+          "</ul>" +
+        "</section>"
+      );
+    }).join("");
+  }
+
+  /* ---------- תצוגת יומן (קריאה של כל הביקורים) ---------- */
+
+  var journalActive = false;
+
+  function buildJournalToggle() {
+    if (!isBeta() || !el.list || document.getElementById("journal-toggle")) return;
+    var controlsHost = document.querySelector(".list-controls");
+    if (!controlsHost) return;
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.id = "journal-toggle";
+    toggle.className = "btn btn--quiet btn--small";
+    toggle.setAttribute("aria-pressed", "false");
+    toggle.textContent = "יומן ביקורים";
+    toggle.title = "תצוגת קריאה: כל הביקורים לפי תאריך, עם דירוגים והערות";
+    toggle.addEventListener("click", toggleJournal);
+    controlsHost.appendChild(toggle);
+  }
+
+  function toggleJournal() {
+    journalActive = !journalActive;
+    syncJournalView();
+    announce(journalActive
+      ? "תצוגת היומן פתוחה — מוצגים " + formatNumber(countVisited()) + " ביקורים, מהחדש לישן."
+      : "חזרה לרשימת הרחובות.");
+  }
+
+  function syncJournalView() {
+    var toggle = document.getElementById("journal-toggle");
+    if (!toggle) {
+      journalActive = false; /* בטיחות: בלי כפתור — אין מצב יומן */
+    } else {
+      toggle.setAttribute("aria-pressed", journalActive ? "true" : "false");
+    }
+
+    var viewToggleGroup = document.querySelector(".view-toggle");
+    var sortField = document.getElementById("area-sort");
+    var sortWrap = sortField ? sortField.closest(".field--sort") : null;
+    var hint = document.getElementById("list-hint");
+    if (viewToggleGroup) viewToggleGroup.hidden = journalActive;
+    if (sortWrap) sortWrap.hidden = journalActive;
+    if (hint) hint.hidden = journalActive;
+
+    var host = document.getElementById("journal-view");
+    if (!journalActive) {
+      if (host) { host.hidden = true; host.innerHTML = ""; } /* לא להשאיר תוכן ישן ב-DOM */
+      if (el.empty) el.empty.hidden = true;
+      if (el.list) el.list.hidden = false;
+      renderList(); /* משיב מונים ומצב-ריק לתצוגה הרגילה */
+      return;
+    }
+    if (el.list) el.list.hidden = true;
+    renderJournal();
+    host = document.getElementById("journal-view");
+    if (host) host.hidden = false;
+  }
+
+  function repeatText(text, count) {
+    var out = "";
+    for (var i = 0; i < count; i += 1) out += text;
+    return out;
+  }
+
+  function localIso(date) {
+    var month = String(date.getMonth() + 1).padStart(2, "0");
+    var day = String(date.getDate()).padStart(2, "0");
+    return date.getFullYear() + "-" + month + "-" + day;
+  }
+
+  function journalDateLabel(iso) {
+    if (iso === today()) return "היום · " + iso;
+    var yesterday = new Date();
+    yesterday.setDate(yesterday.getDate() - 1);
+    if (iso === localIso(yesterday)) return "אתמול · " + iso;
+    try {
+      var formatter = new Intl.DateTimeFormat("he-IL", { day: "numeric", month: "long", year: "numeric" });
+      var formatted = formatter.format(parseIso(iso));
+      return formatted + " · " + iso;
+    } catch (error) {
+      return iso;
+    }
+  }
+
+  function renderJournal() {
+    var host = document.getElementById("journal-view");
+    if (!host) {
+      host = document.createElement("div");
+      host.id = "journal-view";
+      host.className = "journal";
+      host.setAttribute("aria-label", "יומן הביקורים — תצוגת קריאה");
+      if (el.list && el.list.parentNode) {
+        el.list.parentNode.insertBefore(host, el.list);
+      } else {
+        return;
+      }
+    }
+
+    var byId = Object.create(null);
+    allStreets().forEach(function (street) { byId[street.id] = street; });
+
+    var entries = [];
+    Object.keys(state.visited).forEach(function (id) {
+      var record = state.visited[id];
+      var street = byId[id];
+      if (!record || !street) return;
+      entries.push({
+        date: String(record.date || ""),
+        note: String(record.note || "").trim(),
+        rating: Number(record.rating || 0),
+        mood: String(record.mood || ""),
+        name: street.name,
+        area: street.area || "אחר"
+      });
+    });
+    entries.sort(function (a, b) {
+      if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+      return a.name.localeCompare(b.name, "he");
+    });
+
+    if (!entries.length) {
+      host.innerHTML =
+        '<p class="journal__empty">עדיין לא ביקרתם באף רחוב. כשתסמנו ביקור ראשון, ' +
+        "הוא יופיע כאן לפי תאריך, עם הדירוג וההערה שתכתבו.</p>";
+      return;
+    }
+
+    var groups = [];
+    var currentUserDate = null;
+    var currentGroup = null;
+    entries.forEach(function (entry) {
+      if (entry.date !== currentUserDate) {
+        currentUserDate = entry.date;
+        currentGroup = { date: entry.date, items: [] };
+        groups.push(currentGroup);
+      }
+      currentGroup.items.push(entry);
+    });
+
+    host.innerHTML = groups.map(function (group) {
+      var items = group.items.map(function (entry) {
+        var ratingOn = Math.min(5, Math.max(0, entry.rating));
+        var stars = ratingOn > 0
+          ? repeatText("★", ratingOn) + repeatText("☆", 5 - ratingOn)
+          : "בלי דירוג";
+        return (
+          '<li class="journal__entry">' +
+            '<h3 class="journal__street">' + escapeHtml(entry.name) + "</h3>" +
+            '<p class="journal__meta">' +
+              escapeHtml(entry.area) +
+              "<span class=\"journal__meta-sep\" aria-hidden=\"true\"> · </span>" +
+              '<span class="journal__stars" dir="ltr">דירוג: ' + stars + "</span>" +
+            "</p>" +
+            (entry.note ? '<p class="journal__note">' + escapeHtml(entry.note) + "</p>" : "") +
+          "</li>"
+        );
+      }).join("");
+      return (
+        '<section class="journal__group" aria-label="' + escapeHtml(journalDateLabel(group.date)) + '">' +
+          '<h3 class="journal__date">' + escapeHtml(journalDateLabel(group.date)) + "</h3>" +
+          '<ul class="journal__list">' + items + "</ul>" +
+        "</section>"
+      );
+    }).join("");
+  }
+
+  /* ---------- שלד טעינה (skeleton) ---------- */
+
+  function renderListSkeleton() {
+    if (!isBeta() || !el.list) return;
+    var rows = [];
+    for (var i = 0; i < 6; i += 1) {
+      rows.push(
+        '<li class="sk-row" aria-hidden="true">' +
+          '<span class="sk-row__circle"></span>' +
+          '<span class="sk-row__line sk-row__line--wide"></span>' +
+          '<span class="sk-row__line sk-row__line--short"></span>' +
+          '<span class="sk-row__line sk-row__line--faint"></span>' +
+        "</li>"
+      );
+    }
+    el.list.innerHTML = rows.join("");
+  }
+
+  /* ---------- תזכורת עדינה — פעם ביום, רק אם עברו שני ימים לפחות ---------- */
+
+  function bootDailyReminder() {
+    if (!isBeta()) return;
+    var memory = sessionMemory();
+    var dayKey = "jlm-beta-reminder-" + today();
+    if (memory && memory.getItem(dayKey)) return;
+
+    var last = lastActivityISO();
+    if (!last) return; /* עוד לא סימנו ביקור — לא מציקים בכניסה ראשונה */
+
+    var from = parseIso(last);
+    var to = parseIso(today());
+    if (!from || !to) return;
+    var gap = Math.round((to - from) / 86400000);
+    if (gap < 2) return;
+
+    if (memory) {
+      try { memory.setItem(dayKey, "1"); } catch (error) { /* בלי זיכרון — מציגים בכל כניסה */ }
+    }
+    var gapText = gap === 2 ? "יומיים" : formatNumber(gap) + " ימים";
+    window.setTimeout(function () {
+      showToast("נעים לראות אתכם שוב! עברו " + gapText + " מאז הסימון האחרון. אפשר להמשיך מכאן.", null);
+    }, 800);
+  }
+
   /* ---------- אתחול ---------- */
+
 
   el.bannerClose.addEventListener("click", hideBanner);
 
@@ -2579,9 +3292,31 @@
   });
 
   syncStatusButtons();
-  render();
+  syncThemeColor();
 
-  if (el.loading) el.loading.hidden = true;
+  /* בטא: משרטטים שלד, ורק אחרי הפריים הראשון רונדרים את הרשימה המלאה (בלי לחסום את הציור) */
+  if (isBeta() && el.list) {
+    buildAchievementsGallery();
+    buildJournalToggle();
+    renderListSkeleton();
+    var bootRenderDone = false;
+    function bootRender() {
+      if (bootRenderDone) return;
+      bootRenderDone = true;
+      render();
+      if (el.loading) el.loading.hidden = true;
+    }
+    requestAnimationFrame(function () {
+      requestAnimationFrame(bootRender);
+    });
+    /* גיבוי: בלשונית שאינה נראית requestAnimationFrame מושהה — הרנדר יחול גם בטיימאוט */
+    window.setTimeout(bootRender, 120);
+    bootDailyReminder();
+  } else {
+    render();
+
+    if (el.loading) el.loading.hidden = true;
+  }
 
   if (storageStatus === "corrupt") {
     var backupKey = Store.backup(loaded.raw);

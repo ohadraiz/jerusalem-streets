@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --stone-50: #fbf8f3;
   --stone-100: #f4ede2;
   --stone-200: #e6d9c5;
@@ -16,6 +17,19 @@
   --focus: #6b3a0b;
   --btn-primary-bg: #8a4512;
   --btn-primary-fg: #ffffff;
+  --btn-primary-hover: brightness(0.9);
+  /* צבע הטקסט על ירוק מלא — משתנה לפי הערכה, כדי שתמיד יעבור AA */
+  --on-good: #ffffff;
+  /* ההתראה (toast) והחגיגה תמיד "הפוך" לדף — צבעים ייעודיים כדי שגם מתארי הכפתורים יישארו נראים */
+  --toast-bg: #241d15;
+  --toast-fg: #fbf8f3;
+  --toast-line: rgba(255, 255, 255, 0.45);
+  --toast-line-strong: #fbf8f3;
+  --toast-hover: rgba(255, 255, 255, 0.16);
+  --star-on: #7a5200;
+  --star-off: #6f5637;
+  /* קו מתאר של פקדים — חייב להיות 3:1 מול הרקע כדי שיהיה ניתן לזהות את הפקד (WCAG 1.4.11) */
+  --line: #9c7d4e;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(60, 44, 27, 0.08);
   --font: "Segoe UI", "Arial Hebrew", "Helvetica Neue", Arial, sans-serif;
@@ -23,8 +37,10 @@
   --sticky-h: 4.5rem;
 }
 
+/* מצב כהה לפי העדפת המערכת — אלא אם המשתמש בחר ידנית "מצב בהיר" */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --stone-50: #17140f;
     --stone-100: #201c16;
     --stone-200: #2e2820;
@@ -42,8 +58,85 @@
     --focus: #ffcf9e;
     --btn-primary-bg: #e08b3f;
     --btn-primary-fg: #171208;
+    --btn-primary-hover: brightness(1.08);
+    --on-good: #17140f;
+    --toast-bg: #f3ece1;
+    --toast-fg: #17140f;
+    --toast-line: #6f6a63;
+    --toast-line-strong: #17140f;
+    --toast-hover: rgba(23, 20, 15, 0.12);
+    --star-on: #f0b83c;
+    --star-off: #b9ab96;
+    --line: #b99a6c;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   }
+}
+
+/* בחירה ידנית של המשתמש (כפתור "מצב כהה") — חולף על העדפת המערכת.
+   ההצהרה חייבת להיות זהה להצהרת מצב הכהה שמעלה. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --stone-50: #17140f;
+  --stone-100: #201c16;
+  --stone-200: #2e2820;
+  --stone-300: #453b2d;
+  --stone-500: #b99a6c;
+  --stone-700: #e3d2b6;
+  --ink: #f3ece1;
+  --ink-soft: #b9ab96;
+  --accent: #e08b3f;
+  --accent-text: #e08b3f;
+  --accent-soft: #3a2817;
+  --good: #6fc39a;
+  --good-soft: #1d3329;
+  --danger: #e5776a;
+  --focus: #ffcf9e;
+  --btn-primary-bg: #e08b3f;
+  --btn-primary-fg: #171208;
+  --btn-primary-hover: brightness(1.08);
+  --on-good: #17140f;
+  --toast-bg: #f3ece1;
+  --toast-fg: #17140f;
+  --toast-line: #6f6a63;
+  --toast-line-strong: #17140f;
+  --toast-hover: rgba(23, 20, 15, 0.12);
+  --star-on: #f0b83c;
+  --star-off: #b9ab96;
+  --line: #b99a6c;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* בחירה ידנית של המשתמש (כפתור "מצב בהיר") — חולף על העדפת המערכת */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --stone-50: #fbf8f3;
+  --stone-100: #f4ede2;
+  --stone-200: #e6d9c5;
+  --stone-300: #d3bf9f;
+  --stone-500: #a98a5f;
+  --stone-700: #6f5637;
+  --ink: #241d15;
+  --ink-soft: #5b4c3a;
+  --accent: #b5601f;
+  --accent-text: #8a4512;
+  --accent-soft: #f6e3d3;
+  --good: #2f7d5c;
+  --good-soft: #dff0e7;
+  --danger: #a63a2c;
+  --focus: #6b3a0b;
+  --btn-primary-bg: #8a4512;
+  --btn-primary-fg: #ffffff;
+  --btn-primary-hover: brightness(0.9);
+  --on-good: #ffffff;
+  --toast-bg: #241d15;
+  --toast-fg: #fbf8f3;
+  --toast-line: rgba(255, 255, 255, 0.45);
+  --toast-line-strong: #fbf8f3;
+  --toast-hover: rgba(255, 255, 255, 0.16);
+  --star-on: #7a5200;
+  --star-off: #6f5637;
+  --line: #9c7d4e;
+  --shadow: 0 10px 30px rgba(60, 44, 27, 0.08);
 }
 
 * {
@@ -191,7 +284,7 @@ body {
   line-height: 1.2;
   margin-inline-start: auto;
   background: transparent;
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   border-radius: 8px;
   color: var(--ink);
   cursor: pointer;
@@ -333,7 +426,7 @@ body {
   font: inherit;
   color: inherit;
   background: var(--stone-50);
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   border-radius: 10px;
   padding: 0.6rem 0.75rem;
   min-height: 2.6rem;
@@ -392,6 +485,7 @@ summary,
   padding: 0.35rem 0.9rem;
   border-radius: 999px;
   cursor: pointer;
+  transition: background 160ms ease, color 160ms ease;
 }
 
 .segmented__btn.is-active {
@@ -413,7 +507,7 @@ summary,
   cursor: pointer;
   background: var(--stone-50);
   color: var(--ink);
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   border-radius: 10px;
   padding: 0.45rem 0.9rem;
   transition: transform 120ms ease, border-color 160ms ease, background 160ms ease;
@@ -460,13 +554,7 @@ summary,
 }
 
 .btn--primary:hover {
-  filter: brightness(0.9);
-}
-
-@media (prefers-color-scheme: dark) {
-  .btn--primary:hover {
-    filter: brightness(1.08);
-  }
+  filter: var(--btn-primary-hover);
 }
 
 .btn--danger {
@@ -561,11 +649,12 @@ summary,
   gap: 0.4rem;
   background: var(--stone-50);
   color: var(--ink);
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   border-radius: 999px;
   padding: 0.35rem 0.85rem;
   min-height: 2.4rem;
   cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
 }
 
 .chip:hover {
@@ -737,6 +826,19 @@ summary,
   gap: 0.5rem 0.75rem;
 }
 
+/* בלי הכלל הזה הבאנר היה מוצג תמיד (display:flex גובר על [hidden] של הדפדפן)
+   והופיע כתיבת ריקה מתחת למפה. כאן הבאנר מקבל גובה 0 במקום להיעלם
+   לגמרי — כך שהוא נשאר בעץ הנגישות וההכרזה שלו (role="status") ממשיכה לעבוד. */
+.map-banner[hidden] {
+  display: flex;
+  height: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  overflow: hidden;
+}
+
 .map-banner__retry {
   font-size: 0.82rem;
   padding: 0.3rem 0.75rem;
@@ -774,7 +876,7 @@ summary,
 }
 
 .map-legend__swatch--visited {
-  background: #2f7d5c;
+  background: var(--good);
   height: 0.42rem;
 }
 
@@ -787,12 +889,6 @@ summary,
   );
   height: 0.3rem;
   border-radius: 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  .map-legend__swatch--visited {
-    background: #6fc39a;
-  }
 }
 
 /* התאמות ל-Leaflet: RTL בפופאפ, צבעי רקע לפי ערכת הנושא */
@@ -819,8 +915,24 @@ summary,
 }
 
 .leaflet-popup-content-wrapper,
+.leaflet-popup-tip,
 .leaflet-tooltip {
   border-radius: 10px;
+  background: var(--stone-50);
+  color: var(--ink);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+}
+
+.leaflet-popup-content-wrapper {
+  border: 1px solid var(--stone-200);
+}
+
+.leaflet-popup-close-button {
+  color: var(--ink-soft);
+  padding: 6px 8px 0 0;
+}
+
+.leaflet-popup-close-button:hover {
   color: var(--ink);
 }
 
@@ -846,13 +958,19 @@ summary,
 }
 
 .map-popup__state.is-visited {
-  color: #2f7d5c;
+  color: var(--good);
   font-weight: 600;
 }
 
 .leaflet-control-attribution {
   direction: ltr;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
+  background: var(--stone-50);
+  color: var(--ink-soft);
+}
+
+.leaflet-control-attribution a {
+  color: var(--accent-text);
 }
 
 /* יעד מגע 44px גם לבקרי הזום של Leaflet (ברירת המחדל 30px) */
@@ -1030,13 +1148,14 @@ summary,
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   background: var(--stone-50);
   color: var(--ink);
   cursor: pointer;
   display: grid;
   place-items: center;
   padding: 0;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
 .area-group__toggle:hover {
@@ -1198,7 +1317,7 @@ summary,
 
 .street-more__btn {
   width: 100%;
-  border: 1px dashed var(--stone-300);
+  border: 1px dashed var(--line);
   background: transparent;
   color: var(--ink);
   border-radius: 12px;
@@ -1216,7 +1335,7 @@ summary,
 }
 
 .street-more__btn:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
 
@@ -1237,8 +1356,8 @@ summary,
   min-width: 2.5rem;
   min-height: 2.75rem;
   padding: 0.5rem 0.875rem;
-  border: 1px solid var(--stone-300);
-  background: var(--paper);
+  border: 1px solid var(--line);
+  background: var(--stone-50);
   color: var(--ink);
   border-radius: 10px;
   font: inherit;
@@ -1253,7 +1372,7 @@ summary,
 }
 
 .pagination__btn:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--focus);
   outline-offset: 2px;
 }
 
@@ -1282,12 +1401,6 @@ summary,
 .street.is-visited {
   border-color: var(--good);
   background: var(--good-soft);
-}
-
-@media (prefers-color-scheme: dark) {
-  .street.is-visited {
-    background: var(--good-soft);
-  }
 }
 
 /* הדגשת הרחוב שאליו קפצנו מהרשימה */
@@ -1351,12 +1464,13 @@ summary,
   gap: 0.25rem;
   min-height: 2.25rem;
   padding: 0.2rem 0.7rem;
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--stone-50);
   color: var(--ink);
   cursor: pointer;
   white-space: nowrap;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
 .street__visit:hover {
@@ -1367,13 +1481,7 @@ summary,
 .street__visit.is-visited {
   background: var(--good);
   border-color: var(--good);
-  color: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  .street__visit.is-visited {
-    color: var(--stone-50);
-  }
+  color: var(--on-good);
 }
 
 .street__maps {
@@ -1436,7 +1544,7 @@ summary,
   font-size: 0.85rem;
   color: var(--ink);
   background: var(--stone-50);
-  border: 1px solid var(--stone-300);
+  border: 1px solid var(--line);
   border-radius: 8px;
   padding: 0.35rem 0.5rem;
   min-height: 2.1rem;
@@ -1501,10 +1609,23 @@ summary,
   align-content: flex-start;
   gap: 0.6rem;
   padding: 0.65rem 0.9rem;
-  background: var(--ink);
-  color: var(--stone-50);
+  background: var(--toast-bg);
+  color: var(--toast-fg);
   border-radius: 12px;
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+  animation: toast-in 200ms ease-out;
+}
+
+/* כניסת ההתראה — עדינה, ונעלמת לגמרי בהעדפת תנועה מופחתת */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .toast[hidden] {
@@ -1521,14 +1642,14 @@ summary,
 
 .toast .btn {
   background: transparent;
-  color: var(--stone-50);
-  border-color: rgba(255, 255, 255, 0.45);
+  color: var(--toast-fg);
+  border-color: var(--toast-line);
   flex: 0 0 auto;
 }
 
 .toast .btn:hover {
-  background: rgba(255, 255, 255, 0.16);
-  border-color: var(--stone-50);
+  background: var(--toast-hover);
+  border-color: var(--toast-line-strong);
 }
 
 /* כפתור חיווי קולי פעיל — נראה בבירור שהמצב דלוק */
@@ -1553,13 +1674,18 @@ summary,
   gap: 0.5rem;
   padding: 0.55rem 1rem;
   border-radius: 999px;
-  background: var(--ink);
-  color: var(--stone-50);
+  background: var(--toast-bg);
+  color: var(--toast-fg);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.3);
   opacity: 0;
   transform: translateY(-12px) scale(0.96);
   pointer-events: none;
   transition: opacity 180ms ease, transform 180ms ease;
+}
+
+/* בלי הכלל הזה החגיגה הייתה תמיד בתצוגה (display:flex גובר על [hidden]) */
+.celebration[hidden] {
+  display: none;
 }
 
 .celebration.is-show {
@@ -1604,6 +1730,17 @@ summary,
   font-weight: 400;
 }
 
+.achievements__chevron {
+  margin-inline-start: auto;
+  color: var(--ink-soft);
+  transition: transform 160ms ease;
+  font-size: 0.75rem;
+}
+
+.achievements[open] .achievements__chevron {
+  transform: rotate(180deg);
+}
+
 .achievements__list {
   list-style: none;
   padding: 0.5rem 0 0;
@@ -1624,9 +1761,34 @@ summary,
   text-align: center;
 }
 
+/* הישג נעול — המצב מסומן בטקסט ("לא פתוח") ובצורת האייקון, לא באטימות
+   (אטימות 0.4 הפכה את הטקסט לניגודיות 2.4:1 — מתחת ל-AA) */
 .achievement.is-locked {
-  opacity: 0.4;
-  filter: grayscale(0.6);
+  background: var(--stone-100);
+  border: 1px dashed var(--line);
+}
+
+.achievement.is-locked .achievement__icon {
+  filter: grayscale(1);
+  opacity: 0.7;
+}
+
+.achievement.is-locked .achievement__title {
+  color: var(--ink-soft);
+}
+
+.achievement.is-locked .achievement__desc {
+  color: var(--ink-soft);
+}
+
+.achievement__lock {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.05rem 0.45rem;
+  margin-top: 0.15rem;
 }
 
 .achievement__icon {
@@ -1642,6 +1804,178 @@ summary,
 .achievement__desc {
   font-size: 0.72rem;
   color: var(--ink-soft);
+}
+
+/* ---------- קיצורי מקלדת ---------- */
+
+.shortcuts {
+  margin: 0 auto 1.25rem;
+  max-width: 34rem;
+  text-align: start;
+  border: 1px solid var(--stone-200);
+  border-radius: 12px;
+  background: var(--stone-100);
+  padding: 0.5rem 0.85rem;
+}
+
+.shortcuts__summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+  min-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  list-style-position: inside;
+  border-radius: 8px;
+}
+
+.shortcuts__summary::after {
+  content: "▾";
+  margin-inline-start: auto;
+  color: var(--ink-soft);
+  transition: transform 160ms ease;
+}
+
+.shortcuts[open] .shortcuts__summary::after {
+  transform: rotate(180deg);
+}
+
+.shortcuts__list {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.shortcuts__list li {
+  line-height: 2;
+}
+
+.shortcuts__list kbd {
+  font: inherit;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--stone-50);
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 0.05rem 0.4rem;
+  display: inline-block;
+  min-width: 1.6rem;
+  text-align: center;
+}
+
+.shortcuts__note {
+  margin: 0.6rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.shortcuts__note strong {
+  color: var(--ink);
+}
+
+/* ===== FAQ section ===== */
+.faq {
+  max-width: 940px;
+  margin: 2rem auto 1rem;
+  padding: 0 1.25rem;
+}
+
+.faq__item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--stone-50);
+  margin-block-end: 0.75rem;
+  overflow: hidden;
+}
+
+.faq__question {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+  padding: 0.9rem 1rem;
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question::after {
+  content: "−";
+  margin-inline-start: auto;
+  color: var(--ink-soft);
+  transition: transform 160ms ease;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.faq[open] .faq__question::after,
+.faq__item[open] .faq__question::after {
+  transform: rotate(180deg);
+}
+
+.faq__answer {
+  padding: 0 1rem 1rem;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.faq__answer p {
+  margin: 0 0 0.5rem;
+}
+
+.faq__answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq__answer code {
+  font-family: ui-monospace, SFMono-Regular, "Fira Code", monospace;
+  font-size: 0.85em;
+  background: var(--stone-100);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+/* Footer additions */
+.footer__privacy {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.footer__copyright {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.85rem;
+  color: var(--ink);
+}
+
+.footer__attribution {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.footer__attribution a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer__attribution abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--ink-soft);
+  cursor: help;
 }
 
 .footer {
@@ -1768,7 +2102,9 @@ summary,
   }
 
   .breakdown__summary,
-  .add-form__title {
+  .add-form__title,
+  .achievements__summary,
+  .shortcuts__summary {
     min-height: 44px;
   }
 
@@ -1840,6 +2176,12 @@ summary,
     padding-inline: 0.75rem;
   }
 
+  .street__star,
+  .street__mood {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
   /* תאריך והערה — אחד מתחת לשני, ברוחב מלא */
   .street__details {
     flex-direction: column;
@@ -1888,7 +2230,9 @@ summary,
   .result-count,
   .searchbar__clear,
   .street__visit,
-  .street__delete {
+  .street__delete,
+  .street__star,
+  .street__mood {
     min-height: 44px;
   }
 
@@ -1905,6 +2249,14 @@ summary,
   /* שמות שכונות ורחובות — גובה מגע, כמו במובייל */
   .area-group__name,
   .street__name {
+    min-height: 2.75rem;
+  }
+
+  /* כותרות של חלוניות מקופלות — יעד מגע בלי פחות מ-44px */
+  .breakdown__summary,
+  .add-form__title,
+  .achievements__summary,
+  .shortcuts__summary {
     min-height: 2.75rem;
   }
 
@@ -1943,10 +2295,69 @@ summary,
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
   }
+
+  /* גלילה מיידית במקום חלקה */
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  /* אין "דחיסה" של הכפתור בלחיצה */
+  .btn:active {
+    transform: none;
+  }
 }
 .street__rating { display: flex; gap: 0.15rem; align-items: center; }
-.street__star { background: transparent; border: 0; padding: 0.1rem 0.2rem; font-size: 1rem; color: var(--stone-300); cursor: pointer; line-height: 1; min-width: 28px; min-height: 28px; }
-.street__star.is-on { color: #d4a017; }
+/* כוכב "ריק" (☆) לעומת "מלא" (★) — ההבדל בצורה, לא רק בצבע */
+.street__star { background: transparent; border: 0; padding: 0.1rem 0.2rem; font-size: 1rem; color: var(--star-off); cursor: pointer; line-height: 1; min-width: 28px; min-height: 28px; transition: color 160ms ease; }
+.street__star.is-on { color: var(--star-on); }
 .street__moods { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-.street__mood { font-size: 0.78rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px solid var(--stone-300); background: var(--stone-50); color: var(--ink); cursor: pointer; min-height: 30px; }
+.street__mood { font-size: 0.78rem; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px solid var(--line); background: var(--stone-50); color: var(--ink); cursor: pointer; min-height: 30px; }
 .street__mood.is-on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-text); }
+.street__mood__emoji { font-size: 0.9rem; }
+
+/* ==========================================================
+   סביבת בטא (window.JLM_BETA) — עיצוב לאלמנטים שנבנים ב-JS בבטא בלבד.
+   באתר הציבורי האלמנטים האלה לא נוצרים, ולכן הכללים כאן אינם פעילים.
+   ========================================================== */
+
+/* שלד טעינה — שורות placeholder בזמן שהרשימה מרונדרת */
+.sk-row { display: flex; align-items: center; gap: 0.6rem; padding: 0.65rem 0.5rem; border: 1px solid var(--line); border-radius: 10px; background: var(--stone-100); margin-block-end: 0.4rem; }
+.sk-row__circle { width: 34px; height: 34px; border-radius: 50%; background: var(--stone-200); flex: none; animation: sk-pulse 1.4s ease-in-out infinite; }
+.sk-row__line { height: 12px; border-radius: 999px; background: var(--stone-200); animation: sk-pulse 1.4s ease-in-out infinite; }
+.sk-row__line--wide { flex: 1 1 10rem; }
+.sk-row__line--short { flex: 0 1 4rem; animation-delay: 120ms; }
+.sk-row__line--faint { flex: 0 1 7rem; background: var(--stone-100); border: 1px solid var(--line); animation-delay: 240ms; }
+.sk-row__circle, .sk-row__line { will-change: opacity; }
+@keyframes sk-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+@media (prefers-reduced-motion: reduce) { .sk-row__circle, .sk-row__line { animation: none; opacity: 0.75; } }
+
+/* גלריית הישגים — כרטיסים עם התקדמות בבטא */
+.achievements__view-toggle { margin-block-start: 0.45rem; }
+.badge-group { margin-block-start: 0.9rem; }
+.badge-group__title { font-size: 0.85rem; font-weight: 700; color: var(--ink); margin: 0 0 0.4rem; }
+.badge-group__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr)); gap: 0.55rem; }
+.badge-card { display: flex; flex-direction: column; gap: 0.3rem; padding: 0.6rem 0.7rem; border-radius: 10px; background: var(--stone-100); border: 1px solid var(--line); }
+.badge-card.is-unlocked { background: var(--good-soft); border-color: var(--good); }
+.badge-card__icon { font-size: 1.3rem; line-height: 1; }
+.badge-card.is-locked .badge-card__icon, .badge-card:not(.is-unlocked) .badge-card__icon { filter: grayscale(1); opacity: 0.7; }
+.badge-card__title { font-size: 0.88rem; font-weight: 700; }
+.badge-card__desc { font-size: 0.75rem; color: var(--ink-soft); }
+.badge-card__bar { height: 7px; border-radius: 999px; background: var(--stone-200); overflow: hidden; }
+.badge-card__bar span { display: block; height: 100%; background: var(--good); border-radius: 999px; }
+.badge-card:not(.is-unlocked) .badge-card__bar span { background: var(--accent); opacity: 0.55; }
+.badge-card__state { font-size: 0.72rem; font-variant-numeric: tabular-nums; color: var(--ink-soft); }
+.badge-card.is-unlocked .badge-card__state { color: var(--good); font-weight: 700; }
+
+/* יומן ביקורים — תצוגת קריאה בבטא */
+.journal { margin-block-start: 0.4rem; display: grid; gap: 1rem; }
+.journal__empty { padding: 0.85rem 1rem; border: 1px dashed var(--line); border-radius: 10px; color: var(--ink-soft); background: var(--stone-100); margin: 0; }
+.journal__group { border: 1px solid var(--line); border-radius: 12px; padding: 0.55rem 0.85rem 0.75rem; background: var(--stone-50); }
+.journal__date { font-size: 0.9rem; margin: 0.15rem 0 0.45rem; color: var(--accent-text); }
+.journal__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+.journal__entry { background: var(--stone-100); border: 1px solid var(--line); border-radius: 10px; padding: 0.55rem 0.75rem; }
+.journal__street { font-size: 0.95rem; margin: 0 0 0.15rem; }
+.journal__meta { font-size: 0.75rem; color: var(--ink-soft); margin: 0; }
+.journal__meta-sep { white-space: pre; }
+.journal__stars { font-variant-numeric: tabular-nums; letter-spacing: 0.05em; white-space: nowrap; }
+.journal__note { font-size: 0.85rem; color: var(--ink); margin: 0.3rem 0 0; padding: 0.35rem 0.55rem; background: var(--stone-50); border-inline-start: 3px solid var(--accent); border-radius: 6px; }
+@media (max-width: 560px) { .badge-group__list { grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); } }
