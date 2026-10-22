@@ -5,7 +5,8 @@
 (function (global) {
   "use strict";
 
-  var KEY = "jlm-street-journal-v1";
+  // סביבת הבטא (beta.html) משתמשת במפתח נפרד — נתוני הבדיקה לא נוגעים ביומן האמיתי.
+  var KEY = global.JLM_BETA ? "jlm-street-journal-beta-v1" : "jlm-street-journal-v1";
   var SCHEMA = 1;
   var MAX_NOTE = 500;
   var DATE_RE = /^\d{4}-\d{2}-\d{2}$/;

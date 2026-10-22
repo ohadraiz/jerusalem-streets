@@ -26,6 +26,15 @@ Full guide (hosting options, required HTTP headers, CSP, PWA and caching): [`doc
 
 Once installed (PWA) the app also opens **with no internet connection** — after one visit the list, the marks and the map are cached locally; only the background tiles need a connection.
 
+## Beta environment (before publishing)
+
+Every change is verified in **beta** first, never directly on the public site: `https://ohadraiz.github.io/jerusalem-streets/beta.html`
+
+- `beta.html` is generated from `index.html`: `node tools/make-beta.js` (`--check` before publishing). Never edit it by hand.
+- Beta data is stored under a separate key (`jlm-street-journal-beta-v1`) and never touches the real journal.
+- The tool panel offers device sizes (390/430/820), 25 sample visits, reset, and JSON export/import.
+- Changes that affect the public site ship behind a flag (`window.JLM_BETA` / `html.is-beta`) until the user explicitly approves them. The process is coordinated by the **Pitchei** agent — [`.opencode/agents/pitchei.md`](.opencode/agents/pitchei.md).
+
 ## Features
 
 - 75 seed streets grouped by neighborhood (`assets/data.js`) — a partial list, easy to extend.

@@ -9,6 +9,9 @@
 (function () {
   "use strict";
 
+  // סביבת הבטא: בלי Service Worker — כדי שכל בדיקה תיטען תמיד מהרשת, בלי מטמון ישן.
+  if (window.JLM_BETA) return;
+
   if (!("serviceWorker" in navigator)) return;
 
   var protocol = window.location.protocol;
