@@ -137,6 +137,18 @@
   var toggleUnavailableMessage =
     "סימון מהמפה אינו זמין כרגע — סמנו ביקור מהרשימה. ";
 
+  /**
+   * מכשיר מגע (אצבע) לעומת עכבר. במגע הקשה על רחוב פותחת כרטיס בלבד,
+   * והסימון נעשה בכפתור מפורש בתוכו — הקשה לא מדויקת לא תסמן רחוב שגוי.
+   */
+  function usesCoarsePointer() {
+    try {
+      return Boolean(window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+    } catch (error) {
+      return false;
+    }
+  }
+
   /** קריאה בטוחה ל-JLMAPI.toggle. מחזיר true אם הסימון התרחש. אף פעם לא זורק. */
   function toggleStreetSafe(id) {
     if (!canToggle()) {
@@ -819,10 +831,11 @@
       layer.addTo(group);
     });
 
-    // ה-click נרשם לפני bindPopup — הסימון מתרחש קודם, והפופאפ נבנה עם המצב החדש.
+    // ה-click נרשם לפני bindPopup. במחשב הסימון מתרחש קודם והפופאפ נבנה עם המצב החדש;
+    // במכשיר מגע הסימון לא מתבצע כאן — ההקשה רק פותחת את הכרטיס, והמשתמש מסמן בו במפורש.
     hits.forEach(function (layer) {
       layer.on("click", function () {
-        toggleStreetSafe(street.id);
+        if (!usesCoarsePointer()) toggleStreetSafe(street.id);
       });
       layer.bindPopup(function () {
         return popupContent(street);
