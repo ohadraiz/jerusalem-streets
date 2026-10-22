@@ -1733,12 +1733,7 @@ summary,
 .achievements__chevron {
   margin-inline-start: auto;
   color: var(--ink-soft);
-  transition: transform 160ms ease;
   font-size: 0.75rem;
-}
-
-.achievements[open] .achievements__chevron {
-  transform: rotate(180deg);
 }
 
 .achievements__list {

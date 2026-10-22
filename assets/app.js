@@ -1991,14 +1991,8 @@
       haptic(completion && completion.kind === "done" ? [40, 60, 40] : 15);
     }
 
-    /* עדכון השורה והמונים — בלי לרנדר את כל הרשימה ובלי לקפל את השכונה */
-    if (filters.status === "all") {
-      if (findRow(id)) refreshRow(id);
-    } else {
-      renderList();
-    }
-    updateAreaUI(area);
-    renderStats();
+    /* עדכון מלא — מבטיח סנכרון מלא בין state ל-DOM */
+    render();
     if (options && options.focusAction) restoreRowAction(id, options.focusAction);
     emitVisitedChange(id);
   }
@@ -3004,6 +2998,20 @@
     el.achievementsDetails.appendChild(gallery);
 
     syncGalleryToggle(toggle);
+
+    /* סיבוב החץ כשהחלונית נפתחת/נסגרת — החלפת תו החץ */
+    var chevron = el.achievementsDetails.querySelector(".achievements__chevron");
+    var summary = el.achievementsDetails.querySelector("summary");
+    if (chevron && summary) {
+      summary.addEventListener("click", function () {
+        var willBeOpen = !el.achievementsDetails.open;
+        Promise.resolve().then(function () {
+          chevron.textContent = willBeOpen ? "▸" : "▾";
+        });
+      });
+      // מצב התחלתי
+      chevron.textContent = el.achievementsDetails.open ? "▸" : "▾";
+    }
   }
 
   function syncedGalleryToggle() {

@@ -43,7 +43,7 @@ const COPIES = [
 ];
 
 /* ב-beta אין התקנת PWA: המניפסט מוסר והסקריפט הזה אינו נטען. */
-const PWA_SCRIPT = '    <script src="assets/pwa.js" defer></script>\n';
+const PWA_SCRIPT = '<script src="assets/pwa.js" defer></script>';
 
 function fail(message) {
   console.error("make-beta: " + message);
@@ -68,8 +68,9 @@ function build(source) {
   if (manifestRemoved === output) fail("לא נמצא link rel=manifest ב-index.html");
   output = manifestRemoved;
 
-  if (!output.includes(PWA_SCRIPT)) fail("לא נמצאה שורת pwa.js ב-index.html");
-  output = output.replace(PWA_SCRIPT, "");
+  const pwaScriptRegex = /<script src="assets\/pwa\.js" defer><\/script>/;
+  if (!pwaScriptRegex.test(output)) fail("לא נמצאה שורת pwa.js ב-index.html");
+  output = output.replace(pwaScriptRegex, "");
 
   COPIES.forEach((name) => {
     const from = "assets/" + name;
