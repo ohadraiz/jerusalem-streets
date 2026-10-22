@@ -1685,7 +1685,7 @@ body.dyk-modal-open {
     padding: 1.1rem 1.1rem 1rem;
   }
 
-  html.is-beta .street__dyk {
+  .street__dyk {
     min-height: 2.75rem;
     padding-inline: 0.7rem;
   }
@@ -2466,8 +2466,8 @@ body.dyk-modal-open {
   .street__delete,
   .street__star,
   .street__mood,
-  html.is-beta .street__dyk,
-  html.is-beta .map-popup__dyk {
+  .street__dyk,
+  .map-popup__dyk {
     min-height: 44px;
   }
 

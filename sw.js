@@ -12,7 +12,7 @@
  */
 "use strict";
 
-const CACHE_NAME = "jlm-shell-v1";
+const CACHE_NAME = "jlm-shell-v2";
 
 /* מעטפת האפליקציה + נתוני הרחובות והגיאומטריה — מטמונים כבר בהתקנה,
    כדי שביקור ראשון יספיק לפתיחה מלאה במצב לא מקוון */
@@ -29,12 +29,18 @@ const PRECACHE = [
   "./assets/store.js",
   "./assets/map.js",
   "./assets/ui.js",
+  "./assets/dyk-facts.js",
   "./assets/sw-register.js",
   "./assets/vendor/leaflet/leaflet.js",
   "./assets/vendor/leaflet/leaflet.css",
   "./assets/icons/icon-192.png",
-  "./assets/icons/icon-512.png"
+  "./assets/icons/icon-512.png",
+  /* מאגר "הידעת?" — אינדקס + קבצי העובדות, כדי שהתגליות יעבדו גם במצב לא מקוון */
+  "./data/didyouknow/index.json"
 ];
+
+/* קבצי העובדות עצמם (data/didyouknow/<id>.txt) — נטענים לפי ביקוש ונשמרים במטמון */
+const FACT_CACHE = "jlm-facts-v1";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -44,16 +50,40 @@ self.addEventListener("install", (event) => {
       .catch(() => {
         /* התקנה חלקית — לא מפילים את ההתקנה */
       })
+      .then(() => precacheFacts())
+      .catch(() => {
+        /* מאגר העובדות לא נטען — המשתמש יקבל אותו בביקור הראשון */
+      })
       .then(() => self.skipWaiting())
   );
 });
+
+/**
+ * מטמון קובצי העובדות של "הידעת?" בעת ההתקנה, לפי אינדקס.
+ * נקרא באופן דינמי כדי שהרשימה תישאר מעודכנת גם כשמוסיפים רחובות חדשים
+ * למאגר — בלי לערוך ידנית את sw.js.
+ */
+function precacheFacts() {
+  return fetch("./data/didyouknow/index.json")
+    .then((response) => (response && response.ok ? response.json() : null))
+    .then((index) => {
+      if (!index || !Array.isArray(index.ids) || !index.ids.length) return null;
+      const files = index.ids.map((id) => "./data/didyouknow/" + id + ".txt");
+      return caches.open(FACT_CACHE).then((cache) => cache.addAll(files));
+    })
+    .catch(() => null);
+}
 
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
       .then((keys) =>
-        Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)))
+        Promise.all(
+          keys
+            .filter((key) => key !== CACHE_NAME && key !== FACT_CACHE)
+            .map((key) => caches.delete(key))
+        )
       )
       .then(() => self.clients.claim())
   );
@@ -72,7 +102,8 @@ self.addEventListener("fetch", (event) => {
       .then((response) => {
         if (response && response.ok && response.type === "basic") {
           const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)).catch(() => {});
+          const target = isFactRequest(url) ? FACT_CACHE : CACHE_NAME;
+          caches.open(target).then((cache) => cache.put(request, copy)).catch(() => {});
           return response;
         }
         // שגיאת שרת (5xx, כולל 502 מפרוקסי) — מנסים מהמטמון לפני שמחזירים אותה.
@@ -91,6 +122,11 @@ self.addEventListener("fetch", (event) => {
       .catch(() => fromCache(request))
   );
 });
+
+/** קובצי העובדות של "הידעת?" — נשמרים במטמון נפרד מהמעטפת */
+function isFactRequest(url) {
+  return url.pathname.indexOf("/data/didyouknow/") !== -1;
+}
 
 /** מהמטמון — לניווט מחזירים את דף הבית השמור */
 function fromCache(request) {
