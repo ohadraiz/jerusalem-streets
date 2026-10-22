@@ -1,10 +1,10 @@
 {
-  "beatAt": "2026-10-22T09:34:47.669Z",
+  "beatAt": "2026-10-22T12:35:24.334Z",
   "updatedAt": "2026-10-22T10:05:00+03:00",
   "mode": "build",
-  "pid": 19608,
-  "lastBuildAt": "2026-10-22T09:34:47.668Z",
-  "output": "guli.html",
+  "pid": 6944,
+  "lastBuildAt": "2026-10-22T12:35:24.333Z",
+  "output": "internal/guli.html",
   "stateFile": "docs/agents/guli/state.json",
   "agents": 11,
   "timeline": 37

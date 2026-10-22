@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>לוח סוכנים — יומן הרחובות של ירושלים (מיפוי, עבודות ותיעוד מלא)</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --bg-card: #1e293b;
+    --bg-hover: #334155;
+    --fg: #f1f5f9;
+    --muted: #cbd5e1;
+    --accent: #22d3ee;
+    --accent-2: #a78bfa;
+    --accent-3: #f472b6;
+    --accent-4: #4ade80;
+    --border: #475569;
+    --shadow: 0 10px 30px rgba(0,0,0,0.5);
+    --radius: 16px;
+    --real-agent: #4ade80;
+    --me-agent: #fbbf24;
+    --focus: #fde047;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", "Noto Sans Hebrew", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    min-height: 100vh;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip-link { position: absolute; right: -9999px; top: 0; background: var(--focus); color: #0f172a; padding: 0.75rem 1.25rem; font-weight: 700; z-index: 2000; border-radius: 0 0 8px 8px; }
+  .skip-link:focus { right: 1rem; }
+  .container { max-width: 1400px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 800; background: linear-gradient(135deg, var(--accent), var(--accent-2), var(--accent-3)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+  .subtitle { color: var(--muted); font-size: 1.1rem; }
+
+  .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem; }
+  .guide-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
+  .guide-card h2 { font-size: 1.2rem; margin-bottom: 0.85rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; }
+  .guide-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .guide-table th, .guide-table td { padding: 0.6rem; border-bottom: 1px solid var(--border); text-align: right; vertical-align: top; }
+  .guide-table th { color: var(--muted); font-weight: 700; }
+  .banner-preview { background: #090d16; border: 1px solid var(--accent); border-radius: 12px; padding: 1rem; font-family: "Cascadia Mono", "Consolas", monospace; font-size: 0.8rem; color: var(--accent-4); white-space: pre-wrap; line-height: 1.5; margin-top: 0.5rem; direction: rtl; text-align: right; }
+
+  .legend { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; padding: 1rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); }
+  .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; color: var(--muted); }
+  .legend-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; }
+  .legend-dot.real { background: var(--real-agent); }
+  .legend-dot.me { background: var(--me-agent); }
+
+  .teams-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(390px, 1fr)); gap: 1.5rem; }
+  .team-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; }
+  .team-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+  .team-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; background: linear-gradient(135deg, var(--team-color), var(--team-color-light)); color: #0f172a; flex-shrink: 0; }
+  .team-name { font-size: 1.2rem; font-weight: 700; color: var(--fg); }
+  .team-desc { font-size: 0.9rem; color: var(--muted); margin-top: 0.25rem; }
+  .agents-list { display: flex; flex-direction: column; gap: 0.85rem; }
+  .agent-btn { display: flex; flex-direction: column; gap: 0.6rem; padding: 1rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 12px; cursor: pointer; transition: background 0.2s, border-color 0.2s; text-align: right; width: 100%; color: inherit; font: inherit; }
+  .agent-btn:hover { background: var(--bg-hover); border-color: var(--team-color); }
+  .agent-main { display: flex; align-items: flex-start; gap: 1rem; }
+  .agent-avatar { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; background: linear-gradient(135deg, var(--agent-color), var(--agent-color-light)); color: #0f172a; }
+  .agent-info { flex: 1; min-width: 0; }
+  .agent-name-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.25rem; }
+  .agent-name { font-weight: 700; font-size: 1.05rem; }
+  .agent-role-tag { font-size: 0.75rem; padding: 0.15rem 0.5rem; border-radius: 999px; font-weight: 700; white-space: nowrap; }
+  .agent-role-tag.real { background: rgba(74,222,128,0.25); color: var(--real-agent); border: 1px solid rgba(74,222,128,0.5); }
+  .agent-role-tag.me { background: rgba(251,191,36,0.25); color: var(--me-agent); border: 1px solid rgba(251,191,36,0.5); }
+  .agent-role-text { font-size: 0.85rem; color: var(--fg); line-height: 1.45; margin-bottom: 0.4rem; }
+  .agent-jobs-preview { list-style: none; display: flex; flex-direction: column; gap: 0.2rem; font-size: 0.8rem; color: var(--muted); padding-right: 0.5rem; border-right: 2px solid var(--border); }
+  .agent-jobs-preview li::before { content: "• "; color: var(--accent); }
+  .agent-executor { display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 0.75rem; background: rgba(255,255,255,0.03); border-radius: 8px; font-size: 0.8rem; color: var(--muted); border: 1px solid var(--border); flex-wrap: wrap; }
+  .executor-badge { padding: 0.15rem 0.5rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem; }
+  .executor-badge.real { background: rgba(74,222,128,0.2); color: var(--real-agent); }
+  .executor-badge.me { background: rgba(251,191,36,0.2); color: var(--me-agent); }
+  .executor-label { color: var(--muted); }
+  .doc-links { display: flex; gap: 0.5rem; margin-right: auto; flex-wrap: wrap; }
+  .doc-link { font-size: 0.75rem; padding: 0.25rem 0.5rem; border-radius: 6px; background: rgba(34,211,238,0.12); color: var(--accent); text-decoration: none; border: 1px solid rgba(34,211,238,0.35); transition: background 0.2s; }
+  .doc-link:hover { background: rgba(34,211,238,0.3); }
+
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(6px); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 1rem; opacity: 0; visibility: hidden; transition: opacity 0.25s, visibility 0.25s; }
+  .modal-overlay.open { opacity: 1; visibility: visible; }
+  .modal { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; max-width: 680px; width: 100%; transform: scale(0.95) translateY(20px); transition: transform 0.25s; position: relative; max-height: 92vh; overflow-y: auto; }
+  .modal-overlay.open .modal { transform: scale(1) translateY(0); }
+  .modal-close { position: absolute; top: 0.75rem; left: 0.75rem; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); background: var(--bg-hover); color: var(--fg); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, border-color 0.2s; font-size: 1.1rem; }
+  .modal-close:hover { background: var(--accent); color: #0f172a; border-color: var(--accent); }
+  .modal-avatar { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 0.75rem; display: flex; align-items: center; justify-content: center; font-size: 2rem; background: linear-gradient(135deg, var(--modal-agent-color), var(--modal-agent-color-light)); color: #0f172a; }
+  .modal-title { text-align: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .modal-team { text-align: center; color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+  .modal-executor { text-align: center; margin-bottom: 1.25rem; padding: 1rem; background: rgba(255,255,255,0.04); border-radius: 10px; border: 1px solid var(--border); }
+  .modal-docs { display: flex; gap: 0.6rem; justify-content: center; margin-top: 0.75rem; flex-wrap: wrap; }
+  .modal-doc-btn { padding: 0.5rem 0.9rem; border-radius: 8px; background: rgba(34,211,238,0.15); color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 700; border: 1px solid rgba(34,211,238,0.4); transition: background 0.2s; display: inline-flex; align-items: center; gap: 0.35rem; }
+  .modal-doc-btn:hover { background: rgba(34,211,238,0.3); }
+  .modal-section-title { font-size: 1rem; font-weight: 700; color: var(--accent); margin: 1rem 0 0.5rem; }
+  .modal-jobs { list-style: none; display: flex; flex-direction: column; gap: 0.45rem; margin-bottom: 1.25rem; font-size: 0.9rem; }
+  .modal-jobs li { background: rgba(255,255,255,0.03); padding: 0.55rem 0.75rem; border-radius: 8px; border-right: 3px solid var(--modal-agent-color); }
+  .modal-when { background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.4); border-radius: 8px; padding: 0.75rem; font-size: 0.9rem; margin-bottom: 1.25rem; }
+  .modal-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.25rem; }
+  .tag { padding: 0.3rem 0.7rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700; background: rgba(34,211,238,0.18); color: var(--accent); border: 1px solid rgba(34,211,238,0.4); }
+  .modal-actions { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+  .top-nav { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: center; margin: 1rem 0 0; }
+  .top-nav .btn { text-decoration: none; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; min-height: 44px; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer; border: none; transition: transform 0.15s, background 0.2s; }
+  .btn-primary { background: linear-gradient(135deg, var(--modal-agent-color), var(--modal-agent-color-light)); color: #0f172a; }
+  .btn-primary:hover { transform: translateY(-2px); }
+  .btn-secondary { background: var(--bg-hover); color: var(--fg); border: 1px solid var(--border); }
+  .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+  .activation-toast { position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%) translateY(150%); background: #090d16; border: 2px solid var(--accent-4); border-radius: 14px; padding: 1rem 1.5rem 1rem 1rem; z-index: 1001; box-shadow: var(--shadow); opacity: 0; transition: opacity 0.3s, transform 0.3s; max-width: 92vw; width: 700px; font-family: "Cascadia Mono", "Consolas", monospace; font-size: 0.8rem; color: var(--accent-4); white-space: pre-wrap; }
+  .activation-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+  .toast-body { max-height: 45vh; overflow-y: auto; }
+  .toast-close { position: absolute; top: 0.5rem; left: 0.5rem; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--accent-4); background: transparent; color: var(--accent-4); cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+  .toast-close:hover { background: var(--accent-4); color: #090d16; }
+  .toast-hint { display: block; margin-top: 0.6rem; font-size: 0.75rem; color: var(--muted); font-family: "Segoe UI", sans-serif; }
+
+  @media (max-width: 600px) {
+    body { padding: 1rem; }
+    .guide-grid, .teams-grid { grid-template-columns: 1fr; }
+    .team-card { padding: 1rem; }
+    .modal { padding: 1.5rem 1rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#teamsGrid">דלג לרשימת הסוכנים</a>
+<div class="container">
+  <header>
+    <h1>לוח סוכנים — מיפוי, עבודות ותיעוד מלא</h1>
+    <p class="subtitle">יומן הרחובות של ירושלים — מתי מפעילים סוכן משנה, מתי הראשי עובד לבד, ואיך נראה חיווי ההפעלה</p>
+    <nav class="top-nav" aria-label="ניווט פנימי">
+      <a class="btn btn-secondary" href="index.html">🏠 דף בית פנימי</a>
+      <a class="btn btn-secondary" href="tasks.html">📋 דשבורד המשימות</a>
+      <a class="btn btn-secondary" href="guli.html">📢 חדר הסוכנים</a>
+      <a class="btn btn-secondary" href="project-map.html">🗺️ מפת הפרויקט</a>
+      <a class="btn btn-secondary" href="agent-vs-subagent.html">🎩 ראשי מול סאב</a>
+    </nav>
+  </header>
+
+  <div class="guide-grid">
+    <section class="guide-card" aria-labelledby="guide-when">
+      <h2 id="guide-when">⚖️ מתי סוכן משנה (Subagent) ומתי הראשי (`build`) לבד?</h2>
+      <table class="guide-table">
+        <caption class="sr-only" style="position:absolute;right:-9999px;">טבלת החלטה: מי מבצע כל סוג משימה</caption>
+        <thead>
+          <tr><th scope="col">סוג המשימה</th><th scope="col">מי מבצע?</th><th scope="col">למה?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>תיקון באג קטן, שינוי טקסט, CSS נקודתי</td><td><strong style="color:var(--me-agent)">🧠 הראשי לבד</strong></td><td>מהיר, חוסך Rate Limit</td></tr>
+          <tr><td>מימוש ליבה (`store.js`), חיבור מפה↔רשימה (`JLMAPI`)</td><td><strong style="color:var(--me-agent)">🧠 הראשי לבד</strong></td><td>אינטגרציה חוצת-קבצים</td></tr>
+          <tr><td>עיצוב רכיב UI, אקורדיון, מודאל, מדידות 360/390/430</td><td><strong style="color:var(--real-agent)">🤖 ציבי (`tsibi`)</strong></td><td>צוואר בקבוק עיצובי</td></tr>
+          <tr><td>שינוי ב-`assets/map.js`, אריחים, LOD 12, זום</td><td><strong style="color:var(--real-agent)">🤖 צירי (`tsiri`)</strong></td><td>בעלים בלעדי של `map.js`</td></tr>
+          <tr><td>חילוץ OSM, גיאומטריה, שכונות, שבילים מיושבים</td><td><strong style="color:var(--real-agent)">🤖 מפי (`mappy`)</strong></td><td>מומחה גיאומטריה</td></tr>
+          <tr><td>מחקר רשת, מאגר "הידעת?", בדיקת כותרות HTTP חיות</td><td><strong style="color:var(--real-agent)">🤖 החוקר (`chiki`)</strong></td><td>מבודד בקשות רשת</td></tr>
+          <tr><td>ביקורת קוד (Code Review) מקיפה לפני סגירת סבב</td><td><strong style="color:var(--real-agent)">🤖 שיפו (`shifu`)</strong></td><td>עין שנייה נקייה</td></tr>
+          <tr><td>הכנסה ל-`beta.html`, הרצת שערים והצגה לאישור</td><td><strong style="color:var(--real-agent)">🤖 פתחי (`pitchei`)</strong></td><td>שומר השער של הבטא</td></tr>
+          <tr><td>Commit + Push ל-GitHub Pages ואימות סנכרון</td><td><strong style="color:var(--real-agent)">🤖 הגבאי (`gabbai`)</strong></td><td>הקפאת מצב בטוחה</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="guide-card" aria-labelledby="guide-how">
+      <h2 id="guide-how">🚨 איך מפעילים סוכן — 2 צעדים בלבד</h2>
+      <p style="font-size:0.92rem; color:var(--fg); margin-bottom:0.6rem;">
+        <strong>צעד 1:</strong> לחץ על סוכן → לחץ על <strong>"📋 העתק פרומפט הפעלה מלא"</strong>. הפרומפט כולל את שם הסוכן, המשימה וכללי הברזל.
+      </p>
+      <p style="font-size:0.92rem; color:var(--fg); margin-bottom:0.6rem;">
+        <strong>צעד 2:</strong> הדבק אותו כאן בצ'אט. הסוכן יופעל ואני אדפיס לפניך את הבאנר:
+      </p>
+      <div class="banner-preview" role="img" aria-label="דוגמה לבאנר הפעלת סוכן משנה">╔══════════════════════════════════════════════════════════════════╗
+║ 🤖 [SUBAGENT START] מפעיל סוכן משנה עכשיו!                        ║
+║ 👤 סוכן: פתחי (pitchei)                                          ║
+║ 🏢 צוות: צוות סביבת פיתוח (בטא)                                  ║
+║ 🎯 משימה: בניית beta.html והצגת השינויים לאהד                    ║
+╚══════════════════════════════════════════════════════════════════╝</div>
+      <p style="font-size:0.85rem; color:var(--muted); margin-top:0.65rem;">וכשאני מבצע בעצמי בלי סוכן משנה, תראה: <strong style="color:var(--me-agent)">🧠 [הסוכן הראשי מבצע ישירות — כובע: ...]</strong></p>
+    </section>
+  </div>
+
+  <div class="legend" role="list" aria-label="מקרא">
+    <div class="legend-item" role="listitem"><span class="legend-dot real" aria-hidden="true"></span><span>סוכן OpenCode אמיתי (מופעל דרך subagent עם באנר [SUBAGENT START])</span></div>
+    <div class="legend-item" role="listitem"><span class="legend-dot me" aria-hidden="true"></span><span>הסוכן הראשי (`build`) מבצע ישירות בכובע ייעודי</span></div>
+  </div>
+
+  <div class="teams-grid" id="teamsGrid"></div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalRole">
+  <div class="modal" id="modal" tabindex="-1">
+    <button class="modal-close" id="modalClose" aria-label="סגור חלון סוכן (Esc)">✕</button>
+    <div class="modal-avatar" id="modalAvatar" aria-hidden="true"></div>
+    <h2 class="modal-title" id="modalTitle"></h2>
+    <p class="modal-team" id="modalTeam"></p>
+    <div class="modal-executor" id="modalExecutor"></div>
+    <p class="modal-role" id="modalRole"></p>
+    <div class="modal-section-title">🛠️ עבודות קונקרטיות שהסוכן עושה בפרויקט:</div>
+    <ul class="modal-jobs" id="modalJobs"></ul>
+    <div class="modal-when" id="modalWhen"></div>
+    <div class="modal-tags" id="modalTags"></div>
+    <div class="modal-actions">
+      <button class="btn btn-primary" id="btnActivate">📋 העתק פרומפט הפעלה מלא</button>
+      <button class="btn btn-secondary" id="btnShowBanner">👁️ הצג תצוגת באנר</button>
+      <button class="btn btn-secondary" id="btnCancel">סגור</button>
+    </div>
+  </div>
+</div>
+
+<div class="activation-toast" id="toast" role="status" aria-live="polite" hidden>
+  <button class="toast-close" id="toastClose" aria-label="סגור הודעה">✕</button>
+  <div class="toast-body" id="toastBody"></div>
+  <span class="toast-hint">לחץ ✕ או Esc כדי לסגור</span>
+</div>
+
+<script>
+const TEAMS = [
+  {
+    id: "leadership",
+    name: "הנהלה ותיאום",
+    icon: "🎯",
+    color: "#22d3ee",
+    colorLight: "#67e8f9",
+    agents: [
+      {
+        id: "guli", name: "גולי (המתעד / המגשר)",
+        persona: "כרוז החדר ורשות ההקשר של הסוכנים (Agent Context Authority)",
+        avatar: "📢", color: "#22d3ee", colorLight: "#67e8f9",
+        executor: { type: "real", name: "guli", desc: "סוכן OpenCode: guli — בונה guli.html ו-agent-status.json", docPath: ".opencode/agents/guli.md", channelPath: "docs/agents/channels/guli.md", livePage: "./guli.html" },
+        promptTask: "עדכן את חדר המצב החי: הרץ node tools/guli-room.js, רענן את agent-status.json ו-state.json, ובנה מחדש את guli.html.",
+        jobs: [
+          "תשאול אקטיבי של כל הסוכנים: מה עושה עכשיו, איפה נתקע, מה צריך כדי להתקדם",
+          "הפקת agent-status.json כמקור אמת יחיד לסטטוס סוכנים (מפקח צורך)",
+          "בניית דף החדר החי guli.html (דשבורד צוותים, מסלול עבודה וציר זמן אירועים)",
+          "סנכרון דו-כיווני רציף מול המפקח ועדכון state.json"
+        ],
+        whenToUse: "מפעילים כשרוצים לעדכן את חדר המצב (guli.html) או לקבל תמונת מצב חיה על כל הסוכנים.",
+        tags: ["תיאום", "תיעוד", "guli.html", "agent-status.json"]
+      },
+      {
+        id: "inspector", name: "המפקח",
+        persona: "רשות הנתונים של המשימות (Task Data Authority) — עובד בצמוד לגולי",
+        avatar: "📋", color: "#06b6d4", colorLight: "#22d3ee",
+        executor: { type: "real", name: "inspector", desc: "סוכן OpenCode: inspector — בונה tasks.html ו-tasks-data.json", docPath: ".opencode/agents/inspector.md", channelPath: "docs/agents/channels/inspector.md", livePage: "./tasks.html" },
+        promptTask: "רענן את דשבורד המשימות: הרץ node tools/tasks-dashboard.js, עדכן tasks-data.json ו-tasks.html לפי TEAMS.md ו-TASKS.md, והצג תגי סטטוס סוכן מ-agent-status.json.",
+        jobs: [
+          "קריאת TEAMS.md ו-TASKS.md ונירמול כל המשימות ל-tasks-data.json",
+          "בניית דשבורד המשימות האינטראקטיבי tasks.html (7 צוותים, פילטרים, חיפוש, 7 מיונים, הדפסה/PDF)",
+          "צריכת agent-status.json מגולי והצגת תגי סטטוס סוכן חי על כל משימה",
+          "זיהוי משימות ללא בעלים או חוסמים פתוחים ודיווח לראשי"
+        ],
+        whenToUse: "מפעילים אחרי סגירת סבב או הוספת משימות חדשות כדי לרענן את tasks.html ו-tasks-data.json.",
+        tags: ["משימות", "tasks.html", "RTL", "tasks-data.json"]
+      },
+      {
+        id: "kipi", name: "קיפי",
+        persona: "סוכן מעקב הקפאות — שומר הקשר מלא לכל תהליך מוקפא (HOLD)",
+        avatar: "🧊", color: "#8b5cf6", colorLight: "#c4b5fd",
+        executor: { type: "real", name: "kipi", desc: "סוכן OpenCode: kipi — רושם ומנהל הקפאות בערוץ kipi.md", docPath: ".opencode/agents/kipi.md", channelPath: "docs/agents/channels/kipi.md" },
+        promptTask: "עדכן את רשימת ההקפאות בערוץ kipi.md: הוסף/עדכן פריטים מוקפאים עם סיבה, הקשר ומה נדרש לחידוש.",
+        jobs: [
+          "מעקב אחרי 9 שבילי HOLD שממתינים לרישיון GIS עירוני כתוב",
+          "תיעוד הקפאת שכבת הרשות המוניציפלית (3,241 קווים / 115 פוליגונים)",
+          "שמירת הקשר להחלטות מוקפאות (Tile Probe AND מול OR, בדיקת מכשיר פיזי)",
+          "אספקת הקשר מלא חזרה לצוות ברגע שחסם משתחרר"
+        ],
+        whenToUse: "מפעילים כשמחליטים להקפיא פיצ'ר/מקור נתונים או כשרוצים להפשיר פריט מוקפא.",
+        tags: ["הקפאות", "HOLD", "רישוי GIS"]
+      }
+    ]
+  },
+  {
+    id: "beta",
+    name: "צוות סביבת פיתוח (בטא)",
+    icon: "🧪",
+    color: "#4ade80",
+    colorLight: "#86efac",
+    agents: [
+      {
+        id: "pitchei", name: "פתחי",
+        persona: "ראש צוות הבטא — שומר השער לפני האתר הציבורי",
+        avatar: "🛡️", color: "#4ade80", colorLight: "#86efac",
+        executor: { type: "real", name: "pitchei", desc: "סוכן OpenCode: pitchei — מריץ make-beta.js, שערים, ומציג לאישור", docPath: ".opencode/agents/pitchei.md", channelPath: "docs/agents/channels/pitchei.md", livePage: "beta.html" },
+        promptTask: "בנה את beta.html עם השינויים האחרונים, הרץ את כל השערים (node --check, tests/store.test.js, tools/verify.js, make-beta --check), וודא בידוד אחסון, והצג את השינויים לאהד עם משפט הפתיחה הקבוע.",
+        jobs: [
+          "קבלת שינויים מכל הצוותים והרצת node tools/make-beta.js ליצירת עותק מבודד ב-assets/beta/*",
+          "ווידוא בידוד אחסון מלא (jlm-street-journal-beta-v1 מול jlm-street-journal-v1)",
+          "הרצת כל שערי החובה: node --check, store.test.js (24/24), verify.js, make-beta --check",
+          "הצגת השינויים לאהד עם משפט הפתיחה הקבוע והמתנה לאישור מפורש"
+        ],
+        whenToUse: "חובה להפעיל בסוף כל פיתוח של כל צוות לפני שהשינוי עולה לאתר הציבורי!",
+        tags: ["בטא", "אישור משתמש", "make-beta.js", "שומר שער"]
+      }
+    ]
+  },
+  {
+    id: "data-maps",
+    name: "צוות נתונים ומפות",
+    icon: "🗺️",
+    color: "#fbbf24",
+    colorLight: "#fcd34d",
+    agents: [
+      {
+        id: "mappy", name: "מפי",
+        persona: "אחראי נתונים וגיאומטריה (`assets/data.js`, `assets/geo.js`)",
+        avatar: "📍", color: "#fbbf24", colorLight: "#fcd34d",
+        executor: { type: "real", name: "mappy", desc: "סוכן OpenCode: mappy — OSM/PBF, גיאומטריה, שכונות וארכיון", docPath: ".opencode/agents/mappy.md", channelPath: "docs/agents/channels/mappy.md" },
+        promptTask: "בדוק/עדכן את נתוני הרחובות (data.js + geo.js): חילוץ מ-OSM/PBF, חיתוך 4 ק\"מ, שיוך שכונות, ואימות שאין חריגות BBOX או כפילויות. הרץ node tools/verify.js.",
+        jobs: [
+          "חילוץ 2,424 רחובות ו-95 שכונות מחילוץ Geofabrik PBF עם מרכז (lat/lng) וקווים (paths)",
+          "חיתוך גיאומטריה לרדיוס 4 ק\"מ למניעת מיזוג שמות רחובות זהים מערים אחרות",
+          "שיוך רחובות לשכונות (point-in-polygon) ושימור מזהי זרע קבועים",
+          "איתור ואימות שבילים ומדרגות מיושבים וניהול ארכיון הפיך ב-retired-streets.json"
+        ],
+        whenToUse: "מפעילים בכל שאלה או שינוי ברשימת הרחובות, שכונות, קואורדינטות או קווי מפה ב-data.js/geo.js.",
+        tags: ["OSM", "PBF", "גיאומטריה", "data.js", "geo.js"]
+      },
+      {
+        id: "tsiri", name: "צירי (המגשר)",
+        persona: "אחראי המפה האינטראקטיבית (`assets/map.js`)",
+        avatar: "🧭", color: "#f97316", colorLight: "#fdba74",
+        executor: { type: "real", name: "tsiri", desc: "סוכן OpenCode: tsiri — Leaflet, קנבס גיבוי, אריחים ו-LOD 12", docPath: ".opencode/agents/tsiri.md", channelPath: "docs/agents/channels/tsiri.md" },
+        promptTask: "בצע את השינוי ב-assets/map.js (לוגיקת מפה, אריחים, LOD, זום, שכבות פגיעה). שמור על חוזה JLMMap, LOD 12 ומזהי DOM. הרץ node --check assets/map.js.",
+        jobs: [
+          "רינדור קווי רחובות ב-Leaflet (preferCanvas) עם זום פתיחה 12 ו-LOD 12",
+          "שכבות פגיעה רחבות ושקופות (24px במחשב / 36px במגע) ללא צל כהה",
+          "הפרדת התנהגות מגע (פתיחת כרטיס בלבד) מול מחשב (סימון מיידי בלחיצה)",
+          "ניווט zoomToStreet(id,16) ו-zoomToArea(area), ושרשרת ספקי אריחים עם זיהוי חסימה שקטה"
+        ],
+        whenToUse: "מפעילים לכל שינוי ב-assets/map.js: זום, אריחים, פופאפ מפה, קנבס או אינטראקציית מפה.",
+        tags: ["map.js", "Leaflet", "LOD 12", "Tile Chain"]
+      },
+      {
+        id: "chiki", name: "החוקר (לשעבר חיקי)",
+        persona: "חוקר אינטרנט, מקורות, מאגר 'הידעת?' ואימות HTTP חי",
+        avatar: "🔎", color: "#fb923c", colorLight: "#fdba74",
+        executor: { type: "real", name: "chiki", desc: "סוכן OpenCode: chiki — מחקר רשת, ויקיפדיה/ויקינתונים, אימות ספקים", docPath: ".opencode/agents/chiki.md", channelPath: "docs/agents/channels/researcher.md" },
+        promptTask: "חקור ומלא את מאגר 'הידעת?' (data/didyouknow/<street-id>.txt) עם אימות צולב של 2+ מקורות, או אמת ספקי אריחים/APIs בבקשות HTTP חיות.",
+        jobs: [
+          "בניית מאגר 'הידעת?' (data/didyouknow/<id>.txt) עם אימות צולב של 2+ מקורות",
+          "מדידות HTTP חיות של ספקי אריחים (כותרות cache-control, גדלים, רישיונות ו-CORS)",
+          "איתור שבילים מיושבים מתוך מאגרי עירייה/ממשלה והצלבה מול OSM",
+          "מחקר אפליקציות השלמת עיר דומות והפקת בריפים ממוקדים לציבי"
+        ],
+        whenToUse: "מפעילים כשצריך מידע מהאינטרנט, כתיבת עובדות 'הידעת?', או בדיקת API/שרת חיצוני.",
+        tags: ["מחקר", "הידעת?", "ויקיפדיה", "אימות HTTP"]
+      }
+    ]
+  },
+  {
+    id: "mobile",
+    name: "צוות מובייל",
+    icon: "📱",
+    color: "#a78bfa",
+    colorLight: "#c4b5fd",
+    agents: [
+      {
+        id: "mobi", name: "מובי",
+        persona: "ראש צוות מובייל — PWA, אופליין וסיור מודרך בטלפון עם אהד",
+        avatar: "🤳", color: "#a78bfa", colorLight: "#c4b5fd",
+        executor: { type: "real", name: "mobi", desc: "סוכן OpenCode: mobi — sw.js, manifest, pwa.js ובדיקת מכשיר", docPath: ".opencode/agents/mobi.md", channelPath: "docs/agents/channels/mobi.md" },
+        promptTask: "בדוק/עדכן את שכבת ה-PWA (sw.js, manifest, pwa.js) ולוודא עבודה אופליין מהביקור הראשון. אם צריך — הובל סיור מודרך עם אהד בטלפון. הרץ node --check.",
+        jobs: [
+          "סיור מודרך שלב-אחר-שלב עם אהד בטלפון לזיהוי הבדלים נדרשים בין מובייל לדסקטופ",
+          "תחזוקת Service Worker (sw.js) עם precache מלא לעבודה במצב טיסה מהביקור הראשון",
+          "חוויית התקנה למסך הבית (באנר Android + הוראות iOS ב-assets/pwa.js)",
+          "התאמות safe-area, viewport-fit=cover, ו-manifest.webmanifest מלוטש"
+        ],
+        whenToUse: "מפעילים כשאתה בטלפון ורוצה לעבור יחד על האפליקציה, או לכל שינוי ב-PWA/Service Worker.",
+        tags: ["PWA", "סיור בטלפון", "sw.js", "Offline"]
+      }
+    ]
+  },
+  {
+    id: "ux",
+    name: "צוות UI/UX",
+    icon: "🎨",
+    color: "#f472b6",
+    colorLight: "#f9a8d4",
+    agents: [
+      {
+        id: "tsibi", name: "ציבי (המעצב)",
+        persona: "צוואר בקבוק עיצובי — אחראי על שכבת הממשק",
+        avatar: "✨", color: "#f472b6", colorLight: "#f9a8d4",
+        executor: { type: "real", name: "tsibi", desc: "סוכן OpenCode: tsibi — עיצוב, נגישות WCAG AA, מובייל ו-RTL", docPath: ".opencode/agents/tsibi.md", channelPath: "docs/agents/channels/tsibi.md" },
+        promptTask: "בצע את שינוי ה-UI/UX. שמור על WCAG AA, יעדי 44px, RTL, מצב כהה ופוקוס נראה. הרץ node --check assets/app.js ואמת ב-360/390/430/1280.",
+        jobs: [
+          "אישור ומימוש כל שינוי בממשק המשתמש (אקורדיון שכונות, תצוגה שטוחה, חיפוש דביק)",
+          "מדידות חיות ב-360/390/430/1280px: אפס גלילה אופקית, יעדי מגע ≥44px (כולל pointer: coarse)",
+          "מצב כהה מלא (Dark Mode) ובדיקת ניגודיות AA בכל ארבעת שילובי ערכת הנושא",
+          "גיימיפיקציה וחוויה: גלריית 18 הישגים, יומן ביקורים, דירוג כוכבים, חיווי קולי וקיצורי מקלדת"
+        ],
+        whenToUse: "מפעילים לכל שינוי עיצובי, תוספת כפתור/חלונית, שיפור נגישות או התאמת פריסה.",
+        tags: ["UI/UX", "צוואר בקבוק", "WCAG AA", "Dark Mode"]
+      }
+    ]
+  },
+  {
+    id: "quality",
+    name: "צוות נגישות, SEO ובקרת איכות",
+    icon: "♿",
+    color: "#22d3ee",
+    colorLight: "#67e8f9",
+    agents: [
+      {
+        id: "shifu", name: "שיפו (הבודק)",
+        persona: "סוקר קוד חוזר — באגים, נגישות, RTL וביצועים (קריאה בלבד)",
+        avatar: "🥋", color: "#06b6d4", colorLight: "#22d3ee",
+        executor: { type: "real", name: "shifu", desc: "סוכן OpenCode: shifu — Code Review עצמאי ללא עריכת קבצים", docPath: ".opencode/agents/shifu.md", channelPath: "docs/agents/channels/shifu.md" },
+        promptTask: "בצע ביקורת קוד מלאה על הקבצים ששונו בסבב. סווג ממצאים לחוסם/חשוב/בשוליים עם קובץ:שורות והצעת תיקון. כתוב רק לערוץ shifu.md.",
+        jobs: [
+          "ביקורת קוד מלאה על צילום מצב קפוא לפני סגירת סבב (חוסם / חשוב / בשוליים)",
+          "תפיסת באגי קצה: מחיקת רחוב אחרון, אובדן פוקוס אחרי undo, סדר persist לפני announce",
+          "אימות ARIA תקין (group מול radiogroup, aria-live ללא הצפה, לכידת פוקוס במודאל)",
+          "השוואת בתים בין הדיסק המקומי לאתר הפרוס ב-GitHub Pages"
+        ],
+        whenToUse: "מפעילים בסוף פיתוח של פיצ'ר כדי לתפוס באגים ובעיות נגישות לפני שמעלים לפרודקשן.",
+        tags: ["Code Review", "באגים", "ARIA", "קריאה בלבד"]
+      },
+      {
+        id: "saogao", name: "סאוגאו",
+        persona: "מומחה SEO, GEO, נגישות, היוריסטיקות ומצוינות אתר",
+        avatar: "🔍", color: "#22d3ee", colorLight: "#67e8f9",
+        executor: { type: "real", name: "saogao", desc: "סוכן OpenCode: saogao — SEO/GEO, Schema.org, FAQ וזכויות יוצרים", docPath: ".opencode/agents/saogao.md", channelPath: "docs/agents/channels/saogao.md" },
+        promptTask: "בצע ביקורת SEO/GEO ונגישות: מטא-דאטה, Schema.org, FAQ, זכויות יוצרים וייחוס OSM. הצע משימות מדויקות דרך פתחי.",
+        jobs: [
+          "בדיקת עקרונות SEO ו-GEO (נראות במנועי חיפוש ומנועי AI)",
+          "הטמעת סקציית שאלות נפוצות (FAQ נגיש עם details/summary)",
+          "וידוא זכויות יוצרים, הצהרת פרטיות וייחוס תקין ל-OSM (ODbL)",
+          "בדיקת היוריסטיקות שימושיות ומדדי Lighthouse (100/100/100)"
+        ],
+        whenToUse: "מפעילים כשרוצים לשפר מטא-דאטה, תוכן שיווקי/מידעי, FAQ, או בדיקת מצוינות כללית.",
+        tags: ["SEO", "GEO", "FAQ", "Lighthouse"]
+      }
+    ]
+  },
+  {
+    id: "distribution",
+    name: "צוות הפצה ותשתית",
+    icon: "🚀",
+    color: "#f472b6",
+    colorLight: "#f9a8d4",
+    agents: [
+      {
+        id: "gabbai", name: "הגבאי",
+        persona: "אחראי GitHub ופריסה — לפי דרישה בלבד (לא מתקן ולא יוזם)",
+        avatar: "📤", color: "#94a3b8", colorLight: "#cbd5e1",
+        executor: { type: "real", name: "gabbai", desc: "סוכן OpenCode: gabbai — שערים, commit, push ואימות סנכרון", docPath: ".opencode/agents/gabbai.md", channelPath: "docs/agents/BOARD.md" },
+        promptTask: "הרץ את כל שערי האיכות (verify, store.test, node --check, make-beta --check), בצע commit עם הודעה ברורה באנגלית, push ל-origin/main, ואמת HEAD == origin/main. אם שער נכשל — עצור ודווח.",
+        jobs: [
+          "הרצת כל שערי האיכות (verify, store.test, node --check, make-beta --check)",
+          "הקפאת מצב ב-commit נקי עם הודעה ברורה באנגלית",
+          "דחיפה (push) ל-origin/main ואימות HEAD == origin/main ב-git ls-remote",
+          "בדיקת HTTP 200 על האתר החי ב-GitHub Pages לאחר הפריסה"
+        ],
+        whenToUse: "מפעילים אך ורק אחרי שאהד אישר את הבטא וביקש להעלות ל-GitHub.",
+        tags: ["GitHub", "Commit & Push", "שערי איכות"]
+      },
+      {
+        id: "pitzi", name: "פיצי",
+        persona: "ראש צוות הפצה — דומיין, כותרות אבטחה, CSP ו-Rollback (ב-standby)",
+        avatar: "📦", color: "#f472b6", colorLight: "#f9a8d4",
+        executor: { type: "real", name: "pitzi", desc: "סוכן OpenCode: pitzi — ארכיטקטורת אירוח, CSP, גרסאות ושחרורים", docPath: ".opencode/agents/pitzi.md", channelPath: "docs/agents/channels/pitzi.md" },
+        promptTask: "הכן תוכנית הפצה: השווה ספקי אחסון, הגדר כותרות אבטחה (Referrer-Policy, CSP), ונהל גרסאות ו-Rollback.",
+        jobs: [
+          "השוואת ספקי אחסון (GitHub Pages / Cloudflare Pages / Netlify)",
+          "הגדרת כותרות HTTP חובה: Referrer-Policy ו-CSP (img-src + connect-src לאריחים)",
+          "ניהול CHANGELOG, תגיות גרסה ונוהל גלגול אחורה (Rollback ≤15 דקות)",
+          "סינון קבצים פנימיים לפני הפצה נקייה (tools/prepare-publish.js)"
+        ],
+        whenToUse: "בהמתנה (standby) — יופעל כשנגיע לחיבור דומיין מותאם, כותרות CSP או מעבר ספק.",
+        tags: ["CI/CD", "CSP", "HTTPS", "Standby"]
+      }
+    ]
+  },
+  {
+    id: "main-hats",
+    name: "כובעי מימוש של הסוכן הראשי (ללא Subagent נפרד)",
+    icon: "🧠",
+    color: "#10b981",
+    colorLight: "#6ee7b7",
+    agents: [
+      {
+        id: "fruti", name: "פרוטי (כובע פרונטאנד)",
+        persona: "מימוש קוד פרונטאנד מהיר, חיבור אירועים ו-State ב-app.js/store.js",
+        avatar: "⚛️", color: "#10b981", colorLight: "#6ee7b7",
+        executor: { type: "me", name: "הסוכן הראשי (build)", desc: "מבוצע ישירות על ידי הסוכן הראשי — מהיר וללא עלות סשן נפרד", docPath: ".opencode/agents/build.md", channelPath: "docs/agents/BOARD.md" },
+        promptTask: "בכובע של פרוטי — ממש ישירות את לוגיקת ה-JS (app.js/store.js), חבר אירועים וחוזי JLMAPI/JLMBus, והרץ בדיקות.",
+        jobs: [
+          "כתיבת לוגיקה ב-assets/store.js ו-assets/app.js",
+          "חיבור חוזי JLMAPI ו-JLMBus בין הרשימה למפה",
+          "כתיבת והרצת בדיקות יחידה ב-tests/store.test.js ו-tools/verify.js"
+        ],
+        whenToUse: "הראשי מבצע ישירות כשצריך כתיבת קוד JS או תיקון באג מהיר בלי לפתוח סשן של סוכן משנה.",
+        tags: ["JS", "State", "JLMAPI", "ביצוע ישיר"]
+      },
+      {
+        id: "ruhi", name: "רוחי (כובע תוכן)",
+        persona: "עריכת טקסטים, מיקרו-קופי בעברית ותבניות תוכן לרחובות",
+        avatar: "✍️", color: "#f59e0b", colorLight: "#fcd34d",
+        executor: { type: "me", name: "הסוכן הראשי (build)", desc: "מבוצע ישירות על ידי הסוכן הראשי", docPath: ".opencode/agents/build.md", channelPath: "docs/agents/BOARD.md" },
+        promptTask: "בכובע של רוחי — ערוך טקסטים, מיקרו-קופי בעברית תקנית, הודעות מצב ריק, FAQ ותבניות הערות.",
+        jobs: [
+          "ניסוח הודעות מצב ריק, טוסטים, והסברים ידידותיים בעברית תקנית",
+          "עריכת שאלות נפוצות (FAQ) וטקסטים",
+          "עיצוב תבניות הערות מהירות ויומן ביקורים"
+        ],
+        whenToUse: "הראשי מבצע ישירות כשצריך שינויי ניסוח, תוכן ומיקרו-קופי.",
+        tags: ["תוכן", "מיקרו-קופי", "עברית"]
+      },
+      {
+        id: "frudi", name: "פרודי (כובע אנליטיקס וניטור)",
+        persona: "מדידת ביצועים, זמני רינדור ובדיקות תקינות",
+        avatar: "📈", color: "#ec4899", colorLight: "#f9a8d4",
+        executor: { type: "me", name: "הסוכן הראשי (build)", desc: "מבוצע ישירות על ידי הסוכן הראשי", docPath: ".opencode/agents/build.md", channelPath: "docs/agents/BOARD.md" },
+        promptTask: "בכובע של פרודי — מדוד ביצועים (זמני רינדור, צמתי DOM, שגיאות קונסול) והרץ smoke אוטומטי.",
+        jobs: [
+          "מדידת זמני רינדור של 2,424 רחובות וספירת צמתי DOM",
+          "הרצת בדיקות smoke אוטומטיות וניטור שגיאות קונסול",
+          "בדיקת תקינות כותרות HTTP ומשאבים באתר החי"
+        ],
+        whenToUse: "הראשי מבצע ישירות כשצריך בדיקת ביצועים או אימות מהיר.",
+        tags: ["Performance", "Smoke", "ניטור"]
+      },
+      {
+        id: "zichri", name: "זיכרי (כובע תיעוד)",
+        persona: "שמירת הזיכרון הארגוני: BOARD.md, TASKS.md, LESSONS.md, README.md",
+        avatar: "📖", color: "#8b5cf6", colorLight: "#c4b4fc",
+        executor: { type: "me", name: "הסוכן הראשי (build)", desc: "מבוצע ישירות על ידי הסוכן הראשי", docPath: ".opencode/agents/build.md", channelPath: "docs/agents/LESSONS.md" },
+        promptTask: "בכובע של זיכרי — תעד את החלטות הסבב ב-BOARD.md, עדכן TASKS.md ו-LESSONS.md, ורענן README במידת הצורך.",
+        jobs: [
+          "רישום החלטות ממוספרות ב-docs/agents/BOARD.md",
+          "עדכון לקחים וכללים מונעים ב-docs/agents/LESSONS.md",
+          "תחזוקת README.md ומדריכי הפריסה"
+        ],
+        whenToUse: "הראשי מבצע ישירות בסיום כל סבב כדי לתעד את מה שנסגר.",
+        tags: ["BOARD.md", "LESSONS.md", "README"]
+      },
+      {
+        id: "beki", name: "בקי (כובע בקנד — בהמתנה)",
+        persona: "פיתוח צד-שרת, API ואינטגרציות עתידיות (כרגע האתר סטטי 100%)",
+        avatar: "🖥️", color: "#6366f1", colorLight: "#a5b4fc",
+        executor: { type: "me", name: "הסוכן הראשי (build)", desc: "מבוצע ישירות על ידי הסוכן הראשי כשיידרש שרת", docPath: ".opencode/agents/build.md", channelPath: "docs/agents/BOARD.md" },
+        promptTask: "בכובע של בקי — תחזק את שרת הפיתוח המקומי serve.js. (בהמתנה — יופעל רק אם נוסיף שרת.)",
+        jobs: [
+          "תחזוקת שרת הפיתוח המקומי serve.js",
+          "מוכן לעתיד אם יוחלט להוסיף סנכרון ענן או בסיס נתונים"
+        ],
+        whenToUse: "בהמתנה — יופעל רק אם נחליט להוסיף שרת בעתיד.",
+        tags: ["serve.js", "API", "בהמתנה"]
+      }
+    ]
+  }
+];
+
+let selectedAgent = null;
+let lastFocusedElement = null;
+
+const teamsGrid = document.getElementById("teamsGrid");
+const modalOverlay = document.getElementById("modalOverlay");
+const modalEl = document.getElementById("modal");
+const modalClose = document.getElementById("modalClose");
+const btnCancel = document.getElementById("btnCancel");
+const btnActivate = document.getElementById("btnActivate");
+const btnShowBanner = document.getElementById("btnShowBanner");
+const toast = document.getElementById("toast");
+const toastBody = document.getElementById("toastBody");
+const toastClose = document.getElementById("toastClose");
+let toastTimer = null;
+
+function renderTeams() {
+  teamsGrid.innerHTML = TEAMS.map(team => `
+    <section class="team-card" style="--team-color: ${team.color}; --team-color-light: ${team.colorLight};" aria-label="${team.name}">
+      <div class="team-header">
+        <div class="team-icon" style="background: linear-gradient(135deg, ${team.color}, ${team.colorLight});" aria-hidden="true">${team.icon}</div>
+        <div>
+          <div class="team-name">${team.name}</div>
+          <div class="team-desc">${team.agents.length} סוכנים / כובעים</div>
+        </div>
+      </div>
+      <div class="agents-list">
+        ${team.agents.map(agent => {
+          const exec = agent.executor;
+          const isReal = exec.type === "real";
+          const badgeClass = isReal ? "real" : "me";
+          const badgeText = isReal ? "🤖 סוכן משנה אמיתי" : "🧠 כובע של הראשי";
+          const docLinks = [];
+          if (exec.docPath) docLinks.push(`<a class="doc-link" href="${exec.docPath}" target="_blank" rel="noopener" onclick="event.stopPropagation()">📄 תיעוד סוכן</a>`);
+          if (exec.channelPath) docLinks.push(`<a class="doc-link" href="${exec.channelPath}" target="_blank" rel="noopener" onclick="event.stopPropagation()">💬 ערוץ</a>`);
+          if (exec.livePage) docLinks.push(`<a class="doc-link" href="${exec.livePage}" target="_blank" rel="noopener" onclick="event.stopPropagation()">🌐 דף חי</a>`);
+          return `
+          <button class="agent-btn" data-agent-id="${agent.id}" data-team-id="${team.id}" style="--agent-color: ${agent.color}; --agent-color-light: ${agent.colorLight};" aria-label="פתח פרטים על ${agent.name}">
+            <div class="agent-main">
+              <div class="agent-avatar" style="background: linear-gradient(135deg, ${agent.color}, ${agent.colorLight});" aria-hidden="true">${agent.avatar}</div>
+              <div class="agent-info">
+                <div class="agent-name-row">
+                  <span class="agent-name">${agent.name}</span>
+                  <span class="agent-role-tag ${badgeClass}">${badgeText}</span>
+                </div>
+                <div class="agent-role-text">${agent.persona}</div>
+                <ul class="agent-jobs-preview">
+                  ${agent.jobs.slice(0, 2).map(j => `<li>${j}</li>`).join("")}
+                </ul>
+              </div>
+            </div>
+            <div class="agent-executor">
+              <span class="executor-label">מבצע בפועל:</span>
+              <span class="executor-badge ${badgeClass}">${exec.name}</span>
+              <div class="doc-links">${docLinks.join("")}</div>
+            </div>
+          </button>
+        `}).join("")}
+      </div>
+    </section>
+  `).join("");
+
+  document.querySelectorAll(".agent-btn").forEach(btn => {
+    btn.addEventListener("click", () => openModal(btn.dataset.agentId, btn.dataset.teamId, btn));
+  });
+}
+
+function findAgent(agentId, teamId) {
+  const team = TEAMS.find(t => t.id === teamId);
+  return team?.agents.find(a => a.id === agentId);
+}
+
+function buildFullPrompt(agent, team) {
+  const exec = agent.executor;
+  const isReal = exec.type === "real";
+
+  if (isReal) {
+    return `הפעל את סוכן המשנה ${exec.name} (${agent.name}) — ${team.name}.
+
+🎯 המשימה:
+${agent.promptTask}
+
+📄 הגדרת הסוכן: ${exec.docPath || "-"}
+💬 ערוץ הדיווח: ${exec.channelPath || "-"}
+
+📋 כללי ברזל:
+- עברית בלבד, RTL מלא.
+- אין לשנות חוזים (JLMAPI/JLMBus/JLM_GEO), מזהי DOM או סכמת האחסון.
+- אין להשתמש ב-PowerShell לכתיבת עברית — רק בכלי edit/write או Node fs ב-UTF-8.
+- שינוי UI/התנהגות חייב לעבור דרך pitchei (בטא) ואישור מפורש של אהד לפני פרסום.
+
+✅ לפני החזרה:
+- הרץ node --check על כל קובץ JS ששינית.
+- הרץ node tools/verify.js ואת הבדיקות הרלוונטיות.
+
+📤 החזר בדוח מסודר: מה בוצע, מה נמדד (עם מספרים), מה לא נבדק, ומה נדרש מהראשי.`;
+  }
+
+  return `בכובע של ${agent.name}, בצע ישירות (ללא הפעלת subagent).
+
+🎯 המשימה:
+${agent.promptTask}
+
+📋 כללי ברזל:
+- עברית בלבד, RTL מלא.
+- אין לשנות חוזים (JLMAPI/JLMBus/JLM_GEO), מזהי DOM או סכמת האחסון.
+- אין להשתמש ב-PowerShell לכתיבת עברית — רק בכלי edit/write או Node fs ב-UTF-8.
+
+✅ לפני סיום: הרץ node --check ואת node tools/verify.js.
+
+🧠 פתח את התשובה בבאנר: 🧠 [הסוכן הראשי מבצע ישירות — כובע: ${agent.name}] (ללא הפעלת subagent).`;
+}
+
+function openModal(agentId, teamId, triggerEl) {
+  const agent = findAgent(agentId, teamId);
+  const team = TEAMS.find(t => t.id === teamId);
+  if (!agent || !team) return;
+
+  selectedAgent = { agent, team };
+  lastFocusedElement = triggerEl || document.activeElement;
+
+  document.getElementById("modalAvatar").textContent = agent.avatar;
+  document.getElementById("modalAvatar").style.setProperty("--modal-agent-color", agent.color);
+  document.getElementById("modalAvatar").style.setProperty("--modal-agent-color-light", agent.colorLight);
+  modalEl.style.setProperty("--modal-agent-color", agent.color);
+  document.getElementById("modalTitle").textContent = agent.name;
+  document.getElementById("modalTeam").textContent = team.name;
+
+  const exec = agent.executor;
+  const isReal = exec.type === "real";
+  const badgeClass = isReal ? "real" : "me";
+  const modalDocs = [];
+  if (exec.docPath) modalDocs.push(`<a class="modal-doc-btn" href="${exec.docPath}" target="_blank" rel="noopener">📄 הגדרת סוכן</a>`);
+  if (exec.channelPath) modalDocs.push(`<a class="modal-doc-btn" href="${exec.channelPath}" target="_blank" rel="noopener">💬 ערוץ תקשורת</a>`);
+  if (exec.livePage) modalDocs.push(`<a class="modal-doc-btn" href="${exec.livePage}" target="_blank" rel="noopener">🌐 דשבורד חי</a>`);
+
+  document.getElementById("modalExecutor").innerHTML = `
+    <strong>מי מבצע בפועל:</strong>
+    <span class="executor-badge ${badgeClass}" style="margin-top: 0.5rem; display: inline-block;">${exec.name}</span>
+    <div style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted);">${exec.desc}</div>
+    <div class="modal-docs">${modalDocs.join("")}</div>
+  `;
+
+  document.getElementById("modalRole").textContent = agent.persona;
+  document.getElementById("modalJobs").innerHTML = agent.jobs.map(j => `<li>${j}</li>`).join("");
+  document.getElementById("modalWhen").innerHTML = `<strong>⏱️ מתי משתמשים בו?</strong> ${agent.whenToUse}`;
+  document.getElementById("modalTags").innerHTML = agent.tags.map(t => `<span class="tag">${t}</span>`).join("");
+  btnActivate.style.background = `linear-gradient(135deg, ${agent.color}, ${agent.colorLight})`;
+  btnActivate.textContent = isReal ? "📋 העתק פרומפט הפעלה מלא" : "📋 העתק פקודת ביצוע ישיר";
+
+  modalOverlay.classList.add("open");
+  document.body.style.overflow = "hidden";
+  modalEl.focus();
+}
+
+function closeModal() {
+  if (!modalOverlay.classList.contains("open")) return;
+  modalOverlay.classList.remove("open");
+  document.body.style.overflow = "";
+  selectedAgent = null;
+  if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+    lastFocusedElement.focus();
+  }
+  lastFocusedElement = null;
+}
+
+function trapFocus(e) {
+  if (e.key !== "Tab") return;
+  const focusables = modalEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  if (!focusables.length) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+}
+
+function showToast(text, duration) {
+  toastBody.textContent = text;
+  toast.hidden = false;
+  toast.classList.add("show");
+  if (toastTimer) clearTimeout(toastTimer);
+  if (duration) toastTimer = setTimeout(hideToast, duration);
+}
+
+function hideToast() {
+  toast.classList.remove("show");
+  if (toastTimer) clearTimeout(toastTimer);
+  setTimeout(() => { toast.hidden = true; }, 320);
+}
+
+function showBannerPreview(agent, team) {
+  const exec = agent.executor;
+  if (exec.type === "real") {
+    showToast(
+`╔══════════════════════════════════════════════════════════════════╗
+║ 🤖 [SUBAGENT START] מפעיל סוכן משנה עכשיו!                        ║
+║ 👤 סוכן: ${agent.name} (${exec.name})
+║ 🏢 צוות: ${team.name}
+║ 🎯 משימה: ${agent.promptTask.split(".")[0]}.
+╚══════════════════════════════════════════════════════════════════╝`, 0);
+  } else {
+    showToast(
+`🧠 [הסוכן הראשי מבצע ישירות — כובע: ${agent.name}] (ללא הפעלת subagent)
+🎯 משימה: ${agent.promptTask.split(".")[0]}.`, 0);
+  }
+}
+
+function activateAgent() {
+  if (!selectedAgent) return;
+  const { agent, team } = selectedAgent;
+  const prompt = buildFullPrompt(agent, team);
+
+  const afterCopy = (ok) => {
+    const header = ok
+      ? "✅ הפרומפט המלא הועתק ללוח! הדבק אותו כאן בצ'אט כדי להפעיל את הסוכן."
+      : "⚠️ לא ניתן להעתיק אוטומטית — העתק ידנית את הפרומפט שלמטה:";
+    showToast(header + "\n\n────── תצוגה מקדימה ──────\n" + prompt, 0);
+  };
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(prompt).then(() => afterCopy(true)).catch(() => afterCopy(false));
+  } else {
+    afterCopy(false);
+  }
+  closeModal();
+}
+
+modalClose.addEventListener("click", closeModal);
+btnCancel.addEventListener("click", closeModal);
+btnActivate.addEventListener("click", activateAgent);
+btnShowBanner.addEventListener("click", () => { if (selectedAgent) showBannerPreview(selectedAgent.agent, selectedAgent.team); });
+toastClose.addEventListener("click", hideToast);
+modalOverlay.addEventListener("click", e => { if (e.target === modalOverlay) closeModal(); });
+modalOverlay.addEventListener("keydown", trapFocus);
+
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  if (toast.classList.contains("show")) { hideToast(); return; }
+  if (modalOverlay.classList.contains("open")) { closeModal(); }
+});
+
+renderTeams();
+</script>
+</body>
+</html>

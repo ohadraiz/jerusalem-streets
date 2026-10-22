@@ -2,7 +2,7 @@
 "use strict";
 
 /*
- * tasks-dashboard.js — בונה את tasks.html מתוך docs/TEAMS.md ו-docs/agents/TASKS.md
+ * tasks-dashboard.js — בונה את internal/tasks.html מתוך docs/TEAMS.md ו-docs/agents/TASKS.md
  *
  * שימוש:
  *   node tools/tasks-dashboard.js
@@ -21,7 +21,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const TEAMS_PATH = path.join(ROOT, "docs", "TEAMS.md");
 const TASKS_PATH = path.join(ROOT, "docs", "agents", "TASKS.md");
-const OUT_PATH = path.join(ROOT, "tasks.html");
+const OUT_PATH = path.join(ROOT, "internal", "tasks.html");
 const DATA_OUT_PATH = path.join(ROOT, "tasks-data.json");
 const AGENT_STATUS_PATH = path.join(ROOT, "agent-status.json");
 
@@ -660,10 +660,13 @@ function buildHtml(data) {
   .page-head__src code { background: #123c27; color: #ffffff; }
   .page-head__role { display: inline-block; margin-right: 8px; font-size: .85rem; font-weight: 700; color: #ffd54f; background: #123c27; padding: 2px 8px; border-radius: 999px; vertical-align: middle; }
   .page-head__mandate { margin: 6px 0 0; font-size: .78rem; color: #b8d4c4; line-height: 1.4; }
-  .page-head__actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .page-head__actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 
   /* ---------- buttons ---------- */
   .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     font: inherit;
     font-size: .95rem;
     min-height: 44px;
@@ -673,6 +676,7 @@ function buildHtml(data) {
     background: #fff;
     color: var(--ink);
     cursor: pointer;
+    text-decoration: none;
   }
   .btn:hover { border-color: var(--accent); }
   .btn:focus-visible { outline: 3px solid #b58900; outline-offset: 2px; }
@@ -964,6 +968,12 @@ function buildHtml(data) {
       <p class="page-head__mandate">מארגן המשימות — בקשר עם הראשי והמתעד (גולי), מקבל עדכונים מכל הסוכנים</p>
     </div>
     <div class="page-head__actions">
+      <a class="btn" href="index.html">🏠 דף בית פנימי</a>
+      <a class="btn" href="guli.html">📢 חדר הסוכנים</a>
+      <a class="btn" href="project-map.html">🗺️ מפת הפרויקט</a>
+      <a class="btn" href="agents-dashboard.html">👥 לוח הסוכנים</a>
+      <a class="btn" href="agent-vs-subagent.html">🎩 ראשי מול סאב</a>
+      <a class="btn" href="../index.html">🌐 לאפליקציה הציבורית</a>
       <button type="button" id="print-btn" class="btn btn--primary">הדפסה / PDF</button>
     </div>
   </div>
@@ -1462,7 +1472,7 @@ function main() {
   const bytes = Buffer.byteLength(html, "utf8");
   const teams = data.teams.map((t) => t.key).join(", ");
   console.log(
-    `[inspector] built tasks.html (${(bytes / 1024).toFixed(1)} KiB) | ${data.tasks.length} tasks | teams: ${teams}`
+    `[inspector] built internal/tasks.html (${(bytes / 1024).toFixed(1)} KiB) | ${data.tasks.length} tasks | teams: ${teams}`
   );
 }
 

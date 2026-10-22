@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f1e7">
+<title>מה קורה בחדר — המתעד</title>
+<meta name="description" content="חדר הסוכנים של יומן הרחובות ירושלים: מי עושה מה עכשיו, עם מי מדבר, מה הסתיים ומה נשאר.">
+<style>
+:root{
+  --paper:#f6f1e7;
+  --paper-deep:#ece2d1;
+  --card:#fffdf9;
+  --ink:#221d16;
+  --ink-soft:#4c4236;
+  --muted:#655a4b;
+  --line:#ddd2bf;
+  --line-strong:#c6b69d;
+  --accent:#8a4517;
+  --accent-soft:#f3e3d4;
+  --green:#1d5b3c;
+  --green-bg:#e2f0e6;
+  --amber:#6d4a0e;
+  --amber-bg:#faeed3;
+  --gray:#4b4438;
+  --gray-bg:#ece6da;
+  --focus:#165c8a;
+  --radius:18px;
+  --shadow:0 1px 0 rgba(34,29,22,.04), 0 10px 30px -22px rgba(34,29,22,.45);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--ink);
+  background:
+    radial-gradient(1100px 520px at 88% -12%, #efe0c8 0%, rgba(239,224,200,0) 62%),
+    radial-gradient(900px 420px at -5% 4%, #fbf6ec 0%, rgba(251,246,236,0) 58%),
+    var(--paper);
+  font-family:"Segoe UI","Arial Hebrew","Noto Sans Hebrew","Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  overflow-wrap:break-word;
+}
+img,svg{max-width:100%}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;inset-inline-start:-9999px;top:0;z-index:10;background:var(--card);color:var(--ink);padding:12px 18px;border-radius:0 0 12px 0}
+.skip:focus{inset-inline-start:0}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+.masthead{padding:clamp(28px,6vw,64px) 0 8px}
+.kicker{display:flex;align-items:center;gap:10px;margin:0 0 14px;color:var(--muted);font-size:.86rem;font-weight:600}
+.kicker::before{content:"";width:34px;height:2px;background:var(--accent);border-radius:2px}
+h1{margin:0;font-size:clamp(2.2rem,7vw,3.8rem);line-height:1.05;font-weight:750;letter-spacing:-.015em}
+.lead{max-width:62ch;margin:18px 0 0;font-size:clamp(1.05rem,2.4vw,1.28rem);color:var(--ink-soft);line-height:1.55}
+.masthead__bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.pulse{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border:1px solid var(--line-strong);border-radius:999px;background:var(--card);color:var(--ink-soft);font-weight:600}
+.pulse__dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(29,91,60,.12);animation:breathe 2.8s ease-in-out infinite}
+@keyframes breathe{0%,100%{box-shadow:0 0 0 3px rgba(29,91,60,.12)}50%{box-shadow:0 0 0 6px rgba(29,91,60,.05)}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 18px;border:1px solid var(--line-strong);border-radius:999px;background:var(--card);color:var(--ink);font:inherit;font-size:.92rem;font-weight:650;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--paper-deep);color:var(--ink)}
+.btn--primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn--primary:hover{background:#743a13;color:#fff}
+.time-note{font-variant-numeric:tabular-nums}
+.quicknav{margin-top:18px}
+.quicknav ul{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.quicknav a{display:inline-flex;align-items:center;min-height:44px;padding:4px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,253,249,.7);font-size:.86rem;font-weight:600;text-decoration:none}
+.quicknav a:hover{background:var(--card);border-color:var(--line-strong)}
+main{padding-bottom:24px}
+section{margin-top:clamp(32px,6vw,56px);scroll-margin-top:16px}
+.section__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:16px}
+h2{margin:0;font-size:clamp(1.35rem,3.4vw,1.75rem);line-height:1.25;font-weight:740}
+.section__hint{margin:0;color:var(--muted);font-size:.9rem}
+.room{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.room__item{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.room__dot{width:9px;height:9px;border-radius:50%;background:var(--gray);flex:none}
+.room__item.is-active .room__dot{background:var(--green)}
+.room__item.is-waiting .room__dot{background:var(--amber)}
+.room__item.is-unknown .room__dot{background:var(--gray)}
+.room__name{font-weight:700;font-size:.95rem}
+.room__state{width:100%;color:var(--muted);font-size:.78rem;line-height:1.3}
+
+/* דשבורד צוותים */
+.teams-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:14px;align-items:start}
+.team-card{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);scroll-margin-top:16px}
+.team-card__head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:10px;padding-bottom:12px;border-bottom:1px dashed var(--line)}
+.team-card__icon{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--accent-soft);font-size:1.25rem;flex:none}
+.team-card__head h3{margin:0;font-size:1.08rem;line-height:1.3}
+.team-card__hint{margin:2px 0 0;color:var(--muted);font-size:.8rem;line-height:1.4}
+.team-card__count{color:var(--green);font-size:.76rem;font-weight:700;white-space:nowrap;background:var(--green-bg);border:1px solid #bcd9c6;border-radius:999px;padding:2px 8px}
+.team-card__list{margin:0;padding:0;list-style:none}
+.team-card__agent{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;min-height:56px;padding:9px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.team-card__list li:last-child .team-card__agent{border-bottom:0;padding-bottom:0}
+.team-card__agent:hover{background:var(--paper-deep);border-radius:8px}
+.team-card__initial{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--paper-deep);border:1px solid var(--line);font-weight:750;font-size:.95rem;color:var(--ink-soft);flex:none}
+.team-card__body{min-width:0;display:flex;flex-direction:column}
+.team-card__name{font-weight:700;font-size:.95rem}
+.team-card__role{color:var(--muted);font-size:.76rem;line-height:1.35;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.team-card__side{display:flex;flex-direction:column;align-items:flex-end;gap:2px;min-width:0;max-width:100%}
+.team-card__side .chip{white-space:normal;text-align:center}
+.team-card__tasks{color:var(--muted);font-size:.7rem;white-space:nowrap}
+
+/* תרשים זרימה */
+.flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px;margin:0;padding:0;list-style:none;counter-reset:flow}
+.flow__stage{position:relative;min-width:0}
+.flow__stage:not(:last-child)::after{content:"⟵";position:absolute;top:42px;inset-inline-start:-21px;color:var(--accent);font-size:1.25rem;font-weight:700}
+.flow__step{display:grid;place-items:center;width:30px;height:30px;margin-bottom:8px;border-radius:50%;background:var(--accent);color:#fff;font-size:.85rem;font-weight:750}
+.flow__card{height:100%;padding:14px 12px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.flow__card h3{margin:0;font-size:.98rem;line-height:1.3}
+.flow__card p{margin:3px 0 10px;color:var(--muted);font-size:.76rem;line-height:1.35}
+.flow__agents{display:flex;flex-direction:column;gap:4px}
+.flow__agent{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:.78rem;font-weight:650;text-decoration:none;color:var(--ink);background:var(--paper)}
+.flow__agent:hover{border-color:var(--line-strong);background:var(--card)}
+.flow__agent.is-active{background:var(--green-bg);border-color:#bcd9c6;color:var(--green)}
+.flow__agent.is-waiting{background:var(--amber-bg);border-color:#e7d3a6;color:var(--amber)}
+.flow__agent.is-unknown{background:var(--gray-bg);border-color:#d6cbb8;color:var(--gray)}
+.flow__dot{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+.flow__legend{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 0;font-size:.8rem;color:var(--muted)}
+.flow__legend-text{margin-inline-start:4px}
+
+/* סוכנים */
+.agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:16px;align-items:start}
+.agent{position:relative;min-width:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);scroll-margin-top:16px}
+.agent::before{content:"";position:absolute;inset-block:16px;inset-inline-start:0;width:4px;border-radius:4px;background:var(--gray)}
+.agent.is-active::before{background:var(--green)}
+.agent.is-waiting::before{background:var(--amber)}
+.agent.is-unknown::before{background:var(--gray)}
+.agent:target{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft),var(--shadow)}
+.agent__head{display:grid;grid-template-columns:auto 1fr auto;align-items:start;gap:12px}
+.agent__initial{display:grid;place-items:center;width:44px;height:44px;flex:none;border-radius:50%;background:var(--paper-deep);border:1px solid var(--line);font-weight:750;font-size:1.1rem;color:var(--ink-soft)}
+.agent__id{min-width:0}
+h3{margin:0;font-size:1.22rem;line-height:1.3;font-weight:740}
+.agent__role{margin:2px 0 0;color:var(--muted);font-size:.82rem;line-height:1.4}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;border:1px solid transparent;font-size:.76rem;font-weight:700;white-space:nowrap;line-height:1.4}
+.chip__dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.chip.is-active{color:var(--green);background:var(--green-bg);border-color:#bcd9c6}
+.chip.is-waiting{color:var(--amber);background:var(--amber-bg);border-color:#e7d3a6}
+.chip.is-unknown{color:var(--gray);background:var(--gray-bg);border-color:#d6cbb8}
+.chip.is-done{color:var(--green);background:var(--green-bg);border-color:#bcd9c6}
+.label{display:block;margin-bottom:2px;color:var(--muted);font-size:.72rem;font-weight:700;line-height:1.3}
+.agent__meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.agent__team{display:inline-flex;align-items:center;gap:5px;min-height:44px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);font-size:.78rem;font-weight:650;text-decoration:none}
+.agent__work-status{display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:4px 10px;border-radius:999px;font-size:.78rem;line-height:1.4}
+.agent__work-status.working{background:var(--green-bg);border:1px solid #bcd9c6;color:var(--green)}
+.agent__work-status.on-break{background:var(--amber-bg);border:1px solid #e7d3a6;color:var(--amber)}
+.work-status__label{font-weight:700}
+.work-status__reason{opacity:.8}
+.agent__now{margin:14px 0 10px;padding:12px 14px;border-radius:12px;background:var(--accent-soft);color:var(--ink);border:1px solid #e8d3bf;font-size:.97rem;line-height:1.5}
+.agent__talk{margin:0 0 4px;color:var(--ink-soft);font-size:.9rem;line-height:1.55}
+.agent__talk .label{display:inline-block;margin:0 0 2px}
+.agent__talk-body{display:inline}
+.talk-state{display:inline-block;margin-inline-start:4px;padding:1px 7px;border-radius:999px;background:var(--gray-bg);color:var(--gray);font-size:.72rem;font-weight:700}
+.agent__task-summary{margin-top:12px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.agent__task-summary h4{margin:0 0 6px}
+.task-counts{display:flex;flex-wrap:wrap;gap:5px}
+.task-count{padding:1px 8px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.74rem;color:var(--ink-soft);white-space:nowrap}
+.agent__teams{margin-top:6px;color:var(--muted);font-size:.75rem}
+.agent__block{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line)}
+h4{margin:0 0 8px;font-size:.82rem;font-weight:750;color:var(--muted)}
+.ticks{margin:0;padding:0;list-style:none}
+.ticks li{position:relative;padding-inline-start:18px;margin:6px 0;font-size:.9rem;line-height:1.5}
+.ticks li::before{content:"";position:absolute;inset-inline-start:2px;top:.58em;width:7px;height:7px;border:1.5px solid var(--accent);border-radius:2px;transform:rotate(45deg)}
+.done-list{margin:0;padding:0;list-style:none}
+.done{padding:8px 0;border-bottom:1px solid var(--line)}
+.done:last-child{border-bottom:0;padding-bottom:0}
+.done--empty{padding-top:0}
+.done__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0}
+.done__task{font-weight:650;font-size:.9rem}
+.done__date{color:var(--muted);font-size:.76rem;white-space:nowrap}
+.done__conclusion{margin:4px 0 0;color:var(--ink-soft);font-size:.86rem;line-height:1.5}
+.agent__conclusion{margin:16px 0 0;padding:10px 14px;border-inline-start:3px solid var(--accent);background:#fbf4ea;border-radius:0 10px 10px 0}
+.agent__conclusion p{margin:0;font-size:.9rem;line-height:1.55}
+.agent__foot{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);color:var(--muted);font-size:.76rem;line-height:1.45}
+.agent__source a{font-weight:650}
+.agent__reported{max-width:100%}
+
+/* ציר זמן */
+.timeline{display:grid;gap:22px}
+.timeline__day-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 10px;font-size:1rem;color:var(--ink-soft)}
+.timeline__day-title::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--accent);flex:none}
+.timeline__day-count{color:var(--muted);font-size:.76rem;font-weight:600}
+.timeline__list{position:relative;margin:0;padding:0;list-style:none}
+.timeline__list::before{content:"";position:absolute;inset-block:8px 8px;inset-inline-start:7px;width:2px;background:var(--line-strong)}
+.timeline__item{position:relative;display:grid;grid-template-columns:1fr;gap:2px;padding:0 0 16px;padding-inline-start:30px}
+.timeline__item:last-child{padding-bottom:0}
+.timeline__item::before{content:"";position:absolute;inset-inline-start:2px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--card);border:2px solid var(--accent);z-index:1}
+.timeline__time{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px}
+.timeline__time time{font-weight:750;font-size:.92rem;font-variant-numeric:tabular-nums;color:var(--accent)}
+.timeline__relative{color:var(--muted);font-size:.74rem}
+.timeline__body{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow)}
+.timeline__body p{margin:0;font-size:.92rem;line-height:1.55}
+.timeline__source{display:block;margin-top:4px;color:var(--muted);font-size:.74rem}
+.sources{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:8px;margin:0;padding:0;list-style:none}
+.source{border:1px solid var(--line);border-radius:12px;background:var(--card);overflow:hidden}
+.source a,.source__plain{display:block;min-height:44px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.source a:hover{background:var(--paper-deep)}
+.source__label{display:block;font-weight:650;font-size:.92rem;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.source a:hover .source__label{color:var(--ink)}
+.source__note{display:block;color:var(--muted);font-size:.78rem;margin-top:2px;line-height:1.4}
+.source__plain .source__label{color:var(--ink);text-decoration:none}
+.empty-line{margin:0;color:var(--muted);font-size:.9rem}
+.room-note{margin-top:36px;padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,253,249,.7);color:var(--ink-soft);font-size:.9rem}
+.room-note p{margin:0 0 8px}
+.room-note p:last-child{margin-bottom:0}
+.room-note strong{color:var(--ink)}
+footer.page{margin-top:32px;padding:22px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;line-height:1.6}
+footer.page p{margin:0 0 6px}
+footer.page a{font-weight:600}
+@media (min-width:700px){
+  .timeline__item{grid-template-columns:96px 1fr;gap:12px;align-items:start}
+  .timeline__time{display:block;padding-top:8px}
+  .timeline__relative{display:block}
+}
+@media (max-width:900px){
+  .flow{grid-template-columns:1fr;gap:14px}
+  .flow__stage:not(:last-child)::after{content:"↓";top:auto;bottom:-16px;inset-inline-start:8px;font-size:1.05rem}
+  .flow__step{position:absolute;inset-inline-start:0;top:0;margin:0;z-index:1}
+  .flow__card{padding-inline-start:42px}
+}
+@media (max-width:420px){
+  body{font-size:16px}
+  .wrap{width:calc(100% - 24px)}
+  .agent{padding:16px}
+  .agent__head{grid-template-columns:auto 1fr;gap:10px}
+  .agent__head .chip{grid-column:1 / -1;justify-self:start}
+  .agent__initial{width:40px;height:40px}
+  .team-card__head{grid-template-columns:auto 1fr}
+  .team-card__count{grid-column:1 / -1;justify-self:start}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+@media print{
+  body{background:#fff}
+  .masthead__bar .btn,.quicknav{display:none}
+  .agent,.team-card{break-inside:avoid;box-shadow:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דלג לתוכן</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים · <strong>הדף של המתעד</strong></p>
+    <h1>מה קורה בחדר</h1>
+    <p class="lead">בחדר עכשיו: החוקר מריץ את Pipeline &#39;הידעת?&#39;; הפקח עדכן את דשבורד המשימות; המתעד בנה מחדש את דף החדר — 6 צוותים, מסלול עבודה וציר זמן מלא. 2,424 רחובות, 95 שכונות, verify 35/35.</p>
+    <div class="masthead__bar">
+      <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>7 פעילים · 4 ממתינים</span>
+      <a href="index.html" class="btn">🏠 דף בית פנימי</a>
+      <a href="tasks.html" class="btn btn--primary">📋 דשבורד המשימות (הפקח)</a>
+      <a href="project-map.html" class="btn">🗺️ מפת הפרויקט</a>
+      <a href="agents-dashboard.html" class="btn">👥 לוח הסוכנים</a>
+      <a href="agent-vs-subagent.html" class="btn">🎩 ראשי מול סאב</a>
+      <a href="../index.html" class="btn">🗺️ לאפליקציה</a>
+      <span class="time-note">עודכן <time dir="ltr" datetime="2026-10-22T10:05:00+03:00">22 באוקטובר 2026, 10:05</time></span>
+      <span id="relative-time" class="time-note" data-updated="2026-10-22T10:05:00+03:00"></span>
+      <button class="btn" type="button" id="refresh">רענון הדף</button>
+    </div>
+    <nav class="quicknav" aria-label="קישורים מהירים">
+      <ul>
+        <li><a href="#room-title">מי בחדר</a></li>
+        <li><a href="#teams">צוותים</a></li>
+        <li><a href="#flow-title">מסלול העבודה</a></li>
+        <li><a href="#agents-title">הסוכנים</a></li>
+        <li><a href="#timeline-title">ציר הזמן</a></li>
+        <li><a href="#sources-title">מקורות</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section aria-labelledby="room-title">
+    <div class="section__head">
+      <h2 id="room-title">מי בחדר</h2>
+      <p class="section__hint">תמונת מצב מהירה של כל הסוכנים והצוותים שלהם.</p>
+    </div>
+    <ul class="room"><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">הראשי</span>
+      <span class="room__state">פעיל · הנהלה ובקרה</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">החוקר</span>
+      <span class="room__state">פעיל — מריץ Pipeline &#39;הידעת?&#39; + מחקר אפליקציות · מחקר ותוכן</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">מפי</span>
+      <span class="room__state">מוקפא · מפות ונתונים</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">הבודק</span>
+      <span class="room__state">פעיל — ביקורת UI/UX · מוצר ועיצוב</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">המעצב</span>
+      <span class="room__state">פעיל — ראש צוות UI/UX · מוצר ועיצוב</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">המגשר</span>
+      <span class="room__state">ממתין לדיווח · מפות ונתונים</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">המתעד</span>
+      <span class="room__state">פעיל — תשאול וסנכרון · תיעוד</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">קיפי</span>
+      <span class="room__state">פעיל — מעקב הקפאות · הנהלה ובקרה</span>
+    </li><li class="room__item is-active">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">הפקח</span>
+      <span class="room__state">פעיל — דשבורד מוכן · הנהלה ובקרה</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">פזי</span>
+      <span class="room__state">ממתין לפריסה · מובייל והפצה</span>
+    </li><li class="room__item is-waiting">
+      <span class="room__dot" aria-hidden="true"></span>
+      <span class="room__name">מובי</span>
+      <span class="room__state">ממתין למובייל · מובייל והפצה</span>
+    </li></ul>
+  </section>
+
+  <section aria-labelledby="teams-title" id="teams">
+    <div class="section__head">
+      <h2 id="teams-title">דשבורד צוותים</h2>
+      <p class="section__hint">לחצו על סוכן כדי לקפוץ לכרטיס שלו. 6 צוותים, 11 סוכנים.</p>
+    </div>
+    <div class="teams-grid">
+      <section class="team-card" id="team-management" aria-labelledby="team-management-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">🧭</span>
+        <div>
+          <h3 id="team-management-title">הנהלה ובקרה</h3>
+          <p class="team-card__hint">מובילים, מתעדפים ועוקבים אחרי הקפאות</p>
+        </div>
+        <span class="team-card__count">3/3 פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        <li>
+            <a class="team-card__agent" href="#agent-main">
+              <span class="team-card__initial" aria-hidden="true">ר</span>
+              <span class="team-card__body">
+                <span class="team-card__name">הראשי</span>
+                <span class="team-card__role">מרכז העבודה: כותב BOARD, מכריע, מיישם נתונים ובדיקות</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                <span class="team-card__tasks">43 משימות · 5 הושלמו</span>
+              </span>
+            </a>
+          </li><li>
+            <a class="team-card__agent" href="#agent-inspector">
+              <span class="team-card__initial" aria-hidden="true">פ</span>
+              <span class="team-card__body">
+                <span class="team-card__name">הפקח</span>
+                <span class="team-card__role">מארגן המשימות: מקבל את כל המשימות מכל הצוותים, מסדר אותן ברשימות HTML יפות בעברית. בקשר תמידי עם המתעד (המתעד) ועם הראשי.</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                
+              </span>
+            </a>
+          </li><li>
+            <a class="team-card__agent" href="#agent-kipi">
+              <span class="team-card__initial" aria-hidden="true">ק</span>
+              <span class="team-card__body">
+                <span class="team-card__name">קיפי</span>
+                <span class="team-card__role">אחראי מעקב הקפאות: רושם כל תהליך מוקפא, שומר הקשר, מאפשר חזרה עתידית</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                <span class="team-card__tasks">12 משימות · 4 הושלמו</span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </section>
+<section class="team-card" id="team-product" aria-labelledby="team-product-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">🎨</span>
+        <div>
+          <h3 id="team-product-title">מוצר ועיצוב</h3>
+          <p class="team-card__hint">ממשק, נגישות, RTL ובדיקות איכות</p>
+        </div>
+        <span class="team-card__count">2/2 פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        <li>
+            <a class="team-card__agent" href="#agent-designer">
+              <span class="team-card__initial" aria-hidden="true">מ</span>
+              <span class="team-card__body">
+                <span class="team-card__name">המעצב</span>
+                <span class="team-card__role">אחראי UI/UX: שימושיות, נגישות, מובייל ו-RTL</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                <span class="team-card__tasks">11 משימות · 4 הושלמו</span>
+              </span>
+            </a>
+          </li><li>
+            <a class="team-card__agent" href="#agent-reviewer">
+              <span class="team-card__initial" aria-hidden="true">ב</span>
+              <span class="team-card__body">
+                <span class="team-card__name">הבודק</span>
+                <span class="team-card__role">סוקר קוד חוזר: באגים, נגישות, RTL, ביצועים ופשטות</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                <span class="team-card__tasks">22 משימות · 5 הושלמו</span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </section>
+<section class="team-card" id="team-maps" aria-labelledby="team-maps-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">🗺️</span>
+        <div>
+          <h3 id="team-maps-title">מפות ונתונים</h3>
+          <p class="team-card__hint">גיאומטריה, ניווט ורחובות</p>
+        </div>
+        <span class="team-card__count">0/2 פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        <li>
+            <a class="team-card__agent" href="#agent-mediator">
+              <span class="team-card__initial" aria-hidden="true">ג</span>
+              <span class="team-card__body">
+                <span class="team-card__name">המגשר</span>
+                <span class="team-card__role">אחראי המפה האינטרקטיבית: Leaflet, גיבוי קנבס וניווט</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-waiting">ממתין</span>
+                <span class="team-card__tasks">15 משימות · 0 הושלמו</span>
+              </span>
+            </a>
+          </li><li>
+            <a class="team-card__agent" href="#agent-mappy">
+              <span class="team-card__initial" aria-hidden="true">מ</span>
+              <span class="team-card__body">
+                <span class="team-card__name">מפי</span>
+                <span class="team-card__role">אחראי הנתונים והמפות: גיאומטריה, שכונות ואימות מספרי</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-waiting">ממתין</span>
+                <span class="team-card__tasks">12 משימות · 0 הושלמו</span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </section>
+<section class="team-card" id="team-research" aria-labelledby="team-research-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">📚</span>
+        <div>
+          <h3 id="team-research-title">מחקר ותוכן</h3>
+          <p class="team-card__hint">עובדות, שמות ומקורות לכל רחוב</p>
+        </div>
+        <span class="team-card__count">1/1 פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        <li>
+            <a class="team-card__agent" href="#agent-researcher">
+              <span class="team-card__initial" aria-hidden="true">ח</span>
+              <span class="team-card__body">
+                <span class="team-card__name">החוקר</span>
+                <span class="team-card__role">חוקר האינטרנט והמקורות: חוקר בכל המקורות הנגישים באינטרנט, משימותיו בטווח רחב מאוד — מחפש מידע קצר על כל רחוב (עובדה מעניינת אחת), או אם אין עובדה מעניינת אז משמעות השם ועל מי קרוי, ושומר בקובץ טקסט לעתיד (&#39;הידעת?&#39;). חוקר משחקים/אפליקציות דומים להבנת פיצ&#39;רים אפשריים. בקשר רציף עם הסוכנים הרלוונטיים.</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                <span class="team-card__tasks">22 משימות · 0 הושלמו</span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </section>
+<section class="team-card" id="team-docs" aria-labelledby="team-docs-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">📝</span>
+        <div>
+          <h3 id="team-docs-title">תיעוד</h3>
+          <p class="team-card__hint">דף החדר, סטטוסים וסנכרון</p>
+        </div>
+        <span class="team-card__count">1/1 פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        <li>
+            <a class="team-card__agent" href="#agent-documenter">
+              <span class="team-card__initial" aria-hidden="true">ת</span>
+              <span class="team-card__body">
+                <span class="team-card__name">המתעד</span>
+                <span class="team-card__role">מתעד החדר: בונה guli.html, מתשאל סוכנים אקטיבית (מה עושה/איפה נתקע/מה צריך/מתי יסיים), מסנכרן עם הפקח דו-כיווני, מדווח לחדר</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-active">פעיל</span>
+                
+              </span>
+            </a>
+          </li>
+      </ul>
+    </section>
+<section class="team-card" id="team-mobile" aria-labelledby="team-mobile-title">
+      <header class="team-card__head">
+        <span class="team-card__icon" aria-hidden="true">📱</span>
+        <div>
+          <h3 id="team-mobile-title">מובייל והפצה</h3>
+          <p class="team-card__hint">PWA, התקנה, שחרורים ופריסה</p>
+        </div>
+        <span class="team-card__count">0/2 פעילים</span>
+      </header>
+      <ul class="team-card__list">
+        <li>
+            <a class="team-card__agent" href="#agent-mobile">
+              <span class="team-card__initial" aria-hidden="true">מ</span>
+              <span class="team-card__body">
+                <span class="team-card__name">מובי</span>
+                <span class="team-card__role">אחראי גרסת מובייל ו-PWA: manifest, Service Worker, offline, safe-area, touch, installable.</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-waiting">ממתין</span>
+                <span class="team-card__tasks">11 משימות · 1 הושלמו</span>
+              </span>
+            </a>
+          </li><li>
+            <a class="team-card__agent" href="#agent-deployer">
+              <span class="team-card__initial" aria-hidden="true">פ</span>
+              <span class="team-card__body">
+                <span class="team-card__name">פזי</span>
+                <span class="team-card__role">אחראי הפצה ופריסה: אחסון, דומיין, HTTPS, CI/CD, גרסאות ושחרורים.</span>
+              </span>
+              <span class="team-card__side">
+                <span class="chip is-waiting">ממתין</span>
+                <span class="team-card__tasks">12 משימות · 1 הושלמו</span>
+              </span>
+            </a>
+          </li>
+      </ul>
+    </section>
+      
+    </div>
+  </section>
+
+  <section aria-labelledby="flow-title">
+    <div class="section__head">
+      <h2 id="flow-title">מסלול העבודה</h2>
+      <p class="section__hint">מחקר → עיצוב → פיתוח ומפות → בדיקה → תיעוד והפצה. כל שלב מציג את הסוכנים שפעילים בו.</p>
+    </div>
+    <ol class="flow" aria-label="שלבי העבודה">
+    <li class="flow__stage">
+        <div class="flow__step" aria-hidden="true">1</div>
+        <div class="flow__card">
+          <h3>מחקר</h3>
+          <p>עובדות, שמות ומקורות</p>
+          <div class="flow__agents">
+            <a class="flow__agent is-active" href="#agent-researcher">
+                <span class="flow__dot" aria-hidden="true"></span>החוקר
+              </a>
+          </div>
+        </div>
+      </li><li class="flow__stage">
+        <div class="flow__step" aria-hidden="true">2</div>
+        <div class="flow__card">
+          <h3>עיצוב</h3>
+          <p>ממשק, נגישות ו-RTL</p>
+          <div class="flow__agents">
+            <a class="flow__agent is-active" href="#agent-designer">
+                <span class="flow__dot" aria-hidden="true"></span>המעצב
+              </a>
+          </div>
+        </div>
+      </li><li class="flow__stage">
+        <div class="flow__step" aria-hidden="true">3</div>
+        <div class="flow__card">
+          <h3>פיתוח ומפות</h3>
+          <p>קוד, נתונים וגיאומטריה</p>
+          <div class="flow__agents">
+            <a class="flow__agent is-active" href="#agent-main">
+                <span class="flow__dot" aria-hidden="true"></span>הראשי
+              </a><a class="flow__agent is-waiting" href="#agent-mediator">
+                <span class="flow__dot" aria-hidden="true"></span>המגשר
+              </a>
+          </div>
+        </div>
+      </li><li class="flow__stage">
+        <div class="flow__step" aria-hidden="true">4</div>
+        <div class="flow__card">
+          <h3>בדיקה</h3>
+          <p>באגים, ביצועים ונגישות</p>
+          <div class="flow__agents">
+            <a class="flow__agent is-active" href="#agent-reviewer">
+                <span class="flow__dot" aria-hidden="true"></span>הבודק
+              </a>
+          </div>
+        </div>
+      </li><li class="flow__stage">
+        <div class="flow__step" aria-hidden="true">5</div>
+        <div class="flow__card">
+          <h3>תיעוד והפצה</h3>
+          <p>דוחות, משימות ושחרור</p>
+          <div class="flow__agents">
+            <a class="flow__agent is-active" href="#agent-documenter">
+                <span class="flow__dot" aria-hidden="true"></span>המתעד
+              </a><a class="flow__agent is-active" href="#agent-inspector">
+                <span class="flow__dot" aria-hidden="true"></span>הפקח
+              </a><a class="flow__agent is-active" href="#agent-kipi">
+                <span class="flow__dot" aria-hidden="true"></span>קיפי
+              </a><a class="flow__agent is-waiting" href="#agent-mobile">
+                <span class="flow__dot" aria-hidden="true"></span>מובי
+              </a><a class="flow__agent is-waiting" href="#agent-deployer">
+                <span class="flow__dot" aria-hidden="true"></span>פזי
+              </a>
+          </div>
+        </div>
+      </li>
+  </ol>
+  <p class="flow__legend">
+    <span class="chip is-active">פעיל</span>
+    <span class="chip is-waiting">ממתין</span>
+    <span class="chip is-unknown">טרם דווח</span>
+    <span class="flow__legend-text">החצים מסמנים את כיוון הזרימה; כל שם הוא קישור לכרטיס הסוכן.</span>
+  </p>
+  </section>
+
+  <section aria-labelledby="agents-title">
+    <div class="section__head">
+      <h2 id="agents-title">הסוכנים, אחד אחד</h2>
+      <p class="section__hint">מה עושה עכשיו, עם מי מדבר, מה אחר כך ומה כבר נסגר.</p>
+    </div>
+    <div class="agents">
+      <article class="agent is-active" id="agent-main">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ר</span>
+      <div class="agent__id">
+        <h3>הראשי</h3>
+        <p class="agent__role">מרכז העבודה: כותב BOARD, מכריע, מיישם נתונים ובדיקות</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-management">🧭 הנהלה ובקרה</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>המעצב, שיפי, קיפי</strong> · אימות חי UI/UX, סגירת משימות פתוחות <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (43)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 11 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 5 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 7 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 23 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 8 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: Mobile/Deploy · UI/UX · DEV · החלטות · Research · נתונים</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אימות חי 360/390/430/1280: גלילת מפה, סיום ידני, נגישות</li><li>סגירת ביקורת הבודק 036–037</li><li>אימות המעצב 390/430 סופי</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סבב 037 — 16 שבילים ומדרגות מיושבים</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">16 רשומות עם גיאומטריה מ-OSM נכנסו לנתונים; 2,154 רחובות, 94 שכונות ו-25,233 נקודות, verify 31/31.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מחיקה ידנית לכל רחוב + הסרת עיסוויה</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">state.deleted נשמר, הרחוב יורד מהרשימה, מהמפה ומהספירה, והביקור נשמר ל-undo; 2,138 רחובות ו-94 שכונות, verify 31/31.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סבב 034 — הסרת כבישים, מנהרות ושכונות חד-רחוב</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">ההסרה נעשתה מהנתונים הפעילים ולא בהסתרה; 118 רשומות נשמרו בארכיון הפיך עם paths וגיבוי לפני הסבב.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>פוקוס על צוות UI/UX לסגירה סופית של חווית משתמש.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/BOARD.md">לוח הסוכנים — BOARD</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T13:32:37+03:00">21 באוקטובר 2026, 13:32</time> · לפי זמן העדכון של BOARD.md</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-researcher">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ח</span>
+      <div class="agent__id">
+        <h3>החוקר</h3>
+        <p class="agent__role">חוקר האינטרנט והמקורות: חוקר בכל המקורות הנגישים באינטרנט, משימותיו בטווח רחב מאוד — מחפש מידע קצר על כל רחוב (עובדה מעניינת אחת), או אם אין עובדה מעניינת אז משמעות השם ועל מי קרוי, ושומר בקובץ טקסט לעתיד (&#39;הידעת?&#39;). חוקר משחקים/אפליקציות דומים להבנת פיצ&#39;רים אפשריים. בקשר רציף עם הסוכנים הרלוונטיים.</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — מריץ Pipeline &#39;הידעת?&#39; + מחקר אפליקציות</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-research">📚 מחקר ותוכן</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/&lt;id&gt;.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ&#39;רים.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>מפי (נתונים), המעצב (UI), המגשר (מפה), הראשי (החלטות), קיפי (הקפאות)</strong> · Pipeline &#39;הידעת?&#39; פעיל + פיילוט 50 + מחקר אפליקציות <span class="talk-state">ביצוע</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (22)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 4 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 0 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 5 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 15 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 2 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: NET · Research · החלטות · נתונים</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>הקמת Pipeline אוטומטי: APIs → עיבוד → קבצי טקסט data/didyouknow/&lt;id&gt;.txt (Node script + rate limiting + caching)</li><li>פיילוט 50 רחובות ראשונים: רשימת רחובות מרכזיים → שאילתות → עיבוד → שמירה → fact-checking</li><li>הרחבה ל-2,424 רחובות: ניהול שגיאות, rate limits, חסרים, resume capability</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מחקר inhabited — שבילים ומדרגות (כהחוקר)</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">מדרגות הבציר, שוני הלכות, בוני החומה והביכורים אומתו מול אינדקס הרחובות והכתובות העירוני; מדרגות המסיק נשארה HOLD בלי כתובות.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מדיניות אריחי OSM ומקורות רשמיים (כהחוקר)</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">החסימה המדודה מגיעה כ-HTTP 200 עם PNG תקין, ולכן tileerror לא יורה; נדרש probe על תוכן התשובה, לא על קוד הסטטוס.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>החוקר במרוץ — Pipeline &#39;הידעת?&#39; מופעל, פיילוט 50 רחובות רץ, מחקר אפליקציות במקביל. דיווח יומי ב-09:00 לערוץ researcher.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/researcher.md">ערוץ החוקר</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-22T09:15:00+03:00">22 באוקטובר 2026, 09:15</time> · הפעלה מחודשת — מריץ Pipeline + פיילוט 50 רחובות</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-mappy">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">מ</span>
+      <div class="agent__id">
+        <h3>מפי</h3>
+        <p class="agent__role">אחראי הנתונים והמפות: גיאומטריה, שכונות ואימות מספרי</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>מוקפא</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-maps">🗺️ מפות ונתונים</a>
+      <span class="agent__work-status on-break">
+        <span class="work-status__label">⏸ לא פעיל כרגע</span>
+        <span class="work-status__reason">ממתין</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי, קיפי</strong> · רישום הקפאות אצל קיפי <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (12)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 3 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 0 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 1 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 11 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 0 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: DEV · NET · נתונים</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>המתנה להחלטה עתידית</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">אודיט 034 — אחרי הסרת המגשרם</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">2,239 רחובות, 101 שכונות, 0 שכונות חד-רחוב ו-17 רשומות ארכיון תקינות; verify 29/29 בזמן האודיט.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>סריקה נעצרה סופית; 9 HOLD + 13 remaining מועמדים מוקפאים אצל קיפי.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/mappy.md">ערוץ מפי · mappy.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T12:48:52+03:00">21 באוקטובר 2026, 12:48</time> · מיזוג הושלם</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-reviewer">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ב</span>
+      <div class="agent__id">
+        <h3>הבודק</h3>
+        <p class="agent__role">סוקר קוד חוזר: באגים, נגישות, RTL, ביצועים ופשטות</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — ביקורת UI/UX</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-product">🎨 מוצר ועיצוב</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי, המעצב, המגשר</strong> · ביקורת סופית UI/UX <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (22)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 9 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 5 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 3 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 10 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 4 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: Mobile/Deploy · UI/UX · Research · DEV</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אימות חי empty map state (035 fix)</li><li>אימות scroll-to-map + manual complete ב-360/390/430/1280</li><li>סגירת סבב 036–037</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ביקורת 035 — מחיקה ידנית של רחוב</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">חמשת תרחישי המחיקה, undo והייבוא תקינים באחסון; חוסם אחד: guard ב-map.js:1393 מחזיר מוקדם כשהרשימה מתרוקנת ולא מנקה שכבות.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ביקורת 034</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">אין חוסמים; שני תיקוני חובה הומלצו — &#39;כרגש&#39; ולכידת פוקוס בסרגל המוסתר — והראשי יישם אותם.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ביקורת 031</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">כל סעיפי החוזה מיושמים ואין חוסמים; נותרו שני ממצאי &#39;חשוב&#39; ואימות hashes עצמאי.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>אין חוסמים בקוד — ממתין לאימות חי לסגירה.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/shifu.md">ערוץ הבודק · shifu.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T13:32:37+03:00">21 באוקטובר 2026, 13:32</time> · ביקורת 036–037 פתוחה</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-designer">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">מ</span>
+      <div class="agent__id">
+        <h3>המעצב</h3>
+        <p class="agent__role">אחראי UI/UX: שימושיות, נגישות, מובייל ו-RTL</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — ראש צוות UI/UX</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-product">🎨 מוצר ועיצוב</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי, הבודק</strong> · אימות UI/UX סופי, סגירת משימות <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (11)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 3 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 4 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 2 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 4 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 1 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: UI/UX · החלטות</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אימות חי 390/430: פגינציה, חיפוש, סימון, אקורדיון</li><li>אימות גלילת מפה בלחיצת שכונה</li><li>אימות סיום ידני + הערה + undo</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סבב השלמה לפי שכונות</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">בכניסה 20 קבוצות סגורות ו-0 שורות רחוב; גורפת נשמרת בפעולה אחת ו-undo מחזיר תאריך והערה; 360px בלי גלילה אופקית, verify 25/25.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>אימות 390/430 כמעט מושלם — 2 כשלונות תוקנו, נותר אימות חי סופי.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/tsibi.md">ערוץ המעצב · tsibi.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T13:32:37+03:00">21 באוקטובר 2026, 13:32</time> · אימות 390/430 + גלילת מפה פתוח</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-mediator">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ג</span>
+      <div class="agent__id">
+        <h3>המגשר</h3>
+        <p class="agent__role">אחראי המפה האינטרקטיבית: Leaflet, גיבוי קנבס וניווט</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>ממתין לדיווח</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-maps">🗺️ מפות ונתונים</a>
+      <span class="agent__work-status on-break">
+        <span class="work-status__label">⏸ לא פעיל כרגע</span>
+        <span class="work-status__reason">ממתין</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>הראשי, הבודק ומפי</strong> · ניווט שכונות, שילוב visited-change ושאלת &#39;אחר&#39; <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (15)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 3 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 0 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 2 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 11 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 2 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: DEV · NET · נתונים · החלטות</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>מעבר ל-URL אריחים יחיד במקום {s} לפי החוקר</li><li>בדיקת שילוב zoomToArea עם סימונים</li><li>בדיקת מגע אמיתית ל-pinch ולגרירה</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">ניווט לפי שכונות (029–030)</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">zoomToArea מחזיר false ולא מזיז מפה כשאין נתונים; smoke 119/119 ו-0 סימונים מניווט.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">גלגלת זום ומובייל</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">גלגלת מעל המפה משנה זום ולא גוללת עמוד, גם במסלול הגיבוי; 31/31 smoke ובדיקת דפדפן אמיתית.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>המפה מוכנה בשני המסלולים; מגע אמיתי ו-035 טרם נבדקו.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/tsiri.md">ערוץ המגשר · tsiri.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T07:48:05+03:00">21 באוקטובר 2026, 07:48</time> · לפי זמן העדכון של הערוץ</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-documenter">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ת</span>
+      <div class="agent__id">
+        <h3>המתעד</h3>
+        <p class="agent__role">מתעד החדר: בונה guli.html, מתשאל סוכנים אקטיבית (מה עושה/איפה נתקע/מה צריך/מתי יסיים), מסנכרן עם הפקח דו-כיווני, מדווח לחדר</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — תשאול וסנכרון</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-docs">📝 תיעוד</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>תשאול סוכנים על סטטוס נוכחי; סנכרון עם הפקח על דשבורד המשימות; עדכון state.json</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>הפקח, הראשי, חוקר, בודק, מעצב, מגשר, קיפי</strong> · בירור סטטוס NET-1, DEV-1, RSCH-1/3, תשאול שוטף <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>תשאול המגשר: מה קורה עם NET-1 (שרשרת אריחים)?</li><li>תשאול החוקר: סטטוס RSCH-1/3 (מאגר &#39;הידעת?&#39; + Pipeline)?</li><li>תשאול הבודק: מתי סבב 036–037? צריך בדיקת מכשיר אמיתי?</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">תשתית חדר הסוכנים</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">state, heartbeat, generator ו-guli.html נבנו; הדף נטען ב-360/390/430/1280 בלי גלילה אופקית ובלי תלות חיצונית.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">הוספת סקשן &#39;דשבורד המשימות&#39; עם קישור ל-tasks.html</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">נוספה תלות inspector ב-AGENT_DEPENDENCIES וסקשן עם קישור ל-tasks.html.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">הגדרת תפקיד מעודכן: תשאול אקטיבי + סנכרון דו-כיווני עם הפקח</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">המתעד כעת מתשאל סוכנים ישירות, מדווח לפקח, ומקבל מהפקח בקשות בירור.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>המתעד פעיל — מתשאל סוכנים, מסנכרן עם הפקח, בונה guli.html מעודכן.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/guli.md">ערוץ המתעד · guli.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T18:20:00+03:00">21 באוקטובר 2026, 18:20</time> · תפקיד עודכן: תשאול אקטיבי + סנכרון פקח</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-kipi">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">ק</span>
+      <div class="agent__id">
+        <h3>קיפי</h3>
+        <p class="agent__role">אחראי מעקב הקפאות: רושם כל תהליך מוקפא, שומר הקשר, מאפשר חזרה עתידית</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — מעקב הקפאות</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-management">🧭 הנהלה ובקרה</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>ראשי</strong> · רישום הקפאות לצוותים אחרים <span class="talk-state">פתוח</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (12)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 3 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 4 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 2 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 4 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 2 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: UI/UX · החלטות · נתונים</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>רישום משימות DEV/NET/MKT הממתינות</li><li>עדכון כשהחלטות מתקבלות</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מינוי סוכן הקפאות</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">קיפי מונה רשמית; מתחיל ברישום הקפאות.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>צוותי DEV/NET/MKT ממתינים להחלטות — קיפי עוקב.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/kipi.md">ערוץ קיפי</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T13:32:37+03:00">21 באוקטובר 2026, 13:32</time> · מונה כעת</span>
+    </footer>
+  </article>
+<article class="agent is-active" id="agent-inspector">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">פ</span>
+      <div class="agent__id">
+        <h3>הפקח</h3>
+        <p class="agent__role">מארגן המשימות: מקבל את כל המשימות מכל הצוותים, מסדר אותן ברשימות HTML יפות בעברית. בקשר תמידי עם המתעד (המתעד) ועם הראשי.</p>
+      </div>
+      <span class="chip is-active"><span class="chip__dot" aria-hidden="true"></span>פעיל — דשבורד מוכן</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-management">🧭 הנהלה ובקרה</a>
+      <span class="agent__work-status working">
+        <span class="work-status__label">🟢 בעבודה</span>
+        <span class="work-status__reason">מדווח על משימה נוכחית</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>דשבורד המשימות הושלם — 59 משימות ב-7 צוותים, כל הפילטרים והפיצ&#39;רים עובדים. ממתין לבדיקת דפדפן חיה סופית.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>המתעד, הראשי</strong> · דשבורד משימות מוכן ב-tasks.html, סנכרון עם guli.html בוצע <span class="talk-state">סגור</span></span>
+    </p>
+
+    
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>בדיקת דפדפן חיה סופית של tasks.html (סינון, חיפוש, מיון, הדפסה, תצוגת סוכנים)</li><li>Lighthouse audit על הגרסה הסופית</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">מינוי סוכן הפקח</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">הפקח מונה רשמית; מתחיל בבניית דשבורד משימות HTML.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">בניית דשבורד HTML משימות מאורגן לפי צוותים</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">tasks.html + tools/tasks-dashboard.js נבנו — 59 משימות, 7 צוותים (UI/UX, DEV, NET, נתונים, Research, החלטות, Mobile/Deploy), כל הפיצ&#39;רים עובדים, שערים ירוקים.</p>
+        </li>
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">סנכרון עם המתעד (המתעד) לעדכון guli.html</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">נוספה תלות inspector ב-AGENT_DEPENDENCIES וסקשן &#39;דשבורד המשימות&#39; עם קישור ל-tasks.html ב-guli.html.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>הפקח השלים את הדשבורד — 59 משימות ב-7 צוותים, RTL מלא, file://-safe, verify 33/33, store 21/21.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/inspector.md">ערוץ הפקח</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T18:13:20+03:00">21 באוקטובר 2026, 18:13</time> · דשבורד נבנה ואומת</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-deployer">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">פ</span>
+      <div class="agent__id">
+        <h3>פזי</h3>
+        <p class="agent__role">אחראי הפצה ופריסה: אחסון, דומיין, HTTPS, CI/CD, גרסאות ושחרורים.</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>ממתין לפריסה</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-mobile">📱 מובייל והפצה</a>
+      <span class="agent__work-status on-break">
+        <span class="work-status__label">⏸ לא פעיל כרגע</span>
+        <span class="work-status__reason">ממתין</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>ממתין להפעלה — פריסה, CI/CD ושחרורים.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>הראשי, מובי, קיפי</strong> · פריסה, CI/CD, גרסה <span class="talk-state">מוקפא</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (12)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 6 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 1 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 0 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 7 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 4 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: Mobile/Deploy</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אבחון אפשרויות אחסון</li><li>הגדרת CI/CD</li><li>שחרור ראשון</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">תשתית סוכן הפצה</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">ערוץ pitzi.md מוכן; המתנה להפעלה.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>ממתין להפעלה.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/pitzi.md">ערוץ פיצי · pitzi.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T03:34:48+03:00">21 באוקטובר 2026, 03:34</time> · לפי זמן העדכון של הערוץ</span>
+    </footer>
+  </article>
+<article class="agent is-waiting" id="agent-mobile">
+    <header class="agent__head">
+      <span class="agent__initial" aria-hidden="true">מ</span>
+      <div class="agent__id">
+        <h3>מובי</h3>
+        <p class="agent__role">אחראי גרסת מובייל ו-PWA: manifest, Service Worker, offline, safe-area, touch, installable.</p>
+      </div>
+      <span class="chip is-waiting"><span class="chip__dot" aria-hidden="true"></span>ממתין למובייל</span>
+    </header>
+
+    <div class="agent__meta-row">
+      <a class="agent__team" href="#team-mobile">📱 מובייל והפצה</a>
+      <span class="agent__work-status on-break">
+        <span class="work-status__label">⏸ לא פעיל כרגע</span>
+        <span class="work-status__reason">ממתין</span>
+      </span>
+    </div>
+
+    <p class="agent__now"><span class="label">מה עושה עכשיו</span>ממתין להפעלה — PWA, offline, touch, installable.</p>
+    <p class="agent__talk">
+      <span class="label">עם מי</span>
+      <span class="agent__talk-body"><strong>הראשי, המגשר, המתעד</strong> · PWA, offline, touch, installable <span class="talk-state">מוקפא</span></span>
+    </p>
+
+    
+    <div class="agent__task-summary">
+      <h4>משימות (11)</h4>
+      <div class="task-counts">
+        <span class="task-count" title="עדיפות גבוהה">🔴 6 גבוהה</span>
+        <span class="task-count" title="הושלמו">✅ 1 הושלמו</span>
+        <span class="task-count" title="בביצוע">🔄 0 בביצוע</span>
+        <span class="task-count" title="ממתינות">⏳ 6 ממתינות</span>
+        <span class="task-count" title="חסומות">⏸ 4 חסומות</span>
+      </div>
+      <div class="agent__teams">צוותים: Mobile/Deploy</div>
+    </div>
+
+    <div class="agent__block">
+      <h4>המשימות הבאות</h4>
+      <ul class="ticks"><li>אבחון מוכנות PWA</li><li>Service Worker + offline</li><li>Safe-area + touch + installable</li></ul>
+    </div>
+
+    <div class="agent__block">
+      <h4>מה הסתיים לאחרונה</h4>
+      <ul class="done-list">
+        <li class="done">
+          <p class="done__head">
+            <span class="done__task">תשתית סוכן מובייל</span>
+            <time class="done__date" datetime="2026-10-21">אתמול</time>
+          </p>
+          <p class="done__conclusion">ערוץ mobi.md מוכן; המתנה להפעלה.</p>
+        </li></ul>
+    </div>
+
+    <blockquote class="agent__conclusion">
+      <span class="label">מסקנה</span>
+      <p>ממתין להפעלה.</p>
+    </blockquote>
+
+    <footer class="agent__foot">
+      <span class="agent__source">מקור: <a href="docs/agents/channels/mobi.md">ערוץ מובי · mobi.md</a></span>
+      <span class="agent__reported">דיווח אחרון: <time dir="ltr" datetime="2026-10-21T03:34:48+03:00">21 באוקטובר 2026, 03:34</time> · לפי זמן העדכון של הערוץ</span>
+    </footer>
+  </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="timeline-title">
+    <div class="section__head">
+      <h2 id="timeline-title">ציר הזמן</h2>
+      <p class="section__hint">האירועים מסודרים מהחדש לישן, מקובצים לפי יום. כל שורה מציינת מאין היא מגיעה.</p>
+    </div>
+    <div class="timeline">
+    <section class="timeline__day">
+      <h3 class="timeline__day-title">
+        <span>היום</span>
+        <span class="timeline__day-count">4 אירועים</span>
+      </h3>
+      <ol class="timeline__list">
+        <li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-22T10:05:00+03:00">10:05</time>
+            <span class="timeline__relative" data-time="2026-10-22T10:05:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>המתעד בנה מחדש את guli.html: הוסרו חסמים, בעיות לא פתורות ופרומפט AI; נוספו דשבורד 6 צוותים, מסלול עבודה ויזואלי וציר זמן מקובץ לפי יום.</p>
+            <span class="timeline__source">מקור: tools/guli-room.js · סבב 059</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-22T10:03:00+03:00">10:03</time>
+            <span class="timeline__relative" data-time="2026-10-22T10:03:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הפקח עדכן את tasks.html — 64 משימות בשבעה צוותים; תוקנו גלישה אופקית וניגודיות נמוכה בהערות הסטטוס.</p>
+            <span class="timeline__source">מקור: tools/tasks-dashboard.js · סבב 059</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-22T10:01:00+03:00">10:01</time>
+            <span class="timeline__relative" data-time="2026-10-22T10:01:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>שמות הסוכנים נורמלו מחדש בכל state.json: הבודק, המעצב, המגשר והמתעד; מפי, פזי ומובי ממתינים.</p>
+            <span class="timeline__source">מקור: סבב 059 · המתעד</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-22T09:15:00+03:00">09:15</time>
+            <span class="timeline__relative" data-time="2026-10-22T09:15:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>החוקר הופעל רשמית — מריץ Pipeline &#39;הידעת?&#39; (Wikidata/Wikipedia/OSM/Municipality APIs → data/didyouknow/&lt;id&gt;.txt), פיילוט 50 רחובות מרכזיים, ומחקר אפליקציות דומות (Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr) → דוח השוואתי + המלצות פיצ&#39;רים. דיווח יומי 09:00 לערוץ researcher.</p>
+            <span class="timeline__source">מקור: הנחיית משתמש · הפעלת מחקר</span>
+          </div>
+        </li>
+      </ol>
+    </section><section class="timeline__day">
+      <h3 class="timeline__day-title">
+        <span>אתמול</span>
+        <span class="timeline__day-count">33 אירועים</span>
+      </h3>
+      <ol class="timeline__list">
+        <li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T14:13:24+03:00">14:13</time>
+            <span class="timeline__relative" data-time="2026-10-21T14:13:24+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>מונה הפקח — סוכן חדש לארגון משימות: בונה דשבורד HTML מאורגן לפי צוותים (UI/UX, DEV, NET, Research). בקשר עם המתעד והראשי.</p>
+            <span class="timeline__source">מקור: הנחיית משתמש · BOARD §056</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T13:32:37+03:00">13:32</time>
+            <span class="timeline__relative" data-time="2026-10-21T13:32:37+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>חלוקה לצוותים: UI/UX (פוקוס נוכחי), DEV, NET, MKT. פוקוס נוכחי: אימות חי UI/UX 360/390/430/1280, סגירת הבודק/המעצב.</p>
+            <span class="timeline__source">מקור: TEAMS.md · הנחיית משתמש</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:48:52+03:00">12:48</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:48:52+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>החלטות משתמש: (1) 9 HOLD + סריקה + רישיון GIS + Tile Probe + גבולות → מוקפאים אצל קיפי (סוכן חדש). (2) 3 רחובות עודכנו לפוליגון רשמי: מיוחס→מקור ברוך, ארזי הבירה→מאה שערים (מוזג משמעון הצדיק), פרחי גילה→גילה. (3) Tile Probe מוקפא. (4) גבולות bbox נשארים. (5) סריקה נעצרה סופית. נוצר קיפי למעקב הקפאות. סה&quot;כ 2,424 רחובות, 95 שכונות, verify 32/32.</p>
+            <span class="timeline__source">מקור: הנחיית משתמש · BOARD §052</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:36:07+03:00">12:36</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:36:07+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הוסרו 33 שמות אנגלית וגשרים/מנהרות (Bab-Hutta Road, Ethiopian Monastery, King David Hotel, Military Road, Mamilla Avenue, שבעה ארצ&#39;ז, גשר הולילנד, גשר החיים, מנהרת הכותל, מנהרת ידין, מנהרת כרם, מנהרת סיירת דוכיפת, ועוד) — סה&quot;כ 2,425 רחובות, 95 שכונות, verify 32/32.</p>
+            <span class="timeline__source">מקור: הנחיית משתמש · BOARD §051</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:30:37+03:00">12:30</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:30:37+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>סריקה אוטומטית הסתיימה סופית: 6 רחובות אחרונים נוספו (הרובע המוסלמי 5, פסגת זאב 1) — סה&quot;כ 2,458 רחובות, 95 שכונות, verify 32/32. לא נותרו מועמדים ראויים.</p>
+            <span class="timeline__source">מקור: סריקה אוטומטית §049</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:28:18+03:00">12:28</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:28:18+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>סריקה אוטומטית הסתיימה: 18 רחובות אחרונים נוספו (הרובע המוסלמי 13, גילה 1, הרובע הנוצרי 2, פסגת זאב 2) — סה&quot;כ 2,452 רחובות, 95 שכונות, verify 32/32. סריקה מוצתה.</p>
+            <span class="timeline__source">מקור: סריקה אוטומטית §048</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:26:33+03:00">12:26</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:26:33+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הוסר ראס אל-עמוד (12 רחובות). נוספה גלילה אוטומטית למפה כשלוחצים על שם שכונה (scrollIntoView smooth). סה&quot;כ 2,434 רחובות, 95 שכונות, verify 32/32.</p>
+            <span class="timeline__source">מקור: BOARD §047</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:23:51+03:00">12:23</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:23:51+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>סריקה אוטומטית: 55 רחובות מגורים נוספים נוספו (מחנה ישראל, גילה, נחלאות, נוה יעקב, קוממיות, חומת שמואל, קרית שמואל, פת, רמת שלמה, בית וגן, עין כרם, ימין משה, ממילא, גבעת הורדים, קטמונים, קרית היובל, פסגת זאב, הרובע המוסלמי, רמת שלמה, בית וגן, עין כרם) — סה&quot;כ 2,446 רחובות, 96 שכונות, verify 32/32.</p>
+            <span class="timeline__source">מקור: סריקה אוטומטית §046</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:17:02+03:00">12:17</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:17:02+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי הוסיף 142 רחובות מגורים נוספים (גילה, פסגת זאב, רמות, רחביה, מרכז העיר, בית הכרם, הרובעים, ועוד) — סה&quot;כ 2,391 רחובות, 98 שכונות, verify 32/32. גיבוי נוצר.</p>
+            <span class="timeline__source">מקור: BOARD §045</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:12:44+03:00">12:12</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:12:44+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי הוסיף 4 רחובות שביקש המשתמש: ר&#39; יעקב בי רב, משה ששון, הרב אברהם וילהלם, אהל משה — כולם עם גיאומטריית OSM ומופו לאזורים קיימים. סה&quot;כ 2,249 רחובות, 93 שכונות.</p>
+            <span class="timeline__source">מקור: BOARD §044</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:04:39+03:00">12:04</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:04:39+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי מיזג 91 שבילים מיושבים חדשים (מתוך 93 של החוקר; 2 כבר היו באפליקציה). סה&quot;כ 2,245 רחובות, 94 שכונות, verify 32/32. גיבוי נוצר.</p>
+            <span class="timeline__source">מקור: BOARD §043</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T12:00:00+03:00">12:00</time>
+            <span class="timeline__relative" data-time="2026-10-21T12:00:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>כל 91 השבילים עם גיאומטריית OSM (ODbL); 2 כבר היו באפליקציה (לויד גורג, שץ); דו נואס נוסף כ-point-only עם גיאומטריה שנשלפה מ-OSM API.</p>
+            <span class="timeline__source">מקור: ערוץ mappy (מיזוג)</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:50:00+03:00">11:50</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:50:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>כלל רישיון: כל מקור ללא רישיון מאומת מוקפא אוטומטית; רק OSM ODbL תקף.</p>
+            <span class="timeline__source">מקור: הנחיית משתמש · TASKS §4</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:50:00+03:00">11:50</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:50:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>כלל רישיון: כל מקור ללא רישיון מאומת מוקפא אוטומטית; רק OSM ODbL תקף.</p>
+            <span class="timeline__source">מקור: הנחיית משתמש · TASKS §4</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:48:01+03:00">11:48</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:48:01+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>המשתמש הפעיל את כל הסוכנים (הבודק, המעצב, המגשר, החוקר, מפי, המתעד). רישיון GIS מוקפא. הראשי מוביל אימות 93 ומיזוג.</p>
+            <span class="timeline__source">מקור: BOARD §042</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:35:00+03:00">11:35</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:35:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>חסם רישיון שכבת רשות סומן &#39;נפתר&#39; (מוקפא לפי הוראת המשתמש).</p>
+            <span class="timeline__source">מקור: BOARD §040 · TASKS §4</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:35:00+03:00">11:35</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:35:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>חסם רישיון שכבת רשות סומן &#39;נפתר&#39; (מוקפא לפי הוראת המשתמש).</p>
+            <span class="timeline__source">מקור: BOARD §040 · TASKS §4</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:26:49+03:00">11:26</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:26:49+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי הקפיא את הבודק ואת המעצב לבקשת המשתמש, והפעיל את מפי לאיתור ואימות שבילים מיושבים עם בתים. החלטות המגשרם: רכבת נשארת, דרך אריאל שרון ודרך בית חורון נשארות, דרך מעלה אדומים מוסרת. שכבת רשות מוקפאת.</p>
+            <span class="timeline__source">מקור: BOARD §040</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:25:00+03:00">11:25</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:25:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>מפי התחיל לאמת את 93 המועמדים של החוקר ולחפש שבילים מיושבים נוספים.</p>
+            <span class="timeline__source">מקור: ערוץ mappy (הפעלה מחדש)</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:25:00+03:00">11:25</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:25:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>מפי התחיל לאמת את 93 המועמדים של החוקר ולחפש שבילים מיושבים נוספים.</p>
+            <span class="timeline__source">מקור: ערוץ mappy (הפעלה מחדש)</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T11:05:00+03:00">11:05</time>
+            <span class="timeline__relative" data-time="2026-10-21T11:05:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי הקפיא את הבודק ואת המעצב לבקשת המשתמש, והפעיל את מפי לאיתור ואימות שבילים מיושבים עם בתים.</p>
+            <span class="timeline__source">מקור: BOARD §039</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:58:27+03:00">10:58</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:58:27+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>החוקר דיווח על 93 מועמדים חדשים עם שם רשמי, כתובות מספריות ו-way-id ב-OSM; 9 נוספים ב-HOLD.</p>
+            <span class="timeline__source">מקור: ערוץ researcher</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:58:27+03:00">10:58</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:58:27+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>החוקר דיווח על 93 מועמדים חדשים עם שם רשמי, כתובות מספריות ו-way-id ב-OSM; 9 נוספים ב-HOLD.</p>
+            <span class="timeline__source">מקור: ערוץ researcher</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:55:00+03:00">10:55</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:55:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי סגר את 038: מצב ריק תוקן, מבחן אחסון 17 נוסף, verify 32/32 וגיבוי עם 7 הביקורים.</p>
+            <span class="timeline__source">מקור: BOARD §038</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:55:00+03:00">10:55</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:55:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>המתעד עדכן את החדר אחרי 037 וביקורת 035, ובדק את הדף מחדש ב-360 וב-1280.</p>
+            <span class="timeline__source">מקור: ערוץ guli</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:46:59+03:00">10:46</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:46:59+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הבודק הגיש ביקורת 035: חמישה תרחישי מחיקה תקינים, אבל מחיקת הרחוב האחרון משאירה קו ופופאפ על המפה.</p>
+            <span class="timeline__source">מקור: ערוץ shifu</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:45:49+03:00">10:45</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:45:49+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי סגר את 037: 16 שבילים ומדרגות מיושבים נכנסו לנתונים; 2,154 רחובות, 94 שכונות, verify 31/31.</p>
+            <span class="timeline__source">מקור: BOARD §037</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:42:00+03:00">10:42</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:42:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>המתעד התחיל לבנות את חדר הסוכנים: state, heartbeat, generator ודף.</p>
+            <span class="timeline__source">מקור: ערוץ guli</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:40:00+03:00">10:40</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:40:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הראשי רשם את 036: מחיקה ידנית ועיסוויה ירדו; 2,138 רחובות, 94 שכונות, 118 בארכיון, verify 31/31.</p>
+            <span class="timeline__source">מקור: BOARD §036</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T10:35:00+03:00">10:35</time>
+            <span class="timeline__relative" data-time="2026-10-21T10:35:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>החוקר דיווח על 26 רחובות מיושבים: 4 ודאיים, 22 נוספים ו-4 HOLD; ממתין לאימות מפי.</p>
+            <span class="timeline__source">מקור: ערוץ researcher</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T09:49:00+03:00">09:49</time>
+            <span class="timeline__relative" data-time="2026-10-21T09:49:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>הבודק סיים ביקורת 034 בלי חוסמים; שני תיקוני חובה הומלצו ויושמו.</p>
+            <span class="timeline__source">מקור: ערוץ shifu</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T07:48:00+03:00">07:48</time>
+            <span class="timeline__relative" data-time="2026-10-21T07:48:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>המגשר ומפי עדכנו את הערוצים: מפה וגלגלת, ניווט שכונות ואודיט נתונים 034.</p>
+            <span class="timeline__source">מקור: ערוצי tsiri ו-mappy</span>
+          </div>
+        </li><li class="timeline__item">
+          <div class="timeline__time">
+            <time dir="ltr" datetime="2026-10-21T03:34:00+03:00">03:34</time>
+            <span class="timeline__relative" data-time="2026-10-21T03:34:00+03:00"></span>
+          </div>
+          <div class="timeline__body">
+            <p>המעצב דיווח על סבב ההשלמה: אקורדיון, גורפת, חיפוש ומובייל 360.</p>
+            <span class="timeline__source">מקור: ערוץ tsibi</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+  </section>
+
+  <section aria-labelledby="sources-title">
+    <div class="section__head">
+      <h2 id="sources-title">מקורות</h2>
+      <p class="section__hint">הקבצים שמהם נבנה הדף. אפשר לפתוח כל אחד מהם.</p>
+    </div>
+    <ul class="sources">
+    <li class="source">
+        <a href="docs/agents/BOARD.md"><span class="source__label">לוח הסוכנים — BOARD</span><span class="source__note">החלטות, סטטוסים ומספרי הפרויקט</span></a>
+      </li><li class="source">
+        <a href="docs/agents/TASKS.md"><span class="source__label">יומן המשימות — TASKS</span><span class="source__note">מה הושלם, מה בביצוע ומה חסום</span></a>
+      </li><li class="source">
+        <a href="docs/TEAMS.md"><span class="source__label">מבנה הצוותים — TEAMS</span><span class="source__note">חלוקת הצוותים והמשימות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/researcher.md"><span class="source__label">ערוץ החוקר</span><span class="source__note">מחקר &#39;הידעת?&#39; + אפליקציות דומות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/shifu.md"><span class="source__label">ערוץ הבודק</span><span class="source__note">ביקורות קוד</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/tsibi.md"><span class="source__label">ערוץ המעצב</span><span class="source__note">יישום UI/UX</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/tsiri.md"><span class="source__label">ערוץ המגשר</span><span class="source__note">מפה, ניווט, נגישות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/guli.md"><span class="source__label">ערוץ המתעד</span><span class="source__note">בניית guli.html, סנכרון</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/inspector.md"><span class="source__label">ערוץ הפקח</span><span class="source__note">דשבורד משימות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/kipi.md"><span class="source__label">ערוץ קיפי</span><span class="source__note">מעקב הקפאות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/mappy.md"><span class="source__label">ערוץ מפי</span><span class="source__note">גיאומטריה ושכונות</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/pitzi.md"><span class="source__label">ערוץ פיצי</span><span class="source__note">פריסה, CI/CD</span></a>
+      </li><li class="source">
+        <a href="docs/agents/channels/mobi.md"><span class="source__label">ערוץ מובי</span><span class="source__note">PWA, offline</span></a>
+      </li><li class="source">
+        <a href="docs/agents/LESSONS.md"><span class="source__label">לקחים — LESSONS</span><span class="source__note">מה למדנו מהסבבים</span></a>
+      </li>
+  </ul>
+  </section>
+
+  <aside class="room-note">
+    <p><strong>איך לקרוא את הדף.</strong> כל שורה בדף מגיעה מערוץ סוכן, מ-BOARD או מ-TASKS. מה שלא דווח מסומן &#39;טרם דווח&#39;. הדף לא מפעיל סוכנים ולא מעריך קוד.</p>
+    <p>מצב הפרויקט לפי docs/TEAMS.md §055: 2,424 רחובות · 95 שכונות · 25,233+ נקודות · verify 35/35.</p>
+  </aside>
+</main>
+
+<footer class="page">
+  <div class="wrap">
+    <p>הדף נבנה על ידי <strong>המתעד</strong> מתוך <a href="../docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
+    <p>נבנה לאחרונה: <time dir="ltr" datetime="2026-10-22T15:35:24+03:00">22 באוקטובר 2026, 15:35</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="../index.html">האפליקציה</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var refresh = document.getElementById("refresh");
+  if (refresh) {
+    refresh.addEventListener("click", function () {
+      refresh.disabled = true;
+      refresh.textContent = "מרענן…";
+      window.location.reload();
+    });
+  }
+
+  function relative(then) {
+    var minutes = Math.round((Date.now() - then) / 60000);
+    if (minutes < 1) return "עכשיו";
+    if (minutes === 1) return "לפני דקה";
+    if (minutes < 60) return "לפני " + minutes + " דקות";
+    var hours = Math.round(minutes / 60);
+    if (hours === 1) return "לפני שעה";
+    if (hours < 24) return "לפני " + hours + " שעות";
+    var days = Math.round(hours / 24);
+    if (days === 1) return "לפני יום";
+    if (days < 30) return "לפני " + days + " ימים";
+    var months = Math.round(days / 30);
+    return months === 1 ? "לפני חודש" : "לפני " + months + " חודשים";
+  }
+
+  function paintRelative(el) {
+    var raw = el.getAttribute(el.tagName === "SPAN" && el.id === "relative-time" ? "data-updated" : "data-time");
+    var then = raw ? new Date(raw).getTime() : NaN;
+    if (isFinite(then)) el.textContent = relative(then);
+  }
+
+  var header = document.getElementById("relative-time");
+  if (header) paintRelative(header);
+
+  var stamps = document.querySelectorAll(".timeline__relative");
+  for (var i = 0; i < stamps.length; i++) paintRelative(stamps[i]);
+
+  window.setInterval(function () {
+    if (header) paintRelative(header);
+    for (var j = 0; j < stamps.length; j++) paintRelative(stamps[j]);
+  }, 60000);
+})();
+</script>
+</body>
+</html>

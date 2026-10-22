@@ -2,7 +2,7 @@
 "use strict";
 
 /*
- * guli-room.js — בונה את guli.html מתוך docs/agents/guli/state.json
+ * guli-room.js — בונה את internal/guli.html מתוך docs/agents/guli/state.json
  *
  * שימוש:
  *   node tools/guli-room.js               בנייה חד-פעמית
@@ -20,7 +20,7 @@ const STATE_PATH = path.join(ROOT, "docs", "agents", "guli", "state.json");
 const HEARTBEAT_PATH = path.join(ROOT, "docs", "agents", "guli", "heartbeat.json");
 const TASKS_DATA_PATH = path.join(ROOT, "tasks-data.json");
 const AGENT_STATUS_OUT_PATH = path.join(ROOT, "agent-status.json");
-const OUT_PATH = path.join(ROOT, "guli.html");
+const OUT_PATH = path.join(ROOT, "internal", "guli.html");
 const CHANNELS_DIR = path.join(ROOT, "docs", "agents", "channels");
 const STATIC_SOURCES = [
   path.join(ROOT, "docs", "agents", "BOARD.md"),
@@ -855,8 +855,12 @@ footer.page a{font-weight:600}
     <p class="lead">${esc(meta.nowLine || "טרם דווח מה קורה בחדר.")}</p>
     <div class="masthead__bar">
       <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>${active} פעילים · ${waiting} ממתינים</span>
+      <a href="index.html" class="btn">🏠 דף בית פנימי</a>
       <a href="tasks.html" class="btn btn--primary">📋 דשבורד המשימות (הפקח)</a>
-      <a href="index.html" class="btn">🗺️ לאפליקציה</a>
+      <a href="project-map.html" class="btn">🗺️ מפת הפרויקט</a>
+      <a href="agents-dashboard.html" class="btn">👥 לוח הסוכנים</a>
+      <a href="agent-vs-subagent.html" class="btn">🎩 ראשי מול סאב</a>
+      <a href="../index.html" class="btn">🗺️ לאפליקציה</a>
       <span class="time-note">עודכן <time dir="ltr" datetime="${esc(updatedAt)}">${esc(dateTimeLabel(updatedAt))}</time></span>
       <span id="relative-time" class="time-note" data-updated="${esc(updatedAt)}"></span>
       <button class="btn" type="button" id="refresh">רענון הדף</button>
@@ -927,8 +931,8 @@ footer.page a{font-weight:600}
 
 <footer class="page">
   <div class="wrap">
-    <p>הדף נבנה על ידי <strong>המתעד</strong> מתוך <a href="docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
-    <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="index.html">האפליקציה</a></p>
+    <p>הדף נבנה על ידי <strong>המתעד</strong> מתוך <a href="../docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
+    <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="../index.html">האפליקציה</a></p>
   </div>
 </footer>
 
@@ -995,7 +999,7 @@ function writeHeartbeat(mode, state, extra) {
     mode,
     pid: process.pid,
     lastBuildAt: lastBuildAt || previous.lastBuildAt || null,
-    output: "guli.html",
+    output: "internal/guli.html",
     stateFile: "docs/agents/guli/state.json",
     agents: state && Array.isArray(state.agents) ? state.agents.length : previous.agents || null,
     timeline: state && Array.isArray(state.timeline) ? state.timeline.length : previous.timeline || null
@@ -1050,7 +1054,7 @@ function build(mode) {
   writeHeartbeat(mode || "build", state);
 
   const bytes = Buffer.byteLength(html, "utf8");
-  console.log(`[guli] built guli.html (${(bytes / 1024).toFixed(1)} KiB) | ${state.agents.length} agents, ${(state.timeline || []).length} events | mode=${mode || "build"}`);
+  console.log(`[guli] built internal/guli.html (${(bytes / 1024).toFixed(1)} KiB) | ${state.agents.length} agents, ${(state.timeline || []).length} events | mode=${mode || "build"}`);
   return state;
 }
 
@@ -1090,7 +1094,7 @@ function main() {
   const options = parseArgs(process.argv.slice(2));
   if (options.help) {
     console.log("Usage: node tools/guli-room.js [--watch] [--interval=30]");
-    console.log("Builds guli.html from docs/agents/guli/state.json and writes heartbeat.json.");
+    console.log("Builds internal/guli.html from docs/agents/guli/state.json and writes heartbeat.json.");
     return;
   }
 
@@ -1118,7 +1122,7 @@ function main() {
         build("watch");
         lastBeat = Date.now();
       } catch (err) {
-        console.error(`[guli] build failed, keeping previous guli.html: ${err.message}`);
+        console.error(`[guli] build failed, keeping previous internal/guli.html: ${err.message}`);
         try {
           const state = readJsonSafe(STATE_PATH);
           writeHeartbeat("watch", state, { lastError: err.message });

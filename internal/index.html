@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>דף בית פנימי — יומן הרחובות של ירושלים</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f4ef;
+      --bg-soft: #ffffff;
+      --fg: #1f1b16;
+      --muted: #675d52;
+      --border: #d9cfc4;
+      --accent: #9b5f24;
+      --accent-soft: #fff2e3;
+      --shadow: 0 8px 28px rgba(0,0,0,.08);
+      --mono: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14120f;
+        --bg-soft: #1d1a16;
+        --fg: #f2eee9;
+        --muted: #b9b0a6;
+        --border: #3a332c;
+        --accent: #e39a53;
+        --accent-soft: rgba(227,154,83,.16);
+        --shadow: 0 10px 26px rgba(0,0,0,.35);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--sans); }
+    body { line-height: 1.6; }
+    main { max-width: 1120px; margin: 0 auto; padding: 1rem; }
+    .hero {
+      background: linear-gradient(135deg, var(--bg-soft), rgba(155,95,36,.06));
+      border: 1px solid var(--border); border-radius: 1.25rem; box-shadow: var(--shadow);
+      padding: 1rem 1.1rem; margin-bottom: 1rem;
+    }
+    .hero h1 { margin: 0 0 .4rem; font-size: clamp(1.5rem, 3vw, 2.2rem); }
+    .hero p { margin: .35rem 0 0; color: var(--muted); }
+    .label {
+      display:inline-flex; align-items:center; gap:.4rem; padding:.2rem .55rem;
+      border-radius: 999px; background: var(--accent-soft); color: var(--accent);
+      font-size: .82rem; font-weight: 700;
+    }
+    .nav {
+      display:flex; flex-wrap:wrap; gap:.65rem; align-items:center;
+      margin: 1rem 0 1.25rem;
+    }
+    .nav a {
+      display:inline-flex; align-items:center; justify-content:center; min-height:44px;
+      padding: .72rem .95rem; border: 1px solid var(--border); border-radius: .95rem;
+      background: var(--bg-soft); color: var(--accent); text-decoration:none; font-weight:700;
+      box-shadow: var(--shadow);
+    }
+    .nav a:hover, .nav a:focus-visible { border-color: var(--accent); background: var(--accent-soft); outline: none; }
+    .grid { display:grid; gap:.85rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .card {
+      display:flex; flex-direction:column; gap:.45rem; background: var(--bg-soft); border: 1px solid var(--border);
+      border-radius: 1rem; box-shadow: var(--shadow); padding: 1rem;
+    }
+    .card h2 { margin: 0; font-size: 1.08rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .card a.more {
+      margin-top: auto; align-self:flex-start; display:inline-flex; align-items:center; justify-content:center;
+      min-height:44px; padding: .65rem .9rem; border-radius: .85rem; border: 1px solid var(--border);
+      background: var(--accent-soft); color: var(--accent); text-decoration:none; font-weight:700;
+    }
+    .card a.more:hover, .card a.more:focus-visible { border-color: var(--accent); outline: none; }
+    .note {
+      margin-top: 1rem; padding: .85rem 1rem; border: 1px dashed var(--border); border-radius: 1rem;
+      color: var(--muted); background: color-mix(in srgb, var(--bg-soft) 90%, transparent);
+    }
+    code { font-family: var(--mono); }
+    @media (max-width: 700px) {
+      main { padding: .85rem; }
+      .hero, .card { border-radius: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="home-title">
+      <span class="label">דף בית פנימי</span>
+      <h1 id="home-title">נווט פנימי בין דפי הצוות</h1>
+      <p>כאן מרוכזים כל דפי העבודה הפנימיים. דפי השורש הישנים עדיין עובדים כהפניות, אבל מכאן מגיעים תמיד לדפים העדכניים.</p>
+      <p>דפי הבטא והאפליקציה הציבורית נשארים בנפרד: <code>beta.html</code> ו־<code>index.html</code>.</p>
+    </section>
+
+    <nav class="nav" aria-label="ניווט פנימי">
+      <a href="tasks.html">📋 דשבורד המשימות</a>
+      <a href="guli.html">📢 חדר הסוכנים</a>
+      <a href="project-map.html">🗺️ מפת הפרויקט</a>
+      <a href="agents-dashboard.html">👥 לוח הסוכנים</a>
+      <a href="agent-vs-subagent.html">🎩 ראשי מול סאב</a>
+      <a href="../index.html">🌐 לאפליקציה הציבורית</a>
+      <a href="../beta.html">🧪 לבטא</a>
+    </nav>
+
+    <section class="grid" aria-label="קיצורי דרך">
+      <article class="card">
+        <h2>דשבורד המשימות</h2>
+        <p>סיכום משימות, פילטרים, חיפוש, מיון והדפסה — תמיד ב־<code>internal/tasks.html</code>.</p>
+        <a class="more" href="tasks.html">לפתוח את הדשבורד</a>
+      </article>
+      <article class="card">
+        <h2>חדר הסוכנים</h2>
+        <p>תמונת מצב חיה של הסוכנים, הצוותים והחסמים — ב־<code>internal/guli.html</code>.</p>
+        <a class="more" href="guli.html">לפתוח את החדר</a>
+      </article>
+      <article class="card">
+        <h2>מפת הפרויקט</h2>
+        <p>מיפוי התיקיות, דפי השורש והקבצים הפנימיים — ב־<code>internal/project-map.html</code>.</p>
+        <a class="more" href="project-map.html">לפתוח את המפה</a>
+      </article>
+      <article class="card">
+        <h2>לוח הסוכנים</h2>
+        <p>הצגה ותיאום של כל הסוכנים, ההסברים והקישורים הישירים.</p>
+        <a class="more" href="agents-dashboard.html">לפתוח את הלוח</a>
+      </article>
+      <article class="card">
+        <h2>ראשי מול סאב</h2>
+        <p>הסבר פשוט על ההבדל בין הסוכן הראשי לבין סוכן משנה.</p>
+        <a class="more" href="agent-vs-subagent.html">לפתוח את ההסבר</a>
+      </article>
+      <article class="card">
+        <h2>ממשקים חיצוניים</h2>
+        <p>הקישורים לאפליקציה הציבורית ולבטא נשארים כאן להזנקה מהירה.</p>
+        <a class="more" href="../index.html">לאפליקציה הציבורית</a>
+      </article>
+    </section>
+
+    <p class="note">הערה: אם נכנסת דרך דף שורש ישן כמו <code>tasks.html</code> או <code>guli.html</code>, תופנה אוטומטית לכאן או לדף הפנימי העדכני המתאים.</p>
+  </main>
+</body>
+</html>

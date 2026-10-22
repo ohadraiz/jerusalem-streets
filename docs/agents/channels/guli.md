@@ -1,6 +1,6 @@
 # ערוץ — גולי
 
-הכרוז של החדר. **גולי (המתעד) הוא רשות ההקשר של הסוכנים (Agent Context Authority)** — מתשאל אקטיבית, בונה `guli.html`, מפיק `agent-status.json` שהפקח צורך.  
+הכרוז של החדר. **גולי (המתעד) הוא רשות ההקשר של הסוכנים (Agent Context Authority)** — מתשאל אקטיבית, בונה `guli.html`, מפיק `agent-status.json` שהפקח צורך.
 כל שורה כאן נגזרת מ-BOARD, מ-TASKS, מערוץ של סוכן, **או מתשאול ישיר** — בלי הערכות קוד.
 הדף: `guli.html` · בנייה: `node tools/guli-room.js` · מעקב: `node tools/guli-room.js --watch`
 
@@ -27,8 +27,8 @@
    - "מתי תסיים?"
 3. **הפקת `agent-status.json`** — **המקור היחיד** לסטטוס חי של סוכנים; הפקח צורך אותו להעשרת `tasks.html`
 4. **סנכרון עם הפקח** — צורך `tasks-data.json` להצגת ספירות/חוסמים בכרטיסי סוכן; הפקח צורך `agent-status.json` לתגי סטטוס בכרטיסי משימה
-5. **עדכון `state.json`** — משקף מצב נוכחי (currentTask, talkingWith, nextTasks, completed)
-6. **דיווח לחדר** — כותב לערוץ זה עדכונים תקופתיים ("בחדר עכשיו: ...")
+6. **עדכון `state.json`** — משקף מצב נוכחי (currentTask, talkingWith, nextTasks, completed)
+7. **דיווח לחדר** — כותב לערוץ זה עדכונים תקופתיים ("בחדר עכשיו: ...")
 
 ---
 
@@ -74,35 +74,34 @@
 שינוי: state.json עודכן, guli.html נבנה מחדש עם 9 אירועים, ונבדק ב-360/390/430/1280 — אין גלישה אופקית, 0 שגיאות קונסול, ניגודיות 5.98–15.32.
 ממתין ל: תיקון handleVisitedReplace, אימות 390/430, ודיווח ממפי/ציבי/צירי.
 
-## ����� ? ����� (����) � ��� ����� � 2026-10-22
+## ראשי → גולי · עדכון חדר · 2026-10-22
 
-**round:** 057 ( biopsy complete � 2 non-blocking findings fixed in 056.1)
-**������:** 2,424 ������ � 95 ������ � verify 36/36 � store 24/24 � smoke 84/84
+**round:** 059 (סבב 059 הושלם ופורסם במלואו)
+**נתונים:** 2,424 רחובות · 95 שכונות · verify 37/37 · store 24/24 · smoke 84/84
 
-### ��� ������ (Agent Context Authority)
-- **� scissors (tsibi):** ���� � UI/UX + gamification (������, �����, ������, �������) �����.
-- **����� (shifu):** rate-limited; ����� ����� ����� �� 056.1; 2 ������ �����.
-- **���� (kipi):** ���� � ���� �����.
-- **����� (main):** ���� � ���������, BOARD/TASKS/TEAMS.
-- **� scissors (tsiri):** ���� � ��� (map.js), chain �����.
-- **� scissors (mappy):** ���� � ������, inhabited paths.
-- **� scissors (researcher):** ���� � ���� "�����?", ���� ���������.
-- **� scissors (guli):** ���� � chronicler, guli.html.
-- **� scissors (inspector):** ���� � tasks dashboard.
-- **���� ������ ����� (moverilis/mobi/pitzi):** standby.
+### סטטוס סוכנים (Agent Context Authority)
+- **המעצב (tsibi):** 🏖️ בחופש — סבב 059 הושלם (UI/UX + gamification: הישגים, יומן, היסטוריה, יעד יומי, שלד, תזכורת)
+- **הבודק (shifu):** 🏖️ בחופשה — סבב 059 אין חוסמים; 057 חוסם אחד תוקן (checkMilestones batchMarkArea)
+- **המעקב (kipi):** פעיל — מעקב הקפאות עדכני
+- **הראשי (main):** פעיל — אינטגרציה, BOARD/TASKS/TEAMS, פריסה
+- **המגשר (tsiri):** 🏖️ בחופש — שרשרת אריחים יציבה, ניווט שכונות, LOD 12
+- **החוקר (mappy):** 🏖️ בחופש — פיילוט 50 רחובות "הידעת?" הושלם (52 קבצים)
+- **המתעד (guli):** פעיל — guli.html, agent-status.json, state.json
+- **הפקח (inspector):** 🏖️ בחופשה — tasks.html, tasks-data.json מעודכנים
+- **הצוות המובייל (moverilis/mobi/pitzi):** standby — M1 פורסם, M2 ממתין
 
-### ����� ������
-- 046 (UI/UX blockers) � ����, ���� �� 209/216.
-- 046.1 (����� UX) � ����, 15/15 �����.
-- 046.2 (����� ���� + ����� + ��� + ���� �����) � ����, 15/15.
-- 046.3 (����� + ������ + ������ + �������) � ����, 8/8.
-- 056 (city-wide milestones) � ����, 056.1 ���� (undo rating/mood + checkMilestones contract).
+### סבבים אחרונים — סגורים
+- 059: כל פיצ'רי הבטא עברו לפרודקשן (18 הישגים, גלריה, יומן, היסטוריה, יעד יומי, שלד, תזכורת)
+- 058: UX-4/6/7/8 — נגישות, אנימציות, Dark Mode, קיצורים (73/73 חי)
+- 057: Gamification review — checkMilestones batchMarkArea תוקן, 3 חשובים (radiogroup, soundToggle, 44px)
+- 056/056.1: Milestones כלל-עיריים — תוקן + undo rating/mood + contract fix
+- 046-046.3: UI/UX blockers סגורים, gamification בסיסי
 
-### �� ���� (�� ����)
-1. ��� ������ ���� �������� gamification (������, �����, ������, ���) � �� ���� ���� ��.
-2. "�����?" facts integration into UI (researcher building data).
-3. Heatmap, share card, voice search, guided walk (roadmap).
-4. `tools/guli-room.js` intermittent syntax errors (concurrent writer).
+### פתוח (לא חוסם)
+1. Gamification review ייעודי (הישגים, דירוג, צליל, רטט) — לסבב נפרד
+2. "הידעת?" fact cards integration — חוקר בונה נתונים (52/2,424)
+3. Heatmap, share card, voice search, guided walk (roadmap)
+4. `tools/guli-room.js` intermittent syntax errors (concurrent writer)
 
-
-
+### המלצה לסבב הבא
+**סבב 060:** Review + polish gamification — accessibility audit, 44px targets, ARIA correctness, reduced-motion, plus "הידעת?" fact cards integration.
