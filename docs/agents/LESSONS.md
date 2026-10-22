@@ -275,3 +275,14 @@
 אבל איבד זמן על אי-אחידות בכלים, בעלות על קבצים ומקור אמת אחד.
 אם הסבב הבא יריץ רץ דפדפן אחיד, יקפיא קבצים לבדיקה, ויכתוב החלטות לפני שיגור —
 אפשר לקצר כל סבב בערך בחצי.
+
+---
+
+## 8. לקח חדש — ניתוב Dynamo (invalid_dynamo_routing) ושיגור סדרתי (2026-10-22)
+
+- **תסמין:** סוכני משנה שהופעלו במקביל נפלו עם `AI.Error.InvalidRequest: Upstream request failed: [invalid_dynamo_routing] Dynamo routing currently supports text-only requests` (4 sessions במטח אחד). סוכן אחד (שיפו) עבר, אחרים (סאוגאו, החוקר) נדחו.
+- **סיבת שורש:** לא בהגדרות הפרויקט — כל 17 קבצי הסוכנים תקינים ונטענים (`debug agents` אימת). השגיאה היא מה-gateway של `opencode-go` (GLM-5.3-Flash): חלק מהבקשות נופלות על מסלול "Dynamo" שדוחה אותן. השגיאה לא מתועדת בשום מקום (0 תוצאות ב-GitHub העולמי).
+- **הוכחה:** השחזור עם משימה מינימלית (טקסט בלבד, ללא כלים) הצליח; ניסיון חוזר על אותה משימה עבר. ⇒ intermittency/routing, לא תוכן deterministi.
+- **התיקון (תפעולי):** אצוות של ≤3 + ניסיון חוזר מיידי בנפילה. אח"כ 16/16 עברו.
+- **כלל לזכorte:** reinforce LESSONS §4.5 "סוכן אחד בכל פעם" — שיגור מקביל מעמיס על חיבור הספק ומייצר ECONNRESET/rate-limit/Dynamo routing failures. "תנסה להפעיל את כל הסוכנים במקביל" → 4 נפילות; אצוות of 3 → 0.
+- **upstream:** drafted issue to opencode-ai/opencode describing the repro + diagnostics.
