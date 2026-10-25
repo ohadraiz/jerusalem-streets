@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-6e21d46bf0",
+  "street_name": "המשוררת זלדה",
+  "area": "רמות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "שיינא זלדה שניאורסון-מישקובסקי (1914–1984), המוכרת בשם זלדה, הייתה משוררת ישראלית וחסידת חב\"ד, מחברת השיר \"לכל איש יש שם\".",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — זלדה",
+      "url": "https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%93%D7%94",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

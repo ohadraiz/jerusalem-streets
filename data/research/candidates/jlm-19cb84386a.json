@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-19cb84386a",
+  "street_name": "ברכה צפירה",
+  "area": "הולילנד",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "ברכה צפירה (1910–1990) הייתה זמרת פופולרית בארץ ישראל משנות ה-30 וחלוצת הזמר העברי. שיתוף הפעולה שלה עם המלחין נחום נרדי נחשב לאבן דרך ביצירת סגנון מוזיקלי ישראלי מקורי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ברכה צפירה",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%9B%D7%94_%D7%A6%D7%A4%D7%99%D7%A8%D7%94",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

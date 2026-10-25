@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-969d33cd2b",
+  "street_name": "משה שרת",
+  "area": "הולילנד",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "משה שרת היה ראש הממשלה השני של ישראל (1954–1955) ושר החוץ הראשון. הוא היה מראשי הנהגת היישוב, מחותמי מגילת העצמאות, והקים את שירות החוץ הישראלי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — משה שרת",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%A8%D7%AA",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-fac3a4e75a",
+  "street_name": "סוקולוב",
+  "area": "טלביה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "נחום סוקולוב (1859–1936) היה סופר, מתרגם ועיתונאי, נשיא ההסתדרות הציונית העולמית החמישי ועורך \"הצפירה\". הוא נחשב ממנהיגיה הבולטים של התנועה הציונית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נחום סוקולוב",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%A1%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%91",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

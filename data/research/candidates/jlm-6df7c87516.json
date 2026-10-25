@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-6df7c87516",
+  "street_name": "יצחק רבין",
+  "area": "קרית הממשלה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "יצחק רבין היה הרמטכ\"ל במלחמת ששת הימים, ראש הממשלה החמישי וחתן פרס נובל לשלום על הסכמי אוסלו. הוא נולד ב-1922 ונרצח ב-4 בנובמבר 1995.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצחק רבין",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%91%D7%99%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

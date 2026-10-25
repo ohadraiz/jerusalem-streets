@@ -1,0 +1,11 @@
+street_id: jlm-775b8bc189
+street_name: טרומפלדור
+area: נחלאות
+fact: יוסף טרומפלדור, יליד 1880, היה לוחם יהודי, מנהיג ציוני וחלוץ; גבורתו ונפילתו בקרב על תל חי ב-1920 הפכו אותו לדמות מופת ציונית ולגיבור לאומי.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%98%D7%A8%D7%95%D7%9E%D7%A4%D7%9C%D7%93%D7%95%D7%A8
+source: https://data.gov.il/dataset/321
+source: https://www.openstreetmap.org/way/4719656
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

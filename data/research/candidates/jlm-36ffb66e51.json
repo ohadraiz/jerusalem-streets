@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-36ffb66e51",
+  "street_name": "אריה ל. מוצקין",
+  "area": "קרית היובל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "ליאו מוצקין (1867–1933) היה פוליטיקאי יהודי, מאבות הציונות ומיוזמי הקונגרס הציוני, שכיהן כיו\"ר השני של הוועד הפועל הציוני. רוב חייו חי בגרמניה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ליאו מוצקין",
+      "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%90%D7%95_%D7%9E%D7%95%D7%A6%D7%A7%D7%99%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

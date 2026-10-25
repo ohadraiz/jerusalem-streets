@@ -1,0 +1,10 @@
+street_id: jlm-dd5bbaf6f2
+street_name: שער שכם
+area: הרובע המוסלמי
+fact: שער שכם נבנה ב-1538 בהוראת הסולטאן סולימאן המפואר. בעברית הוא קרוי על שם הדרך לשכם, ברוב השפות "שער דמשק", ובערבית "שער העמוד" על שם עמוד רומי שניצב בכיכר שלפניו. לידו מערת צדקיהו.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%A9%D7%9B%D7%9D
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

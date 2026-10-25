@@ -1,0 +1,10 @@
+street_id: jlm-d6ce1b6d7f
+street_name: מרטין בובר
+area: הר הצופים
+fact: מרטין בובר היה פילוסוף ומחנך, שפיתח "פילוסופיה דיאלוגית" ביצירתו "אני ואתה". הוא עסק בסיפורים חסידיים ובתרגום התנ"ך לגרמנית, היה חבר "ברית שלום" ותמך במדינה דו-לאומית.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%98%D7%99%D7%9F_%D7%91%D7%95%D7%91%D7%A8
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

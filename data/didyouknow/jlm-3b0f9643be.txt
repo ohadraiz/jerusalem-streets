@@ -1,0 +1,10 @@
+street_id: jlm-3b0f9643be
+street_name: בר כוכבא
+area: הגבעה הצרפתית
+fact: שמעון בר כוכבא הנהיג את המרד היהודי הגדול האחרון נגד רומא, שלט שלוש שנים בחלקים מארץ ישראל בתואר "נשיא ישראל", ומת ב-135. שמו האמיתי, שמעון בן כוסבה, התגלה רק בחפירות במאה ה-20.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8_%D7%9B%D7%95%D7%9B%D7%91%D7%90
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

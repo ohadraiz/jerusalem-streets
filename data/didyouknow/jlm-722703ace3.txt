@@ -1,0 +1,10 @@
+street_id: jlm-722703ace3
+street_name: ביאליק
+area: בית הכרם
+fact: חיים נחמן ביאליק (1873–1934) היה משורר, סופר, מסאי, מתרגם ועורך, מזכה לתואר "המשורר הלאומי". יצירותיו, ובראשן שירתו הלירית, השפיעו רבות על התרבות העברית החדשה.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%97%D7%9E%D7%9F_%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

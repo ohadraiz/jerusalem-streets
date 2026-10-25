@@ -1,0 +1,10 @@
+street_id: jlm-a07352506e
+street_name: אונטרמן
+area: גילה
+fact: הרב איסר יהודה אונטרמן (1886–1976) היה ממנהיגי תנועת המזרחי, רבה הראשי של תל אביב והרב הראשי האשכנזי השלישי של מדינת ישראל. הוא זכה בפרס הרב קוק לספרות תורנית.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%A8_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%95%D7%A0%D7%98%D7%A8%D7%9E%D7%9F
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

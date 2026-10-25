@@ -1,0 +1,10 @@
+street_id: jlm-19cb84386a
+street_name: ברכה צפירה
+area: הולילנד
+fact: ברכה צפירה (1910–1990) הייתה זמרת פופולרית בארץ ישראל משנות ה-30 וחלוצת הזמר העברי. שיתוף הפעולה שלה עם המלחין נחום נרדי נחשב לאבן דרך ביצירת סגנון מוזיקלי ישראלי מקורי.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%9B%D7%94_%D7%A6%D7%A4%D7%99%D7%A8%D7%94
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

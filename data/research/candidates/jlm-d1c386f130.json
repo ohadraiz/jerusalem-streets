@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-d1c386f130",
+  "street_name": "הרב רפאל ברוך טולדנו",
+  "area": "רמת שלמה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "רבי רפאל ברוך טולדנו (1890–1970) היה אב בית הדין ורבה של מקנס שבמרוקו. הוא חיבר \"קיצור שולחן ערוך\" על בסיס פסקי \"כף החיים\".",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רפאל ברוך טולידאנו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%A4%D7%90%D7%9C_%D7%91%D7%A8%D7%95%D7%9A_%D7%98%D7%95%D7%9C%D7%99%D7%93%D7%90%D7%A0%D7%95",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

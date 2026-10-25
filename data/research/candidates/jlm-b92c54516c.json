@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-b92c54516c",
+  "street_name": "חרל\"פ",
+  "area": "קרית שמואל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "הרב יעקב משה חרל\"פ (1882–1951) היה רב, פוסק ומקובל, ראש ישיבות \"מרכז הרב\" ו\"בית זבול\" ורב שכונות שערי חסד ורחביה. הוא היה מתלמידיו המובהקים של הראי\"ה קוק וחיבר את סדרת \"מי מרום\".",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יעקב משה חרל\"פ",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%9E%D7%A9%D7%94_%D7%97%D7%A8%D7%9C%22%D7%A4",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,10 @@
+street_id: jlm-622a78c27f
+street_name: אבא הלל סילבר
+area: רמות א'
+fact: הרב אבא הלל סילבר (1893–1963) היה רב רפורמי ומדינאי יהודי, מראשי התנועה הציונית בארצות הברית, שפעל רבות במישור הדיפלומטי למען הקמת מדינת ישראל.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%94%D7%9C%D7%9C_%D7%A1%D7%99%D7%9C%D7%91%D7%A8
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

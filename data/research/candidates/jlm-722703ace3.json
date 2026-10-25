@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-722703ace3",
+  "street_name": "ביאליק",
+  "area": "בית הכרם",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "חיים נחמן ביאליק (1873–1934) היה משורר, סופר, מסאי, מתרגם ועורך, מזכה לתואר \"המשורר הלאומי\". יצירותיו, ובראשן שירתו הלירית, השפיעו רבות על התרבות העברית החדשה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים נחמן ביאליק",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%97%D7%9E%D7%9F_%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

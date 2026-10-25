@@ -1,0 +1,10 @@
+street_id: jlm-fac3a4e75a
+street_name: סוקולוב
+area: טלביה
+fact: נחום סוקולוב (1859–1936) היה סופר, מתרגם ועיתונאי, נשיא ההסתדרות הציונית העולמית החמישי ועורך "הצפירה". הוא נחשב ממנהיגיה הבולטים של התנועה הציונית.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%A1%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%91
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-c1ca70cede",
+  "street_name": "שער הפרחים",
+  "area": "הרובע המוסלמי",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "שער הפרחים, \"באב א-זאהרה\" בערבית, ידוע גם כשער הורדוס. הוא נמצא בחלק הצפוני של חומות ירושלים, וסמוך לו מבחוץ שכונת באב א-זהרה ומוזיאון רוקפלר.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שער הפרחים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%94%D7%A4%D7%A8%D7%97%D7%99%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

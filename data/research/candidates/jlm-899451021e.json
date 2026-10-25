@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-899451021e",
+  "street_name": "כיכר אורד וינגייט",
+  "area": "טלביה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "אורד צ'ארלס וינגייט היה קצין בריטי נוצרי-ציוני שיזם ב-1938 את פלגות הלילה המיוחדות, שבהן שולבו חיילים בריטים עם חברי \"ההגנה\". הוא כונה \"הידיד\" ונהרג בהתרסקות מטוס בהודו ב-1944.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אורד צ'ארלס וינגייט",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%93_%D7%A6'%D7%90%D7%A8%D7%9C%D7%A1_%D7%95%D7%99%D7%A0%D7%92%D7%99%D7%99%D7%98",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

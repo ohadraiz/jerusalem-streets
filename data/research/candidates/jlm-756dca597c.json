@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-756dca597c",
+  "street_name": "דוד רמז",
+  "area": "גבעת חנניה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "דוד רמז (1886–1951) היה ממנהיגי היישוב, יו\"ר הוועד הלאומי, מזכ\"ל ההסתדרות, חבר הכנסת ושר בממשלות ישראל, ומחותמי מגילת העצמאות.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דוד רמז",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A8%D7%9E%D7%96",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

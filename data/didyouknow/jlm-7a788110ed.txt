@@ -1,0 +1,10 @@
+street_id: jlm-7a788110ed
+street_name: זלמן שז"ר
+area: רוממה
+fact: שדרות זלמן שזר, לשעבר שדרות יהודה הלוי, הן הרחוב הראשי בכניסה המערבית לירושלים. לאורכן בנייני האומה ותחנת הרכבת ירושלים–יצחק נבון, והן קרויות על שם הנשיא השלישי.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%96%22%D7%A8
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

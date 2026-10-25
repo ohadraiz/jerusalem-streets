@@ -1,0 +1,10 @@
+street_id: jlm-c88a4b04d2
+street_name: הפטריארכיה הארמנית
+area: הרובע הארמני
+fact: רחוב הפטריארכיה הארמנית יוצא דופן בעיר העתיקה: כולו סלול ומיועד לתנועת כלי רכב, ובהם מיניבוסים משער יפו לכותל. לאורכו מצודת דוד, קתדרלת יעקב הקדוש והפטריארכיה הארמנית.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A4%D7%98%D7%A8%D7%99%D7%90%D7%A8%D7%9B%D7%99%D7%94_%D7%94%D7%90%D7%A8%D7%9E%D7%A0%D7%99%D7%AA
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

@@ -1,0 +1,10 @@
+street_id: jlm-e306399557
+street_name: החיד"א
+area: בית וגן
+fact: הרב חיים יוסף דוד אזולאי, החיד"א (1724–1806), היה פוסק, דיין, שד"ר ומקובל מגדולי האחרונים. הוא חיבר עשרות ספרים תורניים, ובהם חיבורים ביבליוגרפיים ואוטוביוגרפיים.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%95%D7%A1%D7%A3_%D7%93%D7%95%D7%93_%D7%90%D7%96%D7%95%D7%9C%D7%90%D7%99
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,10 @@
+street_id: jlm-9b6e1bf81aaa
+street_name: הפטריארכיה הלטינית
+area: הרובע הנוצרי
+fact: רחוב הפטריארכיה הלטינית מחבר את כיכר עומר אבן אל-חטאב, סמוך לשער יפו, אל מבנה הפטריארכיה הלטינית. מפלס החיים ברחוב גבוה ב-2 עד 5 מטרים ממפלס איליה קפיטולינה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A4%D7%98%D7%A8%D7%99%D7%90%D7%A8%D7%9B%D7%99%D7%94_%D7%94%D7%9C%D7%98%D7%99%D7%A0%D7%99%D7%AA
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

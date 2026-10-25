@@ -1,0 +1,10 @@
+street_id: jlm-9f91a81d94
+street_name: יצחק שמיר
+area: רמות ב'
+fact: דרך יצחק שמיר היא קטע בכביש 1 שנפתח ב-2007. אורכה כ-3.6 ק"מ, והיא כוללת שני גשרים ומנהרות בעמק הארזים; הקמתה ארכה שש שנים ועלתה כ-500 מיליון שקל.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%9E%D7%99%D7%A8
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-b8be179ad1",
+  "street_name": "כיכר אלנבי",
+  "area": "רוממה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "כיכר אלנבי היא כיכר קטנה בלב שכונת רוממה. היא קרויה על שם הגנרל הבריטי אדמונד אלנבי, שכבש את ארץ ישראל מידי האימפריה העות'מאנית במלחמת העולם הראשונה.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כיכר אלנבי",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%90%D7%9C%D7%A0%D7%91%D7%99",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

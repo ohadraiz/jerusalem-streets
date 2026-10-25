@@ -1,0 +1,10 @@
+street_id: jlm-bb12364020
+street_name: מנדלי מוכר ספרים
+area: טלביה
+fact: שלום יעקב אברמוביץ', הידוע בשם-העט מנדלי מוכר ספרים, היה "הסבא" של הספרות העברית והיידית המודרנית. בן הדור האחרון להשכלה וראשון סופרי תקופת התחייה, יצר נוסח ספרותי מקורי.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%93%D7%9C%D7%99_%D7%9E%D7%95%D7%9B%D7%A8_%D7%A1%D7%A4%D7%A8%D7%99%D7%9D
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T10:21:57.796Z",
+  "updatedAt": "2026-10-25T10:13:02.431Z",
   "streets": {
     "jlm-49d0327d14": {
       "id": "jlm-49d0327d14",
@@ -24,17 +24,19 @@
       "name": "שער יפו",
       "area": "הרובע הארמני",
       "status": "ok",
-      "fact_type": "name-origin",
-      "confidence": "low",
+      "fact_type": "place-article",
+      "confidence": "medium",
       "content_sources": 1,
       "sources": [
-        "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95"
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95",
+        "https://data.gov.il/dataset/321"
       ],
       "candidate": "data/research/candidates/jlm-a7ce72f236.json",
       "lastRun": "2026-10-22T07:15:15.997Z",
+      "reviewedAt": "2026-10-25T10:13:02.288Z",
       "attempts": 2,
       "lastError": null,
-      "finalized": true
+      "review_status": "approved"
     },
     "jlm-e6d8607535": {
       "id": "jlm-e6d8607535",
@@ -1090,6 +1092,1920 @@
       "lastRun": "2026-10-22T09:16:01.090Z",
       "reviewedAt": "2026-10-22T10:21:57.795Z",
       "attempts": 3,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-775b8bc189": {
+      "id": "jlm-775b8bc189",
+      "name": "טרומפלדור",
+      "area": "נחלאות",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%98%D7%A8%D7%95%D7%9E%D7%A4%D7%9C%D7%93%D7%95%D7%A8",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/4719656"
+      ],
+      "candidate": "data/research/candidates/jlm-775b8bc189.json",
+      "lastRun": "2026-10-25T09:50:35.173Z",
+      "reviewedAt": "2026-10-25T10:13:02.294Z",
+      "attempts": 1,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "havatzelet": {
+      "id": "havatzelet",
+      "name": "החבצלת",
+      "area": "נחלת שבעה",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/30915580"
+      ],
+      "candidate": "data/research/candidates/havatzelet.json",
+      "lastRun": "2026-10-25T09:51:05.074Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "shlomo-hamelech": {
+      "id": "shlomo-hamelech",
+      "name": "שלמה המלך",
+      "area": "מגרש הרוסים",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/771909618"
+      ],
+      "candidate": "data/research/candidates/shlomo-hamelech.json",
+      "lastRun": "2026-10-25T09:52:02.415Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-eb0cfc7a42": {
+      "id": "jlm-eb0cfc7a42",
+      "name": "אתיופיה",
+      "area": "מאה שערים",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%AA%D7%99%D7%95%D7%A4%D7%99%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-eb0cfc7a42.json",
+      "lastRun": "2026-10-25T10:10:46.996Z",
+      "reviewedAt": "2026-10-25T10:13:02.221Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "agripas": {
+      "id": "agripas",
+      "name": "אגריפס",
+      "area": "נחלאות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%92%D7%A8%D7%99%D7%A4%D7%A1",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/agripas.json",
+      "lastRun": "2026-10-25T10:10:46.999Z",
+      "reviewedAt": "2026-10-25T10:13:02.225Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-2517fb55e4": {
+      "id": "jlm-2517fb55e4",
+      "name": "בית הבד",
+      "area": "העיר העתיקה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%99%D7%AA_%D7%94%D7%91%D7%93",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-2517fb55e4.json",
+      "lastRun": "2026-10-25T10:10:47.000Z",
+      "reviewedAt": "2026-10-25T10:13:02.229Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-d3ede95084": {
+      "id": "jlm-d3ede95084",
+      "name": "השלשלת",
+      "area": "העיר העתיקה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A9%D7%9C%D7%A9%D7%9C%D7%AA",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-d3ede95084.json",
+      "lastRun": "2026-10-25T10:10:47.002Z",
+      "reviewedAt": "2026-10-25T10:13:02.232Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-1b4bc5edd7": {
+      "id": "jlm-1b4bc5edd7",
+      "name": "הנוצרים",
+      "area": "הרובע הנוצרי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A0%D7%95%D7%A6%D7%A8%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-1b4bc5edd7.json",
+      "lastRun": "2026-10-25T10:10:47.006Z",
+      "reviewedAt": "2026-10-25T10:13:02.234Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-c88a4b04d2": {
+      "id": "jlm-c88a4b04d2",
+      "name": "הפטריארכיה הארמנית",
+      "area": "הרובע הארמני",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A4%D7%98%D7%A8%D7%99%D7%90%D7%A8%D7%9B%D7%99%D7%94_%D7%94%D7%90%D7%A8%D7%9E%D7%A0%D7%99%D7%AA",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-c88a4b04d2.json",
+      "lastRun": "2026-10-25T10:10:47.008Z",
+      "reviewedAt": "2026-10-25T10:13:02.237Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-81a43454b9": {
+      "id": "jlm-81a43454b9",
+      "name": "משגב לדך",
+      "area": "הרובע היהודי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%A9%D7%92%D7%91_%D7%9C%D7%93%D7%9A",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-81a43454b9.json",
+      "lastRun": "2026-10-25T10:10:47.009Z",
+      "reviewedAt": "2026-10-25T10:13:02.239Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-9b6e1bf81aaa": {
+      "id": "jlm-9b6e1bf81aaa",
+      "name": "הפטריארכיה הלטינית",
+      "area": "הרובע הנוצרי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A4%D7%98%D7%A8%D7%99%D7%90%D7%A8%D7%9B%D7%99%D7%94_%D7%94%D7%9C%D7%98%D7%99%D7%A0%D7%99%D7%AA",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-9b6e1bf81aaa.json",
+      "lastRun": "2026-10-25T10:10:47.011Z",
+      "reviewedAt": "2026-10-25T10:13:02.240Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-2bd99937de": {
+      "id": "jlm-2bd99937de",
+      "name": "שלומציון המלכה",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%9C%D7%95%D7%9E%D7%A6%D7%99%D7%95%D7%9F_%D7%94%D7%9E%D7%9C%D7%9B%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-2bd99937de.json",
+      "lastRun": "2026-10-25T10:10:47.013Z",
+      "reviewedAt": "2026-10-25T10:13:02.244Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-8f911896d0": {
+      "id": "jlm-8f911896d0",
+      "name": "בן צבי",
+      "area": "נחלאות",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%91%D7%9F-%D7%A6%D7%91%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-8f911896d0.json",
+      "lastRun": "2026-10-25T10:10:47.015Z",
+      "reviewedAt": "2026-10-25T10:13:02.248Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "strauss": {
+      "id": "strauss",
+      "name": "שטראוס",
+      "area": "מאה שערים",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%98%D7%A8%D7%90%D7%95%D7%A1",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/strauss.json",
+      "lastRun": "2026-10-25T10:10:47.016Z",
+      "reviewedAt": "2026-10-25T10:13:02.251Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-06df30a409": {
+      "id": "jlm-06df30a409",
+      "name": "שער האריות",
+      "area": "הרובע המוסלמי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%A2%D7%A8_%D7%94%D7%90%D7%A8%D7%99%D7%95%D7%AA",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-06df30a409.json",
+      "lastRun": "2026-10-25T10:10:47.018Z",
+      "reviewedAt": "2026-10-25T10:13:02.253Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-5bd420f256": {
+      "id": "jlm-5bd420f256",
+      "name": "רחל אמנו",
+      "area": "המושבה היוונית",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A8%D7%97%D7%9C_%D7%90%D7%9E%D7%A0%D7%95",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-5bd420f256.json",
+      "lastRun": "2026-10-25T10:10:47.019Z",
+      "reviewedAt": "2026-10-25T10:13:02.256Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-8f14ff5994e3": {
+      "id": "jlm-8f14ff5994e3",
+      "name": "בית לחם",
+      "area": "בקעה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%91%D7%99%D7%AA_%D7%9C%D7%97%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-8f14ff5994e3.json",
+      "lastRun": "2026-10-25T10:10:47.019Z",
+      "reviewedAt": "2026-10-25T10:13:02.258Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-b1537125b1": {
+      "id": "jlm-b1537125b1",
+      "name": "המאירי",
+      "area": "קרית משה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%94%D7%9E%D7%90%D7%99%D7%A8%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-b1537125b1.json",
+      "lastRun": "2026-10-25T10:10:47.020Z",
+      "reviewedAt": "2026-10-25T10:13:02.260Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-031ab6db37": {
+      "id": "jlm-031ab6db37",
+      "name": "לוי אשכול",
+      "area": "קרית מנחם בגין",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%9C%D7%95%D7%99_%D7%90%D7%A9%D7%9B%D7%95%D7%9C",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-031ab6db37.json",
+      "lastRun": "2026-10-25T10:10:47.021Z",
+      "reviewedAt": "2026-10-25T10:13:02.262Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-7a788110ed": {
+      "id": "jlm-7a788110ed",
+      "name": "זלמן שז\"ר",
+      "area": "רוממה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%96%22%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-7a788110ed.json",
+      "lastRun": "2026-10-25T10:10:47.022Z",
+      "reviewedAt": "2026-10-25T10:13:02.265Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-b8be179ad1": {
+      "id": "jlm-b8be179ad1",
+      "name": "כיכר אלנבי",
+      "area": "רוממה",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%90%D7%9C%D7%A0%D7%91%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-b8be179ad1.json",
+      "lastRun": "2026-10-25T10:10:47.023Z",
+      "reviewedAt": "2026-10-25T10:13:02.267Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-9f91a81d94": {
+      "id": "jlm-9f91a81d94",
+      "name": "יצחק שמיר",
+      "area": "רמות ב'",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%9E%D7%99%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-9f91a81d94.json",
+      "lastRun": "2026-10-25T10:10:47.023Z",
+      "reviewedAt": "2026-10-25T10:13:02.268Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-43ecfd0492": {
+      "id": "jlm-43ecfd0492",
+      "name": "דרך מעלה אדומים",
+      "area": "צמרת הבירה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%9E%D7%A2%D7%9C%D7%94_%D7%90%D7%93%D7%95%D7%9E%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-43ecfd0492.json",
+      "lastRun": "2026-10-25T10:10:47.024Z",
+      "reviewedAt": "2026-10-25T10:13:02.270Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-cb654b227a": {
+      "id": "jlm-cb654b227a",
+      "name": "כיכר אביגדור המאירי",
+      "area": "הר הצופים",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%90%D7%91%D7%99%D7%92%D7%93%D7%95%D7%A8_%D7%94%D7%9E%D7%90%D7%99%D7%A8%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-cb654b227a.json",
+      "lastRun": "2026-10-25T10:10:51.370Z",
+      "reviewedAt": "2026-10-25T10:13:02.272Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-16f02c8830": {
+      "id": "jlm-16f02c8830",
+      "name": "כיכר הדוידקה",
+      "area": "זכרון משה",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%94%D7%93%D7%95%D7%99%D7%93%D7%A7%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-16f02c8830.json",
+      "lastRun": "2026-10-25T10:10:51.374Z",
+      "reviewedAt": "2026-10-25T10:13:02.273Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-e97e1de67e": {
+      "id": "jlm-e97e1de67e",
+      "name": "כיכר ספרא",
+      "area": "מגרש הרוסים",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A1%D7%A4%D7%A8%D7%90",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-e97e1de67e.json",
+      "lastRun": "2026-10-25T10:10:51.376Z",
+      "reviewedAt": "2026-10-25T10:13:02.274Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-0a40ba41f5": {
+      "id": "jlm-0a40ba41f5",
+      "name": "כיכר מוסקבה",
+      "area": "מגרש הרוסים",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%9E%D7%95%D7%A1%D7%A7%D7%91%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-0a40ba41f5.json",
+      "lastRun": "2026-10-25T10:10:51.376Z",
+      "reviewedAt": "2026-10-25T10:13:02.276Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-36791d4325": {
+      "id": "jlm-36791d4325",
+      "name": "כיכר רומא",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A8%D7%95%D7%9E%D7%90",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-36791d4325.json",
+      "lastRun": "2026-10-25T10:10:51.378Z",
+      "reviewedAt": "2026-10-25T10:13:02.279Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-ea38c67581": {
+      "id": "jlm-ea38c67581",
+      "name": "כיכר שמעון אגרנט",
+      "area": "קרית הממשלה",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%90%D7%92%D7%A8%D7%A0%D7%98",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-ea38c67581.json",
+      "lastRun": "2026-10-25T10:10:51.383Z",
+      "reviewedAt": "2026-10-25T10:13:02.281Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-161658c256": {
+      "id": "jlm-161658c256",
+      "name": "כיכר הולנד",
+      "area": "יפה נוף",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%94%D7%95%D7%9C%D7%A0%D7%93",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-161658c256.json",
+      "lastRun": "2026-10-25T10:10:51.384Z",
+      "reviewedAt": "2026-10-25T10:13:02.283Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-be13ffaf09": {
+      "id": "jlm-be13ffaf09",
+      "name": "מעלה השלום",
+      "area": "הרובע היהודי",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "high",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A2%D7%9C%D7%94_%D7%94%D7%A9%D7%9C%D7%95%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-be13ffaf09.json",
+      "lastRun": "2026-10-25T10:10:51.385Z",
+      "reviewedAt": "2026-10-25T10:13:02.285Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-dd5bbaf6f2": {
+      "id": "jlm-dd5bbaf6f2",
+      "name": "שער שכם",
+      "area": "הרובע המוסלמי",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%A9%D7%9B%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-dd5bbaf6f2.json",
+      "lastRun": "2026-10-25T10:10:51.389Z",
+      "reviewedAt": "2026-10-25T10:13:02.290Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-c1ca70cede": {
+      "id": "jlm-c1ca70cede",
+      "name": "שער הפרחים",
+      "area": "הרובע המוסלמי",
+      "status": "ok",
+      "fact_type": "place-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%94%D7%A4%D7%A8%D7%97%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-c1ca70cede.json",
+      "lastRun": "2026-10-25T10:10:51.390Z",
+      "reviewedAt": "2026-10-25T10:13:02.291Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-eeb4bbe1ab": {
+      "id": "jlm-eeb4bbe1ab",
+      "name": "דב הוז",
+      "area": "הולילנד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%91_%D7%94%D7%95%D7%96",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-eeb4bbe1ab.json",
+      "lastRun": "2026-10-25T10:10:51.393Z",
+      "reviewedAt": "2026-10-25T10:13:02.297Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-a110dcc7d3": {
+      "id": "jlm-a110dcc7d3",
+      "name": "פנחס רוזן",
+      "area": "הולילנד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%A0%D7%97%D7%A1_%D7%A8%D7%95%D7%96%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-a110dcc7d3.json",
+      "lastRun": "2026-10-25T10:10:51.395Z",
+      "reviewedAt": "2026-10-25T10:13:02.300Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-a3f0efd301": {
+      "id": "jlm-a3f0efd301",
+      "name": "משה סנה",
+      "area": "פסגת זאב צפון",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%A0%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-a3f0efd301.json",
+      "lastRun": "2026-10-25T10:10:51.396Z",
+      "reviewedAt": "2026-10-25T10:13:02.301Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-96c4e29bac": {
+      "id": "jlm-96c4e29bac",
+      "name": "יגאל אלון",
+      "area": "רמות ב'",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%92%D7%90%D7%9C_%D7%90%D7%9C%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-96c4e29bac.json",
+      "lastRun": "2026-10-25T10:10:51.397Z",
+      "reviewedAt": "2026-10-25T10:13:02.303Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-c3a15775b8": {
+      "id": "jlm-c3a15775b8",
+      "name": "יצחק שדה",
+      "area": "קטמונים (גוננים)",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%93%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-c3a15775b8.json",
+      "lastRun": "2026-10-25T10:10:51.398Z",
+      "reviewedAt": "2026-10-25T10:13:02.305Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-899451021e": {
+      "id": "jlm-899451021e",
+      "name": "כיכר אורד וינגייט",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%93_%D7%A6'%D7%90%D7%A8%D7%9C%D7%A1_%D7%95%D7%99%D7%A0%D7%92%D7%99%D7%99%D7%98",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-899451021e.json",
+      "lastRun": "2026-10-25T10:10:51.399Z",
+      "reviewedAt": "2026-10-25T10:13:02.307Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "usishkin": {
+      "id": "usishkin",
+      "name": "אוסישקין",
+      "area": "שערי חסד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%97%D7%9D_%D7%90%D7%95%D7%A1%D7%99%D7%A9%D7%A7%D7%99%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/usishkin.json",
+      "lastRun": "2026-10-25T10:10:51.400Z",
+      "reviewedAt": "2026-10-25T10:13:02.310Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f30f05243a": {
+      "id": "jlm-f30f05243a",
+      "name": "נורדאו",
+      "area": "רוממה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%A1_%D7%A0%D7%95%D7%A8%D7%93%D7%90%D7%95",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-f30f05243a.json",
+      "lastRun": "2026-10-25T10:10:51.402Z",
+      "reviewedAt": "2026-10-25T10:13:02.313Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-6df7c87516": {
+      "id": "jlm-6df7c87516",
+      "name": "יצחק רבין",
+      "area": "קרית הממשלה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%91%D7%99%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-6df7c87516.json",
+      "lastRun": "2026-10-25T10:10:51.500Z",
+      "reviewedAt": "2026-10-25T10:13:02.316Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-9fac25b573": {
+      "id": "jlm-9fac25b573",
+      "name": "משה שמיר",
+      "area": "פסגת זאב מזרח",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%9E%D7%99%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-9fac25b573.json",
+      "lastRun": "2026-10-25T10:10:51.505Z",
+      "reviewedAt": "2026-10-25T10:13:02.317Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "moshe-dayan": {
+      "id": "moshe-dayan",
+      "name": "משה דיין",
+      "area": "פסגת זאב מערב",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%93%D7%99%D7%99%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/moshe-dayan.json",
+      "lastRun": "2026-10-25T10:10:51.507Z",
+      "reviewedAt": "2026-10-25T10:13:02.319Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-622a78c27f": {
+      "id": "jlm-622a78c27f",
+      "name": "אבא הלל סילבר",
+      "area": "רמות א'",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%94%D7%9C%D7%9C_%D7%A1%D7%99%D7%9C%D7%91%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-622a78c27f.json",
+      "lastRun": "2026-10-25T10:10:51.508Z",
+      "reviewedAt": "2026-10-25T10:13:02.321Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-4af04ffea8": {
+      "id": "jlm-4af04ffea8",
+      "name": "הרברט סמואל",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%91%D7%A8%D7%98_%D7%A1%D7%9E%D7%95%D7%90%D7%9C",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-4af04ffea8.json",
+      "lastRun": "2026-10-25T10:10:51.510Z",
+      "reviewedAt": "2026-10-25T10:13:02.323Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f77588fcb2": {
+      "id": "jlm-f77588fcb2",
+      "name": "בלפור",
+      "area": "גבעת רם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%92'%D7%99%D7%99%D7%9E%D7%A1_%D7%91%D7%9C%D7%A4%D7%95%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-f77588fcb2.json",
+      "lastRun": "2026-10-25T10:10:51.511Z",
+      "reviewedAt": "2026-10-25T10:13:02.325Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-177f2feda5": {
+      "id": "jlm-177f2feda5",
+      "name": "אחד העם",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%97%D7%93_%D7%94%D7%A2%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-177f2feda5.json",
+      "lastRun": "2026-10-25T10:10:51.517Z",
+      "reviewedAt": "2026-10-25T10:13:02.327Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-722703ace3": {
+      "id": "jlm-722703ace3",
+      "name": "ביאליק",
+      "area": "בית הכרם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%97%D7%9E%D7%9F_%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-722703ace3.json",
+      "lastRun": "2026-10-25T10:10:51.518Z",
+      "reviewedAt": "2026-10-25T10:13:02.329Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-d6da6c1a71": {
+      "id": "jlm-d6da6c1a71",
+      "name": "טשרניחובסקי",
+      "area": "קטמון הישנה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%95%D7%9C_%D7%98%D7%A9%D7%A8%D7%A0%D7%99%D7%97%D7%95%D7%91%D7%A1%D7%A7%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-d6da6c1a71.json",
+      "lastRun": "2026-10-25T10:10:51.519Z",
+      "reviewedAt": "2026-10-25T10:13:02.331Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-de564538d1": {
+      "id": "jlm-de564538d1",
+      "name": "שדרות ש\"י עגנון",
+      "area": "סן סימון",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%99%D7%95%D7%A1%D7%A3_%D7%A2%D7%92%D7%A0%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-de564538d1.json",
+      "lastRun": "2026-10-25T10:10:51.521Z",
+      "reviewedAt": "2026-10-25T10:13:02.332Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-c34d403e94": {
+      "id": "jlm-c34d403e94",
+      "name": "שלום עליכם",
+      "area": "ימין משה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%9C%D7%99%D7%9B%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-c34d403e94.json",
+      "lastRun": "2026-10-25T10:10:51.522Z",
+      "reviewedAt": "2026-10-25T10:13:02.335Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-bb12364020": {
+      "id": "jlm-bb12364020",
+      "name": "מנדלי מוכר ספרים",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%93%D7%9C%D7%99_%D7%9E%D7%95%D7%9B%D7%A8_%D7%A1%D7%A4%D7%A8%D7%99%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-bb12364020.json",
+      "lastRun": "2026-10-25T10:10:51.524Z",
+      "reviewedAt": "2026-10-25T10:13:02.336Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f9a31faec3": {
+      "id": "jlm-f9a31faec3",
+      "name": "א.ד. גורדון",
+      "area": "קרית היובל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%93%D7%95%D7%93_%D7%92%D7%95%D7%A8%D7%93%D7%95%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-f9a31faec3.json",
+      "lastRun": "2026-10-25T10:10:51.525Z",
+      "reviewedAt": "2026-10-25T10:13:02.338Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-3b0f9643be": {
+      "id": "jlm-3b0f9643be",
+      "name": "בר כוכבא",
+      "area": "הגבעה הצרפתית",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8_%D7%9B%D7%95%D7%9B%D7%91%D7%90",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-3b0f9643be.json",
+      "lastRun": "2026-10-25T10:10:51.526Z",
+      "reviewedAt": "2026-10-25T10:13:02.339Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-bb1555c74e": {
+      "id": "jlm-bb1555c74e",
+      "name": "יוסף בן מתתיהו",
+      "area": "זכרון משה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%91%D7%9F_%D7%9E%D7%AA%D7%AA%D7%99%D7%94%D7%95",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-bb1555c74e.json",
+      "lastRun": "2026-10-25T10:10:51.527Z",
+      "reviewedAt": "2026-10-25T10:13:02.341Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-d6ce1b6d7f": {
+      "id": "jlm-d6ce1b6d7f",
+      "name": "מרטין בובר",
+      "area": "הר הצופים",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%98%D7%99%D7%9F_%D7%91%D7%95%D7%91%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-d6ce1b6d7f.json",
+      "lastRun": "2026-10-25T10:10:51.528Z",
+      "reviewedAt": "2026-10-25T10:13:02.343Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-c8d39ace84": {
+      "id": "jlm-c8d39ace84",
+      "name": "אבן גבירול",
+      "area": "רחביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%91%D7%9F_%D7%92%D7%91%D7%99%D7%A8%D7%95%D7%9C",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-c8d39ace84.json",
+      "lastRun": "2026-10-25T10:10:51.529Z",
+      "reviewedAt": "2026-10-25T10:13:02.345Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-e7587c156b": {
+      "id": "jlm-e7587c156b",
+      "name": "שמואל הנגיד",
+      "area": "שערי חסד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%92%D7%99%D7%93",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-e7587c156b.json",
+      "lastRun": "2026-10-25T10:10:51.530Z",
+      "reviewedAt": "2026-10-25T10:13:02.347Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "alharizi": {
+      "id": "alharizi",
+      "name": "אלחריזי",
+      "area": "רחביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%9C%D7%97%D7%A8%D7%99%D7%96%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/alharizi.json",
+      "lastRun": "2026-10-25T10:10:51.531Z",
+      "reviewedAt": "2026-10-25T10:13:02.349Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-3e887efcb3": {
+      "id": "jlm-3e887efcb3",
+      "name": "רשב\"ם",
+      "area": "מקור ברוך",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%91%22%D7%9D",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-3e887efcb3.json",
+      "lastRun": "2026-10-25T10:10:51.534Z",
+      "reviewedAt": "2026-10-25T10:13:02.351Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f1267ee143": {
+      "id": "jlm-f1267ee143",
+      "name": "הרב עוזיאל",
+      "area": "רמת בית הכרם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%9F-%D7%A6%D7%99%D7%95%D7%9F_%D7%9E%D7%90%D7%99%D7%A8_%D7%97%D7%99_%D7%A2%D7%95%D7%96%D7%99%D7%90%D7%9C",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-f1267ee143.json",
+      "lastRun": "2026-10-25T10:11:03.915Z",
+      "reviewedAt": "2026-10-25T10:13:02.353Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-ed116e7e17": {
+      "id": "jlm-ed116e7e17",
+      "name": "הרב הרצוג",
+      "area": "רסקו (גבעת הוורדים)",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%99%D7%99%D7%96%D7%99%D7%A7_%D7%94%D7%9C%D7%95%D7%99_%D7%94%D7%A8%D7%A6%D7%95%D7%92",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-ed116e7e17.json",
+      "lastRun": "2026-10-25T10:11:03.929Z",
+      "reviewedAt": "2026-10-25T10:13:02.354Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-e306399557": {
+      "id": "jlm-e306399557",
+      "name": "החיד\"א",
+      "area": "בית וגן",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%95%D7%A1%D7%A3_%D7%93%D7%95%D7%93_%D7%90%D7%96%D7%95%D7%9C%D7%90%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-e306399557.json",
+      "lastRun": "2026-10-25T10:11:03.930Z",
+      "reviewedAt": "2026-10-25T10:13:02.356Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "haari": {
+      "id": "haari",
+      "name": "האר\"י",
+      "area": "קרית שמואל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%22%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/haari.json",
+      "lastRun": "2026-10-25T10:11:03.931Z",
+      "reviewedAt": "2026-10-25T10:13:02.357Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-6cd4696548": {
+      "id": "jlm-6cd4696548",
+      "name": "הבעשט",
+      "area": "בית ישראל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%A2%D7%9C_%D7%A9%D7%9D_%D7%98%D7%95%D7%91",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-6cd4696548.json",
+      "lastRun": "2026-10-25T10:11:03.933Z",
+      "reviewedAt": "2026-10-25T10:13:02.359Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-b43cc12398": {
+      "id": "jlm-b43cc12398",
+      "name": "הגר\"א",
+      "area": "שערי חסד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%92%D7%90%D7%95%D7%9F_%D7%9E%D7%95%D7%95%D7%99%D7%9C%D7%A0%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-b43cc12398.json",
+      "lastRun": "2026-10-25T10:11:03.934Z",
+      "reviewedAt": "2026-10-25T10:13:02.362Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-3361bd9b1d": {
+      "id": "jlm-3361bd9b1d",
+      "name": "הרב שך",
+      "area": "רמת שלמה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A2%D7%96%D7%A8_%D7%9E%D7%A0%D7%97%D7%9D_%D7%9E%D7%9F_%D7%A9%D7%9A",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-3361bd9b1d.json",
+      "lastRun": "2026-10-25T10:11:03.936Z",
+      "reviewedAt": "2026-10-25T10:13:02.364Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-4168f886e1": {
+      "id": "jlm-4168f886e1",
+      "name": "חזון איש",
+      "area": "רמת שלמה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95_%D7%A7%D7%A8%D7%9C%D7%99%D7%A5",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-4168f886e1.json",
+      "lastRun": "2026-10-25T10:11:03.937Z",
+      "reviewedAt": "2026-10-25T10:13:02.365Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-d1c386f130": {
+      "id": "jlm-d1c386f130",
+      "name": "הרב רפאל ברוך טולדנו",
+      "area": "רמת שלמה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%A4%D7%90%D7%9C_%D7%91%D7%A8%D7%95%D7%9A_%D7%98%D7%95%D7%9C%D7%99%D7%93%D7%90%D7%A0%D7%95",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-d1c386f130.json",
+      "lastRun": "2026-10-25T10:11:03.938Z",
+      "reviewedAt": "2026-10-25T10:13:02.367Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-1b67d4fdd0": {
+      "id": "jlm-1b67d4fdd0",
+      "name": "הרב יחזקאל סרנא",
+      "area": "גבעת מרדכי",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C_%D7%A1%D7%A8%D7%A0%D7%90",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-1b67d4fdd0.json",
+      "lastRun": "2026-10-25T10:11:03.939Z",
+      "reviewedAt": "2026-10-25T10:13:02.369Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-a07352506e": {
+      "id": "jlm-a07352506e",
+      "name": "אונטרמן",
+      "area": "גילה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%A8_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%95%D7%A0%D7%98%D7%A8%D7%9E%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-a07352506e.json",
+      "lastRun": "2026-10-25T10:11:03.940Z",
+      "reviewedAt": "2026-10-25T10:13:02.373Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-b92c54516c": {
+      "id": "jlm-b92c54516c",
+      "name": "חרל\"פ",
+      "area": "קרית שמואל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%9E%D7%A9%D7%94_%D7%97%D7%A8%D7%9C%22%D7%A4",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-b92c54516c.json",
+      "lastRun": "2026-10-25T10:11:03.941Z",
+      "reviewedAt": "2026-10-25T10:13:02.376Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "rabbi-zvi-yehuda": {
+      "id": "rabbi-zvi-yehuda",
+      "name": "הרב צבי יהודה",
+      "area": "קרית משה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%94%D7%9B%D7%94%D7%9F_%D7%A7%D7%95%D7%A7",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/rabbi-zvi-yehuda.json",
+      "lastRun": "2026-10-25T10:11:03.941Z",
+      "reviewedAt": "2026-10-25T10:13:02.382Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-497edd21ff": {
+      "id": "jlm-497edd21ff",
+      "name": "סלנט",
+      "area": "מאה שערים",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%A1%D7%9C%D7%A0%D7%98",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-497edd21ff.json",
+      "lastRun": "2026-10-25T10:11:03.942Z",
+      "reviewedAt": "2026-10-25T10:13:02.383Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-09ab6fcb34": {
+      "id": "jlm-09ab6fcb34",
+      "name": "הרב זוננפלד",
+      "area": "בית ישראל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%99%D7%99%D7%9D_%D7%96%D7%95%D7%A0%D7%A0%D7%A4%D7%9C%D7%93",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-09ab6fcb34.json",
+      "lastRun": "2026-10-25T10:11:03.943Z",
+      "reviewedAt": "2026-10-25T10:13:02.385Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f63672ae8a": {
+      "id": "jlm-f63672ae8a",
+      "name": "אלישיב",
+      "area": "מעלות דפנה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A9%D7%9C%D7%95%D7%9D_%D7%90%D7%9C%D7%99%D7%A9%D7%99%D7%91",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-f63672ae8a.json",
+      "lastRun": "2026-10-25T10:11:03.944Z",
+      "reviewedAt": "2026-10-25T10:13:02.387Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-dd91bcc1cf": {
+      "id": "jlm-dd91bcc1cf",
+      "name": "חיים דוד הלוי",
+      "area": "פסגת זאב מזרח",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%93%D7%95%D7%93_%D7%94%D7%9C%D7%95%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-dd91bcc1cf.json",
+      "lastRun": "2026-10-25T10:11:03.944Z",
+      "reviewedAt": "2026-10-25T10:13:02.388Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-93e570de8b": {
+      "id": "jlm-93e570de8b",
+      "name": "הרב יצחק כדורי",
+      "area": "חומת שמואל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%9B%D7%93%D7%95%D7%A8%D7%99",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-93e570de8b.json",
+      "lastRun": "2026-10-25T10:11:03.945Z",
+      "reviewedAt": "2026-10-25T10:13:02.389Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-caea1680c2": {
+      "id": "jlm-caea1680c2",
+      "name": "הרב שלום משאש",
+      "area": "פסגת זאב מזרח",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%9E%D7%A9%D7%90%D7%A9",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-caea1680c2.json",
+      "lastRun": "2026-10-25T10:11:03.946Z",
+      "reviewedAt": "2026-10-25T10:13:02.391Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-83cbf962a2": {
+      "id": "jlm-83cbf962a2",
+      "name": "חכם עזרא עטיה",
+      "area": "סנהדריה מורחבת",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%90_%D7%A2%D7%98%D7%99%D7%99%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-83cbf962a2.json",
+      "lastRun": "2026-10-25T10:11:03.947Z",
+      "reviewedAt": "2026-10-25T10:13:02.392Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-369e874a9a": {
+      "id": "jlm-369e874a9a",
+      "name": "כיכר הרב יהודה צדקה",
+      "area": "בית ישראל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%A6%D7%93%D7%A7%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-369e874a9a.json",
+      "lastRun": "2026-10-25T10:11:04.014Z",
+      "reviewedAt": "2026-10-25T10:13:02.395Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-19cb84386a": {
+      "id": "jlm-19cb84386a",
+      "name": "ברכה צפירה",
+      "area": "הולילנד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%9B%D7%94_%D7%A6%D7%A4%D7%99%D7%A8%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-19cb84386a.json",
+      "lastRun": "2026-10-25T10:11:04.020Z",
+      "reviewedAt": "2026-10-25T10:13:02.397Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-db1129e6c3": {
+      "id": "jlm-db1129e6c3",
+      "name": "היינריך היינה",
+      "area": "ימין משה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%99%D7%99%D7%A0%D7%A8%D7%99%D7%9A_%D7%94%D7%99%D7%99%D7%A0%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-db1129e6c3.json",
+      "lastRun": "2026-10-25T10:11:04.022Z",
+      "reviewedAt": "2026-10-25T10:13:02.399Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-7ffa1d0335c3": {
+      "id": "jlm-7ffa1d0335c3",
+      "name": "גרוזנברג",
+      "area": "מרכז העיר",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A1%D7%A7%D7%A8_%D7%92%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-7ffa1d0335c3.json",
+      "lastRun": "2026-10-25T10:11:04.023Z",
+      "reviewedAt": "2026-10-25T10:13:02.400Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-20a62574da": {
+      "id": "jlm-20a62574da",
+      "name": "לאה גולדברג",
+      "area": "נווה יעקב",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%90%D7%94_%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%A8%D7%92",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-20a62574da.json",
+      "lastRun": "2026-10-25T10:11:04.025Z",
+      "reviewedAt": "2026-10-25T10:13:02.402Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-7116d443ba": {
+      "id": "jlm-7116d443ba",
+      "name": "רחל המשוררת",
+      "area": "בית הכרם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%9C_%D7%94%D7%9E%D7%A9%D7%95%D7%A8%D7%A8%D7%AA",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-7116d443ba.json",
+      "lastRun": "2026-10-25T10:11:04.025Z",
+      "reviewedAt": "2026-10-25T10:13:02.403Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-6e21d46bf0": {
+      "id": "jlm-6e21d46bf0",
+      "name": "המשוררת זלדה",
+      "area": "רמות",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%93%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-6e21d46bf0.json",
+      "lastRun": "2026-10-25T10:11:04.026Z",
+      "reviewedAt": "2026-10-25T10:13:02.405Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-1878cb9aa2": {
+      "id": "jlm-1878cb9aa2",
+      "name": "ככר מגנס",
+      "area": "רחביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%9E%D7%90%D7%92%D7%A0%D7%A1",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-1878cb9aa2.json",
+      "lastRun": "2026-10-25T10:11:04.027Z",
+      "reviewedAt": "2026-10-25T10:13:02.406Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "david-yellin": {
+      "id": "david-yellin",
+      "name": "דוד ילין",
+      "area": "זכרון משה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%99%D7%9C%D7%99%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/david-yellin.json",
+      "lastRun": "2026-10-25T10:11:04.028Z",
+      "reviewedAt": "2026-10-25T10:13:02.407Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-7353e1f9de": {
+      "id": "jlm-7353e1f9de",
+      "name": "בן ציון דינור",
+      "area": "רמת בית הכרם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%9F-%D7%A6%D7%99%D7%95%D7%9F_%D7%93%D7%99%D7%A0%D7%95%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-7353e1f9de.json",
+      "lastRun": "2026-10-25T10:11:04.029Z",
+      "reviewedAt": "2026-10-25T10:13:02.410Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-99df6a5146": {
+      "id": "jlm-99df6a5146",
+      "name": "הנרייטה סאלד",
+      "area": "קרית מנחם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%A8%D7%99%D7%99%D7%98%D7%94_%D7%A1%D7%90%D7%9C%D7%93",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-99df6a5146.json",
+      "lastRun": "2026-10-25T10:11:04.031Z",
+      "reviewedAt": "2026-10-25T10:13:02.412Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-36ffb66e51": {
+      "id": "jlm-36ffb66e51",
+      "name": "אריה ל. מוצקין",
+      "area": "קרית היובל",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%90%D7%95_%D7%9E%D7%95%D7%A6%D7%A7%D7%99%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-36ffb66e51.json",
+      "lastRun": "2026-10-25T10:11:04.033Z",
+      "reviewedAt": "2026-10-25T10:13:02.415Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-fac3a4e75a": {
+      "id": "jlm-fac3a4e75a",
+      "name": "סוקולוב",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%A1%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%91",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-fac3a4e75a.json",
+      "lastRun": "2026-10-25T10:11:04.034Z",
+      "reviewedAt": "2026-10-25T10:13:02.416Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-ca39719c83": {
+      "id": "jlm-ca39719c83",
+      "name": "ארלוזורוב",
+      "area": "טלביה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%90%D7%A8%D7%9C%D7%95%D7%96%D7%95%D7%A8%D7%95%D7%91",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-ca39719c83.json",
+      "lastRun": "2026-10-25T10:11:04.035Z",
+      "reviewedAt": "2026-10-25T10:13:02.418Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-756dca597c": {
+      "id": "jlm-756dca597c",
+      "name": "דוד רמז",
+      "area": "גבעת חנניה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A8%D7%9E%D7%96",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-756dca597c.json",
+      "lastRun": "2026-10-25T10:11:04.036Z",
+      "reviewedAt": "2026-10-25T10:13:02.420Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-969d33cd2b": {
+      "id": "jlm-969d33cd2b",
+      "name": "משה שרת",
+      "area": "הולילנד",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%A8%D7%AA",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-969d33cd2b.json",
+      "lastRun": "2026-10-25T10:11:04.037Z",
+      "reviewedAt": "2026-10-25T10:13:02.422Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-f27865653e": {
+      "id": "jlm-f27865653e",
+      "name": "אבא אבן",
+      "area": "קרית הממשלה",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%90%D7%91%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-f27865653e.json",
+      "lastRun": "2026-10-25T10:11:04.038Z",
+      "reviewedAt": "2026-10-25T10:13:02.424Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-6d0daf74d6": {
+      "id": "jlm-6d0daf74d6",
+      "name": "הארי טרומן",
+      "area": "רמות א'",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%D7%99_%D7%98%D7%A8%D7%95%D7%9E%D7%9F",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-6d0daf74d6.json",
+      "lastRun": "2026-10-25T10:11:04.038Z",
+      "reviewedAt": "2026-10-25T10:13:02.425Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-8c9a2c232f": {
+      "id": "jlm-8c9a2c232f",
+      "name": "כיכר צ'יאונה סוגיהארה",
+      "area": "קרית מנחם",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%90%D7%95%D7%A0%D7%94_%D7%A1%D7%95%D7%92%D7%99%D7%94%D7%90%D7%A8%D7%94",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-8c9a2c232f.json",
+      "lastRun": "2026-10-25T10:11:04.039Z",
+      "reviewedAt": "2026-10-25T10:13:02.428Z",
+      "attempts": 0,
+      "lastError": null,
+      "review_status": "approved"
+    },
+    "jlm-458da1854a": {
+      "id": "jlm-458da1854a",
+      "name": "כיכר יולנדה הארמר",
+      "area": "המושבה היוונית",
+      "status": "ok",
+      "fact_type": "person-article",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%9C%D7%A0%D7%93%D7%94_%D7%94%D7%90%D7%A8%D7%9E%D7%A8",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/jlm-458da1854a.json",
+      "lastRun": "2026-10-25T10:11:04.040Z",
+      "reviewedAt": "2026-10-25T10:13:02.430Z",
+      "attempts": 0,
       "lastError": null,
       "review_status": "approved"
     }

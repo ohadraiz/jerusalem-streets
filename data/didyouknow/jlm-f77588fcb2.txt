@@ -1,0 +1,10 @@
+street_id: jlm-f77588fcb2
+street_name: בלפור
+area: גבעת רם
+fact: ארתור ג'יימס בלפור היה ראש ממשלת בריטניה (1902–1905) ושר החוץ, וזכה להערכת הציונות כאביה של הצהרת בלפור, ש"ראתה בעין יפה" בית לאומי ליהודים בארץ ישראל.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%92'%D7%99%D7%99%D7%9E%D7%A1_%D7%91%D7%9C%D7%A4%D7%95%D7%A8
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

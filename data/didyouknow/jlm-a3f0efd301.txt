@@ -1,0 +1,10 @@
+street_id: jlm-a3f0efd301
+street_name: משה סנה
+area: פסגת זאב צפון
+fact: משה סנה (1909–1972) היה ראש המפקדה הארצית של "ההגנה", הוגה דעות, חבר הכנסת, מנהיג ופובליציסט. במקצועו היה רופא.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%A0%D7%94
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

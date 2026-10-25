@@ -1,0 +1,10 @@
+street_id: jlm-81a43454b9
+street_name: משגב לדך
+area: הרובע היהודי
+fact: רחוב משגב לדך ברובע היהודי נקרא על שם בית החולים שהוקם בו ב-1854, ושמו נלקח מהפסוק "ויהי ה' משגב לדך". קצהו הצפוני נפגש עם רחוב השלשלת.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%A9%D7%92%D7%91_%D7%9C%D7%93%D7%9A
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

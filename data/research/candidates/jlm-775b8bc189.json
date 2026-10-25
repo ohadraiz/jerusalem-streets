@@ -1,0 +1,70 @@
+{
+  "street_id": "jlm-775b8bc189",
+  "street_name": "טרומפלדור",
+  "area": "נחלאות",
+  "lat": 31.780344,
+  "lng": 35.213595,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 452,
+      "name": "טרומפלדור",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q733064",
+      "label": "יוסף טרומפלדור",
+      "description": "לוחם יהודי, מנהיג ציוני וחלוץ",
+      "birth": 1880,
+      "death": 1920,
+      "url": "https://www.wikidata.org/wiki/Q733064",
+      "hewiki": "יוסף טרומפלדור",
+      "enwiki": "Joseph Trumpeldor"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 4719656,
+    "name": "טרומפלדור",
+    "display_name": "טרומפלדור, ירושלים, שערי חסד, ירושלים, נפת ירושלים, מחוז ירושלים, 9458306, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7799316,
+    "lon": 35.213532,
+    "distance": 46.241833845316464,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/4719656"
+  },
+  "fact": "יוסף טרומפלדור, יליד 1880, היה לוחם יהודי, מנהיג ציוני וחלוץ; גבורתו ונפילתו בקרב על תל חי ב-1920 הפכו אותו לדמות מופת ציונית ולגיבור לאומי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסף טרומפלדור",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%98%D7%A8%D7%95%D7%9E%D7%A4%D7%9C%D7%93%D7%95%D7%A8",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/4719656",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

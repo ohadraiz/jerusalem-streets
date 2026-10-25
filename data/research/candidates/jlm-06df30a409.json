@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-06df30a409",
+  "street_name": "שער האריות",
+  "area": "הרובע המוסלמי",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "רחוב שער האריות עובר מצפון להר הבית, משער האריות עד ויה דולורוזה. בתחילתו ניצבה ככל הנראה מצודת אנטוניה מימי הבית השני, ובפינת רחוב אנטוניה שוכן מתחם \"בית האריות\".",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב שער האריות",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%A2%D7%A8_%D7%94%D7%90%D7%A8%D7%99%D7%95%D7%AA",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-36791d4325",
+  "street_name": "כיכר רומא",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "כיכר רומא לאורך רחוב הלל נחנכה ב-2009 בביקור ראש עיריית רומא ג'אני אלמאנו; באותו מעמד נחנכה ברומא \"כיכר ירושלים\". במרכז הכיכר לוח תלת-לשוני עם שעון שמש בספרות רומיות.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כיכר רומא",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A8%D7%95%D7%9E%D7%90",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

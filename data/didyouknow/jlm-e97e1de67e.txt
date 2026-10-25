@@ -1,0 +1,10 @@
+street_id: jlm-e97e1de67e
+street_name: כיכר ספרא
+area: מגרש הרוסים
+fact: כיכר ספרא נבנתה ב-1993 עם קריית עיריית ירושלים, ונקראת על שם יעקב ואסתר ספרא, הוריהם של יוסף ואדמונד ספרא שתרמו לבנייתה. בקצה הכיכר פסל סביבתי של בורג ארכימדס.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A1%D7%A4%D7%A8%D7%90
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

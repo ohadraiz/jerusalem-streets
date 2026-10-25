@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-4af04ffea8",
+  "street_name": "הרברט סמואל",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "לורד הרברט סמואל היה מדינאי יהודי-בריטי, חבר הפרלמנט ושר בממשלת בריטניה, ששימש הנציב העליון הראשון על ארץ ישראל בתקופת המנדט. אנשי היישוב כינוהו \"הנציב הראשון ליהודה\".",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הרברט סמואל",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%91%D7%A8%D7%98_%D7%A1%D7%9E%D7%95%D7%90%D7%9C",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

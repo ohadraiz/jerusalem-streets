@@ -1,0 +1,10 @@
+street_id: jlm-0a40ba41f5
+street_name: כיכר מוסקבה
+area: מגרש הרוסים
+fact: כיכר מוסקבה במגרש הרוסים נחנכה ב-2007 בביקור ראש עיריית מוסקבה יורי לוז'קוב, לרגל ברית ערים תאומות בין מוסקבה לתל אביב. היא ניצבת בכניסה לכנסיית השילוש הקדוש.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%9E%D7%95%D7%A1%D7%A7%D7%91%D7%94
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

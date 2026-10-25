@@ -1,0 +1,10 @@
+street_id: jlm-09ab6fcb34
+street_name: הרב זוננפלד
+area: בית ישראל
+fact: הרב יוסף חיים זוננפלד (1848–1932) היה רבה הראשון של העדה החרדית בירושלים.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%99%D7%99%D7%9D_%D7%96%D7%95%D7%A0%D7%A0%D7%A4%D7%9C%D7%93
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

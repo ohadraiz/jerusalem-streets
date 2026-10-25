@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-f27865653e",
+  "street_name": "אבא אבן",
+  "area": "קרית הממשלה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "אבא אבן היה דיפלומט ומדינאי, סגן ראש הממשלה, שר החוץ, שר החינוך ושגריר ישראל באו\"ם ובארצות הברית. הוא נודע בכושר הביטוי המבריק שלו ונחשב \"הדיפלומט מספר אחת\" של ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבא אבן",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%90%D7%91%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

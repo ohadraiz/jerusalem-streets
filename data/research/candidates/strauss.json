@@ -1,0 +1,31 @@
+{
+  "street_id": "strauss",
+  "street_name": "שטראוס",
+  "area": "מאה שערים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "רחוב שטראוס נסלל ב-1930 ונקרא על שם בית הבריאות שטראוס. מקיץ 1931 ועד תום המנדט נקרא רחוב צ'נסלור, על שם הנציב העליון ג'ון צ'נסלור.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב שטראוס",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%98%D7%A8%D7%90%D7%95%D7%A1",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

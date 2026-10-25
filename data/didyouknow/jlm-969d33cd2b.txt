@@ -1,0 +1,10 @@
+street_id: jlm-969d33cd2b
+street_name: משה שרת
+area: הולילנד
+fact: משה שרת היה ראש הממשלה השני של ישראל (1954–1955) ושר החוץ הראשון. הוא היה מראשי הנהגת היישוב, מחותמי מגילת העצמאות, והקים את שירות החוץ הישראלי.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%A8%D7%AA
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

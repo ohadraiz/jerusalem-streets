@@ -1,0 +1,10 @@
+street_id: jlm-7353e1f9de
+street_name: בן ציון דינור
+area: רמת בית הכרם
+fact: בן-ציון דינור (1884–1973) היה היסטוריון, מחנך, חבר הכנסת הראשונה ושר החינוך, שיזם את מפעל פרס ישראל. הוא היה ממייסדי "יד ושם" ויו"ר ההנהלה הראשון שלו, וחתן פרס ישראל.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%9F-%D7%A6%D7%99%D7%95%D7%9F_%D7%93%D7%99%D7%A0%D7%95%D7%A8
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

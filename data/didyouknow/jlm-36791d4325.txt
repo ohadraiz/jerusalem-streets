@@ -1,0 +1,10 @@
+street_id: jlm-36791d4325
+street_name: כיכר רומא
+area: נחלת שבעה
+fact: כיכר רומא לאורך רחוב הלל נחנכה ב-2009 בביקור ראש עיריית רומא ג'אני אלמאנו; באותו מעמד נחנכה ברומא "כיכר ירושלים". במרכז הכיכר לוח תלת-לשוני עם שעון שמש בספרות רומיות.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A8%D7%95%D7%9E%D7%90
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

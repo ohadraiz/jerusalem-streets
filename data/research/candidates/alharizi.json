@@ -1,0 +1,31 @@
+{
+  "street_id": "alharizi",
+  "street_name": "אלחריזי",
+  "area": "רחביה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "יהודה אלחריזי (1165–1225) היה נוסע, משורר, יוצר ומתרגם יהודי-ספרדי. הוא נולד בטולדו שבקסטיליה ונפטר בחלב שבסוריה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יהודה אלחריזי",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%9C%D7%97%D7%A8%D7%99%D7%96%D7%99",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

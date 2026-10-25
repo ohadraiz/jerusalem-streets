@@ -1,0 +1,10 @@
+street_id: jlm-f27865653e
+street_name: אבא אבן
+area: קרית הממשלה
+fact: אבא אבן היה דיפלומט ומדינאי, סגן ראש הממשלה, שר החוץ, שר החינוך ושגריר ישראל באו"ם ובארצות הברית. הוא נודע בכושר הביטוי המבריק שלו ונחשב "הדיפלומט מספר אחת" של ישראל.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%90%D7%91%D7%9F
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

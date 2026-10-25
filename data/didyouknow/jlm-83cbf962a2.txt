@@ -1,0 +1,10 @@
+street_id: jlm-83cbf962a2
+street_name: חכם עזרא עטיה
+area: סנהדריה מורחבת
+fact: חכם עזרא עטייה (1887–1970) היה ראש ישיבת פורת יוסף וממעצבי דרכה של היהדות החרדית-ספרדית בארץ ישראל.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%90_%D7%A2%D7%98%D7%99%D7%99%D7%94
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

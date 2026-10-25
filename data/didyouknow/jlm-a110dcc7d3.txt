@@ -1,0 +1,10 @@
+street_id: jlm-a110dcc7d3
+street_name: פנחס רוזן
+area: הולילנד
+fact: פנחס רוזן, יליד 1887, היה חבר מנהלת העם ומחותמי מגילת העצמאות, חבר הכנסת ושר המשפטים הראשון של ישראל. הוא כיהן מהממשלה הראשונה עד התשיעית, למעט השלישית, וזכה בפרס ישראל למשפטים ב-1973.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%A0%D7%97%D7%A1_%D7%A8%D7%95%D7%96%D7%9F
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

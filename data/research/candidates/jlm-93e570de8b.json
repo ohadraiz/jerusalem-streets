@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-93e570de8b",
+  "street_name": "הרב יצחק כדורי",
+  "area": "חומת שמואל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "הרב יצחק כדורי (1898–2006) היה מקובל ישראלי בולט, שכונה בשנותיו האחרונות \"זקן המקובלים\". הוא עמד בראשות ישיבת המקובלים \"נחלת יצחק\".",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצחק כדורי",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%9B%D7%93%D7%95%D7%A8%D7%99",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

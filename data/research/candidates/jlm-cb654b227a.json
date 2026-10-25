@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-cb654b227a",
+  "street_name": "כיכר אביגדור המאירי",
+  "area": "הר הצופים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "כיכר אביגדור המאירי בהר הצופים קרויה על שם המשורר. בצדה הדרומי שער הקמפוס, בצפונה הדסה הר הצופים, במזרחה עיסאוויה, ובמערבה מעונות הסטודנטים; ב-2013 כוסו פינותיה בקירות הנצחה.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כיכר אביגדור המאירי",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%90%D7%91%D7%99%D7%92%D7%93%D7%95%D7%A8_%D7%94%D7%9E%D7%90%D7%99%D7%A8%D7%99",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-20a62574da",
+  "street_name": "לאה גולדברג",
+  "area": "נווה יעקב",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "לאה גולדברג (1911–1970) הייתה משוררת, סופרת, מתרגמת, מחזאית וחוקרת ספרות, מגדולי המשוררות העבריות בעת החדשה. היא כלת פרס ישראל לספרות ולשירה לשנת 1970 ופרופסור באוניברסיטה העברית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — לאה גולדברג",
+      "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%90%D7%94_%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%A8%D7%92",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

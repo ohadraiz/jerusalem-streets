@@ -1,0 +1,10 @@
+street_id: jlm-756dca597c
+street_name: דוד רמז
+area: גבעת חנניה
+fact: דוד רמז (1886–1951) היה ממנהיגי היישוב, יו"ר הוועד הלאומי, מזכ"ל ההסתדרות, חבר הכנסת ושר בממשלות ישראל, ומחותמי מגילת העצמאות.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A8%D7%9E%D7%96
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

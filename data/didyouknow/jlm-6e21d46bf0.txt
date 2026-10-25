@@ -1,0 +1,10 @@
+street_id: jlm-6e21d46bf0
+street_name: המשוררת זלדה
+area: רמות
+fact: שיינא זלדה שניאורסון-מישקובסקי (1914–1984), המוכרת בשם זלדה, הייתה משוררת ישראלית וחסידת חב"ד, מחברת השיר "לכל איש יש שם".
+source: https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%93%D7%94
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

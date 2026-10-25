@@ -1,0 +1,10 @@
+street_id: jlm-c34d403e94
+street_name: שלום עליכם
+area: ימין משה
+fact: שלום עליכם, מחשובי הקלאסיקונים של ספרות היידיש, נולד ב-1859 ברוסיה. את רוב יצירותיו כתב ביידיש, וחלקן בעברית וברוסית; סיפוריו תיארו את תרבות יהדות מזרח אירופה.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%9C%D7%99%D7%9B%D7%9D
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

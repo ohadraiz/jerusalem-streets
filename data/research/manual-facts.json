@@ -3,7 +3,7 @@
   "createdAt": "2026-10-22",
   "accessDate": "2026-10-22",
   "researcher": "החוקר",
-  "note": "עובדות שנבדקו ידנית עבור פיילוט 50 הרחובות. מקורות content בלבד; מקורות זהות (data.gov.il, OSM, Wikidata) נמצאים בקובצי המועמדים.",
+  "note": "עובדות שנבדקו ידנית עבור 150 רחובות (50 פיילוט + 100 הרחבה). מקורות תוכן וזהות מסומנים לפי kind.",
   "streets": {
     "yafo": {
       "fact": "רחוב יפו נסלל ב-1869 לקראת ביקור הקיסר פרנץ יוזף, ומאז 2007 חלקו הוא המדרחוב הארוך בישראל — כ-1.5 קילומטרים בין כיכר צה\"ל לשוק מחנה יהודה.",
@@ -697,6 +697,1706 @@
         }
       ],
       "notes": "שם הרחוב זהה לשם ההר; לא נמצא מאמר רחוב ישיר."
+    },
+    "jlm-eb0cfc7a42": {
+      "fact": "בתקופת המנדט הבריטי ואף לאחריה נקרא רחוב אתיופיה \"רחוב החבשים\" (Abyssinian Street). הוא יוצא מרחוב הנביאים ומקביל לרחוב בני ברית הסמוך.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב אתיופיה",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%AA%D7%99%D7%95%D7%A4%D7%99%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "agripas": {
+      "fact": "רחוב אגריפס קרוי על שם המלך אגריפס הראשון, נכדו של הורדוס ובונה החומה השלישית. הוא מתחיל במפגש עם רחוב המלך ג'ורג', יורד במקביל לרחוב יפו, ובקצהו משתנה שמו לרחוב הרב שמואל ברוך.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב אגריפס",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%92%D7%A8%D7%99%D7%A4%D7%A1",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-2517fb55e4": {
+      "fact": "רחוב בית הבד בעיר העתיקה עובר בתוואי הקרדו הרומאי-ביזנטי, וחוצה אותו דרך הויה דולורוזה. בעבר היה רחב 22 מטרים, אך עם השנים פלשו החנויות למרכזו והצרו אותו.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב בית הבד",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%91%D7%99%D7%AA_%D7%94%D7%91%D7%93",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-d3ede95084": {
+      "fact": "רחוב השלשלת עובר בתוואי נחל צולב, מרחוב דוד במערב עד שער השלשלת במזרח. הרחוב נקרא על שם השער, ששמו נגזר מכיפת השלשלת שעל הר הבית.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב השלשלת",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A9%D7%9C%D7%A9%D7%9C%D7%AA",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-1b4bc5edd7": {
+      "fact": "רחוב הנוצרים ברובע הנוצרי הוא ציר מסחר עתיק, שרווח לפחות מאז התקופה הרומית. שמו הערבי \"אלבטרק\" הוא שיבוש של \"פטריארך\", בעקבות מרחץ הפטריארך היווני-אורתודוקסי שפעל בו.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב הנוצרים",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A0%D7%95%D7%A6%D7%A8%D7%99%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-c88a4b04d2": {
+      "fact": "רחוב הפטריארכיה הארמנית יוצא דופן בעיר העתיקה: כולו סלול ומיועד לתנועת כלי רכב, ובהם מיניבוסים משער יפו לכותל. לאורכו מצודת דוד, קתדרלת יעקב הקדוש והפטריארכיה הארמנית.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב הפטריארכיה הארמנית",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A4%D7%98%D7%A8%D7%99%D7%90%D7%A8%D7%9B%D7%99%D7%94_%D7%94%D7%90%D7%A8%D7%9E%D7%A0%D7%99%D7%AA",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-81a43454b9": {
+      "fact": "רחוב משגב לדך ברובע היהודי נקרא על שם בית החולים שהוקם בו ב-1854, ושמו נלקח מהפסוק \"ויהי ה' משגב לדך\". קצהו הצפוני נפגש עם רחוב השלשלת.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב משגב לדך",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%A9%D7%92%D7%91_%D7%9C%D7%93%D7%9A",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-9b6e1bf81aaa": {
+      "fact": "רחוב הפטריארכיה הלטינית מחבר את כיכר עומר אבן אל-חטאב, סמוך לשער יפו, אל מבנה הפטריארכיה הלטינית. מפלס החיים ברחוב גבוה ב-2 עד 5 מטרים ממפלס איליה קפיטולינה.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב הפטריארכיה הלטינית",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A4%D7%98%D7%A8%D7%99%D7%90%D7%A8%D7%9B%D7%99%D7%94_%D7%94%D7%9C%D7%98%D7%99%D7%A0%D7%99%D7%AA",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-2bd99937de": {
+      "fact": "רחוב שלומציון המלכה במרכז ירושלים היה קרוי עד שנת 1948 רחוב הנסיכה מרי.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב שלומציון המלכה",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%9C%D7%95%D7%9E%D7%A6%D7%99%D7%95%D7%9F_%D7%94%D7%9E%D7%9C%D7%9B%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-8f911896d0": {
+      "fact": "שדרות בן-צבי קרויות על שם נשיאה השני של ישראל, יצחק בן-צבי. אף שהן מכונות \"שדרות\", אין לאורכן שדרת עצים; הן כוללות ארבעה נתיבי נסיעה ושביל אופניים.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שדרות בן-צבי",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%91%D7%9F-%D7%A6%D7%91%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "strauss": {
+      "fact": "רחוב שטראוס נסלל ב-1930 ונקרא על שם בית הבריאות שטראוס. מקיץ 1931 ועד תום המנדט נקרא רחוב צ'נסלור, על שם הנציב העליון ג'ון צ'נסלור.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב שטראוס",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%98%D7%A8%D7%90%D7%95%D7%A1",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-06df30a409": {
+      "fact": "רחוב שער האריות עובר מצפון להר הבית, משער האריות עד ויה דולורוזה. בתחילתו ניצבה ככל הנראה מצודת אנטוניה מימי הבית השני, ובפינת רחוב אנטוניה שוכן מתחם \"בית האריות\".",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב שער האריות",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A9%D7%A2%D7%A8_%D7%94%D7%90%D7%A8%D7%99%D7%95%D7%AA",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-5bd420f256": {
+      "fact": "לאורך רחוב רחל אמנו בקטמון הישנה שכנו קונסוליות ושגרירויות רבות, בהן בלגיה, מצרים, פולין ויוון. הרחוב מתחיל במושבה הגרמנית, עובר במושבה היוונית וחוצה את קטמון.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחוב רחל אמנו",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A8%D7%97%D7%9C_%D7%90%D7%9E%D7%A0%D7%95",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-8f14ff5994e3": {
+      "fact": "דרך בית לחם נקראת על שם הדרך העתיקה משער יפו לבית לחם, שנחשפה בחפירות ארכאולוגיות. ב-10 בדצמבר 1917 עברה בה הדיוויזיה ה-53 הבריטית בדרכה להר הזיתים.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — דרך בית לחם",
+          "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%91%D7%99%D7%AA_%D7%9C%D7%97%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-b1537125b1": {
+      "fact": "שדרות המאירי בקריית משה קרויות על שם הרב משה אוסטרובסקי-המאירי, ממנהיגי המזרחי שהתגורר בשכונה. השדרה תוכננה כחלק משכונת גנים, והיא שדרת הולכי רגל עם עצי ברוש וספסלים.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שדרות המאירי",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%94%D7%9E%D7%90%D7%99%D7%A8%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-031ab6db37": {
+      "fact": "שדרות לוי אשכול הן קטע מכביש 417, שנסלל כדי לחבר את הר הצופים לרצף שכונות הבריח. המבנים שלצידו היו הראשונים בירושלים המאוחדת שנבנו מעבר לקו הירוק לאחר 1967.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שדרות לוי אשכול",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%9C%D7%95%D7%99_%D7%90%D7%A9%D7%9B%D7%95%D7%9C",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-7a788110ed": {
+      "fact": "שדרות זלמן שזר, לשעבר שדרות יהודה הלוי, הן הרחוב הראשי בכניסה המערבית לירושלים. לאורכן בנייני האומה ותחנת הרכבת ירושלים–יצחק נבון, והן קרויות על שם הנשיא השלישי.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שדרות זלמן שז\"ר",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%93%D7%A8%D7%95%D7%AA_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%96%22%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-b8be179ad1": {
+      "fact": "כיכר אלנבי היא כיכר קטנה בלב שכונת רוממה. היא קרויה על שם הגנרל הבריטי אדמונד אלנבי, שכבש את ארץ ישראל מידי האימפריה העות'מאנית במלחמת העולם הראשונה.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר אלנבי",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%90%D7%9C%D7%A0%D7%91%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-9f91a81d94": {
+      "fact": "דרך יצחק שמיר היא קטע בכביש 1 שנפתח ב-2007. אורכה כ-3.6 ק\"מ, והיא כוללת שני גשרים ומנהרות בעמק הארזים; הקמתה ארכה שש שנים ועלתה כ-500 מיליון שקל.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — דרך יצחק שמיר",
+          "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%9E%D7%99%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-43ecfd0492": {
+      "fact": "דרך מעלה אדומים היא מעלה עתיק מבקעת הירדן לירושלים. לאורך הציר נמצאו שרידי מצודות מהתקופות הרומית, הביזנטית, הצלבנית והממלוכית, המעידים על חשיבותו הצבאית.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — דרך מעלה אדומים",
+          "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%9E%D7%A2%D7%9C%D7%94_%D7%90%D7%93%D7%95%D7%9E%D7%99%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-cb654b227a": {
+      "fact": "כיכר אביגדור המאירי בהר הצופים קרויה על שם המשורר. בצדה הדרומי שער הקמפוס, בצפונה הדסה הר הצופים, במזרחה עיסאוויה, ובמערבה מעונות הסטודנטים; ב-2013 כוסו פינותיה בקירות הנצחה.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר אביגדור המאירי",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%90%D7%91%D7%99%D7%92%D7%93%D7%95%D7%A8_%D7%94%D7%9E%D7%90%D7%99%D7%A8%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-16f02c8830": {
+      "fact": "כיכר הדוידקה הוא כינויה הלא רשמי של כיכר החירות, מפגש רחוב יפו עם רחוב הנביאים ורחוב כי\"ח. שמה נובע מאכסניית הנוער \"הדווידקה\" שנמצאת בצדה השני של הכיכר.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר הדוידקה",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%94%D7%93%D7%95%D7%99%D7%93%D7%A7%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-e97e1de67e": {
+      "fact": "כיכר ספרא נבנתה ב-1993 עם קריית עיריית ירושלים, ונקראת על שם יעקב ואסתר ספרא, הוריהם של יוסף ואדמונד ספרא שתרמו לבנייתה. בקצה הכיכר פסל סביבתי של בורג ארכימדס.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר ספרא",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A1%D7%A4%D7%A8%D7%90",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-0a40ba41f5": {
+      "fact": "כיכר מוסקבה במגרש הרוסים נחנכה ב-2007 בביקור ראש עיריית מוסקבה יורי לוז'קוב, לרגל ברית ערים תאומות בין מוסקבה לתל אביב. היא ניצבת בכניסה לכנסיית השילוש הקדוש.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר מוסקבה",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%9E%D7%95%D7%A1%D7%A7%D7%91%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-36791d4325": {
+      "fact": "כיכר רומא לאורך רחוב הלל נחנכה ב-2009 בביקור ראש עיריית רומא ג'אני אלמאנו; באותו מעמד נחנכה ברומא \"כיכר ירושלים\". במרכז הכיכר לוח תלת-לשוני עם שעון שמש בספרות רומיות.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר רומא",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A8%D7%95%D7%9E%D7%90",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-ea38c67581": {
+      "fact": "כיכר שמעון אגרנט בקריית הלאום, בכניסה לבית המשפט העליון, נחנכה ב-5 ביולי 2006 במעמד אורי לופוליאנסקי ואהרן ברק. היא קרויה על שם נשיא בית המשפט העליון ויו\"ר ועדת אגרנט.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר שמעון אגרנט",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%90%D7%92%D7%A8%D7%A0%D7%98",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-161658c256": {
+      "fact": "כיכר הולנד קרויה על שם ממלכת הולנד ולזכר הצלת יהודים בהולנד בתקופת השואה. היא נמצאת בקצה שדרות הרצל, ובצידה הדרומי תחנת הרכבת הקלה הר הרצל, הקצה המערבי של הקו האדום.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — כיכר הולנד",
+          "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%94%D7%95%D7%9C%D7%A0%D7%93",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-be13ffaf09": {
+      "fact": "מעלה השלום נסלל ב-1964 בהסכמת הירדנים לקראת ביקור האפיפיור פאולוס השישי בהר ציון, ולכן כונה \"כביש האפיפיור\". הוא עובר בין חומת העיר העתיקה לגיא בן הינום, משער ציון לשער האשפות.",
+      "confidence": "high",
+      "method": "street-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — מעלה השלום",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A2%D7%9C%D7%94_%D7%94%D7%A9%D7%9C%D7%95%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-a7ce72f236": {
+      "fact": "שער יפו, \"באב אל-ח'ליל\" בערבית, הוא אחד משמונת שערי העיר העתיקה. בתקופה הצלבנית נקרא \"שער דוד\" על שם המצודה הסמוכה, וכיום הוא נקרא על שם הדרך ההיסטורית ליפו ולנמלה.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שער יפו",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-dd5bbaf6f2": {
+      "fact": "שער שכם נבנה ב-1538 בהוראת הסולטאן סולימאן המפואר. בעברית הוא קרוי על שם הדרך לשכם, ברוב השפות \"שער דמשק\", ובערבית \"שער העמוד\" על שם עמוד רומי שניצב בכיכר שלפניו. לידו מערת צדקיהו.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שער שכם",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%A9%D7%9B%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-c1ca70cede": {
+      "fact": "שער הפרחים, \"באב א-זאהרה\" בערבית, ידוע גם כשער הורדוס. הוא נמצא בחלק הצפוני של חומות ירושלים, וסמוך לו מבחוץ שכונת באב א-זהרה ומוזיאון רוקפלר.",
+      "confidence": "medium",
+      "method": "place-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שער הפרחים",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%94%D7%A4%D7%A8%D7%97%D7%99%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-775b8bc189": {
+      "fact": "יוסף טרומפלדור, יליד 1880, היה לוחם יהודי, מנהיג ציוני וחלוץ; גבורתו ונפילתו בקרב על תל חי ב-1920 הפכו אותו לדמות מופת ציונית ולגיבור לאומי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יוסף טרומפלדור",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%98%D7%A8%D7%95%D7%9E%D7%A4%D7%9C%D7%93%D7%95%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-eeb4bbe1ab": {
+      "fact": "דב הוז (1894–1940) היה מראשי תנועת העבודה, ממייסדי ארגון \"ההגנה\" ומחלוצי הטיס העברי בארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — דב הוז",
+          "url": "https://he.wikipedia.org/wiki/%D7%93%D7%91_%D7%94%D7%95%D7%96",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-a110dcc7d3": {
+      "fact": "פנחס רוזן, יליד 1887, היה חבר מנהלת העם ומחותמי מגילת העצמאות, חבר הכנסת ושר המשפטים הראשון של ישראל. הוא כיהן מהממשלה הראשונה עד התשיעית, למעט השלישית, וזכה בפרס ישראל למשפטים ב-1973.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — פנחס רוזן",
+          "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%A0%D7%97%D7%A1_%D7%A8%D7%95%D7%96%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-a3f0efd301": {
+      "fact": "משה סנה (1909–1972) היה ראש המפקדה הארצית של \"ההגנה\", הוגה דעות, חבר הכנסת, מנהיג ופובליציסט. במקצועו היה רופא.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — משה סנה",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%A0%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-96c4e29bac": {
+      "fact": "יגאל אלון היה מפקד הפלמ\"ח, ממפקדי צה\"ל במלחמת העצמאות וראש ממשלת ישראל בפועל במשך 19 יום. הוא פיקד על כיבוש הגליל, לוד ורמלה והנגב עד אילת, ולימים כיהן כסגן ראש הממשלה ושר.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יגאל אלון",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%92%D7%90%D7%9C_%D7%90%D7%9C%D7%95%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-c3a15775b8": {
+      "fact": "יצחק שדה, שכונה \"הזקן\", היה אלוף בצה\"ל וממקימיו, מפקד, אסטרטג ומחנך. הוא היה ממפקדי \"ההגנה\", ממייסדי הפלמ\"ח ומפקדו הראשון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יצחק שדה",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%93%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-899451021e": {
+      "fact": "אורד צ'ארלס וינגייט היה קצין בריטי נוצרי-ציוני שיזם ב-1938 את פלגות הלילה המיוחדות, שבהן שולבו חיילים בריטים עם חברי \"ההגנה\". הוא כונה \"הידיד\" ונהרג בהתרסקות מטוס בהודו ב-1944.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אורד צ'ארלס וינגייט",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%93_%D7%A6'%D7%90%D7%A8%D7%9C%D7%A1_%D7%95%D7%99%D7%A0%D7%92%D7%99%D7%99%D7%98",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "usishkin": {
+      "fact": "מנחם אוסישקין (1863–1941) היה מראשי הציונות, איש חובבי ציון ומנהיג \"ציוני ציון\". הוא יזם וניהל את \"הכנסייה הארצישראלית\", הקים מוסדות ציוניים ועמד בראש קרן קיימת לישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — מנחם אוסישקין",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%97%D7%9D_%D7%90%D7%95%D7%A1%D7%99%D7%A9%D7%A7%D7%99%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-f30f05243a": {
+      "fact": "מקס נורדאו (1849–1923) היה הוגה דעות, נואם, סופר ורופא יליד הונגריה, ממייסדי התנועה הציונית והוגה חזון \"יהדות השרירים\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — מקס נורדאו",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%A1_%D7%A0%D7%95%D7%A8%D7%93%D7%90%D7%95",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-6df7c87516": {
+      "fact": "יצחק רבין היה הרמטכ\"ל במלחמת ששת הימים, ראש הממשלה החמישי וחתן פרס נובל לשלום על הסכמי אוסלו. הוא נולד ב-1922 ונרצח ב-4 בנובמבר 1995.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יצחק רבין",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%91%D7%99%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-9fac25b573": {
+      "fact": "משה שמיר (1921–2004) היה סופר, מחזאי, פובליציסט ועורך, מחשובי הסופרים הישראליים וחתן פרס ישראל לספרות ב-1988. הוא היה חבר הכנסת התשיעית וממקימי מפלגת התחיה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — משה שמיר",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%9E%D7%99%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "moshe-dayan": {
+      "fact": "משה דיין היה הרמטכ\"ל הרביעי, שר הביטחון במלחמת ששת הימים ובמלחמת יום הכיפורים, ושר החוץ בחתימת הסכם השלום עם מצרים. הוא סימל את טיפוס ה\"צבר\" — ברובה ביד אחת ובמחרשה בשנייה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — משה דיין",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%93%D7%99%D7%99%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-622a78c27f": {
+      "fact": "הרב אבא הלל סילבר (1893–1963) היה רב רפורמי ומדינאי יהודי, מראשי התנועה הציונית בארצות הברית, שפעל רבות במישור הדיפלומטי למען הקמת מדינת ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אבא הלל סילבר",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%94%D7%9C%D7%9C_%D7%A1%D7%99%D7%9C%D7%91%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-4af04ffea8": {
+      "fact": "לורד הרברט סמואל היה מדינאי יהודי-בריטי, חבר הפרלמנט ושר בממשלת בריטניה, ששימש הנציב העליון הראשון על ארץ ישראל בתקופת המנדט. אנשי היישוב כינוהו \"הנציב הראשון ליהודה\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — הרברט סמואל",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%91%D7%A8%D7%98_%D7%A1%D7%9E%D7%95%D7%90%D7%9C",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-f77588fcb2": {
+      "fact": "ארתור ג'יימס בלפור היה ראש ממשלת בריטניה (1902–1905) ושר החוץ, וזכה להערכת הציונות כאביה של הצהרת בלפור, ש\"ראתה בעין יפה\" בית לאומי ליהודים בארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — ארתור ג'יימס בלפור",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%AA%D7%95%D7%A8_%D7%92'%D7%99%D7%99%D7%9E%D7%A1_%D7%91%D7%9C%D7%A4%D7%95%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-177f2feda5": {
+      "fact": "אשר צבי גינצברג, הידוע בשם-העט אחד העם, היה מראשי הוגי \"הציונות הרוחנית\" ומהחשובים במנסחי הזהות היהודית החילונית-לאומית. הוא התנגד לציונות המדינית של הרצל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אחד העם",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%97%D7%93_%D7%94%D7%A2%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-722703ace3": {
+      "fact": "חיים נחמן ביאליק (1873–1934) היה משורר, סופר, מסאי, מתרגם ועורך, מזכה לתואר \"המשורר הלאומי\". יצירותיו, ובראשן שירתו הלירית, השפיעו רבות על התרבות העברית החדשה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — חיים נחמן ביאליק",
+          "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%97%D7%9E%D7%9F_%D7%91%D7%99%D7%90%D7%9C%D7%99%D7%A7",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-d6da6c1a71": {
+      "fact": "שאול טשרניחובסקי היה רופא, משורר עברי ומתרגם, מגדולי המשוררים העבריים בארץ ישראל. שירתו מזוהה עם שירת הטבע והושפעה מתרבות יוון העתיקה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שאול טשרניחובסקי",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%95%D7%9C_%D7%98%D7%A9%D7%A8%D7%A0%D7%99%D7%97%D7%95%D7%91%D7%A1%D7%A7%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-de564538d1": {
+      "fact": "ש\"י עגנון, חתן פרס נובל לספרות ב-1966, היה הראשון והיחיד עד כה מהישראלים שזכה בפרס. בין יצירותיו \"תמול שלשום\", \"אורח נטה ללון\" ו\"סיפור פשוט\"; הוא עלה לארץ ב-1908 ושוב ב-1924.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שמואל יוסף עגנון",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%99%D7%95%D7%A1%D7%A3_%D7%A2%D7%92%D7%A0%D7%95%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-c34d403e94": {
+      "fact": "שלום עליכם, מחשובי הקלאסיקונים של ספרות היידיש, נולד ב-1859 ברוסיה. את רוב יצירותיו כתב ביידיש, וחלקן בעברית וברוסית; סיפוריו תיארו את תרבות יהדות מזרח אירופה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שלום עליכם",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%9C%D7%99%D7%9B%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-bb12364020": {
+      "fact": "שלום יעקב אברמוביץ', הידוע בשם-העט מנדלי מוכר ספרים, היה \"הסבא\" של הספרות העברית והיידית המודרנית. בן הדור האחרון להשכלה וראשון סופרי תקופת התחייה, יצר נוסח ספרותי מקורי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — מנדלי מוכר ספרים",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%93%D7%9C%D7%99_%D7%9E%D7%95%D7%9B%D7%A8_%D7%A1%D7%A4%D7%A8%D7%99%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-f9a31faec3": {
+      "fact": "אהרן דוד גורדון, \"הצדיק החילוני\", היה חלוץ ופועל חקלאי, הוגה ומורה-דרך בתקופת העלייה השנייה והשלישית, ומנהיג \"הפועל הצעיר\". תורת המוסר שלו כונתה על ידי בני דורו \"דת העבודה\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אהרן דוד גורדון",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%93%D7%95%D7%93_%D7%92%D7%95%D7%A8%D7%93%D7%95%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-3b0f9643be": {
+      "fact": "שמעון בר כוכבא הנהיג את המרד היהודי הגדול האחרון נגד רומא, שלט שלוש שנים בחלקים מארץ ישראל בתואר \"נשיא ישראל\", ומת ב-135. שמו האמיתי, שמעון בן כוסבה, התגלה רק בחפירות במאה ה-20.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — בר כוכבא",
+          "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8_%D7%9B%D7%95%D7%9B%D7%91%D7%90",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-bb1555c74e": {
+      "fact": "יוסף בן מתתיהו, היסטוריון ומצביא יהודי, נפל בשבי הרומאים ביודפת וזכה לאזרחות רומית בשם טיטוס פלאוויוס יוספוס. חיבוריו \"מלחמת היהודים\" ו\"קדמוניות היהודים\" השתמרו בשלמותם, בין היתר בזכות חשיבותם לתאולוגיה הנוצרית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יוסף בן מתתיהו",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%91%D7%9F_%D7%9E%D7%AA%D7%AA%D7%99%D7%94%D7%95",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-d6ce1b6d7f": {
+      "fact": "מרטין בובר היה פילוסוף ומחנך, שפיתח \"פילוסופיה דיאלוגית\" ביצירתו \"אני ואתה\". הוא עסק בסיפורים חסידיים ובתרגום התנ\"ך לגרמנית, היה חבר \"ברית שלום\" ותמך במדינה דו-לאומית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — מרטין בובר",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%98%D7%99%D7%9F_%D7%91%D7%95%D7%91%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-c8d39ace84": {
+      "fact": "רבי שלמה אבן גבירול (1021–1058) היה משורר ופילוסוף יהודי בתור הזהב של ספרד, מגדולי המשוררים בספרות העברית לדורותיה. כתיבתו העמוקה והמליצית מיוחדת בסגנונה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שלמה אבן גבירול",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%91%D7%9F_%D7%92%D7%91%D7%99%D7%A8%D7%95%D7%9C",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-e7587c156b": {
+      "fact": "רבי שמואל הנגיד (993–1056) היה רב, פוסק, משורר, מדקדק, מצביא ומדינאי, ראש רבני ספרד ומשנה למלך גרנדה. הוא נחשב למשורר העברי הגדול הראשון בתור הזהב של יהדות ספרד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שמואל הנגיד",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%92%D7%99%D7%93",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "alharizi": {
+      "fact": "יהודה אלחריזי (1165–1225) היה נוסע, משורר, יוצר ומתרגם יהודי-ספרדי. הוא נולד בטולדו שבקסטיליה ונפטר בחלב שבסוריה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יהודה אלחריזי",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%9C%D7%97%D7%A8%D7%99%D7%96%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-3e887efcb3": {
+      "fact": "רשב\"ם, רבי שמואל בן מאיר (1080–1160 בקירוב), היה פרשן מקרא ותלמוד, נכדו ותלמידו של רש\"י ומבעלי התוספות. הוא נודע בנטייתו להיצמד לפשט המקרא ובפירושו למסכת בבא בתרא.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רשב\"ם",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%91%22%D7%9D",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-f1267ee143": {
+      "fact": "הרב בן-ציון מאיר חי עוזיאל היה הראשון לציון מ-1939 והרב הראשי הספרדי הראשון של מדינת ישראל. הוא נודע כפוסק והוגה מקורי, שספריו בהלכה ובאגדה התאפיינו בשכל ישר ובתפיסה רחבה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — בן-ציון מאיר חי עוזיאל",
+          "url": "https://he.wikipedia.org/wiki/%D7%91%D7%9F-%D7%A6%D7%99%D7%95%D7%9F_%D7%9E%D7%90%D7%99%D7%A8_%D7%97%D7%99_%D7%A2%D7%95%D7%96%D7%99%D7%90%D7%9C",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-ed116e7e17": {
+      "fact": "הרב יצחק אייזיק הלוי הרצוג היה הרב הראשי האשכנזי של ארץ ישראל ושל מדינת ישראל מ-1936 עד פטירתו ב-1959, ולפני כן רבה הראשי של יהדות אירלנד. הוא תרם רבות להלכות המדינה ולחידוש מצוות התכלת.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יצחק אייזיק הלוי הרצוג",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%99%D7%99%D7%96%D7%99%D7%A7_%D7%94%D7%9C%D7%95%D7%99_%D7%94%D7%A8%D7%A6%D7%95%D7%92",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-e306399557": {
+      "fact": "הרב חיים יוסף דוד אזולאי, החיד\"א (1724–1806), היה פוסק, דיין, שד\"ר ומקובל מגדולי האחרונים. הוא חיבר עשרות ספרים תורניים, ובהם חיבורים ביבליוגרפיים ואוטוביוגרפיים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — חיים יוסף דוד אזולאי",
+          "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%95%D7%A1%D7%A3_%D7%93%D7%95%D7%93_%D7%90%D7%96%D7%95%D7%9C%D7%90%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "haari": {
+      "fact": "רבי יצחק לוריא (1534–1572), האר\"י הקדוש, היה גדול מקובלי צפת במאה ה-16 והוגה שיטה חדשה בקבלה. שיטתו, \"קבלת האר\"י\", אומצה בבתי מדרש רבים, ולמרות פטירתו בגיל צעיר השפיעה על דורות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — האר\"י",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%22%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-6cd4696548": {
+      "fact": "רבי ישראל בן אליעזר, הבעל שם טוב, היה מקובל ומנהיג ציבור במזרח אירופה, הנחשב לאבי תנועת החסידות. הוא הדגיש את כוונת התפילה, קדושת האותיות ואת השמחה כדרך לדבקות באל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — הבעל שם טוב",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%A2%D7%9C_%D7%A9%D7%9D_%D7%98%D7%95%D7%91",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-b43cc12398": {
+      "fact": "הגאון מווילנה, הרב אליהו בן שלמה זלמן (1720–1797), היה פוסק, מקובל ואיש אשכולות, סמכות רבנית עליונה בתקופת האחרונים. הוא סירב לשמש רב בווילנה והנהיג את ההתנגדות לחסידות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — הגאון מווילנה",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%92%D7%90%D7%95%D7%9F_%D7%9E%D7%95%D7%95%D7%99%D7%9C%D7%A0%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-3361bd9b1d": {
+      "fact": "הרב אלעזר מנחם מן שך (1899–2001) היה ראש ישיבת פוניבז' ונשיא מועצת גדולי התורה. משנות ה-70 הנהיג את רוב הציבור החרדי-ליטאי, ייסד את דגל התורה ואת העיתון \"יתד נאמן\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אלעזר מנחם מן שך",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A2%D7%96%D7%A8_%D7%9E%D7%A0%D7%97%D7%9D_%D7%9E%D7%9F_%D7%A9%D7%9A",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-4168f886e1": {
+      "fact": "הרב אברהם ישעיהו קרליץ (1878–1953), המכונה \"החזון איש\" על שם ספריו, היה מגדולי הפוסקים החרדים-ליטאים וממעצבי דרכה של היהדות החרדית בישראל. הוא לא שימש במשרה רבנית רשמית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אברהם ישעיהו קרליץ",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95_%D7%A7%D7%A8%D7%9C%D7%99%D7%A5",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-d1c386f130": {
+      "fact": "רבי רפאל ברוך טולדנו (1890–1970) היה אב בית הדין ורבה של מקנס שבמרוקו. הוא חיבר \"קיצור שולחן ערוך\" על בסיס פסקי \"כף החיים\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רפאל ברוך טולידאנו",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%A4%D7%90%D7%9C_%D7%91%D7%A8%D7%95%D7%9A_%D7%98%D7%95%D7%9C%D7%99%D7%93%D7%90%D7%A0%D7%95",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-1b67d4fdd0": {
+      "fact": "הרב יחזקאל סרנא (1890–1969) היה ראש ישיבת חברון כנסת ישראל וחבר מועצת גדולי התורה. הוא הוביל את מעבר הישיבה מסלובודקה לחברון ב-1925, ולאחר מאורעות תרפ\"ט — לירושלים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יחזקאל סרנא",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C_%D7%A1%D7%A8%D7%A0%D7%90",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-a07352506e": {
+      "fact": "הרב איסר יהודה אונטרמן (1886–1976) היה ממנהיגי תנועת המזרחי, רבה הראשי של תל אביב והרב הראשי האשכנזי השלישי של מדינת ישראל. הוא זכה בפרס הרב קוק לספרות תורנית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — איסר יהודה אונטרמן",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%A8_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%90%D7%95%D7%A0%D7%98%D7%A8%D7%9E%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-b92c54516c": {
+      "fact": "הרב יעקב משה חרל\"פ (1882–1951) היה רב, פוסק ומקובל, ראש ישיבות \"מרכז הרב\" ו\"בית זבול\" ורב שכונות שערי חסד ורחביה. הוא היה מתלמידיו המובהקים של הראי\"ה קוק וחיבר את סדרת \"מי מרום\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יעקב משה חרל\"פ",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%9E%D7%A9%D7%94_%D7%97%D7%A8%D7%9C%22%D7%A4",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "rabbi-zvi-yehuda": {
+      "fact": "הרב צבי יהודה הכהן קוק, הרצי\"ה, היה ראש ישיבת מרכז הרב ומנהיג רוחני בולט של הציונות הדתית, ומהאידאולוגים של רעיון ארץ ישראל השלמה. הוא היה בנו ותלמידו של הרב אברהם יצחק הכהן קוק.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — צבי יהודה הכהן קוק",
+          "url": "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%94%D7%9B%D7%94%D7%9F_%D7%A7%D7%95%D7%A7",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-497edd21ff": {
+      "fact": "הרב שמואל סלנט (1816–1909) היה מורה הוראה ורבם ומנהיגם של האשכנזים בירושלים במשך כ-44 שנים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שמואל סלנט",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%A1%D7%9C%D7%A0%D7%98",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-09ab6fcb34": {
+      "fact": "הרב יוסף חיים זוננפלד (1848–1932) היה רבה הראשון של העדה החרדית בירושלים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יוסף חיים זוננפלד",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%99%D7%99%D7%9D_%D7%96%D7%95%D7%A0%D7%A0%D7%A4%D7%9C%D7%93",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-f63672ae8a": {
+      "fact": "הרב יוסף שלום אלישיב (1910–2012) היה למדן אוטודידקט ופוסק הלכה נודע, שהנהיג את הציבור הליטאי לאחר פטירת הרב שך.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יוסף שלום אלישיב",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A9%D7%9C%D7%95%D7%9D_%D7%90%D7%9C%D7%99%D7%A9%D7%99%D7%91",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-dd91bcc1cf": {
+      "fact": "הרב חיים דוד הלוי (1924–1998) היה פוסק והוגה דעות, שכיהן כרבה הספרדי הראשי של ראשון לציון וכרבה הראשי של תל אביב-יפו. הוא זכה בפרס ישראל לספרות תורנית ובפרס הרב קוק.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — חיים דוד הלוי",
+          "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%93%D7%95%D7%93_%D7%94%D7%9C%D7%95%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-93e570de8b": {
+      "fact": "הרב יצחק כדורי (1898–2006) היה מקובל ישראלי בולט, שכונה בשנותיו האחרונות \"זקן המקובלים\". הוא עמד בראשות ישיבת המקובלים \"נחלת יצחק\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יצחק כדורי",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%9B%D7%93%D7%95%D7%A8%D7%99",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-caea1680c2": {
+      "fact": "הרב שלום משאש (1909–2003) כיהן כרבה הראשי של קזבלנקה, כרב הראשי למרוקו במשך שש שנים וכרבה הראשי הספרדי של ירושלים במשך 25 שנה. את ספרו הראשון, \"מזרח שמ\"ש\", כתב בגיל 17.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — שלום משאש",
+          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%9E%D7%A9%D7%90%D7%A9",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-83cbf962a2": {
+      "fact": "חכם עזרא עטייה (1887–1970) היה ראש ישיבת פורת יוסף וממעצבי דרכה של היהדות החרדית-ספרדית בארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — עזרא עטייה",
+          "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%90_%D7%A2%D7%98%D7%99%D7%99%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-369e874a9a": {
+      "fact": "הרב יהודה צדקה (1910–1991) היה ראש ישיבת פורת יוסף, רב ספרדי בולט וממייסדי רשת החינוך התורנית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יהודה צדקה",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%A6%D7%93%D7%A7%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-19cb84386a": {
+      "fact": "ברכה צפירה (1910–1990) הייתה זמרת פופולרית בארץ ישראל משנות ה-30 וחלוצת הזמר העברי. שיתוף הפעולה שלה עם המלחין נחום נרדי נחשב לאבן דרך ביצירת סגנון מוזיקלי ישראלי מקורי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — ברכה צפירה",
+          "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%9B%D7%94_%D7%A6%D7%A4%D7%99%D7%A8%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-db1129e6c3": {
+      "fact": "היינריך היינה (1797–1856) היה משורר, פילוסוף, פובליציסט ומבקר ספרות יהודי-גרמני, מגדולי הספרות הגרמנית במאה ה-19. הוא נחשב גם למשורר רומנטי וגם למי שהפנה עורף לזרם.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — היינריך היינה",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%99%D7%99%D7%A0%D7%A8%D7%99%D7%9A_%D7%94%D7%99%D7%99%D7%A0%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-7ffa1d0335c3": {
+      "fact": "ישראל (אוסקר) גרוזנברג (1866–1940) היה אחד מגדולי הפרקליטים היהודיים ברוסיה ולוחם למען זכויות היהודים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אוסקר גרוזנברג",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A1%D7%A7%D7%A8_%D7%92%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%A8%D7%92",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-20a62574da": {
+      "fact": "לאה גולדברג (1911–1970) הייתה משוררת, סופרת, מתרגמת, מחזאית וחוקרת ספרות, מגדולי המשוררות העבריות בעת החדשה. היא כלת פרס ישראל לספרות ולשירה לשנת 1970 ופרופסור באוניברסיטה העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — לאה גולדברג",
+          "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%90%D7%94_%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%A8%D7%92",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-7116d443ba": {
+      "fact": "רחל בלובשטיין (1890–1931), המוכרת בשם-העט \"רחל\", הייתה מהמשוררות הבולטות בשירה העברית הקלאסית המחודשת.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — רחל המשוררת",
+          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%9C_%D7%94%D7%9E%D7%A9%D7%95%D7%A8%D7%A8%D7%AA",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-6e21d46bf0": {
+      "fact": "שיינא זלדה שניאורסון-מישקובסקי (1914–1984), המוכרת בשם זלדה, הייתה משוררת ישראלית וחסידת חב\"ד, מחברת השיר \"לכל איש יש שם\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — זלדה",
+          "url": "https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%93%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-1878cb9aa2": {
+      "fact": "יהודה לייב מאגנס (1877–1948) היה רב רפורמי, ממנהיגי הקהילה הרפורמית בארצות הברית, קנצלר האוניברסיטה העברית בירושלים ונשיאה הראשון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יהודה לייב מאגנס",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%9E%D7%90%D7%92%D7%A0%D7%A1",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "david-yellin": {
+      "fact": "דוד ילין (1864–1941) היה מורה, חוקר העברית ואיש ציבור, מראשי היישוב. הוא ייסד את מכללת דוד ילין, היה ממייסדי הסתדרות המורים וועד הלשון העברית, יו\"ר הוועד הלאומי וממקימי זיכרון משה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — דוד ילין",
+          "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%99%D7%9C%D7%99%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-7353e1f9de": {
+      "fact": "בן-ציון דינור (1884–1973) היה היסטוריון, מחנך, חבר הכנסת הראשונה ושר החינוך, שיזם את מפעל פרס ישראל. הוא היה ממייסדי \"יד ושם\" ויו\"ר ההנהלה הראשון שלו, וחתן פרס ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — בן-ציון דינור",
+          "url": "https://he.wikipedia.org/wiki/%D7%91%D7%9F-%D7%A6%D7%99%D7%95%D7%9F_%D7%93%D7%99%D7%A0%D7%95%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-99df6a5146": {
+      "fact": "הנרייטה סאלד (1860–1945) הייתה פעילת ציבור ואשת חינוך שהקדישה חייה לציונות. היא הקימה את \"הדסה\", הובילה את \"עליית הנוער\" וייסדה מוסדות לילד ולנוער בארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — הנרייטה סאלד",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%A8%D7%99%D7%99%D7%98%D7%94_%D7%A1%D7%90%D7%9C%D7%93",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-36ffb66e51": {
+      "fact": "ליאו מוצקין (1867–1933) היה פוליטיקאי יהודי, מאבות הציונות ומיוזמי הקונגרס הציוני, שכיהן כיו\"ר השני של הוועד הפועל הציוני. רוב חייו חי בגרמניה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — ליאו מוצקין",
+          "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%90%D7%95_%D7%9E%D7%95%D7%A6%D7%A7%D7%99%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-fac3a4e75a": {
+      "fact": "נחום סוקולוב (1859–1936) היה סופר, מתרגם ועיתונאי, נשיא ההסתדרות הציונית העולמית החמישי ועורך \"הצפירה\". הוא נחשב ממנהיגיה הבולטים של התנועה הציונית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — נחום סוקולוב",
+          "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%A1%D7%95%D7%A7%D7%95%D7%9C%D7%95%D7%91",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-ca39719c83": {
+      "fact": "חיים ארלוזורוב (1899–1933) היה מדינאי וכלכלן, מראשי תנועת העבודה וראש המחלקה המדינית של הסוכנות היהודית. הוא נרצח בחוף תל אביב ביוני 1933.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — חיים ארלוזורוב",
+          "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%90%D7%A8%D7%9C%D7%95%D7%96%D7%95%D7%A8%D7%95%D7%91",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-756dca597c": {
+      "fact": "דוד רמז (1886–1951) היה ממנהיגי היישוב, יו\"ר הוועד הלאומי, מזכ\"ל ההסתדרות, חבר הכנסת ושר בממשלות ישראל, ומחותמי מגילת העצמאות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — דוד רמז",
+          "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A8%D7%9E%D7%96",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-969d33cd2b": {
+      "fact": "משה שרת היה ראש הממשלה השני של ישראל (1954–1955) ושר החוץ הראשון. הוא היה מראשי הנהגת היישוב, מחותמי מגילת העצמאות, והקים את שירות החוץ הישראלי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — משה שרת",
+          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%A8%D7%AA",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-f27865653e": {
+      "fact": "אבא אבן היה דיפלומט ומדינאי, סגן ראש הממשלה, שר החוץ, שר החינוך ושגריר ישראל באו\"ם ובארצות הברית. הוא נודע בכושר הביטוי המבריק שלו ונחשב \"הדיפלומט מספר אחת\" של ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — אבא אבן",
+          "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%90%D7%91%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-6d0daf74d6": {
+      "fact": "הארי טרומן, נשיא ארצות הברית ה-33, הכיר במדינת ישראל דקות ספורות לאחר הקמתה והיה המנהיג הזר הראשון שעשה כן. הוא הוביל את סיום מלחמת העולם השנייה ואת ראשית המלחמה הקרה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — הארי טרומן",
+          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%D7%99_%D7%98%D7%A8%D7%95%D7%9E%D7%9F",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-8c9a2c232f": {
+      "fact": "צ'יאונה סוגיהארה היה דיפלומט יפני, שבכהונתו כקונסול בקובנה שבליטא הציל בעת השואה את חייהם של אלפי יהודים מפולין ומליטא. על כך הוענק לו תואר חסיד אומות העולם.",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — צ'יאונה סוגיהארה",
+          "url": "https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%90%D7%95%D7%A0%D7%94_%D7%A1%D7%95%D7%92%D7%99%D7%94%D7%90%D7%A8%D7%94",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
+    },
+    "jlm-458da1854a": {
+      "fact": "יולנדה הארמר (1913–1957) הייתה עיתונאית יהודייה-מצרית שריגלה במצרים עבור המחלקה המדינית של הסוכנות היהודית ועבור מדינת ישראל בשנים 1945–1951, וכונתה \"מאטה הארי הישראלית\".",
+      "confidence": "medium",
+      "method": "person-article",
+      "sources": [
+        {
+          "label": "ויקיפדיה העברית — יולנדה הארמר",
+          "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%9C%D7%A0%D7%93%D7%94_%D7%94%D7%90%D7%A8%D7%9E%D7%A8",
+          "kind": "content"
+        },
+        {
+          "label": "data.gov.il — מאגר הרחובות",
+          "url": "https://data.gov.il/dataset/321",
+          "kind": "identity"
+        }
+      ]
     }
   }
 }

@@ -1,0 +1,10 @@
+street_id: jlm-43ecfd0492
+street_name: דרך מעלה אדומים
+area: צמרת הבירה
+fact: דרך מעלה אדומים היא מעלה עתיק מבקעת הירדן לירושלים. לאורך הציר נמצאו שרידי מצודות מהתקופות הרומית, הביזנטית, הצלבנית והממלוכית, המעידים על חשיבותו הצבאית.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%9E%D7%A2%D7%9C%D7%94_%D7%90%D7%93%D7%95%D7%9E%D7%99%D7%9D
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

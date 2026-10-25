@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-ed116e7e17",
+  "street_name": "הרב הרצוג",
+  "area": "רסקו (גבעת הוורדים)",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "הרב יצחק אייזיק הלוי הרצוג היה הרב הראשי האשכנזי של ארץ ישראל ושל מדינת ישראל מ-1936 עד פטירתו ב-1959, ולפני כן רבה הראשי של יהדות אירלנד. הוא תרם רבות להלכות המדינה ולחידוש מצוות התכלת.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצחק אייזיק הלוי הרצוג",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%99%D7%99%D7%96%D7%99%D7%A7_%D7%94%D7%9C%D7%95%D7%99_%D7%94%D7%A8%D7%A6%D7%95%D7%92",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

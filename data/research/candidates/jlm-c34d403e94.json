@@ -1,0 +1,31 @@
+{
+  "street_id": "jlm-c34d403e94",
+  "street_name": "שלום עליכם",
+  "area": "ימין משה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [],
+  "fact": "שלום עליכם, מחשובי הקלאסיקונים של ספרות היידיש, נולד ב-1859 ברוסיה. את רוב יצירותיו כתב ביידיש, וחלקן בעברית וברוסית; סיפוריו תיארו את תרבות יהדות מזרח אירופה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שלום עליכם",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%9C%D7%99%D7%9B%D7%9D",
+      "kind": "content"
+    },
+    {
+      "label": "data.gov.il — מאגר הרחובות",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,10 @@
+street_id: jlm-6df7c87516
+street_name: יצחק רבין
+area: קרית הממשלה
+fact: יצחק רבין היה הרמטכ"ל במלחמת ששת הימים, ראש הממשלה החמישי וחתן פרס נובל לשלום על הסכמי אוסלו. הוא נולד ב-1922 ונרצח ב-4 בנובמבר 1995.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%91%D7%99%D7%9F
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

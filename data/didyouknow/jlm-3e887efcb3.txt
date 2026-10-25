@@ -1,0 +1,10 @@
+street_id: jlm-3e887efcb3
+street_name: רשב"ם
+area: מקור ברוך
+fact: רשב"ם, רבי שמואל בן מאיר (1080–1160 בקירוב), היה פרשן מקרא ותלמוד, נכדו ותלמידו של רש"י ומבעלי התוספות. הוא נודע בנטייתו להיצמד לפשט המקרא ובפירושו למסכת בבא בתרא.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%91%22%D7%9D
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

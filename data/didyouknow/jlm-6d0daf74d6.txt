@@ -1,0 +1,10 @@
+street_id: jlm-6d0daf74d6
+street_name: הארי טרומן
+area: רמות א'
+fact: הארי טרומן, נשיא ארצות הברית ה-33, הכיר במדינת ישראל דקות ספורות לאחר הקמתה והיה המנהיג הזר הראשון שעשה כן. הוא הוביל את סיום מלחמת העולם השנייה ואת ראשית המלחמה הקרה.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%A8%D7%99_%D7%98%D7%A8%D7%95%D7%9E%D7%9F
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

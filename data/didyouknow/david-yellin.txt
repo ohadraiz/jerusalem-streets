@@ -1,0 +1,10 @@
+street_id: david-yellin
+street_name: דוד ילין
+area: זכרון משה
+fact: דוד ילין (1864–1941) היה מורה, חוקר העברית ואיש ציבור, מראשי היישוב. הוא ייסד את מכללת דוד ילין, היה ממייסדי הסתדרות המורים וועד הלשון העברית, יו"ר הוועד הלאומי וממקימי זיכרון משה.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%99%D7%9C%D7%99%D7%9F
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article
