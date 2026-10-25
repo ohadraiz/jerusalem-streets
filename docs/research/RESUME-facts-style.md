@@ -1,6 +1,6 @@
 # Street facts: current state
 
-Status: style upgrade of the 350-fact expansion is COMPLETE and promoted locally. Public commit/push awaits explicit user approval. The separate goal of 1,000 additional facts (1,500 total) has NOT started.
+Status: style upgrade of the 350-fact expansion is COMPLETE, published to the beta site, and verified live (500 facts). The separate goal of 1,000 additional facts (1,500 total) has NOT started.
 
 ## Completed in this pass
 
@@ -28,7 +28,7 @@ Status: style upgrade of the 350-fact expansion is COMPLETE and promoted locally
 
 ## Next steps
 
-1. Obtain explicit user approval, then commit/push only the intended `data/` files.
+1. The data is published in commit `001a388` and live on the beta site. Because beta and the public app share `data/didyouknow`, the public app also serves the 500 facts.
 2. If continuing expansion: target is 1,000 additional facts (1,500 total). About 339 previously fetched candidates remain unused; further work needs new street-name matching and source collection.
 3. Temporary research cache: `C:/Users/ohadr/AppData/Local/Temp/opencode/jlm`.
    - `rewritten.json`: per-ID before/after and keep markers.
