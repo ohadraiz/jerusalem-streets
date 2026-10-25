@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-25T11:26:56.548Z",
+  "generatedAt": "2026-10-25T13:01:14.849Z",
   "teams": [
     {
-      "key": "UI/UX",
-      "label": "UI/UX",
+      "key": "DESIGN",
+      "label": "DESIGN",
       "icon": "DESIGN",
       "sourceTitle": "צוות UI/UX",
       "note": "סבב 046 סגור · 046.1 ליטוש בביצוע",
@@ -15,8 +15,8 @@
       ]
     },
     {
-      "key": "DEV",
-      "label": "DEV",
+      "key": "DESKTOP",
+      "label": "DESKTOP",
       "icon": "DESKTOP",
       "sourceTitle": "צוות פיתוח",
       "note": "Core/Infra",
@@ -28,8 +28,8 @@
       ]
     },
     {
-      "key": "NET",
-      "label": "NET",
+      "key": "WEB",
+      "label": "WEB",
       "icon": "WEB",
       "sourceTitle": "צוות חיבור לרשת",
       "note": "Map/Network",
@@ -41,23 +41,8 @@
       ]
     },
     {
-      "key": "נתונים",
-      "label": "נתונים",
-      "icon": "MAP",
-      "sourceTitle": "צוות נתונים ומפות",
-      "note": "רשימת הרחובות, הגיאומטריה, השבילים, הפוליגונים והמיזוג לנתונים",
-      "standby": false,
-      "owner": "מפי",
-      "owners": [
-        "מפי",
-        "המגשר",
-        "הראשי",
-        "קיפי"
-      ]
-    },
-    {
-      "key": "Research",
-      "label": "Research",
+      "key": "ANNOUNCEMENT",
+      "label": "ANNOUNCEMENT",
       "icon": "ANNOUNCEMENT",
       "sourceTitle": "צוות מחקר ותוכן",
       "note": "Research/Content",
@@ -69,22 +54,8 @@
       ]
     },
     {
-      "key": "החלטות",
-      "label": "החלטות",
-      "icon": "DECISION",
-      "sourceTitle": "צוות החלטות והקפאות",
-      "note": "החלטות משתמש פתוחות, פריטים שנדחו ומקפאים — ממתינים להכרעה או לאישור",
-      "standby": false,
-      "owner": "הראשי",
-      "owners": [
-        "הראשי",
-        "קיפי",
-        "החוקר"
-      ]
-    },
-    {
-      "key": "Mobile/Deploy",
-      "label": "Mobile/Deploy",
+      "key": "MOBILE",
+      "label": "MOBILE",
       "icon": "MOBILE",
       "sourceTitle": "צוות מובייל והפצה",
       "note": "MOBILE מובייל פעיל · STANDBY הפצה ב-standby",
@@ -102,7 +73,7 @@
       "id": "MOB-1",
       "title": "אבחון מוכנות PWA",
       "description": "manifest, אייקונים, Service Worker, offline, התקנה, safe-area, מכשיר אמיתי",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -124,33 +95,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 33,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "MOB-2",
       "title": "שלד installable",
       "description": "manifest, אייקונים 192/512/maskable, Service Worker, עמוד לא-מקוון, theme-color",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -172,33 +123,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 34,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "MOB-3",
       "title": "ליבה ללא רשת",
       "description": "רשימה, חיפוש, סימון וסטטיסטיקות עובדים; מפה במצב מוסבר",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -220,33 +151,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 35,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "MOB-4",
       "title": "התקנה ועדכון",
       "description": "התקנה ב-Android/iOS, מסך מלא, safe-area, זרימת עדכון גרסה בטוחה",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -268,33 +179,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 36,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "MOB-5",
       "title": "ביצועים ומכשיר אמיתי",
       "description": "320–430px, iOS Safari + Android Chrome, Lighthouse, זמני טעינה",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -316,33 +207,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 37,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "REL-1",
       "title": "בחירת ספק אחסון",
       "description": "Cloudflare Pages / Netlify / GitHub Pages / Vercel — ריפו פרטי, דומיין, כותרות, עלות",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -364,33 +235,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 38,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "REL-2",
       "title": "צינור פריסה",
       "description": "CI, רשימת פרסום, HTTPS, CSP וכותרות אבטחה",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -412,33 +263,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 39,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "REL-3",
       "title": "שחרור וגלגול אחורה",
       "description": "גרסה, CHANGELOG, שערי קבלה, rollback מתועד",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -460,33 +291,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 40,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "REL-4",
       "title": "פרטיות, נגישות וניטור",
       "description": "דף פרטיות, הצהרת נגישות, ייחוס OSM, בדיקת זמינות",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -508,33 +319,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 41,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "REL-5",
       "title": "בדיקות אחרי עלייה",
       "description": "smoke בדסקטופ ובמובייל, כותרות, 404, גלגול אחורה",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
         "build",
         "review",
@@ -556,33 +347,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 42,
-      "context": "צוות מובייל והפצה",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "gabbai",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מובייל והפצה"
     },
     {
       "id": "UX-1",
       "title": "אימות גלילת מפה בלחיצת שכונה",
       "description": "`scrollIntoView` על `#map-section` עובד ב-360/390/430/1280",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -603,27 +374,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 63,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-2",
       "title": "כפתור \"סיום ידני\" + הערה",
       "description": "מימוש מלא: prompt → שמירה → badge \"הושלמה ידנית\" + undo",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -644,27 +401,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 64,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-3",
-      "title": "אימות מובייל 390/430",
+      "title": "אימות buildיל 390/430",
       "description": "פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, sticky bar",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -685,27 +428,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 65,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-4",
       "title": "נגישות מלאה",
       "description": "44px יעדים, 16px קלט, AA contrast, RTL, screen reader",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -726,27 +455,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 66,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-5",
       "title": "מצב מפה ריקה (empty state)",
       "description": "תיקון 035: כל הרחובות נמחקו → אין שכבות רפאים",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -767,27 +482,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 67,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-6",
       "title": "אנימציות/מעברים חלקים",
       "description": "smooth scroll, transitions, prefers-reduced-motion",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -808,27 +509,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 68,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-7",
       "title": "מצב כהה (Dark Mode)",
       "description": "תמיכה ב-`prefers-color-scheme: dark`",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -849,27 +536,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 69,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "UX-8",
       "title": "קיצורי מקלדת",
       "description": "ניווט במקלדת מלא (Tab, Enter, Escape, חיצים)",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
         "build",
         "review"
@@ -890,27 +563,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 70,
-      "context": "צוות UI/UX",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות UI/UX"
     },
     {
       "id": "DEV-1",
       "title": "Tile Probe Strategy",
       "description": "מעבר OR→AND, probe חד-פעמי לזיהוי חסימת OSM שקטה",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
         "build",
         "review"
@@ -931,27 +590,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 98,
-      "context": "צוות פיתוח",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות פיתוח"
     },
     {
       "id": "DEV-2",
       "title": "פריסה סטטית (Static Deploy)",
       "description": "GitHub Pages / Netlify / Cloudflare Pages + CSP/Referrer-Policy",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
         "build",
         "review"
@@ -972,27 +617,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 99,
-      "context": "צוות פיתוח",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות פיתוח"
     },
     {
       "id": "DEV-3",
       "title": "HTTPS + Service Workers",
       "description": "PWA support, offline-first, background sync",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
         "build",
         "review"
@@ -1013,27 +644,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 100,
-      "context": "צוות פיתוח",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות פיתוח"
     },
     {
       "id": "DEV-4",
       "title": "אופטימיזציית ביצועים",
       "description": "2,424 רחובות, LOD 12, רינדור דיפרנציאלי, memory leaks",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
         "build",
         "review"
@@ -1054,27 +671,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 101,
-      "context": "צוות פיתוח",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות פיתוח"
     },
     {
       "id": "DEV-5",
       "title": "בדיקות אוטומטיות",
       "description": "Jest/Playwright ל-CI/CD",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
         "build",
         "review"
@@ -1095,27 +698,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 102,
-      "context": "צוות פיתוח",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות פיתוח"
     },
     {
       "id": "NET-1",
       "title": "ספק אריחים ללא Referer",
       "description": "CARTO / Esri / Stadia Maps / Proxy → עובד ב-`file://` + HTTPS",
-      "team": "NET",
+      "team": "WEB",
       "agents": [
         "build",
         "review"
@@ -1136,27 +725,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 112,
-      "context": "צוות חיבור לרשת",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות חיבור לרשת"
     },
     {
       "id": "NET-2",
       "title": "פרוקסי אריחים מקומי",
       "description": "Proxy פשוט שמוסיף Referer/Key לאריחי OSM",
-      "team": "NET",
+      "team": "WEB",
       "agents": [
         "build",
         "review"
@@ -1177,27 +752,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 113,
-      "context": "צוות חיבור לרשת",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות חיבור לרשת"
     },
     {
       "id": "NET-3",
       "title": "HTTPS מקומי לפיתוח",
       "description": "mkcert + localhost HTTPS ל-Geolocation/PWA",
-      "team": "NET",
+      "team": "WEB",
       "agents": [
         "build",
         "review"
@@ -1218,27 +779,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 114,
-      "context": "צוות חיבור לרשת",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות חיבור לרשת"
     },
     {
       "id": "NET-4",
       "title": "CDN + Cache Strategy",
       "description": "Cache-Control, stale-while-revalidate, offline tiles",
-      "team": "NET",
+      "team": "WEB",
       "agents": [
         "build",
         "review"
@@ -1259,27 +806,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 115,
-      "context": "צוות חיבור לרשת",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות חיבור לרשת"
     },
     {
       "id": "RSCH-1",
       "title": "מאגר \"הידעת?\" — עובדה לכל רחוב",
       "description": "2,424 רחובות: עובדה מעניינת / משמעות שם + על מי קרוי; קובץ טקסט לכל רחוב + מקורות",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1300,27 +833,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 126,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "RSCH-2",
       "title": "מחקר אפליקציות/משחקים דומים",
       "description": "גיימיפיקציה, אפליקציות טיולים, \"השלמת עיר\", חינוכיות-גיאוגרפיות, קהילתיות; דוח השוואתי + המלצות פיצ'רים",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1341,27 +860,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 127,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "RSCH-3",
       "title": "Pipeline אוטומטי שמירה",
       "description": "שאילתות APIs (Wikidata, Wikipedia, OSM, Municipality) → עיבוד → שמירה לקבצי טקסט `data/didyouknow/<id>.txt`",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1382,27 +887,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 128,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "RSCH-4",
       "title": "פיילוט 50 רחובות ראשונים",
       "description": "הוכחת היתכנות: רחובות מרכזיים/מפורסמים תחילה",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1423,27 +914,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 129,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "MKT-1",
       "title": "דף נחיתה / README",
       "description": "הסבר הפרויקט, screenshots, הוראות הפעלה",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1464,27 +941,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 130,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "MKT-2",
       "title": "תוכן \"הידעת?\" לרחובות",
       "description": "Schema + pilot 20-30 רחובות + fact-checking",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1505,27 +968,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 131,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "MKT-3",
       "title": "סרטון הדגמה / GIF",
       "description": "walkthrough של הפיצ'רים העיקריים",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1546,27 +995,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 132,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "MKT-4",
       "title": "תרגום לאנגלית/ערבית",
       "description": "i18n support",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1587,27 +1022,13 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 133,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "MKT-5",
       "title": "קהילה/משוב",
       "description": "GitHub Discussions / טופס משוב באפליקציה",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
         "build",
         "review"
@@ -1628,30 +1049,15 @@
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
       "line": 134,
-      "context": "צוות מחקר ותוכן",
-      "agentsEnriched": [
-        {
-          "name": "build",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "review",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "context": "צוות מחקר ותוכן"
     },
     {
       "id": "GEN-1",
-      "title": "**נעשה שינוי פיתוח מציאותי בסשן בסיס:** ₪046.1 — נגישות \"רחוב אקראי\" (`aria-label` לרחוב המוצע ולכפתור, רמז \"r\" בהודעה); 9 שורות ב-`assets/app.js`. `--check` 36/36 · אחסון 24/24 · בטא נוצרה ותקינה. **ממתין לאימות בטא + אישור אהד לפני פרסום; מלמדים טוקנים מול בסליין (95,299 input) להסקת החיסכון.**",
+      "title": "₪046.1 — נגישות \"רחוב אקראי\" (`aria-label` לרחוב המוצע ולכפתור, רמז \"r\" בהודעה); 9 שורות ב-`assets/app.js`. `--check` 36/36 · אחסון 24/24 · בטא נוצרה ותקינה. **ממתין לאימות בטא + אישור אהד לפני פרסום; מלמדים טוקנים מול בסליין (95,299 input) להסקת החיסכון.**",
       "description": "",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
-        "המעצב",
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -1667,31 +1073,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 8,
-      "context": "ייעול הקשר OpenCode · 2026-10-23",
-      "agentsEnriched": [
-        {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 13,
+      "context": "ייעול הקשר OpenCode · 2026-10-23"
     },
     {
       "id": "GEN-2",
-      "title": "**אימות עצמאי + ביקורת** — 360/390/430/1280, אין חוסמים (הראשי + הבודק).",
+      "title": "— 360/390/430/1280, אין חוסמים (build + review).",
       "description": "",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
-        "הראשי",
-        "הבודק"
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1707,30 +1098,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 62,
-      "context": "סבב 046.1 — ליטוש UX (בביצוע)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        }
-      ]
+      "line": 67,
+      "context": "סבב 046.1 — ליטוש UX (בביצוע)"
     },
     {
       "id": "GEN-3",
-      "title": "**ביקורת הבודק** — אין חוסמים.",
+      "title": "— אין חוסמים.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -1746,24 +1123,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 70,
-      "context": "סבב 046.2 — חיווי קולי וחוויה אינטראקטיבית (ביצוע)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 75,
+      "context": "סבב 046.2 — חיווי קולי וחוויה אינטראקטיבית (ביצוע)"
     },
     {
       "id": "GEN-4",
-      "title": "**ביקורת הבודק** — אין חוסמים.",
+      "title": "— אין חוסמים.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -1779,25 +1148,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 78,
-      "context": "סבב 046.3 — 4 הצעות אינטראקטיביות (ביצוע)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 83,
+      "context": "סבב 046.3 — 4 הצעות אינטראקטיביות (ביצוע)"
     },
     {
       "id": "GEN-5",
-      "title": "**שיפו 036–037:** ביקורת חוזרת אחרי מיזוג 93 שבילים, מובייל 390/430, מצב מפה ריק, מחיקה ידנית — ממתין למיזוג.",
+      "title": "ביקורת חוזרת אחרי מיזוג 93 שבילים, buildיל 390/430, מצב מפה ריק, מחיקה ידנית — ממתין למיזוג.",
       "description": "",
-      "team": "UI/UX",
+      "team": "DESIGN",
       "agents": [
-        "הבודק",
-        "הראשי"
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1809,221 +1169,20 @@
         "key": "progress",
         "label": "בביצוע",
         "marker": "IN_PROGRESS",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 117,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-6",
-      "title": "אפיון מקורות: Wikipedia/Wikidata, עיריית ירושלים, לקסיקוני רחובות, OSM — עם URL לכל טענה.",
-      "description": "",
-      "team": "Research",
-      "agents": [
-        "החוקר"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "pending",
-        "label": "ממתין",
-        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 122,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        }
-      ]
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
     },
     {
-      "id": "GEN-7",
-      "title": "סכמת נתונים: `id`, `title`, `body`, `sources[]`, `retrievedAt`, `confidence`.",
+      "id": "GEN-6",
+      "title": "אפיון מקורות: Wikipedia/Wikidata, עיריית ירושלים, לקסיקוני רחובות, OSM — עם URL לכל טענה.",
       "description": "",
-      "team": "Research",
+      "team": "ANNOUNCEMENT",
       "agents": [
-        "החוקר",
-        "הראשי"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "pending",
-        "label": "ממתין",
-        "marker": "PENDING",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 123,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-8",
-      "title": "פיילוט 20–30 רחובות מוכרים; בדיקת עובדות וציטוטים.",
-      "description": "",
-      "team": "Research",
-      "agents": [
-        "החוקר"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "pending",
-        "label": "ממתין",
-        "marker": "PENDING",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 124,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-9",
-      "title": "ייצור מידע לכל 2,154 הרחובות — בלי המצאות; כשאין מקור, נוסח זהיר.",
-      "description": "",
-      "team": "Research",
-      "agents": [
-        "החוקר",
-        "הראשי"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "pending",
-        "label": "ממתין",
-        "marker": "PENDING",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 125,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-10",
-      "title": "כפתור \"הידעת?\" בכל שורת רחוב + פאנל/מודאל נגיש.",
-      "description": "",
-      "team": "UI/UX",
-      "agents": [
-        "המעצב",
-        "הראשי"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "pending",
-        "label": "ממתין",
-        "marker": "PENDING",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 126,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-11",
-      "title": "ביקורת שיפו + בדיקת תוכן/מקורות.",
-      "description": "",
-      "team": "Research",
-      "agents": [
-        "הבודק",
-        "החוקר"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2040,30 +1199,140 @@
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
       "line": 127,
-      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
-      "agentsEnriched": [
-        {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        }
-      ]
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+    },
+    {
+      "id": "GEN-7",
+      "title": "סכמת נתונים: `id`, `title`, `body`, `sources[]`, `retrievedAt`, `confidence`.",
+      "description": "",
+      "team": "ANNOUNCEMENT",
+      "agents": [
+        "build"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "PENDING",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 128,
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+    },
+    {
+      "id": "GEN-8",
+      "title": "פיילוט 20–30 רחובות מוכרים; בדיקת עובדות וציטוטים.",
+      "description": "",
+      "team": "ANNOUNCEMENT",
+      "agents": [
+        "build"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "PENDING",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 129,
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+    },
+    {
+      "id": "GEN-9",
+      "title": "ייצור מידע לכל 2,154 הרחובות — בלי המצאות; כשאין מקור, נוסח זהיר.",
+      "description": "",
+      "team": "ANNOUNCEMENT",
+      "agents": [
+        "build"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "PENDING",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 130,
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+    },
+    {
+      "id": "GEN-10",
+      "title": "כפתור \"הידעת?\" בכל שורת רחוב + פאנל/מודאל נגיש.",
+      "description": "",
+      "team": "DESIGN",
+      "agents": [
+        "build"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "PENDING",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 131,
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
+    },
+    {
+      "id": "GEN-11",
+      "title": "ביקורת review + בדיקת תוכן/מקורות.",
+      "description": "",
+      "team": "ANNOUNCEMENT",
+      "agents": [
+        "review"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "pending",
+        "label": "ממתין",
+        "marker": "PENDING",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 132,
+      "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן"
     },
     {
       "id": "GEN-12",
-      "title": "**שכבת רשות:** 3,241 קווים / 115 פוליגונים — **מוקפא לפי הוראת המשתמש**; OSM (ODbL) נשאר מקור האמת. ייפתח כשיהיה אישור כתוב מצוות ה-GIS.",
+      "title": "3,241 קווים / 115 פוליגונים — **מוקפא לפי הוראת המשתמש**; OSM (ODbL) נשאר מקור האמת. ייפתח כשיהיה אישור כתוב מצוות ה-GIS.",
       "description": "",
-      "team": "החלטות",
+      "team": "WEB",
       "agents": [
-        "החוקר",
-        "קיפי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2079,31 +1348,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 136,
-      "context": "4. החלטות משתמש פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 141,
+      "context": "4. החלטות משתמש פתוחות"
     },
     {
       "id": "GEN-13",
-      "title": "**כל מקור ללא רישיון מאומת** — מוקפא אוטומטית. רק OSM (ODbL) ומקורות עם אישור כתוב תקפים.",
+      "title": "— מוקפא אוטומטית. רק OSM (ODbL) ומקורות עם אישור כתוב תקפים.",
       "description": "",
-      "team": "החלטות",
+      "team": "WEB",
       "agents": [
-        "החוקר",
-        "קיפי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2119,31 +1373,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 137,
-      "context": "4. החלטות משתמש פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 142,
+      "context": "4. החלטות משתמש פתוחות"
     },
     {
       "id": "GEN-14",
       "title": "אימות 93, חישוב area מול 115 הפוליגונים, איתור שבילים נוספים עם בתים והפקת `inhabited-paths-round3.json`.",
       "description": "",
-      "team": "נתונים",
+      "team": "WEB",
       "agents": [
-        "מפי",
-        "המגשר"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2159,31 +1398,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 143,
-      "context": "4.1 מחקר שבילים ומדרגות inhabited",
-      "agentsEnriched": [
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        },
-        {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        }
-      ]
+      "line": 148,
+      "context": "4.1 מחקר שבילים ומדרגות inhabited"
     },
     {
       "id": "GEN-15",
-      "title": "אימות הדדי ומיזוג על ידי הראשי לפני הוספה לנתונים.",
+      "title": "אימות הדדי ומיזוג על ידי build לפני הוספה לנתונים.",
       "description": "",
-      "team": "נתונים",
+      "team": "WEB",
       "agents": [
-        "מפי",
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2199,32 +1423,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 144,
-      "context": "4.1 מחקר שבילים ומדרגות inhabited",
-      "agentsEnriched": [
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 149,
+      "context": "4.1 מחקר שבילים ומדרגות inhabited"
     },
     {
       "id": "GEN-16",
-      "title": "**Tile probe:** OR (נוכחי) מול AND (המלצת שיפו).",
+      "title": "OR (נוכחי) מול AND (המלצת review).",
       "description": "",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
-        "המגשר",
-        "הבודק",
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2240,38 +1448,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 150,
-      "context": "5. החלטות טכניות פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        },
-        {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 155,
+      "context": "5. החלטות טכניות פתוחות"
     },
     {
       "id": "GEN-17",
-      "title": "**גבולות שכונה:** להשאיר bbox של רחובות; אין מקור מורשה ל-95.",
+      "title": "להשאיר bbox של רחובות; אין מקור מורשה ל-95.",
       "description": "",
-      "team": "נתונים",
+      "team": "WEB",
       "agents": [
-        "החוקר",
-        "קיפי",
-        "מפי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2287,37 +1473,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 151,
-      "context": "5. החלטות טכניות פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        }
-      ]
+      "line": 156,
+      "context": "5. החלטות טכניות פתוחות"
     },
     {
       "id": "GEN-18",
-      "title": "**בדיקת מכשיר אמיתי:** עדיין רק emulation; נדרש טלפון לבדיקת מגע אמיתית.",
+      "title": "עדיין רק emulation; נדרש טלפון לבדיקת מגע אמיתית.",
       "description": "",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
-        "מובי",
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2333,31 +1498,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 152,
-      "context": "5. החלטות טכניות פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 157,
+      "context": "5. החלטות טכניות פתוחות"
     },
     {
       "id": "GEN-19",
-      "title": "**ביצועים:** 2,154 רחובות; למדוד LOD וזמן רינדור אחרי השינויים.",
+      "title": "2,154 רחובות; למדוד LOD וזמן רינדור אחרי השינויים.",
       "description": "",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי",
-        "המגשר"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2373,31 +1523,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 153,
-      "context": "5. החלטות טכניות פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        }
-      ]
+      "line": 158,
+      "context": "5. החלטות טכניות פתוחות"
     },
     {
       "id": "GEN-20",
       "title": "שילוב שכבה מוניציפלית — תלוי רישיון.",
       "description": "",
-      "team": "החלטות",
+      "team": "WEB",
       "agents": [
-        "החוקר",
-        "קיפי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2413,31 +1548,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 160,
-      "context": "6. נדחה",
-      "agentsEnriched": [
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 165,
+      "context": "6. נדחה"
     },
     {
       "id": "GEN-21",
       "title": "קישורי Google לפי קואורדינטה — הדרישה היא name+area+ירושלים.",
       "description": "",
-      "team": "החלטות",
+      "team": "WEB",
       "agents": [
-        "הראשי",
-        "המגשר"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2453,31 +1573,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 161,
-      "context": "6. נדחה",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        }
-      ]
+      "line": 166,
+      "context": "6. נדחה"
     },
     {
       "id": "GEN-22",
       "title": "פיצול העיר העתיקה לרבעים — לא נדרש כרגע.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESIGN",
       "agents": [
-        "הראשי",
-        "המעצב"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2493,31 +1598,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 162,
-      "context": "6. נדחה",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 167,
+      "context": "6. נדחה"
     },
     {
       "id": "GEN-23",
       "title": "אופטימיזציית LOD מעבר ל-2,154 — רק אם נמדד צורך.",
       "description": "",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי",
-        "המגשר"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2533,31 +1623,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 163,
-      "context": "6. נדחה",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        }
-      ]
+      "line": 168,
+      "context": "6. נדחה"
     },
     {
       "id": "GEN-24",
       "title": "ביקורת המימוש — פרטיות, CSP, נגישות הבאנר, מקרי קצה, תאיכות חוזה (`JLMAPI`/DOM/LOD/זום).",
       "description": "",
-      "team": "DEV",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי",
-        "המגשר"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2573,31 +1648,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 177,
-      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        }
-      ]
+      "line": 182,
+      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)"
     },
     {
       "id": "GEN-25",
-      "title": "⟪ **פיצי (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.",
+      "title": "⟪ **gabbai (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.",
       "description": "",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
-        "פיצי",
-        "מובריליס"
+        "gabbai"
       ],
       "priority": {
         "key": "none",
@@ -2613,30 +1673,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 179,
-      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)",
-      "agentsEnriched": [
-        {
-          "name": "פיצי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "מובריליס",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "line": 184,
+      "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)"
     },
     {
       "id": "GEN-26",
       "title": "ביקורת סבב 050 עדיין ממתינה (מגבלת קצב) — ראו `docs/agents/channels/shifu.md`.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2652,25 +1698,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 195,
-      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 200,
+      "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)"
     },
     {
       "id": "GEN-27",
-      "title": "⟪ **פיצי (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.",
+      "title": "⟪ **gabbai (בחופש):** ב-GitHub Pages אין אפשרות להגדיר כותרות HTTP מותאמות (אין CSP ואין Referrer-Policy מותאם) — ברירת המחדל של GitHub מתאימה ל-OSM. אם רוצים CSP ממוקד — לעבור ל-Netlify/Cloudflare לפי §3 במדריך. לגלילה חזרה: להעלות את CACHE_NAME ב-sw.js.",
       "description": "",
-      "team": "Mobile/Deploy",
+      "team": "MOBILE",
       "agents": [
-        "פיצי",
-        "מובריליס"
+        "gabbai"
       ],
       "priority": {
         "key": "none",
@@ -2686,30 +1723,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 212,
-      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
-      "agentsEnriched": [
-        {
-          "name": "פיצי",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        },
-        {
-          "name": "מובריליס",
-          "status": "unknown",
-          "note": "",
-          "updated": null
-        }
-      ]
+      "line": 217,
+      "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)"
     },
     {
       "id": "GEN-28",
-      "title": "**סבב ביקורת נפרד למנגנוני ה-gamification** שנוספו במקביל (הישגים, דירוג כוכבים, מצב רוח, צלילים, רעידות) — לא אומתו בסבב הזה.",
+      "title": "שנוספו במקביל (הישגים, דירוג כוכבים, מצב רוח, צלילים, רעידות) — לא אומתו בסבב הזה.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2725,24 +1748,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 227,
-      "context": "10. סבב פיתוח — תיקון אבני הדרך (BOARD 056)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 232,
+      "context": "10. סבב פיתוח — תיקון אבני הדרך (BOARD 056)"
     },
     {
       "id": "GEN-29",
-      "title": "**פתחי:** בקשת האישור הראשונה — קישור ל-beta, מה לבדוק, סיכון וגלילה לאחור.",
+      "title": "בקשת האישור הראשונה — קישור ל-beta, מה לבדוק, סיכון וגלילה לאחור.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2758,24 +1773,16 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 254,
-      "context": "12. סבב פיתוח — סביבת בטא ושער אישור (BOARD 062)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 259,
+      "context": "12. סבב פיתוח — סביבת בטא ושער אישור (BOARD 062)"
     },
     {
       "id": "GEN-30",
       "title": "NAVIGATION **דיון עתידי:** תבניות הערות מהירות (הצעה 10) — להגדיר מילון תגים, שילוב עם טקסט חופשי, עריכה/מחיקה וייצוא, לפני מימוש.",
       "description": "",
-      "team": "החלטות",
+      "team": "DESKTOP",
       "agents": [
-        "הראשי"
+        "build"
       ],
       "priority": {
         "key": "none",
@@ -2791,18 +1798,18 @@
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 267,
-      "context": "סבב 059 — בטא: הישגים, יומן, שלד טעינה ותזכורת",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
+      "line": 272,
+      "context": "סבב 059 — בטא: הישגים, יומן, שלד טעינה ותזכורת"
     }
   ],
+  "workflow": {
+    "roles": [
+      "build",
+      "review",
+      "gabbai"
+    ],
+    "note": "build מיישם ומפעיל כובעים לפי הצורך; review בודק לקריאה בלבד; gabbai מבצע release רק באישור מפורש."
+  },
   "sources": [
     {
       "path": "docs/TEAMS.md",
@@ -2812,6 +1819,5 @@
       "path": "docs/agents/TASKS.md",
       "label": "משימות כלליות פתוחות"
     }
-  ],
-  "agentStatusSource": "2026-10-25T09:58:57.367Z"
+  ]
 }

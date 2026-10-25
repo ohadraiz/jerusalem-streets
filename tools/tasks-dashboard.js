@@ -23,136 +23,107 @@ const TEAMS_PATH = path.join(ROOT, "docs", "TEAMS.md");
 const TASKS_PATH = path.join(ROOT, "docs", "agents", "TASKS.md");
 const OUT_PATH = path.join(ROOT, "internal", "tasks.html");
 const DATA_OUT_PATH = path.join(ROOT, "tasks-data.json");
-const AGENT_STATUS_PATH = path.join(ROOT, "agent-status.json");
 
 const UNASSIGNED = "לא משויך";
+const WORKFLOW_ROLES = ["build", "review", "gabbai"];
 
-/* סדר הצוותים בדשבורד (הצוות הנמצא בחופש מופיע אחרון) */
-const TEAM_ORDER = ["UI/UX", "DEV", "NET", "נתונים", "Research", "החלטות", "Mobile/Deploy"];
-
-/*
- * חברות צוותים שנוספו מעבר ל-"docs/TEAMS.md" — משמשות כגיבוי אם הצוות חסר
- * מקובץ הצוותים (וכן כמקור האמת כשהוא מוגדר ב-TEAMS.md).
- */
-const TEAM_FALLBACKS = {
-  "נתונים": {
-    icon: "MAP",
-    title: "צוות נתונים ומפות",
-    note: "רשימת הרחובות, הגיאומטריה, השבילים, הפוליגונים והמיזוג לנתונים",
-    standby: false,
-    owners: ["מפי", "המגשר", "הראשי", "קיפי"]
-  },
-  "החלטות": {
-    icon: "DECISION",
-    title: "צוות החלטות והקפאות",
-    note: "החלטות משתמש פתוחות, פריטים שנדחו ומקפאים — ממתינים להכרעה או לאישור",
-    standby: false,
-    owners: ["הראשי", "קיפי", "החוקר"]
-  }
-};
+/* סדר הצוותים בדשבורד, כפי שהם מוגדרים כיום ב-docs/TEAMS.md. */
+const TEAM_ORDER = ["DESIGN", "DESKTOP", "WEB", "ANNOUNCEMENT", "MOBILE"];
 
 /*
- * שליטת משימות כלליות (מ-"docs/agents/TASKS.md") לצוותים ולסוכנים.
+ * שליטת משימות כלליות (מ-"docs/agents/TASKS.md") לצוותים ולתפקידי workflow.
  * כל משימה חייבת להיות משויכת לצוות — אין משימה "ללא צוות".
  * הכלל הראשון שנפגע הוא זה שקודם; אחריו כללי הפרק; ובסוף ברירת מחדל.
  */
 const GENERAL_ROUTING = [
   /* סבב 046.1 — ליטוש UX */
-  { match: "אימות עצמאי", team: "UI/UX", agents: ["הראשי", "הבודק"] },
-  { match: "036", team: "UI/UX", agents: ["הבודק", "הראשי"] },
-  { match: "כפתור", team: "UI/UX", agents: ["המעצב", "הראשי"] },
+  { match: "אימות עצמאי", team: "DESIGN", role: "review" },
+  { match: "036", team: "DESIGN", role: "review" },
+  { match: "כפתור", team: "DESIGN", role: "build" },
 
   /* שער "הידעת" */
-  { match: "ביקורת שיפו", team: "Research", agents: ["הבודק", "החוקר"] },
-  { match: "אפיון מקורות", team: "Research", agents: ["החוקר"] },
-  { match: "סכמת נתונים", team: "Research", agents: ["החוקר", "הראשי"] },
-  { match: "פיילוט 20", team: "Research", agents: ["החוקר"] },
-  { match: "ייצור מידע", team: "Research", agents: ["החוקר", "הראשי"] },
+  { match: "ביקורת שיפו", team: "ANNOUNCEMENT", role: "review" },
+  { match: "אפיון מקורות", team: "ANNOUNCEMENT", role: "build" },
+  { match: "סכמת נתונים", team: "ANNOUNCEMENT", role: "build" },
+  { match: "פיילוט 20", team: "ANNOUNCEMENT", role: "build" },
+  { match: "ייצור מידע", team: "ANNOUNCEMENT", role: "build" },
 
   /* החלטות משתמש ונדחיות */
-  { match: "סטטיסטיקת", team: "החלטות", agents: ["הראשי", "המעצב"] },
-  { match: "שכבת רשות", team: "החלטות", agents: ["החוקר", "קיפי"] },
-  { match: "מקור ללא רישיון", team: "החלטות", agents: ["החוקר", "קיפי"] },
-  { match: "מוניציפלית", team: "החלטות", agents: ["החוקר", "קיפי"] },
-  { match: "קישורי Google", team: "החלטות", agents: ["הראשי", "המגשר"] },
-  { match: "העיר העתיקה", team: "החלטות", agents: ["הראשי", "המעצב"] },
+  { match: "סטטיסטיקת", team: "DESIGN", role: "build" },
+  { match: "שכבת רשות", team: "WEB", role: "build" },
+  { match: "מקור ללא רישיון", team: "WEB", role: "build" },
+  { match: "מוניציפלית", team: "WEB", role: "build" },
+  { match: "קישורי Google", team: "WEB", role: "build" },
+  { match: "העיר העתיקה", team: "DESIGN", role: "build" },
 
   /* נתונים ומפות */
-  { match: "אימות 93", team: "נתונים", agents: ["מפי", "המגשר"] },
-  { match: "אימות הדדי", team: "נתונים", agents: ["מפי", "הראשי"] },
-  { match: "גבולות שכונה", team: "נתונים", agents: ["החוקר", "קיפי", "מפי"] },
+  { match: "אימות 93", team: "WEB", role: "build" },
+  { match: "אימות הדדי", team: "WEB", role: "build" },
+  { match: "גבולות שכונה", team: "WEB", role: "build" },
 
   /* מובייל והפצה */
-  { match: "מכשיר אמיתי", team: "Mobile/Deploy", agents: ["מובי", "הראשי"] },
-  { match: "Referrer-Policy", team: "Mobile/Deploy", agents: ["פיצי", "מובריליס"] },
+  { match: "מכשיר אמיתי", team: "MOBILE", role: "build" },
+  { match: "Referrer-Policy", team: "MOBILE", role: "gabbai" },
 
   /* החלטות טכניות */
-  { match: "Tile probe", team: "DEV", agents: ["המגשר", "הבודק", "הראשי"] },
-  { match: "ביצועים", team: "DEV", agents: ["הראשי", "המגשר"] },
-  { match: "LOD", team: "DEV", agents: ["הראשי", "המגשר"] },
+  { match: "Tile probe", team: "DESKTOP", role: "build" },
+  { match: "ביצועים", team: "DESKTOP", role: "build" },
+  { match: "LOD", team: "DESKTOP", role: "build" },
 
   /* סבב אריחי OSM */
-  { match: "אימות ספקים", team: "NET", agents: ["החוקר"] },
-  { match: "שרשרת ספקים", team: "NET", agents: ["המגשר"] },
-  { match: "ביקורת המימוש", team: "NET", agents: ["הבודק"] },
-  { match: "בדיקת דפדפן חיה", team: "DEV", agents: ["הראשי", "המגשר"] }
+  { match: "אימות ספקים", team: "WEB", role: "build" },
+  { match: "שרשרת ספקים", team: "WEB", role: "build" },
+  { match: "ביקורת המימוש", team: "WEB", role: "review" },
+  { match: "בדיקת דפדפן חיה", team: "DESKTOP", role: "build" }
 ];
 
 /* כללי משנה לפי פרק ב-TASKS.md */
 const SECTION_ROUTING = [
-  { match: /046\.1/, team: "UI/UX", agents: ["הראשי", "הבודק"] },
-  { match: /הידעת/, team: "Research", agents: ["החוקר", "הראשי"] },
-  { match: /שבילים ומדרגות/, team: "נתונים", agents: ["מפי", "המגשר"] },
-  { match: /החלטות משתמש/, team: "החלטות", agents: ["הראשי", "קיפי"] },
-  { match: /החלטות טכניות/, team: "DEV", agents: ["הראשי", "המגשר"] },
-  { match: /נדחה/, team: "החלטות", agents: ["הראשי", "קיפי"] },
-  { match: /אריחי OSM/, team: "NET", agents: ["המגשר", "החוקר"] }
+  { match: /046\.1/, team: "DESIGN", role: "build" },
+  { match: /הידעת/, team: "ANNOUNCEMENT", role: "build" },
+  { match: /שבילים ומדרגות/, team: "WEB", role: "build" },
+  { match: /החלטות משתמש/, team: "DESIGN", role: "build" },
+  { match: /החלטות טכניות/, team: "DESKTOP", role: "build" },
+  { match: /נדחה/, team: "DESIGN", role: "build" },
+  { match: /אריחי OSM/, team: "WEB", role: "build" }
 ];
 
-/* ברירת מחדל — כל משימה שלא מזוהה נכנסת לצוות ההחלטות ומסומנת לתיקון הטבלה */
-const ROUTE_FALLBACK = { team: "החלטות", agents: ["הראשי"] };
+/* ברירת מחדל — כל משימה שלא מזוהה נשארת באחריות build. */
+const ROUTE_FALLBACK = { team: "DESKTOP", role: "build" };
 
-/*
- * שמות סוכנים שיכולים להופיע כבעלים במשימות כלליות.
- * הרשימה כוללת את השמות העכשיויים ואת השמות הקודמים (ברשומות היסטוריות
- * ב-TASKS.md נשמרים שמות המקור — זה אותו סוכן, רק השם הוחלף).
- */
-const KNOWN_OWNERS = [
-  /* שמות עכשיויים */
-  "הראשי",
-  "החוקר",
-  "הבודק",
-  "המעצב",
-  "המגשר",
-  "המתעד",
-  "הפקח",
-  "קיפי",
-  "מפי",
-  "מובריליס",
-  "מובי",
-  "פיצי",
-  /* שמות קודמים */
-  "ראשי",
-  "חיקי",
-  "שיפו",
-  "ציבי",
-  "צירי",
-  "גולי",
-  "טופי",
-  "פזי"
-];
-
-/* מיפוי שם קודם → שם עכשיוי (רשימת השמות המעודכנת, 2026-10-21) */
+/* מיפוי מפורש של תוויות היסטוריות לתפקידי workflow בתצוגת ה-ledger בלבד. */
 const OWNER_ALIASES = {
-  "ראשי": "הראשי",
-  "חיקי": "החוקר",
-  "שיפו": "הבודק",
-  "ציבי": "המעצב",
-  "צירי": "המגשר",
-  "גולי": "המתעד",
-  "טופי": "מובריליס",
-  "פזי": "פיצי"
+  "ראשי": "build",
+  "הראשי": "build",
+  "חיקי": "build",
+  "החוקר": "build",
+  "ציבי": "build",
+  "המעצב": "build",
+  "צירי": "build",
+  "המגשר": "build",
+  "מפי": "build",
+  "גולי": "build",
+  "המתעד": "build",
+  "קיפי": "build",
+  "מובי": "build",
+  "שיפו": "review",
+  "הבודק": "review",
+  "טופי": "gabbai",
+  "מובריליס": "gabbai",
+  "פזי": "gabbai",
+  "פיצי": "gabbai"
 };
+
+/* המקור ההיסטורי נשמר; רק התצוגה הפעילה מציגה את תפקיד ה-workflow המקביל. */
+function normalizeLegacyText(value) {
+  let result = String(value == null ? "" : value);
+  Object.keys(OWNER_ALIASES)
+    .sort((a, b) => b.length - a.length)
+    .forEach((legacy) => {
+      result = result.split(legacy).join(OWNER_ALIASES[legacy]);
+    });
+  return result;
+}
 
 const STATUS_MARKERS = [
   { marker: "PASS", key: "done", label: "הושלם" },
@@ -236,17 +207,6 @@ function parsePriority(text) {
   return { key: "none", label: "לא צוין", marker: "—", note: "" };
 }
 
-function matchOwner(text) {
-  const value = String(text == null ? "" : text).trim();
-  if (!value) return null;
-  const sorted = KNOWN_OWNERS.slice().sort((a, b) => b.length - a.length);
-  for (const name of sorted) {
-    if (value === name) return name;
-    if (value.indexOf(name + " ") === 0 || value.indexOf(name + "-") === 0) return name;
-  }
-  return null;
-}
-
 /* מחזיר { name, alias } — השם העכשיוי לסינון, והשם הקודם לתצוגה ולחיפוש */
 function canonicalOwner(name) {
   const value = String(name == null ? "" : name).trim();
@@ -272,11 +232,11 @@ function isSeparatorRow(cells) {
 /* ---------- TEAMS.md ---------- */
 
 function teamKeyForTitle(title) {
-  if (/מובייל\s+והפצה/.test(title)) return "Mobile/Deploy";
-  if (/UI\/UX/.test(title)) return "UI/UX";
-  if (/פיתוח/.test(title)) return "DEV";
-  if (/חיבור\s+לרשת/.test(title)) return "NET";
-  if (/מחקר\s+ותוכן/.test(title)) return "Research";
+  if (/מובייל\s+והפצה/.test(title)) return "MOBILE";
+  if (/UI\/UX/.test(title)) return "DESIGN";
+  if (/פיתוח/.test(title)) return "DESKTOP";
+  if (/חיבור\s+לרשת/.test(title)) return "WEB";
+  if (/מחקר\s+ותוכן/.test(title)) return "ANNOUNCEMENT";
   return null;
 }
 
@@ -383,7 +343,7 @@ function parseTeams(md) {
     const owner = canonicalOwner(team.owners.length ? team.owners[0] : "");
     tasks.push({
       id,
-      title,
+      title: normalizeLegacyText(title),
       description,
       team: current.key,
       agents: team.owners.slice(),
@@ -407,15 +367,15 @@ function routeGeneralTask(text, section) {
 
   for (const rule of GENERAL_ROUTING) {
     if (lower.indexOf(rule.match.toLowerCase()) !== -1) {
-      return { team: rule.team, agents: rule.agents.slice() };
+      return { team: rule.team, agents: [rule.role] };
     }
   }
   for (const rule of SECTION_ROUTING) {
     if (rule.match.test(section)) {
-      return { team: rule.team, agents: rule.agents.slice() };
+      return { team: rule.team, agents: [rule.role] };
     }
   }
-  return { team: ROUTE_FALLBACK.team, agents: ROUTE_FALLBACK.agents.slice() };
+  return { team: ROUTE_FALLBACK.team, agents: [ROUTE_FALLBACK.role] };
 }
 
 function parseGeneralTasks(md) {
@@ -446,19 +406,14 @@ function parseGeneralTasks(md) {
     const bold = text.match(/^\*\*([^*]+)\*\*\s*:?\s*/);
     if (bold) {
       const boldText = bold[1].replace(/:\s*$/, "").trim();
-      const matched = matchOwner(boldText);
-      if (matched) {
-        if (boldText === matched) {
-          title = text.slice(bold[0].length).trim();
-        }
-      }
+      if (boldText) title = text.slice(bold[0].length).trim();
     }
 
     const routed = routeGeneralTask(text, section);
     counter += 1;
     tasks.push({
       id: `GEN-${counter}`,
-      title,
+      title: normalizeLegacyText(title),
       description: "",
       team: routed.team,
       agents: routed.agents,
@@ -467,7 +422,7 @@ function parseGeneralTasks(md) {
       owner: UNASSIGNED,
       source: "docs/agents/TASKS.md",
       line: lineNo,
-      context: section
+      context: normalizeLegacyText(section)
     });
   }
 
@@ -478,7 +433,7 @@ function parseGeneralTasks(md) {
 
 function buildTeamMeta(teams) {
   return TEAM_ORDER.map((key) => {
-    const team = teams[key] || TEAM_FALLBACKS[key] || { icon: "•", title: key, note: "", standby: false, owners: [] };
+    const team = teams[key] || { icon: "•", title: key, note: "", standby: false, owners: [] };
     return {
       key,
       label: key,
@@ -492,33 +447,6 @@ function buildTeamMeta(teams) {
   });
 }
 
-function loadAgentStatus() {
-  try {
-    const content = fs.readFileSync(AGENT_STATUS_PATH, "utf8");
-    return JSON.parse(content);
-  } catch (err) {
-    return null;
-  }
-}
-
-function enrichTasksWithAgentStatus(tasks, agentStatus) {
-  if (!agentStatus || !agentStatus.agents) return tasks;
-  const statusMap = {};
-  for (const [agentName, info] of Object.entries(agentStatus.agents)) {
-    statusMap[agentName] = info;
-  }
-  return tasks.map(task => {
-    const enrichedAgents = (task.agents || []).map(agentName => {
-      const info = statusMap[agentName];
-      if (info) {
-        return { name: agentName, status: info.status, note: info.note, updated: info.updated };
-      }
-      return { name: agentName, status: "unknown", note: "", updated: null };
-    });
-    return { ...task, agentsEnriched: enrichedAgents };
-  });
-}
-
 function collectData() {
   const teamsMd = fs.readFileSync(TEAMS_PATH, "utf8");
   const tasksMd = fs.readFileSync(TASKS_PATH, "utf8");
@@ -526,25 +454,23 @@ function collectData() {
   const general = parseGeneralTasks(tasksMd);
   const tasks = parsedTeams.tasks.concat(general);
   const teamsMeta = buildTeamMeta(parsedTeams.teams);
-  
-  // Load agent status from Guli
-  const agentStatus = loadAgentStatus();
-  const enrichedTasks = enrichTasksWithAgentStatus(tasks, agentStatus);
-  
   const data = {
     generatedAt: new Date().toISOString(),
     teams: teamsMeta,
-    tasks: enrichedTasks,
+    tasks,
+    workflow: {
+      roles: WORKFLOW_ROLES,
+      note: "build מיישם ומפעיל כובעים לפי הצורך; review בודק לקריאה בלבד; gabbai מבצע release רק באישור מפורש."
+    },
     sources: [
       { path: "docs/TEAMS.md", label: "משימות צוותים" },
       { path: "docs/agents/TASKS.md", label: "משימות כלליות פתוחות" }
-    ],
-    agentStatusSource: agentStatus ? agentStatus.generatedAt : null
+    ]
   };
   
   // Write tasks-data.json for Guli to consume
   writeFileAtomic(DATA_OUT_PATH, JSON.stringify(data, null, 2));
-  console.log(`[inspector] wrote tasks-data.json`);
+  console.log(`[tasks] wrote tasks-data.json`);
   
   return data;
 }
@@ -870,16 +796,6 @@ function buildHtml(data) {
   .tag--s-pending { color: #3f4a45; border-color: #c8cdc9; background: #f1f3f2; }
   .tag--s-blocked { color: #6a3d8f; border-color: #c6a9dd; background: #f5edfb; }
 
-  /* Agent status badges (from agent-status.json via Guli) */
-  .agent-status { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 4px; font-size: .75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid; white-space: normal; max-width: 100%; overflow-wrap: anywhere; }
-  .agent-status strong { font-weight: 700; }
-  .agent-status__note { font-weight: 400; }
-  .agent-status--active { color: #1d5b3c; border-color: #a6c9b3; background: #e9f1ea; }
-  .agent-status--waiting { color: #6b5310; border-color: #d9c285; background: #fdf6e3; }
-  .agent-status--blocked { color: #6a3d8f; border-color: #c6a9dd; background: #f5edfb; }
-  .agent-status--done { color: #1d5b3c; border-color: #a6c9b3; background: #e9f1ea; }
-  .agent-status--unknown { color: #5d6b63; border-color: #ded9cd; background: #f4f2ec; }
-
   .card__title {
     margin: 0;
     font-size: 1rem;
@@ -961,14 +877,14 @@ function buildHtml(data) {
 <header class="page-head no-print">
   <div class="page-head__inner">
     <div>
-      <h1>דשבורד משימות <span class="page-head__role" aria-label="הפקח">— הפקח</span></h1>
+       <h1>דשבורד משימות <span class="page-head__role" aria-label="build, review ו-gabbai">— workflow</span></h1>
       <p class="page-head__sub">יומן הרחובות של ירושלים · נבנה ב־<time id="generated-at"></time></p>
       <p class="page-head__src">מקור יחיד: <code>docs/TEAMS.md</code> (משימות צוותים) + <code>docs/agents/TASKS.md</code> (משימות כלליות פתוחות)</p>
-      <p class="page-head__mandate">מארגן המשימות — בקשר עם הראשי והמתעד (גולי), מקבל עדכונים מכל הסוכנים</p>
+       <p class="page-head__mandate">מרכז המשימות — build מממש, review מבקר, ו-gabbai משחרר רק באישור מפורש</p>
     </div>
     <div class="page-head__actions">
       <a class="btn" href="index.html">דף הבית הפנימי</a>
-      <a class="btn" href="guli.html">חדר הסוכנים</a>
+       <a class="btn" href="guli.html">מרכז העבודה</a>
       <a class="btn" href="../app.html">האפליקציה הציבורית</a>
       <button type="button" id="print-btn" class="btn btn--primary">הדפסה / PDF</button>
     </div>
@@ -1008,7 +924,7 @@ function buildHtml(data) {
         <select id="f-status"><option value="">הכל</option></select>
       </div>
       <div class="field">
-        <label for="f-owner">סוכן אחראי</label>
+         <label for="f-owner">תפקיד אחראי</label>
         <select id="f-owner"><option value="">הכל</option></select>
       </div>
       <div class="field">
@@ -1032,7 +948,7 @@ function buildHtml(data) {
   </main>
 
   <footer class="page-foot">
-    <p>נבנה אוטומטית מתוך <code>docs/TEAMS.md</code> ו־<code>docs/agents/TASKS.md</code> בכלי <code>tools/tasks-dashboard.js</code> · הפקח</p>
+     <p>נבנה אוטומטית מתוך <code>docs/TEAMS.md</code> ו־<code>docs/agents/TASKS.md</code> בכלי <code>tools/tasks-dashboard.js</code> · build / review / gabbai</p>
     <p class="print-only" id="print-meta"></p>
   </footer>
 
@@ -1051,7 +967,7 @@ function buildHtml(data) {
   var TASKS = DATA.tasks || [];
   var TEAMS = DATA.teams || [];
 
-  var TEAM_RANK = { "UI/UX": 0, "DEV": 1, "NET": 2, "Research": 3, "Mobile/Deploy": 4, "כללי": 5 };
+  var TEAM_RANK = { "DESIGN": 0, "DESKTOP": 1, "WEB": 2, "ANNOUNCEMENT": 3, "MOBILE": 4 };
   var PRIORITY_RANK = { high: 0, medium: 1, low: 2, none: 3 };
   var STATUS_RANK = { progress: 0, pending: 1, blocked: 2, done: 3 };
   var STATUS_ORDER = ["progress", "pending", "blocked", "done"];
@@ -1290,25 +1206,9 @@ function buildHtml(data) {
     var statusText = detailText(status.label, status.note);
     var context = task.context ? task.context : task.source;
     
-    // Build agents display with status badges from agent-status.json
-    var agentsHtml = "";
-    if (task.agentsEnriched && task.agentsEnriched.length) {
-      var agentSpans = task.agentsEnriched.map(function(a) {
-        var statusClass = "agent-status--unknown";
-          var statusLabel = "UNKNOWN";
-          if (a.status === "active" || a.status === "working") { statusClass = "agent-status--active"; statusLabel = "ACTIVE"; }
-          else if (a.status === "blocked") { statusClass = "agent-status--blocked"; statusLabel = "BLOCKED"; }
-          else if (a.status === "waiting") { statusClass = "agent-status--waiting"; statusLabel = "IN_PROGRESS"; }
-          else if (a.status === "done") { statusClass = "agent-status--done"; statusLabel = "PASS"; }
-        var noteHtml = a.note ? ' <span class="agent-status__note">' + esc(a.note) + '</span>' : "";
-        return '<span class="agent-status ' + statusClass + '" title="' + esc(a.name + ": " + (a.note || a.status)) + '">' +
-          '<strong>' + esc(a.name) + '</strong> ' + statusLabel + noteHtml +
-        '</span>';
-      });
-      agentsHtml = '<span>סוכנים: ' + agentSpans.join(" · ") + '</span>';
-    } else if (task.agents && task.agents.length) {
-      agentsHtml = '<span>סוכנים: <strong>' + esc(task.agents.join(" · ")) + '</strong></span>';
-    }
+    var rolesHtml = task.agents && task.agents.length
+      ? '<span>תפקידי workflow: <strong>' + esc(task.agents.join(" · ")) + '</strong></span>'
+      : "";
     
     return '<li class="card" data-id="' + esc(task.id) + '">' +
       '<div class="card__head">' +
@@ -1320,7 +1220,7 @@ function buildHtml(data) {
       (task.description ? '<p class="card__desc">' + md(task.description) + '</p>' : '') +
       '<p class="card__meta">' +
         '<span>אחראי: <strong>' + esc(task.owner) + '</strong></span>' +
-        (agentsHtml ? " " + agentsHtml : "") +
+        (rolesHtml ? " " + rolesHtml : "") +
         '<span>צוות: <strong>' + esc(teamMeta(task.team).label) + '</strong></span>' +
         '<span>מקור: ' + esc(task.source) + (context ? " · " + esc(context) : "") + '</span>' +
       '</p>' +
@@ -1352,7 +1252,7 @@ function buildHtml(data) {
       { value: TASKS.length, label: "סה״כ משימות" },
       { value: done, label: "הושלמו ואומתו" },
       { value: (statusCounts.progress || 0) + (statusCounts.pending || 0) + (statusCounts.blocked || 0), label: "פתוחות" },
-      { value: TEAMS.filter(function (t) { return t.key !== "כללי"; }).length, label: "צוותים" }
+      { value: TEAMS.length, label: "צוותים" }
     ];
     el.totals.innerHTML = stats.map(function (stat) {
       return '<div class="stat"><span class="stat__value">' + stat.value + '</span><span class="stat__label">' + esc(stat.label) + '</span></div>';
@@ -1468,13 +1368,13 @@ function main() {
   const bytes = Buffer.byteLength(html, "utf8");
   const teams = data.teams.map((t) => t.key).join(", ");
   console.log(
-    `[inspector] built internal/tasks.html (${(bytes / 1024).toFixed(1)} KiB) | ${data.tasks.length} tasks | teams: ${teams}`
+    `[tasks] built internal/tasks.html (${(bytes / 1024).toFixed(1)} KiB) | ${data.tasks.length} tasks | teams: ${teams}`
   );
 }
 
 try {
   main();
 } catch (err) {
-  console.error(`[inspector] build failed: ${err.message}`);
+  console.error(`[tasks] build failed: ${err.message}`);
   process.exitCode = 1;
 }

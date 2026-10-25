@@ -31,48 +31,9 @@ const STATIC_SOURCES = [
 /* ---------- צוותים ---------- */
 
 const TEAMS = [
-  {
-    key: "management",
-    name: "הנהלה ובקרה",
-    icon: "NAVIGATION",
-    hint: "מובילים, מתעדפים ועוקבים אחרי הקפאות",
-    agents: ["main", "inspector", "kipi"]
-  },
-  {
-    key: "product",
-    name: "מוצר ועיצוב",
-    icon: "DESIGN",
-    hint: "ממשק, נגישות, RTL ובדיקות איכות",
-    agents: ["designer", "reviewer"]
-  },
-  {
-    key: "maps",
-    name: "מפות ונתונים",
-    icon: "MAP",
-    hint: "גיאומטריה, ניווט ורחובות",
-    agents: ["mediator", "mappy"]
-  },
-  {
-    key: "research",
-    name: "מחקר ותוכן",
-    icon: "RESEARCH",
-    hint: "עובדות, שמות ומקורות לכל רחוב",
-    agents: ["researcher"]
-  },
-  {
-    key: "docs",
-    name: "תיעוד",
-    icon: "DOCUMENTATION",
-    hint: "דף החדר, סטטוסים וסנכרון",
-    agents: ["documenter"]
-  },
-  {
-    key: "mobile",
-    name: "מובייל והפצה",
-    icon: "MOBILE",
-    hint: "PWA, התקנה, שחרורים ופריסה",
-    agents: ["mobile", "deployer"]
-  }
+  { key: "build", name: "build — מימוש וכובעים", icon: "BUILD", hint: "מימוש ישיר; כובעי UX, מפות, נתונים, מחקר ומובייל לפי הצורך", agents: ["build"] },
+  { key: "review", name: "review — ביקורת", icon: "REVIEW", hint: "סקירה עצמאית, בדיקות סיכון ונגישות; ללא מימוש", agents: ["review"] },
+  { key: "gabbai", name: "gabbai — שחרור", icon: "RELEASE", hint: "commit, push ופרסום רק לאחר אישור מפורש של המשתמש", agents: ["gabbai"] }
 ];
 
 const TEAM_OF = {};
@@ -82,11 +43,9 @@ for (const team of TEAMS) {
 
 /* שלבי מסלול העבודה — התרשים הוויזואלי */
 const FLOW_STAGES = [
-  { key: "research", title: "מחקר", hint: "עובדות, שמות ומקורות", agents: ["researcher"] },
-  { key: "design", title: "עיצוב", hint: "ממשק, נגישות ו-RTL", agents: ["designer"] },
-  { key: "build", title: "פיתוח ומפות", hint: "קוד, נתונים וגיאומטריה", agents: ["main", "mediator"] },
-  { key: "review", title: "בדיקה", hint: "באגים, ביצועים ונגישות", agents: ["reviewer"] },
-  { key: "ship", title: "תיעוד והפצה", hint: "דוחות, משימות ושחרור", agents: ["documenter", "inspector", "kipi", "mobile", "deployer"] }
+  { key: "build", title: "מימוש", hint: "build מיישם את המטרה ומפעיל כובעים לפי הצורך", agents: ["build"] },
+  { key: "review", title: "ביקורת", hint: "review בודק עצמאית את התוצאה והסיכונים", agents: ["review"] },
+  { key: "release", title: "שחרור", hint: "gabbai מבצע רק פעולה שאושרה במפורש", agents: ["gabbai"] }
 ];
 
 const STATUS = {
@@ -97,15 +56,8 @@ const STATUS = {
   standby: { label: "בחופשה", className: "is-waiting" }
 };
 
-/* שמות ב-state.json מול השמות ב-tasks-data.json */
-const STATE_TO_TASKS_NAME = {
-  "שיפו": "הבודק",
-  "ציבי": "המעצב",
-  "צירי": "המגשר",
-  "גולי": "המתעד",
-  "טופי": "מובריליס",
-  "פזי": "פיצי"
-};
+/* שמות התפקידים זהים לשמות הבעלים ב-tasks-data.json. */
+const STATE_TO_TASKS_NAME = {};
 
 const MONTHS = [
   "ינואר", "בפברואר", "במרץ", "באפריל", "במאי", "ביוני",
@@ -326,13 +278,13 @@ function renderStatus(agent) {
 
 function renderTalk(talk) {
   if (!talk || typeof talk !== "object") {
-    return `<p class="agent__talk"><span class="label">עם מי</span> טרם דווח</p>`;
+    return `<p class="agent__talk"><span class="label">מתואם עם</span> טרם דווח</p>`;
   }
   const who = talk.with ? esc(talk.with) : "טרם דווח";
   const topic = talk.topic ? esc(talk.topic) : "";
   const state = talk.state ? `<span class="talk-state">${esc(talk.state)}</span>` : "";
   return `<p class="agent__talk">
-      <span class="label">עם מי</span>
+      <span class="label">מתואם עם</span>
       <span class="agent__talk-body"><strong>${who}</strong>${topic ? ` · ${topic}` : ""} ${state}</span>
     </p>`;
 }
@@ -411,12 +363,12 @@ function renderAgent(agent, tasksData) {
     <div class="agent__meta-row">
       ${teamBadge}
       <span class="agent__work-status ${status.working ? "working" : "on-break"}">
-        <span class="work-status__label">${status.working ? "ACTIVE" : "BLOCKED"} ${esc(status.label)}</span>
+        <span class="work-status__label">${status.working ? "ACTIVE" : "WAITING"} ${esc(status.label)}</span>
         <span class="work-status__reason">${esc(status.reason)}</span>
       </span>
     </div>
 
-    <p class="agent__now"><span class="label">מה עושה עכשיו</span>${esc(agent.currentTask || "טרם דווח")}</p>
+    <p class="agent__now"><span class="label">מה מתבצע עכשיו</span>${esc(agent.currentTask || "טרם דווח")}</p>
     ${renderTalk(agent.talkingWith)}
 
     ${taskSummary}
@@ -489,7 +441,7 @@ function renderTeamDashboard(agents, tasksData) {
     ? `<section class="team-card" id="team-other">
         <header class="team-card__head">
       <span class="team-card__icon" aria-hidden="true">TOOLS</span>
-          <div><h3>ללא צוות</h3><p class="team-card__hint">סוכנים שטרם שויכו לצוות</p></div>
+          <div><h3>ללא שיוך</h3><p class="team-card__hint">תפקידים שטרם שויכו למסלול</p></div>
         </header>
         <ul class="team-card__list">
           ${unassigned.map((agent) => `<li><a class="team-card__agent" href="#agent-${esc(agent.id)}"><span class="team-card__initial" aria-hidden="true">${esc(agent.initial || agent.name.slice(0, 1))}</span><span class="team-card__body"><span class="team-card__name">${esc(agent.name)}</span></span></a></li>`).join("")}
@@ -500,11 +452,11 @@ function renderTeamDashboard(agents, tasksData) {
   return `<section aria-labelledby="teams-title" id="teams">
     <div class="section__head">
       <h2 id="teams-title">דשבורד צוותים</h2>
-      <p class="section__hint">לחצו על סוכן כדי לקפוץ לכרטיס שלו. ${TEAMS.length} צוותים, ${agents.length} סוכנים.</p>
+      <p class="section__hint">לחצו על תפקיד כדי לקפוץ לכרטיס שלו. ${TEAMS.length} מסלולים, ${agents.length} תפקידים.</p>
     </div>
     <div class="teams-grid">
       ${sections}
-      ${extra}
+${extra}
     </div>
   </section>`;
 }
@@ -536,7 +488,7 @@ function renderFlow(agents) {
     <span class="chip is-active">פעיל</span>
     <span class="chip is-waiting">ממתין</span>
     <span class="chip is-unknown">טרם דווח</span>
-    <span class="flow__legend-text">החצים מסמנים את כיוון הזרימה; כל שם הוא קישור לכרטיס הסוכן.</span>
+    <span class="flow__legend-text">החצים מסמנים את כיוון הזרימה; כל שם הוא קישור לכרטיס התפקיד.</span>
   </p>`;
 }
 
@@ -614,8 +566,8 @@ function buildHtml(state, tasksData) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#f6f1e7">
-<title>מה קורה בחדר — המתעד</title>
-<meta name="description" content="חדר הסוכנים של יומן הרחובות ירושלים: מי עושה מה עכשיו, עם מי מדבר, מה הסתיים ומה נשאר.">
+<title>מרכז העבודה — build, review ו-gabbai</title>
+<meta name="description" content="מרכז העבודה של יומן הרחובות ירושלים: תפקידי workflow, כובעים מקצועיים, סטטוסים ושערי release.">
 <style>
 :root{
   --paper:#f6f1e7;
@@ -853,13 +805,13 @@ footer.page a{font-weight:600}
 
 <header class="masthead">
   <div class="wrap">
-    <p class="kicker">חדר הסוכנים · יומן הרחובות ירושלים · <strong>הדף של המתעד</strong></p>
+    <p class="kicker">מרכז העבודה · יומן הרחובות ירושלים · <strong>תפקידי workflow</strong></p>
     <h1>מה קורה בחדר</h1>
     <p class="lead">${esc(meta.nowLine || "טרם דווח מה קורה בחדר.")}</p>
     <div class="masthead__bar">
       <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>${active} פעילים · ${waiting} ממתינים</span>
       <a href="index.html" class="btn">דף הבית הפנימי</a>
-      <a href="tasks.html" class="btn btn--primary">דשבורד המשימות (הפקח)</a>
+      <a href="tasks.html" class="btn btn--primary">דשבורד המשימות</a>
       <a href="../app.html" class="btn">האפליקציה הציבורית</a>
       <span class="time-note">עודכן <time dir="ltr" datetime="${esc(updatedAt)}">${esc(dateTimeLabel(updatedAt))}</time></span>
       <span id="relative-time" class="time-note" data-updated="${esc(updatedAt)}"></span>
@@ -870,7 +822,7 @@ footer.page a{font-weight:600}
         <li><a href="#room-title">מי בחדר</a></li>
         <li><a href="#teams">צוותים</a></li>
         <li><a href="#flow-title">מסלול העבודה</a></li>
-        <li><a href="#agents-title">הסוכנים</a></li>
+        <li><a href="#agents-title">התפקידים</a></li>
         <li><a href="#timeline-title">ציר הזמן</a></li>
         <li><a href="#sources-title">מקורות</a></li>
       </ul>
@@ -882,7 +834,7 @@ footer.page a{font-weight:600}
   <section aria-labelledby="room-title">
     <div class="section__head">
       <h2 id="room-title">מי בחדר</h2>
-      <p class="section__hint">תמונת מצב מהירה של כל הסוכנים והצוותים שלהם.</p>
+      <p class="section__hint">תמונת מצב מהירה של תפקידי workflow ושל הכובעים המקצועיים.</p>
     </div>
     <ul class="room">${renderRoom(agents)}</ul>
   </section>
@@ -892,14 +844,14 @@ footer.page a{font-weight:600}
   <section aria-labelledby="flow-title">
     <div class="section__head">
       <h2 id="flow-title">מסלול העבודה</h2>
-      <p class="section__hint">מחקר → עיצוב → פיתוח ומפות → בדיקה → תיעוד והפצה. כל שלב מציג את הסוכנים שפעילים בו.</p>
+      <p class="section__hint">מימוש → ביקורת → שחרור. כל שלב מציג את התפקיד הרלוונטי ואת סטטוס העבודה.</p>
     </div>
     ${renderFlow(agents)}
   </section>
 
   <section aria-labelledby="agents-title">
     <div class="section__head">
-      <h2 id="agents-title">הסוכנים, אחד אחד</h2>
+      <h2 id="agents-title">התפקידים, אחד אחד</h2>
       <p class="section__hint">מה עושה עכשיו, עם מי מדבר, מה אחר כך ומה כבר נסגר.</p>
     </div>
     <div class="agents">
@@ -931,7 +883,7 @@ footer.page a{font-weight:600}
 
 <footer class="page">
   <div class="wrap">
-    <p>הדף נבנה על ידי <strong>המתעד</strong> מתוך <a href="../docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
+    <p>הדף נבנה אוטומטית מתוך <a href="../docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
     <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="../app.html">האפליקציה</a></p>
   </div>
 </footer>
