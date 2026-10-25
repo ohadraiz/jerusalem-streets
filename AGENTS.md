@@ -1,44 +1,45 @@
-# הנחיות פרויקט — "יומן הרחובות של ירושלים"
+# Project Instructions — Jerusalem Streets Journal
 
-קובץ זה חל על כל הסוכנים והצוותים בפרויקט.
+This is the only automatically loaded project instruction file. Other workflow notes and hats are on-demand references; never load them all by default.
 
-## סביבת בטא תחילה
+## Default operating rules
 
-1. **שום שינוי לא עולה לאתר הציבורי לפני שנבדק ב-beta.html ואושר במפורש על ידי המשתמש.**
-   התהליך מתואם על ידי **פתחי** (`.opencode/agents/pitchei.md`).
-2. כל שינוי מוצג ב-beta (או ב-localhost) עם תוצאות שערים, ואז נשלחת בקשה מפורשת
-   לאישור. אישור של סוכן אחר או שתיקה — אינם אישור.
-3. `beta.html` טוען **עותק מבודד** של קובצי האפליקציה (`assets/beta/*`), בעוד האתר הציבורי
-   ממשיך לטעון את `assets/*` שפורסמו. לכן שינוי גדול יכול להיבדק ב-beta בלי לגעת בציבורי.
-   דגלים (`window.JLM_BETA` / `html.is-beta`) נשארים לכלי הדרגתי בתוך הבטא עצמה.
-4. `beta.html` והעותקים נוצרים אוטומטית; אין לערוך אותם ביד:
-   `node tools/make-beta.js` (ולפני פרסום: `node tools/make-beta.js --check`).
-5. אחסון הבטא נפרד (`jlm-street-journal-beta-v1`). אין לכתוב נתוני בדיקה למפתח האמיתי
-   (`jlm-street-journal-v1`).
+- One goal per session. Use `docs/agents/PROTOCOL.md` when request classification or approval flow needs clarification.
+- Use targeted search and bounded reads. Do not load full boards, channels, research, backups, or generated data automatically.
+- For ordinary coding, read only relevant source files; do not read `BOARD.md`, `TASKS.md`, or diagnostics unless the request requires them.
+- Reuse unchanged context, batch independent safe operations, and keep tool output concise.
+- Historical decisions and agent logs are retained under `docs/agents/` for lookup, not automatic context. Read only a relevant entry when requested or necessary.
+- Use no emojis in agent responses, status reports, task descriptions, handoffs, or agent-to-agent communication; use plain text labels such as `PASS`, `WARNING`, `PENDING`, and `BLOCKED`.
+- At completion, report changed files, checks/results, untested items, and next step.
 
-## תקשורת עם המשתמש (אהד)
+## Required verification and release gates
 
-1. **הודעות של סוכן משנה מועברות על ידי הראשי.** סוכן משנה רץ בסשן נפרד, ולכן הודעתו
-   למשתמש (למשל הודעת הפתיחה של **פתחי**: "היי אהד, אני פתחי ראש צוות הבטא שלך! תראה איזה
-   שינויים הגיעו משאר חברי הצוות!!!!!!!!!!!!") **אינה מופיעה אצל אהד מעצמה** — היא חוזרת
-   לסוכן הראשי (`build`).
-2. **הראשי חייב להעביר את ההודעה כמות שהיא** אל השיחה הרגילה (מילה במילה, בלי לסכם/לשכתב),
-   ואז **לעצור ולהמתין לתשובת אהד** — בלי להמשיך אוטומטית לשלב הבא.
-3. **הסוכן המשנה חוזר עם הודעה מוכנה למשתמש** (מתחילה ב"היי אהד" או מבקשת החלטה) ומסמן
-   במפורש "ממתין לאישור/תשובה של אהד". כאשר אהד עונה, הראשי מעביר את התשובה חזרה לאותו סוכן
-   (דרך `sessionID`) כדי שימשיך לפי התשובה.
-4. כלל אצבע: **כל הודעה של סוכן שמתחילה ב"היי אהד" או מבקשת החלטה = עוברת כמות שהיא לשיחה,
-   ואז עצירה מלאה להמתנה.**
+- JavaScript change: `node --check <changed-js>`.
+- Standard checks: `node tools/verify.js` and `node tests/store.test.js`.
+- After beta generation: `node tools/make-beta.js --check`.
+- No public change before beta/localhost verification and explicit user approval. Agent approval or silence is not approval.
+- `beta.html` and `assets/beta/*` are generated; never edit them by hand. Beta storage is `jlm-street-journal-beta-v1`, separate from `jlm-street-journal-v1`.
 
-## גבולות קבועים
+## Fixed project boundaries
 
-- אין לשנות את חוזה `JLMAPI`, `JLMBus`, `JLM_GEO`, את מזהי ה-DOM, את LOD 12,
-  או את סכמת האחסון בלי אישור מפורש.
-- מקור האריחים המאושר היחיד הוא OpenStreetMap (ODbL).
-- אין force push, אין שכתוב היסטוריה שפורסמה, ואין פרסום שינוי שלא נבדק.
+- User-facing application language remains Hebrew and RTL.
+- UI changes require WCAG AA, 44px touch targets, visible focus, and appropriate `aria-live`.
+- Do not change `JLMAPI`, `JLMBus`, `JLM_GEO`, DOM IDs, LOD 12, or storage schema without explicit approval.
+- OpenStreetMap (ODbL) is the only approved tile/data source.
+- No force push, published-history rewrite, or untested publication.
+- One agent owns a file at a time. Never run overlapping edits concurrently.
 
-## קישורים
+## Main agent, hats, and the two remaining subagents
 
-- אתר ציבורי: https://ohadraiz.github.io/jerusalem-streets/
-- סביבת בטא: https://ohadraiz.github.io/jerusalem-streets/beta.html
-- ערוץ פתחי: `docs/agents/channels/pitchei.md`
+- `build` handles work directly and applies only relevant on-demand hats from `docs/agents/HATS.md`; hats are checklists, not agents, and must not be loaded as a bundle.
+- Use `review` only when an independent, read-only review adds value or is requested.
+- Use `gabbai` only for release operations, and only after explicit user approval for the specific release action.
+- Never delegate routine implementation, research, testing, beta preparation, or coordination to removed specialist agents.
+
+## On-demand references
+
+- Hat selection: `docs/agents/HATS.md` (then open only the relevant hat)
+- Request workflow: `docs/agents/PROTOCOL.md`
+- Historical records: `docs/agents/archive/README.md`
+- Public site: https://ohadraiz.github.io/jerusalem-streets/
+- Beta: https://ohadraiz.github.io/jerusalem-streets/beta.html

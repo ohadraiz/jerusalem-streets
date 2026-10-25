@@ -183,6 +183,24 @@ body {
   inset-inline-start: 0;
 }
 
+.noscript-note {
+  max-width: 940px;
+  margin: 1rem auto;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 0.9rem;
+}
+
+.noscript-note a {
+  color: var(--accent-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -218,6 +236,29 @@ body {
   margin: 0.75rem 0 1.75rem;
   max-width: 46ch;
   color: var(--ink-soft);
+}
+
+.hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
+  margin: -0.75rem 0 1.5rem;
+}
+
+.hero__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 0.15rem;
+  color: var(--accent-text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.hero__links a:hover {
+  color: var(--ink);
 }
 
 .progress {
@@ -940,6 +981,23 @@ summary,
   display: flex;
   flex-direction: column;
   gap: 0.15rem;
+}
+
+/* לאחר התרחקות הפופאפ נשאר זמין לסימון, אך לא מכסה את המפה. */
+.map-popup--compact {
+  max-width: 14rem;
+  gap: 0.05rem;
+}
+
+.map-popup--compact .map-popup__area,
+.map-popup--compact .map-popup__find,
+.map-popup--compact .map-popup__dyk {
+  display: none;
+}
+
+.map-popup--compact .map-popup__toggle {
+  margin-top: 0.15rem;
+  padding-block: 0.25rem;
 }
 
 .map-popup__title {
@@ -2119,6 +2177,24 @@ body.dyk-modal-open {
   padding: 0 1.25rem;
 }
 
+/* ה-FAQ הוא חלק מתוכן העמוד; בתוך ה-layout הוא מקבל את הרוחב והמרווחים שלו */
+.layout .faq {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq__title {
+  margin: 0 0 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.faq__q {
+  margin: 0;
+  font: inherit;
+}
+
 .faq__item {
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -2181,6 +2257,30 @@ body.dyk-modal-open {
 }
 
 /* Footer additions */
+.footer__intro {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem 0.5rem;
+}
+
+.footer__intro a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 0.4rem;
+  color: var(--accent-text);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer__intro a:hover {
+  color: var(--ink);
+}
+
 .footer__privacy {
   margin: 0.75rem 0 0.25rem;
   font-size: 0.85rem;
@@ -2515,6 +2615,28 @@ body.dyk-modal-open {
     line-height: 44px !important;
     padding: 0 !important;
     font-size: 1.5rem !important;
+  }
+}
+
+/* בפלאפון כרטיס הרחוב נשאר קריא אך לא משתלט על שטח המפה. */
+@media (max-width: 620px) {
+  .leaflet-popup-content {
+    max-width: 220px;
+    margin: 0.45rem 0.6rem;
+    line-height: 1.3;
+  }
+
+  .map-popup__title {
+    font-size: 0.95rem;
+  }
+
+  .map-popup__area,
+  .map-popup__state {
+    font-size: 0.76rem;
+  }
+
+  .map-popup--compact {
+    max-width: 11rem;
   }
 }
 

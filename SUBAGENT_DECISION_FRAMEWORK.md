@@ -1,141 +1,22 @@
-# מסגרת החלטה: סאב-אייג'נט vs ראשי
-**לשימוש לפני כל משימה** — הערכה מהירה (30 שניות) האם להפעיל סאב-אייג'נט
+# Delegation and Hat Decision Framework
 
----
+Default to `build` working directly. Specialist hats are checklists, not subagents; choose only the relevant hat from `docs/agents/HATS.md` and open at most one or two.
 
-## 🎭 טקס פתיחה חובה — לפני כל משימה
+## Route work
 
-> **רגע אהד היקר, בוא נבדוק אם אנחנו צריכים להשתמש באחד מסוכני המשנה שלנו או שאני יכול לעשות את זה לבד!!!!!!!!**
+| Need | Route |
+|---|---|
+| Implementation, research, tests, beta preparation, documentation, integration | `build` directly; apply relevant hat(s) only |
+| Independent read-only review | `review`, when requested or justified by risk; specify the changed-file scope |
+| Commit, push, or public release operations | `gabbai`, only after explicit user approval for that specific action |
 
----
+Do not delegate implementation, research, routine testing, beta preparation, or coordination. Do not create new project agents for these tasks.
 
-*עכשיו ביחד נעבור על הצ'קליסט ונחליט...*
+## Release stop points
 
----
+- A successful test, beta review, agent report, prior approval, or silence does not authorize publication.
+- Verify the current diff and scope; do not stage unrelated or ambiguous changes.
+- Require successful project checks and beta/localhost verification before public release.
+- Git write operations require confirmation; force-push, published-history rewrite, and untested publication are prohibited.
 
-## 🎯 תהליך ההחלטה (3 שלבים)
-
-### שלב 1: סיווג המשימה
-| סוג משימה | ברירת מחדל |
-|-----------|-------------|
-| כתיבת/תיקון קוד יישום | **ראשי** |
-| תיקון באג נקודתי | **ראשי** |
-| עדכון תיעוד (BOARD/TASKS/TEAMS) | **ראשי** |
-| הרצת פקודות/בדיקות | **ראשי** |
-| חקר חיצוני (HTTP, APIs, אתרים) | **שקול סאב-אייג'נט** |
-| ביקורת קוד/נגישות/ביצועים | **שקול סאב-אייג'נט** |
-| מחקר רחב (עשרות מקורות) | **סאב-אייג'נט** |
-| משימה ארוכה/חוזרת (rate limiting, pagination) | **סאב-אייג'נט** |
-
-### שלב 2: צ'קליסט החלטה (ענה כן/לא)
-
-| שאלה | כן → סאב-אייג'נט | לא → ראשי |
-|------|------------------|------------|
-| דורש **עשרות בקשות HTTP/קריאת עשרות דפים** במקביל? | ✅ | ❌ |
-| יכול לרוץ **במקביל** לעבודה שלי (לא חוסם)? | ✅ | ❌ |
-| דורש **מומחיות ספציפית** (רישיונות, נגישות, PWA, ביצועים)? | ✅ | ❌ |
-| ארוכה/חוזרת (rate limiting, retries, pagination, polling)? | ✅ | ❌ |
-| תוצאה = **דוח מסוכם** שאני רק קורא ומחליט? | ✅ | ❌ |
-| **צריך להחליט בזמן אמת** לפי תוצאות ביניים? | ❌ | ✅ |
-| דורש **קונטקסט מלא** (BOARD, TASKS, state.json, קוד)? | ❌ | ✅ |
-| **כותב/מתקן קוד** — החלטות רציפות? | ❌ | ✅ |
-| **קצרה ונקודתית** (טיפו, שורה אחת, הרצת פקודה)? | ❌ | ✅ |
-
-**כלל:** אם **2+ "כן" בעמודה הימנית** → הפעל סאב-אייג'נט
-
-### שלב 3: בחירת הסאב-אייג'נט הנכון
-
-| סוג משימה | סאב-אייג'נט | ערוץ דיווח |
-|------------|--------------|-------------|
-| חקר קודבקסט רחב (API endpoints, patterns) | `explore` | - |
-| חקר ווב/HTTP/APIs/רישיונות | `chiki` / `researcher` | `docs/agents/channels/researcher.md` |
-| ביקורת קוד/באגים/ביצועים | `shifu` | `docs/agents/channels/shifu.md` |
-| ביקורת UX/נגישות/RTL | `tsibi` | `docs/agents/channels/tsibi.md` |
-| חקר מפות/נתונים גיאוגרפיים | `mappy` | `docs/agents/channels/mappy.md` |
-| מפות/אריחים/גיבוי Canvas | `tsiri` | `docs/agents/channels/tsiri.md` |
-| PWA/מובייל/offline | `mobi` | `docs/agents/channels/mobi.md` |
-| הפצה/אחסון/CSP/CSP | `pitzi` | `docs/agents/channels/pitzi.md` |
-| הקפאות/חסמים | `kipi` | `docs/agents/channels/kipi.md` |
-| Git commit/push/deploy | `gabbai` | - |
-
----
-
-## 📋 תבנית החלטה מהירה (העתק-הדבק לפני משימה)
-
-```
-## החלטת סאב-אייג'נט למשימה: [שם משימה]
-
-משימה: [תיאור קצר]
-סוג: [כתיבת קוד / תיקון באג / חקר / ביקורת / תיעוד / הרצה]
-
-צ'קליסט:
-- [ ] עשרות בקשות HTTP/דפים? ☐ כן ☐ לא
-- [ ] יכול לרוץ במקביל? ☐ כן ☐ לא
-- [ ] מומחיות ספציפית נדרשת? ☐ כן ☐ לא
-- [ ] ארוכה/חוזרת (rate limit, pagination)? ☐ כן ☐ לא
-- [ ] תוצאה = דוח מסוכם? ☐ כן ☐ לא
-- [ ] צריך להחליט בזמן אמת? ☐ כן ☐ לא
-- [ ] דורש קונטקסט מלא? ☐ כן ☐ לא
-- [ ] כותב/מתקן קוד? ☐ כן ☐ לא
-- [ ] קצרה ונקודתית? ☐ כן ☐ לא
-
-החלטה: ☐ ראשי ☐ סאב-אייג'נט: [שם סאב-אייג'נט]
-נימוק: [שורה אחת]
-```
-
----
-
-## 📅 ציר זמן פרויקט — מתי הופעלו סאב-אייג'נטים
-
-| שלב | סאב-אייג'נט | מה עשה |
-|------|--------------|---------|
-| נתונים (015–026) | `chiki`/`explore` | 4,383 רחובות, מיזוג OSM + data.gov.il |
-| מפה v1–v4 (023, 029, 034, 050) | `mappy` + `chiki` | Tile providers, חסימת OSM, שרשרת גיבוי |
-| UI/UX 031–046 | `tsibi` + `shifu` | נגישות, UX מובייל, אימות חי |
-| מחקר "הידעת?" (047, 053) | `researcher` | Pipeline 2,424 רחובות, פיילוט 50, 12 אפליקציות |
-| PWA/מובייל (045, 053, 061) | `mobi` + `chiki` | Safe-area, offline, manifest, SW |
-| הפצה (054–055) | `pitzi` + `chiki` | השוואת ספקים, CSP, GitHub Pages |
-
----
-
-## 🚫 מתי **לא** להפעיל סאב-אייג'נט
-
-| מצב | סיבה |
-|------|-------|
-| כתיבת/תיקון קוד יישום | דורש קונטקסט מלא + החלטות רציפות |
-| תיקון באג נקודתי (טיפו, שורה) | מהיר, החלטה מיידית |
-| עדכון BOARD/TASKS/TEAMS/state.json | דורש קונטקסט מלא |
-| כתיבת פרומפטים לסוכנים | דורש קונטקסט מלא |
-| הרצת verify.js / store.test.js / serve.js | פעולה מיידית, החלטה מיידית |
-| פתיחת טאבים, בדיקת localhost | פעולה מיידית |
-
----
-
-## 📋 פרוטוקול הפעלה (אם הוחלט על סאב-אייג'נט)
-
-```
-1. זהה את הסאב-אייג'נט הנכון (טבלה למעלה)
-2. כתוב פרומפט ממוקד:
-   - מטרה ברורה (שורה אחת)
-   - קבצים מותרים/אסורים
-   - חוזה/ממשק קיים
-   - בדיקות נדרשות
-   - פורמט דוח צפוי
-   - מה אסור לשאול/לעשות
-3. הפעל: subagent: [שם] + task: "[פרומפט]"
-4. קרא דוח, החלט, יישם/סגור
-```
-
----
-
-## 📌 תזכורת קבועה (הדבק בראש כל סשן)
-
-> **לפני כל משימה: עצור 30 שניות → צ'קליסט → החלט → תעד**
->
-> - 2+ "כן" בעמודה הימנית = סאב-אייג'נט
-> - כתיבת קוד / קונטקסט מלא / החלטה בזמן אמת = ראשי
-> - תמיד תעד החלטה ב-BOARD/TASKS/ערוץ
-
----
-
-*עדכון אחרון: 2026-10-22 | חלק מהפרויקט "יומן הרחובות של ירושלים"*
+When using `review`, provide the goal, exact files/scope, relevant contracts, and desired report format. `review` must remain read-only and cannot approve a release.

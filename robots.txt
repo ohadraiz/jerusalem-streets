@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /beta.html
+Disallow: /assets/beta/
+Disallow: /internal/
+Disallow: /tasks.html
+Disallow: /agents-dashboard.html
+Disallow: /agent-vs-subagent.html
+Disallow: /project-map.html
+Disallow: /guli.html
+Disallow: /versions.html
+
+Sitemap: https://ohadraiz.github.io/jerusalem-streets/sitemap.xml

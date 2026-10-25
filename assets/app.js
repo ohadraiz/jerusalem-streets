@@ -78,7 +78,6 @@
     statLeft: document.getElementById("stat-left"),
     statPct: document.getElementById("stat-pct"),
     statsSummary: document.getElementById("stats-summary"),
-    quickAreas: document.getElementById("quick-areas"),
     breakdown: document.getElementById("area-breakdown"),
     breakdownCount: document.getElementById("breakdown-count"),
     clearFiltersBtn: document.getElementById("clear-filters"),
@@ -631,11 +630,23 @@
       }
       /* הפוקוס עובר לרחוב המוצע — כך מקלדת יכולה להמשיך משם (Enter למפה, "v" לסימון) */
       var nameButton = row.querySelector('[data-action="goto"]');
-      if (nameButton) nameButton.focus({ preventScroll: true });
+      if (nameButton) {
+        nameButton.setAttribute(
+          "aria-label",
+          "רחוב אקראי מוצע: " + pick.name + (pick.area ? ", " + pick.area : "")
+        );
+        nameButton.focus({ preventScroll: true });
+      }
     }
-    var text = "הצעה: אולי תבקרו ברחוב " + pick.name + (pick.area ? " ב" + pick.area : "") + ".";
+    var text = "הצעה: אולי תבקרו ברחוב " + pick.name + (pick.area ? " ב" + pick.area : "") + ". (r להצעה חדשה)";
     showToast(text, null);
     announce(text);
+    if (el.randomBtn) {
+      el.randomBtn.setAttribute(
+        "aria-label",
+        "רחוב אקראי — הצעה אחרונה: " + pick.name + (pick.area ? ", " + pick.area : "")
+      );
+    }
   }
 
   function today() {
@@ -1308,7 +1319,6 @@
       })
       .join("");
 
-    renderQuickAreas(rows, visited);
     renderAchievements();
     renderAreaOptions();
   }
@@ -1317,44 +1327,6 @@
    * שורת קיצורים: בכניסה ראשונה — השכונות הגדולות ביותר (נקודת התחלה);
    * אחרי שמתחילים לסמן — השכונות שבהן הכי התקדמנו.
    */
-  function renderQuickAreas(rows, visited) {
-    if (!el.quickAreas) return;
-
-    var title;
-    var items;
-
-    if (visited === 0) {
-      title = "מתחילים כאן — השכונות הגדולות ביותר";
-      items = rows
-        .slice()
-        .sort(function (a, b) {
-          if (b.total !== a.total) return b.total - a.total;
-          return a.area.localeCompare(b.area, "he");
-        })
-        .slice(0, 6);
-    } else {
-      title = "התקדמות לפי שכונה";
-      items = rows.slice(0, 6);
-    }
-
-    el.quickAreas.innerHTML =
-      '<p class="quick__title">' + title + "</p>" +
-      '<ul class="quick__list">' +
-      items
-        .map(function (row) {
-          var count = visited === 0 ? formatNumber(row.total) + " רחובות" : row.visited + "/" + row.total;
-          return (
-            '<li class="quick__item">' +
-              '<button type="button" class="chip" data-area="' + escapeHtml(row.area) + '">' +
-                '<span class="chip__name">' + escapeHtml(row.area) + "</span>" +
-                '<span class="chip__count">' + count + "</span>" +
-              "</button>" +
-            "</li>"
-          );
-        })
-        .join("") +
-      "</ul>";
-  }
 
   function renderAreaOptions() {
     var rows = sortedAreaList();
@@ -2329,7 +2301,6 @@
     });
   }
 
-  bindAreaButtons(el.quickAreas);
   bindAreaButtons(el.breakdown);
 
   el.area.addEventListener("change", function (event) {
@@ -3365,14 +3336,16 @@
   var DAILY_GOAL = 3; /* כמה רחובות לשאוף בכל יום */
 
   function buildDailyGoal() {
-    if (!el.quickAreas || document.getElementById("daily-goal")) return;
+    if (document.getElementById("daily-goal")) return;
+    var anchor = document.getElementById("breakdown-details");
+    if (!anchor) return;
     var badge = document.createElement("div");
     badge.id = "daily-goal";
     badge.className = "daily-goal";
     badge.setAttribute("role", "status");
     badge.setAttribute("aria-live", "polite");
     badge.setAttribute("aria-atomic", "true");
-    el.quickAreas.parentNode.insertBefore(badge, el.quickAreas);
+    anchor.parentNode.insertBefore(badge, anchor);
     renderDailyGoal();
   }
 
@@ -3391,7 +3364,7 @@
     var status = countToday >= DAILY_GOAL ? 'daily-goal--done' : '';
     badge.innerHTML =
       '<span class="daily-goal__label">יעד יומי</span>' +
-      '<span class="daily-goal__progress ' + status + '" style="--pct:' + progress + '%" aria-valuenow="' + progress + '" aria-valuemin="0" aria-valuemax="100">' +
+      '<span class="daily-goal__progress ' + status + '" style="--pct:' + progress + '%" aria-hidden="true">' +
         '<span class="daily-goal__bar"></span>' +
       '</span>' +
       '<span class="daily-goal__count">' + countToday + '/' + DAILY_GOAL + '</span>' +

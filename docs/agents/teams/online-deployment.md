@@ -1,6 +1,6 @@
 # העלאה לרשת — מדריך הפצה ל"יומן הרחובות ירושלים"
 
-> **✅ הפריסה בפועל (2026-10-21):** `https://ohadraiz.github.io/jerusalem-streets/`
+> **PASS הפריסה בפועל (2026-10-21):** `https://ohadraiz.github.io/jerusalem-streets/`
 > הריפו הופך לציבורי, GitHub Pages פועל מענף `main` (path `/`), והאתר אומת בדפדפן: ספק OSM, 10 אריחים, ייחוג יחיד,
 > Service Worker רשום ושולט, manifest נגש `application/manifest+json`, אין שגיאות קונסול. ראו `docs/agents/BOARD.md` רשומה 055.
 
@@ -106,6 +106,6 @@ Invoke-RestMethod 'https://api.github.com/repos/ohadraiz/jerusalem-streets/pages
 
 ## 8. בדיקות שכבר רצו (לפני העלאה)
 
-- `node --check assets/map.js` / `sw.js` / `assets/sw-register.js` ✅
-- `node tests/store.test.js` ✅ · `node tools/verify.js` ✅
+- `node --check assets/map.js` / `sw.js` / `assets/sw-register.js` PASS
+- `node tests/store.test.js` PASS · `node tools/verify.js` PASS
 - דפדפן אמת: `http://localhost` (OSM), ללא Referer (מעבר ל-OSM DE), כל הספקים חסומים (באנר סופי + "נסה שוב"), `file://` אמיתי (OSM DE, אפס בקשות ל-OSM), **ואחר כך שרת כבוי → האפליקציה נטענת מהמטמון במלואה**.

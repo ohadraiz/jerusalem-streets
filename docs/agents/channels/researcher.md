@@ -122,19 +122,19 @@ researcher: החוקר
 
 | # | ספק | URL template (z/x/y) | בלי Referer | עם Referer | maxzoom | מפתח/חשבון | רישיון | המלצה |
 |---|------|----------------------|-------------|------------|---------|-----------|--------|--------|
-| 1 | **OSM standard** | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` | ❌ **חסום** — 200 + PNG "403 Access blocked" 6,987 B, `cache-control: no-cache` | ✅ 44,105 B (z12) / 32,652 B (z16) | **19** (z20 → 400) | ללא, אך חובה Referer+UA מזהה+ייחוג | ODbL + Tile Usage Policy | **default (רק ב-http/https)** |
-| 2 | **OSM DE / FOSSGIS** | `https://tile.openstreetmap.de/{z}/{x}/{y}.png` | ✅ 47,566 B / 30,344 B | ✅ | **18** (z19 → 404) | ללא | ODbL + סגנון CC-BY-SA 4.0 | **fallback #1** |
-| 3 | **OpenTopoMap** | `https://{a\|b\|c}.tile.opentopomap.org/{z}/{x}/{y}.png` | ✅ 54,346 B / 36,726 B | ✅ | **17** (z18 → placeholder "max zoom layer = 17") | ללא | CC-BY-SA | **fallback #2** |
-| 4 | **OSM FR (סגנון `osmfr`)** | `https://{a\|b\|c}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png` | ✅ 48,449 B / 25,368 B | ✅ | **≥20** | ללא | ODbL; fair-use **לא נמדד** | **fallback #3 (מותנה)** |
-| 5 | **Esri World Street Map** | `https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}` (y לפני x!) | ✅ 43,395 B / 30,554 B | ✅ | **19** (z20 → placeholder "Map data not yet available") | **לפי התנאים: חשבון+token חובה** | Esri Master License | **reject כברירת מחדל** |
-| 6 | HOT (הומניטרי) | `https://{a\|b\|c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png` | ✅ 35,657 B / 27,138 B | ✅ | ≥19 | ללא | ODbL | גיבוי בלבד (סגנון הומניטרי) |
-| 7 | CyclOSM | `https://{a\|b\|c}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png` | ✅ 54,630 B | ✅ | ≥18 | ללא | fair-use | reject — מפת אופניים |
-| 8 | CARTO | `https://{a}.basemaps.cartocdn.com/rastertiles/voyager\|light_all\|dark_all/{z}/{x}/{y}.png` | ❌ 2,049 B = watermark **"API KEY REQUIRED"** | ❌ | — | **חובה מפתח** (בקשה במייל, ללא חשבון) | CARTO Basemaps ToU | reject (ללא מפתח) |
-| 9 | Wikimedia | `https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png` | z12 ✅ 44,672 B / **z19 → 403** | 403 | — | חייב להיות בתוך Wiki | Wikimedia Maps ToU | **reject** |
+| 1 | **OSM standard** | `https://tile.openstreetmap.org/{z}/{x}/{y}.png` | FAIL **חסום** — 200 + PNG "403 Access blocked" 6,987 B, `cache-control: no-cache` | PASS 44,105 B (z12) / 32,652 B (z16) | **19** (z20 → 400) | ללא, אך חובה Referer+UA מזהה+ייחוג | ODbL + Tile Usage Policy | **default (רק ב-http/https)** |
+| 2 | **OSM DE / FOSSGIS** | `https://tile.openstreetmap.de/{z}/{x}/{y}.png` | PASS 47,566 B / 30,344 B | PASS | **18** (z19 → 404) | ללא | ODbL + סגנון CC-BY-SA 4.0 | **fallback #1** |
+| 3 | **OpenTopoMap** | `https://{a\|b\|c}.tile.opentopomap.org/{z}/{x}/{y}.png` | PASS 54,346 B / 36,726 B | PASS | **17** (z18 → placeholder "max zoom layer = 17") | ללא | CC-BY-SA | **fallback #2** |
+| 4 | **OSM FR (סגנון `osmfr`)** | `https://{a\|b\|c}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png` | PASS 48,449 B / 25,368 B | PASS | **≥20** | ללא | ODbL; fair-use **לא נמדד** | **fallback #3 (מותנה)** |
+| 5 | **Esri World Street Map** | `https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}` (y לפני x!) | PASS 43,395 B / 30,554 B | PASS | **19** (z20 → placeholder "Map data not yet available") | **לפי התנאים: חשבון+token חובה** | Esri Master License | **reject כברירת מחדל** |
+| 6 | HOT (הומניטרי) | `https://{a\|b\|c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png` | PASS 35,657 B / 27,138 B | PASS | ≥19 | ללא | ODbL | גיבוי בלבד (סגנון הומניטרי) |
+| 7 | CyclOSM | `https://{a\|b\|c}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png` | PASS 54,630 B | PASS | ≥18 | ללא | fair-use | reject — מפת אופניים |
+| 8 | CARTO | `https://{a}.basemaps.cartocdn.com/rastertiles/voyager\|light_all\|dark_all/{z}/{x}/{y}.png` | FAIL 2,049 B = watermark **"API KEY REQUIRED"** | FAIL | — | **חובה מפתח** (בקשה במייל, ללא חשבון) | CARTO Basemaps ToU | reject (ללא מפתח) |
+| 9 | Wikimedia | `https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png` | z12 PASS 44,672 B / **z19 → 403** | 403 | — | חייב להיות בתוך Wiki | Wikimedia Maps ToU | **reject** |
 | 10 | Stadia Maps | `https://tiles.stadiamaps.com/tiles/{style}/{z}/{x}/{y}.png?key=` | **401** | 401 | — | **חובה מפתח** (חשבון) | Stadia ToS | reject |
 | 11 | MapTiler | `https://api.maptiler.com/maps/{style}/{z}/{x}/{y}.png?key=` | **403** | 403 | — | **חובה מפתח** (חינם לא-מסחרי) | MapTiler ToU | reject |
-| 12 | Thunderforest | `https://tile.thunderforest.com/{style}/{z}/{x}/{y}.png` | ⚠️ 200 אבל **עם watermark**; עם `apikey` → 401 | — | — | **רישום חובה** | Thunderforest ToS | reject |
-| 13 | OpenFreeMap | `https://tiles.openfreemap.org/planet/{YYYYMMDD}_080001_pt/{z}/{x}/{y}.pbf` | ✅ 200 **וקטור** בלבד, maxzoom 14 | — | 14 | ללא | MIT + OSM | reject — דורש MapLibre |
+| 12 | Thunderforest | `https://tile.thunderforest.com/{style}/{z}/{x}/{y}.png` | WARNING️ 200 אבל **עם watermark**; עם `apikey` → 401 | — | — | **רישום חובה** | Thunderforest ToS | reject |
+| 13 | OpenFreeMap | `https://tiles.openfreemap.org/planet/{YYYYMMDD}_080001_pt/{z}/{x}/{y}.pbf` | PASS 200 **וקטור** בלבד, maxzoom 14 | — | 14 | ללא | MIT + OSM | reject — דורש MapLibre |
 | 14 | Protomaps | `https://api.protomaps.com/tiles/v4/{z}/{x}/{y}.mvt` | **403** "Missing …" | 403 | — | **חובה מפתח** | Protomaps | reject |
 | 15 | Tracestrack | `https://tile.tracestrack.com/{tileset}/{z}/{x}/{y}.png` | **403** "Key is o…" | 403 | — | חובה מפתח | — | reject |
 | 16 | USGS NationalMap | `https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}` | **404** | — | — | — | public domain | reject (הנתיב השתנה) |
@@ -231,7 +231,7 @@ z12 → 200, 44,672 B (אריח אמיתי); **z19 → 403**, גוף השגיא�
 
 ---
 
-## ✅ ראשי → חוקר · אישור פיילוט 50 רחובות · 2026-10-22
+## PASS ראשי → חוקר · אישור פיילוט 50 רחובות · 2026-10-22
 
 **מאשר את פיילוט 50 הרחובות** — רשימת `docs/research/pilot-50.md` מאושרת לביצוע.
 
@@ -261,9 +261,9 @@ node tools/research-didyouknow.js --list data/research/pilot-50.json
 
 ---
 
-## 📅 חוקר → ראשי · דוח יומי · 2026-10-22
+## DATE חוקר → ראשי · דוח יומי · 2026-10-22
 
-### ✅ פיילוט 50 רחובות — הושלם
+### PASS פיילוט 50 רחובות — הושלם
 
 | מדד | תוצאה |
 |------|-------|
@@ -275,33 +275,33 @@ node tools/research-didyouknow.js --list data/research/pilot-50.json
 | **Confidence Medium** | 11 |
 | **Confidence Low** | 15 |
 
-### 📁 **קבצי פלט סופיים נוצרו**
+### FOLDER **קבצי פלט סופיים נוצרו**
 - **`data/didyouknow/`** — 50 קבצים (`<street-id>.txt`) עם עובדה + מקורות + confidence
 - כל קובץ מכיל: `street_id`, `street_name`, `fact`, `source[]`, `date_researched`, `researcher`, `confidence`, `method`
 
-### 🎯 **Confidence Distribution**
+### GOAL **Confidence Distribution**
 | רמה | כמות | דוגמאות |
 |-----|------|---------|
 | **High** (22) | street-article עם מקורות מרובים | יפו, בן יהודה, המלך ג'ורג', בצלאל, קרן היסוד, אגרון, הלל, דוד המלך, רמב"ן, עזה, עמק רפאים, דרך בית לחם, חברון, ירמיהו, בר אילן, שדרות ויצמן, ויה דולורוזה, חב"ד, יוסף קארו, רבי עקיבא, רופין |
 | **Medium** (11) | person/medium, street-article/medium | ז'בוטינסקי, פינסקר, דובנוב, אלקלעי, הרב קוק, דרך בית לחם, חברון, גולדה מאיר, דרך שכם, יריחו, דרך אריאל שרון |
 | **Low** (15) | name-origin/low, osm-only/low | נחלת שבעה, כיכר ציון, קרן היסוד, ממילא, הצבי, עין כרם, חובבי ציון, שמואל הנביא, מאה שערים, הקארדו, הר ציון, שדרות שיירת הר הצופים, ויה דולורוזה, הקארדו |
 
-### 📋 **no-fact (9 רחובות)**
+### CHECKLIST **no-fact (9 רחובות)**
 נחלת שבעה, שמאי, ממילא, הצבי, הרכבת, אבן עזרא, הרצל (בית הכרם), המעיין (עין כרם), תל חי — כיסוי ויקיפדיה חלקי, צפוי.
 
-### 📊 **Rate Limiting & API**
+### METRICS **Rate Limiting & API**
 - Wikidata: 6 אירועי 429 (המתנה 48-52 שניות) — טופל אוטומטית עם backoff
 - Wikipedia: 3 אירועי 429 — טופל
 - OSM/Nominatim: 0 שגיאות
 - סה"כ זמן ריצה: ~9 דקות (עם rate limiting)
 
-### 📅 **הבא בתור**
-1. ✅ **Fact-checking ידני** של 46 העובדות — **אושר** (2026-10-22)
-2. ✅ **Promote סופי** — **52 קבצים** נוצרו ב-`data/didyouknow/` (46 פיילוט + 6 נוספים)
+### DATE **הבא בתור**
+1. PASS **Fact-checking ידני** של 46 העובדות — **אושר** (2026-10-22)
+2. PASS **Promote סופי** — **52 קבצים** נוצרו ב-`data/didyouknow/` (46 פיילוט + 6 נוספים)
 3. **סקיילינג ל-2,424 רחובות** — `--all` אחרי אישור המשך
 4. **שילוב UI** — כרטיס "הידעת?" ברשימה/מפה → בטא → אישור משתמש
 
-### 🔒 **סטטוס בטא**
+### LOCKED **סטטוס בטא**
 - קבצי `data/didyouknow/` נוצרו — **שלב איסוף נתונים בלבד**
 - **שילוב UI ידרוש**: `node tools/make-beta.js` → שערים (47/47 verify, 24/24 store, smoke 84/84) → **אישור מפורש של המשתמש**
 

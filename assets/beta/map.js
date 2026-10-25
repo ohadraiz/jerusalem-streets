@@ -679,6 +679,7 @@
   var layerById = Object.create(null);
   var hitById = Object.create(null);
   var metaById = Object.create(null);
+  var openPopupContext = null;
   var tileErrors = 0;
   var tileBannerShown = false;
   var lodAllMode = true;
@@ -790,6 +791,36 @@
     return wrap;
   }
 
+  /** פופאפ נשאר נגיש, אך מצטמצם כשהרחוב יוצא מהמרכז או כשהזום מתרחק. */
+  function compactPopupIfContextLost() {
+    if (!map || !openPopupContext || !map.getSize || !map.latLngToContainerPoint) return;
+
+    var street = cachedStreetById(openPopupContext.id);
+    var center = street && streetCenter(street);
+    var size = map.getSize();
+    if (!center || !size || !isFinite(size.x) || !isFinite(size.y)) return;
+
+    var point = map.latLngToContainerPoint(center);
+    var centerPoint = { x: size.x / 2, y: size.y / 2 };
+    var distance = Math.sqrt(
+      Math.pow(point.x - centerPoint.x, 2) + Math.pow(point.y - centerPoint.y, 2)
+    );
+    var movedAway = distance > Math.min(size.x, size.y) * 0.48;
+    var zoomedOut = map.getZoom() <= openPopupContext.zoom - 2;
+
+    if (!(movedAway || zoomedOut) || openPopupContext.compact) return;
+
+    var popup = openPopupContext.popup;
+    var popupElement = popup && typeof popup.getElement === "function" ? popup.getElement() : null;
+    var popupContent = popupElement && popupElement.querySelector
+      ? popupElement.querySelector(".map-popup")
+      : null;
+    if (popupContent) {
+      popupContent.classList.add("map-popup--compact");
+      openPopupContext.compact = true;
+    }
+  }
+
   /** בזום נמוך וברשימות גדולות מוצגים רק מבוקרים — חיסכון ציור משמעותי */
   function shouldShowAll() {
     if (!map) return true;
@@ -854,8 +885,24 @@
       layer.on("click", function () {
         if (!usesCoarsePointer()) toggleStreetSafe(street.id);
       });
+      layer.on("popupopen", function (event) {
+        var popup = event && event.popup ? event.popup : null;
+        var popupElement = popup && typeof popup.getElement === "function" ? popup.getElement() : null;
+        var popupContent = popupElement && popupElement.querySelector
+          ? popupElement.querySelector(".map-popup")
+          : null;
+        if (popupContent) popupContent.classList.remove("map-popup--compact");
+        openPopupContext = { id: street.id, zoom: map ? map.getZoom() : 0, popup: popup, compact: false };
+      });
+      layer.on("popupclose", function () {
+        if (openPopupContext && openPopupContext.id === street.id) openPopupContext = null;
+      });
       layer.bindPopup(function () {
         return popupContent(street);
+      }, {
+        maxWidth: 280,
+        minWidth: 0,
+        autoPanPadding: [18, 18]
       });
       layer.addTo(group);
     });
@@ -1087,6 +1134,11 @@
   function onLeafletZoomEnd() {
     var showAll = shouldShowAll();
     if (showAll !== lodAllMode) drawLeaflet();
+    compactPopupIfContextLost();
+  }
+
+  function onLeafletMoveEnd() {
+    compactPopupIfContextLost();
   }
 
   function onTileError() {
@@ -1146,6 +1198,7 @@
 
     drawLeaflet();
     map.on("zoomend", onLeafletZoomEnd);
+    map.on("moveend", onLeafletMoveEnd);
 
     // ה-canvas נוצר לפני שהמכל קיבל מידות סופיות. invalidateSize לבדו לא מרענן
     // את שכבת ה-canvas; panBy(0,0) מאלץ רינדור מלא אחרי שהמידות התייצבו.

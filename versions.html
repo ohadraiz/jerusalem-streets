@@ -86,14 +86,33 @@
 
 <script>
 /* ===== מקור הנתונים — לעדכן בכל גרסה חדשה ===== */
-const CURRENT_VERSION = "1.1";
+const CURRENT_VERSION = "1.2";
 
 const VERSIONS = [
+  {
+    version: "1.2",
+    date: "2026-10-25",
+    label: "SEO, דף נחיתה, מיקוד מפה ופישוט ממשק",
+    status: "active",
+    changes: [
+      "SEO: canonical, Open Graph/Twitter, JSON-LD WebApplication ותיאור מורחב",
+      "דף נחיתה נגיש (welcome.html + assets/landing.css) עם הסבר, נתונים וקרדיט OSM/ODbL",
+      "robots.txt ו-sitemap.xml לפריסה ב-GitHub Pages",
+      "ממשק: הסרת שורת קיצורי השכונות, מיקום חדש ליעד היומי, FAQ עם כותרות h3",
+      "מפה: פופאפ קומפקטי לפי מרחק/זום, רוחב מרבי ו-autoPanPadding",
+      "נגישות: noscript, aria-controls/aria-describedby לחיפוש, תוויות aria לרחוב האקראי",
+      "ארכיטקטורת סוכנים מצומצמת: build/review/gabbai בלבד, hats לפי צורך",
+      "בטא נוצרת מחדש מהפרודקשן (node tools/make-beta.js) ונבדקת ב---check"
+    ],
+    backup: "backups/v1.2-2026-10-25",
+    commit: "—",
+    note: "שחרור 1.2 — קידום הבטא המאושרת לפרודקשן. מבנה הנתונים, מפתחות האחסון ו-LOD 12 לא השתנו."
+  },
   {
     version: "1.1",
     date: "2026-10-22",
     label: "סוכנים אמיתיים, דשבורד ותיעוד מורחב",
-    status: "active",
+    status: "archived",
     changes: [
       "הגדרת 18 סוכנים/כובעים כקבצי .opencode/agents/*.md עם הרשאות מדויקות",
       "דף לוח סוכנים (agents-dashboard.html) — מיפוי, עבודות, תיעוד ופרומפט הפעלה",

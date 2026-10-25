@@ -10,7 +10,7 @@
 
 ---
 
-## 📱 **צוות מובייל והפצה** (📱 מובייל פעיל · 🏖️ הפצה ב-standby)
+## MOBILE **צוות מובייל והפצה** (MOBILE מובייל פעיל · STANDBY️ הפצה ב-standby)
 
 **סוכנים אחראיים:** מובריליס (אחראי מובייל והפצה), מובי (ראש צוות מובייל), פיצי (ראש צוות הפצה), הבודק (ביקורת), הראשי (אינטגרציה והחלטות)
 **מסמכי הצוות:** [`docs/agents/teams/mobile-distribution.md`](agents/teams/mobile-distribution.md), `.opencode/agents/moverilis.md`, `mobi.md`, `pitzi.md`  
@@ -26,16 +26,16 @@
 ### משימות פתוחות:
 | # | משימה | תיאור | עדיפות | סטטוס |
 |---|--------|-------|---------|-------|
-| MOB-1 | אבחון מוכנות PWA | manifest, אייקונים, Service Worker, offline, התקנה, safe-area, מכשיר אמיתי | 🔴 גבוהה | ✅ הושלם — דוח בערוץ מובי |
-| MOB-2 | שלד installable | manifest, אייקונים 192/512/maskable, Service Worker, עמוד לא-מקוון, theme-color | 🔴 גבוהה | ⏸ ממתין ל-M1 |
-| MOB-3 | ליבה ללא רשת | רשימה, חיפוש, סימון וסטטיסטיקות עובדים; מפה במצב מוסבר | 🔴 גבוהה | ⏸ ממתין ל-M1 |
-| MOB-4 | התקנה ועדכון | התקנה ב-Android/iOS, מסך מלא, safe-area, זרימת עדכון גרסה בטוחה | 🟡 בינונית | ⏸ ממתין ל-M1 |
-| MOB-5 | ביצועים ומכשיר אמיתי | 320–430px, iOS Safari + Android Chrome, Lighthouse, זמני טעינה | 🟡 בינונית | ⏸ ממתין למכשיר אמיתי |
-| REL-1 | בחירת ספק אחסון | Cloudflare Pages / Netlify / GitHub Pages / Vercel — ריפו פרטי, דומיין, כותרות, עלות | 🔴 גבוהה | 🏖️ פיצי ב-standby |
-| REL-2 | צינור פריסה | CI, רשימת פרסום, HTTPS, CSP וכותרות אבטחה | 🔴 גבוהה | 🏖️ פיצי ב-standby |
-| REL-3 | שחרור וגלגול אחורה | גרסה, CHANGELOG, שערי קבלה, rollback מתועד | 🔴 גבוהה | 🏖️ פיצי ב-standby |
-| REL-4 | פרטיות, נגישות וניטור | דף פרטיות, הצהרת נגישות, ייחוס OSM, בדיקת זמינות | 🟡 בינונית | 🏖️ פיצי ב-standby |
-| REL-5 | בדיקות אחרי עלייה | smoke בדסקטופ ובמובייל, כותרות, 404, גלגול אחורה | 🟡 בינונית | 🏖️ פיצי ב-standby |
+| MOB-1 | אבחון מוכנות PWA | manifest, אייקונים, Service Worker, offline, התקנה, safe-area, מכשיר אמיתי | HIGH גבוהה | PASS הושלם — דוח בערוץ מובי |
+| MOB-2 | שלד installable | manifest, אייקונים 192/512/maskable, Service Worker, עמוד לא-מקוון, theme-color | HIGH גבוהה | BLOCKED ממתין ל-M1 |
+| MOB-3 | ליבה ללא רשת | רשימה, חיפוש, סימון וסטטיסטיקות עובדים; מפה במצב מוסבר | HIGH גבוהה | BLOCKED ממתין ל-M1 |
+| MOB-4 | התקנה ועדכון | התקנה ב-Android/iOS, מסך מלא, safe-area, זרימת עדכון גרסה בטוחה | IN_PROGRESS בינונית | BLOCKED ממתין ל-M1 |
+| MOB-5 | ביצועים ומכשיר אמיתי | 320–430px, iOS Safari + Android Chrome, Lighthouse, זמני טעינה | IN_PROGRESS בינונית | BLOCKED ממתין למכשיר אמיתי |
+| REL-1 | בחירת ספק אחסון | Cloudflare Pages / Netlify / GitHub Pages / Vercel — ריפו פרטי, דומיין, כותרות, עלות | HIGH גבוהה | STANDBY️ פיצי ב-standby |
+| REL-2 | צינור פריסה | CI, רשימת פרסום, HTTPS, CSP וכותרות אבטחה | HIGH גבוהה | STANDBY️ פיצי ב-standby |
+| REL-3 | שחרור וגלגול אחורה | גרסה, CHANGELOG, שערי קבלה, rollback מתועד | HIGH גבוהה | STANDBY️ פיצי ב-standby |
+| REL-4 | פרטיות, נגישות וניטור | דף פרטיות, הצהרת נגישות, ייחוס OSM, בדיקת זמינות | IN_PROGRESS בינונית | STANDBY️ פיצי ב-standby |
+| REL-5 | בדיקות אחרי עלייה | smoke בדסקטופ ובמובייל, כותרות, 404, גלגול אחורה | IN_PROGRESS בינונית | STANDBY️ פיצי ב-standby |
 
 **תלויות:** מובריליס מתאם בין מובי לפיצי; מובי ↔ פיצי (מטמון, Service Worker, גרסה);
 מובי ↔ המעצב (מגע, safe-area, RTL); מובי ↔ המגשר (מפה ללא רשת);
@@ -46,7 +46,7 @@
 
 ---
 
-## 🎨 **צוות UI/UX** (סבב 046 סגור · 046.1 ליטוש בביצוע)
+## DESIGN **צוות UI/UX** (סבב 046 סגור · 046.1 ליטוש בביצוע)
 **סוכנים אחראיים:** המעצב (ראש צוות), הבודק (ביקורת), קיפי (מעקב), הראשי (אינטגרציה וליבה)
 **אמנת הצוות:** [`docs/agents/teams/ui-ux.md`](agents/teams/ui-ux.md)
 **מיקוד הסבב:** סגירת שלושת חוסמי הבודק 044 (סיום ידני, אחסון `manualCompletions`,
@@ -55,27 +55,27 @@
 ### משימות פתוחות:
 | # | משימה | תיאור | עדיפות | סטטוס |
 |---|--------|-------|---------|-------|
-| UX-1 | אימות גלילת מפה בלחיצת שכונה | `scrollIntoView` על `#map-section` עובד ב-360/390/430/1280 | 🔴 גבוהה | ✅ אומת חי (046) |
-| UX-2 | כפתור "סיום ידני" + הערה | מימוש מלא: prompt → שמירה → badge "הושלמה ידנית" + undo | 🔴 גבוהה | ✅ מומש ואומת חי (046) |
-| UX-3 | אימות מובייל 390/430 | פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, sticky bar | 🔴 גבוהה | ✅ אומת חי 360/390/430/1280 (046) |
-| UX-4 | נגישות מלאה | 44px יעדים, 16px קלט, AA contrast, RTL, screen reader | 🟡 בינונית | 🟡 חלקי (Lighthouse 100; קורא מסך אמיתי טרם נבדק) |
-| UX-5 | מצב מפה ריקה (empty state) | תיקון 035: כל הרחובות נמחקו → אין שכבות רפאים | 🟡 בינונית | ✅ אומת חי (046) |
-| UX-6 | אנימציות/מעברים חלקים | smooth scroll, transitions, prefers-reduced-motion | 🟢 נמוכה | ⏳ |
-| UX-7 | מצב כהה (Dark Mode) | תמיכה ב-`prefers-color-scheme: dark` | 🟢 נמוכה | ⏳ |
-| UX-8 | קיצורי מקלדת | ניווט במקלדת מלא (Tab, Enter, Escape, חיצים) | 🟢 נמוכה | ⏳ |
+| UX-1 | אימות גלילת מפה בלחיצת שכונה | `scrollIntoView` על `#map-section` עובד ב-360/390/430/1280 | HIGH גבוהה | PASS אומת חי (046) |
+| UX-2 | כפתור "סיום ידני" + הערה | מימוש מלא: prompt → שמירה → badge "הושלמה ידנית" + undo | HIGH גבוהה | PASS מומש ואומת חי (046) |
+| UX-3 | אימות מובייל 390/430 | פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, sticky bar | HIGH גבוהה | PASS אומת חי 360/390/430/1280 (046) |
+| UX-4 | נגישות מלאה | 44px יעדים, 16px קלט, AA contrast, RTL, screen reader | IN_PROGRESS בינונית | IN_PROGRESS חלקי (Lighthouse 100; קורא מסך אמיתי טרם נבדק) |
+| UX-5 | מצב מפה ריקה (empty state) | תיקון 035: כל הרחובות נמחקו → אין שכבות רפאים | IN_PROGRESS בינונית | PASS אומת חי (046) |
+| UX-6 | אנימציות/מעברים חלקים | smooth scroll, transitions, prefers-reduced-motion | LOW נמוכה | PENDING |
+| UX-7 | מצב כהה (Dark Mode) | תמיכה ב-`prefers-color-scheme: dark` | LOW נמוכה | PENDING |
+| UX-8 | קיצורי מקלדת | ניווט במקלדת מלא (Tab, Enter, Escape, חיצים) | LOW נמוכה | PENDING |
 
 **סטטוס סבב 046 (2026-10-21):**
-- ✅ **UX-046-2:** `store.js` סופר גם `manualCompletions` ב-`kept` וב-`entries`; ייבוא שמכיל רק
+- PASS **UX-046-2:** `store.js` סופר גם `manualCompletions` ב-`kept` וב-`entries`; ייבוא שמכיל רק
   סיומים ידניים מתקבל. נוספו 4 בדיקות אחסון — `21/21`.
-- ✅ **UX-046-3:** `map.js` מאתחל את המפה כשייבוא/שינוי מחזיר רחובות אחרי טעינה ריקה (`init()`).
-- 🟡 → ✅ **UX-046-1:** handlers ל"סיום ידני/ביטול" קיימים; תוקן `undo` שהיה מנתב בטעות למסלול
+- PASS **UX-046-3:** `map.js` מאתחל את המפה כשייבוא/שינוי מחזיר רחובות אחרי טעינה ריקה (`init()`).
+- IN_PROGRESS → PASS **UX-046-1:** handlers ל"סיום ידני/ביטול" קיימים; תוקן `undo` שהיה מנתב בטעות למסלול
   הביקורים (ואיבד את רשומת `manualCompletions`). **אומת חי** בכל ארבעת הרוחבים, כולל שחזור
   אחרי "בטל סיום ידני" ובלי שינוי ב-`visited`.
-- ✅ **UX-046-5:** הבודק אישר **אין חוסמים**; שלושת ממצאי "חשוב" טופלו ואומתו.
-- ✅ **UX-046-4:** אימות חי 360/390/430/1280 (המעצב) — **209/216 מדידות**; 7 החריגות הן יעדי
+- PASS **UX-046-5:** הבודק אישר **אין חוסמים**; שלושת ממצאי "חשוב" טופלו ואומתו.
+- PASS **UX-046-4:** אימות חי 360/390/430/1280 (המעצב) — **209/216 מדידות**; 7 החריגות הן יעדי
   עכבר 33–37px ב-1280 בלבד (מחוץ לכלל 620px). 23 בדיקות עברו, אפס שגיאות קונסול, אפס
   גלילה אופקית. שלושת חוסמי 044 אושרו כסגורים.
-- ✅ **UX-046-6:** התיעוד עודכן — BOARD 046 סגור, TEAMS/TASKS/ui-ux מסונכרנים.
+- PASS **UX-046-6:** התיעוד עודכן — BOARD 046 סגור, TEAMS/TASKS/ui-ux מסונכרנים.
 - `node tools/verify.js` — **34/34**; `node tests/store.test.js` — **21/21**.
 - **סבב 046 נסגר בהצלחה.** סבב 046.1 (ליטוש, לא-חוסם) בביצוע אצל המעצב: תג "ידנית" בכותרת
   מקופלת, ניסוח undo מדויק ב-toast, ויעדי 44px ב-`pointer: coarse`.
@@ -85,60 +85,60 @@
 
 ---
 
-## 💻 **צוות פיתוח** (Core/Infra)
+## DESKTOP **צוות פיתוח** (Core/Infra)
 **סוכנים אחראיים:** הראשי, המגשר, מפי
 
 | # | משימה | תיאור | עדיפות |
 |---|--------|-------|---------|
-| DEV-1 | Tile Probe Strategy | מעבר OR→AND, probe חד-פעמי לזיהוי חסימת OSM שקטה | 🔴 גבוהה |
-| DEV-2 | פריסה סטטית (Static Deploy) | GitHub Pages / Netlify / Cloudflare Pages + CSP/Referrer-Policy | 🔴 גבוהה |
-| DEV-3 | HTTPS + Service Workers | PWA support, offline-first, background sync | 🟡 בינונית |
-| DEV-4 | אופטימיזציית ביצועים | 2,424 רחובות, LOD 12, רינדור דיפרנציאלי, memory leaks | 🟡 בינונית |
-| DEV-5 | בדיקות אוטומטיות | Jest/Playwright ל-CI/CD | 🟢 נמוכה |
+| DEV-1 | Tile Probe Strategy | מעבר OR→AND, probe חד-פעמי לזיהוי חסימת OSM שקטה | HIGH גבוהה |
+| DEV-2 | פריסה סטטית (Static Deploy) | GitHub Pages / Netlify / Cloudflare Pages + CSP/Referrer-Policy | HIGH גבוהה |
+| DEV-3 | HTTPS + Service Workers | PWA support, offline-first, background sync | IN_PROGRESS בינונית |
+| DEV-4 | אופטימיזציית ביצועים | 2,424 רחובות, LOD 12, רינדור דיפרנציאלי, memory leaks | IN_PROGRESS בינונית |
+| DEV-5 | בדיקות אוטומטיות | Jest/Playwright ל-CI/CD | LOW נמוכה |
 
 ---
 
-## 🌐 **צוות חיבור לרשת** (Map/Network)
+## WEB **צוות חיבור לרשת** (Map/Network)
 **סוכנים אחראיים:** המגשר, מפי, **החוקר**
 
 | # | משימה | תיאור | עדיפות |
 |---|--------|-------|---------|
-| NET-1 | ספק אריחים ללא Referer | CARTO / Esri / Stadia Maps / Proxy → עובד ב-`file://` + HTTPS | 🔴 קריטית |
-| NET-2 | פרוקסי אריחים מקומי | Proxy פשוט שמוסיף Referer/Key לאריחי OSM | 🟡 בינונית |
-| NET-3 | HTTPS מקומי לפיתוח | mkcert + localhost HTTPS ל-Geolocation/PWA | 🟡 בינונית |
-| NET-4 | CDN + Cache Strategy | Cache-Control, stale-while-revalidate, offline tiles | 🟢 נמוכה |
+| NET-1 | ספק אריחים ללא Referer | CARTO / Esri / Stadia Maps / Proxy → עובד ב-`file://` + HTTPS | HIGH קריטית |
+| NET-2 | פרוקסי אריחים מקומי | Proxy פשוט שמוסיף Referer/Key לאריחי OSM | IN_PROGRESS בינונית |
+| NET-3 | HTTPS מקומי לפיתוח | mkcert + localhost HTTPS ל-Geolocation/PWA | IN_PROGRESS בינונית |
+| NET-4 | CDN + Cache Strategy | Cache-Control, stale-while-revalidate, offline tiles | LOW נמוכה |
 
 ---
 
-## 📢 **צוות מחקר ותוכן** (Research/Content)
+## ANNOUNCEMENT **צוות מחקר ותוכן** (Research/Content)
 **סוכנים אחראיים:** **החוקר** (חקר), ראשי (אישור)
 
 ### משימות פתוחות:
 | # | משימה | תיאור | עדיפות | סטטוס |
 |---|--------|-------|---------|-------|
-| RSCH-1 | מאגר "הידעת?" — עובדה לכל רחוב | 2,424 רחובות: עובדה מעניינת / משמעות שם + על מי קרוי; קובץ טקסט לכל רחוב + מקורות | 🔴 גבוהה | 🟡 התחלת Pipeline |
-| RSCH-2 | מחקר אפליקציות/משחקים דומים | גיימיפיקציה, אפליקציות טיולים, "השלמת עיר", חינוכיות-גיאוגרפיות, קהילתיות; דוח השוואתי + המלצות פיצ'רים | 🟡 בינונית | 🟡 התחלה |
-| RSCH-3 | Pipeline אוטומטי שמירה | שאילתות APIs (Wikidata, Wikipedia, OSM, Municipality) → עיבוד → שמירה לקבצי טקסט `data/didyouknow/<id>.txt` | 🔴 גבוהה | 🟡 תשתית |
-| RSCH-4 | פיילוט 50 רחובות ראשונים | הוכחת היתכנות: רחובות מרכזיים/מפורסמים תחילה | 🔴 גבוהה | ⏳ |
-| MKT-1 | דף נחיתה / README | הסבר הפרויקט, screenshots, הוראות הפעלה | 🟡 בינונית | ⏳ |
-| MKT-2 | תוכן "הידעת?" לרחובות | Schema + pilot 20-30 רחובות + fact-checking | 🟡 בינונית | 🟡 Pipeline מוקם |
-| MKT-3 | סרטון הדגמה / GIF | walkthrough של הפיצ'רים העיקריים | 🟢 נמוכה | ⏳ |
-| MKT-4 | תרגום לאנגלית/ערבית | i18n support | 🟢 נמוכה | ⏳ |
-| MKT-5 | קהילה/משוב | GitHub Discussions / טופס משוב באפליקציה | 🟢 נמוכה | ⏳ |
+| RSCH-1 | מאגר "הידעת?" — עובדה לכל רחוב | 2,424 רחובות: עובדה מעניינת / משמעות שם + על מי קרוי; קובץ טקסט לכל רחוב + מקורות | HIGH גבוהה | IN_PROGRESS התחלת Pipeline |
+| RSCH-2 | מחקר אפליקציות/משחקים דומים | גיימיפיקציה, אפליקציות טיולים, "השלמת עיר", חינוכיות-גיאוגרפיות, קהילתיות; דוח השוואתי + המלצות פיצ'רים | IN_PROGRESS בינונית | IN_PROGRESS התחלה |
+| RSCH-3 | Pipeline אוטומטי שמירה | שאילתות APIs (Wikidata, Wikipedia, OSM, Municipality) → עיבוד → שמירה לקבצי טקסט `data/didyouknow/<id>.txt` | HIGH גבוהה | IN_PROGRESS תשתית |
+| RSCH-4 | פיילוט 50 רחובות ראשונים | הוכחת היתכנות: רחובות מרכזיים/מפורסמים תחילה | HIGH גבוהה | PENDING |
+| MKT-1 | דף נחיתה / README | הסבר הפרויקט, screenshots, הוראות הפעלה | IN_PROGRESS בינונית | PENDING |
+| MKT-2 | תוכן "הידעת?" לרחובות | Schema + pilot 20-30 רחובות + fact-checking | IN_PROGRESS בינונית | IN_PROGRESS Pipeline מוקם |
+| MKT-3 | סרטון הדגמה / GIF | walkthrough של הפיצ'רים העיקריים | LOW נמוכה | PENDING |
+| MKT-4 | תרגום לאנגלית/ערבית | i18n support | LOW נמוכה | PENDING |
+| MKT-5 | קהילה/משוב | GitHub Discussions / טופס משוב באפליקציה | LOW נמוכה | PENDING |
 
 ---
 
-## 🔄 **סטטוס נוכחי (2026-10-22)**
-- **נתונים:** 2,424 רחובות · 95 שכונות · verify 46/46 ✅
+## REFRESH **סטטוס נוכחי (2026-10-22)**
+- **נתונים:** 2,424 רחובות · 95 שכונות · verify 46/46 PASS
 - **פוקוס נוכחי:** סבב 046 נסגר (209/216 מדידות חי, אין חוסמים); שלושת חוסמי הבודק 044 סגורים
   ואומתו. פוקוס נוכחי: סבב 046.1 (ליטוש UX), המחקר/תוכן, ו**מובייל — M1**.
-  **מובייל פעיל (הפעלה חלקית); פיצי/הפצה — 🏖️ ב-standby.**
+  **מובייל פעיל (הפעלה חלקית); פיצי/הפצה — STANDBY️ ב-standby.**
 - **הקפאות פתוחות:** 9 HOLD, Tile Probe, שכבת רשות, גבולות שכונה, סריקה, מכשיר אמיתי
 - **שרת מקומי:** `http://localhost:8787` (רוץ `node serve.js`)
 
 ---
 
-## 📋 **מצב מובייל — פעיל; הפצה ב-standby**
+## CHECKLIST **מצב מובייל — פעיל; הפצה ב-standby**
 1. **מובריליס:** מתאם את M1 ומעלה decisions; אין פריסה.
 2. **מובי:** M0 אבחון PWA הושלם; **M1 — תיקון שכבת PWA ממתין לאישור**.
 3. **פיצי:** ב-standby — אין השוואת ספקים, פריסה או חשבון עד הפעלה נפרדת.

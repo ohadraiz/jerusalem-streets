@@ -20,7 +20,7 @@ const ROOT = path.resolve(__dirname, "..");
 const target = path.resolve(process.argv[2] || path.join(ROOT, "publish"));
 
 /* מה נכנס לפריסה: רק מה שהדפדפן צריך כדי להריץ את האפליקציה */
-const FILES = ["index.html", "manifest.webmanifest", "sw.js"];
+const FILES = ["index.html", "welcome.html", "manifest.webmanifest", "sw.js"];
 const DIRS = ["assets", "data/didyouknow"];
 
 function copyFile(from, to) {

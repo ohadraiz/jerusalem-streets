@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-22T12:35:21.642Z",
+  "generatedAt": "2026-10-25T09:57:32.918Z",
   "teams": [
     {
       "key": "UI/UX",
       "label": "UI/UX",
-      "icon": "🎨",
+      "icon": "DESIGN",
       "sourceTitle": "צוות UI/UX",
       "note": "סבב 046 סגור · 046.1 ליטוש בביצוע",
       "standby": false,
@@ -19,7 +19,7 @@
     {
       "key": "DEV",
       "label": "DEV",
-      "icon": "💻",
+      "icon": "DESKTOP",
       "sourceTitle": "צוות פיתוח",
       "note": "Core/Infra",
       "standby": false,
@@ -33,7 +33,7 @@
     {
       "key": "NET",
       "label": "NET",
-      "icon": "🌐",
+      "icon": "WEB",
       "sourceTitle": "צוות חיבור לרשת",
       "note": "Map/Network",
       "standby": false,
@@ -47,7 +47,7 @@
     {
       "key": "נתונים",
       "label": "נתונים",
-      "icon": "🗺️",
+      "icon": "MAP",
       "sourceTitle": "צוות נתונים ומפות",
       "note": "רשימת הרחובות, הגיאומטריה, השבילים, הפוליגונים והמיזוג לנתונים",
       "standby": false,
@@ -62,7 +62,7 @@
     {
       "key": "Research",
       "label": "Research",
-      "icon": "📢",
+      "icon": "ANNOUNCEMENT",
       "sourceTitle": "צוות מחקר ותוכן",
       "note": "Research/Content",
       "standby": false,
@@ -75,7 +75,7 @@
     {
       "key": "החלטות",
       "label": "החלטות",
-      "icon": "⚖️",
+      "icon": "DECISION",
       "sourceTitle": "צוות החלטות והקפאות",
       "note": "החלטות משתמש פתוחות, פריטים שנדחו ומקפאים — ממתינים להכרעה או לאישור",
       "standby": false,
@@ -89,9 +89,9 @@
     {
       "key": "Mobile/Deploy",
       "label": "Mobile/Deploy",
-      "icon": "📱",
+      "icon": "MOBILE",
       "sourceTitle": "צוות מובייל והפצה",
-      "note": "📱 מובייל פעיל · 🏖️ הפצה ב-standby",
+      "note": "MOBILE מובייל פעיל · STANDBY️ הפצה ב-standby",
       "standby": true,
       "owner": "מובריליס",
       "owners": [
@@ -119,13 +119,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "done",
         "label": "הושלם",
-        "marker": "✅",
+        "marker": "PASS",
         "note": "הושלם — דוח בערוץ מובי"
       },
       "owner": "מובריליס",
@@ -154,9 +154,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -181,13 +181,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": "ממתין ל-M1"
       },
       "owner": "מובריליס",
@@ -216,9 +216,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -243,13 +243,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": "ממתין ל-M1"
       },
       "owner": "מובריליס",
@@ -278,9 +278,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -303,15 +303,15 @@
         "הראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": "ממתין ל-M1"
       },
       "owner": "מובריליס",
@@ -340,9 +340,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -365,15 +365,15 @@
         "הראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": "ממתין למכשיר אמיתי"
       },
       "owner": "מובריליס",
@@ -402,9 +402,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -429,14 +429,14 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
         "note": "",
-        "marker": "⬜"
+        "marker": "PENDING"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -464,9 +464,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -491,14 +491,14 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
         "note": "",
-        "marker": "⬜"
+        "marker": "PENDING"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -526,9 +526,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -553,14 +553,14 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
         "note": "",
-        "marker": "⬜"
+        "marker": "PENDING"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -588,9 +588,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -613,16 +613,16 @@
         "הראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
         "note": "",
-        "marker": "⬜"
+        "marker": "PENDING"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -650,9 +650,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -675,16 +675,16 @@
         "הראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
         "note": "",
-        "marker": "⬜"
+        "marker": "PENDING"
       },
       "owner": "מובריליס",
       "ownerAlias": "",
@@ -712,9 +712,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -738,13 +738,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "done",
         "label": "הושלם",
-        "marker": "✅",
+        "marker": "PASS",
         "note": "אומת חי (046)"
       },
       "owner": "המעצב",
@@ -761,9 +761,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -793,13 +793,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "done",
         "label": "הושלם",
-        "marker": "✅",
+        "marker": "PASS",
         "note": "מומש ואומת חי (046)"
       },
       "owner": "המעצב",
@@ -816,9 +816,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -848,13 +848,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "done",
         "label": "הושלם",
-        "marker": "✅",
+        "marker": "PASS",
         "note": "אומת חי 360/390/430/1280 (046)"
       },
       "owner": "המעצב",
@@ -871,9 +871,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -901,15 +901,15 @@
         "הראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": "חלקי (Lighthouse 100; קורא מסך אמיתי טרם נבדק)"
       },
       "owner": "המעצב",
@@ -926,9 +926,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -956,15 +956,15 @@
         "הראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "done",
         "label": "הושלם",
-        "marker": "✅",
+        "marker": "PASS",
         "note": "אומת חי (046)"
       },
       "owner": "המעצב",
@@ -981,9 +981,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -1013,13 +1013,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "המעצב",
@@ -1036,9 +1036,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -1068,13 +1068,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "המעצב",
@@ -1091,9 +1091,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -1123,13 +1123,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "המעצב",
@@ -1146,9 +1146,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -1177,13 +1177,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "הראשי",
@@ -1225,13 +1225,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "הראשי",
@@ -1271,15 +1271,15 @@
         "מפי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "הראשי",
@@ -1319,15 +1319,15 @@
         "מפי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "הראשי",
@@ -1369,13 +1369,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "הראשי",
@@ -1417,13 +1417,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "קריטית"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "המגשר",
@@ -1446,9 +1446,9 @@
         },
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
@@ -1463,15 +1463,15 @@
         "החוקר"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "המגשר",
@@ -1494,9 +1494,9 @@
         },
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
@@ -1511,15 +1511,15 @@
         "החוקר"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "המגשר",
@@ -1542,9 +1542,9 @@
         },
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
@@ -1561,13 +1561,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
       "owner": "המגשר",
@@ -1590,9 +1590,9 @@
         },
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
@@ -1608,13 +1608,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": "התחלת Pipeline"
       },
       "owner": "החוקר",
@@ -1625,9 +1625,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1647,15 +1647,15 @@
         "ראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": "התחלה"
       },
       "owner": "החוקר",
@@ -1666,9 +1666,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1690,13 +1690,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": "תשתית"
       },
       "owner": "החוקר",
@@ -1707,9 +1707,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1731,13 +1731,13 @@
       "priority": {
         "key": "high",
         "label": "גבוהה",
-        "marker": "🔴",
+        "marker": "HIGH",
         "note": "גבוהה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "החוקר",
@@ -1748,9 +1748,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1770,15 +1770,15 @@
         "ראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "החוקר",
@@ -1789,9 +1789,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1811,15 +1811,15 @@
         "ראשי"
       ],
       "priority": {
-        "key": "medium",
-        "label": "בינונית",
-        "marker": "🟡",
-        "note": "בינונית"
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
       },
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": "Pipeline מוקם"
       },
       "owner": "החוקר",
@@ -1830,9 +1830,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1854,13 +1854,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "החוקר",
@@ -1871,9 +1871,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1895,13 +1895,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "החוקר",
@@ -1912,9 +1912,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1936,13 +1936,13 @@
       "priority": {
         "key": "low",
         "label": "נמוכה",
-        "marker": "🟢",
+        "marker": "LOW",
         "note": "נמוכה"
       },
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "החוקר",
@@ -1953,9 +1953,9 @@
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "ראשי",
@@ -1967,6 +1967,46 @@
     },
     {
       "id": "GEN-1",
+      "title": "**נעשה שינוי פיתוח מציאותי בסשן בסיס:** ₪046.1 — נגישות \"רחוב אקראי\" (`aria-label` לרחוב המוצע ולכפתור, רמז \"r\" בהודעה); 9 שורות ב-`assets/app.js`. `--check` 36/36 · אחסון 24/24 · בטא נוצרה ותקינה. **ממתין לאימות בטא + אישור אהד לפני פרסום; מלמדים טוקנים מול בסליין (95,299 input) להסקת החיסכון.**",
+      "description": "",
+      "team": "UI/UX",
+      "agents": [
+        "המעצב",
+        "הראשי"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "progress",
+        "label": "בביצוע",
+        "marker": "IN_PROGRESS",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 8,
+      "context": "ייעול הקשר OpenCode · 2026-10-23",
+      "agentsEnriched": [
+        {
+          "name": "המעצב",
+          "status": "working",
+          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        },
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        }
+      ]
+    },
+    {
+      "id": "GEN-2",
       "title": "**אימות עצמאי + ביקורת** — 360/390/430/1280, אין חוסמים (הראשי + הבודק).",
       "description": "",
       "team": "UI/UX",
@@ -1983,12 +2023,12 @@
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 55,
+      "line": 62,
       "context": "סבב 046.1 — ליטוש UX (בביצוע)",
       "agentsEnriched": [
         {
@@ -1999,42 +2039,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-2",
-      "title": "**ביקורת הבודק** — אין חוסמים.",
-      "description": "",
-      "team": "החלטות",
-      "agents": [
-        "הראשי"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "progress",
-        "label": "בביצוע",
-        "marker": "🟡",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 63,
-      "context": "סבב 046.2 — חיווי קולי וחוויה אינטראקטיבית (ביצוע)",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
@@ -2055,13 +2062,13 @@
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 71,
-      "context": "סבב 046.3 — 4 הצעות אינטראקטיביות (ביצוע)",
+      "line": 70,
+      "context": "סבב 046.2 — חיווי קולי וחוויה אינטראקטיבית (ביצוע)",
       "agentsEnriched": [
         {
           "name": "הראשי",
@@ -2073,6 +2080,39 @@
     },
     {
       "id": "GEN-4",
+      "title": "**ביקורת הבודק** — אין חוסמים.",
+      "description": "",
+      "team": "החלטות",
+      "agents": [
+        "הראשי"
+      ],
+      "priority": {
+        "key": "none",
+        "label": "לא צוין",
+        "marker": "—",
+        "note": ""
+      },
+      "status": {
+        "key": "progress",
+        "label": "בביצוע",
+        "marker": "IN_PROGRESS",
+        "note": ""
+      },
+      "owner": "לא משויך",
+      "source": "docs/agents/TASKS.md",
+      "line": 78,
+      "context": "סבב 046.3 — 4 הצעות אינטראקטיביות (ביצוע)",
+      "agentsEnriched": [
+        {
+          "name": "הראשי",
+          "status": "working",
+          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
+          "updated": "2026-10-21T13:32:37+03:00"
+        }
+      ]
+    },
+    {
+      "id": "GEN-5",
       "title": "**שיפו 036–037:** ביקורת חוזרת אחרי מיזוג 93 שבילים, מובייל 390/430, מצב מפה ריק, מחיקה ידנית — ממתין למיזוג.",
       "description": "",
       "team": "UI/UX",
@@ -2089,19 +2129,19 @@
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 110,
+      "line": 117,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -2112,7 +2152,7 @@
       ]
     },
     {
-      "id": "GEN-5",
+      "id": "GEN-6",
       "title": "אפיון מקורות: Wikipedia/Wikidata, עיריית ירושלים, לקסיקוני רחובות, OSM — עם URL לכל טענה.",
       "description": "",
       "team": "Research",
@@ -2128,24 +2168,24 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 115,
+      "line": 122,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
     {
-      "id": "GEN-6",
+      "id": "GEN-7",
       "title": "סכמת נתונים: `id`, `title`, `body`, `sources[]`, `retrievedAt`, `confidence`.",
       "description": "",
       "team": "Research",
@@ -2162,19 +2202,19 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 116,
+      "line": 123,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -2185,7 +2225,7 @@
       ]
     },
     {
-      "id": "GEN-7",
+      "id": "GEN-8",
       "title": "פיילוט 20–30 רחובות מוכרים; בדיקת עובדות וציטוטים.",
       "description": "",
       "team": "Research",
@@ -2201,24 +2241,24 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 117,
+      "line": 124,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
     {
-      "id": "GEN-8",
+      "id": "GEN-9",
       "title": "ייצור מידע לכל 2,154 הרחובות — בלי המצאות; כשאין מקור, נוסח זהיר.",
       "description": "",
       "team": "Research",
@@ -2235,19 +2275,19 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 118,
+      "line": 125,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -2258,7 +2298,7 @@
       ]
     },
     {
-      "id": "GEN-9",
+      "id": "GEN-10",
       "title": "כפתור \"הידעת?\" בכל שורת רחוב + פאנל/מודאל נגיש.",
       "description": "",
       "team": "UI/UX",
@@ -2275,12 +2315,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 119,
+      "line": 126,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
@@ -2298,7 +2338,7 @@
       ]
     },
     {
-      "id": "GEN-10",
+      "id": "GEN-11",
       "title": "ביקורת שיפו + בדיקת תוכן/מקורות.",
       "description": "",
       "team": "Research",
@@ -2315,65 +2355,25 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 120,
+      "line": 127,
       "context": "3. שער \"הידעת\" — אסור להתחיל לפני כן",
       "agentsEnriched": [
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
-        }
-      ]
-    },
-    {
-      "id": "GEN-11",
-      "title": "**סטטיסטיקת השכונות הכפולה:** `stats__breakdown` ו\"קיצורים\" מציגים מידע כפול לאקורדיון. להשאיר?",
-      "description": "",
-      "team": "החלטות",
-      "agents": [
-        "הראשי",
-        "המעצב"
-      ],
-      "priority": {
-        "key": "none",
-        "label": "לא צוין",
-        "marker": "—",
-        "note": ""
-      },
-      "status": {
-        "key": "progress",
-        "label": "בביצוע",
-        "marker": "🟡",
-        "note": ""
-      },
-      "owner": "לא משויך",
-      "source": "docs/agents/TASKS.md",
-      "line": 128,
-      "context": "4. החלטות משתמש פתוחות",
-      "agentsEnriched": [
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         }
       ]
     },
@@ -2395,19 +2395,19 @@
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 129,
+      "line": 136,
       "context": "4. החלטות משתמש פתוחות",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -2435,19 +2435,19 @@
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 130,
+      "line": 137,
       "context": "4. החלטות משתמש פתוחות",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -2475,12 +2475,12 @@
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 136,
+      "line": 143,
       "context": "4.1 מחקר שבילים ומדרגות inhabited",
       "agentsEnriched": [
         {
@@ -2515,12 +2515,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 137,
+      "line": 144,
       "context": "4.1 מחקר שבילים ומדרגות inhabited",
       "agentsEnriched": [
         {
@@ -2556,12 +2556,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 143,
+      "line": 150,
       "context": "5. החלטות טכניות פתוחות",
       "agentsEnriched": [
         {
@@ -2572,9 +2572,9 @@
         },
         {
           "name": "הבודק",
-          "status": "working",
-          "note": "סגירת ביקורת 036–037: אימות חי empty map, scroll-to-map, manual complete, mobile 390/430.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "status": "done",
+          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "הראשי",
@@ -2603,19 +2603,19 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 144,
+      "line": 151,
       "context": "5. החלטות טכניות פתוחות",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -2649,12 +2649,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 145,
+      "line": 152,
       "context": "5. החלטות טכניות פתוחות",
       "agentsEnriched": [
         {
@@ -2689,12 +2689,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 146,
+      "line": 153,
       "context": "5. החלטות טכניות פתוחות",
       "agentsEnriched": [
         {
@@ -2729,19 +2729,19 @@
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 153,
+      "line": 160,
       "context": "6. נדחה",
       "agentsEnriched": [
         {
           "name": "החוקר",
-          "status": "working",
-          "note": "🚀 מריץ: (1) Pipeline אוטומטי — Wikidata/Wikipedia/OSM/Municipality APIs → עיבוד → data/didyouknow/<id>.txt. (2) פיילוט 50 רחובות מרכזיים — fact-checking + מקורות. (3) מחקר מקביל: אפליקציות דומות — Pokemon GO, Geocaching, CityStrides, Jerusalem Trail, VoiceMap, GeoGuessr → דוח השוואתי + המלצות פיצ'רים.",
-          "updated": "2026-10-22T09:15:00+03:00"
+          "status": "done",
+          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
+          "updated": "2026-10-22T16:30:49+03:00"
         },
         {
           "name": "קיפי",
@@ -2769,12 +2769,12 @@
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 154,
+      "line": 161,
       "context": "6. נדחה",
       "agentsEnriched": [
         {
@@ -2809,12 +2809,12 @@
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 155,
+      "line": 162,
       "context": "6. נדחה",
       "agentsEnriched": [
         {
@@ -2849,12 +2849,12 @@
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 156,
+      "line": 163,
       "context": "6. נדחה",
       "agentsEnriched": [
         {
@@ -2889,12 +2889,12 @@
       "status": {
         "key": "progress",
         "label": "בביצוע",
-        "marker": "🟡",
+        "marker": "IN_PROGRESS",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 170,
+      "line": 177,
       "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)",
       "agentsEnriched": [
         {
@@ -2929,12 +2929,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 172,
+      "line": 179,
       "context": "7. סבב פיתוח — התגברות על חסימת אריחי OSM (BOARD 050)",
       "agentsEnriched": [
         {
@@ -2968,12 +2968,12 @@
       "status": {
         "key": "blocked",
         "label": "חסום",
-        "marker": "⏸",
+        "marker": "BLOCKED",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 188,
+      "line": 195,
       "context": "8. סבב פיתוח — \"עובדים ישירות מהקובץ\" (BOARD 053)",
       "agentsEnriched": [
         {
@@ -3002,12 +3002,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 205,
+      "line": 212,
       "context": "9. סבב פיתוח — הכנה להעלאה לרשת (BOARD 054)",
       "agentsEnriched": [
         {
@@ -3041,12 +3041,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 220,
+      "line": 227,
       "context": "10. סבב פיתוח — תיקון אבני הדרך (BOARD 056)",
       "agentsEnriched": [
         {
@@ -3074,12 +3074,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⏳",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 247,
+      "line": 254,
       "context": "12. סבב פיתוח — סביבת בטא ושער אישור (BOARD 062)",
       "agentsEnriched": [
         {
@@ -3092,7 +3092,7 @@
     },
     {
       "id": "GEN-30",
-      "title": "🧭 **דיון עתידי:** תבניות הערות מהירות (הצעה 10) — להגדיר מילון תגים, שילוב עם טקסט חופשי, עריכה/מחיקה וייצוא, לפני מימוש.",
+      "title": "NAVIGATION **דיון עתידי:** תבניות הערות מהירות (הצעה 10) — להגדיר מילון תגים, שילוב עם טקסט חופשי, עריכה/מחיקה וייצוא, לפני מימוש.",
       "description": "",
       "team": "החלטות",
       "agents": [
@@ -3107,12 +3107,12 @@
       "status": {
         "key": "pending",
         "label": "ממתין",
-        "marker": "⬜",
+        "marker": "PENDING",
         "note": ""
       },
       "owner": "לא משויך",
       "source": "docs/agents/TASKS.md",
-      "line": 260,
+      "line": 267,
       "context": "סבב 059 — בטא: הישגים, יומן, שלד טעינה ותזכורת",
       "agentsEnriched": [
         {
@@ -3134,5 +3134,5 @@
       "label": "משימות כלליות פתוחות"
     }
   ],
-  "agentStatusSource": "2026-10-22T12:34:47.658Z"
+  "agentStatusSource": "2026-10-25T09:21:04.070Z"
 }

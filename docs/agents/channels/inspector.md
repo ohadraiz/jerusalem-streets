@@ -13,8 +13,8 @@
 - CSS ל-FAQ ולפוטר ב-`assets/styles.css` (RTL, `prefers-reduced-motion`)
 **קבצים:** `index.html`, `assets/styles.css`
 **קומיט:** `2ed0366` (HEAD) — כבר באוויר באתר החי https://ohadraiz.github.io/jerusalem-streets/
-**שערים:** verify 36/36 ✅, store 24/24 ✅, בדיקת דפדפן חי ✅
-**סטטוס סאוגאו:** 🏖️ בחופשה עד הודעה מפורשת מהמשתמש (לא חוזר אוטומטית)
+**שערים:** verify 36/36 PASS, store 24/24 PASS, בדיקת דפדפן חי PASS
+**סטטוס סאוגאו:** STANDBY️ בחופשה עד הודעה מפורשת מהמשתמש (לא חוזר אוטומטית)
 **אין משימות חדשות לדשבורד** — שינוי תצוגתי בלבד, ללא שינוי בנתונים/לוגיקה.
 
 ## ראשי → הפקח · עדכון סטטוס סופי · 2026-10-22
@@ -31,24 +31,24 @@
 - פיצ'רים PWA M1 (offline, safe-area, install banner, manifest) כבר היו בפרודקשן
 
 **שערים — כולם ירוקים:**
-- `node --check` ✅ נקי
-- `node tests/store.test.js` ✅ 24/24
-- `node tools/verify.js` ✅ 37/37
-- `node tools/make-beta.js --check` ✅ מעודכן
-- Browser smoke (live + beta) ✅ 0 שגיאות, כל הפיצ'רים עובדים
+- `node --check` PASS נקי
+- `node tests/store.test.js` PASS 24/24
+- `node tools/verify.js` PASS 37/37
+- `node tools/make-beta.js --check` PASS מעודכן
+- Browser smoke (live + beta) PASS 0 שגיאות, כל הפיצ'רים עובדים
 
 **סטטוס צוותים:**
-- UI/UX: 🏖️ בחופש (סבב 059 סגור)
-- DEV: 🏖️ בחופש
-- NET: 🏖️ בחופש (שרשרת אריחים יציבה)
-- Research: 🏖️ בחופש (פיילוט 50 רחובות הושלם)
-- Mobile/Deploy: 🏖️ standby (M1 פורסם, M2 ממתין)
-- Data: 🏖️ בחופש
+- UI/UX: STANDBY️ בחופש (סבב 059 סגור)
+- DEV: STANDBY️ בחופש
+- NET: STANDBY️ בחופש (שרשרת אריחים יציבה)
+- Research: STANDBY️ בחופש (פיילוט 50 רחובות הושלם)
+- Mobile/Deploy: STANDBY️ standby (M1 פורסם, M2 ממתין)
+- Data: STANDBY️ בחופש
 
 **קומיט:** `00907b4` (HEAD) — חי ב https://ohadraiz.github.io/jerusalem-streets/
 **בטא:** https://ohadraiz.github.io/jerusalem-streets/beta.html (זהה, אחסון נפרד)
 
-**הפקח:** 🏖️ בחופשה עד הודעה מפורשת מהמשתמש (דשבורד מעודכן, אין חוסמים פתוחים)
+**הפקח:** STANDBY️ בחופשה עד הודעה מפורשת מהמשתמש (דשבורד מעודכן, אין חוסמים פתוחים)
 
 ## הגדרת תפקיד — הפקח (מונה 2026-10-21)
 
@@ -66,7 +66,7 @@
 
 #### 2. צריכת הקשר סוכנים (Agent Context Consumer)
 - **קורא:** `agent-status.json` (שגולי מפיק מתשאולים)
-- **מעשיר:** כרטיסי משימה ב-`tasks.html` עם תגי סטטוס סוכן חי ("🟢 עובד", "🔴 חסום", "⏳ ממתין לאישור")
+- **מעשיר:** כרטיסי משימה ב-`tasks.html` עם תגי סטטוס סוכן חי ("LOW עובד", "HIGH חסום", "PENDING ממתין לאישור")
 - **מציג:** בעמודת "סוכנים" — סטטוס נוכחי של כל סוכן מעורב
 
 #### 3. סנכרון עם גולי (דו-כיווני, מובנה בנתונים)
@@ -153,27 +153,27 @@ node tools/build-all.js
 ### סקשנים לפי צוות:
 ```
 ┌─ UI/UX (צוות פעיל)
-│  ├─ UX-1: גלילת מפה — 🔴 ✅
-│  ├─ UX-2: סיום ידני — 🔴 🟡
-│  └─ UX-3: מובייל 390/430 — 🔴 🟡
+│  ├─ UX-1: גלילת מפה — HIGH PASS
+│  ├─ UX-2: סיום ידני — HIGH IN_PROGRESS
+│  └─ UX-3: מובייל 390/430 — HIGH IN_PROGRESS
 ├─ DEV
-│  ├─ DEV-1: Tile Probe — 🔴 ⏳
-│  └─ DEV-2: Static Deploy — 🔴 ⏳
+│  ├─ DEV-1: Tile Probe — HIGH PENDING
+│  └─ DEV-2: Static Deploy — HIGH PENDING
 ├─ NET
-│  ├─ NET-1: Tile Provider — 🔴 ⏳
-│  └─ NET-2: Proxy — 🟡 ⏳
+│  ├─ NET-1: Tile Provider — HIGH PENDING
+│  └─ NET-2: Proxy — IN_PROGRESS PENDING
 ├─ Research
-│  ├─ RSCH-1: DidYouKnow — 🔴 🟡
-│  └─ RSCH-2: Similar Apps — 🟡 ⏳
+│  ├─ RSCH-1: DidYouKnow — HIGH IN_PROGRESS
+│  └─ RSCH-2: Similar Apps — IN_PROGRESS PENDING
 └─ Mobile/Deploy
-   ├─ MOB-1: PWA — 🔴 ⏳
-   └─ REL-1: Hosting — 🔴 🟡
+   ├─ MOB-1: PWA — HIGH PENDING
+   └─ REL-1: Hosting — HIGH IN_PROGRESS
 ```
 
 ### פילטרים זמינים:
 - **צוות:** UI/UX | DEV | NET | נתונים | Research | החלטות | Mobile/Deploy
-- **עדיפות:** 🔴 גבוהה | 🟡 בינונית | 🟢 נמוכה
-- **סטטוס:** ✅ הושלם | 🟡 בביצוע | ⬜ ממתין | ⏸ חסום
+- **עדיפות:** HIGH גבוהה | IN_PROGRESS בינונית | LOW נמוכה
+- **סטטוס:** PASS הושלם | IN_PROGRESS בביצוע | PENDING ממתין | BLOCKED חסום
 - **סוכן:** הראשי | החוקר | הבודק | המעצב | המגשר | המתעד | הפקח | קיפי | מובריליס | מובי | פיצי
 
 ---
@@ -218,14 +218,14 @@ node tools/build-all.js
 מה בניתי:
 - `tools/tasks-dashboard.js` — בונה Node ללא תלויות (`fs`+`path` בלבד), כתיבה אטומית לפי תבנית `writeFileAtomic` של `tools/guli-room.js`, כל הנתיבים מ-`__dirname`. קורא את `docs/TEAMS.md` ו-`docs/agents/TASKS.md` וממיר אותם לרשומות אחידות `{ id, title, description, team, priority, status, owner }`.
 - `tasks.html` — קובץ סטטי יחיד (CSS+JS מוטמעים), `dir="rtl"`, `lang="he"`, אפס משאבים חיצוניים, בלי מודולים — נפתח ב-`file://` בלי build.
-- בדשבורד: כותרת + תאריך הפקה, סיכום (סה"כ / לפי צוות / לפי סטטוס) שמחושב בזמן ההצגה מרשימת המשימות, 4 פילטרים (`<select>` עם "הכל" וספירות) + "ניקוי פילטרים", חיפוש חופשי בזמן אמת על מזהה/שם/תיאור/אחראי, 7 סדרי מיון (ברירת מחדל צוות→עדיפות→סטטוס), קבוצה לכל צוות עם כותרת+ספירה+אחראי, `🏖️ בחופש` ל-Mobile/Deploy, כפתור "הדפסה / PDF" עם `window.print()` ו-`@media print`, נגישות (`label` לכל שדה, `aria-live` על ספירת התוצאות, ניווט מקלדת, מצב לא-נראה לא תלוי בצבע בלבד), מובייל 360px בלי גלילה אופקית ובקרות בגובה 44px.
+- בדשבורד: כותרת + תאריך הפקה, סיכום (סה"כ / לפי צוות / לפי סטטוס) שמחושב בזמן ההצגה מרשימת המשימות, 4 פילטרים (`<select>` עם "הכל" וספירות) + "ניקוי פילטרים", חיפוש חופשי בזמן אמת על מזהה/שם/תיאור/אחראי, 7 סדרי מיון (ברירת מחדל צוות→עדיפות→סטטוס), קבוצה לכל צוות עם כותרת+ספירה+אחראי, `STANDBY️ בחופש` ל-Mobile/Deploy, כפתור "הדפסה / PDF" עם `window.print()` ו-`@media print`, נגישות (`label` לכל שדה, `aria-live` על ספירת התוצאות, ניווט מקלדת, מצב לא-נראה לא תלוי בצבע בלבד), מובייל 360px בלי גלילה אופקית ובקרות בגובה 44px.
 
-כמה משימות נכללו ומהיכן: **65 משימות** — 36 מ-`docs/TEAMS.md` (UI/UX 8, DEV 5, NET 4, Research 9 כולל MKT-1..MKT-5, Mobile/Deploy 10) ו-29 משימות כלליות פתוחות מ-`docs/agents/TASKS.md` (כל שורות `- [ ]` שנסרקו: סעיפים 1.1, 3, 4, 4.1, 5, 6, 7) בקבוצת "כללי". אחראי לפי שורת "סוכנים אחראיים" ב-TEAMS.md: UI/UX→ציבי, DEV→ראשי, NET→צירי, Research→החוקר (כולל MKT), Mobile/Deploy→מובריליס (לשעבר טופי לפי BOARD §048). ל-DEV ול-NET אין עמודת סטטוס בטבלה → `⬜ ממתין` כברירת מחדל (מסומן בכרטיס); ב-`TASKS.md` אין עדיפות → "לא צוין" (לא המצאתי ערכים). פריט כללי בלי בעלים → אחראי "לא משויך" (22 פריטים).
+כמה משימות נכללו ומהיכן: **65 משימות** — 36 מ-`docs/TEAMS.md` (UI/UX 8, DEV 5, NET 4, Research 9 כולל MKT-1..MKT-5, Mobile/Deploy 10) ו-29 משימות כלליות פתוחות מ-`docs/agents/TASKS.md` (כל שורות `- [ ]` שנסרקו: סעיפים 1.1, 3, 4, 4.1, 5, 6, 7) בקבוצת "כללי". אחראי לפי שורת "סוכנים אחראיים" ב-TEAMS.md: UI/UX→ציבי, DEV→ראשי, NET→צירי, Research→החוקר (כולל MKT), Mobile/Deploy→מובריליס (לשעבר טופי לפי BOARD §048). ל-DEV ול-NET אין עמודת סטטוס בטבלה → `PENDING ממתין` כברירת מחדל (מסומן בכרטיס); ב-`TASKS.md` אין עדיפות → "לא צוין" (לא המצאתי ערכים). פריט כללי בלי בעלים → אחראי "לא משויך" (22 פריטים).
 
 מה נמדד (פקודה + פלט):
 - `node --check tools/tasks-dashboard.js` → `SYNTAX OK`
 - `node tools/tasks-dashboard.js` → `[inspector] built tasks.html (58.5 KiB) | 65 tasks | teams: UI/UX, DEV, NET, Research, Mobile/Deploy, כללי`
-- דפדפן אמיתי — Chrome headless דרך CDP על `file:///C:/Users/ohadr/Documents/Default%20Project/tasks.html`: **44/44 בדיקות עברו, אפס שגיאות קונסול**. נבדק בפועל: סינון צוות (UI/UX→8 כרטיסים, קבוצה אחת), סינון סטטוס (הושלם→4, חסום→15), עדיפות גבוהה→15, אחראי צירי→5, חיפוש ("Tile Probe"→DEV-1+GEN-17, "DEV-1"→1, "צירי"→5, ללא תוצאות→מסך "לא נמצאו"), ניקוי פילטרים→65 ואיפוס כל הבקרות, 7 סדרי מיון (ברירת מחדל צוות→עדיפות→סטטוס אומתה לפי סדר הכרטיסים), 360px: `scrollWidth=360` (אפס גלילה אופקית), כל הבקרות ≥44px, עמודת כרטיסים אחת, קלט 16px, אפס משאבים חיצוניים, `🏖️ בחופש` ל-Mobile/Deploy, מצב הדפסה (`Emulation.setEmulatedMedia('print')`: סרגל הכלים מוסתר, רקעים בהירים `rgba(0,0,0,0)`, `break-inside:avoid`), `window.print()` נקרא ללא שגיאה. אותה חבילת בדיקות עברה ב-`http://localhost:8787/tasks.html` (44/44; ה-404 היחיד הוא favicon.ico של השרת, לא של הדשבורד).
+- דפדפן אמיתי — Chrome headless דרך CDP על `file:///C:/Users/ohadr/Documents/Default%20Project/tasks.html`: **44/44 בדיקות עברו, אפס שגיאות קונסול**. נבדק בפועל: סינון צוות (UI/UX→8 כרטיסים, קבוצה אחת), סינון סטטוס (הושלם→4, חסום→15), עדיפות גבוהה→15, אחראי צירי→5, חיפוש ("Tile Probe"→DEV-1+GEN-17, "DEV-1"→1, "צירי"→5, ללא תוצאות→מסך "לא נמצאו"), ניקוי פילטרים→65 ואיפוס כל הבקרות, 7 סדרי מיון (ברירת מחדל צוות→עדיפות→סטטוס אומתה לפי סדר הכרטיסים), 360px: `scrollWidth=360` (אפס גלילה אופקית), כל הבקרות ≥44px, עמודת כרטיסים אחת, קלט 16px, אפס משאבים חיצוניים, `STANDBY️ בחופש` ל-Mobile/Deploy, מצב הדפסה (`Emulation.setEmulatedMedia('print')`: סרגל הכלים מוסתר, רקעים בהירים `rgba(0,0,0,0)`, `break-inside:avoid`), `window.print()` נקרא ללא שגיאה. אותה חבילת בדיקות עברה ב-`http://localhost:8787/tasks.html` (44/44; ה-404 היחיד הוא favicon.ico של השרת, לא של הדשבורד).
 - `node tests/store.test.js` → **21/21 עברו**
 - `node tools/verify.js` → **33/34** — הבדיקה היחידה שנפלה: `תחביר: tools/guli-room.js` (SyntaxError "Unexpected token '}'" בשורה 592). הקובץ נשבר בעריכה של סוכן אחר (המתעד/גולי, שהקובץ שלו) — לא נגעתי בו, אסור לי לערוך אותו. כל 33 השאר עברו, כולל בדיקת התחביר של `tools/tasks-dashboard.js`. מספר הבדיקות ב-verify.js השתנה מ-32 ל-34 באותה עת.
 
@@ -254,7 +254,7 @@ node tools/build-all.js
 - Gap 5 (M0-6): `manifest.webmanifest` — `id`, `start_url`, `display_override`, `categories`, `shortcuts`, `screenshots` (mobile/desktop).
 
 **אימות:**
-- verify 48/48 ✅, store 24/24 ✅, make-beta --check ✅, node --check ✅.
+- verify 48/48 PASS, store 24/24 PASS, make-beta --check PASS, node --check PASS.
 - אתר חי: כל השינויים נגישים (200), SW `activated`, manifest תקין.
 - בטא: `beta.html` + `assets/beta/*` מעודכנים.
 
@@ -284,8 +284,8 @@ node tools/build-all.js
 ```
 צוות: UI/UX
 משימה: UX-1 גלילת מפה
-עדיפות: 🔴 גבוהה
-סטטוס: 🟡 בביצוע
+עדיפות: HIGH גבוהה
+סטטוס: IN_PROGRESS בביצוע
 אחראי: המעצב
 תאריך יעד: 2026-10-25
 הערות: תוקן קוד, ממתין לאימות חי 390/430

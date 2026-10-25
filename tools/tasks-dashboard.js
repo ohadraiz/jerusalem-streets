@@ -36,14 +36,14 @@ const TEAM_ORDER = ["UI/UX", "DEV", "NET", "נתונים", "Research", "החלט
  */
 const TEAM_FALLBACKS = {
   "נתונים": {
-    icon: "🗺️",
+    icon: "MAP",
     title: "צוות נתונים ומפות",
     note: "רשימת הרחובות, הגיאומטריה, השבילים, הפוליגונים והמיזוג לנתונים",
     standby: false,
     owners: ["מפי", "המגשר", "הראשי", "קיפי"]
   },
   "החלטות": {
-    icon: "⚖️",
+    icon: "DECISION",
     title: "צוות החלטות והקפאות",
     note: "החלטות משתמש פתוחות, פריטים שנדחו ומקפאים — ממתינים להכרעה או לאישור",
     standby: false,
@@ -155,17 +155,16 @@ const OWNER_ALIASES = {
 };
 
 const STATUS_MARKERS = [
-  { marker: "✅", key: "done", label: "הושלם" },
-  { marker: "🟡", key: "progress", label: "בביצוע" },
-  { marker: "⬜", key: "pending", label: "ממתין" },
-  { marker: "⏳", key: "pending", label: "ממתין" },
-  { marker: "⏸", key: "blocked", label: "חסום" }
+  { marker: "PASS", key: "done", label: "הושלם" },
+  { marker: "IN_PROGRESS", key: "progress", label: "בביצוע" },
+  { marker: "PENDING", key: "pending", label: "ממתין" },
+  { marker: "BLOCKED", key: "blocked", label: "חסום" }
 ];
 
 const PRIORITY_MARKERS = [
-  { marker: "🔴", key: "high", label: "גבוהה" },
-  { marker: "🟡", key: "medium", label: "בינונית" },
-  { marker: "🟢", key: "low", label: "נמוכה" }
+  { marker: "HIGH", key: "high", label: "גבוהה" },
+  { marker: "MEDIUM", key: "medium", label: "בינונית" },
+  { marker: "LOW", key: "low", label: "נמוכה" }
 ];
 
 /* ---------- helpers ---------- */
@@ -211,7 +210,7 @@ function parseStatus(text) {
     }
   }
   if (!best) {
-    return { key: "pending", label: "ממתין", note: "", marker: "⬜" };
+    return { key: "pending", label: "ממתין", note: "", marker: "PENDING" };
   }
   return {
     key: best.entry.key,
@@ -376,7 +375,7 @@ function parseTeams(md) {
         : {
             key: "pending",
             label: "ממתין",
-            marker: "⬜",
+            marker: "PENDING",
             note: "ברירת מחדל — אין עמודת סטטוס בטבלה"
           };
 
@@ -968,12 +967,9 @@ function buildHtml(data) {
       <p class="page-head__mandate">מארגן המשימות — בקשר עם הראשי והמתעד (גולי), מקבל עדכונים מכל הסוכנים</p>
     </div>
     <div class="page-head__actions">
-      <a class="btn" href="index.html">🏠 דף בית פנימי</a>
-      <a class="btn" href="guli.html">📢 חדר הסוכנים</a>
-      <a class="btn" href="project-map.html">🗺️ מפת הפרויקט</a>
-      <a class="btn" href="agents-dashboard.html">👥 לוח הסוכנים</a>
-      <a class="btn" href="agent-vs-subagent.html">🎩 ראשי מול סאב</a>
-      <a class="btn" href="../index.html">🌐 לאפליקציה הציבורית</a>
+      <a class="btn" href="index.html">דף הבית הפנימי</a>
+      <a class="btn" href="guli.html">חדר הסוכנים</a>
+      <a class="btn" href="../index.html">האפליקציה הציבורית</a>
       <button type="button" id="print-btn" class="btn btn--primary">הדפסה / PDF</button>
     </div>
   </div>
@@ -1299,11 +1295,11 @@ function buildHtml(data) {
     if (task.agentsEnriched && task.agentsEnriched.length) {
       var agentSpans = task.agentsEnriched.map(function(a) {
         var statusClass = "agent-status--unknown";
-        var statusLabel = "❓";
-        if (a.status === "active" || a.status === "working") { statusClass = "agent-status--active"; statusLabel = "🟢"; }
-        else if (a.status === "blocked") { statusClass = "agent-status--blocked"; statusLabel = "🔴"; }
-        else if (a.status === "waiting") { statusClass = "agent-status--waiting"; statusLabel = "🟡"; }
-        else if (a.status === "done") { statusClass = "agent-status--done"; statusLabel = "✅"; }
+          var statusLabel = "UNKNOWN";
+          if (a.status === "active" || a.status === "working") { statusClass = "agent-status--active"; statusLabel = "ACTIVE"; }
+          else if (a.status === "blocked") { statusClass = "agent-status--blocked"; statusLabel = "BLOCKED"; }
+          else if (a.status === "waiting") { statusClass = "agent-status--waiting"; statusLabel = "IN_PROGRESS"; }
+          else if (a.status === "done") { statusClass = "agent-status--done"; statusLabel = "PASS"; }
         var noteHtml = a.note ? ' <span class="agent-status__note">' + esc(a.note) + '</span>' : "";
         return '<span class="agent-status ' + statusClass + '" title="' + esc(a.name + ": " + (a.note || a.status)) + '">' +
           '<strong>' + esc(a.name) + '</strong> ' + statusLabel + noteHtml +
@@ -1335,7 +1331,7 @@ function buildHtml(data) {
     var meta = group.team;
     var head = '<header class="team-group__head">' +
       '<h3><span class="team-group__icon" aria-hidden="true">' + esc(meta.icon) + '</span> ' + esc(meta.label) + '</h3>';
-    if (meta.standby) head += '<span class="badge">🏖️ בחופש</span>';
+          if (meta.standby) head += '<span class="badge">STANDBY בחופש</span>';
     head += '<span class="team-group__count">' + group.tasks.length + ' משימות</span>';
     head += '<p class="team-group__meta">' +
       esc(meta.sourceTitle) + (meta.note ? " — " + esc(meta.note) : "") +

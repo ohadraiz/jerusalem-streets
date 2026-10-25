@@ -4,13 +4,13 @@
 
 ---
 
-## ✅ ראשי → הבודק · הפעלה: ביקורת נגישות "הידעת?" · 2026-10-22
+## PASS ראשי → הבודק · הפעלה: ביקורת נגישות "הידעת?" · 2026-10-22
 
 **מפעיל אותך לביקורת נגישות מלאה של כרטיס "הידעת?" לפני בטא**
 
-### 🎯 משימה: ביקורת נגישות מלאה (WCAG 2.1 AA)
+### GOAL משימה: ביקורת נגישות מלאה (WCAG 2.1 AA)
 
-### 🎯 מה לבדוק
+### GOAL מה לבדוק
 
 | רכיב | מה לבדוק |
 |------|----------|
@@ -25,23 +25,23 @@
 | **Touch/Mobile** | Bottom Sheet swipe dismiss, touch targets ≥ 44×44px, safe-area insets |
 | **RTL** | סדר קריאה, מיקום popup, כיוון טקסט, אייקונים |
 
-### 📱 מכשירים/דפדפנים לבדיקה
+### MOBILE מכשירים/דפדפנים לבדיקה
 - **Desktop:** Chrome + NVDA, Firefox + NVDA, Safari + VoiceOver
 - **Mobile:** iOS Safari + VoiceOver, Android Chrome + TalkBack
 - **Responsive:** 360px, 390px, 430px, 768px, 1024px, 1280px
 
-### 📋 תהליך
+### CHECKLIST תהליך
 1. **המעצב** מסיים עיצוב → אתה מקבל לבדיקה
 2. **המגשר** מחבר hook → אתה בודק אינטגרציה
 3. **אתה מדווח** — Pass/Fail + רשימת תיקונים
 4. **תיקונים** ← חוזרים למעצב/מגשר
 5. **Re-check** → Pass → מאשר לבטא
 
-### 🔐 בטא (חובה)
+### SECURITY בטא (חובה)
 - `node tools/make-beta.js --check` → שערים מלאים
 - **אישור שלך** נדרש לפני בקשת אישור משתמש
 
-### 🔗 תיאום
+### LINK תיאום
 - **עם המעצב (ציבי):** מקבל עיצוב, מחזיר תיקוני נגישות
 - **עם המגשר (צירי):** מקבל hook, בודק אינטגרציה במפה/רשימה
 - **עם החוקר:** מאמת תוכן (fact, sources, confidence) מוצג נכון
@@ -131,7 +131,7 @@
 
 - פופאפ המפה בנוי מ-DOM בלבד עם `textContent` (map.js:296–353), `dir="rtl"` מוגדר, ואין innerHTML בשום מסלול — אין XSS.
 - `updateLeafletStreet` מעדכן מופע יחיד בתגובה ל-`visited-change` (map.js:933–942) במקום לבנות מחדש ~2,300 שכבות — הרנדור המחזורי היחיד שנשאר הוא canvas בגיבוי, מוגבל על ידי rAF.
-- גיבוי הקנבס מכיל hit-test מרחבי אמיתי (map.js:757–791), ניווט מקלדת, ואינדיקטור ✓ שאינו תלוי בצבע בלבד (map.js:679–683, 694–701).
+- גיבוי הקנבס מכיל hit-test מרחבי אמיתי (map.js:757–791), ניווט מקלדת, ואינדיקטור PASS שאינו תלוי בצבע בלבד (map.js:679–683, 694–701).
 - מזהי הזרע שהוצאו זורמים דרך קובץ נפרד ונבדקים הן ב-build (שורות 259–271) והן ב-verify.js — אין שרשור קשיח של מזהים.
 
 ---
@@ -270,7 +270,7 @@
 
 ### חוסם (must fix)
 
-1. **[app.js:539–542 מול 1714–1806] "סיום ידני"/"בטל סיום ידני" — כפתורים ללא handler.** `areaPanelMarkup` מרנדר `data-action="manual-complete"` ו-`data-action="manual-undo"`, אבל ב-delegation של `el.list` אין ענף לאף אחת מהן (רק flat-prev/next, more-areas, area-focus/toggle, batch-mark/unmark, delete-street, toggle-visit, goto). grep על `manualCompletions` ב-assets: מופיעים **רק** store.js (23, 72–78, 91) ו-app.js:525/539 — כלומר `state.manualCompletions` לעולם אינו נכתב, התג "הושלמה ידנית" מעולם לא יופיע (אלא מייבוא ידני), ולחיצה על הכפתור עושה כלום בשקט. BOARD 036–037 (הדו"ח הקודם) נתן על זה ✅-די הערכה; בקוד הנוכחי זה feature חצי-ממומש. **הצעה:** לכתוב את שני ה-handlers (עותק מ-piem-הגורפות: `confirm` → עדכון `manualCompletions[area]` → `persist()` → toast+announce → `renderList`), או להסיר את שני הכפתורים + את `manualCompletions` מה-render עד שיימוש מלא.
+1. **[app.js:539–542 מול 1714–1806] "סיום ידני"/"בטל סיום ידני" — כפתורים ללא handler.** `areaPanelMarkup` מרנדר `data-action="manual-complete"` ו-`data-action="manual-undo"`, אבל ב-delegation של `el.list` אין ענף לאף אחת מהן (רק flat-prev/next, more-areas, area-focus/toggle, batch-mark/unmark, delete-street, toggle-visit, goto). grep על `manualCompletions` ב-assets: מופיעים **רק** store.js (23, 72–78, 91) ו-app.js:525/539 — כלומר `state.manualCompletions` לעולם אינו נכתב, התג "הושלמה ידנית" מעולם לא יופיע (אלא מייבוא ידני), ולחיצה על הכפתור עושה כלום בשקט. BOARD 036–037 (הדו"ח הקודם) נתן על זה PASS-די הערכה; בקוד הנוכחי זה feature חצי-ממומש. **הצעה:** לכתוב את שני ה-handlers (עותק מ-piem-הגורפות: `confirm` → עדכון `manualCompletions[area]` → `persist()` → toast+announce → `renderList`), או להסיר את שני הכפתורים + את `manualCompletions` מה-render עד שיימוש מלא.
 
 2. **[store.js:123, 193] מצב שמכיל "רק מסיומים ידניים" מסווג corrupt — אובדן נתונים בשקט.** ב-`load()` חשוב ה-`kept` ספור רק מ-visited+custom+deleted (שורה 123), ו-`countRawEntries` מוסיף גם manualCompletions (שורה 91). מצב `{visited:{}, custom:[], deleted:[], manualCompletions:{...}}` → `kept===0` וצריכת ה-corrupt (126–128): הנתונים מנוסים, באנר "הנתונים לא היו קריאים" מוצג בשקט/שגוי. אותה בעיה ב-`fromJSON` (181–196): קובץ גיבוי שמכיל רק manualCompletions לא זוהה כגיבוי (184) ולא ספור ב-`entries` (193) — הוא נדחה כ"קובץ ריק". פעם זה הופעל (החוסם הראשון), המסלול חי: סיום ידני לשכונה בלי סימונים → persist → reload → אובדן. **הצעה:** להוסיף manualCompletions ל-`kept` (123) ול-`entries` (193), ולהוסיף אותו לסעיף ה-"נראה כגיבוי" (184).
 
@@ -335,7 +335,7 @@
 9. **[פתוח לעדכון]** — נוסח ייחוג OSM DE לא נמדד (wiki 503); הייחוג הכללי של OSM מחייב תמיד.
 
 ### ראיות בדיקה (הראשי, 2026-10-21)
-- `node --check assets/map.js` ✅ · smoke עצמאי 84/84 ✅ · `tests/store.test.js` 21/21 ✅ · `tools/verify.js` 33/33 ✅ (הספירה משתנה — הכלל ב-`tools/verify.js` נערך במקביל ע"י סוכנים אחרים).
+- `node --check assets/map.js` PASS · smoke עצמאי 84/84 PASS · `tests/store.test.js` 21/21 PASS · `tools/verify.js` 33/33 PASS (הספירה משתנה — הכלל ב-`tools/verify.js` נערך במקביל ע"י סוכנים אחרים).
 - דפדפן אמת: `http://localhost:8787` → OSM (10 אריחים, ייחוג יחיד) · `http://localhost:8788` (`Referrer-Policy: no-referrer`) → OSM חסום → מעבר ל-OSM DE (10 אריחים, ייחוג מתעדכן) · `http://localhost:8789` (כל הספקים חסומים) → באנר סופי + "נסה שוב" יחיד + 0 אריחים, לחיצה מחזורת בלי כפתור כפול · `file://` ב-Chrome headless → OSM DE, 0 בקשות ל-OSM · מתג רשת (כיבוי/הדלקה) · אין שגיאות קונסול בכל המקרים.
 
 ### מה נשאר להבודק
@@ -367,15 +367,15 @@
 6. **[פתוח — לא חלק מהתיקון] מנגנוני "gamification" שנוספו במקביל.** במהלך הסבב נערכו ב-`app.js`/`index.html`/`styles.css`/`store.js` מנגנוני **הישגים, דירוג כוכבים, מצב רוח, צלילים ורעידות** (כולל שדות חדשים ב-`state.visited` וב-`state.settings`). אלה אינם חלק מתיקון האבנות-דרך ולא אומתו בסבב הזה — **נדרש סבב ביקורת נפרד** (נגישות של הכוכבים/הצ'יפים, התאמה ל-44px, `aria-pressed` ב-`radiogroup`, מדיניות מטמון ושמירה של `settings`, והיעדים ב-`index.html`).
 
 ### ראיות בדיקה (הראשי, 2026-10-21)
-- `node --check assets/app.js` ✅ · `node tools/verify.js` → **35/35** ✅ · `node tests/store.test.js` → **24/24** ✅
+- `node --check assets/app.js` PASS · `node tools/verify.js` → **35/35** PASS · `node tests/store.test.js` → **24/24** PASS
 - דפדפן אמת (`http://localhost:8787`, 2,424 רחובות / 95 שכונות, `localStorage` נוקה לפני כל תרחיש):
-  - 10 רחובות ב"רמות" (93 בשכונה) → 0 חגיגות; `#progress-text` = "10 מתוך 2,424 רחובות (0.4%)" ✅
-  - 242 → 243 מסומנים → "אבן דרך: 10% מהרחובות סומנו!" בדיוק פעם אחת; `#stat-pct` = "10.0%" ✅
-  - ביטול (242) וסימון מחדש (243) → אין חגיגה שנייה ✅
-  - סימון גורפת "רמות א'" (25) מ-0 → "הושלמת את רמות א' — 25 מתוך 25." ו-**אין** "אבן דרך"; 1.0% ✅
-  - סימון גורפת "רמות" (93) מ-200 → 293 → "אבן דרך: 10% מהרחובות סומנו!"; 12.1% ✅
-  - מצב "כל הרחובות הוסרו" (0 רחובות פעילים) → `toggle` לא קורס, אין חגיגה, אין באנר ✅
-  - אפס שגיאות קונסול בכל התרחישים ✅
+  - 10 רחובות ב"רמות" (93 בשכונה) → 0 חגיגות; `#progress-text` = "10 מתוך 2,424 רחובות (0.4%)" PASS
+  - 242 → 243 מסומנים → "אבן דרך: 10% מהרחובות סומנו!" בדיוק פעם אחת; `#stat-pct` = "10.0%" PASS
+  - ביטול (242) וסימון מחדש (243) → אין חגיגה שנייה PASS
+  - סימון גורפת "רמות א'" (25) מ-0 → "הושלמת את רמות א' — 25 מתוך 25." ו-**אין** "אבן דרך"; 1.0% PASS
+  - סימון גורפת "רמות" (93) מ-200 → 293 → "אבן דרך: 10% מהרחובות סומנו!"; 12.1% PASS
+  - מצב "כל הרחובות הוסרו" (0 רחובות פעילים) → `toggle` לא קורס, אין חגיגה, אין באנר PASS
+  - אפס שגיאות קונסול בכל התרחישים PASS
 
 ### מה נשאר להבודק
 לאשר או לתקן את ממצא 2 (`rating`/`mood` ב-undo), להחליט על ממצאים 3–4, ולהחליט אם לפתוח סבב ביקורת נפרד למנגנוני ה-gamification (ממצא 6). עד אז הסבב נשאר **"בביקורת"**.
@@ -394,7 +394,7 @@
 |---|---|---|---|
 | **חוסם** | app.js:1467–1470 | `batchMarkArea` קורא `checkMilestones(percentValue(before), percentValue(after))` — **שני ארגומנטים בלבד** לחתימה של ארבע (`beforeVisited, beforeTotal, afterVisited, afterTotal`, שורות 392–394). `afterTotal` = undefined → `afterPercent = 0` → התנאי `afterPercent >= mark` אינו מתקיים מעולם; **אבני דרך לא נשאבות בסימון גורפי**. סותר את הדוח "אומת חי" בשורות 325–328 לעיל (הקריאה החיה התבצעה כנראה בגרסת קוד קודמת) — הקוד הנוכחי אינו יכול לנפק את התוצאה המדווחת שם. | לתקן לארבעה ארגומנטים: `checkMilestones(cityBefore.visited, cityBefore.total, cityAfter.visited, cityAfter.total)` — כמו בהצלחה ב-`toggleStreet` (1843–1846). |
 | חשוב | app.js:801–805 | דירוג כוכבים: `role="radiogroup"` ובתוכו כפתורי `aria-pressed` — ARIA לא תקף: צאצאי radiogroup חייבים `role="radio"` עם `aria-checked` וניווט חצים (כוכבים הם toggle-plain). קורא מסך מקבל מבנה סותר. ניגוד לגוף "הרגשה" (806–810) שמשתמש נכון ב-`role="group"`. | פשוט: להחליף ל-`role="group"` ולשמור `aria-pressed` (עקבי עם הצ'יפים), או לממש radiogroup אמיתי. |
-| חשוב | app.js:2078–2081 | ייבוא מסנכרן את UI של `voiceToggle` ולא של `soundToggle` — ייבוא גיבוי עם `settings.sound:false` ישאיר את הכפתור "🎵 צלילים" מוצג כפעיל (`aria-pressed=true`) בזמן שהמצב כבוי עד רענון. | לשכפל את בלוק הסנכרון גם ל-`el.soundToggle` (או מסייעת משותפת `syncSettingToggle`). |
+| חשוב | app.js:2078–2081 | ייבוא מסנכרן את UI של `voiceToggle` ולא של `soundToggle` — ייבוא גיבוי עם `settings.sound:false` ישאיר את הכפתור "AUDIO צלילים" מוצג כפעיל (`aria-pressed=true`) בזמן שהמצב כבוי עד רענון. | לשכפל את בלוק הסנכרון גם ל-`el.soundToggle` (או מסייעת משותפת `syncSettingToggle`). |
 | חשוב | styles.css:1932, 1935 | יעדי מגע: כוכב `min-width/min-height: 28px` וצ'יפ רגש `min-height: 30px` — מתחת למוסכמת 44px של הפרויקט (קשב להשוות `.street__field input` ב-1855–1857). אלה הפקדים החדשים הנמצאים בשימוש תדיר במובייל. | להגדיל ל-44px (פיזית או עם משטח נגיעה נוסף עם `::before`), לפחות בנקודות הפסקה המובייל. |
 | לא-חוסם | app.js:301–302 + 392–405 | סוגי צליל `"milestone"` ו-`"undo"` — קוד מת: ב-`checkMilestones` אין `playSound("milestone")`; ב-`undoLastAction` אין צליל. | לחבר `playSound("milestone")` בחלוף סף (וצליל undo בביטול) או להסיר את הסניפים. |
 | לא-חוסם | app.js:323–328, 284–290, 230–257 | (1) `haptic` מסונן ע"י `settings().sound` — רטט מתה כשהצליל כבוי אף שאין קשר סמנטי; (2) `getAudioCtx` לא קורא `ctx.resume()` — אם AudioContext suspended, הצליל יורד בשקט; (3) לא מנגנון watchdog ל-`speechQueue` — אם `onend/onerror` לא יורה (באג iOS ידוע), `speaking` נשאר true והדיבור משותק לתמיד. | רטט נפרד מההגדרה הקולית או תיעוד; `ctx.resume()` אחרי יצירה; timeout-guard ב-`nextSpeech`. |

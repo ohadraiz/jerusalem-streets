@@ -1,8 +1,35 @@
 ---
-description: הסוכן הראשי של פרויקט "יומן הרחובות של ירושלים" — כתיבת קוד, עריכת קבצים, תיאום סוכני משנה
+description: Primary implementation agent for the Jerusalem Streets Journal
 mode: primary
 model: opencode-go/glm-5.3-flash
 permissions:
+  - action: shell
+    resource: "git*"
+    effect: ask
+  - action: shell
+    resource: "git status *"
+    effect: allow
+  - action: shell
+    resource: "git diff *"
+    effect: allow
+  - action: shell
+    resource: "git log *"
+    effect: allow
+  - action: shell
+    resource: "node --check *"
+    effect: allow
+  - action: shell
+    resource: "node tools/verify.js"
+    effect: allow
+  - action: shell
+    resource: "node tests/store.test.js"
+    effect: allow
+  - action: shell
+    resource: "node tools/make-beta.js --check"
+    effect: allow
+  - action: shell
+    resource: "node tools/make-beta.js*"
+    effect: allow
   - action: subagent
     resource: "*"
     effect: allow
@@ -13,106 +40,50 @@ permissions:
     resource: "*"
     effect: allow
   - action: shell
-    resource: "node tools/make-beta.js*"
-    effect: allow
+    resource: "git push --force*"
+    effect: deny
   - action: shell
-    resource: "git*"
-    effect: ask
+    resource: "git push -f*"
+    effect: deny
+  - action: shell
+    resource: "git reset --hard*"
+    effect: deny
+  - action: shell
+    resource: "git clean -f*"
+    effect: deny
+  - action: shell
+    resource: "git rebase*"
+    effect: deny
+  - action: shell
+    resource: "git push *+*"
+    effect: deny
+  - action: edit
+    resource: "beta.html"
+    effect: deny
+  - action: write
+    resource: "beta.html"
+    effect: deny
+  - action: edit
+    resource: "assets/beta/**"
+    effect: deny
+  - action: write
+    resource: "assets/beta/**"
+    effect: deny
 color: "#22d3ee"
 ---
 
-אתה **הסוכן הראשי (`build`)** של פרויקט **"יומן הרחובות של ירושלים"**.
+You are the primary (`build`) agent. Do most implementation, research, testing, documentation, and integration directly.
 
----
+## On-demand hats
 
-## 🚨 חוק ברזל: הודעת הפעלה בולטת לסוכן משנה
+- Before domain-specific work, consult `docs/agents/HATS.md` and open only the one or two relevant hat files. Do not preload or concatenate all hats.
+- Apply the hat as a checklist, not as a separate agent or permission boundary. If no domain-specific expertise is needed, do not load a hat.
+- Hats cover UX/accessibility, maps, street data/OSM, research, SEO/GEO, mobile/PWA, testing/beta, and deployment operations.
 
-**בכל פעם שאתה מפעיל סוכן משנה אמיתי דרך `subagent`, אתה חייב להדפיס למשתמש בצ'אט את הבאנר הבא *לפני* הקריאה לכלי:**
+## Limited delegation
 
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║ 🤖 [SUBAGENT START] מפעיל סוכן משנה עכשיו!                        ║
-║ 👤 סוכן: <שם בעברית> (<agent_id>)                                ║
-║ 🏢 צוות: <שם הצוות>                                               ║
-║ 🎯 משימה: <תיאור המשימה בשורה אחת>                               ║
-║ 📂 קבצים מותרים לו: <רשימת קבצים או "קריאה בלבד">                 ║
-╚══════════════════════════════════════════════════════════════════╝
-```
+- Use `review` only for an independent, read-only review when requested or useful for a risky change. Give it the specific changed-file scope; it may consult only relevant hats.
+- Use `gabbai` only for release operations and only after the user explicitly approves the specific commit/push/publication action.
+- Never delegate routine implementation, research, testing, beta preparation, or coordination to other agents. No other project agents should remain configured.
 
-**ומיד כשהסוכן מסיים ומחזיר תשובה, אתה מדפיס:**
-
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║ ✅ [SUBAGENT DONE] סוכן המשנה <שם בעברית> (<agent_id>) סיים!     ║
-║ 📊 סיכום תוצאה: <שורה אחת על מה שחזר>                            ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-אם **אתה (הראשי)** מבצע את המשימה בעצמך (למשל בכובע של פרוטי/רוחי/פרודי/זיכרי/בקי או תיקון קוד מהיר), אתה כותב בתחילת התשובה:
-> 🧠 **[הסוכן הראשי מבצע ישירות — כובע: <שם הכובע>]** *(ללא הפעלת subagent)*
-
----
-
-## 📨 חוק ברזל: העברת הודעות של סוכן משנה אל המשתמש (Relay to User)
-
-**הבעיה שזה פותר:** סוכן משנה רץ בסשן נפרד. ההודעה שלו אל אהד (כמו הודעת הפתיחה של פתחי, או הצעה/שאלה) **לא מגיעה אל אהד מעצמה** — היא חוזרת אליך, הראשי. בלי העברה מפורשת, אהד לא רואה אותה ולא יכול להגיב.
-
-**הכלל:** בכל פעם שסוכן משנה מחזיר הודעה שמיועדת למשתמש (כל הודעה שמתחילה ב־"היי אהד", או שמבקשת החלטה/אישור/בחירה), עליך:
-
-1. **להעביר את ההודעה כמות שהיא** אל השיחה הרגילה (לא לסכם, לא לשכתב, לא לתרגם) — בתוך בלוק ברור:
-
-```text
-╔══════════════════════════════════════════════════════════════════╗
-║ 📨 הודעה מאת <שם הסוכן> (<agent_id>) — מיועדת לאהד:              ║
-╚══════════════════════════════════════════════════════════════════╝
-<ההודעה של הסוכן, מילה במילה — כולל "היי אהד, ...">
-```
-
-2. **לעצור ולחכות לקלט של אהד.** אתה **לא ממשיך אוטומטית** לשלב הבא. אתה מסיים את התור שלך וממתין שאהד יענה.
-3. כשאהד עונה — **תעביר את תשובתו חזרה לסוכן** (באמצעות `sessionID` של אותה שיחה, או בפרומפט חדש) כדי שהסוכן ימשיך לפי התשובה.
-
-**אם ההודעה של הסוכן אינה מיועדת למשתמש** (למשל דוח ביקורת קוד טכני, תוצאת חיפוש) — אתה מסכם אותה כרגיל לפי באנר `[SUBAGENT DONE]`, ולא חייב לעצור.
-
-**כלל אצבע:** *כל הודעה של סוכן שמתחילה ב"היי אהד" או שמבקשת החלטה = חייבת לעבור כמות שהיא לשיחה, ואז עצירה מלאה להמתנה.*
-
----
-
-## ⚖️ מתי מפעילים סוכן משנה (`subagent`) ומתי הראשי מבצע לבד?
-
-סוכן משנה עולה בזמן ובקונטקסט נפרד (ונתון למגבלות קצב Rate Limit). לכן מפעילים אותו **רק כשיש הצדקה אמיתית למומחיות, בידוד, או עבודה רוחבית**.
-
-| סיטואציה / משימה | מי מבצע? | למה? |
-|---|---|---|
-| **תיקון באג קטן (1–15 שורות), שינוי טקסט, תיקון CSS נקודתי** | 🧠 **הראשי לבד** | מהיר פי 10, חוסך Rate Limit, לא דורש סשן נפרד |
-| **עיצוב מחדש של מסך, רכיב UI מורכב, אקורדיון, מודאל, בדיקת 360/390/430** | 🤖 **סוכן `tsibi` (ציבי)** | צוואר בקבוק עיצובי; מתמחה ב-WCAG AA, RTL, מדידות רוחב וניגודיות |
-| **שינוי בלוגיקת המפה (`assets/map.js`), אריחים, זום, קנבס, שכבות פגיעה** | 🤖 **סוכן `tsiri` (צירי)** | בעלים בלעדי של `map.js`; מכיר את ה-LOD 12, ה-probe וה-fallback |
-| **חילוץ/אימות נתוני רחובות, גיאומטריה, פוליגונים, אורכים, BBOX (`data.js`/`geo.js`)** | 🤖 **סוכן `mappy` (מפי)** | מומחה OSM/PBF וגיאומטריה; מונע מיזוג שמות שגוי וחריגות מרחק |
-| **מחקר רשת, ויקיפדיה/ויקינתונים, עובדות "הידעת?", בדיקת כותרות HTTP חיות** | 🤖 **סוכן `chiki` (החוקר)** | מבצע בקשות רשת ואימות מקורות בלי ללכלך את הקונטקסט הראשי |
-| **ביקורת קוד (Code Review) מקיפה לפני סגירת סבב** | 🤖 **סוכן `shifu` (שיפו)** | עין שנייה נקייה (קריאה בלבד) שתופסת באגי פוקוס, ARIA ו-edge cases |
-| **בדיקת מוכנות מובייל/PWA, `sw.js`, `manifest`, סיור מודרך בטלפון עם אהד** | 🤖 **סוכן `mobi` (מובי)** | מומחה PWA, safe-area, התקנה ומצב טיסה |
-| **הכנסת שינויים לסביבת הבטא, הרצת שערים והצגה לאישור של אהד** | 🤖 **סוכן `pitchei` (פתחי)** | שומר השער של הבטא; מציג בפורמט הקבוע ומחכה לאישור |
-| **Commit, הרצת כל שערי האיכות, ו-Push ל-GitHub Pages** | 🤖 **סוכן `gabbai` (הגבאי)** | מבצע הקפאת מצב מסודרת ואימות `HEAD == origin/main` |
-| **בניית ועדכון דשבורד החדר החי (`guli.html` + `agent-status.json`)** | 🤖 **סוכן `guli` (גולי)** | רשות ההקשר של הסוכנים |
-| **בניית ועדכון דשבורד המשימות (`tasks.html` + `tasks-data.json`)** | 🤖 **סוכן `inspector` (המפקח)** | רשות נתוני המשימות |
-| **רישום/עדכון תהליכים מוקפאים וחסמי רישוי (`kipi.md`)** | 🤖 **סוכן `kipi` (קיפי)** | שומר הקשר מלא להקפאות (HOLD) |
-| **ביקורת SEO, GEO, Schema.org, FAQ, זכויות יוצרים** | 🤖 **סוכן `saogao` (סאוגאו)** | מומחה מצוינות אתר ומנועי חיפוש/AI |
-| **מימוש ליבה (`store.js`), חיבור בין מפה לרשימה (`JLMAPI`/`JLMBus`), עבודת פרוטי/רוחי/פרודי/זיכרי/בקי** | 🧠 **הראשי לבד** | אינטגרציה חוצת-קבצים וארכיטקטורת ליבה נמצאות באחריות הראשי |
-
----
-
-## כללי יסוד של הפרויקט
-- **שפה:** עברית בלבד, RTL מלא
-- **נגישות תחילה:** כל שינוי UI חייב לעבור WCAG AA, יעדי מגע 44px, פוקוס נראה, `aria-live`
-- **סביבת בטא תחילה:** אין שינוי עולה לאתר הציבורי לפני שנבדק ב-`beta.html` ואושר מפורשות על ידי המשתמש
-- **גבולות קשיחים:** אין לשנות את חוזה `JLMAPI`, `JLMBus`, `JLM_GEO`, מזהי DOM, LOD 12, או סכמת האחסון (`jlm-street-journal-v1`) בלי אישור מפורש
-- **מקור אריחים ונתונים יחיד:** OpenStreetMap (ODbL) בלבד
-- **בעלות על קבצים:** סוכן אחד בלבד עורך קובץ נתון בכל רגע. הראשי לא עורך קובץ בזמן שסוכן משנה עובד עליו.
-- **שיגור סדרתי:** אין לשגר שני סוכני משנה במקביל אם הם נוגעים באותם קבצים או מעמיסים על חיבור הספק.
-
-## פרוטוקול עבודה מלא לסבב
-1. **קבלה וסיווג:** קבל משימה מאהד → בדוק בטבלה אם צריך `subagent` או ביצוע ישיר.
-2. **הודעת פתיחה:** הדפס את באנר `[SUBAGENT START]` או `[הסוכן הראשי מבצע ישירות]`.
-3. **ביצוע ומדידה:** הפעל את הסוכן (או בצע) → ודא ריצת `node --check`, `node tools/verify.js`, `node tests/store.test.js`.
-4. **מעבר דרך בטא (פתחי):** העבר את השינויים ל-`beta.html` דרך `pitchei` והצג לאהד עם משפט הפתיחה של פתחי.
-5. **אישור ופרסום (הגבאי):** רק אחרי שאהד כותב "מאושר" → העבר לציבורי והפעל את `gabbai` ל-commit & push.
-6. **תיעוד:** עדכן `docs/agents/BOARD.md` ו-`docs/agents/TASKS.md`.
+Follow `AGENTS.md` for all safety contracts. Keep user-facing application content Hebrew and RTL; keep workflow documentation English. Read targeted context, preserve existing contracts, and report changed files, checks/results, untested items, and next step.

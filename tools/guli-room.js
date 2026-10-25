@@ -34,42 +34,42 @@ const TEAMS = [
   {
     key: "management",
     name: "הנהלה ובקרה",
-    icon: "🧭",
+    icon: "NAVIGATION",
     hint: "מובילים, מתעדפים ועוקבים אחרי הקפאות",
     agents: ["main", "inspector", "kipi"]
   },
   {
     key: "product",
     name: "מוצר ועיצוב",
-    icon: "🎨",
+    icon: "DESIGN",
     hint: "ממשק, נגישות, RTL ובדיקות איכות",
     agents: ["designer", "reviewer"]
   },
   {
     key: "maps",
     name: "מפות ונתונים",
-    icon: "🗺️",
+    icon: "MAP",
     hint: "גיאומטריה, ניווט ורחובות",
     agents: ["mediator", "mappy"]
   },
   {
     key: "research",
     name: "מחקר ותוכן",
-    icon: "📚",
+    icon: "RESEARCH",
     hint: "עובדות, שמות ומקורות לכל רחוב",
     agents: ["researcher"]
   },
   {
     key: "docs",
     name: "תיעוד",
-    icon: "📝",
+    icon: "DOCUMENTATION",
     hint: "דף החדר, סטטוסים וסנכרון",
     agents: ["documenter"]
   },
   {
     key: "mobile",
     name: "מובייל והפצה",
-    icon: "📱",
+    icon: "MOBILE",
     hint: "PWA, התקנה, שחרורים ופריסה",
     agents: ["mobile", "deployer"]
   }
@@ -125,10 +125,13 @@ function esc(value) {
 
 function safeHref(href) {
   const raw = String(href || "").trim();
-  if (/^(https?:\/\/|#|\.{0,2}\/)/i.test(raw) && !/^javascript:/i.test(raw)) {
+  if (/^(https?:\/\/|#|\.{0,2}\/|\/)/i.test(raw) && !/^javascript:/i.test(raw)) {
     return raw;
   }
-  if (/^[\w./-]+\.(md|html|json)$/i.test(raw)) return raw;
+  if (/^[\w./-]+\.(md|html|json)$/i.test(raw)) {
+    // הדף נוצר בתוך internal/, ולכן נתיב מקור יחסית-לשורש (למשל docs/agents/BOARD.md) מקבל ../ אחד.
+    return raw.includes("/") ? "../" + raw : raw;
+  }
   return null;
 }
 
@@ -382,11 +385,11 @@ function renderAgent(agent, tasksData) {
     <div class="agent__task-summary">
       <h4>משימות (${stats.total})</h4>
       <div class="task-counts">
-        <span class="task-count" title="עדיפות גבוהה">🔴 ${stats.high} גבוהה</span>
-        <span class="task-count" title="הושלמו">✅ ${stats.done} הושלמו</span>
-        <span class="task-count" title="בביצוע">🔄 ${stats.progress} בביצוע</span>
-        <span class="task-count" title="ממתינות">⏳ ${stats.pending} ממתינות</span>
-        <span class="task-count" title="חסומות">⏸ ${stats.blocked} חסומות</span>
+        <span class="task-count" title="עדיפות גבוהה">HIGH ${stats.high} גבוהה</span>
+        <span class="task-count" title="הושלמו">PASS ${stats.done} הושלמו</span>
+        <span class="task-count" title="בביצוע">IN_PROGRESS ${stats.progress} בביצוע</span>
+        <span class="task-count" title="ממתינות">PENDING ${stats.pending} ממתינות</span>
+        <span class="task-count" title="חסומות">BLOCKED ${stats.blocked} חסומות</span>
       </div>
       ${stats.teams.length ? `<div class="agent__teams">צוותים: ${stats.teams.map(esc).join(" · ")}</div>` : ""}
     </div>` : "";
@@ -408,7 +411,7 @@ function renderAgent(agent, tasksData) {
     <div class="agent__meta-row">
       ${teamBadge}
       <span class="agent__work-status ${status.working ? "working" : "on-break"}">
-        <span class="work-status__label">${status.working ? "🟢" : "⏸"} ${esc(status.label)}</span>
+        <span class="work-status__label">${status.working ? "ACTIVE" : "BLOCKED"} ${esc(status.label)}</span>
         <span class="work-status__reason">${esc(status.reason)}</span>
       </span>
     </div>
@@ -485,7 +488,7 @@ function renderTeamDashboard(agents, tasksData) {
   const extra = unassigned.length
     ? `<section class="team-card" id="team-other">
         <header class="team-card__head">
-          <span class="team-card__icon" aria-hidden="true">🔧</span>
+      <span class="team-card__icon" aria-hidden="true">TOOLS</span>
           <div><h3>ללא צוות</h3><p class="team-card__hint">סוכנים שטרם שויכו לצוות</p></div>
         </header>
         <ul class="team-card__list">
@@ -855,12 +858,9 @@ footer.page a{font-weight:600}
     <p class="lead">${esc(meta.nowLine || "טרם דווח מה קורה בחדר.")}</p>
     <div class="masthead__bar">
       <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>${active} פעילים · ${waiting} ממתינים</span>
-      <a href="index.html" class="btn">🏠 דף בית פנימי</a>
-      <a href="tasks.html" class="btn btn--primary">📋 דשבורד המשימות (הפקח)</a>
-      <a href="project-map.html" class="btn">🗺️ מפת הפרויקט</a>
-      <a href="agents-dashboard.html" class="btn">👥 לוח הסוכנים</a>
-      <a href="agent-vs-subagent.html" class="btn">🎩 ראשי מול סאב</a>
-      <a href="../index.html" class="btn">🗺️ לאפליקציה</a>
+      <a href="index.html" class="btn">דף הבית הפנימי</a>
+      <a href="tasks.html" class="btn btn--primary">דשבורד המשימות (הפקח)</a>
+      <a href="../index.html" class="btn">האפליקציה הציבורית</a>
       <span class="time-note">עודכן <time dir="ltr" datetime="${esc(updatedAt)}">${esc(dateTimeLabel(updatedAt))}</time></span>
       <span id="relative-time" class="time-note" data-updated="${esc(updatedAt)}"></span>
       <button class="btn" type="button" id="refresh">רענון הדף</button>

@@ -14,7 +14,7 @@
 | GovMap — חיפוש | `GET https://es.govmap.gov.il/TldSearch/api/DetailsByQuery?...` | **fetch failed** | לא נגיש מהסביבה הזו |
 | GovMap — API | `GET https://www.govmap.gov.il/api/layers/` | **403** | דורש מפתח/הרשאה; לא שמיש כאן |
 | data.gov.il | `package_search?q=רחובות ירושלים` | **200**, `count: 0` | אין מאגר תואם בשאילתה הזו |
-| OSM / Overpass | `way(area)["highway"]["name"]` | **200**, `ways: 9828` | ✅ מקור העבודה |
+| OSM / Overpass | `way(area)["highway"]["name"]` | **200**, `ways: 9828` | PASS מקור העבודה |
 
 **החלטה 1:** GovMap לא ישמש כמקור נתונים. הוא נשאר אופציה לקישור deep-link למשתמש, לא לפייפליין.
 **החלטה 2:** OSM/Overpass הוא המקור. רישיון ODbL — חובה ייחוס "© OpenStreetMap contributors" במסך.

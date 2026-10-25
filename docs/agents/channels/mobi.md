@@ -3,7 +3,7 @@
 הערוץ האישי של מובי, **ראש צוות המובייל**. כפוף למובריליס (אחראי המובייל וההפצה).
 רק מובי כותב כאן; הראשי קורא ומעביר.
 
-> **מצב (2026-10-22): 📱 מובייל פעיל בהפעלה חלקית; פיצי/הפצה ב-standby.**
+> **מצב (2026-10-22): MOBILE מובייל פעיל בהפעלה חלקית; פיצי/הפצה ב-standby.**
 > סבב **M0 — אבחון PWA** הושלם. **M1 — תיקון שכבת PWA הושלם ופורסם.**
 > אין שינוי נתונים, אחסון, מפה או עיצוב; אין פריסה חדשה מעבר ל-M1.
 
@@ -44,14 +44,14 @@ Lighthouse דסקטופ: נגישות 100 · שיטות מומלצות 100 · SE
 
 | # | ממצא | חומרה | ראיה | תיקון מוצע |
 |---|---|---|---|---|
-| M0-1 | **offline אחרי ביקור ראשון חסר נתונים** | 🔴 גבוהה | אחרי טעינה ראשונה במטמון 14 פריטים; `data.js`/`geo.js` נכנסים רק אחרי רענון (16). `PRECACHE` לא כולל אותם. | לחסן את `data.js`/`geo.js` כבר בטעינה הראשונה (precache או caching יזום אחרי load), ואז לבדוק cold start במצב טיסה. |
-| M0-2 | **`viewport-fit=cover` חסר** | 🔴 גבוהה | `index.html:5` — `width=device-width, initial-scale=1`; CSS משתמש ב-`env(safe-area-inset-*)` (שורות 1600/1874/1895). ב-iOS בלי `cover` ערכי ה-insets מתאפסים. | להוסיף `viewport-fit=cover` + מטא iOS מתאימים; לבדוק standalone במכשיר אמיתי. |
-| M0-3 | **אין חוויית התקנה** | 🟡 בינונית | אין `beforeinstallprompt`/`appinstalled`/`display-mode` בקוד; אין כפתור התקנה או הוראות iOS. | `assets/pwa.js` + באנר קטן: כפתור Android, הוראות "הוספה למסך הבית" ב-iOS, הסתרה כשמותקן. |
-| M0-4 | **אין זרימת עדכון גרסה** | 🟡 בינונית | `sw.js` קורא `skipWaiting()` אוטומטית; `CACHE_NAME` קבוע `jlm-shell-v1`; אין באנר "גרסה חדשה". | גרסת cache מפורשת, בדיקת `registration.waiting`, באנר רענון מבוקר, ניקוי מטמון ישן. |
-| M0-5 | **אין חיווי online/offline** | 🟡 בינונית | אין מאזיני `online`/`offline` בקוד; מפל האריחים מציג באנר מפה, אבל לא מצב אפליקציה. | באנר סטטוס קטן: "אין חיבור — הליבה עובדת; המפה עשויה שלא להיטען". |
-| M0-6 | **manifest לא מלוטש** | 🟢 נמוכה | חסרים `id`, `display_override`, `shortcuts`, `screenshots`, `categories`; `start_url` הוא `./index.html`. | להוסיף `id`, `start_url: "./"`, `display_override`, אופציונלי shortcuts/screenshots. |
-| M0-7 | **כשל precache נבלע** | 🟢 נמוכה | `cache.addAll(PRECACHE).catch(...)` ממשיך ל-`skipWaiting` גם אם קובץ אחד נכשל. | לדווח/לחזור על הכשל, או לפצל את המטמון; לא להפעיל SW "ריק". |
-| M0-8 | **אין בדיקת מכשיר אמיתי** | 🟡 בינונית | כל הבדיקות עד כה ב-emulation; אין iPhone/Android פיזיים. | מטריצת מכשירים + בדיקת התקנה, safe-area, סיבוב ומצב טיסה. |
+| M0-1 | **offline אחרי ביקור ראשון חסר נתונים** | HIGH גבוהה | אחרי טעינה ראשונה במטמון 14 פריטים; `data.js`/`geo.js` נכנסים רק אחרי רענון (16). `PRECACHE` לא כולל אותם. | לחסן את `data.js`/`geo.js` כבר בטעינה הראשונה (precache או caching יזום אחרי load), ואז לבדוק cold start במצב טיסה. |
+| M0-2 | **`viewport-fit=cover` חסר** | HIGH גבוהה | `index.html:5` — `width=device-width, initial-scale=1`; CSS משתמש ב-`env(safe-area-inset-*)` (שורות 1600/1874/1895). ב-iOS בלי `cover` ערכי ה-insets מתאפסים. | להוסיף `viewport-fit=cover` + מטא iOS מתאימים; לבדוק standalone במכשיר אמיתי. |
+| M0-3 | **אין חוויית התקנה** | IN_PROGRESS בינונית | אין `beforeinstallprompt`/`appinstalled`/`display-mode` בקוד; אין כפתור התקנה או הוראות iOS. | `assets/pwa.js` + באנר קטן: כפתור Android, הוראות "הוספה למסך הבית" ב-iOS, הסתרה כשמותקן. |
+| M0-4 | **אין זרימת עדכון גרסה** | IN_PROGRESS בינונית | `sw.js` קורא `skipWaiting()` אוטומטית; `CACHE_NAME` קבוע `jlm-shell-v1`; אין באנר "גרסה חדשה". | גרסת cache מפורשת, בדיקת `registration.waiting`, באנר רענון מבוקר, ניקוי מטמון ישן. |
+| M0-5 | **אין חיווי online/offline** | IN_PROGRESS בינונית | אין מאזיני `online`/`offline` בקוד; מפל האריחים מציג באנר מפה, אבל לא מצב אפליקציה. | באנר סטטוס קטן: "אין חיבור — הליבה עובדת; המפה עשויה שלא להיטען". |
+| M0-6 | **manifest לא מלוטש** | LOW נמוכה | חסרים `id`, `display_override`, `shortcuts`, `screenshots`, `categories`; `start_url` הוא `./index.html`. | להוסיף `id`, `start_url: "./"`, `display_override`, אופציונלי shortcuts/screenshots. |
+| M0-7 | **כשל precache נבלע** | LOW נמוכה | `cache.addAll(PRECACHE).catch(...)` ממשיך ל-`skipWaiting` גם אם קובץ אחד נכשל. | לדווח/לחזור על הכשל, או לפצל את המטמון; לא להפעיל SW "ריק". |
+| M0-8 | **אין בדיקת מכשיר אמיתי** | IN_PROGRESS בינונית | כל הבדיקות עד כה ב-emulation; אין iPhone/Android פיזיים. | מטריצת מכשירים + בדיקת התקנה, safe-area, סיבוב ומצב טיסה. |
 
 **מה עובד כיום:** התקנה טכנית אפשרית (manifest + SW + icons), standalone מוגדר,
 מטמון מעטפת קיים, מפה נופלת לבאנר מוסבר כשאין אריחים, ואין תלות CDN.
@@ -72,10 +72,10 @@ Lighthouse דסקטופ: נגישות 100 · שיטות מומלצות 100 · SE
 
 ### קריטריוני קבלה — כולם עברו
 
-- ✅ טעינה ראשונה → מצב טיסה → רענון: הרשימה, החיפוש, הסימון והסטטיסטיקות עובדים.
-- ✅ Android: מופיע prompt/כפתור התקנה; iOS: מופיעה הוראה ידנית; standalone נפתח (נבדק באמולציה).
-- ✅ `node --check` נקי · `verify` **48/48** · `store.test` **24/24** · אפס שגיאות קונסול.
-- ✅ אין שינוי ב-`jlm-street-journal-v1`, ב-`JLMAPI`/`JLMBus`/`JLM_GEO` או במזהי רחובות.
+- PASS טעינה ראשונה → מצב טיסה → רענון: הרשימה, החיפוש, הסימון והסטטיסטיקות עובדים.
+- PASS Android: מופיע prompt/כפתור התקנה; iOS: מופיעה הוראה ידנית; standalone נפתח (נבדק באמולציה).
+- PASS `node --check` נקי · `verify` **48/48** · `store.test` **24/24** · אפס שגיאות קונסול.
+- PASS אין שינוי ב-`jlm-street-journal-v1`, ב-`JLMAPI`/`JLMBus`/`JLM_GEO` או במזהי רחובות.
 
 ### לא ב-M1 (נשארו פתוחים)
 

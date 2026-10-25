@@ -8,8 +8,39 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="רחובות ירושלים" />
-    <meta name="description" content="יומן ביקורים ברחובות ירושלים — סמנו כל רחוב שבו הייתם, הוסיפו תאריך והערה, ועקבו אחרי ההתקדמות." />
+    <meta
+      name="description"
+      content="יומן ביקורים חינמי ל־2,424 רחובות ב־95 שכונות בירושלים: מסמנים ביקורים, מוסיפים תאריך והערה, ועוקבים אחרי ההתקדמות. הנתונים נשמרים במכשיר."
+    />
     <title>רחובות ירושלים — יומן ביקורים</title>
+    <link rel="canonical" href="https://ohadraiz.github.io/jerusalem-streets/" />
+    <meta name="author" content="אהד רייז" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="רחובות ירושלים" />
+    <meta property="og:locale" content="he_IL" />
+    <meta property="og:title" content="רחובות ירושלים — יומן ביקורים" />
+    <meta
+      property="og:description"
+      content="מסמנים רחובות שביקרתם בהם, מוסיפים תאריך והערה, ועוקבים אחרי ההתקדמות לפי שכונה. 2,424 רחובות, ללא הרשמה, הנתונים במכשיר."
+    />
+    <meta property="og:url" content="https://ohadraiz.github.io/jerusalem-streets/" />
+    <meta
+      property="og:image"
+      content="https://ohadraiz.github.io/jerusalem-streets/assets/screenshots/jlm-desktop.png"
+    />
+    <meta property="og:image:alt" content="צילום מסך של יומן הביקורים: כותרת, סרגל התקדמות, סינון לפי שכונה וסטטיסטיקות." />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="800" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="רחובות ירושלים — יומן ביקורים" />
+    <meta
+      name="twitter:description"
+      content="יומן ביקורים ל־2,424 רחובות ב־95 שכונות בירושלים. סימון ביקורים, התקדמות לפי שכונה, ללא הרשמה."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ohadraiz.github.io/jerusalem-streets/assets/screenshots/jlm-desktop.png"
+    />
     <!-- Leaflet מקומי (assets/vendor/leaflet) — כדי שהאפליקציה תעבוד גם מהקובץ המקומי, ללא CDN -->
     <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css" />
     <link rel="stylesheet" href="assets/styles.css" />
@@ -18,11 +49,41 @@
     <link rel="icon" href="assets/icons/icon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/icons/icon-180.png" />
     <meta name="theme-color" content="#b5601f" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "@id": "https://ohadraiz.github.io/jerusalem-streets/#app",
+        "name": "רחובות ירושלים — יומן ביקורים",
+        "url": "https://ohadraiz.github.io/jerusalem-streets/",
+        "description": "יומן ביקורים דיגיטלי חינמי ל־2,424 רחובות ב־95 שכונות בירושלים, עם סימון ביקורים, התקדמות לפי שכונה ומפה אינטראקטיבית. הנתונים נשמרים מקומית בדפדפן.",
+        "inLanguage": "he",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "Web browser",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "סימון ביקורים עם תאריך והערה",
+          "התקדמות לפי שכונה",
+          "מפה אינטראקטיבית",
+          "ייצוא וייבוא גיבוי מקומי"
+        ],
+        "author": { "@type": "Person", "name": "אהד רייז" },
+        "isBasedOn": "https://www.openstreetmap.org/",
+        "dateModified": "2026-10-25"
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
     <a class="skip-link" href="#search">דלג לחיפוש</a>
     <a class="skip-link" href="#street-list">דלג לרשימת הרחובות</a>
+
+    <noscript>
+      <p class="noscript-note" role="status">
+        האפליקציה זקוקה ל-JavaScript כדי להציג את רשימת הרחובות ולשמור ביקורים. אפשר לקרוא
+        <a href="welcome.html">סקירה קצרה של היומן</a> גם בלי JavaScript.
+      </p>
+    </noscript>
 
     <!-- ה-toast בראש ה-DOM (אף על פי שהוא מוצג בתחתית המסך) — כדי שכפתור ה"בטל" יהיה
          במרחק של 3 הקשות Tab מהתחלת הדף, ולא אחרי מאות שורות ברשימה. -->
@@ -39,6 +100,12 @@
         <p class="hero__subtitle">
           כל רחוב בעיר הוא סיפור. סמנו את הרחובות שכבר הלכתם בהם, הוסיפו תאריך והערה — ותראו כמה עוד נשאר.
         </p>
+
+        <nav class="hero__links" aria-label="מידע על היומן">
+          <a href="welcome.html#how">איך זה עובד</a>
+          <a href="#faq">שאלות ותשובות</a>
+          <a href="welcome.html#data">על הנתונים</a>
+        </nav>
 
         <div class="progress" aria-hidden="true">
           <div class="progress__track"><span id="progress-bar"></span></div>
@@ -119,8 +186,6 @@
           <ul class="achievements__list" id="achievements-list"></ul>
         </details>
 
-        <div class="quick" id="quick-areas"></div>
-
         <details class="breakdown" id="breakdown-details">
           <summary class="breakdown__summary">
             <span>פירוט לפי שכונה</span>
@@ -175,7 +240,10 @@
                 placeholder="כתבו שם רחוב — למשל רחוב הרצל"
                 autocomplete="off"
                 spellcheck="false"
+                enterkeyhint="search"
                 aria-keyshortcuts="/"
+                aria-controls="street-list"
+                aria-describedby="search-hint"
               />
               <button type="button" class="btn btn--quiet btn--small searchbar__clear" id="search-clear" hidden>
                 ניקוי
@@ -185,7 +253,7 @@
         </div>
 
         <p class="searchbar__meta">
-          <button type="button" class="result-count" id="result-count">מציג את כל הרחובות</button>
+          <button type="button" class="result-count" id="result-count" title="מעבר לרשימת הרחובות">מציג את כל הרחובות</button>
           <span class="searchbar__hint" id="search-hint"></span>
         </p>
 
@@ -247,47 +315,47 @@
           </form>
         </details>
       </section>
-    </main>
 
-    <section class="faq" id="faq" aria-labelledby="faq-title">
-      <h2 class="visually-hidden" id="faq-title">שאלות ותשובות</h2>
-      <details class="faq__item">
-        <summary class="faq__question">איך נשמרים הביקורים שלי?</summary>
-        <div class="faq__answer">
-          <p>כל הביקורים, התאריכים, ההערות וההגדרות נשמרים אך ורק ב-<code>localStorage</code> של הדפדפן שלכם, תחת המפתח <code>jlm-street-journal-v1</code>. אין שרת, אין חשבון משתמש, ואין שליחת נתונים החוצה. הנתונים נשארים אצלכם.</p>
-        </div>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__question">איך מגבים או מעבירים את היומן למכשיר אחר?</summary>
-        <div class="faq__answer">
-          <p>בסרגל הכלים יש כפתור <strong>ייצוא</strong> שיוריד קובץ JSON עם כל הביקורים, ההערות, הסיומים הידניים וההגדרות. במכשיר השני לוחצים <strong>ייבוא</strong> ובוחרים את הקובץ — הכול משוחזר. הקובץ מכיל רק את הנתונים שלכם, בלי מידע מזהה.</p>
-        </div>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__question">למה חסרים רחובות או שכונות?</summary>
-        <div class="faq__answer">
-          <p>הרשימה מבוססת על <strong>OpenStreetMap</strong> (רישיון ODbL) עם השלמות ממקורות עירוניים רשמיים. רחובות ללא גיאומטריה ב-OSM, כבישים מהירים, מנהרות, ושכונות שהוסרו לפי בקשה — אינם מופיעים. אם מצאתם רחוב חסר שיש לו בתים וכתובות — דווחו ונבדוק.</p>
-        </div>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__question">האם אפשר להשתמש באפליקציה בלי אינטרנט?</summary>
-        <div class="faq__answer">
-          <p>כן. אחרי הטעינה הראשונה (או רענון) האפליקציה מותקנת כ-PWA ומטמינה את כל קבצי הקוד והנתונים (<code>data.js</code>, <code>geo.js</code>). הרשימה, החיפוש, הסימון והסטטיסטיקות עובדים אופליין. המפה דורשת חיבור כדי להוריד אריחים — במצב אופליין תוצג הודעה והמפה תהיה ריקה, אבל שאר הפונקציות זמינות.</p>
-        </div>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__item__question">מה זה "סיום ידני" של שכונה?</summary>
-        <div class="faq__answer">
-          <p>כשלוחצים על כותרת שכונה באקורדיון, נפתח כפתור <strong>סיום ידני</strong>. הוא מאפשר לסמן את כל השכונה כמושלמת בבת אחת (עם אישור), גם אם לא ביקרתם בכל רחוב. הפעולה נרשמת בנפרד מהביקורים הרגילים, מופיעה תגית "הושלמה ידנית", ויש כפתור ביטול יחיד שמחזיר את המצב הקודם.</p>
-        </div>
-      </details>
-      <details class="faq__item">
-        <summary class="faq__question">האם האפליקציה נגישה לקוראי מסך ולמקלדת?</summary>
-        <div class="faq__answer">
-          <p>כן — זו מטרה מוצהרת. יש Skip links, היררכיית כותרות תקינה, <code>aria-live</code> להודעות, תוויות לכל שדה, פוקוס נראה, ניגודיות AA, יעדי מגע 44px במובייל, וקיצורי מקלדת (/, v, r, n, m, s, t, ?). נבדק עם NVDA/VoiceOver בסיסי — אם נתקלתם בבעיה, דווחו ונתקן.</p>
-        </div>
-      </details>
-    </section>
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <h2 class="faq__title" id="faq-title">שאלות ותשובות</h2>
+        <details class="faq__item">
+          <summary class="faq__question"><h3 class="faq__q">איך נשמרים הביקורים שלי?</h3></summary>
+          <div class="faq__answer">
+            <p>כל הביקורים, התאריכים, ההערות וההגדרות נשמרים אך ורק ב-<code>localStorage</code> של הדפדפן שלכם, תחת המפתח <code>jlm-street-journal-v1</code>. אין שרת, אין חשבון משתמש, ואין שליחת נתונים החוצה. הנתונים נשארים אצלכם.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question"><h3 class="faq__q">איך מגבים או מעבירים את היומן למכשיר אחר?</h3></summary>
+          <div class="faq__answer">
+            <p>בסרגל הכלים יש כפתור <strong>ייצוא</strong> שיוריד קובץ JSON עם כל הביקורים, ההערות, הסיומים הידניים וההגדרות. במכשיר השני לוחצים <strong>ייבוא</strong> ובוחרים את הקובץ — הכול משוחזר. הקובץ מכיל רק את הנתונים שלכם, בלי מידע מזהה.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question"><h3 class="faq__q">למה חסרים רחובות או שכונות?</h3></summary>
+          <div class="faq__answer">
+            <p>הרשימה מבוססת על נתוני <strong>OpenStreetMap</strong> (רישיון ODbL), מתוך עותק Geofabrik של ישראל ופלסטין מ־20 באוקטובר 2026. רחובות ללא גיאומטריה ב־OSM, כבישים מהירים, מנהרות, ושכונות שהוסרו לפי בקשה — אינם מופיעים. אם מצאתם רחוב חסר שיש לו בתים וכתובות, אפשר להוסיף אותו ידנית דרך <strong>״רחוב שאינו ברשימה?״</strong> בתחתית הרשימה.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question"><h3 class="faq__q">האם אפשר להשתמש באפליקציה בלי אינטרנט?</h3></summary>
+          <div class="faq__answer">
+            <p>כן. אחרי הטעינה הראשונה (או רענון) האפליקציה מותקנת כ-PWA ומטמינה את כל קבצי הקוד והנתונים (<code>data.js</code>, <code>geo.js</code>). הרשימה, החיפוש, הסימון והסטטיסטיקות עובדים אופליין. המפה דורשת חיבור כדי להוריד אריחים — במצב אופליין תוצג הודעה והמפה תהיה ריקה, אבל שאר הפונקציות זמינות.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question"><h3 class="faq__q">מה זה "סיום ידני" של שכונה?</h3></summary>
+          <div class="faq__answer">
+            <p>כשלוחצים על כותרת שכונה באקורדיון, נפתח כפתור <strong>סיום ידני</strong>. הוא מאפשר לסמן את כל השכונה כמושלמת בבת אחת (עם אישור), גם אם לא ביקרתם בכל רחוב. הפעולה נרשמת בנפרד מהביקורים הרגילים, מופיעה תגית "הושלמה ידנית", ויש כפתור ביטול יחיד שמחזיר את המצב הקודם.</p>
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question"><h3 class="faq__q">האם האפליקציה נגישה לקוראי מסך ולמקלדת?</h3></summary>
+          <div class="faq__answer">
+            <p>כן — זו מטרה מוצהרת. יש Skip links, היררכיית כותרות תקינה, <code>aria-live</code> להודעות, תוויות לכל שדה, פוקוס נראה, ניגודיות AA, יעדי מגע 44px במובייל, וקיצורי מקלדת (/, v, r, n, m, s, t, ?). נבדק עם NVDA/VoiceOver בסיסי — אם נתקלתם בבעיה, דווחו ונתקן.</p>
+          </div>
+        </details>
+      </section>
+    </main>
 
     <footer class="footer">
       <details class="shortcuts" id="shortcuts-details">
@@ -312,9 +380,14 @@
         </p>
       </details>
 
+      <p class="footer__intro">
+        <a href="welcome.html">סקירה קצרה</a>
+        <a href="welcome.html#how">איך זה עובד</a>
+        <a href="welcome.html#data">על הנתונים</a>
+      </p>
       <p class="footer__privacy">הנתונים נשמרים מקומית בדפדפן שלכם בלבד (<code>localStorage</code>). אין שרת, אין מעקב, אין עוגיות צד ג'.</p>
       <p class="footer__copyright">© 2026 אהד רייז — <strong>כל הזכויות שמורות</strong> על התוכן המקורי, הקוד והעיצוב של אפליקציה זו.</p>
-      <p class="footer__attribution">נתוני רחובות, קואורדינטות וגיאומטריה: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> — רישיון <abbr title="Open Database License">ODbL</abbr>. שכבת אריחי המפה: OpenStreetMap / OpenStreetMap DE / OpenTopoMap (לפי זמינות).</p>
+      <p class="footer__attribution">מאגר הבסיס: 2,424 רחובות ב־95 שכונות. נתוני רחובות, קואורדינטות וגיאומטריה: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a> — רישיון <abbr title="Open Database License">ODbL</abbr>, מתוך <a href="https://download.geofabrik.de/asia/israel-and-palestine.html" target="_blank" rel="noopener noreferrer">עותק Geofabrik</a> מ־20 באוקטובר 2026; עודכן ב־21 באוקטובר 2026. שכבת אריחי המפה: OpenStreetMap / OpenStreetMap DE / OpenTopoMap (לפי זמינות).</p>
     </footer>
 
     <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" id="live"></p>

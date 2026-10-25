@@ -8,67 +8,38 @@
   "watcher": {
     "ignore": ["dist/**", "coverage/**", "node_modules/**", ".git/**", "assets/beta/**"]
   },
+  "mcp": {
+    "servers": {
+      "supermemory-docs": {
+        "type": "remote",
+        "url": "https://supermemory.ai/docs/mcp"
+      }
+    }
+  },
   "permissions": [
-    { "action": "shell", "resource": "git status", "effect": "allow" },
+    { "action": "shell", "resource": "git status *", "effect": "allow" },
     { "action": "shell", "resource": "git diff *", "effect": "allow" },
-    { "action": "shell", "resource": "git add *", "effect": "allow" },
+    { "action": "shell", "resource": "git add *", "effect": "ask" },
     { "action": "shell", "resource": "git commit *", "effect": "ask" },
     { "action": "shell", "resource": "git push *", "effect": "ask" },
+    { "action": "shell", "resource": "git push --force*", "effect": "deny" },
+    { "action": "shell", "resource": "git push -f*", "effect": "deny" },
+    { "action": "shell", "resource": "git push *+*", "effect": "deny" },
+    { "action": "shell", "resource": "git reset --hard*", "effect": "deny" },
+    { "action": "shell", "resource": "git clean -f*", "effect": "deny" },
+    { "action": "shell", "resource": "git rebase*", "effect": "deny" },
     { "action": "shell", "resource": "node tools/make-beta.js*", "effect": "allow" },
     { "action": "shell", "resource": "npm*", "effect": "allow" },
     { "action": "read", "resource": ".env*", "effect": "deny" },
+    { "action": "read", "resource": "*.env", "effect": "deny" },
+    { "action": "read", "resource": "*.env.*", "effect": "deny" },
     { "action": "read", "resource": "*.key", "effect": "deny" },
     { "action": "read", "resource": "*.pem", "effect": "deny" }
   ],
   "agents": {
-    "build": {
-      "description": "סוכן ראשי לפרויקט יומן הרחובות של ירושלים — כתיבת קוד, עריכת קבצים, תיאום סוכני משנה",
-      "mode": "primary",
-      "system": "אתה הסוכן הראשי של פרויקט 'יומן הרחובות של ירושלים'. אתה כותב קוד, עורך קבצים, ומפעיל סוכני משנה לפי הצורך. עקוב אחרי AGENTS.md וכללי הבטא (אין שינוי עולה לציבורי לפני בדיקה ב-beta.html ואישור מפורש). דבר עברית, RTL מלא, נגישות תחילה.",
-      "permissions": [
-        { "action": "subagent", "resource": "*", "effect": "allow" },
-        { "action": "edit", "resource": "*", "effect": "allow" },
-        { "action": "write", "resource": "*", "effect": "allow" },
-        { "action": "shell", "resource": "node tools/make-beta.js*", "effect": "allow" },
-        { "action": "shell", "resource": "git*", "effect": "ask" }
-      ],
-      "model": "opencode-go/glm-5.3-flash",
-      "color": "#22d3ee"
-    },
-    "plan": {
-      "mode": "primary",
-      "disabled": true
-    },
-    "general": {
-      "description": "משימות מחקר ומרובות-שלבים כלליות — ללא יכולת הפעלת סוכני משנה נוספים",
-      "mode": "subagent",
-      "system": "אתה סוכן כללי למחקר ומשימות מורכבות. אין לך גישה להפעלת סוכני משנה אחרים. השתמש בכלי חיפוש, קריאה, וכתיבה לפי הצורך.",
-      "permissions": [
-        { "action": "read", "resource": "*", "effect": "allow" },
-        { "action": "glob", "resource": "*", "effect": "allow" },
-        { "action": "grep", "resource": "*", "effect": "allow" },
-        { "action": "write", "resource": "*", "effect": "allow" },
-        { "action": "edit", "resource": "*", "effect": "allow" },
-        { "action": "shell", "resource": "*", "effect": "deny" },
-        { "action": "subagent", "resource": "*", "effect": "deny" }
-      ]
-    },
-    "explore": {
-      "description": "חיפוש וקריאת קוד/מקורות רשת ללא עריכת קבצים",
-      "mode": "subagent",
-      "system": "אתה חוקר קוד מהיר. חפש קבצים, בצע grep, קרא תוכן — אבל אל תערוך קבצים. החזר ממצאים ממוקדים.",
-      "permissions": [
-        { "action": "read", "resource": "*", "effect": "allow" },
-        { "action": "glob", "resource": "*", "effect": "allow" },
-        { "action": "grep", "resource": "*", "effect": "allow" },
-        { "action": "webfetch", "resource": "*", "effect": "allow" },
-        { "action": "websearch", "resource": "*", "effect": "allow" },
-        { "action": "edit", "resource": "*", "effect": "deny" },
-        { "action": "write", "resource": "*", "effect": "deny" },
-        { "action": "shell", "resource": "*", "effect": "deny" }
-      ]
-    }
+    "plan": { "disabled": true },
+    "general": { "disabled": true },
+    "explore": { "disabled": true }
   },
-  "skills": [".opencode/skills"],
-  "instructions": ["AGENTS.md", "docs/agents/**/*.md"]
+  "instructions": ["AGENTS.md"]
 }
