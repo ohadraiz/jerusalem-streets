@@ -1,0 +1,9 @@
+street_id: jlm-cbd4215813
+street_name: ההגנה
+area: הגבעה הצרפתית
+fact: ב-1937 הקימה ההגנה רשת קשר רדיו ארצית שקישרה את כל יישובי הארץ למפקדה; ב-1934 הובאה בדרך זו הספינה ולוס.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%94%D7%92%D7%A0%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

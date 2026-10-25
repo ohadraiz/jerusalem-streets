@@ -1,0 +1,9 @@
+street_id: jlm-ee7b504eae
+street_name: אליעזר לבונה
+area: נווה יעקב
+fact: אליעזר ליבנה (1902–1975) היה עיתונאי, חבר כנסת ומראשי האקטיביסטים במפא״י, מפעילי המאבק לפירוז המזרח התיכון מנשק גרעיני.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%9C%D7%99%D7%91%D7%A0%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

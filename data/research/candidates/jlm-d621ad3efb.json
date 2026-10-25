@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d621ad3efb",
+  "street_name": "בלאזר",
+  "area": "בית ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי יצחק בלאזר, מראשוני תנועת המוסר, היה בן 14 כשאביו הדפיס קונטרס חריף שכתב על מסכת בבא קמא.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצחק בלזר",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%91%D7%9C%D7%96%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

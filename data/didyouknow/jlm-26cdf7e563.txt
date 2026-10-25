@@ -1,0 +1,9 @@
+street_id: jlm-26cdf7e563
+street_name: חיים לסקוב
+area: פסגת זאב מרכז
+fact: חיים לסקוב (1919–1982) היה הרמטכ״ל החמישי של צה״ל ונציב קבילות החיילים הראשון.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%9C%D7%A1%D7%A7%D7%95%D7%91
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

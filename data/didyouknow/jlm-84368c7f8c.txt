@@ -1,0 +1,9 @@
+street_id: jlm-84368c7f8c
+street_name: איתן לבני
+area: פסגת זאב מזרח
+fact: איתן לבני, ממפקדי האצ״ל, טס ארצה במאי 1948 יחד עם יעקב מרידור ונחת בנמל התעופה לוד בשבת, 15 במאי — יום אחרי הכרזת המדינה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%AA%D7%9F_%D7%9C%D7%91%D7%A0%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

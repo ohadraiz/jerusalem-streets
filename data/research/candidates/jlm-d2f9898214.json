@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d2f9898214",
+  "street_name": "אריך מנדלסון",
+  "area": "רמות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אריך מנדלסון תכנן את בית חיים ויצמן ברחובות, אך לא הסתגל לחיים בארץ וירד לארצות הברית ב-1941.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אריך מנדלסון",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%9A_%D7%9E%D7%A0%D7%93%D7%9C%D7%A1%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

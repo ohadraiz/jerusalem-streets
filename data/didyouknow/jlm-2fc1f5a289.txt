@@ -1,0 +1,9 @@
+street_id: jlm-2fc1f5a289
+street_name: אברהם טיכו
+area: נחלת שבעה
+fact: ד״ר אברהם טיכו, רופא העיניים הירושלמי, נדקר בגבו ב-1929 ליד שער מנדלבאום — אחרי שהציל מאות ערבים מעיוורון, רבים מהם בלי תשלום.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%90%D7%9C%D7%91%D7%A8%D7%98_%D7%98%D7%99%D7%9B%D7%95
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

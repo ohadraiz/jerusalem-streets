@@ -1,0 +1,9 @@
+street_id: jlm-37e600a0da
+street_name: ד'ישראלי
+area: טלביה
+fact: בנג׳מין ד׳יזראלי, לימים ראש ממשלת בריטניה, פרסם ב-1826 רומן ראשון — ׳ויויאן גריי׳, סאטירה חברתית בחמישה כרכים.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%92'%D7%9E%D7%99%D7%9F_%D7%93'%D7%99%D7%96%D7%A8%D7%90%D7%9C%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

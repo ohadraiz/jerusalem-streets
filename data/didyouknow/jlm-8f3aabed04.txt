@@ -1,0 +1,9 @@
+street_id: jlm-8f3aabed04
+street_name: דוד באזוב
+area: רמות
+fact: הרב דוד באזוב ניצל את קשריו עם אנשי דת מוסלמים כדי להציל נוצרים ויהודים רבים בתקופת הכיבוש העות׳מאני ב-1918.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%91%D7%90%D7%96%D7%95%D7%91
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

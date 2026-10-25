@@ -1,0 +1,9 @@
+street_id: jlm-4728fbbb4f
+street_name: אביר יעקב
+area: קרית קמניץ
+fact: רבי יעקב אביחצירא (1806–1880), רבה של תאפילאלת וסבו של הבבא סאלי, היה הראשון במשפחת אבוחצירא שחיבר ופרסם שירים — וצאצאיו הלכו בדרכו.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%90%D7%91%D7%95%D7%97%D7%A6%D7%99%D7%A8%D7%90
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

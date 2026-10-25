@@ -1,0 +1,9 @@
+street_id: jlm-e4ffeb3ba3
+street_name: בנימין מינץ
+area: רמות
+fact: בנימין מינץ, לימים חבר כנסת ושר, היה ב-1939 ממייסדי ׳ידיעות אחרונות׳ יחד עם עזריאל קרליבך ויהודה מוזס.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%9E%D7%99%D7%A0%D7%A5
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

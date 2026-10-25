@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c3acf80af0",
+  "street_name": "החי\"ש",
+  "area": "סן סימון",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "החי״ש, חיל השדה החשאי של ההגנה, קיים בקיץ 1939 בכנרת את הקורס הראשון למפקדיו — שהכשיר את שלד הפיקוד שלו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חי\"ש",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%22%D7%A9",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

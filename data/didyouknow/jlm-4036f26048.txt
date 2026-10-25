@@ -1,0 +1,9 @@
+street_id: jlm-4036f26048
+street_name: בן אב"י איתמר
+area: קרית שמואל
+fact: איתמר בן-אב״י, ׳הילד העברי הראשון׳, היה מייסדו ועורכו של העיתון ׳דואר היום׳ בשנים 1919–1929.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%AA%D7%9E%D7%A8_%D7%91%D7%9F-%D7%90%D7%91%22%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

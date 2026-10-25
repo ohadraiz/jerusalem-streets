@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2675d4f9d077",
+  "street_name": "הרב יצחק אורנשטיין",
+  "area": "זכרון משה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יצחק אורנשטיין עמד ב-1920 בראש רשימת המזרחי לאספת הנבחרים אך ויתר על מקומו, וב-1921 היה ממייסדי ׳אגודת הכפר העברי׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצחק אביגדור אורנשטיין",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%91%D7%99%D7%92%D7%93%D7%95%D7%A8_%D7%90%D7%95%D7%A8%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

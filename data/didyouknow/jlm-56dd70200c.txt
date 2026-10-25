@@ -1,0 +1,9 @@
+street_id: jlm-56dd70200c
+street_name: אונקלוס
+area: גבעת שאול
+fact: תרגום אונקלוס נעשה כנראה בארץ ישראל בתחילת המאה ה-2, אך נערך סופית דווקא בבבל.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A0%D7%A7%D7%9C%D7%95%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

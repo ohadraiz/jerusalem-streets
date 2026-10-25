@@ -1,0 +1,9 @@
+street_id: jlm-1f04abf769
+street_name: שערי חסד
+area: שערי חסד
+fact: שערי חסד הוקמה ב-1909 ביוזמת ׳גמ״ח הכללי׳ בראשות הרב שלמה זלמן פרוש, על כ-40 דונם בין נחלאות לרחביה — ושמרה כמעט מאה שנה על אופי דתי-שמרני.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8%D7%99_%D7%97%D7%A1%D7%93
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

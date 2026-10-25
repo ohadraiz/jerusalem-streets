@@ -1,0 +1,9 @@
+street_id: jlm-58c5dc35d210
+street_name: הרידב"ז
+area: זכרון משה
+fact: הרב יעקב דוד וילובסקי (1845–1913), הרידב״ז, היה למדן ומחבר ספרי הלכה ופרשנות, שכיהן כרב בסלוצק וכראש ישיבה בצפת.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%93%D7%95%D7%93_%D7%95%D7%99%D7%9C%D7%95%D7%91%D7%A1%D7%A7%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9371d1b3eb",
+  "street_name": "הולצברג",
+  "area": "פסגת זאב צפון",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יחיאל שמחה הולצברג (1924–1994), המכונה אבי הפצועים, היה פעיל ציבור וחתן פרס ישראל על תרומה מיוחדת לחברה ולמדינה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמחה הולצברג",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%97%D7%94_%D7%94%D7%95%D7%9C%D7%A6%D7%91%D7%A8%D7%92",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

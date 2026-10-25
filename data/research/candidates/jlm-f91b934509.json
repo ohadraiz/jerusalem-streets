@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f91b934509",
+  "street_name": "זאב וילנאי",
+  "area": "קרית משה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "זאב וילנאי (1900–1988) היה גאוגרף והיסטוריון, מגדולי חוקרי ארץ ישראל ועתיקותיה בדורות האחרונים, חתן פרס ביאליק ופרס ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — זאב וילנאי",
+      "url": "https://he.wikipedia.org/wiki/%D7%96%D7%90%D7%91_%D7%95%D7%99%D7%9C%D7%A0%D7%90%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

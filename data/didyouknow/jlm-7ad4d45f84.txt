@@ -1,0 +1,9 @@
+street_id: jlm-7ad4d45f84
+street_name: מזכרת משה
+area: נחלאות
+fact: מזכרת משה נוסדה ב-1882 בכספי קרן מונטיפיורי, אך כבר ב-1885 התלונן יהודי ירושלמי בעיתון ׳הצבי׳ שהשכונה מלוכלכת ומוזנחת.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%96%D7%9B%D7%A8%D7%AA_%D7%9E%D7%A9%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

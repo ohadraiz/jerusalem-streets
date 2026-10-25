@@ -1,0 +1,9 @@
+street_id: jlm-7a4a90a264
+street_name: הרב אריה בינה
+area: חומת שמואל
+fact: הרב אריה בינה הקים ב-1953 את ישיבת נתיב מאיר במבנה הנטוש של בית החולים סנט ג׳ון באבו תור, מול העיר העתיקה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%94_%D7%91%D7%99%D7%A0%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-64f5d19b78",
+  "street_name": "הרב יוסף קאפח",
+  "area": "שערי חסד",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אשתו של הרב יוסף קאפח, ברכה, זכתה ב-1999 בפרס ישראל על תרומה מיוחדת לחברה ולמדינה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסף קאפח",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%90%D7%A4%D7%97",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

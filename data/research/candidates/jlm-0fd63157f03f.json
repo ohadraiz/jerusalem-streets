@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-0fd63157f03f",
+  "street_name": "גורג אליוט",
+  "area": "מחנה ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ג׳ורג׳ אליוט חיה עם ג׳ורג׳ הנרי לואס ללא נישואים, משום שאשתו סירבה להתגרש — ובמקביל ערכה את ה׳וסטמינסטר רוויו׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ג'ורג' אליוט",
+      "url": "https://he.wikipedia.org/wiki/%D7%92'%D7%95%D7%A8%D7%92'_%D7%90%D7%9C%D7%99%D7%95%D7%98",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

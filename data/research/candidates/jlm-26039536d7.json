@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-26039536d7",
+  "street_name": "אליעזר קשאני",
+  "area": "תלפיות מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אליעזר קשאני, מעולי הגרדום, יצא בדצמבר 1946 עם ארבעה לוחמי אצ״ל ל׳ליל ההלקאות׳ — פעולת נקם על הלקאתו והשפלתו של יהודי בידי הבריטים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אליעזר קשאני",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%A7%D7%A9%D7%90%D7%A0%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

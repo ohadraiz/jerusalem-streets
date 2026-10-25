@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-0e9db2ef31",
+  "street_name": "חנה בבלי",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חנה בבלי עלתה לבדה ארצה בגיל 17, מצוידת במעיל פרווה, שני כינורות וזוג פמוטי כסף עתיקים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חנה בבלי",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%94_%D7%91%D7%91%D7%9C%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

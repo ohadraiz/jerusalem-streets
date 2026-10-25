@@ -1,0 +1,28 @@
+{
+  "street_id": "hazanhanim",
+  "street_name": "הצנחנים",
+  "area": "מורשה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חטיבת הצנחנים (חטיבה 35) היא חטיבה סדירה בצה״ל, התנדבותית ומוצנחת, הכפופה לעוצבת האש.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חטיבת הצנחנים",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%98%D7%99%D7%91%D7%AA_%D7%94%D7%A6%D7%A0%D7%97%D7%A0%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

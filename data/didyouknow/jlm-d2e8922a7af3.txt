@@ -1,0 +1,9 @@
+street_id: jlm-d2e8922a7af3
+street_name: ימין משה
+area: ימין משה
+fact: ימין משה, שנבנתה ב-1891 לצד משכנות שאננים, מנציחה את משה מונטיפיורי — שהיה היהודי הראשון שרכש פרדס בארץ, כבר ב-1841.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%9E%D7%99%D7%9F_%D7%9E%D7%A9%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

@@ -1,0 +1,9 @@
+street_id: hashmonaim
+street_name: החשמונאים
+area: מקור ברוך
+fact: יהונתן החשמונאי נלכד במארב חיילי טריפון ליד עכו, הוחזק במעצר ולבסוף נרצח ב-143 לפנה״ס.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%A9%D7%9E%D7%95%D7%A0%D7%90%D7%99%D7%9D
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-3e33433999
+street_name: אבא ברדיצ'ב
+area: צמרת הבירה
+fact: אבא ברדיצ׳ב, מצנחני היישוב, הוצנח ביוגוסלביה במרץ 1944 יחד עם חנה סנש; באוגוסט יצא למשימה נוספת בסלובקיה, ובסוף אותה שנה נשלח למאוטהאוזן.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%91%D7%A8%D7%93%D7%99%D7%A6'%D7%91
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

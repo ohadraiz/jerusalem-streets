@@ -1,0 +1,9 @@
+street_id: jlm-516a8520f1
+street_name: שוק הכותנה
+area: העיר העתיקה
+fact: שוק הכותנה, שנבנה ב-1336–1337 בידי האמיר תנכיז, היה המבואה הראשית להר הבית; ב-1848 פתח בו יצחק שור, חסיד רוז׳ין, יקב.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%95%D7%A7_%D7%94%D7%9B%D7%95%D7%AA%D7%A0%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

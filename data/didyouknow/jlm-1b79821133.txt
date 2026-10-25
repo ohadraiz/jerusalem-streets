@@ -1,0 +1,9 @@
+street_id: jlm-1b79821133
+street_name: המבי"ט
+area: זכרון משה
+fact: המבי״ט מונה בגיל 25 לחבר בית הדין של הרב יעקב בירב, ונסמך על ידו יחד עם הרב יוסף קארו.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%9E%D7%98%D7%A8%D7%90%D7%A0%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

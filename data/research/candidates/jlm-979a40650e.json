@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-979a40650e",
+  "street_name": "טהון",
+  "area": "קרית היובל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יעקב טהון, מראשי היישוב, ייסד בפולין ב-1897 את אגודת הסטודנטים הציונית הראשונה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יעקב טהון",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%98%D7%94%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

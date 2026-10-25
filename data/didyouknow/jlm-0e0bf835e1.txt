@@ -1,0 +1,9 @@
+street_id: jlm-0e0bf835e1
+street_name: בלבן מאיר
+area: נווה יעקב
+fact: מאיר בלבן, חלוץ המחקר ההיסטורי של יהדות פולין, ייסד ב-1920 את סמינר ׳תחכמוני׳ של המזרחי בוורשה וניהל אותו עד 1929.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%91%D7%9C%D7%91%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

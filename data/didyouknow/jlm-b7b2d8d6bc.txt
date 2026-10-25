@@ -1,0 +1,9 @@
+street_id: jlm-b7b2d8d6bc
+street_name: חיים פרחי
+area: הבוכרים
+fact: חיים פרחי (1760–1820) היה יועצם היהודי של שליטי הגליל בימי האימפריה העות׳מאנית, ובתקופת מסע נפוליאון בארץ ישראל.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A4%D7%A8%D7%97%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

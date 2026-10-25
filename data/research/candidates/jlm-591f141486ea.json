@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-591f141486ea",
+  "street_name": "הכותל המערבי",
+  "area": "הרובע היהודי",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הכותל המערבי נחשב שריד מתקופת הורדוס, אך ב-2011 נמצאו מתחת לנדבך הראשון מטבעות שהוטבעו כ-20 שנה אחרי מותו — מה שמערער את הקביעה שהכותל נבנה כולו בימיו.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הכותל המערבי",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%9B%D7%95%D7%AA%D7%9C_%D7%94%D7%9E%D7%A2%D7%A8%D7%91%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

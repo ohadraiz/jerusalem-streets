@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bc748e4b61",
+  "street_name": "בנק ישראל",
+  "area": "קרית הממשלה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בנק ישראל, הבנק המרכזי, פועל מכוח חוק בנק ישראל התש״ע–2010; בניין משרדו בקריית הממשלה נבחר ב-1966 בתחרות תכנון שבה זכו אריה ואלדר שרון.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בנק ישראל",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%A7_%D7%99%D7%A9%D7%A8%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

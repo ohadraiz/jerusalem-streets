@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-37e600a0da",
+  "street_name": "ד'ישראלי",
+  "area": "טלביה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בנג׳מין ד׳יזראלי, לימים ראש ממשלת בריטניה, פרסם ב-1826 רומן ראשון — ׳ויויאן גריי׳, סאטירה חברתית בחמישה כרכים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בנג'מין ד'יזראלי",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%92'%D7%9E%D7%99%D7%9F_%D7%93'%D7%99%D7%96%D7%A8%D7%90%D7%9C%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

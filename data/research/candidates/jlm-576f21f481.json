@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-576f21f481",
+  "street_name": "ורבורג",
+  "area": "קרית היובל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אוטו ורבורג היה ב-1906 בין מייסדי ׳בצלאל׳ בירושלים, ומינה את בוריס שץ למנהלו הראשון.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אוטו ורבורג",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%98%D7%95_%D7%95%D7%A8%D7%91%D7%95%D7%A8%D7%92",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

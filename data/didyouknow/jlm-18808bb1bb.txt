@@ -1,0 +1,9 @@
+street_id: jlm-18808bb1bb
+street_name: בני ברית
+area: מאה שערים
+fact: מייסדי בני ברית, דוברי גרמנית, קראו לארגון במקור ׳Bundes-bruder׳ — אחי הברית — שם שהפך ל׳בני ברית׳.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99_%D7%91%D7%A8%D7%99%D7%AA
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

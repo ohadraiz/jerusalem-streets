@@ -1,0 +1,9 @@
+street_id: jlm-a37b6ee186
+street_name: זוטא
+area: בית הכרם
+fact: חיים אריה זוטא (1868–1939) היה סופר ומחנך עברי, מראשוני החדר המתוקן ברוסיה, מנהל בית הספר למל ומנהל בית הספר העברי הראשון בירושלים.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%90%D7%A8%D7%99%D7%94_%D7%96%D7%95%D7%98%D7%90
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

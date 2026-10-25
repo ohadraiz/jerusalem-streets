@@ -1,0 +1,9 @@
+street_id: jlm-f7139c0f6e
+street_name: אוליפנט
+area: טלביה
+fact: לורנס אוליפנט, הסופר והדיפלומט הבריטי שעל שמו הרחוב, הצטרף ב-1867 לכת מיסטית נוצרית בשם ׳אחוות החיים החדשים׳ וחי בקומונה בארצות הברית.
+source: https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%A8%D7%A0%D7%A1_%D7%90%D7%95%D7%9C%D7%99%D7%A4%D7%A0%D7%98
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

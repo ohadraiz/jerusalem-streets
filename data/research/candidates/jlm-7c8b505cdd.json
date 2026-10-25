@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7c8b505cdd",
+  "street_name": "זמנהוף",
+  "area": "מחנה ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אליעזר זמנהוף נאם ב-1905 בקונגרס האספרנטו העולמי הראשון, שהתקיים בבולון-סור-מר שבצרפת.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אליעזר לודוויג זמנהוף",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%9C%D7%95%D7%93%D7%95%D7%95%D7%99%D7%92_%D7%96%D7%9E%D7%A0%D7%94%D7%95%D7%A3",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

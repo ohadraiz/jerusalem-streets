@@ -1,0 +1,9 @@
+street_id: jlm-d1e634993e
+street_name: דבורה הנביאה
+area: בתי אונגרין
+fact: דבורה הנביאה הייתה השופטת הרביעית ששפטה את ישראל והיחידה בתפקיד; סיפורה מתואר בספר שופטים, ובפרק ה׳ מופיעה שירת דבורה.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%94%D7%A0%D7%91%D7%99%D7%90%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

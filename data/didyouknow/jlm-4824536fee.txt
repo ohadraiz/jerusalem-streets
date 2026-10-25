@@ -1,0 +1,9 @@
+street_id: jlm-4824536fee
+street_name: חשין שניאור
+area: מגרש הרוסים
+fact: שניאור זלמן חשין (1903–1959) היה משפטן ושופט בית המשפט העליון מיום הקמתו, ולימים ממלא מקום קבוע של נשיא בית המשפט.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A0%D7%99%D7%90%D7%95%D7%A8_%D7%96%D7%9C%D7%9E%D7%9F_%D7%97%D7%A9%D7%99%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: metudela
+street_name: בנימין מטודלה
+area: רחביה
+fact: בנימין מטודלה יצא למסע ב-1165 וחזר לספרד ב-1173; ספר מסעותיו שימש השראה למנדלי מוכר ספרים ל׳מסעות בנימין השלישי׳.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%9E%D7%98%D7%95%D7%93%D7%9C%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

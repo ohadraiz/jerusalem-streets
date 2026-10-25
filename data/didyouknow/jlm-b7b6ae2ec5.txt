@@ -1,0 +1,9 @@
+street_id: jlm-b7b6ae2ec5
+street_name: אצטדיון טדי
+area: הולילנד
+fact: אצטדיון טדי במלחה, הקרוי על שם טדי קולק והאצטדיון הפעיל הגדול בישראל, נחנך דווקא בהפסד: ב-14 בספטמבר 1991 ניצחה הפועל תל אביב את הפועל ירושלים 0–3 במשחק הפתיחה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A6%D7%98%D7%93%D7%99%D7%95%D7%9F_%D7%98%D7%93%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

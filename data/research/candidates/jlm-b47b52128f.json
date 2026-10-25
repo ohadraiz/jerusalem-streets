@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b47b52128f",
+  "street_name": "ברוך בן נריה",
+  "area": "נחלאות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חותם המיוחס לברוך בן נריה, סופרו של ירמיהו, פורסם ב-1979 בידי נחמן אביגד; ב-1996 נמצאה בולה נוספת עם כתובת זהה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ברוך בן נריה",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%95%D7%9A_%D7%91%D7%9F_%D7%A0%D7%A8%D7%99%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

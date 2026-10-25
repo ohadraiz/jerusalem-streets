@@ -1,0 +1,9 @@
+street_id: jlm-0fd63157f03f
+street_name: גורג אליוט
+area: מחנה ישראל
+fact: ג׳ורג׳ אליוט חיה עם ג׳ורג׳ הנרי לואס ללא נישואים, משום שאשתו סירבה להתגרש — ובמקביל ערכה את ה׳וסטמינסטר רוויו׳.
+source: https://he.wikipedia.org/wiki/%D7%92'%D7%95%D7%A8%D7%92'_%D7%90%D7%9C%D7%99%D7%95%D7%98
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

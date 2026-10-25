@@ -1,0 +1,9 @@
+street_id: jlm-dc75cccc60
+street_name: אבן ישראל
+area: נחלת שבעה
+fact: אבן ישראל, שנבנתה ב-1875 בצמוד לרחוב יפו, הייתה השכונה היהודית הראשונה במתחם הנחלאות, וייחודה בשילוב אשכנזים וספרדים, לומדים ובעלי מלאכה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%99%D7%A9%D7%A8%D7%90%D7%9C
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

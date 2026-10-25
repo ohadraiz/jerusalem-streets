@@ -1,0 +1,9 @@
+street_id: jlm-591f141486ea
+street_name: הכותל המערבי
+area: הרובע היהודי
+fact: הכותל המערבי נחשב שריד מתקופת הורדוס, אך ב-2011 נמצאו מתחת לנדבך הראשון מטבעות שהוטבעו כ-20 שנה אחרי מותו — מה שמערער את הקביעה שהכותל נבנה כולו בימיו.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%9B%D7%95%D7%AA%D7%9C_%D7%94%D7%9E%D7%A2%D7%A8%D7%91%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

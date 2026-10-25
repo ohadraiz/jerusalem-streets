@@ -1,0 +1,9 @@
+street_id: jlm-b5457101b1
+street_name: דן פגיס
+area: פסגת זאב מזרח
+fact: דן פגיס פרסם בשנים 1963–1967 רשימות בעיתון הילדים ׳מחנה גדנ״ע׳ תחת שם העט ׳גד פנסי׳ — אנגרמה של שמו.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%9F_%D7%A4%D7%92%D7%99%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

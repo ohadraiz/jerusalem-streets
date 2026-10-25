@@ -1,0 +1,9 @@
+street_id: jlm-b635128534
+street_name: בן שטח
+area: נחלת שבעה
+fact: שמעון בן שטח היה מראשי החכמים בימי אלכסנדר ינאי, וחברו יהודה בן טבאי הרכיבו את הזוג השלישי בתקופת הזוגות.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%91%D7%9F_%D7%A9%D7%98%D7%97
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

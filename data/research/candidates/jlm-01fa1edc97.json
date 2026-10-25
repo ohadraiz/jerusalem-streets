@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-01fa1edc97",
+  "street_name": "גרשון אבנר",
+  "area": "גבעות ארנונה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "גרשון אבנר, נשיא אגודת הדיבייט של אוקספורד ב-1942, היה ב-1972 לאומבודסמן הראשון של מדינת ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — גרשון אבנר",
+      "url": "https://he.wikipedia.org/wiki/%D7%92%D7%A8%D7%A9%D7%95%D7%9F_%D7%90%D7%91%D7%A0%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

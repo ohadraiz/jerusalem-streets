@@ -1,0 +1,9 @@
+street_id: jlm-8b6a6888c367
+street_name: הבוכרים
+area: הבוכרים
+fact: שכונת הבוכרים, שנבנתה ב-1894 בידי יהודי בוכרה, כללה גם חמאם טורקי מפואר — ׳חמאם מוסיוף׳, שנחנך ב-1900 בהשראת בית מרחץ שראה בונהו בפריז.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9B%D7%95%D7%A0%D7%AA_%D7%94%D7%91%D7%95%D7%9B%D7%A8%D7%99%D7%9D
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

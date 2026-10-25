@@ -1,0 +1,9 @@
+street_id: jlm-9524fbf39b
+street_name: דוד בן-גוריון
+area: גבעת שאול
+fact: דוד בן-גוריון (1886–1973) היה ראש הממשלה הראשון של ישראל, איש העלייה השנייה וממנהיגי תנועת העבודה; הרחוב קרוי על שמו.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%91%D7%9F-%D7%92%D7%95%D7%A8%D7%99%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

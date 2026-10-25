@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9ed1fb7d092d",
+  "street_name": "הרב יוסף גרשון הורוביץ",
+  "area": "מאה שערים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יוסף גרשון הורביץ היה מרבני ירושלים הראשונים שהצטרפו למזרחי, ונשיא הוועידה הראשונה של הסניף בירושלים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסף גרשון הורוביץ",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%92%D7%A8%D7%A9%D7%95%D7%9F_%D7%94%D7%95%D7%A8%D7%95%D7%91%D7%99%D7%A5",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

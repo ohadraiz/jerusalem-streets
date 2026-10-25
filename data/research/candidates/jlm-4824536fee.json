@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-4824536fee",
+  "street_name": "חשין שניאור",
+  "area": "מגרש הרוסים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שניאור זלמן חשין (1903–1959) היה משפטן ושופט בית המשפט העליון מיום הקמתו, ולימים ממלא מקום קבוע של נשיא בית המשפט.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שניאור זלמן חשין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A0%D7%99%D7%90%D7%95%D7%A8_%D7%96%D7%9C%D7%9E%D7%9F_%D7%97%D7%A9%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

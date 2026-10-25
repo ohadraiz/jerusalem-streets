@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3ebfc1183a",
+  "street_name": "זלמן שוקן",
+  "area": "הר הצופים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "במאי 1925 העלה ש״י עגנון בפני זלמן שוקן את רצונו להוציא לאור את כל כתביו — ובעקבות זאת הקים שוקן ב-1931 את הוצאת שוקן.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — זלמן שוקן",
+      "url": "https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%95%D7%A7%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

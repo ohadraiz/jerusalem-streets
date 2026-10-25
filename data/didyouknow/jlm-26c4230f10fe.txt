@@ -1,0 +1,9 @@
+street_id: jlm-26c4230f10fe
+street_name: אליעזר הופין
+area: רמות
+fact: אליעזר זיגפריד הופיין, מנכ״ל בנק אנגלו-פלשתינה, התמנה ב-1907 למזכיר התנועה הציונית בהולנד — בעת הקונגרס הציוני בהאג.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%94%D7%95%D7%A4%D7%99%D7%99%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

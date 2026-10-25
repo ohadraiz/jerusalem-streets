@@ -1,0 +1,9 @@
+street_id: jlm-69bc832d88
+street_name: שער ציון
+area: הרובע הארמני
+fact: שער ציון, שער תפנית בחומת העיר העתיקה, נקרא במפת קמברה מ-1150 ׳שער הר ציון׳; ב-1948 כבשו לוחמי הפלמ״ח את הר ציון ומשם תוכננה הפריצה לרובע היהודי.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%A6%D7%99%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

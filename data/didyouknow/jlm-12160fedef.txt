@@ -1,0 +1,9 @@
+street_id: jlm-12160fedef
+street_name: בני בתירא
+area: קטמונים (גוננים)
+fact: משפחת בני בתירה החזיקה תקופה בהנהגה הדתית של עם ישראל סמוך לחורבן בית שני, ואף העבירה את ההנהגה להלל הזקן.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99_%D7%91%D7%AA%D7%99%D7%A8%D7%90
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

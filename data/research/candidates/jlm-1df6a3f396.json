@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1df6a3f396",
+  "street_name": "בן סרוק",
+  "area": "קרית שמואל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מנחם בן סרוק, מחבר ׳מחברת מנחם׳, הואשם בוויכוח עם דונש בן לברט בנטייה לקראות — וגורש מקורדובה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מנחם בן סרוק",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%97%D7%9D_%D7%91%D7%9F_%D7%A1%D7%A8%D7%95%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

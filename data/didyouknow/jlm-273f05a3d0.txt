@@ -1,0 +1,9 @@
+street_id: jlm-273f05a3d0
+street_name: מקור חיים
+area: מקור חיים
+fact: מקור חיים, השוכנת על נחל רפאים בדרום העיר, חוברה למרכז ירושלים רק עם כיבוש קטמון במבצע יבוסי באביב 1948.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%95%D7%A8_%D7%97%D7%99%D7%99%D7%9D_(%D7%A9%D7%9B%D7%95%D7%A0%D7%94)
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

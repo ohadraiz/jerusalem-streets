@@ -1,0 +1,9 @@
+street_id: jlm-ebde655145
+street_name: בן סירא
+area: נחלת שבעה
+fact: ב-1964 גילה יגאל ידין במצדה 26 קטעי מגילה ובהם הנוסח העברי הקדום ביותר של ספר בן סירא.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%9F_%D7%A1%D7%99%D7%A8%D7%90
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

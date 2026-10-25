@@ -1,0 +1,9 @@
+street_id: jlm-f88418cd8f
+street_name: בן לברט
+area: קרית שמואל
+fact: דונש בן לברט (920–990 בערך) היה פרשן, משורר ומדקדק יהודי-ספרדי בתור הזהב של יהדות ספרד.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%A0%D7%A9_%D7%91%D7%9F_%D7%9C%D7%91%D7%A8%D7%98
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

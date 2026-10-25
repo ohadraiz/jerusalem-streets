@@ -1,0 +1,9 @@
+street_id: marcus
+street_name: דוד מרכוס
+area: טלביה
+fact: דוד מרכוס (1901–1948), שנודע בכינוי מיקי סטון, היה האלוף הראשון של צה״ל; קולונל יהודי-אמריקאי שהגיע ארצה במלחמת העצמאות כאחד מאנשי מח״ל.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%9E%D7%A8%D7%9B%D7%95%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

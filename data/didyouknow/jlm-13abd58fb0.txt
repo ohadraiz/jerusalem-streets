@@ -1,0 +1,9 @@
+street_id: jlm-13abd58fb0
+street_name: ביבארס
+area: שייח' ג'ראח
+fact: ביברס (סביב 1228–1277) היה סולטאן ממלוכי של מצרים וסוריה מ-1260, שנודע כמצביא וכשליט; הרחוב בשייח׳ ג׳ראח קרוי על שמו.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%91%D7%A8%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

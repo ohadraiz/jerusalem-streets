@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-be9b98bd34",
+  "street_name": "דב גרונר",
+  "area": "תלפיות מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דב גרונר, מעולי הגרדום, איבד את אביו בשבי הרוסי ב-1916; ב-1939 ארגן קבוצת העפלה גדולה ועלה ארצה איתה ב-1940.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דב גרונר",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%91_%D7%92%D7%A8%D7%95%D7%A0%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

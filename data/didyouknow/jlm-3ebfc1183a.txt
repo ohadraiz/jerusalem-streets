@@ -1,0 +1,9 @@
+street_id: jlm-3ebfc1183a
+street_name: זלמן שוקן
+area: הר הצופים
+fact: במאי 1925 העלה ש״י עגנון בפני זלמן שוקן את רצונו להוציא לאור את כל כתביו — ובעקבות זאת הקים שוקן ב-1931 את הוצאת שוקן.
+source: https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%95%D7%A7%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

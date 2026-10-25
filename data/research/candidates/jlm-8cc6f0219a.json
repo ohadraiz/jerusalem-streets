@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8cc6f0219a",
+  "street_name": "בן דוסא",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי חנינא בן דוסא היה תנא בדור הראשון, תלמידו של רבן יוחנן בן זכאי; מתורתו נשתמרו אמרות המדגישות יחסי אדם לחברו ומעשה על פני לימוד.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חנינא בן דוסא",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%99%D7%A0%D7%90_%D7%91%D7%9F_%D7%93%D7%95%D7%A1%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8948d6fdb7",
+  "street_name": "אבינועם ילין",
+  "area": "בית ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אבינועם ילין, בנו של דוד ילין, נשלח בגיל 20 לקיימברידג׳; ב-1925 מינתה אותו ממשלת המנדט למפקח הכללי על החינוך העברי בארץ.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבינעם ילין",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%A0%D7%A2%D7%9D_%D7%99%D7%9C%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

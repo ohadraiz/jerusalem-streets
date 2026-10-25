@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-4339b4db3b06",
+  "street_name": "אלוף יקותיאל אדם",
+  "area": "פסגת זאב",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יקותיאל אדם, סגן הרמטכ״ל ומראשי אג״ם, פיקד באוקטובר 1973 על ׳מבצע קינוח׳ — הקרב לכיבוש החרמון בסיום מלחמת יום הכיפורים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יקותיאל אדם",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A7%D7%95%D7%AA%D7%99%D7%90%D7%9C_%D7%90%D7%93%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

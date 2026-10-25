@@ -1,0 +1,9 @@
+street_id: jlm-9d42383082aa
+street_name: ביקור חולים
+area: הרובע הארמני
+fact: בית החולים ביקור חולים, שפעל בעיר העתיקה ואחר כך ברחוב הנביאים, היה הראשון בישראל שפתח יחידה לטיפול נמרץ ילודים — ב-1973, בניהולה של פרופ׳ רנה גיל.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%A7%D7%95%D7%A8_%D7%97%D7%95%D7%9C%D7%99%D7%9D_(%D7%91%D7%99%D7%AA_%D7%97%D7%95%D7%9C%D7%99%D7%9D)
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

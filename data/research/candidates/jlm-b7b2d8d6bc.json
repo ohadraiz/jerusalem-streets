@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b7b2d8d6bc",
+  "street_name": "חיים פרחי",
+  "area": "הבוכרים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חיים פרחי (1760–1820) היה יועצם היהודי של שליטי הגליל בימי האימפריה העות׳מאנית, ובתקופת מסע נפוליאון בארץ ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים פרחי",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A4%D7%A8%D7%97%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

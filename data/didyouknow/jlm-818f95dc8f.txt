@@ -1,0 +1,9 @@
+street_id: jlm-818f95dc8f
+street_name: ג'ורג' וושינגטון
+area: מחנה ישראל
+fact: לאחר שנבחר לקדנציה שנייה ב-1792, סירב ג׳ורג׳ וושינגטון לרוץ לשלישית — נוהג שאימצו כל נשיאי ארה״ב אחריו, למעט פרנקלין רוזוולט.
+source: https://he.wikipedia.org/wiki/%D7%92'%D7%95%D7%A8%D7%92'_%D7%95%D7%95%D7%A9%D7%99%D7%A0%D7%92%D7%98%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

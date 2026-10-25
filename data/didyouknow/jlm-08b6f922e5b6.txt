@@ -1,0 +1,9 @@
+street_id: jlm-08b6f922e5b6
+street_name: גרטרוד קראוס
+area: גבעת משואה
+fact: גרטרוד קראוס, מחלוצות המחול המודרני בארץ, ייסדה ב-1950 את תיאטרון המחול הישראלי והייתה למנהלת האמנותית שלו.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%A8%D7%98%D7%A8%D7%95%D7%93_%D7%A7%D7%A8%D7%90%D7%95%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

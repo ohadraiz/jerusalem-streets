@@ -1,0 +1,9 @@
+street_id: jlm-588cdf3778
+street_name: טרודי בירגר
+area: רוממה
+fact: טרודי בירגר, ניצולת שואה שייסדה את מרפאת מתנדבי שיניים לישראל, כתבה ספר על חוויותיה בשואה — ׳מתנת אהבה של בת׳.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%A8%D7%95%D7%93%D7%99_%D7%91%D7%99%D7%A8%D7%92%D7%A8
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

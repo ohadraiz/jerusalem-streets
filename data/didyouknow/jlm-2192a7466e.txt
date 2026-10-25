@@ -1,0 +1,9 @@
+street_id: jlm-2192a7466e
+street_name: ועד ארבע ארצות
+area: רמות
+fact: השם ׳ועד ארבע ארצות׳ נקבע רק ב-1623, לאחר פרישת ליטא; ב-1764 החליט השלטון הפולני להפסיק את גביית המיסים בידי הוועד.
+source: https://he.wikipedia.org/wiki/%D7%95%D7%A2%D7%93_%D7%90%D7%A8%D7%91%D7%A2_%D7%90%D7%A8%D7%A6%D7%95%D7%AA
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

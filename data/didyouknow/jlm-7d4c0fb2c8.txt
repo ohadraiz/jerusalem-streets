@@ -1,0 +1,9 @@
+street_id: jlm-7d4c0fb2c8
+street_name: ברוריה
+area: המושבה היוונית
+fact: ברוריה, אשת רבי מאיר, היא מהנשים הבודדות בספרות חז״ל — אך האגדה המפורסמת עליה נזכרת לראשונה כ-900 שנה אחרי מותה.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%95%D7%A8%D7%99%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

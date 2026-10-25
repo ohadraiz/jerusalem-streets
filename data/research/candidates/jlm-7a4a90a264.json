@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7a4a90a264",
+  "street_name": "הרב אריה בינה",
+  "area": "חומת שמואל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב אריה בינה הקים ב-1953 את ישיבת נתיב מאיר במבנה הנטוש של בית החולים סנט ג׳ון באבו תור, מול העיר העתיקה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אריה בינה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%94_%D7%91%D7%99%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

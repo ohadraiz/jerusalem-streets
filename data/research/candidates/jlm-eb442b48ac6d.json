@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-eb442b48ac6d",
+  "street_name": "הרב אברהם שאג",
+  "area": "בית וגן",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב אברהם שאג-צוובנר, רב העיירות שטמנסדורף וקוברסדורף, עלה לארץ ב-1873 בגיל 72 ונפטר בירושלים שלוש שנים אחר כך.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אברהם שאג-צוובנר",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A9%D7%90%D7%92-%D7%A6%D7%95%D7%95%D7%91%D7%A0%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

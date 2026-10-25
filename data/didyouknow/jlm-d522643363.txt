@@ -1,0 +1,9 @@
+street_id: jlm-d522643363
+street_name: מעלות דפנה
+area: מעלות דפנה
+fact: מעלות דפנה, שנבנתה מסוף 1971, הייתה חלק מ׳שכונות הבריח׳ — רצף התיישבות יהודי שנוצר בצפון-מזרח העיר כדי לחבר את מערב ירושלים להר הצופים.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A2%D7%9C%D7%95%D7%AA_%D7%93%D7%A4%D7%A0%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

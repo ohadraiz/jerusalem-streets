@@ -1,0 +1,9 @@
+street_id: jlm-5659836dab
+street_name: הנרי מורגנטאו
+area: רמות א'
+fact: הנרי מורגנטאו האב תרם בנדיבות למסע הבחירות של וודרו וילסון ב-1912, וב-1915 סייע בהקמת ועדת הסיוע למזרח הקרוב.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%A8%D7%99_%D7%9E%D7%95%D7%A8%D7%92%D7%A0%D7%98%D7%90%D7%95_(%D7%94%D7%90%D7%91)
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

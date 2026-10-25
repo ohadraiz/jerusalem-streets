@@ -1,0 +1,9 @@
+street_id: jlm-3e15073dd5
+street_name: אברהם חזן
+area: מחנה ישראל
+fact: הרב אברהם חזן, רבה של משטרת ישראל ושב״ס, הקים ב-1972 את ׳קרן התשובה׳ — שסייעה לאסירים משוחררים לחזור לחיים דתיים ולפרנסה מחוץ לכלא.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%97%D7%96%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

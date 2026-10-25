@@ -1,0 +1,9 @@
+street_id: jlm-4195f8ad7f
+street_name: אברהם שלום יהודה
+area: ארנונה
+fact: אברהם שלום יהודה (1877–1951) היה חוקר תולדות עם ישראל והתרבות הערבית, פעיל ציוני, סופר ופובליציסט.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A9%D7%9C%D7%95%D7%9D_%D7%99%D7%94%D7%95%D7%93%D7%94
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

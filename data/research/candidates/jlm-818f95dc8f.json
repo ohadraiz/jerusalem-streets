@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-818f95dc8f",
+  "street_name": "ג'ורג' וושינגטון",
+  "area": "מחנה ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "לאחר שנבחר לקדנציה שנייה ב-1792, סירב ג׳ורג׳ וושינגטון לרוץ לשלישית — נוהג שאימצו כל נשיאי ארה״ב אחריו, למעט פרנקלין רוזוולט.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ג'ורג' וושינגטון",
+      "url": "https://he.wikipedia.org/wiki/%D7%92'%D7%95%D7%A8%D7%92'_%D7%95%D7%95%D7%A9%D7%99%D7%A0%D7%92%D7%98%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

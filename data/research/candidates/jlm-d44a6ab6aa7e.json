@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d44a6ab6aa7e",
+  "street_name": "הרב שרירא גאון",
+  "area": "גבעת שאול",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אחרי 30 שנה כראש ישיבת פומבדיתא התפטר רב שרירא גאון ב-998, כשהיה כבן 90, ומינה את בנו — רב האי גאון — לממלא מקומו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שרירא גאון",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A8%D7%99%D7%A8%D7%90_%D7%92%D7%90%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

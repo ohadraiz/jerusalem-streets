@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1b63d30967",
+  "street_name": "בר יוחאי",
+  "area": "הולילנד",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי שמעון בר יוחאי היה תנא בן הדור הרביעי במאה ה-2 ותלמידו של רבי עקיבא; הלכות רבות מובאות בשמו במשנה, ובספרות הזוהר הוא מכונה ׳בוצינא קדישא׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמעון בר יוחאי",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%91%D7%A8_%D7%99%D7%95%D7%97%D7%90%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1d1feacd3f",
+  "street_name": "אהרן מזי\"א",
+  "area": "נחלאות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אהרן מאיר מזי״א, נשיא ועד הלשון, החל ב-1902 במילון העברי לרפואה ולמדעי הטבע — עבודה שלא השלים, והשלים אחריו שאול טשרניחובסקי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אהרן מאיר מזי\"א",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%9E%D7%90%D7%99%D7%A8_%D7%9E%D7%96%D7%99%22%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

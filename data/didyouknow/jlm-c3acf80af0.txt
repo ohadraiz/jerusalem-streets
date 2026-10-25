@@ -1,0 +1,9 @@
+street_id: jlm-c3acf80af0
+street_name: החי"ש
+area: סן סימון
+fact: החי״ש, חיל השדה החשאי של ההגנה, קיים בקיץ 1939 בכנרת את הקורס הראשון למפקדיו — שהכשיר את שלד הפיקוד שלו.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%22%D7%A9
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

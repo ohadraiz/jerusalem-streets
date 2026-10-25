@@ -1,0 +1,9 @@
+street_id: jlm-fb870add9e
+street_name: אברהם אידלזון
+area: רמות
+fact: אברהם צבי אידלסון, מחלוצי חקר המוזיקה היהודית, פרסם את ׳אוצר נגינות ישראל׳ — עשרה כרכים שיצאו בין 1914 ל-1933 בעברית, בגרמנית ובאנגלית.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A6%D7%91%D7%99_%D7%90%D7%99%D7%93%D7%9C%D7%A1%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

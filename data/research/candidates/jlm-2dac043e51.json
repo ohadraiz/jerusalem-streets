@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2dac043e51",
+  "street_name": "הדסה למפל",
+  "area": "הר הצופים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הדסה למפל, ציירת ולוחמת פלמ״ח, נשלחה ב-1942 עם קבוצת יתומים יהודים לטהראן בדרך לארץ — ונהרגה ב-1948 בקרב על לטרון.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הדסה למפל",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%93%D7%A1%D7%94_%D7%9C%D7%9E%D7%A4%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

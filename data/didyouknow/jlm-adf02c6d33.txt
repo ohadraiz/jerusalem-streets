@@ -1,0 +1,9 @@
+street_id: jlm-adf02c6d33
+street_name: סנט ג'יימס
+area: הרובע הארמני
+fact: רחוב סנט ג׳יימס חוצה את הרובע הארמני מהפטריארכיה הארמנית במערב עד רחוב אררט במזרח — הגבול עם הרובע היהודי.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A1%D7%A0%D7%98_%D7%92'%D7%99%D7%99%D7%9E%D7%A1_(%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D)
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: high
+method: street-article

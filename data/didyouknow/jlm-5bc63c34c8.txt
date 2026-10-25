@@ -1,0 +1,9 @@
+street_id: jlm-5bc63c34c8
+street_name: הרא"ם
+area: סנהדריה
+fact: הרא״ם מונה ב-1495 לחכם באשי של האימפריה העות׳מאנית, ולמעשה היה האחרון בתפקיד זה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%9E%D7%96%D7%A8%D7%97%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

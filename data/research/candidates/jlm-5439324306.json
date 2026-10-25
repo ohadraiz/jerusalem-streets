@@ -31,10 +31,15 @@
     "nameOk": true,
     "url": "https://www.openstreetmap.org/way/1054996861"
   },
-  "fact": "הרחוב מופה ב-OpenStreetMap בשם \"קרית משה\" בשכונת קרית משה.",
-  "fact_type": "osm-only",
-  "confidence": "low",
+  "fact": "קריית משה הוקמה ב-1925 בכספי קרן מונטיפיורי, ובפברואר 2008 נמכר בה מגרש של 2.1 דונם — עתודת הקרקע האחרונה — תמורת כ-5.2 מיליון דולר.",
+  "fact_type": "place-article",
+  "confidence": "medium",
   "sources": [
+    {
+      "label": "ויקיפדיה העברית — קריית משה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%9E%D7%A9%D7%94",
+      "kind": "content"
+    },
     {
       "label": "OpenStreetMap",
       "url": "https://www.openstreetmap.org/way/1054996861",
@@ -47,7 +52,11 @@
     }
   ],
   "notes": [
-    "אין מקור תוכן; העובדה עוסקת רק במיקום ובשם."
+    "אין מקור תוכן; העובדה עוסקת רק במיקום ובשם.",
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
   ],
-  "needs_review": true
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
 }

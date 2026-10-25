@@ -1,0 +1,9 @@
+street_id: jlm-e54b863473
+street_name: אפרים ושיץ
+area: גבעות ארנונה
+fact: אפרים פישל ושיץ, חבר הוועד הלאומי, ארגן את ההגנה העצמית היהודית בפוגרומים בלבוב ב-1918 והיה ממפקדי ׳המיליציה היהודית׳ בעיר.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%99%D7%A5
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

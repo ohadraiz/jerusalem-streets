@@ -1,0 +1,9 @@
+street_id: jlm-47783c03f9
+street_name: אלפסי
+area: רחביה
+fact: הרי״ף, רבי יצחק בן יעקב אלפסי (1013–1103), היה מגדולי פוסקי ההלכה בתקופת הראשונים; הרחוב קרוי על שמו.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%9C%D7%A4%D7%A1%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

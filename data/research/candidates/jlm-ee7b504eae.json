@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ee7b504eae",
+  "street_name": "אליעזר לבונה",
+  "area": "נווה יעקב",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אליעזר ליבנה (1902–1975) היה עיתונאי, חבר כנסת ומראשי האקטיביסטים במפא״י, מפעילי המאבק לפירוז המזרח התיכון מנשק גרעיני.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אליעזר ליבנה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%9C%D7%99%D7%91%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

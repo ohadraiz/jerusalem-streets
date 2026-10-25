@@ -1,0 +1,9 @@
+street_id: jlm-e2091b6c98
+street_name: הרב ריינס
+area: גבעת שאול
+fact: הרב יצחק יעקב ריינס (1839–1915) היה מגדולי התורה בליטא ומייסד תנועת המזרחי; הוא ייסד את ישיבת תורה ודעת ששילבה לימודים תורניים וכלליים.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%99%D7%A2%D7%A7%D7%91_%D7%A8%D7%99%D7%99%D7%A0%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

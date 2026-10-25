@@ -1,0 +1,9 @@
+street_id: jlm-aed784f0ba
+street_name: בן ציון יאדלר
+area: סנהדריה מורחבת
+fact: הרב בן ציון ידלר (1871–1962), המכונה ׳המגיד הירושלמי׳, היה דרשן ידוע ביישוב הישן בירושלים ובמושבות.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%9F_%D7%A6%D7%99%D7%95%D7%9F_%D7%99%D7%93%D7%9C%D7%A8
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

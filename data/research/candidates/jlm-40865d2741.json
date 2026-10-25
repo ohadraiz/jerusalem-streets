@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-40865d2741",
+  "street_name": "בוסתנאי",
+  "area": "קטמון הישנה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בוסתנאי, ראש הגולה בבבל, הוא גיבורו של רומן היסטורי מהמאה ה-19 מאת הרב והסופר מאיר להמן.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בוסתנאי בן חנינאי",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A1%D7%AA%D7%A0%D7%90%D7%99_%D7%91%D7%9F_%D7%97%D7%A0%D7%99%D7%A0%D7%90%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

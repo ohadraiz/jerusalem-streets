@@ -1,0 +1,9 @@
+street_id: jlm-c5da4fb2b3
+street_name: איסר נתנזון
+area: פסגת זאב מזרח
+fact: איסר נתנזון, מפקד האצ״ל ברובע היהודי, הוברח לעיר העתיקה בינואר 1948 לאחר שאיש לח״י שיחד שוטרים איריים ב-20 לירות.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%A8_%D7%A0%D7%AA%D7%A0%D7%96%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

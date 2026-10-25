@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-eea21eed41",
+  "street_name": "סולטן סולימאן",
+  "area": "הרובע המוסלמי",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "קיים מאמר ויקיפדיה עברי על הרחוב עצמו."
+  ],
+  "fact": "רחוב סולטאן סולימאן נקרא על שם הסולטן שבנה את חומות ירושלים, אך אחרי 1967 שונה שמו של הקטע המערבי שלו לרחוב חטיבת הצנחנים.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחוב סולטאן סולימאן",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A1%D7%95%D7%9C%D7%98%D7%90%D7%9F_%D7%A1%D7%95%D7%9C%D7%99%D7%9E%D7%90%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-247f363604
+street_name: בעל התניא
+area: בתי אונגרין
+fact: בעת פלישת נפוליאון לרוסיה ב-1812 נמלט רבי שניאור זלמן מלאדי מלאדי עם בני ביתו, בליווי חיילים של הצבא הרוסי הנסוג.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A0%D7%99%D7%90%D7%95%D7%A8_%D7%96%D7%9C%D7%9E%D7%9F_%D7%9E%D7%9C%D7%90%D7%93%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

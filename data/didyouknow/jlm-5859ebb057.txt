@@ -1,0 +1,9 @@
+street_id: jlm-5859ebb057
+street_name: מוריסטאן
+area: הרובע הנוצרי
+fact: המוריסטן ברובע הנוצרי, ששמו הפרסי פירושו בית חולים, שימש אחרי צלאח א-דין כבית חולים לפגועי נפש — ופעל כנראה עד רעידת האדמה של 1457.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%99%D7%A1%D7%98%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-01cf79cf695c",
+  "street_name": "הרמן שטרוק",
+  "area": "רמות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרמן שטרוק, מחשובי האמנים היהודים בגרמניה, היה ב-1894 בין מייסדי אגודת הספורט היהודית הראשונה בגרמניה — ׳בר כוכבא׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הרמן שטרוק",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%9E%D7%9F_%D7%A9%D7%98%D7%A8%D7%95%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

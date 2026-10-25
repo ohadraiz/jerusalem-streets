@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-01085f88d17a",
+  "street_name": "טיילת דרך ההולכים",
+  "area": "פסגת זאב",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "קיים מאמר ויקיפדיה עברי על הרחוב עצמו."
+  ],
+  "fact": "דרך ההולכים בפסגת זאב היא טיילת המנציחה את מסע הנסיגה הלילי של מגיני ירושלים ב-1948 אל הר הצופים, לאורך תוואי יציאתם ההיסטורי.",
+  "fact_type": "street-article",
+  "confidence": "high",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דרך ההולכים",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A8%D7%9A_%D7%94%D7%94%D7%95%D7%9C%D7%9B%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

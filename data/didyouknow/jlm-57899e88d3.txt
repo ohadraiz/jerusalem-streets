@@ -1,0 +1,9 @@
+street_id: jlm-57899e88d3
+street_name: דב סדן
+area: פסגת זאב מערב
+fact: דב סדן היה פרופסור בלי תואר ראשון, וב-1968 התפטר מהכנסת במחאה על יציאת משלחת הכנסת לגרמניה.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%91_%D7%A1%D7%93%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

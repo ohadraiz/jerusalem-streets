@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bcc9a1eba8",
+  "street_name": "חטיבת ירושלים",
+  "area": "הרובע הארמני",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חטיבת ירושלים (חטיבה 16) היא חטיבת חי״ר במילואים, שהחלה כחטיבת חי״ש שהופקדה על הגנת מרחב ירושלים במלחמת העצמאות.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חטיבת ירושלים",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%98%D7%99%D7%91%D7%AA_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

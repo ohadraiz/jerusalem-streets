@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c12811185f",
+  "street_name": "זאב לב",
+  "area": "הר חוצבים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "זאב לב (1922–2004) היה פיזיקאי, פרופסור באוניברסיטה העברית וחתן פרס ישראל, שייסד את בית הספר הגבוה לטכנולוגיה בירושלים — מכון לב.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — זאב לב",
+      "url": "https://he.wikipedia.org/wiki/%D7%96%D7%90%D7%91_%D7%9C%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

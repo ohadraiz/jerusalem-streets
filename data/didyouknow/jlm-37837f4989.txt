@@ -1,0 +1,9 @@
+street_id: jlm-37837f4989
+street_name: המלבי"ם
+area: בית וגן
+fact: ב-1864 נעצר המלבי״ם בפקודת ממשלת רומניה, הובל לנמל ג׳יורג׳יו וגורש מעבר לדנובה לעיר רוסה שבבולגריה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%9C%D7%91%D7%99%22%D7%9D
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

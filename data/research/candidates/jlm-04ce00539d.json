@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-04ce00539d",
+  "street_name": "בנימין מזר",
+  "area": "הר הצופים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בנימין מזר (1906–1995) היה ארכאולוג, הנחשב לאבי הארכאולוגיה המקראית הישראלית, ונשיאה הרביעי של האוניברסיטה העברית; חתן פרס ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בנימין מזר",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%9E%D7%96%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

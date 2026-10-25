@@ -1,0 +1,9 @@
+street_id: jlm-256445644c
+street_name: ביל"ו
+area: קטמון הישנה
+fact: תנועת ביל״ו הוקמה ב-1882 לאחר הפוגרומים, ובתחילה נקראה ׳דאבי״ו׳ — ראשי תיבות של ׳דבר אל בני ישראל ויסעו׳.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%9C%22%D7%95
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5301e7795a",
+  "street_name": "חיים עוזר",
+  "area": "בית ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב חיים עוזר גרודזנסקי, מגדולי פוסקי ליטא, לא כיהן רשמית כרבה של וילנה — בגלל נוהג משנת 1791 שלא למנות רב לעיר.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים עוזר גרודזנסקי",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A2%D7%95%D7%96%D7%A8_%D7%92%D7%A8%D7%95%D7%93%D7%96%D7%A0%D7%A1%D7%A7%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

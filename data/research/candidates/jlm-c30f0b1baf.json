@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c30f0b1baf",
+  "street_name": "הרב מאיר חדש",
+  "area": "רמת שלמה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בגיל 16 נותר הרב מאיר חדש עם אחיו ואחותו לאחר שאמו נפטרה ואביו נתקע בארצות הברית עם פרוץ מלחמת העולם הראשונה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מאיר חדש",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%97%D7%93%D7%A9",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

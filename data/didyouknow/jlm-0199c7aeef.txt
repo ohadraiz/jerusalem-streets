@@ -1,0 +1,9 @@
+street_id: jlm-0199c7aeef
+street_name: אנוסי משהד
+area: תלפיות מזרח
+fact: אנוסי משהד חיו כמוסלמים בסתר כ-120 שנה; ב-1840 ברחו משפחות שלא הסכימו להתאסלם להראת שבאפגניסטן, ורק ב-1979 עזבו רבים את איראן.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A0%D7%95%D7%A1%D7%99_%D7%9E%D7%A9%D7%94%D7%93
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

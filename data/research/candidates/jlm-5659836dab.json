@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5659836dab",
+  "street_name": "הנרי מורגנטאו",
+  "area": "רמות א'",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הנרי מורגנטאו האב תרם בנדיבות למסע הבחירות של וודרו וילסון ב-1912, וב-1915 סייע בהקמת ועדת הסיוע למזרח הקרוב.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הנרי מורגנטאו (האב)",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%A8%D7%99_%D7%9E%D7%95%D7%A8%D7%92%D7%A0%D7%98%D7%90%D7%95_(%D7%94%D7%90%D7%91)",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-e8b5fc960e
+street_name: אברהם ניסן
+area: עיר גנים
+fact: ד״ר אברהם קצנלסון (ניסן), מחותמי מגילת העצמאות, הוביל בשנות ה-20 את הפועל הצעיר בברלין ובווינה יחד עם אליעזר קפלן וחיים ארלוזורוב.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A7%D7%A6%D7%A0%D7%9C%D7%A1%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

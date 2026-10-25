@@ -1,0 +1,9 @@
+street_id: jlm-6dcfd45947
+street_name: הרב סורוצקין
+area: קרית בעלז
+fact: לאחר פטירת הרב איסר זלמן מלצר ב-1954 עמד הרב זלמן סורוצקין בראש מועצת גדולי התורה, עד מותו ב-1966.
+source: https://he.wikipedia.org/wiki/%D7%96%D7%9C%D7%9E%D7%9F_%D7%A1%D7%95%D7%A8%D7%95%D7%A6%D7%A7%D7%99%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

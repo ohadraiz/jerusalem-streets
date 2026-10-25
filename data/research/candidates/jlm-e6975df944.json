@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e6975df944",
+  "street_name": "הרב חיים מיכלין",
+  "area": "בית וגן",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חיים מיכל מיכלין שימש מזכירו של הרב שמואל סלנט בשנים 1880–1893, וב-1905 ייסד עם אהרן אייזנברג ויצחק לוי את אגודת נטעים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים מיכל מיכלין",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%9E%D7%99%D7%9B%D7%9C_%D7%9E%D7%99%D7%9B%D7%9C%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-6fa5a593e8
+street_name: חפץ חיים
+area: זכרון משה
+fact: הרב ישראל מאיר הכהן הוציא ב-1873 את ספרו הראשון, ׳חפץ חיים׳, על איסור לשון הרע — ומכאן כינויו.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%9E%D7%90%D7%99%D7%A8_%D7%94%D7%9B%D7%94%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

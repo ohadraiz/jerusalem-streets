@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-11b618e379",
+  "street_name": "אבו תור",
+  "area": "גבעת חנניה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אבו תור, מדרום לעיר העתיקה: חלקה המערבי נכבש במאי 1948 בידי חטיבת עציוני במבצע קלשון, לאחר שתושביו הערבים נמלטו; כיום היא שכונה מעורבת יהודית-ערבית.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבו תור",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%95_%D7%AA%D7%95%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

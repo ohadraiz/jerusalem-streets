@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a6e4eef5f1",
+  "street_name": "חכמי לובלין",
+  "area": "בית ישראל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ישיבת חכמי לובלין הוקמה ב-1930 בידי הרב מאיר שפירא כדי להשיב לעיר את מעמדה — ולשחזר את ישיבת לובלין שנוסדה ב-1515.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ישיבת חכמי לובלין",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%99%D7%91%D7%AA_%D7%97%D7%9B%D7%9E%D7%99_%D7%9C%D7%95%D7%91%D7%9C%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

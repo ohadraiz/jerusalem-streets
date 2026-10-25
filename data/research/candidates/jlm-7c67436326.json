@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7c67436326",
+  "street_name": "אבן שפרוט",
+  "area": "רחביה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חסדאי אבן שפרוט (915–975) היה מדינאי ורופא יהודי בקורדובה, שכיהן בתפקידים בכירים בחצר הח׳ליף עבד אל-רחמן השלישי ופעל למען יהודי ספרד וארצות אחרות.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חסדאי אבן שפרוט",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%A1%D7%93%D7%90%D7%99_%D7%90%D7%91%D7%9F_%D7%A9%D7%A4%D7%A8%D7%95%D7%98",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

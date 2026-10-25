@@ -1,0 +1,9 @@
+street_id: jlm-bcc9a1eba8
+street_name: חטיבת ירושלים
+area: הרובע הארמני
+fact: חטיבת ירושלים (חטיבה 16) היא חטיבת חי״ר במילואים, שהחלה כחטיבת חי״ש שהופקדה על הגנת מרחב ירושלים במלחמת העצמאות.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%98%D7%99%D7%91%D7%AA_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

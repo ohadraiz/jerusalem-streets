@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9533fcbc4e",
+  "street_name": "אלכסנדר רובוביץ",
+  "area": "תלפיות מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אלכסנדר רובוביץ׳, לוחם לח״י בן 16, יצא במאי 1947 להדביק כרוזים ברחביה — ונרצח בידי הבריטים; ב-2009 חיפש צה״ל את שרידי גופתו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אלכסנדר רובוביץ'",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%9B%D7%A1%D7%A0%D7%93%D7%A8_%D7%A8%D7%95%D7%91%D7%95%D7%91%D7%99%D7%A5'",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

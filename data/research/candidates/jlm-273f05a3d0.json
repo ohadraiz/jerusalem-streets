@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-273f05a3d0",
+  "street_name": "מקור חיים",
+  "area": "מקור חיים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מקור חיים, השוכנת על נחל רפאים בדרום העיר, חוברה למרכז ירושלים רק עם כיבוש קטמון במבצע יבוסי באביב 1948.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מקור חיים (שכונה)",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%95%D7%A8_%D7%97%D7%99%D7%99%D7%9D_(%D7%A9%D7%9B%D7%95%D7%A0%D7%94)",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

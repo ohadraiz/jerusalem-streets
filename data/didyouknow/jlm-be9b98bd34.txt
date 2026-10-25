@@ -1,0 +1,9 @@
+street_id: jlm-be9b98bd34
+street_name: דב גרונר
+area: תלפיות מזרח
+fact: דב גרונר, מעולי הגרדום, איבד את אביו בשבי הרוסי ב-1916; ב-1939 ארגן קבוצת העפלה גדולה ועלה ארצה איתה ב-1940.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%91_%D7%92%D7%A8%D7%95%D7%A0%D7%A8
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

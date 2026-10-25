@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1f04abf769",
+  "street_name": "שערי חסד",
+  "area": "שערי חסד",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שערי חסד הוקמה ב-1909 ביוזמת ׳גמ״ח הכללי׳ בראשות הרב שלמה זלמן פרוש, על כ-40 דונם בין נחלאות לרחביה — ושמרה כמעט מאה שנה על אופי דתי-שמרני.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שערי חסד",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8%D7%99_%D7%97%D7%A1%D7%93",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

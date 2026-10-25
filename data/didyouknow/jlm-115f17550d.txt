@@ -1,0 +1,9 @@
+street_id: jlm-115f17550d
+street_name: דיסקין
+area: רחביה
+fact: הרב יהושע לייב דיסקין הקים ב-1880 את בית היתומים הירושלמי בכספי נדוניה של 40,000 זהובים שהביאה אשתו.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%99%D7%94%D7%95%D7%A9%D7%A2_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%93%D7%99%D7%A1%D7%A7%D7%99%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

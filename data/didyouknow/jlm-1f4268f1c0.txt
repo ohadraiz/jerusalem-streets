@@ -1,0 +1,9 @@
+street_id: jlm-1f4268f1c0
+street_name: דרך העופל
+area: הרובע המוסלמי
+fact: העופל, המצודה המקראית שעל שמה הרחוב, הוא גם פינת החומה הדרום-מזרחית של הר הבית: שם מתנשאת החומה ההרודיאנית לגובה 20 מטר וחודרת 20 מטר לאדמה.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%A2%D7%95%D7%A4%D7%9C
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

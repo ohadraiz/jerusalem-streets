@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-42891f8690",
+  "street_name": "ניות",
+  "area": "ניות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ניות הוקמה ב-1960 בידי עולים דוברי אנגלית, ועד 1963 היה שמה ׳שיכון האנגלו-סקסי׳ — רק אז קיבלה את שמה הרשמי.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ניות",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

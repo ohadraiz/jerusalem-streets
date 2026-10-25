@@ -1,0 +1,9 @@
+street_id: jlm-d616460f62
+street_name: זרח ברנט
+area: הר נוף
+fact: זרח ברנט, ממתיישביה הראשונים של פתח תקווה, חזר אליה ב-1885 ובנה בה בית אבן בן שתי קומות — הראשון מסוגו במושבה.
+source: https://he.wikipedia.org/wiki/%D7%96%D7%A8%D7%97_%D7%91%D7%A8%D7%A0%D7%98
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

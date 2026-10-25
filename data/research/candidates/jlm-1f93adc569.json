@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1f93adc569",
+  "street_name": "זלמן צורף",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב זלמן צורף הותקף על רקע התנגדות הערבים לשיפוץ חצר החורבה ומת מכך ב-1851; נכדו יואל משה סלומון היה ממייסדי פתח תקווה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אברהם שלמה זלמן צורף",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A9%D7%9C%D7%9E%D7%94_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A6%D7%95%D7%A8%D7%A3",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

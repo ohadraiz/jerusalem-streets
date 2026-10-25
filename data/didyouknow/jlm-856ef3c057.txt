@@ -1,0 +1,9 @@
+street_id: jlm-856ef3c057
+street_name: טאהה חוסיין
+area: פסגת זאב צפון
+fact: טאהא חוסיין, שהיה עיוור, התקבל ב-1908 לאוניברסיטת קהיר החילונית והשלים דוקטורט נוסף בסורבון ב-1917.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%94_%D7%97%D7%95%D7%A1%D7%99%D7%99%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

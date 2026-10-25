@@ -1,0 +1,9 @@
+street_id: jlm-fdf9c2a2c5
+street_name: דוד צבי פנקס
+area: גבעת מרדכי
+fact: דוד צבי פנקס (1895–1952) היה פוליטיקאי, מחותמי מגילת העצמאות, חבר כנסת ושר התחבורה.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A6%D7%91%D7%99_%D7%A4%D7%A0%D7%A7%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

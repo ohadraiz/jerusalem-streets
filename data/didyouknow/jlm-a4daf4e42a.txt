@@ -1,0 +1,9 @@
+street_id: jlm-a4daf4e42a
+street_name: גרשון שקד
+area: ניות
+fact: גרשון שקד, חתן פרס ישראל, כתב חמישה כרכים על תולדות הסיפורת העברית 1880–1980 — אך בילדותו נאסר אביו בידי הנאצים אחרי האנשלוס.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%A8%D7%A9%D7%95%D7%9F_%D7%A9%D7%A7%D7%93
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

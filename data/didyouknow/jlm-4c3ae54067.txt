@@ -1,0 +1,9 @@
+street_id: jlm-4c3ae54067
+street_name: יאן סמאטס
+area: המושבה הגרמנית
+fact: יאן סמאטס, לימים ראש ממשלת דרום אפריקה, הוביל ב-1916 כ-55,000 חיילים במערכה במזרח אפריקה, שבה גורש הצבא הגרמני.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%9F_%D7%A1%D7%9E%D7%90%D7%98%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

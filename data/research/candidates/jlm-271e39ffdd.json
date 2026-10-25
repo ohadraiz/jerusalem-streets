@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-271e39ffdd",
+  "street_name": "אבא אחימאיר",
+  "area": "פסגת זאב צפון",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אב״א אחימאיר נודע בעשרות שמות עט, ובהם א׳ שמאי ואבא סיקריקון — והיה גם דוקטור לפילוסופיה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אב\"א אחימאיר",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%22%D7%90_%D7%90%D7%97%D7%99%D7%9E%D7%90%D7%99%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

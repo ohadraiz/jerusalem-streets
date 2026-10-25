@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-210532987c",
+  "street_name": "דון יוסף הנשיא",
+  "area": "מקור ברוך",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דון יוסף הנשיא, סוחר ומדינאי יהודי בחצר סולימאן המפואר, לקח חלק מרכזי בניסיון שיקומה של טבריה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דון יוסף נשיא",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%9F_%D7%99%D7%95%D7%A1%D7%A3_%D7%A0%D7%A9%D7%99%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

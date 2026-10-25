@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3e33433999",
+  "street_name": "אבא ברדיצ'ב",
+  "area": "צמרת הבירה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אבא ברדיצ׳ב, מצנחני היישוב, הוצנח ביוגוסלביה במרץ 1944 יחד עם חנה סנש; באוגוסט יצא למשימה נוספת בסלובקיה, ובסוף אותה שנה נשלח למאוטהאוזן.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבא ברדיצ'ב",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%90_%D7%91%D7%A8%D7%93%D7%99%D7%A6'%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

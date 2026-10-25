@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f88418cd8f",
+  "street_name": "בן לברט",
+  "area": "קרית שמואל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דונש בן לברט (920–990 בערך) היה פרשן, משורר ומדקדק יהודי-ספרדי בתור הזהב של יהדות ספרד.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דונש בן לברט",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%A0%D7%A9_%D7%91%D7%9F_%D7%9C%D7%91%D7%A8%D7%98",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-2dfc2d2c1d
+street_name: חיים גרינברג
+area: רמות
+fact: חיים גרינברג, מראשי פועלי ציון, ברח מרוסיה ב-1921 לברלין, שם היה מעורכי ׳העולם׳ ומראשי ׳הפועל הצעיר׳.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%92%D7%A8%D7%99%D7%A0%D7%91%D7%A8%D7%92
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

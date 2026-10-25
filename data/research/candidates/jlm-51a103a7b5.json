@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-51a103a7b5",
+  "street_name": "ברל לוקר",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ברל לוקר, לימים יו״ר הסוכנות היהודית, היה ב-1904 בין מייסדי אגודת הסטודנטים הציונית ׳פרחי ציון׳ בעיר סירט.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ברל לוקר",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%9C_%D7%9C%D7%95%D7%A7%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

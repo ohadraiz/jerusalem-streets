@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-44f718054a",
+  "street_name": "אבנר בן נר",
+  "area": "המושבה היוונית",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אבנר בן נר היה שר צבאו של שאול המלך ושר הצבא הראשון של ממלכת ישראל המאוחדת; לפי ספר דברי הימים היה דודו של שאול.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבנר בן נר",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A0%D7%A8_%D7%91%D7%9F_%D7%A0%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

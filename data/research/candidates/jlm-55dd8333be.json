@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-55dd8333be",
+  "street_name": "דוד פלוסר",
+  "area": "ארנונה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דוד פלוסר (1917–2000) היה היסטוריון ישראלי בעל שם עולמי בחקר תקופת הבית השני, תקופת התנאים והנצרות הקדומה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דוד פלוסר",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A4%D7%9C%D7%95%D7%A1%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

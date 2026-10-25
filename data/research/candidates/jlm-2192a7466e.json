@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2192a7466e",
+  "street_name": "ועד ארבע ארצות",
+  "area": "רמות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "השם ׳ועד ארבע ארצות׳ נקבע רק ב-1623, לאחר פרישת ליטא; ב-1764 החליט השלטון הפולני להפסיק את גביית המיסים בידי הוועד.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ועד ארבע ארצות",
+      "url": "https://he.wikipedia.org/wiki/%D7%95%D7%A2%D7%93_%D7%90%D7%A8%D7%91%D7%A2_%D7%90%D7%A8%D7%A6%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

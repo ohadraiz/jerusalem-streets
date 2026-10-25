@@ -1,0 +1,9 @@
+street_id: jlm-c12811185f
+street_name: זאב לב
+area: הר חוצבים
+fact: זאב לב (1922–2004) היה פיזיקאי, פרופסור באוניברסיטה העברית וחתן פרס ישראל, שייסד את בית הספר הגבוה לטכנולוגיה בירושלים — מכון לב.
+source: https://he.wikipedia.org/wiki/%D7%96%D7%90%D7%91_%D7%9C%D7%91
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

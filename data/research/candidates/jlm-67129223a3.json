@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-67129223a3",
+  "street_name": "כיכר צה\"ל",
+  "area": "מורשה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "כיכר צה״ל ליד שער יפו היא הצומת שבו נפגשים רחוב יפו ושבטי ישראל; מגדל השעון שהבריטים הקימו בה ב-1924 פורק כבר ב-1934.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כיכר צה\"ל (ירושלים)",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%9B%D7%A8_%D7%A6%D7%94%22%D7%9C_(%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D)",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

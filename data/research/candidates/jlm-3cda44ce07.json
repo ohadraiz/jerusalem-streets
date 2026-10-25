@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3cda44ce07",
+  "street_name": "תפארת ישראל",
+  "area": "הרובע היהודי",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בית הכנסת תפארת ישראל ברובע היהודי הוקם בידי חסידי רוז'ין, נהרס בידי הירדנים ב-1948, ותוכנית לשחזורו אושרה ב-2012.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בית הכנסת תפארת ישראל",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%AA%D7%A4%D7%90%D7%A8%D7%AA_%D7%99%D7%A9%D7%A8%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

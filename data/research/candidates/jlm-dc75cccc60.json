@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-dc75cccc60",
+  "street_name": "אבן ישראל",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אבן ישראל, שנבנתה ב-1875 בצמוד לרחוב יפו, הייתה השכונה היהודית הראשונה במתחם הנחלאות, וייחודה בשילוב אשכנזים וספרדים, לומדים ובעלי מלאכה.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבן ישראל",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%99%D7%A9%D7%A8%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7f6b81ffb4",
+  "street_name": "אהרן צבי פרופסור",
+  "area": "רמות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אהרן צבי פרופס, ׳הבית״רי הראשון׳, כיהן כנציב בית״ר עד 1939 — ואז הוחלף בתפקיד בידי מנחם בגין.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אהרן צבי פרופס",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%A6%D7%91%D7%99_%D7%A4%D7%A8%D7%95%D7%A4%D7%A1",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

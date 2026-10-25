@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5859ebb057",
+  "street_name": "מוריסטאן",
+  "area": "הרובע הנוצרי",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "המוריסטן ברובע הנוצרי, ששמו הפרסי פירושו בית חולים, שימש אחרי צלאח א-דין כבית חולים לפגועי נפש — ופעל כנראה עד רעידת האדמה של 1457.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מוריסטן",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%99%D7%A1%D7%98%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

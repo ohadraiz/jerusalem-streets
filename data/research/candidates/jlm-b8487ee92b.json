@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b8487ee92b",
+  "street_name": "הרב מיימון",
+  "area": "קרית משה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "התפטרות הרב יהודה לייב מימון מתפקיד שר הדתות בפברואר 1951 הביאה במרץ להתפטרות הממשלה כולה ולבחירות לכנסת השנייה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יהודה לייב מימון",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%9E%D7%99%D7%9E%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

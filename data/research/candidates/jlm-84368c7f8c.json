@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-84368c7f8c",
+  "street_name": "איתן לבני",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "איתן לבני, ממפקדי האצ״ל, טס ארצה במאי 1948 יחד עם יעקב מרידור ונחת בנמל התעופה לוד בשבת, 15 במאי — יום אחרי הכרזת המדינה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — איתן לבני",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%AA%D7%9F_%D7%9C%D7%91%D7%A0%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

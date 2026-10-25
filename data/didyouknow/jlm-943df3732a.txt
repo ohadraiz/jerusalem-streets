@@ -1,0 +1,9 @@
+street_id: jlm-943df3732a
+street_name: דלמן
+area: מעלות דפנה
+fact: גוסטב דלמן, חוקר התנ״ך והתלמוד, הוציא ב-1937 סדרה בת שבעה ספרים על מלאכות ומנהגים בארץ ישראל.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%95%D7%A1%D7%98%D7%91_%D7%93%D7%9C%D7%9E%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

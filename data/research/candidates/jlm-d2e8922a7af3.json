@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d2e8922a7af3",
+  "street_name": "ימין משה",
+  "area": "ימין משה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ימין משה, שנבנתה ב-1891 לצד משכנות שאננים, מנציחה את משה מונטיפיורי — שהיה היהודי הראשון שרכש פרדס בארץ, כבר ב-1841.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ימין משה",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%9E%D7%99%D7%9F_%D7%9E%D7%A9%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-7ed64348f3
+street_name: יד אבשלום
+area: מעלה הזיתים
+fact: יד אבשלום בנחל קדרון היא מצבה מונומנטלית מימי בית שני שאומצה במסורת כמצבת אבשלום בן דוד; לפי המחקר הארכאולוגי היא מתוארכת למאה ה-1 לספירה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%93_%D7%90%D7%91%D7%A9%D7%9C%D7%95%D7%9D
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

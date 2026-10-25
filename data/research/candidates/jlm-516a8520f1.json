@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-516a8520f1",
+  "street_name": "שוק הכותנה",
+  "area": "העיר העתיקה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שוק הכותנה, שנבנה ב-1336–1337 בידי האמיר תנכיז, היה המבואה הראשית להר הבית; ב-1848 פתח בו יצחק שור, חסיד רוז׳ין, יקב.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שוק הכותנה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%95%D7%A7_%D7%94%D7%9B%D7%95%D7%AA%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

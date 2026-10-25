@@ -1,0 +1,9 @@
+street_id: jlm-42891f8690
+street_name: ניות
+area: ניות
+fact: ניות הוקמה ב-1960 בידי עולים דוברי אנגלית, ועד 1963 היה שמה ׳שיכון האנגלו-סקסי׳ — רק אז קיבלה את שמה הרשמי.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%95%D7%AA
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

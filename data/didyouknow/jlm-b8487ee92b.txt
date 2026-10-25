@@ -1,0 +1,9 @@
+street_id: jlm-b8487ee92b
+street_name: הרב מיימון
+area: קרית משה
+fact: התפטרות הרב יהודה לייב מימון מתפקיד שר הדתות בפברואר 1951 הביאה במרץ להתפטרות הממשלה כולה ולבחירות לכנסת השנייה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%9E%D7%99%D7%9E%D7%95%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

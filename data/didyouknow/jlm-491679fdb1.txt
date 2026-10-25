@@ -1,0 +1,9 @@
+street_id: jlm-491679fdb1
+street_name: בית וגן
+area: רמת בית הכרם
+fact: בית וגן נוסדה ב-1926 בידי המזרחי ובני ברית, ורחוב הפסגה שלה היה הגבוה בירושלים — 836 מטר — עד בניית שכונת גילה.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%95%D7%92%D7%9F
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

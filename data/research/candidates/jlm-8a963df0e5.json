@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8a963df0e5",
+  "street_name": "האוניברסיטה העברית",
+  "area": "קרית מנחם בגין",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "האוניברסיטה העברית, שנחנכה ב-1925, היא האוניברסיטה הציבורית הראשונה בארץ ישראל; מקמפוס הר הצופים שלה נשקף נוף אל העיר העתיקה.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — האוניברסיטה העברית בירושלים",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%95%D7%A0%D7%99%D7%91%D7%A8%D7%A1%D7%99%D7%98%D7%94_%D7%94%D7%A2%D7%91%D7%A8%D7%99%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

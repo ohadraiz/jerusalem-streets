@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7ad4d45f84",
+  "street_name": "מזכרת משה",
+  "area": "נחלאות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מזכרת משה נוסדה ב-1882 בכספי קרן מונטיפיורי, אך כבר ב-1885 התלונן יהודי ירושלמי בעיתון ׳הצבי׳ שהשכונה מלוכלכת ומוזנחת.",
+  "fact_type": "place-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מזכרת משה",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%96%D7%9B%D7%A8%D7%AA_%D7%9E%D7%A9%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

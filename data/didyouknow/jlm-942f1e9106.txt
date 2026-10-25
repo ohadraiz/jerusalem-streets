@@ -1,0 +1,9 @@
+street_id: jlm-942f1e9106
+street_name: אלוף שמחוני
+area: קטמון הישנה
+fact: אסף שמחוני, מפקד פיקוד הדרום במבצע קדש, היה בנם של ממייסדי נהלל — ונהרג בהתרסקות מטוס בלילה שלאחר סיום המבצע.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A1%D7%A3_%D7%A9%D7%9E%D7%97%D7%95%D7%A0%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

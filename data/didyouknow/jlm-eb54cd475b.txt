@@ -1,0 +1,9 @@
+street_id: jlm-eb54cd475b
+street_name: אבן האזל
+area: תל ארזה
+fact: הרב איסר זלמן מלצר, שעל שמו הרחוב, מונה לראש ישיבה בסלבודקה בגיל 24; ב-1923 נמלט לפולין ועמד בראש ישיבת סלוצק הגולה יחד עם חתנו, הרב אהרן קוטלר.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%A8_%D7%96%D7%9C%D7%9E%D7%9F_%D7%9E%D7%9C%D7%A6%D7%A8
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

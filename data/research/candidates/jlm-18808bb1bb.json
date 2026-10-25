@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-18808bb1bb",
+  "street_name": "בני ברית",
+  "area": "מאה שערים",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מייסדי בני ברית, דוברי גרמנית, קראו לארגון במקור ׳Bundes-bruder׳ — אחי הברית — שם שהפך ל׳בני ברית׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בני ברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99_%D7%91%D7%A8%D7%99%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

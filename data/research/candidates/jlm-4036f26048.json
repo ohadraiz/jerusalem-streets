@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-4036f26048",
+  "street_name": "בן אב\"י איתמר",
+  "area": "קרית שמואל",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "איתמר בן-אב״י, ׳הילד העברי הראשון׳, היה מייסדו ועורכו של העיתון ׳דואר היום׳ בשנים 1919–1929.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — איתמר בן-אב\"י",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%AA%D7%9E%D7%A8_%D7%91%D7%9F-%D7%90%D7%91%22%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

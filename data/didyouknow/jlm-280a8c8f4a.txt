@@ -1,0 +1,9 @@
+street_id: jlm-280a8c8f4a
+street_name: האלוף עוזי נרקיס
+area: פסגת זאב מערב
+fact: עוזי נרקיס היה הקצין הראשון של צה״ל שסיים את בית הספר הגבוה למלחמה בצרפת, וב-1946 השתתף בפיצוץ גשר אלנבי בליל הגשרים.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%96%D7%99_%D7%A0%D7%A8%D7%A7%D7%99%D7%A1
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

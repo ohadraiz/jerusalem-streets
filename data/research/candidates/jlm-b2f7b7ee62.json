@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b2f7b7ee62",
+  "street_name": "דברי חיים",
+  "area": "קרית צאנז",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי חיים הלברשטאם מצאנז נלקח כחתן בגיל 13 לבתו של בעל ׳ברוך טעם׳; בנו השנים-עשר, מייסד חסידות ראצפרט, נרצח בשואה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים הלברשטאם",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%90%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

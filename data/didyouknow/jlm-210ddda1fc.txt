@@ -1,0 +1,9 @@
+street_id: jlm-210ddda1fc
+street_name: הרב יצחק ניסים
+area: חומת שמואל
+fact: בנובמבר 1957 החרים הרב יצחק ניסים את טקס הזיכרון לחיים ויצמן, משום שלא נערך לפי המסורת היהודית.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A0%D7%A1%D7%99%D7%9D
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

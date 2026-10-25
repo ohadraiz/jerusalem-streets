@@ -1,0 +1,9 @@
+street_id: jlm-2172606e0d
+street_name: ברנר
+area: טלביה
+fact: יוסף חיים ברנר ערק מהצבא עם פרוץ מלחמת רוסיה–יפן, נתפס — וחולץ ב-1904 בידי בונדאים שהבריחו אותו ללונדון.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%99%D7%99%D7%9D_%D7%91%D7%A8%D7%A0%D7%A8
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-64f5d19b78
+street_name: הרב יוסף קאפח
+area: שערי חסד
+fact: אשתו של הרב יוסף קאפח, ברכה, זכתה ב-1999 בפרס ישראל על תרומה מיוחדת לחברה ולמדינה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%90%D7%A4%D7%97
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

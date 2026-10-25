@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8f3aabed04",
+  "street_name": "דוד באזוב",
+  "area": "רמות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב דוד באזוב ניצל את קשריו עם אנשי דת מוסלמים כדי להציל נוצרים ויהודים רבים בתקופת הכיבוש העות׳מאני ב-1918.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דוד באזוב",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%91%D7%90%D7%96%D7%95%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

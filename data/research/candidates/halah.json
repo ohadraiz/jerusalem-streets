@@ -1,0 +1,28 @@
+{
+  "street_id": "halah",
+  "street_name": "הל\"ה",
+  "area": "קטמון הישנה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מחלקת הל״ה כללה 40 לוחמים; במלחמת העצמאות יצאו 35 מהם לתגבר את גוש עציון המנותק, נטבחו לאחר שאזלה תחמושתם, וגופותיהם הושחתו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שיירת הל\"ה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%99%D7%99%D7%A8%D7%AA_%D7%94%D7%9C%22%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

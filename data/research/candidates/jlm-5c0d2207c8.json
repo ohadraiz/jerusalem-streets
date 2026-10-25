@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5c0d2207c8",
+  "street_name": "חיים ברלב",
+  "area": "שייח' ג'ראח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חיים ברלב, לימים הרמטכ״ל השמיני, פיקד ב-1946 על פיצוץ גשר אלנבי בליל הגשרים, וב-1955 קרא למבצע נגד הסגר המצרי על שם בנו — ׳עומר׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים בר-לב",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%91%D7%A8-%D7%9C%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

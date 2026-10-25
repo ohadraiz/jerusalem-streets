@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1d9b676141",
+  "street_name": "בצלאל בזק",
+  "area": "רסקו (גבעת הוורדים)",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בצלאל בזק (1898–1974) היה פעיל ציבורי בולט בציונות הדתית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בצלאל בזק",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A6%D7%9C%D7%90%D7%9C_%D7%91%D7%96%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

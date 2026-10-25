@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8411b6c3a6",
+  "street_name": "אליהו בית צורי",
+  "area": "תלפיות מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אליהו בית צורי, מעולי הגרדום, החל ב-1940 לימודי מדעי הרוח באוניברסיטה העברית — אך נאלץ לעצור אותם מחוסר יכולת לממן אותם.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אליהו בית צורי",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%91%D7%99%D7%AA_%D7%A6%D7%95%D7%A8%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

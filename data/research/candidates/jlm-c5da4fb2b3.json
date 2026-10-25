@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c5da4fb2b3",
+  "street_name": "איסר נתנזון",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "איסר נתנזון, מפקד האצ״ל ברובע היהודי, הוברח לעיר העתיקה בינואר 1948 לאחר שאיש לח״י שיחד שוטרים איריים ב-20 לירות.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — איסר נתנזון",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%A8_%D7%A0%D7%AA%D7%A0%D7%96%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

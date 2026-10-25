@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7807361e7720",
+  "street_name": "חיים גורי",
+  "area": "תלפיות",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חיים גורי, חתן פרס ישראל לשירה, סירב ב-2015 לקבל פרס על יצירה ציונית — בנימוק ׳זה פרס ציונות׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חיים גורי",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%92%D7%95%D7%A8%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

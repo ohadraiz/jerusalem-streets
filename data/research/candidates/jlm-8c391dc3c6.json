@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8c391dc3c6",
+  "street_name": "הר\"ן",
+  "area": "שערי חסד",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבינו ניסים היה בן 16 במות אביו, ולכן עברה ראשות הישיבה בקירואן לרבינו חושיאל — והוא למד מפיו לצד רבינו חננאל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבנו ניסים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A0%D7%95_%D7%A0%D7%99%D7%A1%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

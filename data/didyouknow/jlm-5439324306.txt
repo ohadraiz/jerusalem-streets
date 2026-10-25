@@ -1,0 +1,11 @@
+street_id: jlm-5439324306
+street_name: קרית משה
+area: קרית משה
+fact: קריית משה הוקמה ב-1925 בכספי קרן מונטיפיורי, ובפברואר 2008 נמכר בה מגרש של 2.1 דונם — עתודת הקרקע האחרונה — תמורת כ-5.2 מיליון דולר.
+source: https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%9E%D7%A9%D7%94
+source: https://www.openstreetmap.org/way/1054996861
+source: https://data.gov.il/dataset/321
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: place-article

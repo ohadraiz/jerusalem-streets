@@ -1,0 +1,9 @@
+street_id: jlm-5c0d2207c8
+street_name: חיים ברלב
+area: שייח' ג'ראח
+fact: חיים ברלב, לימים הרמטכ״ל השמיני, פיקד ב-1946 על פיצוץ גשר אלנבי בליל הגשרים, וב-1955 קרא למבצע נגד הסגר המצרי על שם בנו — ׳עומר׳.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%91%D7%A8-%D7%9C%D7%91
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

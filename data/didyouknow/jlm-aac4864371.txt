@@ -1,0 +1,9 @@
+street_id: jlm-aac4864371
+street_name: אברבאנל
+area: רחביה
+fact: יצחק אברבנאל, שר האוצר בפורטוגל ובקסטיליה, ניסה לפעול לביטול גזרת גירוש ספרד.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%91%D7%A8%D7%91%D7%A0%D7%90%D7%9C
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

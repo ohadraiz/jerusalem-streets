@@ -1,0 +1,9 @@
+street_id: jlm-342cc4df61
+street_name: חזונוביץ
+area: מאה שערים
+fact: ב-1890 הציעו מנהיגי היישוב ליוסף חזנוביץ להקים ספרייה בירושלים; חזונו פורסם ב-1899 ב׳מכתב להזכיר׳ — התשתית הרעיונית לספרייה הלאומית.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%96%D7%A0%D7%95%D7%91%D7%99%D7%A5
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

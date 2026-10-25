@@ -1,0 +1,9 @@
+street_id: jlm-b1d45d3ed6
+street_name: הרב סלמן מוצפי
+area: בית וגן
+fact: הרב סלמאן מוצפי ייסד ב-1942 את ישיבת ׳בני ציון׳ סמוך לקבר רחל, שבה עסקו בעיקר בלימוד הזוהר והקבלה.
+source: https://he.wikipedia.org/wiki/%D7%A1%D7%9C%D7%9E%D7%90%D7%9F_%D7%9E%D7%95%D7%A6%D7%A4%D7%99
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

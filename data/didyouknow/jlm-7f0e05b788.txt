@@ -1,0 +1,9 @@
+street_id: jlm-7f0e05b788
+street_name: חבשוש
+area: בית ישראל
+fact: חיים חבשוש המתין 23 שנה לפני שכתב את דין וחשבון מסעו עם יוסף הלוי — תחילה בעברית, ואחר כך בערבית-יהודית לבקשת אדוארד גלזר.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%97%D7%91%D7%A9%D7%95%D7%A9
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

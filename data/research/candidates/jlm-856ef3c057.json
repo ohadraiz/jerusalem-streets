@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-856ef3c057",
+  "street_name": "טאהה חוסיין",
+  "area": "פסגת זאב צפון",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "טאהא חוסיין, שהיה עיוור, התקבל ב-1908 לאוניברסיטת קהיר החילונית והשלים דוקטורט נוסף בסורבון ב-1917.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — טה חוסיין",
+      "url": "https://he.wikipedia.org/wiki/%D7%98%D7%94_%D7%97%D7%95%D7%A1%D7%99%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}

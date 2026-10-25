@@ -1,0 +1,9 @@
+street_id: jlm-73b3727c5f
+street_name: דוד פלומבו
+area: רמת בית הכרם
+fact: הפסל דוד פלומבו נהרג ב-1966 כשקטנועו נתקל בשרשרת שהציב משרד הדתות במוצאי שבת במעלה השלום, כדי למנוע מעבר כלי רכב בשבת.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A4%D7%9C%D7%95%D7%9E%D7%91%D7%95
+date_researched: 2026-10-22
+researcher: החוקר
+confidence: medium
+method: person-article

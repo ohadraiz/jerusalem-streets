@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ebde655145",
+  "street_name": "בן סירא",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ב-1964 גילה יגאל ידין במצדה 26 קטעי מגילה ובהם הנוסח העברי הקדום ביותר של ספר בן סירא.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בן סירא",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%9F_%D7%A1%D7%99%D7%A8%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-22",
+  "reviewed_by": "החוקר"
+}
