@@ -969,7 +969,7 @@ function buildHtml(data) {
     <div class="page-head__actions">
       <a class="btn" href="index.html">דף הבית הפנימי</a>
       <a class="btn" href="guli.html">חדר הסוכנים</a>
-      <a class="btn" href="../index.html">האפליקציה הציבורית</a>
+      <a class="btn" href="../app.html">האפליקציה הציבורית</a>
       <button type="button" id="print-btn" class="btn btn--primary">הדפסה / PDF</button>
     </div>
   </div>

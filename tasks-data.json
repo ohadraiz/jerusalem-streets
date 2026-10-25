@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T09:57:32.918Z",
+  "generatedAt": "2026-10-25T11:26:56.548Z",
   "teams": [
     {
       "key": "UI/UX",
@@ -8,12 +8,10 @@
       "sourceTitle": "צוות UI/UX",
       "note": "סבב 046 סגור · 046.1 ליטוש בביצוע",
       "standby": false,
-      "owner": "המעצב",
+      "owner": "build",
       "owners": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ]
     },
     {
@@ -23,11 +21,10 @@
       "sourceTitle": "צוות פיתוח",
       "note": "Core/Infra",
       "standby": false,
-      "owner": "הראשי",
+      "owner": "build",
       "owners": [
-        "הראשי",
-        "המגשר",
-        "מפי"
+        "build",
+        "review"
       ]
     },
     {
@@ -37,11 +34,10 @@
       "sourceTitle": "צוות חיבור לרשת",
       "note": "Map/Network",
       "standby": false,
-      "owner": "המגשר",
+      "owner": "build",
       "owners": [
-        "המגשר",
-        "מפי",
-        "החוקר"
+        "build",
+        "review"
       ]
     },
     {
@@ -66,10 +62,10 @@
       "sourceTitle": "צוות מחקר ותוכן",
       "note": "Research/Content",
       "standby": false,
-      "owner": "החוקר",
+      "owner": "build",
       "owners": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ]
     },
     {
@@ -91,15 +87,13 @@
       "label": "Mobile/Deploy",
       "icon": "MOBILE",
       "sourceTitle": "צוות מובייל והפצה",
-      "note": "MOBILE מובייל פעיל · STANDBY️ הפצה ב-standby",
+      "note": "MOBILE מובייל פעיל · STANDBY הפצה ב-standby",
       "standby": true,
-      "owner": "מובריליס",
+      "owner": "build",
       "owners": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ]
     }
   ],
@@ -110,11 +104,9 @@
       "description": "manifest, אייקונים, Service Worker, offline, התקנה, safe-area, מכשיר אמיתי",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "high",
@@ -128,41 +120,29 @@
         "marker": "PASS",
         "note": "הושלם — דוח בערוץ מובי"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 29,
+      "line": 33,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -172,11 +152,9 @@
       "description": "manifest, אייקונים 192/512/maskable, Service Worker, עמוד לא-מקוון, theme-color",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "high",
@@ -190,41 +168,29 @@
         "marker": "BLOCKED",
         "note": "ממתין ל-M1"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 30,
+      "line": 34,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -234,11 +200,9 @@
       "description": "רשימה, חיפוש, סימון וסטטיסטיקות עובדים; מפה במצב מוסבר",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "high",
@@ -252,41 +216,29 @@
         "marker": "BLOCKED",
         "note": "ממתין ל-M1"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 31,
+      "line": 35,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -296,11 +248,9 @@
       "description": "התקנה ב-Android/iOS, מסך מלא, safe-area, זרימת עדכון גרסה בטוחה",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "none",
@@ -314,41 +264,29 @@
         "marker": "BLOCKED",
         "note": "ממתין ל-M1"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 32,
+      "line": 36,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -358,11 +296,9 @@
       "description": "320–430px, iOS Safari + Android Chrome, Lighthouse, זמני טעינה",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "none",
@@ -376,41 +312,29 @@
         "marker": "BLOCKED",
         "note": "ממתין למכשיר אמיתי"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 33,
+      "line": 37,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -420,11 +344,9 @@
       "description": "Cloudflare Pages / Netlify / GitHub Pages / Vercel — ריפו פרטי, דומיין, כותרות, עלות",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "high",
@@ -438,41 +360,29 @@
         "note": "",
         "marker": "PENDING"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 34,
+      "line": 38,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -482,11 +392,9 @@
       "description": "CI, רשימת פרסום, HTTPS, CSP וכותרות אבטחה",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "high",
@@ -500,41 +408,29 @@
         "note": "",
         "marker": "PENDING"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 35,
+      "line": 39,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -544,11 +440,9 @@
       "description": "גרסה, CHANGELOG, שערי קבלה, rollback מתועד",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "high",
@@ -562,41 +456,29 @@
         "note": "",
         "marker": "PENDING"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 36,
+      "line": 40,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -606,11 +488,9 @@
       "description": "דף פרטיות, הצהרת נגישות, ייחוס OSM, בדיקת זמינות",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "none",
@@ -624,41 +504,29 @@
         "note": "",
         "marker": "PENDING"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 37,
+      "line": 41,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -668,11 +536,9 @@
       "description": "smoke בדסקטופ ובמובייל, כותרות, 404, גלגול אחורה",
       "team": "Mobile/Deploy",
       "agents": [
-        "מובריליס",
-        "מובי",
-        "פיצי",
-        "הבודק",
-        "הראשי"
+        "build",
+        "review",
+        "gabbai"
       ],
       "priority": {
         "key": "none",
@@ -686,41 +552,29 @@
         "note": "",
         "marker": "PENDING"
       },
-      "owner": "מובריליס",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 38,
+      "line": 42,
       "context": "צוות מובייל והפצה",
       "agentsEnriched": [
         {
-          "name": "מובריליס",
+          "name": "build",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "מובי",
-          "status": "waiting",
-          "note": "ממתין להפעלה — PWA, offline, touch, installable.",
-          "updated": "2026-10-21T03:34:48+03:00"
-        },
-        {
-          "name": "פיצי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "gabbai",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -730,10 +584,8 @@
       "description": "`scrollIntoView` על `#map-section` עובד ב-360/390/430/1280",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -747,35 +599,23 @@
         "marker": "PASS",
         "note": "אומת חי (046)"
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 58,
+      "line": 63,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -785,10 +625,8 @@
       "description": "מימוש מלא: prompt → שמירה → badge \"הושלמה ידנית\" + undo",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -802,35 +640,23 @@
         "marker": "PASS",
         "note": "מומש ואומת חי (046)"
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 59,
+      "line": 64,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -840,10 +666,8 @@
       "description": "פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, sticky bar",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -857,35 +681,23 @@
         "marker": "PASS",
         "note": "אומת חי 360/390/430/1280 (046)"
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 60,
+      "line": 65,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -895,10 +707,8 @@
       "description": "44px יעדים, 16px קלט, AA contrast, RTL, screen reader",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -912,35 +722,23 @@
         "marker": "IN_PROGRESS",
         "note": "חלקי (Lighthouse 100; קורא מסך אמיתי טרם נבדק)"
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 61,
+      "line": 66,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -950,10 +748,8 @@
       "description": "תיקון 035: כל הרחובות נמחקו → אין שכבות רפאים",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -967,35 +763,23 @@
         "marker": "PASS",
         "note": "אומת חי (046)"
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 62,
+      "line": 67,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1005,10 +789,8 @@
       "description": "smooth scroll, transitions, prefers-reduced-motion",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1022,35 +804,23 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 63,
+      "line": 68,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1060,10 +830,8 @@
       "description": "תמיכה ב-`prefers-color-scheme: dark`",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1077,35 +845,23 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 64,
+      "line": 69,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1115,10 +871,8 @@
       "description": "ניווט במקלדת מלא (Tab, Enter, Escape, חיצים)",
       "team": "UI/UX",
       "agents": [
-        "המעצב",
-        "הבודק",
-        "קיפי",
-        "הראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1132,35 +886,23 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "המעצב",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 65,
+      "line": 70,
       "context": "צוות UI/UX",
       "agentsEnriched": [
         {
-          "name": "המעצב",
-          "status": "working",
-          "note": "אימות סופי 390/430: פגינציה, חיפוש, סימון, אקורדיון, גלילת מפה, סיום ידני, נגישות.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "הבודק",
-          "status": "done",
-          "note": "ביקורת המקיפה לגרסה 1.1 הושלמה והועברה למשתמש. לפי הדוח: B1 (קיצורי תו בודד) הוא חוסם; קיימים ממצאי H/N נוספים ו-16 משימות מוצעות. פירוט הממצאים והמשימות יועבר למימוש לאחר ארגונם על ידי המתעד.",
-          "updated": "2026-10-22T16:30:49+03:00"
-        },
-        {
-          "name": "קיפי",
-          "status": "working",
-          "note": "מעקב הקפאות לצוותים אחרים: DEV/NET/MKT ממתינים להחלטות.",
-          "updated": "2026-10-21T13:32:37+03:00"
-        },
-        {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1170,9 +912,8 @@
       "description": "מעבר OR→AND, probe חד-פעמי לזיהוי חסימת OSM שקטה",
       "team": "DEV",
       "agents": [
-        "הראשי",
-        "המגשר",
-        "מפי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -1186,29 +927,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "הראשי",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 93,
+      "line": 98,
       "context": "צוות פיתוח",
       "agentsEnriched": [
         {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        },
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1218,9 +953,8 @@
       "description": "GitHub Pages / Netlify / Cloudflare Pages + CSP/Referrer-Policy",
       "team": "DEV",
       "agents": [
-        "הראשי",
-        "המגשר",
-        "מפי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -1234,29 +968,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "הראשי",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 94,
+      "line": 99,
       "context": "צוות פיתוח",
       "agentsEnriched": [
         {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        },
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1266,9 +994,8 @@
       "description": "PWA support, offline-first, background sync",
       "team": "DEV",
       "agents": [
-        "הראשי",
-        "המגשר",
-        "מפי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1282,29 +1009,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "הראשי",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 95,
+      "line": 100,
       "context": "צוות פיתוח",
       "agentsEnriched": [
         {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        },
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1314,9 +1035,8 @@
       "description": "2,424 רחובות, LOD 12, רינדור דיפרנציאלי, memory leaks",
       "team": "DEV",
       "agents": [
-        "הראשי",
-        "המגשר",
-        "מפי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1330,29 +1050,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "הראשי",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 96,
+      "line": 101,
       "context": "צוות פיתוח",
       "agentsEnriched": [
         {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        },
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1362,9 +1076,8 @@
       "description": "Jest/Playwright ל-CI/CD",
       "team": "DEV",
       "agents": [
-        "הראשי",
-        "המגשר",
-        "מפי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1378,29 +1091,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "הראשי",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 97,
+      "line": 102,
       "context": "צוות פיתוח",
       "agentsEnriched": [
         {
-          "name": "הראשי",
-          "status": "working",
-          "note": "מוביל צוות UI/UX — אימות חי, סגירת הבודק/המעצב, נגישות סופית.",
-          "updated": "2026-10-21T13:32:37+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
-        },
-        {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1410,9 +1117,8 @@
       "description": "CARTO / Esri / Stadia Maps / Proxy → עובד ב-`file://` + HTTPS",
       "team": "NET",
       "agents": [
-        "המגשר",
-        "מפי",
-        "החוקר"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -1426,29 +1132,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "המגשר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 106,
+      "line": 112,
       "context": "צוות חיבור לרשת",
       "agentsEnriched": [
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        },
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1458,9 +1158,8 @@
       "description": "Proxy פשוט שמוסיף Referer/Key לאריחי OSM",
       "team": "NET",
       "agents": [
-        "המגשר",
-        "מפי",
-        "החוקר"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1474,29 +1173,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "המגשר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 107,
+      "line": 113,
       "context": "צוות חיבור לרשת",
       "agentsEnriched": [
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        },
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1506,9 +1199,8 @@
       "description": "mkcert + localhost HTTPS ל-Geolocation/PWA",
       "team": "NET",
       "agents": [
-        "המגשר",
-        "מפי",
-        "החוקר"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1522,29 +1214,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "המגשר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 108,
+      "line": 114,
       "context": "צוות חיבור לרשת",
       "agentsEnriched": [
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        },
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1554,9 +1240,8 @@
       "description": "Cache-Control, stale-while-revalidate, offline tiles",
       "team": "NET",
       "agents": [
-        "המגשר",
-        "מפי",
-        "החוקר"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1570,29 +1255,23 @@
         "marker": "PENDING",
         "note": "ברירת מחדל — אין עמודת סטטוס בטבלה"
       },
-      "owner": "המגשר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 109,
+      "line": 115,
       "context": "צוות חיבור לרשת",
       "agentsEnriched": [
         {
-          "name": "המגשר",
-          "status": "waiting",
-          "note": "ממתין לדיווח מאז 07:48; מפת Leaflet עם גיבוי קנבס, ניווט שכונות וגלגלת זום מיושמים ומדווחים. לא דווח על 035.",
-          "updated": "2026-10-21T07:48:05+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "מפי",
-          "status": "waiting",
-          "note": "מוקפא לפי החלטה — סריקה נעצרה סופית; 9 HOLD ממתינים לרישיון; ממתין להפעלה מחדש.",
-          "updated": "2026-10-21T12:48:52+03:00"
-        },
-        {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "review",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         }
       ]
     },
@@ -1602,8 +1281,8 @@
       "description": "2,424 רחובות: עובדה מעניינת / משמעות שם + על מי קרוי; קובץ טקסט לכל רחוב + מקורות",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -1617,20 +1296,20 @@
         "marker": "IN_PROGRESS",
         "note": "התחלת Pipeline"
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 119,
+      "line": 126,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1643,8 +1322,8 @@
       "description": "גיימיפיקציה, אפליקציות טיולים, \"השלמת עיר\", חינוכיות-גיאוגרפיות, קהילתיות; דוח השוואתי + המלצות פיצ'רים",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1658,20 +1337,20 @@
         "marker": "IN_PROGRESS",
         "note": "התחלה"
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 120,
+      "line": 127,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1684,8 +1363,8 @@
       "description": "שאילתות APIs (Wikidata, Wikipedia, OSM, Municipality) → עיבוד → שמירה לקבצי טקסט `data/didyouknow/<id>.txt`",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -1699,20 +1378,20 @@
         "marker": "IN_PROGRESS",
         "note": "תשתית"
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 121,
+      "line": 128,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1725,8 +1404,8 @@
       "description": "הוכחת היתכנות: רחובות מרכזיים/מפורסמים תחילה",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "high",
@@ -1740,20 +1419,20 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 122,
+      "line": 129,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1766,8 +1445,8 @@
       "description": "הסבר הפרויקט, screenshots, הוראות הפעלה",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1781,20 +1460,20 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 123,
+      "line": 130,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1807,8 +1486,8 @@
       "description": "Schema + pilot 20-30 רחובות + fact-checking",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "none",
@@ -1822,20 +1501,20 @@
         "marker": "IN_PROGRESS",
         "note": "Pipeline מוקם"
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 124,
+      "line": 131,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1848,8 +1527,8 @@
       "description": "walkthrough של הפיצ'רים העיקריים",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1863,20 +1542,20 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 125,
+      "line": 132,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1889,8 +1568,8 @@
       "description": "i18n support",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1904,20 +1583,20 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 126,
+      "line": 133,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -1930,8 +1609,8 @@
       "description": "GitHub Discussions / טופס משוב באפליקציה",
       "team": "Research",
       "agents": [
-        "החוקר",
-        "ראשי"
+        "build",
+        "review"
       ],
       "priority": {
         "key": "low",
@@ -1945,20 +1624,20 @@
         "marker": "PENDING",
         "note": ""
       },
-      "owner": "החוקר",
+      "owner": "build",
       "ownerAlias": "",
       "source": "docs/TEAMS.md",
-      "line": 127,
+      "line": 134,
       "context": "צוות מחקר ותוכן",
       "agentsEnriched": [
         {
-          "name": "החוקר",
-          "status": "done",
-          "note": "המחקר הושלם, אך חלקים נרחבים בדוח משובשים — התוצרים חלקית לא אמינים. אין להשתמש בתוכן הדוח לפני שחזור ותיקון.",
-          "updated": "2026-10-22T16:30:49+03:00"
+          "name": "build",
+          "status": "unknown",
+          "note": "",
+          "updated": null
         },
         {
-          "name": "ראשי",
+          "name": "review",
           "status": "unknown",
           "note": "",
           "updated": null
@@ -3134,5 +2813,5 @@
       "label": "משימות כלליות פתוחות"
     }
   ],
-  "agentStatusSource": "2026-10-25T09:21:04.070Z"
+  "agentStatusSource": "2026-10-25T09:58:57.367Z"
 }

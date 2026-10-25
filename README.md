@@ -6,7 +6,7 @@
 
 ## הרצה
 
-**פשוט לפתוח `index.html` בדפדפן** — האפליקציה עובדת ישירות מהקובץ, בלי התקנה, בלי build ובלי שרת. כל הספריות מקומיות (`assets/vendor/leaflet`), והמפה עובדת גם מ-`file://` (עם OSM DE כספק אריחים, כי OSM חוסם בקשות ללא Referer).
+**פשוט לפתוח `app.html` בדפדפן** — היומן עובד ישירות מהקובץ, בלי התקנה, בלי build ובלי שרת. כל הספריות מקומיות (`assets/vendor/leaflet`), והמפה עובדת גם מ-`file://` (עם OSM DE כספק אריחים, כי OSM חוסם בקשות ללא Referer).
 
 ```bash
 npm start          # http://localhost:8787 — שרת מקומי, לפיתוח ולבדיקות בלבד
@@ -17,7 +17,7 @@ npm test           # בדיקות שכבת האחסון
 
 ## העלאה לרשת
 
-**האתר כבר עלה:** `https://ohadraiz.github.io/jerusalem-streets/` (GitHub Pages, ענף `main`).
+**האתר כבר עלה:** `https://ohadraiz.github.io/jerusalem-streets/` (GitHub Pages, ענף `main`). כתובת השורש מציגה את דף הבית (`welcome.html`); היומן עצמו נמצא בכתובת קבועה: `https://ohadraiz.github.io/jerusalem-streets/app.html`.
 
 זהו אתר סטטי: **אין build ואין תלויות** — מעלים את התיקייה כולה למארח סטטי עם HTTPS ומקבלים כתובת, בלי פקודות.
 מדריך מלא (אפשרויות אירוש, כותרות HTTP חובה, CSP, PWA ומטמון): [`docs/agents/teams/online-deployment.md`](docs/agents/teams/online-deployment.md).
@@ -28,10 +28,10 @@ npm test           # בדיקות שכבת האחסון
 
 כל שינוי נבדק קודם ב-**beta** ולא באתר הציבורי: `https://ohadraiz.github.io/jerusalem-streets/beta.html`
 
-- `beta.html` נוצר אוטומטית מ-`index.html`: `node tools/make-beta.js` (ולפני פרסום: `--check`). אין לערוך אותו ביד.
+- `beta.html` נוצר אוטומטית מ-`app.html`: `node tools/make-beta.js` (ולפני פרסום: `--check`). אין לערוך אותו ביד.
 - נתוני הבטא נשמרים במפתח נפרד (`jlm-street-journal-beta-v1`) ואינם נוגעים ביומן האמיתי.
 - פאנל הכלים: תצוגת מכשיר (390/430/820), 25 ביקורים לדוגמה, איפוס, ייצוא/ייבוא JSON.
-- שינוי גדול נבדק ב-beta בעותק מבודד של קובצי האפליקציה (`assets/beta/`), בעוד האתר הציבורי ממשיך לטעון את `assets/*` — עד אישור מפורש של המשתמש. התהליך מתואם על ידי הסוכן **פתחי** — [`.opencode/agents/pitchei.md`](.opencode/agents/pitchei.md).
+- שינוי גדול נבדק ב-beta בעותק מבודד של קובצי האפליקציה (`assets/beta/`), בעוד האתר הציבורי ממשיך לטעון את `assets/*` — עד אישור מפורש של המשתמש. התהליך מתועד ב-[`docs/agents/HATS.md`](docs/agents/HATS.md) (כובע `testing-beta`).
 
 ## מה יש בו
 
@@ -46,7 +46,9 @@ npm test           # בדיקות שכבת האחסון
 ## מבנה
 
 ```
-index.html          מסך יחיד (RTL)
+index.html          דף כניסה: מפנה ל-welcome.html (או ל-app.html במצב מותקן)
+welcome.html        דף הבית / הסבר (RTL) — ברירת המחדל של כתובת השורש
+app.html            היומן עצמו (RTL, מסך יחיד)
 assets/data.js      רשימת רחובות זרע
 assets/store.js     אחסון: טעינה, סניטציה, שמירה, גיבוי, ייצוא/ייבוא
 assets/app.js       סינון, רינדור, אירועים, סטטיסטיקות
@@ -55,7 +57,7 @@ assets/styles.css   עיצוב (משתני CSS, light/dark)
 assets/vendor/leaflet Leaflet 1.9.4 מקומי (BSD-2-Clause) — כדי שהקובץ יעבוד ללא CDN
 serve.js            שרת סטטי לפיתוח (ללא תלויות)
 tests/store.test.js בדיקות יחידה לשכבת האחסון
-.opencode/agents/   הסוכנים של הפרויקט (moverilis, mobi, pitzi, shifu, mappy ועוד)
+.opencode/agents/   הסוכנים של הפרויקט (build, review, gabbai)
 ```
 
 ## מודל הנתונים

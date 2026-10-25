@@ -1,5 +1,5 @@
 /**
- * כלי סביבת הבטא — נטען אך ורק מ-beta.html (שנוצר מ-index.html).
+ * כלי סביבת הבטא — נטען אך ורק מ-beta.html (שנוצר מ-app.html).
  *
  * הפאנל מאפשר לבדוק את האפליקציה לפני שהיא עולה לאתר הציבורי:
  * תצוגת מכשיר בחלון בגודל אמיתי, נתוני בדיקה נפרדים, ייצוא/ייבוא מצב,
@@ -299,7 +299,7 @@
     var links = document.createElement("div");
     links.className = "beta-links";
     var publicLink = document.createElement("a");
-    publicLink.href = "index.html";
+    publicLink.href = "app.html";
     publicLink.textContent = "לאתר הציבורי";
     links.appendChild(publicLink);
 

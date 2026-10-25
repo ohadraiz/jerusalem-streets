@@ -860,7 +860,7 @@ footer.page a{font-weight:600}
       <span class="pulse"><span class="pulse__dot" aria-hidden="true"></span>${active} פעילים · ${waiting} ממתינים</span>
       <a href="index.html" class="btn">דף הבית הפנימי</a>
       <a href="tasks.html" class="btn btn--primary">דשבורד המשימות (הפקח)</a>
-      <a href="../index.html" class="btn">האפליקציה הציבורית</a>
+      <a href="../app.html" class="btn">האפליקציה הציבורית</a>
       <span class="time-note">עודכן <time dir="ltr" datetime="${esc(updatedAt)}">${esc(dateTimeLabel(updatedAt))}</time></span>
       <span id="relative-time" class="time-note" data-updated="${esc(updatedAt)}"></span>
       <button class="btn" type="button" id="refresh">רענון הדף</button>
@@ -932,7 +932,7 @@ footer.page a{font-weight:600}
 <footer class="page">
   <div class="wrap">
     <p>הדף נבנה על ידי <strong>המתעד</strong> מתוך <a href="../docs/agents/guli/state.json">state.json</a> בקובץ <code>tools/guli-room.js</code>. אין תלות חיצונית ואין קריאה לרשת.</p>
-    <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="../index.html">האפליקציה</a></p>
+    <p>נבנה לאחרונה: <time dir="ltr" datetime="${esc(generatedAt)}">${esc(dateTimeLabel(generatedAt))}</time> · <a href="tasks.html">דשבורד המשימות</a> · <a href="../app.html">האפליקציה</a></p>
   </div>
 </footer>
 

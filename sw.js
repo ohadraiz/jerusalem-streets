@@ -12,13 +12,15 @@
  */
 "use strict";
 
-const CACHE_NAME = "jlm-shell-v2";
+const CACHE_NAME = "jlm-shell-v3";
 
 /* מעטפת האפליקציה + נתוני הרחובות והגיאומטריה — מטמונים כבר בהתקנה,
    כדי שביקור ראשון יספיק לפתיחה מלאה במצב לא מקוון */
 const PRECACHE = [
   "./",
   "./index.html",
+  "./app.html",
+  "./welcome.html",
   "./manifest.webmanifest",
   "./assets/styles.css",
   "./assets/pwa.css",
@@ -112,7 +114,7 @@ self.addEventListener("fetch", (event) => {
           return caches.match(request).then((cached) => {
             if (cached) return cached;
             if (request.mode === "navigate") {
-              return caches.match("./index.html").then((shell) => shell || response);
+              return caches.match("./app.html").then((shell) => shell || response);
             }
             return response;
           });
@@ -128,11 +130,11 @@ function isFactRequest(url) {
   return url.pathname.indexOf("/data/didyouknow/") !== -1;
 }
 
-/** מהמטמון — לניווט מחזירים את דף הבית השמור */
+/** מהמטמון — לניווט מחזירים את דף האפליקציה השמור */
 function fromCache(request) {
   return caches.match(request).then((cached) => {
     if (cached) return cached;
-    if (request.mode === "navigate") return caches.match("./index.html");
+    if (request.mode === "navigate") return caches.match("./app.html");
     return Response.error();
   });
 }

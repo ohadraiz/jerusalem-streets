@@ -5,7 +5,7 @@
   "lang": "he",
   "dir": "rtl",
   "id": "./",
-  "start_url": "./",
+  "start_url": "./app.html",
   "scope": "./",
   "display": "standalone",
   "display_override": ["standalone", "minimal-ui"],
@@ -38,7 +38,7 @@
       "name": "חיפוש רחוב",
       "short_name": "חיפוש",
       "description": "חיפוש מהיר של רחוב ביומן",
-      "url": "./#search",
+      "url": "./app.html#search",
       "icons": [
         {
           "src": "assets/icons/icon-192.png",
@@ -51,7 +51,7 @@
       "name": "מפת הרחובות",
       "short_name": "מפה",
       "description": "פתיחת מפת הרחובות",
-      "url": "./#map-canvas",
+      "url": "./app.html#map-canvas",
       "icons": [
         {
           "src": "assets/icons/icon-192.png",

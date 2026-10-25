@@ -1,7 +1,7 @@
 /**
  * הכנת תיקיית פריסה להעלאה לרשת — "רחובות ירושלים".
  *
- * מה הבעיה שזה פותר: ב-`file://` אפשר לפתוח את `index.html` ישירות, אבל כשמעלים
+ * מה הבעיה שזה פותר: ב-`file://` אפשר לפתוח את `app.html` ישירות, אבל כשמעלים
  * למארח סטטי מעלים את **כל התיקייה** — כולל `docs/agents/`, `tools/`, `.opencode/`
  * והדשבורדים הפנימיים. הקבצים האלה אינם חלק מהאפליקציה שהמשתמש רוצה לראות.
  *
@@ -20,7 +20,7 @@ const ROOT = path.resolve(__dirname, "..");
 const target = path.resolve(process.argv[2] || path.join(ROOT, "publish"));
 
 /* מה נכנס לפריסה: רק מה שהדפדפן צריך כדי להריץ את האפליקציה */
-const FILES = ["index.html", "welcome.html", "manifest.webmanifest", "sw.js"];
+const FILES = ["index.html", "app.html", "welcome.html", "manifest.webmanifest", "sw.js"];
 const DIRS = ["assets", "data/didyouknow"];
 
 function copyFile(from, to) {

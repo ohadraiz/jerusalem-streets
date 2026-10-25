@@ -8,7 +8,7 @@ A small browser app (no dependencies, no build step) for marking every street in
 
 ## Running
 
-**Just open `index.html` in a browser** — the app runs straight from the file, with no install, no build step and no server. Every library is vendored locally (`assets/vendor/leaflet`), and the map also works from `file://` (tiles come from OSM DE, because OSM blocks requests without a Referer).
+**Just open `app.html` in a browser** - the journal runs straight from the file, with no install, no build step and no server. Every library is vendored locally (`assets/vendor/leaflet`), and the map also works from `file://` (tiles come from OSM DE, because OSM blocks requests without a Referer).
 
 ```bash
 npm start          # http://localhost:8787 — local dev server, for development and tests only
@@ -19,7 +19,7 @@ The local server is optional: it is convenient for development, for exercising t
 
 ## Deploying online
 
-**The site is already live:** `https://ohadraiz.github.io/jerusalem-streets/` (GitHub Pages, `main` branch).
+**The site is already live:** `https://ohadraiz.github.io/jerusalem-streets/` (GitHub Pages, `main` branch). The root URL shows the landing page (`welcome.html`); the journal itself has a stable URL: `https://ohadraiz.github.io/jerusalem-streets/app.html`.
 
 This is a static site: **no build step and no dependencies** — upload the whole folder to any static host with HTTPS and you get a URL, no commands involved.
 Full guide (hosting options, required HTTP headers, CSP, PWA and caching): [`docs/agents/teams/online-deployment.md`](docs/agents/teams/online-deployment.md).
@@ -30,10 +30,10 @@ Once installed (PWA) the app also opens **with no internet connection** — afte
 
 Every change is verified in **beta** first, never directly on the public site: `https://ohadraiz.github.io/jerusalem-streets/beta.html`
 
-- `beta.html` is generated from `index.html`: `node tools/make-beta.js` (`--check` before publishing). Never edit it by hand.
+- `beta.html` is generated from `app.html`: `node tools/make-beta.js` (`--check` before publishing). Never edit it by hand.
 - Beta data is stored under a separate key (`jlm-street-journal-beta-v1`) and never touches the real journal.
 - The tool panel offers device sizes (390/430/820), 25 sample visits, reset, and JSON export/import.
-- Large changes are tested in beta using an isolated copy of the app files (`assets/beta/`), while the public site keeps loading `assets/*` — until the user explicitly approves. The process is coordinated by the **Pitchei** agent — [`.opencode/agents/pitchei.md`](.opencode/agents/pitchei.md).
+- Large changes are tested in beta using an isolated copy of the app files (`assets/beta/`), while the public site keeps loading `assets/*` — until the user explicitly approves. The process is documented in [`docs/agents/HATS.md`](docs/agents/HATS.md) (the `testing-beta` hat).
 
 ## Features
 
@@ -48,7 +48,9 @@ Every change is verified in **beta** first, never directly on the public site: `
 ## Structure
 
 ```
-index.html            single screen (RTL)
+index.html            entry page: redirects to welcome.html (or app.html when installed)
+welcome.html          landing page (RTL) — the default page at the site root
+app.html              the journal itself (RTL, single screen)
 assets/data.js        seed street list
 assets/store.js       storage: load, sanitize, persist, backup, export/import
 assets/app.js         filtering, rendering, events, statistics
@@ -57,7 +59,7 @@ assets/styles.css     styling (CSS variables, light/dark)
 assets/vendor/leaflet Leaflet 1.9.4, vendored locally (BSD-2-Clause) so the file works without a CDN
 serve.js              static dev server (no dependencies)
 tests/store.test.js   unit tests for the storage layer
-.opencode/agents/     the project's agents (shifu, mappy)
+.opencode/agents/     the project's agents (build, review, gabbai)
 ```
 
 ## Data model

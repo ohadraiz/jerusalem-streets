@@ -80,14 +80,14 @@
 **נתונים:** 2,424 רחובות · 95 שכונות · verify 37/37 · store 24/24 · smoke 84/84
 
 ### סטטוס סוכנים (Agent Context Authority)
-- **המעצב (tsibi):** STANDBY️ בחופש — סבב 059 הושלם (UI/UX + gamification: הישגים, יומן, היסטוריה, יעד יומי, שלד, תזכורת)
-- **הבודק (shifu):** STANDBY️ בחופשה — סבב 059 אין חוסמים; 057 חוסם אחד תוקן (checkMilestones batchMarkArea)
+- **המעצב (tsibi):** STANDBY בחופש — סבב 059 הושלם (UI/UX + gamification: הישגים, יומן, היסטוריה, יעד יומי, שלד, תזכורת)
+- **הבודק (shifu):** STANDBY בחופשה — סבב 059 אין חוסמים; 057 חוסם אחד תוקן (checkMilestones batchMarkArea)
 - **המעקב (kipi):** פעיל — מעקב הקפאות עדכני
 - **הראשי (main):** פעיל — אינטגרציה, BOARD/TASKS/TEAMS, פריסה
-- **המגשר (tsiri):** STANDBY️ בחופש — שרשרת אריחים יציבה, ניווט שכונות, LOD 12
-- **החוקר (mappy):** STANDBY️ בחופש — פיילוט 50 רחובות "הידעת?" הושלם (52 קבצים)
+- **המגשר (tsiri):** STANDBY בחופש — שרשרת אריחים יציבה, ניווט שכונות, LOD 12
+- **החוקר (mappy):** STANDBY בחופש — פיילוט 50 רחובות "הידעת?" הושלם (52 קבצים)
 - **המתעד (guli):** פעיל — guli.html, agent-status.json, state.json
-- **הפקח (inspector):** STANDBY️ בחופשה — tasks.html, tasks-data.json מעודכנים
+- **הפקח (inspector):** STANDBY בחופשה — tasks.html, tasks-data.json מעודכנים
 - **הצוות המובייל (moverilis/mobi/pitzi):** standby — M1 פורסם, M2 ממתין
 
 ### סבבים אחרונים — סגורים

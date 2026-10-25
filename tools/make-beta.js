@@ -2,12 +2,12 @@
 /**
  * יוצר את סביבת הבטא: beta.html + עותק מבודד של קובצי האפליקציה ב-assets/beta/.
  *
- * beta.html נראה כמו index.html אבל טוען את קובצי הבטא (assets/beta/*) במקום את
+ * beta.html נראה כמו app.html אבל טוען את קובצי הבטא (assets/beta/*) במקום את
  * קובצי האתר הציבורי. כך אפשר לבדוק שינוי גדול בלי לגעת באתר החי: האתר הציבורי
  * ממשיך לטעון את assets/* כפי שפורסמו.
  *
  * שימוש:
- *   node tools/make-beta.js                    # בונה מ-index.html ומעותק את קובצי העבודה
+ *   node tools/make-beta.js                    # בונה מ-app.html ומעותק את קובצי העבודה
  *   node tools/make-beta.js --source=<file>    # בונה HTML מקובץ מקור אחר (העותקים מהעץ)
  *   node tools/make-beta.js --check            # נכשל אם beta.html או העותקים לא מעודכנים
  *
@@ -19,7 +19,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const SOURCE = path.join(ROOT, "index.html");
+const SOURCE = path.join(ROOT, "app.html");
 const TARGET = path.join(ROOT, "beta.html");
 const ASSETS = path.join(ROOT, "assets");
 const BETA_ASSETS = path.join(ASSETS, "beta");
@@ -59,28 +59,28 @@ function argValue(prefix) {
 function build(source) {
   let output = source;
 
-  if (!/<title>[\s\S]*?<\/title>/.test(output)) fail("לא נמצא <title> ב-index.html");
+  if (!/<title>[\s\S]*?<\/title>/.test(output)) fail("לא נמצא <title> ב-app.html");
   output = output.replace(/<title>[\s\S]*?<\/title>/, "<title>" + BETA_TITLE + "</title>");
 
-  if (!output.includes('<meta charset="utf-8" />')) fail("לא נמצא meta charset ב-index.html");
+  if (!output.includes('<meta charset="utf-8" />')) fail("לא נמצא meta charset ב-app.html");
   output = output.replace('<meta charset="utf-8" />', BETA_HEAD);
 
   const manifestRemoved = output.replace(/\s*<link rel="manifest"[^>]*\/?>/i, "");
-  if (manifestRemoved === output) fail("לא נמצא link rel=manifest ב-index.html");
+  if (manifestRemoved === output) fail("לא נמצא link rel=manifest ב-app.html");
   output = manifestRemoved;
 
   const pwaScriptRegex = /<script src="assets\/pwa\.js" defer><\/script>/;
-  if (!pwaScriptRegex.test(output)) fail("לא נמצאה שורת pwa.js ב-index.html");
+  if (!pwaScriptRegex.test(output)) fail("לא נמצאה שורת pwa.js ב-app.html");
   output = output.replace(pwaScriptRegex, "");
 
   COPIES.forEach((name) => {
     const from = "assets/" + name;
-    if (!output.includes(from)) fail("index.html אינו טוען את " + from);
+    if (!output.includes(from)) fail("app.html אינו טוען את " + from);
     output = output.split(from).join("assets/beta/" + name);
   });
 
-  if (!output.includes("</body>")) fail("לא נמצא </body> ב-index.html");
-  if (output.includes("assets/beta-tools.js")) fail("index.html כבר טוען את beta-tools.js — בדוק את המקור");
+  if (!output.includes("</body>")) fail("לא נמצא </body> ב-app.html");
+  if (output.includes("assets/beta-tools.js")) fail("app.html כבר טוען את beta-tools.js — בדוק את המקור");
   output = output.replace("</body>", BETA_SCRIPT + "  </body>");
 
   return output;
