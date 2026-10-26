@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ecee2aa742",
+  "street_name": "טיכו",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רחוב טיכו קרוי על שם ד״ר אברהם אלברט טיכו, רופא העיניים שעלה ארצה ב-1912; זהו הרחוב הקטן המוביל אל ביתו, שאליו העביר את המרפאה לאחר ההתקפה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אברהם אלברט טיכו",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%90%D7%9C%D7%91%D7%A8%D7%98_%D7%98%D7%99%D7%9B%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

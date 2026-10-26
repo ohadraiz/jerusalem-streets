@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ee94a36391",
+  "street_name": "טובלר",
+  "area": "שייח' ג'ראח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רחוב טובלר בשייח׳ ג׳ראח קרוי על שם טיטוס טובלר, רופא וחוקר ארץ ישראל ולשונאי שווייצרי בן המאה ה-19.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — טיטוס טובלר",
+      "url": "https://he.wikipedia.org/wiki/%D7%98%D7%99%D7%98%D7%95%D7%A1_%D7%98%D7%95%D7%91%D7%9C%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

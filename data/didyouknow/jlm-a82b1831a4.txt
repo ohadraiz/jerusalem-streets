@@ -1,0 +1,9 @@
+street_id: jlm-a82b1831a4
+street_name: החלמית
+area: עיר גנים
+fact: רחוב החלמית בעיר גנים קרוי על שם פרח. מרבית רחובות השכונה נושאים שמות פרחים — הנורית, הצלף, הכרכום והשלכת.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

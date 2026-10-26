@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T15:45:05.297Z",
+  "accessDate": "2026-10-22",
+  "list": "data/research/batch-1500.json",
+  "summary": {
+    "total": 9,
+    "approved": 9,
+    "rejected": 0,
+    "high": 0,
+    "medium": 9,
+    "low": 0,
+    "contentSources": 9
+  },
+  "streets": [
+    {
+      "street_id": "jlm-60b16e1692",
+      "street_name": "נחמה",
+      "status": "approved",
+      "fact": "רחוב נחמה בחומת שמואל קרוי על שמה של נחמה ליבוביץ, פרשנית תנ״ך וכלת פרס ישראל (1956). על שמה נקראו רחובות גם באשקלון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9E%D7%94_%D7%9C%D7%99%D7%91%D7%95%D7%91%D7%99%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1da9dec323",
+      "street_name": "טוניק",
+      "status": "approved",
+      "fact": "רחוב טוניק בפסגת זאב קרוי על שם יצחק טוניק, מבקר המדינה השלישי (1982–1987). השם ניתן ב-1992.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%98%D7%95%D7%A0%D7%99%D7%A7_(%D7%9E%D7%91%D7%A7%D7%A8_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94)"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ecee2aa742",
+      "street_name": "טיכו",
+      "status": "approved",
+      "fact": "רחוב טיכו קרוי על שם ד״ר אברהם אלברט טיכו, רופא העיניים שעלה ארצה ב-1912; זהו הרחוב הקטן המוביל אל ביתו, שאליו העביר את המרפאה לאחר ההתקפה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%90%D7%9C%D7%91%D7%A8%D7%98_%D7%98%D7%99%D7%9B%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a5d941fc9fe6",
+      "street_name": "יערי",
+      "status": "approved",
+      "fact": "רחוב יערי בגילה קרוי על שם אברהם יערי, חוקר הספרות העברית וחתן פרס ביאליק. השם ניתן ב-14 באוקטובר 1979, 13 שנה לאחר מותו.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%99%D7%A2%D7%A8%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f9ae05ebcd",
+      "street_name": "קרליבך",
+      "status": "approved",
+      "fact": "רחוב קרליבך קרוי על שם הרב יוסף צבי קרליבך, רבה של המבורג. על שמו נקרא רחוב בתלפיות שבירושלים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A6%D7%91%D7%99_%D7%A7%D7%A8%D7%9C%D7%99%D7%91%D7%9A"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ee94a36391",
+      "street_name": "טובלר",
+      "status": "approved",
+      "fact": "רחוב טובלר בשייח׳ ג׳ראח קרוי על שם טיטוס טובלר, רופא וחוקר ארץ ישראל ולשונאי שווייצרי בן המאה ה-19.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%98%D7%99%D7%98%D7%95%D7%A1_%D7%98%D7%95%D7%91%D7%9C%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-04aa2fde2c",
+      "street_name": "לבוש מרדכי",
+      "status": "approved",
+      "fact": "רחוב לבוש מרדכי בגאולה קרוי על שם ספרו של הרב משה מרדכי אפשטיין, מראשי ישיבת חברון — והוא שוכן סמוך למבנה הישן של הישיבה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%90%D7%A4%D7%A9%D7%98%D7%99%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8deee3a06b",
+      "street_name": "מל\"ל",
+      "status": "approved",
+      "fact": "רחוב מל״ל קרוי על שמו של משה לייב ליליינבלום (מל״ל בראשי תיבות). על שמו נקראו רחובות גם בחיפה וברמת גן.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%9C%D7%99%D7%9C%D7%99%D7%99%D7%A0%D7%91%D7%9C%D7%95%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3f71adc690",
+      "street_name": "מסריק",
+      "status": "approved",
+      "fact": "רחוב מסריק קרוי על שמו של טומאש מסריק, נשיאה הראשון של צ׳כוסלובקיה. על שמו נקראו גם כפר מסריק וכיכר מסריק.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%98%D7%95%D7%9E%D7%90%D7%A9_%D7%9E%D7%A1%D7%A8%D7%99%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    }
+  ]
+}
