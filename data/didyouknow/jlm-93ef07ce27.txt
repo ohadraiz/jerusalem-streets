@@ -1,0 +1,9 @@
+street_id: jlm-93ef07ce27
+street_name: המצור
+area: סן סימון
+fact: רחוב המצור בקטמון הוא אחד מרחובות השכונה הקרויים על שם חילות ואירועים ממלחמת העצמאות — מן המשוריינים והשיירות ועד המצור עצמו, לצד שמות יישובי הנגב היהודיים.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-68ae0479cc
+street_name: בעל השאילתות
+area: גבעת שאול
+fact: רחוב בעל השאילתות נמנה עם מקבץ רחובות בגבעת שאול הקרויים על שם גאונים — רב שרירא גאון, רב האי גאון, בעל השאילתות ורב עמרם גאון.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

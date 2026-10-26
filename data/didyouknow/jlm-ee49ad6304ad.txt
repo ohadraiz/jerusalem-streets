@@ -1,0 +1,9 @@
+street_id: jlm-ee49ad6304ad
+street_name: מעלות המחנך
+area: בית הכרם
+fact: רחוב מעלות המחנך בבית הכרם קרוי על שם מקצוע ההוראה, וכינויו מעיד על מדרגות — כמו מעלה קדיש סלומון הסמוך.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

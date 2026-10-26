@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5e71493f95cb",
+  "street_name": "כנרת",
+  "area": "מקור ברוך",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רחוב כנרת במקור ברוך נמנה עם קבוצת רחובות הקרויים על שם מקומות בצפון — ארבל, כפר נחום, פקיעין ומירון.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמות רחובות בירושלים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

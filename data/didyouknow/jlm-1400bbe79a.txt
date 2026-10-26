@@ -1,0 +1,9 @@
+street_id: jlm-1400bbe79a
+street_name: הסדנא
+area: תלפיות
+fact: רחוב הסדנא באזור התעשייה תלפיות קרוי על שם בית מלאכה. רחובות האזור מוקדשים לתעשיות ולבעלי מלאכה — האומן, בית היוצר, חרשי הברזל והרכב.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

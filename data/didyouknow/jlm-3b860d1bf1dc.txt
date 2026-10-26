@@ -1,0 +1,9 @@
+street_id: jlm-3b860d1bf1dc
+street_name: הצבעוני
+area: גילה
+fact: רחוב הצבעוני בגילה קרוי על שם פרח. חלק מרחובות השכונה נושאים שמות פרחים ובשמים — הסיגלית, הרוזמרין והאפרסמון.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

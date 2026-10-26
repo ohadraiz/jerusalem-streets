@@ -1,0 +1,9 @@
+street_id: jlm-6a5d3cfee3
+street_name: קדושי בבל
+area: תלפיות מזרח
+fact: רחוב קדושי בבל בתלפיות קרוי על שם קבוצת קדושים. בעיר יש רחובות הקרויים על שם קבוצות — אנוסי משהד, קדושי בבל וקדושי סלוניקי.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

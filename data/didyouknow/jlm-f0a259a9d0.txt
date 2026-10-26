@@ -1,0 +1,9 @@
+street_id: jlm-f0a259a9d0
+street_name: הצייר יוסי
+area: רמת דניה
+fact: רחוב הצייר יוסי ברמת דניה נושא תואר ומקצוע בשמו — אחד הכינויים המיוחדים שאימצה ירושלים, לצד ד״ר קובובי והצלם רחמים.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

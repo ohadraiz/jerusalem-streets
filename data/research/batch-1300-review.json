@@ -1,0 +1,589 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T15:08:10.686Z",
+  "accessDate": "2026-10-22",
+  "list": "data/research/batch-1300.json",
+  "summary": {
+    "total": 44,
+    "approved": 44,
+    "rejected": 0,
+    "high": 0,
+    "medium": 44,
+    "low": 0,
+    "contentSources": 44
+  },
+  "streets": [
+    {
+      "street_id": "jlm-93ef07ce27",
+      "street_name": "המצור",
+      "status": "approved",
+      "fact": "רחוב המצור בקטמון הוא אחד מרחובות השכונה הקרויים על שם חילות ואירועים ממלחמת העצמאות — מן המשוריינים והשיירות ועד המצור עצמו, לצד שמות יישובי הנגב היהודיים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-54ee3d6525",
+      "street_name": "המשוריינים",
+      "status": "approved",
+      "fact": "רחוב המשוריינים מנציח את שיירות המשוריינים של מלחמת העצמאות. רחובות קטמון קרויים על שם חילות ואירועים במלחמה, ובהם גם השיירות והמצור.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-73174fdaa4",
+      "street_name": "השיירות",
+      "status": "approved",
+      "fact": "רחוב השיירות הוא חלק מקבוצת הרחובות של קטמון הנושאים שמות חילות ואירועים ממלחמת העצמאות, מן המשוריינים ועד המצור.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-39900f8cc3",
+      "street_name": "הנבל",
+      "status": "approved",
+      "fact": "רחוב הנבל ברובע היהודי נושא שם של כלי נגינה מן המקדש. רבים מרחובות הרובע קרויים על שם מושגי המקדש — הביכורים, העומר, העוגב והחצוצרות.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ee7b4243e8",
+      "street_name": "העומר",
+      "status": "approved",
+      "fact": "רחוב העומר ברובע היהודי קרוי על שם מנחת העומר. רחובות הרובע נושאים שמות הקשורים לבית המקדש — הביכורים, הנבל, העוגב והחצוצרות.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-34a740eff5",
+      "street_name": "הנחושת",
+      "status": "approved",
+      "fact": "רחוב הנחושת באזור התעשייה עטרות קרוי על שם חומר גלם. רחובות האזור נושאים שמות מתחום הייצור — מפעלות, היוזמה, התוצרת והמדפיסים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3b58729f0d",
+      "street_name": "הנמר",
+      "status": "approved",
+      "fact": "רחוב הנמר במלחה קרוי על שם בעל חיים. רוב רחובות השכונה נושאים שמות בעלי חיים — הנמר, השועל והיען — בגלל גן החיות התנ״כי הסמוך.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-805d48e5a6",
+      "street_name": "השועל",
+      "status": "approved",
+      "fact": "רחוב השועל במלחה קרוי על שם בעל חיים. רוב רחובות השכונה נושאים שמות בעלי חיים — הנמר, השועל והיען — משום שגן החיות התנ״כי שוכן בסמוך.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1400bbe79a",
+      "street_name": "הסדנא",
+      "status": "approved",
+      "fact": "רחוב הסדנא באזור התעשייה תלפיות קרוי על שם בית מלאכה. רחובות האזור מוקדשים לתעשיות ולבעלי מלאכה — האומן, בית היוצר, חרשי הברזל והרכב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cea4b8d8df",
+      "street_name": "האומן",
+      "status": "approved",
+      "fact": "רחוב האומן בתלפיות קרוי על שם בעל המלאכה. באזור התעשייה שמות הרחובות מוקדשים למקצועות — התעשייה, בית היוצר, חרשי הברזל והסדנא.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-045d4a2ca0",
+      "street_name": "הסתת",
+      "status": "approved",
+      "fact": "רחוב הסתת בבית הכרם קרוי על שם מקצוע סיתות האבן. בשכונה קבוצת רחובות על שם בעלי מלאכה — הבנאי, הסוללים, הסתת והחוצב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-6d4b062e7f84",
+      "street_name": "הסיגלית",
+      "status": "approved",
+      "fact": "רחוב הסיגלית בגילה קרוי על שם פרח. חלק מרחובות השכונה נושאים שמות פרחים ובשמים — הצבעוני, הרוזמרין והאפרסמון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3b860d1bf1dc",
+      "street_name": "הצבעוני",
+      "status": "approved",
+      "fact": "רחוב הצבעוני בגילה קרוי על שם פרח. חלק מרחובות השכונה נושאים שמות פרחים ובשמים — הסיגלית, הרוזמרין והאפרסמון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-39fd61aa3b23",
+      "street_name": "הרוזמרין",
+      "status": "approved",
+      "fact": "רחוב הרוזמרין בגילה קרוי על שם צמח תבלין. חלק מרחובות השכונה נושאים שמות פרחים ובשמים — הסיגלית, הצבעוני והאפרסמון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e585f95754",
+      "street_name": "השליו",
+      "status": "approved",
+      "fact": "רחוב השליו בגילה קרוי על שם עוף. בשכונה רחובות על שם בעלי חיים, בעיקר עופות — השליו, נשר, החסידה וליש.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3600d555c5",
+      "street_name": "הנורית",
+      "status": "approved",
+      "fact": "רחוב הנורית בעיר גנים קרוי על שם פרח. מרבית רחובות השכונה נושאים שמות פרחים — החלמית, הצלף, הכרכום והשלכת.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b9af354323",
+      "street_name": "הצלף",
+      "status": "approved",
+      "fact": "רחוב הצלף בעיר גנים קרוי על שם שיח בר. מרבית רחובות השכונה נושאים שמות פרחים — הנורית, החלמית, הכרכום והשלכת.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-086d418411",
+      "street_name": "השלכת",
+      "status": "approved",
+      "fact": "רחוב השלכת בעיר גנים קרוי על שם עונת השלכת. מרבית רחובות השכונה נושאים שמות פרחים — החלמית, הנורית, הצלף והכרכום.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-43571348b2",
+      "street_name": "התפוח",
+      "status": "approved",
+      "fact": "רחוב התפוח קרוי על שם עץ פרי. הוא נמנה עם קבוצת רחובות הנושאים שמות עצים — הדקל, התפוח, השזיף, האשכול וארבעת המינים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5821545997",
+      "street_name": "השזיף",
+      "status": "approved",
+      "fact": "רחוב השזיף קרוי על שם עץ פרי. הוא נמנה עם קבוצת רחובות הנושאים שמות עצים — הדקל, התפוח, השזיף, האשכול וארבעת המינים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8404e038f0",
+      "street_name": "הקבלן",
+      "status": "approved",
+      "fact": "רחוב הקבלן בהר נוף קרוי על שם מקצוע הבנייה. בעיר יש רחובות נוספים מתחום זה, ובהם האדריכל והארכיטקט ברוממה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-89e5fb1d7d",
+      "street_name": "בית הדפוס",
+      "status": "approved",
+      "fact": "רחוב בית הדפוס קרוי על שם מקצוע ההדפסה. לצידו הונצח גם האופה — שמות של בתי מלאכה ובעלי מקצוע בירושלים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4e3d27ea31",
+      "street_name": "האופה",
+      "status": "approved",
+      "fact": "רחוב האופה קרוי על שם מקצוע האפייה, ולצידו רחוב בית הדפוס. השניים מנציחים בעלי מלאכה ובתי תעשייה קטנים בעיר.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-68ae0479cc",
+      "street_name": "בעל השאילתות",
+      "status": "approved",
+      "fact": "רחוב בעל השאילתות נמנה עם מקבץ רחובות בגבעת שאול הקרויים על שם גאונים — רב שרירא גאון, רב האי גאון, בעל השאילתות ורב עמרם גאון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cefd5f1a95",
+      "street_name": "רב שרירא גאון",
+      "status": "approved",
+      "fact": "רחוב רב שרירא גאון קרוי על שם ראש ישיבת פומבדיתא. בגבעת שאול מקבץ רחובות על שם גאונים — רב שרירא גאון, רב האי גאון, בעל השאילתות ורב עמרם גאון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9e70f95726",
+      "street_name": "גדוד מכמש",
+      "status": "approved",
+      "fact": "רחוב גדוד מכמש בפסגת זאב מרכז קרוי על שם גדוד שלחם במלחמת ששת הימים. רוב רחובות השכונה נושאים שמות מפקדים, חילות ויחידות — משה דיין, עוזי נרקיס וחיל האוויר.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b5d027e785",
+      "street_name": "האדריכל",
+      "status": "approved",
+      "fact": "רחוב האדריכל ברוממה קרוי על שם מקצוע האדריכלות, לצד רחוב הארכיטקט — שמות מתחום הבנייה והתכנון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-523d48d4df3b",
+      "street_name": "גזר",
+      "status": "approved",
+      "fact": "רחוב גזר בנחלאות קרוי על שם האתר המקראי. רוב רחובות השכונה נושאים שמות אזורים, נחלים וערים בארץ — לוד, שפרעם, טבריה, שומרון ויזרעאל.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a3d7395dfc",
+      "street_name": "יזרעאל",
+      "status": "approved",
+      "fact": "רחוב יזרעאל בנחלאות קרוי על שם העמק. רוב רחובות השכונה נושאים שמות אזורים, נחלים וערים בארץ — לוד, שפרעם, טבריה, גזר ושומרון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3baa6c28b3",
+      "street_name": "הפרטיזנים",
+      "status": "approved",
+      "fact": "רחוב הפרטיזנים בגבעה הצרפתית מנציח את הלוחמים היהודים בשואה. רחובות השכונה קרויים על שם לוחמי המחתרות — לוחמי הגטאות, ההגנה, האצ״ל והלח״י.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f0a259a9d0",
+      "street_name": "הצייר יוסי",
+      "status": "approved",
+      "fact": "רחוב הצייר יוסי ברמת דניה נושא תואר ומקצוע בשמו — אחד הכינויים המיוחדים שאימצה ירושלים, לצד ד״ר קובובי והצלם רחמים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-00e69fb6c0",
+      "street_name": "קובובי",
+      "status": "approved",
+      "fact": "רחוב קובובי ברמת דניה נקרא בתואר מקצועי, ד״ר — מדפוס נדיר של שמות רחובות בעיר, לצד הצייר יוסי והצלם רחמים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5e71493f95cb",
+      "street_name": "כנרת",
+      "status": "approved",
+      "fact": "רחוב כנרת במקור ברוך נמנה עם קבוצת רחובות הקרויים על שם מקומות בצפון — ארבל, כפר נחום, פקיעין ומירון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-efb251da07",
+      "street_name": "נתיב המזלות",
+      "status": "approved",
+      "fact": "רחוב נתיב המזלות הוא הרחוב הראשי של קבוצת רחובות בפסגת זאב הקרויים על שם מזלות גלגל המזלות — מזל אריה, מזל טלה ועוד.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b63f4ecb07",
+      "street_name": "מעגלות הרב פרדס",
+      "status": "approved",
+      "fact": "רחוב מעגלות הרב פרדס קרוי על שם צורתו — מעגל. בעיר שלושה רחובות ששמם נגזר מצורתם, ובהם מעגל בית המדרש ומעגלי הרי״ם לוין.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ee49ad6304ad",
+      "street_name": "מעלות המחנך",
+      "status": "approved",
+      "fact": "רחוב מעלות המחנך בבית הכרם קרוי על שם מקצוע ההוראה, וכינויו מעיד על מדרגות — כמו מעלה קדיש סלומון הסמוך.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-956fcaf49b",
+      "street_name": "מפעלות",
+      "status": "approved",
+      "fact": "רחוב מפעלות באזור התעשייה עטרות קרוי על שם מושג תעשייתי. רחובות האזור נושאים שמות מתחום הייצור — היוזמה, התוצרת, הנחושת והמדפיסים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0e5ea1213c",
+      "street_name": "שמחת כהן",
+      "status": "approved",
+      "fact": "רחוב שמחת כהן בהר חומה קרוי על שם יום חג במנהג צפון־מערב אפריקה, שבו נהגו לחגוג את שמחת הכהן.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5f4244a436",
+      "street_name": "תורה מציון",
+      "status": "approved",
+      "fact": "רחוב תורה מציון ברוממה קרוי על שם כתב עת עברי. רחובות השכונה נושאים שמות עיתונים וכתבי עת — הצבי, המאסף ותורה מציון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-76a2d144f0",
+      "street_name": "נחשון",
+      "status": "approved",
+      "fact": "רחוב נחשון בגבעת חנניה קרוי על שם נחשון בן עמינדב. באבו תור הרחובות נושאים שמות אישים ממשפחת דוד המלך — עובד, אביגיל, עשהאל, נעמי וישי.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d232618900",
+      "street_name": "עובד",
+      "status": "approved",
+      "fact": "רחוב עובד בגבעת חנניה קרוי על שם עובד, אבי ישי. רחובות השכונה נושאים שמות אישים ממשפחת דוד המלך — נחשון, עשהאל, נעמי ובת שבע.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-933c972f01",
+      "street_name": "שמעוני",
+      "status": "approved",
+      "fact": "רחוב שמעוני ברסקו קרוי על שם המשורר דוד שמעוני. בשכונה רחובות רבים על שם משוררים — טשרניחובסקי, עגנון ומרדכי טמקין.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-6a5d3cfee3",
+      "street_name": "קדושי בבל",
+      "status": "approved",
+      "fact": "רחוב קדושי בבל בתלפיות קרוי על שם קבוצת קדושים. בעיר יש רחובות הקרויים על שם קבוצות — אנוסי משהד, קדושי בבל וקדושי סלוניקי.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b862cb4f43",
+      "street_name": "תירוש",
+      "status": "approved",
+      "fact": "רחוב תירוש בגילה נמנה עם רחובות השכונה הנושאים שמות חקלאיים — דגן, תירוש ויצהר — לצד רחובות פרחים ובשמים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    }
+  ]
+}

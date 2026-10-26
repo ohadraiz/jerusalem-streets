@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b63f4ecb07",
+  "street_name": "מעגלות הרב פרדס",
+  "area": "נווה יעקב",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רחוב מעגלות הרב פרדס קרוי על שם צורתו — מעגל. בעיר שלושה רחובות ששמם נגזר מצורתם, ובהם מעגל בית המדרש ומעגלי הרי״ם לוין.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמות רחובות בירושלים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%AA_%D7%A8%D7%97%D7%95%D7%91%D7%95%D7%AA_%D7%91%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}
