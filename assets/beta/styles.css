@@ -987,24 +987,6 @@ summary,
   padding: 0.2rem 0.1rem;
 }
 
-/* לאחר התרחקות הפופאפ נשאר זמין לסימון, אך לא מכסה את המפה. */
-.map-popup--compact {
-  max-width: 14rem;
-  gap: 0.05rem;
-}
-
-.map-popup--compact .map-popup__area,
-.map-popup--compact .map-popup__find,
-.map-popup--compact .map-popup__dyk,
-.map-popup--compact .map-popup__details {
-  display: none;
-}
-
-.map-popup--compact .map-popup__toggle {
-  margin-top: 0.15rem;
-  padding-block: 0.25rem;
-}
-
 .map-popup__title {
   font-size: 1rem;
 }
@@ -2917,10 +2899,6 @@ body.dyk-modal-open {
   .map-popup__area,
   .map-popup__state {
     font-size: 0.76rem;
-  }
-
-  .map-popup--compact {
-    max-width: 11rem;
   }
 }
 

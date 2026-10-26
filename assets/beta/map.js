@@ -788,8 +788,9 @@
       star.dataset.rating = String(value);
       star.setAttribute("aria-label", "דירוג " + value + " מתוך 5");
       star.addEventListener("click", function () {
-        currentRating = value;
-        if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "rating", value);
+        currentRating = currentRating === value ? 0 : value;
+        var ok = API && typeof API.updateVisit === "function" && API.updateVisit(street.id, "rating", currentRating);
+        saved.textContent = ok ? "נשמר אוטומטית" : "לא ניתן לשמור כרגע";
         syncRating();
       });
       stars.appendChild(star);
@@ -804,7 +805,8 @@
     note.value = visit.note || "";
     note.setAttribute("aria-label", "הערה על " + street.name);
     note.addEventListener("input", function () {
-      if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "note", note.value);
+      var ok = API && typeof API.updateVisit === "function" && API.updateVisit(street.id, "note", note.value);
+      saved.textContent = ok ? "נשמר אוטומטית" : "לא ניתן לשמור כרגע";
     });
     noteLabel.appendChild(note);
     var done = document.createElement("button");
@@ -880,8 +882,12 @@
         reviewButton.hidden = !visited;
         if (visited && API && typeof API.getVisit === "function") {
           var visit = API.getVisit(street.id) || {};
+          var savedRating = Number(visit.rating) || 0;
+          reviewButton.textContent = savedRating
+            ? savedRating + " מתוך 5 — " + ratingDescription(savedRating)
+            : "דירוג והערה";
           noteInput.value = visit.note || "";
-          var rating = Number(visit.rating) || 0;
+          var rating = savedRating;
           ratingStatus.textContent = rating
             ? rating + " מתוך 5 — " + ratingDescription(rating)
             : "עדיין לא דירגתם";
@@ -940,7 +946,9 @@
         star.setAttribute("aria-label", "דירוג " + value + " מתוך 5");
         star.setAttribute("aria-pressed", "false");
         star.addEventListener("click", function () {
-          if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "rating", value);
+          var visit = API && typeof API.getVisit === "function" ? API.getVisit(street.id) : null;
+          var next = visit && Number(visit.rating) === value ? 0 : value;
+          if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "rating", next);
           syncPopupUI();
         });
         stars.push(star);
@@ -1194,6 +1202,21 @@
     return preferLonger && bestMain ? bestMain : best;
   }
 
+  /** תוויות בעברית לכפתור הסגירה של Leaflet (ברירת המחדל: "Close popup") */
+  function localizePopupChrome(popup, street) {
+    var element = popup && typeof popup.getElement === "function" ? popup.getElement() : null;
+    if (!element || !element.querySelector) return;
+
+    var close = element.querySelector(".leaflet-popup-close-button");
+    if (close) {
+      close.setAttribute("aria-label", "סגירת הכרטיס של " + street.name);
+      close.setAttribute("title", "סגירה");
+    }
+
+    var wrapper = element.querySelector(".leaflet-popup-content-wrapper");
+    if (wrapper) wrapper.setAttribute("aria-label", "כרטיס רחוב " + street.name);
+  }
+
   function openStreetPopup(street, latlng) {
     if (!map || !window.L) return;
 
@@ -1205,6 +1228,13 @@
       .setLatLng(latlng)
       .setContent(popupContent(street))
       .openOn(map);
+
+    localizePopupChrome(popup, street);
+
+    if (el.status) {
+      el.status.textContent = "נפתח כרטיס הרחוב " + street.name +
+        (street.area ? ", " + street.area : "") + ".";
+    }
 
     openPopupContext = {
       id: street.id,
@@ -1242,9 +1272,17 @@
   var hoverCheckAt = 0;
   var hoverInterval = 150;
 
+  /* רכיבי ממשק של המפה (כרטיס פתוח, פקדי זום, קרדיט) אינם חלק מלחיצת רחוב:
+     מניעת cursor של לחיצה מעליהם. */
+  function isMapChrome(event) {
+    var target = event && event.originalEvent ? event.originalEvent.target : null;
+    if (!target || typeof target.closest !== "function") return false;
+    return Boolean(target.closest(".leaflet-popup, .leaflet-control"));
+  }
+
   function onLeafletMouseMove(event) {
     if (!map || !el.canvas || usesCoarsePointer()) return;
-    if (map.dragging && typeof map.dragging.moving === "function" && map.dragging.moving()) {
+    if (isMapChrome(event) || (map.dragging && typeof map.dragging.moving === "function" && map.dragging.moving())) {
       el.canvas.style.cursor = "";
       return;
     }
