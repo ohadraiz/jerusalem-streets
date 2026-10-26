@@ -1,0 +1,9 @@
+street_id: jlm-17b231f4878d
+street_name: בית צור
+area: מחנה ישראל
+fact: בית צור, עיר עתיקה על הדרך מירושלים לחברון, הייתה בעלת חשיבות אסטרטגית ראשונה במעלה בימי מרד החשמונאים.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%A6%D7%95%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

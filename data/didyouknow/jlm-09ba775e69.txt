@@ -1,0 +1,9 @@
+street_id: jlm-09ba775e69
+street_name: אריה מקלף
+area: הר נוף
+fact: אריה לייב מקלף, ממייסדי מטולה ואביו של הרמטכ״ל מרדכי מקלף, נרצח במאורעות תרפ״ט — בביתו שבפתח תקווה היה הפטיפון היחיד במושבה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%94_%D7%9C%D7%99%D7%99%D7%91_%D7%9E%D7%A7%D7%9C%D7%A3
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

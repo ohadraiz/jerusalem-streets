@@ -1,0 +1,9 @@
+street_id: jlm-1673e53720
+street_name: יעקב רז
+area: תלפיות מזרח
+fact: יעקב רז, פרופסור לתרבות יפן, הוא גם מתרגם כתבי זן ומשורר הייקו בעברית.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A8%D7%96
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

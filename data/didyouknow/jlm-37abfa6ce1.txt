@@ -1,0 +1,9 @@
+street_id: jlm-37abfa6ce1
+street_name: שפע חיים
+area: קרית צאנז
+fact: הרב יקותיאל יהודה הלברשטאם, האדמו״ר מצאנז־קלויזנבורג, ייסד את בית החולים לניאדו בנתניה בעקבות נדר שנדר בשואה — להציל יהודים אם יינצל.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A7%D7%95%D7%AA%D7%99%D7%90%D7%9C_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%90%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

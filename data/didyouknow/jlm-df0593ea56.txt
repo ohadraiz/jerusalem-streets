@@ -1,0 +1,9 @@
+street_id: jlm-df0593ea56
+street_name: שמעון רוקח
+area: בית ישראל
+fact: שמעון רוקח, נכדו של ישראל ב״ק, היה בין 48 מייסדי נווה צדק ב-1887 — והקים את בית החולים היהודי הראשון ביפו.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%A8%D7%95%D7%A7%D7%97
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

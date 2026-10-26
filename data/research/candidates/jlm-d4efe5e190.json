@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d4efe5e190",
+  "street_name": "סלמה לגרלף",
+  "area": "רסקו (גבעת הוורדים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "סלמה לגרלף, האישה הראשונה שזכתה בנובל לספרות, כתבה את ׳ירושלים׳ בעקבות ביקורה בארץ ב-1900 — וב-1940 סייעה להציל את נלי זק״ש.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — סלמה לגרלף",
+      "url": "https://he.wikipedia.org/wiki/%D7%A1%D7%9C%D7%9E%D7%94_%D7%9C%D7%92%D7%A8%D7%9C%D7%A3",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

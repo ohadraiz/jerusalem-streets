@@ -1,0 +1,9 @@
+street_id: jlm-d6ee604ed1
+street_name: משה קול
+area: רמת בית הכרם
+fact: משה קול, מחותמי מגילת העצמאות, היה ממנהיגי תנועת הנוער הציוני — וב-1946 נפתח בפריז הכינוס האירופי הראשון שלה לאחר השואה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A7%D7%95%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

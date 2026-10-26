@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d6378f0044",
+  "street_name": "יורי שטרן",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יורי שטרן, חבר הכנסת שעלה מברית המועצות, הקים ב-2004 את ׳שדולת בעלי הברית הנוצריים׳ — לחיבור בין הכנסת למנהיגים נוצריים בעולם.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יורי שטרן",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%99_%D7%A9%D7%98%D7%A8%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

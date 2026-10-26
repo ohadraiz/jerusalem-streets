@@ -1,0 +1,9 @@
+street_id: jlm-cc56dfae4f11
+street_name: חיים ולירו
+area: אבו בסל (שערי ירושלים)
+fact: חיים ולירו ייסד ב-1848 עם שותפים את בנק ולירו ושות׳ — הבנק העברי הראשון, שפעל בירושלים.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%95%D7%9C%D7%99%D7%A8%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

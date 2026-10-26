@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ac5c28ea2a",
+  "street_name": "נחום שדמי",
+  "area": "מחנה אלנבי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "נחום שדמי, מבכירי ההגנה ואלוף־משנה בצה״ל, כיהן כנשיא בית הדין הצבאי לערעורים בשנים 1954–1958.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נחום שדמי",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%A9%D7%93%D7%9E%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

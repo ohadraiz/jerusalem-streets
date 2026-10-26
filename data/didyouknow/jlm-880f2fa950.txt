@@ -1,0 +1,9 @@
+street_id: jlm-880f2fa950
+street_name: משה שור
+area: רמות ב'
+fact: משה שור, היסטוריון וסנאטור יהודי בפולין, פרסם ב-1896 מחקר על דון יוסף נשיא — על יסוד תעודות מארכיון לבוב.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A9%D7%95%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

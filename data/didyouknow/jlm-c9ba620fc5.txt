@@ -1,0 +1,9 @@
+street_id: jlm-c9ba620fc5
+street_name: רוברטו בקי
+area: הר נוף
+fact: רוברטו בקי ייסד את הלשכה המרכזית לסטטיסטיקה ועמד בראשה מ-1948 עד 1971 — והיה מיוזמי מפקד האוכלוסין הראשון במדינה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%91%D7%A8%D7%98%D7%95_%D7%91%D7%A7%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

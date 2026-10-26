@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-348925444d",
+  "street_name": "יוסף חכמי",
+  "area": "בית וגן",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יוסף חכמי, מבכירי הבנקאות בארץ, היה עם משה חזן האחראי על קו האוטובוס הראשון משער יפו לרוממה — כשהעגלות הגיעו רק עד מחנה יהודה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסף חכמי",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%9B%D7%9E%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

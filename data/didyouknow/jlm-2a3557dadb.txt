@@ -1,0 +1,9 @@
+street_id: jlm-2a3557dadb
+street_name: דב בר בורוכוב
+area: קרית היובל
+fact: דב בר בורוכוב, מאבות הציונות הסוציאליסטית, ניסח את ׳הפלטפורמה שלנו׳ — שלימים הייתה מקווי היסוד של מפא״י; ב-1904 נעצר לראשונה בידי הבולשת הצארית.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%91_%D7%91%D7%A8_%D7%91%D7%95%D7%A8%D7%95%D7%9B%D7%95%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

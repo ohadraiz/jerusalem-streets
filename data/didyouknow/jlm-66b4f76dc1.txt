@@ -1,0 +1,9 @@
+street_id: jlm-66b4f76dc1
+street_name: קורא הדורות
+area: ארנונה
+fact: ספרו של רבי דוד קונפורטי, ׳קורא הדורות׳, נדפס לראשונה בוונציה ב-1746 — במהדורה משובשת ומלאת טעויות.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%A7%D7%95%D7%A0%D7%A4%D7%95%D7%A8%D7%98%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

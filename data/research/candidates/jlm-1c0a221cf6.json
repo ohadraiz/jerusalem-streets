@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1c0a221cf6",
+  "street_name": "די זהב",
+  "area": "רמת אשכול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "די זהב היה מושב שיתופי שהקימו 13 צעירים בסיני ב-1971 — והוא פונה ב-1982 עם החזרת סיני למצרים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — די זהב",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%99_%D7%96%D7%94%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

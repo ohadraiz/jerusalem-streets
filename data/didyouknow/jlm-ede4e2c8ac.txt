@@ -1,0 +1,9 @@
+street_id: jlm-ede4e2c8ac
+street_name: צבי לבנון
+area: פסגת זאב מערב
+fact: צבי לבנון, לימים מפקד פיקוד הנח״ל, נמנה עם ׳גיוס הילדים׳ — ילידי 1931 שגויסו לצה״ל בכיתה י״א במלחמת העצמאות.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%9C%D7%91%D7%A0%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

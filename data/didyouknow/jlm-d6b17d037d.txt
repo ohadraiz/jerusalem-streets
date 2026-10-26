@@ -1,0 +1,9 @@
+street_id: jlm-d6b17d037d
+street_name: מרדכי נרקיס
+area: שערי חסד
+fact: מרדכי נרקיס, חוקר אמנות ואוצר, עברת את שמו מפוטאש לנרקיס — ומשנת 1925 ניהל את בית הנכות בצלאל.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A0%D7%A8%D7%A7%D7%99%D7%A1
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

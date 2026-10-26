@@ -1,0 +1,9 @@
+street_id: jlm-64044a5262
+street_name: ראובן שרי
+area: רמות
+fact: ראובן שרי, סגן ראש עיריית ירושלים, כיהן מ-1962 גם כנציב שירות המדינה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%95%D7%91%D7%9F_%D7%A9%D7%A8%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

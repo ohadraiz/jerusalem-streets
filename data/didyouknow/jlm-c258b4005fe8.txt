@@ -1,0 +1,9 @@
+street_id: jlm-c258b4005fe8
+street_name: אברהם פרנקו
+area: קרית שמואל
+fact: אברהם פרנקו, ממפעילי היישוב היהודי בחברון ומזכיר עיריית ירושלים, נשלח ב-1920 בידי יוסף לוריא לפתוח בית ספר לילדי השומרונים בשכם.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A4%D7%A8%D7%A0%D7%A7%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

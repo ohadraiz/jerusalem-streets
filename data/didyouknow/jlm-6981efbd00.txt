@@ -1,0 +1,9 @@
+street_id: jlm-6981efbd00
+street_name: גדעון
+area: בקעה
+fact: גדעון, השופט החמישי, ניצח את מדין — אך אחרי מותו בנו אבימלך טבח את אחיו בשכם, והוקע במשל יותם.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%93%D7%A2%D7%95%D7%9F_%D7%91%D7%9F_%D7%99%D7%95%D7%90%D7%A9
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

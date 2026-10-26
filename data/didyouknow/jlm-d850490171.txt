@@ -1,0 +1,9 @@
+street_id: jlm-d850490171
+street_name: שמריהו לוין
+area: קרית היובל
+fact: שמריהו לוין, מראשי הציונים, נבחר לדומה הראשונה ב-1906 — ונענש במאסר לאחר שחתם עם יתר הצירים היהודים על מניפסט ויבורג.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A8%D7%99%D7%94%D7%95_%D7%9C%D7%95%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

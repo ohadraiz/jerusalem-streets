@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2294734ab0",
+  "street_name": "עקיבא אטינגר",
+  "area": "קרית היובל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עקיבא אטינגר, ממעצבי ההתיישבות, הציל ב-1913 את קופת חולים של פועלי יהודה מקריסה כשהקציב לה אשראי של 900 פרנק.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עקיבא אטינגר",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%A7%D7%99%D7%91%D7%90_%D7%90%D7%98%D7%99%D7%A0%D7%92%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

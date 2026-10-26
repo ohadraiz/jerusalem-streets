@@ -1,0 +1,9 @@
+street_id: jlm-80fb9e6cb0
+street_name: מח"ל
+area: שייח' ג'ראח
+fact: מח״ל — יותר מ-3,000 מתנדבים מחו״ל, כמעט כולם יהודים — איישו כמעט את כל מטוסי טייסת הקרב הראשונה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%97%22%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

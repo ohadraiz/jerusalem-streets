@@ -1,0 +1,9 @@
+street_id: jlm-d6378f0044
+street_name: יורי שטרן
+area: פסגת זאב מזרח
+fact: יורי שטרן, חבר הכנסת שעלה מברית המועצות, הקים ב-2004 את ׳שדולת בעלי הברית הנוצריים׳ — לחיבור בין הכנסת למנהיגים נוצריים בעולם.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%99_%D7%A9%D7%98%D7%A8%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

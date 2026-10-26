@@ -1,0 +1,9 @@
+street_id: jlm-c10dfe26bf
+street_name: מעלות דוד
+area: רסקו (גבעת הוורדים)
+fact: שכונת מעלות דוד, על רכס הר הזיתים, משתרעת על כ-11 דונם — והיא נחנכה מחדש ב-2011 לאחר שנים שבשטחה שכנה משטרת מחוז ש״י.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A2%D7%9C%D7%95%D7%AA_%D7%93%D7%95%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

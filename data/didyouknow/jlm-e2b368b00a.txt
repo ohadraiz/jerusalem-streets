@@ -1,0 +1,9 @@
+street_id: jlm-e2b368b00a
+street_name: רבי סעדיה גאון
+area: רחביה
+fact: רב סעדיה גאון פתח בגיל 23 במלחמה נגד הקראים — והיה הראשון שחיבר ספר שיטתי בפילוסופיה יהודית, ׳ספר האמונות והדעות׳.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91_%D7%A1%D7%A2%D7%93%D7%99%D7%94_%D7%92%D7%90%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-3008a4fa9483
+street_name: חצר פיינגולד
+area: מרכז העיר
+fact: שלמה פיינגולד, שהבית ברחוב יפו נקרא על שמו, פתח ב-1912 את הראינוע הראשון בארץ — והונצח בספרו של עגנון ׳תמול שלשום׳ בכינוי ׳המשומד׳.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A4%D7%99%D7%99%D7%A0%D7%92%D7%95%D7%9C%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

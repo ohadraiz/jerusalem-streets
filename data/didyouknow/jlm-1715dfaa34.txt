@@ -1,0 +1,9 @@
+street_id: jlm-1715dfaa34
+street_name: נחלת שמעון
+area: שייח' ג'ראח
+fact: שכונת נחלת שמעון הוקמה ב-1891; ב-13 באפריל 1948 נהרגו ליד השכונה הנטושה 78 מאנשי שיירת הדסה.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A9%D7%9E%D7%A2%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

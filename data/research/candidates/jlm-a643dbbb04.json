@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a643dbbb04",
+  "street_name": "זרובבל",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "זרובבל בן שאלתיאל, ראש הגולה, עמד בראש שיבת ציון — ובימיו נבנה בית המקדש השני, ב-516 לפנה״ס.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — זרובבל בן שאלתיאל",
+      "url": "https://he.wikipedia.org/wiki/%D7%96%D7%A8%D7%95%D7%91%D7%91%D7%9C_%D7%91%D7%9F_%D7%A9%D7%90%D7%9C%D7%AA%D7%99%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

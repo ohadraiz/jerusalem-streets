@@ -1,0 +1,9 @@
+street_id: jlm-85fabaa7fb
+street_name: הגאונים
+area: שערי חסד
+fact: תואר ׳גאון׳ ניתן לראשי ישיבות סורא ופומבדיתא ולנשיאי ישיבת ארץ ישראל — מסוף המאה ה-7 עד אמצע המאה ה-11.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%90%D7%95%D7%A0%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

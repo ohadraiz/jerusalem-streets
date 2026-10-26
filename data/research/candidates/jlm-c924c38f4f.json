@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c924c38f4f",
+  "street_name": "פ. צ. חיות",
+  "area": "נווה יעקב",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב צבי פרץ חיות היה מראשוני הרבנים שתמכו בציונות — והיושב ראש הראשון של הוועד הפועל הציוני, בשנים 1921–1925.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — צבי פרץ חיות",
+      "url": "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%A4%D7%A8%D7%A5_%D7%97%D7%99%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

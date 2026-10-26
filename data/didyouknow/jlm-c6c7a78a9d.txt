@@ -1,0 +1,9 @@
+street_id: jlm-c6c7a78a9d
+street_name: רבנו גרשום
+area: הבוכרים
+fact: רבנו גרשום, ׳מאור הגולה׳, כתב לאשתו כתובה המתוארכת ל-1013 — והיא נשמרת בספרייה הבודליאנית.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A0%D7%95_%D7%92%D7%A8%D7%A9%D7%95%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

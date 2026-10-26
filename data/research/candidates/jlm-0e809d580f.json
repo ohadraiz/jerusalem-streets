@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-0e809d580f",
+  "street_name": "פסח חברוני",
+  "area": "כפר שלמא - הכפר השוודי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "פסח חברוני, ראשון בני היישוב הישן שלמד מדעים בחו״ל, שמע מאיינשטיין: ׳נראה לי שהוא היחיד שירד לסוף דעתי׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פסח חברוני",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%A1%D7%97_%D7%97%D7%91%D7%A8%D7%95%D7%A0%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

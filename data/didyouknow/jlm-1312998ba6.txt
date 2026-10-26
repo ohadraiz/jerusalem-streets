@@ -1,0 +1,9 @@
+street_id: jlm-1312998ba6
+street_name: חיים ראובן קוברסקי
+area: נוף ציון
+fact: חיים קוברסקי, מנהל מחלקת החינוך של ירושלים, יזם ב-1961 את יריד הספרים הבינלאומי בירושלים ועמד בראשו כעשר שנים.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%A7%D7%95%D7%91%D7%A8%D7%A1%D7%A7%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

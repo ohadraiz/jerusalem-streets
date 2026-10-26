@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3674bac2b6",
+  "street_name": "נחלת צדוק",
+  "area": "שערי חסד",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שכונת נחלת צדוק נוסדה ב-1906 ביוזמת חברת יק״א, בניהולו של אלברט ענתבי — ונבנתה בעזרת כי״ח ורוטשילד.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נחלת צדוק",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%AA_%D7%A6%D7%93%D7%95%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

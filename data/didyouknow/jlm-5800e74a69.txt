@@ -1,0 +1,9 @@
+street_id: jlm-5800e74a69
+street_name: כפר נחום
+area: כרם אברהם
+fact: בכפר נחום נחשפה כנסייה מתומנת מהמאה ה-5, שנבנתה סביב מבנה מהמאה הראשונה — המזוהה במסורת כביתו של פטרוס.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%A4%D7%A8_%D7%A0%D7%97%D7%95%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

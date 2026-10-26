@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-17b231f4878d",
+  "street_name": "בית צור",
+  "area": "מחנה ישראל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בית צור, עיר עתיקה על הדרך מירושלים לחברון, הייתה בעלת חשיבות אסטרטגית ראשונה במעלה בימי מרד החשמונאים.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בית צור",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%A6%D7%95%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-849a01f0d6
+street_name: רבי חייא
+area: המושבה היוונית
+fact: רבי חייא עלה מבבל לארץ עם אשתו, תאומים, שתי בנות ושני אחיינים — ורבי שמח לקראתו וקרא עליו ׳מארץ מרחק איש עצתי׳.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%97%D7%99%D7%99%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

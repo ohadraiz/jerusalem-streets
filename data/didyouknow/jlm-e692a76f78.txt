@@ -1,0 +1,9 @@
+street_id: jlm-e692a76f78
+street_name: הלבנון
+area: נחלאות
+fact: ׳הלבנון׳, העיתון העברי הראשון בארץ, יצא בשנים 1863–1886 — בירושלים, פריז, מיינץ ולונדון.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%9C%D7%91%D7%A0%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

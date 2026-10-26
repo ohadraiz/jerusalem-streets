@@ -1,0 +1,9 @@
+street_id: jlm-957ce70ea7
+street_name: סיירת דוכיפת
+area: פסגת זאב מרכז
+fact: סיירת דוכיפת הוקמה ב-1966 בחטיבת הצנחנים; מפקדה השני היה אמנון ליפקין־שחק, שזכה בעיטור העוז על פיקודו בפעולת כראמה.
+source: https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%99%D7%A8%D7%AA_%D7%93%D7%95%D7%9B%D7%99%D7%A4%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-6b601f88b5
+street_name: כ"ט בנובמבר
+area: קרית שמואל
+fact: בכ״ט בנובמבר 1947 אימצה עצרת האו״ם את תוכנית החלוקה — וירושלים נקבעה כשטח בינלאומי נפרד.
+source: https://he.wikipedia.org/wiki/%D7%9B%22%D7%98_%D7%91%D7%A0%D7%95%D7%91%D7%9E%D7%91%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

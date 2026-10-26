@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c5c3b9cbde",
+  "street_name": "עבודת ישראל",
+  "area": "מאה שערים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ספרו של המגיד מקוז׳ניץ, ׳עבודת ישראל׳, נדפס לראשונה רק ב-1842 — 27 שנה לאחר פטירתו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עבודת ישראל",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%91%D7%95%D7%93%D7%AA_%D7%99%D7%A9%D7%A8%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

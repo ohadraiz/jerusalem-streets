@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2c1478422a",
+  "street_name": "יצחק שריון",
+  "area": "קרית שמואל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יצחק שריון, נציג הקהילה האשכנזית במועצת העירייה הראשונה, טיפל ב-1895 בעיזבון דודו בסך כחצי מיליון רובל — וסידר אותו לטובת מוסדות ירושלים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצחק שריון",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%A8%D7%99%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

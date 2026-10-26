@@ -4,7 +4,7 @@
   "area": "נחלת שבעה",
   "lat": 31.782372,
   "lng": 35.220624,
-  "researched_at": "2026-10-22",
+  "researched_at": "2026-10-26",
   "official": [
     {
       "code": 415,
@@ -44,10 +44,15 @@
     "nameOk": true,
     "url": "https://www.openstreetmap.org/way/30915580"
   },
-  "fact": null,
-  "fact_type": "related-place",
-  "confidence": "none",
+  "fact": "׳החבצלת׳, שיצאה בירושלים מ-1863, הייתה העיתון העברי הראשון בארץ שיצא לאורך יותר מארבעים שנה — ובצוות כותביו היה גם נפתלי הרץ אימבר, מחבר ׳התקווה׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
   "sources": [
+    {
+      "label": "ויקיפדיה העברית — חבצלת (כתב עת)",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%91%D7%A6%D7%9C%D7%AA_(%D7%9B%D7%AA%D7%91_%D7%A2%D7%AA)",
+      "kind": "content"
+    },
     {
       "label": "OpenStreetMap",
       "url": "https://www.openstreetmap.org/way/30915580",
@@ -60,7 +65,11 @@
     "מילות רחוב",
     "ישות ויקינתונים",
     "הערך \"חצר החבצלת\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
-    "קיים ברשימה הרשמית: סמל רחוב 415"
+    "קיים ברשימה הרשמית: סמל רחוב 415",
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
   ],
-  "needs_review": true
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
 }

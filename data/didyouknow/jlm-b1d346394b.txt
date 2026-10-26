@@ -1,0 +1,9 @@
+street_id: jlm-b1d346394b
+street_name: שלמה אלקבץ
+area: גבעת שאול
+fact: רבי שלמה אלקבץ, מחבר ׳לכה דודי׳, נפטר בצפת — וכבר בסידור שנדפס ב-1584 הוזכר שמו עם ברכת המתים.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%9C%D7%A7%D7%91%D7%A5
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

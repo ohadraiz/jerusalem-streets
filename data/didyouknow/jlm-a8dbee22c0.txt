@@ -1,0 +1,9 @@
+street_id: jlm-a8dbee22c0
+street_name: יצחק שולאל
+area: זכרון משה
+fact: רבי יצחק הכהן שולאל, נגיד יהודי מצרים וראש המטבעה הממלוכית, ברח ב-1524 ממגפה בירושלים לכפר סמוך — ושם נדבק בה ומת.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%94%D7%9B%D7%94%D7%9F_%D7%A9%D7%95%D7%9C%D7%90%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

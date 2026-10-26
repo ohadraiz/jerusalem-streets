@@ -1,0 +1,9 @@
+street_id: jlm-a774147464
+street_name: משה רחמילביץ'
+area: פסגת זאב מערב
+fact: משה רחמילביץ׳, מאבות הרפואה הפנימית בישראל, כיהן כדקאן בית הספר לרפואה של האוניברסיטה העברית בשנים 1958–1961.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A8%D7%97%D7%9E%D7%99%D7%9C%D7%91%D7%99%D7%A5'
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

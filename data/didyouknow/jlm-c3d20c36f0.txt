@@ -1,0 +1,9 @@
+street_id: jlm-c3d20c36f0
+street_name: חנינא שיף
+area: כרם אברהם
+fact: חנינא שיף שימש בקודש אצל ארבעה אדמו״רים של חסידות גור — תפקיד שהפך אותו לאחד מעסקני הציבור המוכרים בירושלים.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%99%D7%A0%D7%90_%D7%A9%D7%99%D7%A3
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

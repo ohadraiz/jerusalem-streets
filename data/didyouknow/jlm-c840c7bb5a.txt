@@ -1,0 +1,9 @@
+street_id: jlm-c840c7bb5a
+street_name: הטורים
+area: מקור ברוך
+fact: ׳ארבעה טורים׳, ספרו של רבי יעקב בן אשר, היה הספר העברי השני שנדפס — ב-1475 בפיובה די סאקו שבאיטליה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%91%D7%A2%D7%94_%D7%98%D7%95%D7%A8%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

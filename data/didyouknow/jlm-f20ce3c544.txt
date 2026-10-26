@@ -1,0 +1,9 @@
+street_id: jlm-f20ce3c544
+street_name: משכן שילה
+area: רמת בית הכרם
+fact: לפי המסורת, משכן שילה עמד בין 1258 ל-889 לפנה״ס — עד בניית בית המקדש הראשון.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%9B%D7%9F_%D7%A9%D7%99%D7%9C%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

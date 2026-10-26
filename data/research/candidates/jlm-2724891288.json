@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2724891288",
+  "street_name": "ראובן ארזי",
+  "area": "פסגת זאב מערב",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ראובן ארזי, חבר הכנסת, מת ב-1983 במהלך שביתת רופאים — ימים לאחר שסירבו לנתחו בגלל השביתה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ראובן ארזי",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%95%D7%91%D7%9F_%D7%90%D7%A8%D7%96%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

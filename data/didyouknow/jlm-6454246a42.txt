@@ -1,0 +1,9 @@
+street_id: jlm-6454246a42
+street_name: יוסף אלבו
+area: רמות
+fact: רבי יוסף אלבו, מחבר ׳ספר העיקרים׳, לא חלק על אמיתות עיקרי הרמב״ם — אלא על עצם קביעתם כעיקרים.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%90%D7%9C%D7%91%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

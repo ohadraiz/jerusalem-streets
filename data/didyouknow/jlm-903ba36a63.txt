@@ -1,0 +1,9 @@
+street_id: jlm-903ba36a63
+street_name: עזרת תורה
+area: תל ארזה
+fact: שכונת עזרת תורה קרויה על שם המוסד ׳עזרת תורה של אמריקה בישראל׳, שסייע לאברכים לרכוש דירות — והיא נוסדה בידי אברהם זאב טרגר.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%AA_%D7%AA%D7%95%D7%A8%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

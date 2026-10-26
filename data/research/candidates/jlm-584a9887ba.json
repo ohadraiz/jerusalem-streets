@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-584a9887ba",
+  "street_name": "האדמו\"ר מבעלז",
+  "area": "סנהדריה מורחבת",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חסידות בעלז, שעל אדמו״רה נקרא הרחוב, נוסדה בתחילת המאה ה-19 בגליציה — ומרכזה עבר לישראל בשנת 1944 לערך.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — האדמו\"ר מבעלז",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%93%D7%9E%D7%95%22%D7%A8_%D7%9E%D7%91%D7%A2%D7%9C%D7%96",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

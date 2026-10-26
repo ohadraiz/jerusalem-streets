@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bb47d8e8ac",
+  "street_name": "ישועות יעקב",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יעקב משולם אורנשטיין, ׳הישועות יעקב׳, היה ב-1816 בין המטילים חרם על המשכילים שי״ר ואברהם הירש נטקס.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יעקב משולם אורנשטיין",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%9E%D7%A9%D7%95%D7%9C%D7%9D_%D7%90%D7%95%D7%A8%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

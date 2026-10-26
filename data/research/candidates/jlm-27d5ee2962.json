@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-27d5ee2962",
+  "street_name": "שומרי אמונים",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חסידות שומרי אמונים נוסדה בידי הרב אברהם חיים ראטה, בנו של הרב אהרן ראטה — שייסד ב-1921 את קהילת ׳יראי ה׳ בסאטמר.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חסידות שומרי אמונים",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%A1%D7%99%D7%93%D7%95%D7%AA_%D7%A9%D7%95%D7%9E%D7%A8%D7%99_%D7%90%D7%9E%D7%95%D7%A0%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

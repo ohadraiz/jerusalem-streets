@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a74212ba99",
+  "street_name": "שמואל בייט",
+  "area": "רמת בית הכרם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הנס בייט, מנהל עליית הנוער אחרי הנרייטה סאלד, היה בין יוזמי ומארגני עליית ילדי טהראן ב-1943.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הנס בייט",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A0%D7%A1_%D7%91%D7%99%D7%99%D7%98",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

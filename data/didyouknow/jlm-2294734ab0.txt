@@ -1,0 +1,9 @@
+street_id: jlm-2294734ab0
+street_name: עקיבא אטינגר
+area: קרית היובל
+fact: עקיבא אטינגר, ממעצבי ההתיישבות, הציל ב-1913 את קופת חולים של פועלי יהודה מקריסה כשהקציב לה אשראי של 900 פרנק.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%A7%D7%99%D7%91%D7%90_%D7%90%D7%98%D7%99%D7%A0%D7%92%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

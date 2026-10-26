@@ -1,0 +1,9 @@
+street_id: jlm-2dd529736694
+street_name: פקיעין
+area: כרם אברהם
+fact: בפקיעין חיים כיום כ-78% דרוזים, כ-21% נוצרים — ויהודייה אחת, מרגלית זינאתי, מצאצאי היישוב היהודי העתיק.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%A7%D7%99%D7%A2%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

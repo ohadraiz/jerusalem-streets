@@ -1,0 +1,9 @@
+street_id: jlm-690d5f3dbe
+street_name: צבי נוימן
+area: ארנונה
+fact: צבי נוימן ייסד ב-1958 את המחלקה לכירורגיה פלסטית בהדסה — והיה חבר מייסד של הפדרציה הבינלאומית לכירורגיה פלסטית.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%A0%D7%95%D7%99%D7%9E%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-40a96670f3
+street_name: פנחס קהתי
+area: גבעת שאול
+fact: הרב פנחס קהתי הוציא את ביאורו למשנה כקונטרס שבועי בשנים 1955–1964 — והגיע לתפוצה של כ-5,000 עותקים.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%99%D7%A0%D7%97%D7%A1_%D7%A7%D7%94%D7%AA%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

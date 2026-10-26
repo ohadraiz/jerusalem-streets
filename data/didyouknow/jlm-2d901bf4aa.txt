@@ -1,0 +1,9 @@
+street_id: jlm-2d901bf4aa
+street_name: אמרי בינה
+area: קרית צאנז
+fact: הרב מאיר אוירבך, רבה האשכנזי של ירושלים ומחבר ׳אמרי בינה׳, ייסד ב-1866 עם הרב שמואל סלנט את ׳הוועד הכללי כנסת ישראל׳.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%90%D7%95%D7%99%D7%A8%D7%91%D7%9A
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

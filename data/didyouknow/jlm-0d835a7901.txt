@@ -1,0 +1,9 @@
+street_id: jlm-0d835a7901
+street_name: רבין
+area: הר נוף
+fact: יצחק רבין היה ראש הממשלה הראשון שנולד בארץ ישראל — וב-1994 חתם על הסכם השלום עם ירדן.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%91%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

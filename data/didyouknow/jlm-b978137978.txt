@@ -1,0 +1,9 @@
+street_id: jlm-b978137978
+street_name: מאיר אבנר
+area: קרית היובל
+fact: מאיר אבנר, מראשי הציונות ברומניה, נשלח לקונגרס הציוני הראשון — וב-1948 נראה בסרטון הכרזת העצמאות לצד ציר נוסף מהקונגרס ההוא.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%90%D7%91%D7%A0%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

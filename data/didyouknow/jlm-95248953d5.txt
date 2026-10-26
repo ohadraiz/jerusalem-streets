@@ -1,0 +1,9 @@
+street_id: jlm-95248953d5
+street_name: משה חגיז
+area: זכרון משה
+fact: רבי משה חגיז, מראשי הלוחמים בשבתאות בירושלים, התייתם מאביו בגיל שלוש — וגדל אצל סבו, הראשון לציון משה גאלנטי.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%97%D7%92%D7%99%D7%96
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

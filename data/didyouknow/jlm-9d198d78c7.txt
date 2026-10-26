@@ -1,0 +1,9 @@
+street_id: jlm-9d198d78c7
+street_name: יעקב שסקין
+area: טלביה
+fact: יעקב שסקין, רופא עור ירושלמי, נתן ב-1964 תלידומיד לחולה צרעת בבית הנסן — ומכך התפתח השימוש בתרופה, שנאסרה בגלל מומים בעוברים, לטיפול בצרעת.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A9%D7%A1%D7%A7%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

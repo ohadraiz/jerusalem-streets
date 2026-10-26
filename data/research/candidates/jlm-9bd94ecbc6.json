@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9bd94ecbc6",
+  "street_name": "עמנואל זיסמן",
+  "area": "חומת שמואל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עמנואל זיסמן היה 24 שנים חבר מועצת ירושלים, יו״ר סיעת ׳ירושלים אחת׳ של טדי קולק ויו״ר ועדת הכספים של העירייה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עמנואל זיסמן",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C_%D7%96%D7%99%D7%A1%D7%9E%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-ade1a01560
+street_name: קיבוץ גלויות
+area: בקעה
+fact: חוק השבות, שהתקבל בכנסת ב-5 ביולי 1950, הוא הביטוי החוקי המרכזי לרעיון קיבוץ הגלויות.
+source: https://he.wikipedia.org/wiki/%D7%A7%D7%99%D7%91%D7%95%D7%A5_%D7%92%D7%9C%D7%95%D7%99%D7%95%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

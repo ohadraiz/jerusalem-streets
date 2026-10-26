@@ -1,0 +1,9 @@
+street_id: jlm-764441949c
+street_name: משמר העם
+area: קטמון הישנה
+fact: אנשי ׳משמר העם׳ בירושלים הנצורה הקימו מחסומים ומנעו יציאת יהודים מן העיר.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%9E%D7%A8_%D7%94%D7%A2%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

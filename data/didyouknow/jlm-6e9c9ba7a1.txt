@@ -1,0 +1,9 @@
+street_id: jlm-6e9c9ba7a1
+street_name: חיים מרינוב
+area: חומת שמואל
+fact: חיים מרינוב, סגן ראש עיריית ירושלים, נאסר כבר בגיל 16 בידי הבולשת הסובייטית על פעילות ציונית — ונשלח לשנתיים בסיביר לפני שעלה ארצה ב-1927.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%9E%D7%A8%D7%99%D7%A0%D7%95%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

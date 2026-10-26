@@ -1,0 +1,9 @@
+street_id: havatzelet
+street_name: החבצלת
+area: נחלת שבעה
+fact: ׳החבצלת׳, שיצאה בירושלים מ-1863, הייתה העיתון העברי הראשון בארץ שיצא לאורך יותר מארבעים שנה — ובצוות כותביו היה גם נפתלי הרץ אימבר, מחבר ׳התקווה׳.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%91%D7%A6%D7%9C%D7%AA_(%D7%9B%D7%AA%D7%91_%D7%A2%D7%AA)
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

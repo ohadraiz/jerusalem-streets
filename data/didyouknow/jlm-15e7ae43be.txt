@@ -1,0 +1,9 @@
+street_id: jlm-15e7ae43be
+street_name: יקים
+area: מעלות דפנה
+fact: ה׳ייקים׳, יהודי גרמניה, פיתחו ניב עברי משל עצמם — שתועד ב׳מילון בן יהודה שטראסה — ייקית מדוברת בארץ ישראל׳ מ-2012.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A7%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

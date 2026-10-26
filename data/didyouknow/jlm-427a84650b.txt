@@ -1,0 +1,9 @@
+street_id: jlm-427a84650b
+street_name: רבי בנימין
+area: קרית משה
+fact: ר׳ בנימין, סופר ועיתונאי, היה ב-1925 ממייסדי ׳ברית שלום׳ — אגודה שקראה למדינה דו־לאומית — וערך את ביטאונה.
+source: https://he.wikipedia.org/wiki/%D7%A8'_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

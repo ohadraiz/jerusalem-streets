@@ -1,0 +1,9 @@
+street_id: jlm-90efaec9cf
+street_name: פרץ ברנשטיין
+area: הולילנד
+fact: פרץ ברנשטיין, מחותמי מגילת העצמאות, חיסל את עסקיו בהולנד ועלה ב-1936 בעקבות ילדיו, שהיו מגרעין מייסדי קיבוץ שדה נחמיה.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A5_%D7%91%D7%A8%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-ad49243516
+street_name: יעקב ברגר
+area: קטמונים (גוננים)
+fact: יעקב ברגר, מנהיג פועלים ציוני, יזם בגיל 17 הכשרה חקלאית — וב-1938 נמנה עם העולים לחניתה, שם נהרג.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%91%D7%A8%D7%92%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

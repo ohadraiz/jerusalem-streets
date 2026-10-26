@@ -1,0 +1,9 @@
+street_id: jlm-44e19a40f1
+street_name: יעקב פת
+area: קטמונים (גוננים)
+fact: יעקב פת, מבכירי ההגנה, פיקד על מחוז ירושלים בשנים 1931–1940 — ונקבר בחלקת השומר בכפר גלעדי.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A4%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

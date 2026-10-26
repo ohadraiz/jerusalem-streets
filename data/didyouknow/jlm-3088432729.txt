@@ -1,0 +1,9 @@
+street_id: jlm-3088432729
+street_name: הפורצים
+area: קטמון הישנה
+fact: גדוד הפורצים של חטיבת הראל הוקם ב-1944 משלוש היחידות המובחרות של הפלמ״ח — ופיקדו עליו יוסף טבנקין ודוד אלעזר.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%93%D7%95%D7%93_%D7%94%D7%A4%D7%95%D7%A8%D7%A6%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-37abfa6ce1",
+  "street_name": "שפע חיים",
+  "area": "קרית צאנז",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יקותיאל יהודה הלברשטאם, האדמו״ר מצאנז־קלויזנבורג, ייסד את בית החולים לניאדו בנתניה בעקבות נדר שנדר בשואה — להציל יהודים אם יינצל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יקותיאל יהודה הלברשטאם",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A7%D7%95%D7%AA%D7%99%D7%90%D7%9C_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%94%D7%9C%D7%91%D7%A8%D7%A9%D7%98%D7%90%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

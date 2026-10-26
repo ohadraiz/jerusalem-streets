@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8fa8c4390f",
+  "street_name": "תורת חסד",
+  "area": "קרית צאנז",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב שניאור זלמן פרדקין, ׳התורת חסד׳, היה סבו של יצחק שדה — מפקד הפלמ״ח הראשון.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שניאור זלמן פרדקין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A0%D7%99%D7%90%D7%95%D7%A8_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A4%D7%A8%D7%93%D7%A7%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

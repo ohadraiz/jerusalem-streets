@@ -1,0 +1,9 @@
+street_id: jlm-f557385671
+street_name: מרתה במברגר
+area: בקעה
+fact: מרטה במברגר, ממובילות רשת חנויות ויצו, סייעה ב-1948 למפוני הרובע היהודי — והקימה גן ילדים לילדיהם.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%98%D7%94_%D7%91%D7%9E%D7%91%D7%A8%D7%92%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-8332f207bd
+street_name: שמעון חכם
+area: תל ארזה
+fact: הרב שמעון חכם, ממנהיגי העדה הבוכרית, איבד את בנו היחיד בגיל 18 — ומאז התמסר לכתיבה ותרגום.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%97%D7%9B%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

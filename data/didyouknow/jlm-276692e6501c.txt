@@ -1,0 +1,9 @@
+street_id: jlm-276692e6501c
+street_name: בריכת ירושלים
+area: המושבה הגרמנית
+fact: בריכת ירושלים במושבה הגרמנית הייתה הגדולה בישראל כשנפתחה ב-1958 — וזכתה לכינוי ׳בריכת המריבה׳ אחרי הפגנת כ-2,000 איש במאה שערים נגד הקמתה.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%99%D7%9B%D7%AA_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

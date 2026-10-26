@@ -1,0 +1,9 @@
+street_id: jlm-ebc985b109
+street_name: עין רוגל
+area: גבעת חנניה
+fact: עין רוגל היה אחד ממקורות המים של ירושלים הקדומה — במפגש נחל קדרון, הגיא וגיא בן הינום.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%A8%D7%95%D7%92%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

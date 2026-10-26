@@ -1,0 +1,9 @@
+street_id: jlm-d4efe5e190
+street_name: סלמה לגרלף
+area: רסקו (גבעת הוורדים)
+fact: סלמה לגרלף, האישה הראשונה שזכתה בנובל לספרות, כתבה את ׳ירושלים׳ בעקבות ביקורה בארץ ב-1900 — וב-1940 סייעה להציל את נלי זק״ש.
+source: https://he.wikipedia.org/wiki/%D7%A1%D7%9C%D7%9E%D7%94_%D7%9C%D7%92%D7%A8%D7%9C%D7%A3
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-a643dbbb04
+street_name: זרובבל
+area: בקעה
+fact: זרובבל בן שאלתיאל, ראש הגולה, עמד בראש שיבת ציון — ובימיו נבנה בית המקדש השני, ב-516 לפנה״ס.
+source: https://he.wikipedia.org/wiki/%D7%96%D7%A8%D7%95%D7%91%D7%91%D7%9C_%D7%91%D7%9F_%D7%A9%D7%90%D7%9C%D7%AA%D7%99%D7%90%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-291bfdd516f1
+street_name: אינו שאקי
+area: הולילנד
+fact: אינו שאקי, הדקאן המייסד של הפקולטה לרפואת שיניים באוניברסיטה העברית, כיהן בשנות ה-70 כדקאן בית הספר לרפואה של אוניברסיטת פחלאווי בשיראז.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A0%D7%95_%D7%A9%D7%A7%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

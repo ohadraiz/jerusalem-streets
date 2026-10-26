@@ -1,0 +1,9 @@
+street_id: jlm-1c0a221cf6
+street_name: די זהב
+area: רמת אשכול
+fact: די זהב היה מושב שיתופי שהקימו 13 צעירים בסיני ב-1971 — והוא פונה ב-1982 עם החזרת סיני למצרים.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%99_%D7%96%D7%94%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

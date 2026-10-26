@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d74d5de4bb",
+  "street_name": "יוסף צבי הרץ",
+  "area": "רמות א'",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יוסף צבי הרץ, הרב הראשי של בריטניה, היה הבוגר הראשון של בית המדרש לרבנים באמריקה — וגורש מטרנסוואל בגלל תמיכתו בבריטים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסף צבי הרץ",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A6%D7%91%D7%99_%D7%94%D7%A8%D7%A5",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

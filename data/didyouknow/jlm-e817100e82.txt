@@ -1,0 +1,9 @@
+street_id: jlm-e817100e82
+street_name: שערי ירושלים
+area: גבעת שאול
+fact: בחומת ירושלים יש שבעה שערים פתוחים; ב-1898 נפרצה בה כניסה נוספת לכבוד ביקור הקיסר וילהלם השני — כדי שמרכבתו תיכנס לעיר העתיקה.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8%D7%99_%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

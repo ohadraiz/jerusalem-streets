@@ -1,0 +1,9 @@
+street_id: jlm-42b4b696bd
+street_name: משה קורדובירו
+area: גבעת שאול
+fact: רבי משה קורדובירו, מחשובי מקובלי צפת במאה ה-16, השפיע על תורתו של האר״י.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A7%D7%95%D7%A8%D7%93%D7%95%D7%91%D7%99%D7%A8%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

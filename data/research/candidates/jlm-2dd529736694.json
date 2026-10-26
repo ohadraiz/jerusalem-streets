@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2dd529736694",
+  "street_name": "פקיעין",
+  "area": "כרם אברהם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בפקיעין חיים כיום כ-78% דרוזים, כ-21% נוצרים — ויהודייה אחת, מרגלית זינאתי, מצאצאי היישוב היהודי העתיק.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פקיעין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%A7%D7%99%D7%A2%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

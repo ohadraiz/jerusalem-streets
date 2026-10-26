@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-90efaec9cf",
+  "street_name": "פרץ ברנשטיין",
+  "area": "הולילנד",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "פרץ ברנשטיין, מחותמי מגילת העצמאות, חיסל את עסקיו בהולנד ועלה ב-1936 בעקבות ילדיו, שהיו מגרעין מייסדי קיבוץ שדה נחמיה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פרץ ברנשטיין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A5_%D7%91%D7%A8%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

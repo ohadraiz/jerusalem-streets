@@ -1,0 +1,9 @@
+street_id: jlm-dc4b8fcc03
+street_name: יצחק נפחא
+area: גאולה
+fact: רבי יצחק נפחא, אמורא ארץ־ישראלי, מכונה בתלמוד הבבלי על שם מקצועו — נפח — אך הכינוי אינו מופיע כלל בתלמוד הירושלמי.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%99%D7%A6%D7%97%D7%A7_%D7%A0%D7%A4%D7%97%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

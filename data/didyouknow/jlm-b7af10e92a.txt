@@ -1,0 +1,9 @@
+street_id: jlm-b7af10e92a
+street_name: גיחון
+area: גבעת חנניה
+fact: מעיין הגיחון פעם בעבר מדי שעתיים-שלוש כ-15 דקות; התיעוד האחרון לכך הוא של לואי ונסאן מ-1909.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%97%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

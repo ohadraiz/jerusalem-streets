@@ -1,0 +1,9 @@
+street_id: jlm-0c1691bd22
+street_name: רב צעיר
+area: קרית משה
+fact: הרב ד״ר חיים טשרנוביץ, ׳רב צעיר׳, הקים ב-1902 באודסה ׳קיבוץ׳ של תלמידי ישיבה ששילב תורה וציונות.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%98%D7%A9%D7%A8%D7%A0%D7%95%D7%91%D7%99%D7%A5
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

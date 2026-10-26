@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-849a01f0d6",
+  "street_name": "רבי חייא",
+  "area": "המושבה היוונית",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי חייא עלה מבבל לארץ עם אשתו, תאומים, שתי בנות ושני אחיינים — ורבי שמח לקראתו וקרא עליו ׳מארץ מרחק איש עצתי׳.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבי חייא",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%97%D7%99%D7%99%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

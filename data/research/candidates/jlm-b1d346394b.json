@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b1d346394b",
+  "street_name": "שלמה אלקבץ",
+  "area": "גבעת שאול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי שלמה אלקבץ, מחבר ׳לכה דודי׳, נפטר בצפת — וכבר בסידור שנדפס ב-1584 הוזכר שמו עם ברכת המתים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שלמה אלקבץ",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%9C%D7%A7%D7%91%D7%A5",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

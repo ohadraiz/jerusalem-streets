@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2ade2c6832",
+  "street_name": "אדמון",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אדמון בן גדאי, דיין מימי בית שני, הוא מהדמויות הבודדות שהמשנה מזכירה בשבע מחלוקות עם חכמים — ורב נטרונאי גאון פסק שאין לפסוק כמותו באף אחת מהן.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אדמון",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%93%D7%9E%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

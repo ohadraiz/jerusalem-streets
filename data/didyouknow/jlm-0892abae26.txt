@@ -1,0 +1,9 @@
+street_id: jlm-0892abae26
+street_name: שמעיה
+area: בקעה
+fact: שמעיה, נשיא הסנהדרין בזוג הרביעי, חבר לאבטליון — ומסורת קברם בגוש חלב תועדה בידי נוסע מהמאה ה-13.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

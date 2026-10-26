@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-291bfdd516f1",
+  "street_name": "אינו שאקי",
+  "area": "הולילנד",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אינו שאקי, הדקאן המייסד של הפקולטה לרפואת שיניים באוניברסיטה העברית, כיהן בשנות ה-70 כדקאן בית הספר לרפואה של אוניברסיטת פחלאווי בשיראז.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אינו שקי",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A0%D7%95_%D7%A9%D7%A7%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

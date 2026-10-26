@@ -1,0 +1,9 @@
+street_id: jlm-1b9f2a3482
+street_name: משה ונטורה
+area: פסגת זאב מזרח
+fact: הרב משה ונטורה, הרב הראשי של יהודי אלכסנדריה, גורש ממצרים ב-1948 בגלל פעילותו הציונית.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%95%D7%A0%D7%98%D7%95%D7%A8%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

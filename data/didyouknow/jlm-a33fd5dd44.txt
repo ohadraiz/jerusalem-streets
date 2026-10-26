@@ -1,0 +1,9 @@
+street_id: jlm-a33fd5dd44
+street_name: אור אלחנן
+area: רוממה
+fact: ישיבת אור אלחנן ברוממה היא מן הישיבות החרדיות-ליטאיות הגדולות בירושלים, ועם הישיבות הקטנות המסונפות לה למדו בה כ-400 תלמידים ב-2025.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%99%D7%91%D7%AA_%D7%90%D7%95%D7%A8_%D7%90%D7%9C%D7%97%D7%A0%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

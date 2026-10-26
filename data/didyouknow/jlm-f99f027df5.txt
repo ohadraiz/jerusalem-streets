@@ -1,0 +1,9 @@
+street_id: jlm-f99f027df5
+street_name: יצחק טבנקין
+area: פסגת זאב צפון
+fact: יצחק טבנקין, המנהיג הדומיננטי של הקיבוץ המאוחד, נמנה ב-1921 עם גרעין ההקמה של קיבוץ עין חרוד.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%98%D7%91%D7%A0%D7%A7%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

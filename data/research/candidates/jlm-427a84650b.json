@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-427a84650b",
+  "street_name": "רבי בנימין",
+  "area": "קרית משה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ר׳ בנימין, סופר ועיתונאי, היה ב-1925 ממייסדי ׳ברית שלום׳ — אגודה שקראה למדינה דו־לאומית — וערך את ביטאונה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ר' בנימין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8'_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

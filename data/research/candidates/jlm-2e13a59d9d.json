@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2e13a59d9d",
+  "street_name": "משה חובב",
+  "area": "רמת בית הכרם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "משה חובב, מבכירי קרייני קול ישראל, הוזמן ב-1968 להקים את שירותי ההפקה של הטלוויזיה הישראלית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — משה חובב",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%97%D7%95%D7%91%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

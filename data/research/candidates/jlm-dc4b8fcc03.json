@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-dc4b8fcc03",
+  "street_name": "יצחק נפחא",
+  "area": "גאולה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי יצחק נפחא, אמורא ארץ־ישראלי, מכונה בתלמוד הבבלי על שם מקצועו — נפח — אך הכינוי אינו מופיע כלל בתלמוד הירושלמי.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבי יצחק נפחא",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%99%D7%A6%D7%97%D7%A7_%D7%A0%D7%A4%D7%97%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

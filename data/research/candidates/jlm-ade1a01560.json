@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ade1a01560",
+  "street_name": "קיבוץ גלויות",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "חוק השבות, שהתקבל בכנסת ב-5 ביולי 1950, הוא הביטוי החוקי המרכזי לרעיון קיבוץ הגלויות.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — קיבוץ גלויות",
+      "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%99%D7%91%D7%95%D7%A5_%D7%92%D7%9C%D7%95%D7%99%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

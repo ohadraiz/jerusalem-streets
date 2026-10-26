@@ -1,0 +1,9 @@
+street_id: jlm-ac5c28ea2a
+street_name: נחום שדמי
+area: מחנה אלנבי
+fact: נחום שדמי, מבכירי ההגנה ואלוף־משנה בצה״ל, כיהן כנשיא בית הדין הצבאי לערעורים בשנים 1954–1958.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%A9%D7%93%D7%9E%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article
