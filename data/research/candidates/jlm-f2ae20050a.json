@@ -4,7 +4,7 @@
   "area": "רמות ב'",
   "lat": 31.810669,
   "lng": 35.195381,
-  "researched_at": "2026-10-22",
+  "researched_at": "2026-10-26",
   "official": [
     {
       "code": 4478,
@@ -19,12 +19,22 @@
     "person": null
   },
   "osm": null,
-  "fact": null,
-  "fact_type": "none",
-  "confidence": "none",
-  "sources": [],
-  "notes": [
-    "קיים ברשימה הרשמית: סמל רחוב 4478"
+  "fact": "היישוב אבן שמואל נקרא על שמו של הנדבן היהודי־קנדי שמואל ברונפמן, שתרם להקמת בית הספר ומועדון הנוער. ב-1965 עמד בפני פירוק, כש-15 המשפחות האחרונות ביקשו לעזוב.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אבן שמואל",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%A9%D7%9E%D7%95%D7%90%D7%9C",
+      "kind": "content"
+    }
   ],
-  "needs_review": true
+  "notes": [
+    "קיים ברשימה הרשמית: סמל רחוב 4478",
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
 }

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ddd24204b2",
+  "street_name": "טבי",
+  "area": "סן סימון",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "טבי, עבדו הכנעני של רבן גמליאל, היה תלמיד חכם שהכיר את ההלכות. במסכת סוכה מסופר שישן תחת המיטה, משום שידע שעבדים פטורים מן הסוכה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — טבי",
+      "url": "https://he.wikipedia.org/wiki/%D7%98%D7%91%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

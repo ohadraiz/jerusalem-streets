@@ -1,0 +1,9 @@
+street_id: jlm-9893270ba3
+street_name: מחניים
+area: תל ארזה
+fact: אדמות מחניים נרכשו ב-1891 בידי אגודת אהבת ציון מגליציה, וב-1898 התיישבו בהן משפחות מבוצ׳אץ׳. ב-1901 קרסה המושבה, וב-1903 נמכרה אדמתה לחקלאי ראש פינה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%97%D7%A0%D7%99%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

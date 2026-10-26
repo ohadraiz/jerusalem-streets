@@ -1,0 +1,9 @@
+street_id: jlm-f82f85ea93
+street_name: ברנוביץ'
+area: גבעת שאול
+fact: ברנוביץ׳ נזכרת לראשונה ב-1706 כרכוש פרטי, וגדלה עם סלילת מסילות הברזל ב-1870. בין 1921 ל-1939 הייתה בשטח פולין ורוב תושביה היו יהודים; בדצמבר 1941 רוכזו יהודיה בגטו.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%95%D7%91%D7%99%D7%A5'
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

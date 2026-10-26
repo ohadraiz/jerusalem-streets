@@ -1,0 +1,9 @@
+street_id: jlm-a693024807
+street_name: ברעם
+area: נחלאות
+fact: קיבוץ ברעם, בגליל העליון, נקרא על שם כפר ברעם — יישוב יהודי קדום מימי בית שני, שבו שרידי בית כנסת מהמפוארים בארץ. הקיבוץ עלה לקרקע ב-14 ביוני 1949.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A2%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

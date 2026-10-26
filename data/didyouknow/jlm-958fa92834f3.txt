@@ -1,0 +1,9 @@
+street_id: jlm-958fa92834f3
+street_name: גבע
+area: מחנה ישראל
+fact: קבוצת גבע הוקמה ב-1921 בידי עולים מרוסיה ופולין מהעלייה השנייה, לאחר גרעין שהחל לפעול ב-1913. ב-1924 הצטרפו אליה כחמישה־עשר בני העלייה השלישית מגרודנה.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%91%D7%A2
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-92cc02156d5b
+street_name: טללים
+area: רמות
+fact: קיבוץ טללים נקרא על שם הטל הרב שיורד בו במהלך השנה. מייסדיו היו גרעיני נח״ל של הצופים, שעלו לנקודת הקבע בראשית 1980.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%9C%D7%9C%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

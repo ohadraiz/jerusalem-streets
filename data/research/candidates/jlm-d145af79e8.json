@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d145af79e8",
+  "street_name": "אריאל",
+  "area": "רוממה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אריאל הוקמה ב-1978 בשם הזמני חרס, ורק ב-31 בדצמבר 1978 ניתן לה שמה, בהצעת זאב וילנאי. ב-1998 הוכרזה כעיר.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אריאל",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2c2a25e87f",
+  "street_name": "קולומביה",
+  "area": "קרית מנחם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "לקולומביה הגיע הספרדי הראשון ב-1499, אלונסו דה אוחדה, וב-1533 נוסדה קרטחנה. במאה ה-20 נודעה בקרטלי הסמים: פבלו אסקובר גורש מהקונגרס ב-1984.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — קולומביה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%9C%D7%95%D7%9E%D7%91%D7%99%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

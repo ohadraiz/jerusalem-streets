@@ -1,0 +1,9 @@
+street_id: jlm-57f777c932
+street_name: המיתלה
+area: רמת אשכול
+fact: מעבר המיתלה היה אחד משני המעברים היחידים שאפשרו תנועה רכובה מדרום סואץ לסיני. ב-1956 הוצנח בפתחו גדוד 890 — הצניחה הקרבית הראשונה של צה״ל.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%99%D7%AA%D7%9C%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

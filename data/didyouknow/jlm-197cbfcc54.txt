@@ -1,0 +1,9 @@
+street_id: jlm-197cbfcc54
+street_name: מיכל
+area: סנהדריה
+fact: מיכל, בת שאול ואשת דוד, היא הדמות הנשית היחידה במקרא שנאמר עליה במפורש שאהבה את בן זוגה: ׳וַתֶּאֱהַב מִיכַל בַּת שָׁאוּל אֶת דָּוִד׳.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

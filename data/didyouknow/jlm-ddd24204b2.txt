@@ -1,0 +1,9 @@
+street_id: jlm-ddd24204b2
+street_name: טבי
+area: סן סימון
+fact: טבי, עבדו הכנעני של רבן גמליאל, היה תלמיד חכם שהכיר את ההלכות. במסכת סוכה מסופר שישן תחת המיטה, משום שידע שעבדים פטורים מן הסוכה.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%91%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

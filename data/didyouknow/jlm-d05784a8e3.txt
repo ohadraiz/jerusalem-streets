@@ -1,0 +1,9 @@
+street_id: jlm-d05784a8e3
+street_name: ברוכים
+area: תל ארזה
+fact: היישוב ברמת הנשיא טראמפ הוקם במקום שבו שכן היישוב ברוכים, שהוקם ב-1991 וננטש ברובו. ביוני 2023 שינתה ועדת השמות הממלכתית את שמו.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%95%D7%9B%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

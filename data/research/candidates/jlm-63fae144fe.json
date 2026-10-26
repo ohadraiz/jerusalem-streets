@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-63fae144fe",
+  "street_name": "התקופה",
+  "area": "סן סימון",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "התקופה היה מאסף ספרותי עברי שראה אור מ-1918 עד 1950 בהוצאת שטיבל, בעריכת דוד פרישמן ואחריו פישל לחובר ויעקב פיכמן. הוא שימש במה מרכזית לספרות העברית החדשה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — התקופה",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A7%D7%95%D7%A4%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

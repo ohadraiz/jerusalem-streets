@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a8633533d7",
+  "street_name": "תובל",
+  "area": "רוממה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "קיבוץ תובל קרוי על שם תובל קין, בנו של למך. הוא אוכלס ב-1980 בידי גרעין נח״ל ואוזרח ב-1981 בידי חברי הצופים והבונים מאנגליה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — תובל",
+      "url": "https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%91%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

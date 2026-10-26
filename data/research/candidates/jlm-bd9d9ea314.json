@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bd9d9ea314",
+  "street_name": "וולטה עילית",
+  "area": "עיר גנים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "וולטה עילית קיבלה עצמאות ב-1960, וב-1984 שינתה את שמה לבורקינה פאסו — ארץ האנשים הישרים. ביולי 1961, בביקור הנשיא יאמאוגו בישראל, נקרא רחוב בקרית היובל על שמה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — וולטה עילית",
+      "url": "https://he.wikipedia.org/wiki/%D7%95%D7%95%D7%9C%D7%98%D7%94_%D7%A2%D7%99%D7%9C%D7%99%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

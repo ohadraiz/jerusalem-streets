@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ee56492d32",
+  "street_name": "משמרות",
+  "area": "מורשה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "קבוצת משמרות נוסדה ב-16 ביוני 1933 מאיחוד ׳קבוצת הרוסים׳ מפרדס חנה עם ׳גורדוניה ליטא־לטביה׳. שמה כשם הגרעין, והיא עלתה על הקרקע באוקטובר 1933.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — משמרות",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%9E%D7%A8%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b59502716c",
+  "street_name": "צ'ילה",
+  "area": "קרית היובל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "צ׳ילה זכתה לראשונה בקופה אמריקה ב-2015, בטורניר שאירחה. ב-1973 נרצח המשורר ויקטור חרה במהלך ההפיכה הצבאית.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — צ'ילה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%9C%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

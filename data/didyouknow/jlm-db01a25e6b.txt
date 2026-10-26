@@ -1,0 +1,9 @@
+street_id: jlm-db01a25e6b
+street_name: בנין
+area: רסקו (גבעת הוורדים)
+fact: בנין הייתה רפובליקת דהומיי עד 1975, когда שמה הוסב על שם מפרץ בנין. ב-1990 אושרה במשאל עם חוקה חדשה, והמדינה עברה לדמוקרטיה רב־מפלגתית.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-58d013f631
+street_name: ניקרגואה
+area: קרית מנחם
+fact: בניקרגואה הגיעה האינפלציה ב-1988 ל-14,000%. בשיאה מנתה הקהילה היהודית כמה מאות נפשות, וב-1972 הוקם בה בית כנסת.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A7%D7%A8%D7%92%D7%95%D7%90%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

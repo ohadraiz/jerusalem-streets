@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ea4a821fd78b",
+  "street_name": "מזור",
+  "area": "אבו בסל (שערי ירושלים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מזור נוסד ב-1949 בידי ניצולי שואה מהונגריה וצ׳כיה על אדמות הכפר אל־מזירעה. את שמו קיבל בעקבות תוכנית להקים בו חוות צמחי מרפא — מזור מלשון מרפא.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מזור",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%96%D7%95%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

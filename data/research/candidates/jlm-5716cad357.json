@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5716cad357",
+  "street_name": "אלקנה",
+  "area": "תל ארזה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אלקנה הוקמה בידי גרעין מערב שומרון, שהתארגן מ-1973 ביוזמת הלל ויס; שכונת הקבע הראשונה נבנתה ב-1983 מעברו הדרומי של כביש 5. ב-1974 נעצרה בדרכה למקום שיירה ובה כ-200 איש.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אלקנה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A7%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

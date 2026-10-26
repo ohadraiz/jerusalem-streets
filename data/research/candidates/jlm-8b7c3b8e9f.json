@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8b7c3b8e9f",
+  "street_name": "באר שבע",
+  "area": "נחלאות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "באר שבע הוכרזה כעיר ב-1950, ובטקס החנוכה בדצמבר אותה שנה השתתפה גולדה מאיר. ב-20 בפברואר 2015 ירד בה שלג — לראשונה מאז שנת 2000.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — באר שבע",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%90%D7%A8_%D7%A9%D7%91%D7%A2",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

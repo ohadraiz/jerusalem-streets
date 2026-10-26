@@ -1,0 +1,9 @@
+street_id: jlm-7a09276bc6
+street_name: רות
+area: המושבה היוונית
+fact: רות המואבייה, סבתא רבתא של דוד המלך, דבקה בחמותה נעמי ואמרה ׳עמך עמי ואלוהיך אלוהי׳. בשדה בבית לחם ליקטה שיבולים אחר הקוצרים, ושם פגשה את בעז.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

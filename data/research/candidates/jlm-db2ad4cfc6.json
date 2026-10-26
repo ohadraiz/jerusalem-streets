@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-db2ad4cfc6",
+  "street_name": "ערד",
+  "area": "מלחה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ערד תוכננה מ-1960 כ׳עיר המתוכננת הראשונה בישראל׳, ביוזמת לובה אליאב, ורק ב-1995 הוכרזה כעיר. ב-2010 נבחרה בה טלי פלוסקוב, יוצאת חבר המדינות הראשונה בראשות עיר בישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ערד",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%A8%D7%93",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

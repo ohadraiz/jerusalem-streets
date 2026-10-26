@@ -1,0 +1,9 @@
+street_id: jlm-f3025afe4e
+street_name: ביתר
+area: מחנה אלנבי
+fact: ביתר הייתה עיר יהודית קדומה בהרי יהודה, מדרום־מערב לירושלים, ומילאה תפקיד מרכזי במרד בר כוכבא. זיהויה עם שרידי בתיר הוצע לראשונה בידי רבי אשתורי הפרחי במאה ה-14.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

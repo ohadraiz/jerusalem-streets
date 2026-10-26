@@ -1,0 +1,9 @@
+street_id: jlm-d00cff68da
+street_name: טבריה
+area: שערי חסד
+fact: טבריה נכבשה ב-1099 בידי טנקרד הצלבני והפכה לבירת נסיכות הגליל. ב-1837 החריד אותה רעש אדמה חזק, וב-1924 החל לכהן בה זאכי אלחדיף, ראש העיר היהודי הראשון בארץ.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%91%D7%A8%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

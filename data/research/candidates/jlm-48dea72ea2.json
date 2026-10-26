@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-48dea72ea2",
+  "street_name": "לוחמי הגטאות",
+  "area": "הגבעה הצרפתית",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "קיבוץ לוחמי הגטאות הוקם ב-1949 בידי ניצולי שואה ופרטיזנים, ובהם יצחק צוקרמן וצביה לובטקין ממרד גטו ורשה. טקס ההתנחלות נערך ב-18 באפריל 1949, יום לפני יום השנה השישי למרד.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — לוחמי הגטאות",
+      "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%97%D7%9E%D7%99_%D7%94%D7%92%D7%98%D7%90%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

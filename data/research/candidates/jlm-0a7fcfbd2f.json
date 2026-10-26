@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-0a7fcfbd2f",
+  "street_name": "בליליוס",
+  "area": "מאה שערים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "משפחת בליליוס, משפחה יהודית ספרדית, נמלטה מהאינקוויזיציה לוונציה: רפאל בליליוס, שנודע בפורטוגל כפיליפו טרסו, הוריש לבנותיו את כלי הכסף שהביא מליסבון.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בליליוס",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%9C%D7%99%D7%9C%D7%99%D7%95%D7%A1",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

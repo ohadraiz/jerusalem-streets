@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a241794d56",
+  "street_name": "יטבתה",
+  "area": "רמת אשכול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יטבתה עלתה על הקרקע ב-30 באוקטובר 1951 כהיאחזות הנח״ל השלישית, סמוך לקידוח שהזרים מים לאילת. היא נועדה לשמור על הצינור ולאבטח את הדרך לנגב.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יטבתה",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%98%D7%91%D7%AA%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

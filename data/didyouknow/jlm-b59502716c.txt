@@ -1,0 +1,9 @@
+street_id: jlm-b59502716c
+street_name: צ'ילה
+area: קרית היובל
+fact: צ׳ילה זכתה לראשונה בקופה אמריקה ב-2015, בטורניר שאירחה. ב-1973 נרצח המשורר ויקטור חרה במהלך ההפיכה הצבאית.
+source: https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%9C%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

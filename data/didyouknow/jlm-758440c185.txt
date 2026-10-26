@@ -1,0 +1,9 @@
+street_id: jlm-758440c185
+street_name: כיסופים
+area: רמות
+fact: קיבוץ כיסופים נוסד ב-1951 בידי עולים מארצות הברית ודרום אמריקה. שמו מן השורש כס״ף — ערגה וכמיהה, כבפסוק ׳נִכְסְפָה וְגַם כָּלְתָה נַפְשִׁי׳.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%A1%D7%95%D7%A4%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

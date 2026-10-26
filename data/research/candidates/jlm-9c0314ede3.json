@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9c0314ede3",
+  "street_name": "ברקאי",
+  "area": "הרובע היהודי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שם הקיבוץ ברקאי הוא ראשי תיבות: בני עבודה רומניה קיבוץ ארץ ישראל — לכבוד הגרעין המייסד, שהוכרז בפסח 1945 ברומניה. הקיבוץ עלה על הקרקע ב-10 במאי 1949.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ברקאי",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A7%D7%90%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

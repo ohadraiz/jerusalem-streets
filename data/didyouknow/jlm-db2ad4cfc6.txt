@@ -1,0 +1,9 @@
+street_id: jlm-db2ad4cfc6
+street_name: ערד
+area: מלחה
+fact: ערד תוכננה מ-1960 כ׳עיר המתוכננת הראשונה בישראל׳, ביוזמת לובה אליאב, ורק ב-1995 הוכרזה כעיר. ב-2010 נבחרה בה טלי פלוסקוב, יוצאת חבר המדינות הראשונה בראשות עיר בישראל.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%A8%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

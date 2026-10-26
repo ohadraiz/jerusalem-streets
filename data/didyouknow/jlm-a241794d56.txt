@@ -1,0 +1,9 @@
+street_id: jlm-a241794d56
+street_name: יטבתה
+area: רמת אשכול
+fact: יטבתה עלתה על הקרקע ב-30 באוקטובר 1951 כהיאחזות הנח״ל השלישית, סמוך לקידוח שהזרים מים לאילת. היא נועדה לשמור על הצינור ולאבטח את הדרך לנגב.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%98%D7%91%D7%AA%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

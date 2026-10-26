@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c70e6dccf1",
+  "street_name": "מחנה יצחק",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מחנה יצחק, הידוע כמחנה נפח, נקרא על שם סגן־אלוף יצחק חלפון, שנפל ברמת הגולן במלחמת ששת הימים. הוא יושב בהצטלבות כביש 91 וכביש הנפט, ומשמש מפקדת אוגדה 210.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מחנה יצחק",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%97%D7%A0%D7%94_%D7%99%D7%A6%D7%97%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

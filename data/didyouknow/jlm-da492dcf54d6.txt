@@ -1,0 +1,9 @@
+street_id: jlm-da492dcf54d6
+street_name: גיזה
+area: רמות ב'
+fact: גיזה, בגדה המערבית של הנילוס, היא בירת המחוז הקרוי על שמה; ברמת גיזה נמצאות הפירמידות, שנבנו מול ממפיס. אוכלוסייתה מוערכת בכ-4.46 מיליון נפש.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%96%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

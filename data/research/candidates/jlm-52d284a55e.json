@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-52d284a55e",
+  "street_name": "קזנובה",
+  "area": "הרובע הנוצרי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ג׳קומו קזנובה היה סופר והרפתקן איטלקי, שעבד גם כמרגל, מוזיקאי וקלפן. אחרי מאסר בוונציה נמלט לפריז, ושם, בהשפעת מארי אנטואנט, מונה למנהל הלוטו הצרפתי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — קזנובה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%96%D7%A0%D7%95%D7%91%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

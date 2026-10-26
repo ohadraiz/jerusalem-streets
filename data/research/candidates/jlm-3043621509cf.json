@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3043621509cf",
+  "street_name": "גלעד",
+  "area": "הרובע היהודי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הגלעד הוא שמו העברי של חבל ארץ בעבר הירדן, מן הכנרת ועד ים המלח. שמו נקשר למילה הערבית ג׳לעד — גס, קשה — אולי על שום אופיו ההררי.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — גלעד",
+      "url": "https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%A2%D7%93",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

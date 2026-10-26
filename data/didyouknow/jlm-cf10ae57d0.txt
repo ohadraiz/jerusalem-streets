@@ -1,0 +1,9 @@
+street_id: jlm-cf10ae57d0
+street_name: כורזין
+area: נחלאות
+fact: כורזים היה יישוב קדום ליד הכנרת, שפעל מהמאה הראשונה עד השמינית, ובו בית כנסת מבזלת. שמו השתמר בשם חירבת כראזה, וב-2019 נמצאה בו גת עם רצפת פסיפס.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%95%D7%A8%D7%96%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

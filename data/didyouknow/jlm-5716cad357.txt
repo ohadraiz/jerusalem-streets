@@ -1,0 +1,9 @@
+street_id: jlm-5716cad357
+street_name: אלקנה
+area: תל ארזה
+fact: אלקנה הוקמה בידי גרעין מערב שומרון, שהתארגן מ-1973 ביוזמת הלל ויס; שכונת הקבע הראשונה נבנתה ב-1983 מעברו הדרומי של כביש 5. ב-1974 נעצרה בדרכה למקום שיירה ובה כ-200 איש.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A7%D7%A0%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f82f85ea93",
+  "street_name": "ברנוביץ'",
+  "area": "גבעת שאול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ברנוביץ׳ נזכרת לראשונה ב-1706 כרכוש פרטי, וגדלה עם סלילת מסילות הברזל ב-1870. בין 1921 ל-1939 הייתה בשטח פולין ורוב תושביה היו יהודים; בדצמבר 1941 רוכזו יהודיה בגטו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ברנוביץ'",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%95%D7%91%D7%99%D7%A5'",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

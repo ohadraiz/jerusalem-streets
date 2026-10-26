@@ -1,0 +1,9 @@
+street_id: jlm-1fe325556c
+street_name: עזריה
+area: המושבה היוונית
+fact: מושב עזריה נוסד ב-30 באוקטובר 1949 בידי גרעין ירושלמי, על שטח הכפר אל־בריה. בדצמבר 1979 נפער בו בולען בעומק כ-25 מטרים, שהפך לכותרת ארצית.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

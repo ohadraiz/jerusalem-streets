@@ -1,0 +1,9 @@
+street_id: jlm-875a891987cf
+street_name: צפרירים
+area: רמות א'
+fact: מושב צפרירים נקרא על שם רוחות הבוקר הנושבות בו, בשל מיקומו על הר גבוה. הוא הוקם על אדמות הכפר עג׳ור, שתושביו נמלטו ב-1948.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%A4%D7%A8%D7%99%D7%A8%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

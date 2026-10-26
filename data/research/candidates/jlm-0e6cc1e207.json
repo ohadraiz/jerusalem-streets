@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-0e6cc1e207",
+  "street_name": "צפת",
+  "area": "שערי חסד",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בצפת הוקם ב-1576 בית הדפוס הראשון במזרח התיכון. ב-1188 נכנעו הטמפלרים לסלאח א־דין ומסרו לו את המצודה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — צפת",
+      "url": "https://he.wikipedia.org/wiki/%D7%A6%D7%A4%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-cebb4f8c59",
+  "street_name": "עציון גבר",
+  "area": "רמת אשכול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עציון גבר נזכרת בתנ״ך כתחנה במסעי בני ישראל, ואחר כך כעיר נמל שממנה שלח שלמה אניות לאופיר. החוקרים חלוקים על זיהויה: תל אל־חליפה, אי פרעה או אי האלמוגים.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עציון גבר",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%A6%D7%99%D7%95%D7%9F_%D7%92%D7%91%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

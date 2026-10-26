@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-99548aff20d8",
+  "street_name": "תקוע",
+  "area": "נחלאות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "תקוע הוקמה ב-1975 כהיאחזות נח״ל בידי גרעין שח״ם כפר עציון, ואוזרחה כעבור שנתיים. ב-2024 הכיר משרד התרבות בגלריה במרכז האומנים שלה — הראשונה ביהודה ושומרון.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — תקוע",
+      "url": "https://he.wikipedia.org/wiki/%D7%AA%D7%A7%D7%95%D7%A2",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

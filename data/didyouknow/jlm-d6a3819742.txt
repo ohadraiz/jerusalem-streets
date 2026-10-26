@@ -1,0 +1,9 @@
+street_id: jlm-d6a3819742
+street_name: נציבין
+area: בתי אונגרין
+fact: נציבין, על גבול טורקיה–סוריה, נזכרה לראשונה ב-852 לפנה״ס כמקום מושבו של נציב אשורי. ערב מלחמת העולם הראשונה חיו בה כ-2,000 נוצרים ו-600 יהודים.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%A6%D7%99%D7%91%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

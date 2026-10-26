@@ -1,0 +1,9 @@
+street_id: jlm-5d9f9fa353
+street_name: נגבה
+area: קטמון הישנה
+fact: קיבוץ נגבה הוקם ב-12 ביולי 1939 כיישוב חומה ומגדל, ונקרא תחילה גבעת גנים. כעבור שנה הוסב שמו לנגבה, לסמל את השאיפה להתיישבות יהודית בנגב.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%92%D7%91%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

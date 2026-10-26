@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3d61fd6cca",
+  "street_name": "אלישר",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "משפחת אלישר היא משפחת רבנים ספרדית; לפי המסורת דבק בה הכינוי בשל ישרותה. הרב יעקב שאול אלישר הוכתר ב-1893 לראשון לציון וכיהן בתפקיד עד 1906.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אלישר",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A9%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

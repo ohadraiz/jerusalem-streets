@@ -1,0 +1,9 @@
+street_id: jlm-db4cae1c25
+street_name: קורץ
+area: ארנונה
+fact: בקורץ נוסד ב-1776 בית הדפוס העברי הראשון בעיר, בידי הרב צבי הירש וחתנו שמואל סגל. במחצית המאה ה-18 פעל בה הרב פנחס שפירא מקוריץ, תלמיד המגיד ממזריץ׳.
+source: https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%A8%D7%A5
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

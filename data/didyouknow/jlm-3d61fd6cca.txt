@@ -1,0 +1,9 @@
+street_id: jlm-3d61fd6cca
+street_name: אלישר
+area: נחלת שבעה
+fact: משפחת אלישר היא משפחת רבנים ספרדית; לפי המסורת דבק בה הכינוי בשל ישרותה. הרב יעקב שאול אלישר הוכתר ב-1893 לראשון לציון וכיהן בתפקיד עד 1906.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A9%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

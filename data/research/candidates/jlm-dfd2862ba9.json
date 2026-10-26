@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-dfd2862ba9",
+  "street_name": "נוב",
+  "area": "נחלאות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מושב נוב שבדרום הגולן נקרא על שם נוב, עיר הכוהנים בארץ יהודה; החוקר שמואל קליין הציע שיושביו הראשונים היו פליטים שהגיעו משם. בחנוכה תשל״ד נכנסו לבתיהם 14 המשפחות הראשונות.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נוב",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%95%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

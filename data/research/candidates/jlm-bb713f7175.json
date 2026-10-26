@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bb713f7175",
+  "street_name": "שבו",
+  "area": "גילה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שבו היא האבן השנייה בטור השלישי בחושן הכהן הגדול, המיוחסת לשבט נפתלי או לגד. חז״ל לא ידעו לזהותה: תרגום אונקלוס תרגם אותה ׳טרקיא׳ — טורקיז.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שבו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

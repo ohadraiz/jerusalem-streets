@@ -1,0 +1,9 @@
+street_id: jlm-99548aff20d8
+street_name: תקוע
+area: נחלאות
+fact: תקוע הוקמה ב-1975 כהיאחזות נח״ל בידי גרעין שח״ם כפר עציון, ואוזרחה כעבור שנתיים. ב-2024 הכיר משרד התרבות בגלריה במרכז האומנים שלה — הראשונה ביהודה ושומרון.
+source: https://he.wikipedia.org/wiki/%D7%AA%D7%A7%D7%95%D7%A2
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

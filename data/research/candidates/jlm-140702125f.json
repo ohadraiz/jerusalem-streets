@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-140702125f",
+  "street_name": "חלץ",
+  "area": "מקור חיים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מושב חלץ נקרא על שם חלץ הפלטי, מגיבורי דוד המלך. לידו התגלה ב-1955 שדה הנפט הראשון שהצליח בישראל, והאירוע הונצח אפילו בשירים.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חלץ",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%9C%D7%A5",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

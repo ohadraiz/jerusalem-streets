@@ -1,0 +1,9 @@
+street_id: jlm-6f3c3ed32f
+street_name: עין יעקב
+area: בתי אונגרין
+fact: שמו של מושב עין יעקב, שהוקם ב-1950 בידי עולים מכורדיסטן ומעיראק, לקוח מפסוק בברכת משה: ׳וַיִּשְׁכֹּן יִשְׂרָאֵל בֶּטַח בָּדָד עֵין יַעֲקֹב׳.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%99%D7%A2%D7%A7%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

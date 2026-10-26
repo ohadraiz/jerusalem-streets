@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-58d013f631",
+  "street_name": "ניקרגואה",
+  "area": "קרית מנחם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בניקרגואה הגיעה האינפלציה ב-1988 ל-14,000%. בשיאה מנתה הקהילה היהודית כמה מאות נפשות, וב-1972 הוקם בה בית כנסת.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ניקרגואה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A7%D7%A8%D7%92%D7%95%D7%90%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

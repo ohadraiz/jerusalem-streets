@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1fe325556c",
+  "street_name": "עזריה",
+  "area": "המושבה היוונית",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מושב עזריה נוסד ב-30 באוקטובר 1949 בידי גרעין ירושלמי, על שטח הכפר אל־בריה. בדצמבר 1979 נפער בו בולען בעומק כ-25 מטרים, שהפך לכותרת ארצית.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עזריה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%99%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

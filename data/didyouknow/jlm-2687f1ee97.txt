@@ -1,0 +1,9 @@
+street_id: jlm-2687f1ee97
+street_name: אופירה
+area: סנהדריה
+fact: אופירה הייתה העיר הישראלית הראשונה במרחב שלמה שבסיני, ויועדה להיות שנייה לאילת במערך האזורי. ב-1981 נערכה בה פסגת אופירה, בהשתתפות סאדאת ובגין.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A4%D7%99%D7%A8%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

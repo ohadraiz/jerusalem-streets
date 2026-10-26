@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-18096e09b2cd",
+  "street_name": "יצהר",
+  "area": "גילה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יצהר הוקם באוגוסט 1983 כהיאחזות נח״ל שנקראה רוגן — מחווה צינית לרונלד רייגן, שקרא יום קודם לכן להקפאת ההתנחלויות. ב-1984 אוזרח בידי גרעין משפחות.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יצהר",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%94%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

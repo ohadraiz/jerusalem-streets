@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-57f777c932",
+  "street_name": "המיתלה",
+  "area": "רמת אשכול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מעבר המיתלה היה אחד משני המעברים היחידים שאפשרו תנועה רכובה מדרום סואץ לסיני. ב-1956 הוצנח בפתחו גדוד 890 — הצניחה הקרבית הראשונה של צה״ל.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — המיתלה",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%99%D7%AA%D7%9C%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

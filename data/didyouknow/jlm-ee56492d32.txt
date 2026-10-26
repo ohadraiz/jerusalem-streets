@@ -1,0 +1,9 @@
+street_id: jlm-ee56492d32
+street_name: משמרות
+area: מורשה
+fact: קבוצת משמרות נוסדה ב-16 ביוני 1933 מאיחוד ׳קבוצת הרוסים׳ מפרדס חנה עם ׳גורדוניה ליטא־לטביה׳. שמה כשם הגרעין, והיא עלתה על הקרקע באוקטובר 1933.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%9E%D7%A8%D7%95%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

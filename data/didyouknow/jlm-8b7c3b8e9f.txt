@@ -1,0 +1,9 @@
+street_id: jlm-8b7c3b8e9f
+street_name: באר שבע
+area: נחלאות
+fact: באר שבע הוכרזה כעיר ב-1950, ובטקס החנוכה בדצמבר אותה שנה השתתפה גולדה מאיר. ב-20 בפברואר 2015 ירד בה שלג — לראשונה מאז שנת 2000.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%90%D7%A8_%D7%A9%D7%91%D7%A2
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

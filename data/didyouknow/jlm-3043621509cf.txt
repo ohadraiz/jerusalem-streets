@@ -1,0 +1,9 @@
+street_id: jlm-3043621509cf
+street_name: גלעד
+area: הרובע היהודי
+fact: הגלעד הוא שמו העברי של חבל ארץ בעבר הירדן, מן הכנרת ועד ים המלח. שמו נקשר למילה הערבית ג׳לעד — גס, קשה — אולי על שום אופיו ההררי.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%A2%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

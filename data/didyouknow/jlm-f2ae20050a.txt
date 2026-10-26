@@ -1,0 +1,9 @@
+street_id: jlm-f2ae20050a
+street_name: אבן שמואל
+area: רמות ב'
+fact: היישוב אבן שמואל נקרא על שמו של הנדבן היהודי־קנדי שמואל ברונפמן, שתרם להקמת בית הספר ומועדון הנוער. ב-1965 עמד בפני פירוק, כש-15 המשפחות האחרונות ביקשו לעזוב.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%A9%D7%9E%D7%95%D7%90%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

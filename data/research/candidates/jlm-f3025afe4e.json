@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f3025afe4e",
+  "street_name": "ביתר",
+  "area": "מחנה אלנבי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ביתר הייתה עיר יהודית קדומה בהרי יהודה, מדרום־מערב לירושלים, ומילאה תפקיד מרכזי במרד בר כוכבא. זיהויה עם שרידי בתיר הוצע לראשונה בידי רבי אשתורי הפרחי במאה ה-14.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ביתר",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b94e139a05",
+  "street_name": "רבדים",
+  "area": "ארנונה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "קיבוץ רבדים הוקם ב-11 בפברואר 1947 בגוש עציון. עם פרוץ מלחמת העצמאות הוטל עליו מצור, וב-14 במאי 1948 נכנעו חבריו ללגיון הירדני ונשבו; באוקטובר 1949 עלה הקיבוץ לנקודת קבע בשפלה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבדים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%93%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

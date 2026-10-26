@@ -1,0 +1,9 @@
+street_id: jlm-b1641c6056
+street_name: בית חגלה
+area: ארנונה
+fact: בית חגלה, היישוב המזרחי ביותר במועצה אזורית מגילות ים המלח, כונתה בעבר רואה נבו. ב-6 בספטמבר 2023 חתם אלוף פיקוד מרכז צו שהעניק לה מעמד של יישוב.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%97%D7%92%D7%9C%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

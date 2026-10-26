@@ -1,0 +1,9 @@
+street_id: jlm-5b84c01831
+street_name: דן
+area: בקעה
+fact: שמו של דן מוסבר בפי רחל: ׳דָּנַנִּי אֱלֹהִים... עַל־כֵּן קָרְאָה שְׁמוֹ דָּן׳. לדן היה בן אחד, חושים, ומצאצאיו המפורסמים היה שמשון.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

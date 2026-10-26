@@ -1,0 +1,9 @@
+street_id: jlm-ea4a821fd78b
+street_name: מזור
+area: אבו בסל (שערי ירושלים)
+fact: מזור נוסד ב-1949 בידי ניצולי שואה מהונגריה וצ׳כיה על אדמות הכפר אל־מזירעה. את שמו קיבל בעקבות תוכנית להקים בו חוות צמחי מרפא — מזור מלשון מרפא.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%96%D7%95%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

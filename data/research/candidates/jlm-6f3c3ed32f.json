@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-6f3c3ed32f",
+  "street_name": "עין יעקב",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שמו של מושב עין יעקב, שהוקם ב-1950 בידי עולים מכורדיסטן ומעיראק, לקוח מפסוק בברכת משה: ׳וַיִּשְׁכֹּן יִשְׂרָאֵל בֶּטַח בָּדָד עֵין יַעֲקֹב׳.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עין יעקב",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%99%D7%A2%D7%A7%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

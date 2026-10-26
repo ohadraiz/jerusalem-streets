@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-92cc02156d5b",
+  "street_name": "טללים",
+  "area": "רמות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "קיבוץ טללים נקרא על שם הטל הרב שיורד בו במהלך השנה. מייסדיו היו גרעיני נח״ל של הצופים, שעלו לנקודת הקבע בראשית 1980.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — טללים",
+      "url": "https://he.wikipedia.org/wiki/%D7%98%D7%9C%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

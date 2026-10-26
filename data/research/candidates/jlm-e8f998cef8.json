@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e8f998cef8",
+  "street_name": "פארן",
+  "area": "רמת אשכול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מושב פארן קרוי על שם נחל פארן הזורם מצפון לו. הוא הוקם בנובמבר 1971 בידי גרעיני נח״ל של בני המושבים, ותחילה חי בצורה שיתופית שנקראה מושבו״צ.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פארן",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%90%D7%A8%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

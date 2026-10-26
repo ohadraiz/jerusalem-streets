@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bea6f3656a",
+  "street_name": "סלונים",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "סלונים נזכרת לראשונה ב-1252. בגטו שהוקם בה ב-1941 רוכזו יהודי העיר, וב-14 בנובמבר 1941 שולחו קרוב ל-10,000 מהם ונרצחו בבורות ירי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — סלונים",
+      "url": "https://he.wikipedia.org/wiki/%D7%A1%D7%9C%D7%95%D7%A0%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

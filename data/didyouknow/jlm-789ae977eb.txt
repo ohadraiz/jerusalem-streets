@@ -1,0 +1,9 @@
+street_id: jlm-789ae977eb
+street_name: בארות יצחק
+area: קטמון הישנה
+fact: בארות יצחק הוקם ב-1943 מדרום־מזרח לעזה, ומ-15 במאי 1948 הופגז בידי הצבא המצרי. ב-1952 עברו חבריו צפונה והקימו את הקיבוץ מחדש ליד יהוד.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%90%D7%A8%D7%95%D7%AA_%D7%99%D7%A6%D7%97%D7%A7
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

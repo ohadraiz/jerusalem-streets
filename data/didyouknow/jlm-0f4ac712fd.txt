@@ -1,0 +1,9 @@
+street_id: jlm-0f4ac712fd
+street_name: ברזיל
+area: קרית היובל
+fact: ברזיל היא היחידה שהשתתפה בכל המונדיאלים, עם חמישה גביעי עולם. ב-1636 נבנה בה בית הכנסת הראשון ביבשת אמריקה — קהל צור ישראל ברסיפה.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%96%D7%99%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-789ae977eb",
+  "street_name": "בארות יצחק",
+  "area": "קטמון הישנה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בארות יצחק הוקם ב-1943 מדרום־מזרח לעזה, ומ-15 במאי 1948 הופגז בידי הצבא המצרי. ב-1952 עברו חבריו צפונה והקימו את הקיבוץ מחדש ליד יהוד.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בארות יצחק",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%90%D7%A8%D7%95%D7%AA_%D7%99%D7%A6%D7%97%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

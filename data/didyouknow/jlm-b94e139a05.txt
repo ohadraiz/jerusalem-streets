@@ -1,0 +1,9 @@
+street_id: jlm-b94e139a05
+street_name: רבדים
+area: ארנונה
+fact: קיבוץ רבדים הוקם ב-11 בפברואר 1947 בגוש עציון. עם פרוץ מלחמת העצמאות הוטל עליו מצור, וב-14 במאי 1948 נכנעו חבריו ללגיון הירדני ונשבו; באוקטובר 1949 עלה הקיבוץ לנקודת קבע בשפלה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%93%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

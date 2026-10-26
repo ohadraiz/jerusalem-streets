@@ -1,0 +1,9 @@
+street_id: jlm-bea6f3656a
+street_name: סלונים
+area: בתי אונגרין
+fact: סלונים נזכרת לראשונה ב-1252. בגטו שהוקם בה ב-1941 רוכזו יהודי העיר, וב-14 בנובמבר 1941 שולחו קרוב ל-10,000 מהם ונרצחו בבורות ירי.
+source: https://he.wikipedia.org/wiki/%D7%A1%D7%9C%D7%95%D7%A0%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

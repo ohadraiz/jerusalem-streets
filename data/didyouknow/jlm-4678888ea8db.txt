@@ -1,0 +1,9 @@
+street_id: jlm-4678888ea8db
+street_name: רביבים
+area: רמות א'
+fact: קיבוץ רביבים עלה לקרקע ב-7 ביולי 1943 בשם תל צופים, כאחד משלושת המצפים בנגב. ב-1947 ביקרה בו ועדת אונסקו״פ.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99%D7%91%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-a8633533d7
+street_name: תובל
+area: רוממה
+fact: קיבוץ תובל קרוי על שם תובל קין, בנו של למך. הוא אוכלס ב-1980 בידי גרעין נח״ל ואוזרח ב-1981 בידי חברי הצופים והבונים מאנגליה.
+source: https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%91%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

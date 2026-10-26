@@ -1,0 +1,9 @@
+street_id: jlm-bb713f7175
+street_name: שבו
+area: גילה
+fact: שבו היא האבן השנייה בטור השלישי בחושן הכהן הגדול, המיוחסת לשבט נפתלי או לגד. חז״ל לא ידעו לזהותה: תרגום אונקלוס תרגם אותה ׳טרקיא׳ — טורקיז.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

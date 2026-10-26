@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-dfc00a5b19",
+  "street_name": "פנמה",
+  "area": "קרית מנחם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "פנמה השיגה עצמאות ב-1903 בתמיכת ארצות הברית, לאחר שסירבה לתנאי חפירת התעלה. התעלה הושלמה ב-1914, ובהסכמי 1977 נקבע שתעבור לידיה ב-1999.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פנמה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%A0%D7%9E%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

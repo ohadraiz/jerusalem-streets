@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-db01a25e6b",
+  "street_name": "בנין",
+  "area": "רסקו (גבעת הוורדים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בנין הייתה רפובליקת דהומיי עד 1975, когда שמה הוסב על שם מפרץ בנין. ב-1990 אושרה במשאל עם חוקה חדשה, והמדינה עברה לדמוקרטיה רב־מפלגתית.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בנין",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

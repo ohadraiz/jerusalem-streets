@@ -1,0 +1,9 @@
+street_id: jlm-0e61830e21
+street_name: בזל
+area: קרית משה
+fact: בבזל התכנס ב-1897 הקונגרס הציוני העולמי הראשון, בהנחיית תיאודור הרצל. אוניברסיטת בזל, שנוסדה ב-1460, היא העתיקה ביותר בשווייץ.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%96%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

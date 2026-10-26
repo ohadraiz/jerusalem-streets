@@ -1,0 +1,1265 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T13:08:54.595Z",
+  "accessDate": "2026-10-22",
+  "list": "data/research/batch-1200.json",
+  "summary": {
+    "total": 96,
+    "approved": 96,
+    "rejected": 0,
+    "high": 0,
+    "medium": 96,
+    "low": 0,
+    "contentSources": 96
+  },
+  "streets": [
+    {
+      "street_id": "jlm-02e8d84bca",
+      "street_name": "הירמוך",
+      "status": "approved",
+      "fact": "הירמוך נובע מבקעת דמשק ונשפך אל הירדן; בשפכו הוקם ב-1930 מפעל החשמל ההידרואלקטרי של פנחס רוטנברג — נהריים. ב-5 בפברואר 1992 נמדדה בו ספיקת שיא של 722.5 מ״ק לשנייה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%99%D7%A8%D7%9E%D7%95%D7%9A"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ea4a821fd78b",
+      "street_name": "מזור",
+      "status": "approved",
+      "fact": "מזור נוסד ב-1949 בידי ניצולי שואה מהונגריה וצ׳כיה על אדמות הכפר אל־מזירעה. את שמו קיבל בעקבות תוכנית להקים בו חוות צמחי מרפא — מזור מלשון מרפא.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%96%D7%95%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-6e4c884402",
+      "street_name": "ביסאן",
+      "status": "approved",
+      "fact": "ביסאן הוא שמה הערבי של בית שאן, שעמדה על דרך הים בין מצרים ומסופוטמיה. בחפירות במרכז העיר הרומית נחשפו שני תיאטראות, אודיאון ואמפיתיאטרון, וב-2010 נמצא בה בית כנסת שומרוני מהמאה ה-5.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%A1%D7%90%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-fe9b3b8e79",
+      "street_name": "ראמאללה",
+      "status": "approved",
+      "fact": "רמאללה הוקמה ב-1550 בידי משפחת החדדים, משפחה ערבית־נוצרית משבט ע׳סאן. ב-2005 הייתה לעיר הראשונה ברשות הפלסטינית שבה נבחרה אישה לראשות העיר, ג׳נט מיכאיל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%9E%D7%90%D7%9C%D7%9C%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-016f90d004",
+      "street_name": "אפרתה",
+      "status": "approved",
+      "fact": "אפרת שבגוש עציון הוקמה ב-1977, ביוזמת משה מושקוביץ ובסיוע הרב שלמה ריסקין. רק ב-2012 החליטה ועדת השמות לאמץ את השם הנפוץ אפרת כשם היישוב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%A8%D7%AA%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b1641c6056",
+      "street_name": "בית חגלה",
+      "status": "approved",
+      "fact": "בית חגלה, היישוב המזרחי ביותר במועצה אזורית מגילות ים המלח, כונתה בעבר רואה נבו. ב-6 בספטמבר 2023 חתם אלוף פיקוד מרכז צו שהעניק לה מעמד של יישוב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%97%D7%92%D7%9C%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-db4cae1c25",
+      "street_name": "קורץ",
+      "status": "approved",
+      "fact": "בקורץ נוסד ב-1776 בית הדפוס העברי הראשון בעיר, בידי הרב צבי הירש וחתנו שמואל סגל. במחצית המאה ה-18 פעל בה הרב פנחס שפירא מקוריץ, תלמיד המגיד ממזריץ׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%A8%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b94e139a05",
+      "street_name": "רבדים",
+      "status": "approved",
+      "fact": "קיבוץ רבדים הוקם ב-11 בפברואר 1947 בגוש עציון. עם פרוץ מלחמת העצמאות הוטל עליו מצור, וב-14 במאי 1948 נכנעו חבריו ללגיון הירדני ונשבו; באוקטובר 1949 עלה הקיבוץ לנקודת קבע בשפלה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%93%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-fe711dfb91",
+      "street_name": "הסוללים",
+      "status": "approved",
+      "fact": "שמו של הקיבוץ הסוללים, שהוקם ביולי 1949 בידי יוצאי הפלמ״ח וגרעין מארצות הברית, הוא סמלי — מתוך שאיפה לסלול דרך להתיישבות יהודית בצפון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A1%D7%95%D7%9C%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-06cb3cb871",
+      "street_name": "לפידות",
+      "status": "approved",
+      "fact": "לפידות, היישוב הדרומי ביותר במועצה אזורית מעלה יוסף, הוקם ב-1981 בידי גרעין בני מושבים. ב-1988 התגוררו בו 33 משפחות — 25 מתוך 30 המייסדים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%A4%D7%99%D7%93%D7%95%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8fd7911021",
+      "street_name": "דינה",
+      "status": "approved",
+      "fact": "דינה, בת יעקב ולאה, היא היחידה מבנות יעקב שסיפורה מסופר במקרא בהרחבה. לפי חז״ל הייתה אשתו של איוב, ומסורת שתועדה במאה ה-12 ממקמת את קברה בארבל.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%99%D7%A0%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5b84c01831",
+      "street_name": "דן",
+      "status": "approved",
+      "fact": "שמו של דן מוסבר בפי רחל: ׳דָּנַנִּי אֱלֹהִים... עַל־כֵּן קָרְאָה שְׁמוֹ דָּן׳. לדן היה בן אחד, חושים, ומצאצאיו המפורסמים היה שמשון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d6a3819742",
+      "street_name": "נציבין",
+      "status": "approved",
+      "fact": "נציבין, על גבול טורקיה–סוריה, נזכרה לראשונה ב-852 לפנה״ס כמקום מושבו של נציב אשורי. ערב מלחמת העולם הראשונה חיו בה כ-2,000 נוצרים ו-600 יהודים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%A6%D7%99%D7%91%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-bea6f3656a",
+      "street_name": "סלונים",
+      "status": "approved",
+      "fact": "סלונים נזכרת לראשונה ב-1252. בגטו שהוקם בה ב-1941 רוכזו יהודי העיר, וב-14 בנובמבר 1941 שולחו קרוב ל-10,000 מהם ונרצחו בבורות ירי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A1%D7%9C%D7%95%D7%A0%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-6f3c3ed32f",
+      "street_name": "עין יעקב",
+      "status": "approved",
+      "fact": "שמו של מושב עין יעקב, שהוקם ב-1950 בידי עולים מכורדיסטן ומעיראק, לקוח מפסוק בברכת משה: ׳וַיִּשְׁכֹּן יִשְׂרָאֵל בֶּטַח בָּדָד עֵין יַעֲקֹב׳.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%99%D7%9F_%D7%99%D7%A2%D7%A7%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-dc16f8903d",
+      "street_name": "משואות יצחק",
+      "status": "approved",
+      "fact": "משואות יצחק נקרא על שם הרב יצחק אייזיק הלוי הרצוג, בטקס שהתקיים באוקטובר 1945. הקיבוץ חרב במלחמת העצמאות, וחבריו שבו מהשבי ב-1949 והקימו מושב שיתופי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%95%D7%90%D7%95%D7%AA_%D7%99%D7%A6%D7%97%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-dc1017ea6b",
+      "street_name": "אביגיל",
+      "status": "approved",
+      "fact": "אביגיל, אשת נבל הכרמלי ואחר כך אשת דוד, עצרה את דוד מלנקום. לפי משה צבי סגל פירוש שמה ׳אבי הגיל׳ — שמחת האב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%92%D7%99%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ab443de3d9",
+      "street_name": "נעמי",
+      "status": "approved",
+      "fact": "נעמי שבה ממואב ליהודה אלמנה וערירית, ולאחר שרות דבקה בה שידכה אותה לבעז. לבסוף נולד לבעז ולרות בן, עובד, ונעמי שימשה לו אומנת.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f4971e2614",
+      "street_name": "עמינדב",
+      "status": "approved",
+      "fact": "מושב עמינדב, מדרום־מערב לירושלים, קרוי על שם אביהם של נחשון בן עמינדב ואלישבע אשת אהרון. הוא הוקם ב-1950 ככפר עבודה בידי עולים מתימן על אדמות אל־ולג׳ה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%A0%D7%93%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7196b63f36",
+      "street_name": "עשהאל",
+      "status": "approved",
+      "fact": "היישוב עשהאל, בהר חברון, קרוי על שם עשהאל בן צרויה, מגיבורי המלך דוד. הוא הוקם כנקודת יישוב ב-2001, וב-2023 הוכשר כיישוב במועצה אזורית הר חברון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%A9%D7%94%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f82f85ea93",
+      "street_name": "ברנוביץ'",
+      "status": "approved",
+      "fact": "ברנוביץ׳ נזכרת לראשונה ב-1706 כרכוש פרטי, וגדלה עם סלילת מסילות הברזל ב-1870. בין 1921 ל-1939 הייתה בשטח פולין ורוב תושביה היו יהודים; בדצמבר 1941 רוכזו יהודיה בגטו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%95%D7%91%D7%99%D7%A5'"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-18096e09b2cd",
+      "street_name": "יצהר",
+      "status": "approved",
+      "fact": "יצהר הוקם באוגוסט 1983 כהיאחזות נח״ל שנקראה רוגן — מחווה צינית לרונלד רייגן, שקרא יום קודם לכן להקפאת ההתנחלויות. ב-1984 אוזרח בידי גרעין משפחות.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%94%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-526f8c0ba5",
+      "street_name": "לשם",
+      "status": "approved",
+      "fact": "לשם היא האבן הראשונה בטור השלישי בחושן הכהן הגדול, המיוחסת לשבט דן. אין במקורות פרטים מזהים לאבני החושן, ולכן יש שזיהו אותה בענבר ואחרים ראו בה ליגוריוס.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%A9%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-797c203491",
+      "street_name": "צאלים",
+      "status": "approved",
+      "fact": "קיבוץ צאלים נקרא על שם עצי השיטים שבאזור, שזוהו בטעות כעצי הצאלים המקראיים. הוא נוסד בינואר 1947, כאחד מיישובי קו המים לנגב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%90%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-bb713f7175",
+      "street_name": "שבו",
+      "status": "approved",
+      "fact": "שבו היא האבן השנייה בטור השלישי בחושן הכהן הגדול, המיוחסת לשבט נפתלי או לגד. חז״ל לא ידעו לזהותה: תרגום אונקלוס תרגם אותה ׳טרקיא׳ — טורקיז.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "yehezkel",
+      "street_name": "יחזקאל",
+      "status": "approved",
+      "fact": "יחזקאל בן בוזי הכהן גלה לבבל עם גלות יהויכין וניבא שם ליושבי הגולה. נבואתו המאוחרת מתוארכת ל-571 לפנה״ס — כ-15 שנה לאחר חורבן הבית הראשון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-48dea72ea2",
+      "street_name": "לוחמי הגטאות",
+      "status": "approved",
+      "fact": "קיבוץ לוחמי הגטאות הוקם ב-1949 בידי ניצולי שואה ופרטיזנים, ובהם יצחק צוקרמן וצביה לובטקין ממרד גטו ורשה. טקס ההתנחלות נערך ב-18 באפריל 1949, יום לפני יום השנה השישי למרד.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%97%D7%9E%D7%99_%D7%94%D7%92%D7%98%D7%90%D7%95%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3eff59dbeb",
+      "street_name": "עתניאל",
+      "status": "approved",
+      "fact": "עתניאל שבדרום הר חברון נוסדה ב-11 באוקטובר 1983, ונקראה על שם השופט עתניאל בן קנז. היא יושבת על קו פרשת המים: ממזרח נוף מדברי, ממערב נחל חברון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%AA%D7%A0%D7%99%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1fe325556c",
+      "street_name": "עזריה",
+      "status": "approved",
+      "fact": "מושב עזריה נוסד ב-30 באוקטובר 1949 בידי גרעין ירושלמי, על שטח הכפר אל־בריה. בדצמבר 1979 נפער בו בולען בעומק כ-25 מטרים, שהפך לכותרת ארצית.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%99%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7a09276bc6",
+      "street_name": "רות",
+      "status": "approved",
+      "fact": "רות המואבייה, סבתא רבתא של דוד המלך, דבקה בחמותה נעמי ואמרה ׳עמך עמי ואלוהיך אלוהי׳. בשדה בבית לחם ליקטה שיבולים אחר הקוצרים, ושם פגשה את בעז.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8afd3f2593",
+      "street_name": "בויאן",
+      "status": "approved",
+      "fact": "בויאן, כפר בבוקובינה, הפך למוקד חסידי ב-1886, כשהאדמו״ר רבי יצחק פרידמן התיישב בו והעתיק לשם את חצרו מסדיגורה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%99%D7%90%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-79b20bf99e5b",
+      "street_name": "בית אל",
+      "status": "approved",
+      "fact": "בית אל הוכרזה מועצה מקומית ב-1997. ב-1978 אושר פיצול היישוב לשניים — בית אל א׳ סביב היישוב המקורי, ובית אל ב׳ סביב ישיבת בית אל שבראשה עמד הרב זלמן מלמד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9c0314ede3",
+      "street_name": "ברקאי",
+      "status": "approved",
+      "fact": "שם הקיבוץ ברקאי הוא ראשי תיבות: בני עבודה רומניה קיבוץ ארץ ישראל — לכבוד הגרעין המייסד, שהוכרז בפסח 1945 ברומניה. הקיבוץ עלה על הקרקע ב-10 במאי 1949.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A7%D7%90%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3043621509cf",
+      "street_name": "גלעד",
+      "status": "approved",
+      "fact": "הגלעד הוא שמו העברי של חבל ארץ בעבר הירדן, מן הכנרת ועד ים המלח. שמו נקשר למילה הערבית ג׳לעד — גס, קשה — אולי על שום אופיו ההררי.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%A2%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-fe76690682",
+      "street_name": "השליחים",
+      "status": "approved",
+      "fact": "שנים־עשר השליחים היו תלמידיו של ישו, שנשלחו לאחר מותו להפיץ את תורתו. לפי המסורת, כולם מלבד יוחנן בן זבדי לא מתו מוות טבעי.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A9%D7%9C%D7%99%D7%97%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-52d284a55e",
+      "street_name": "קזנובה",
+      "status": "approved",
+      "fact": "ג׳קומו קזנובה היה סופר והרפתקן איטלקי, שעבד גם כמרגל, מוזיקאי וקלפן. אחרי מאסר בוונציה נמלט לפריז, ושם, בהשפעת מארי אנטואנט, מונה למנהל הלוטו הצרפתי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A7%D7%96%D7%A0%D7%95%D7%91%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-fb09f8d124",
+      "street_name": "התקוה",
+      "status": "approved",
+      "fact": "מילות ההמנון הן שני הבתים הראשונים של ׳תקוותנו׳, שחיבר נפתלי הרץ אימבר ב-1878. השם הוחלף ל׳התקווה׳, והגרסה עם ׳בת שנות אלפיים׳ עוגנה בחקיקה ב-2004.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A7%D7%95%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4f6161a171",
+      "street_name": "מגדים",
+      "status": "approved",
+      "fact": "מושב מגדים נוסד ב-1949 ונקרא תחילה עתלית ב׳. את שמו הסמלי הציע זאב וילנאי, והוא נגזר מפסוק בשיר השירים — ׳עם פרי מגדים׳.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%92%D7%93%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0a7fcfbd2f",
+      "street_name": "בליליוס",
+      "status": "approved",
+      "fact": "משפחת בליליוס, משפחה יהודית ספרדית, נמלטה מהאינקוויזיציה לוונציה: רפאל בליליוס, שנודע בפורטוגל כפיליפו טרסו, הוריש לבנותיו את כלי הכסף שהביא מליסבון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%9C%D7%99%D7%9C%D7%99%D7%95%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ee56492d32",
+      "street_name": "משמרות",
+      "status": "approved",
+      "fact": "קבוצת משמרות נוסדה ב-16 ביוני 1933 מאיחוד ׳קבוצת הרוסים׳ מפרדס חנה עם ׳גורדוניה ליטא־לטביה׳. שמה כשם הגרעין, והיא עלתה על הקרקע באוקטובר 1933.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%9E%D7%A8%D7%95%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f3025afe4e",
+      "street_name": "ביתר",
+      "status": "approved",
+      "fact": "ביתר הייתה עיר יהודית קדומה בהרי יהודה, מדרום־מערב לירושלים, ומילאה תפקיד מרכזי במרד בר כוכבא. זיהויה עם שרידי בתיר הוצע לראשונה בידי רבי אשתורי הפרחי במאה ה-14.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-742d7854a8",
+      "street_name": "הירדן",
+      "status": "approved",
+      "fact": "מקור שמו של הירדן נזכר לראשונה בפפירוס מצרי מהמאה ה-13 לפנה״ס, וייתכן שהוא הלחם של ׳יאר׳ ו׳דן׳. ב-1932 נבנה סכר דגניה, החוסם את מוצא הנהר מהכנרת.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%99%D7%A8%D7%93%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-958fa92834f3",
+      "street_name": "גבע",
+      "status": "approved",
+      "fact": "קבוצת גבע הוקמה ב-1921 בידי עולים מרוסיה ופולין מהעלייה השנייה, לאחר גרעין שהחל לפעול ב-1913. ב-1924 הצטרפו אליה כחמישה־עשר בני העלייה השלישית מגרודנה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%92%D7%91%D7%A2"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-db2ad4cfc6",
+      "street_name": "ערד",
+      "status": "approved",
+      "fact": "ערד תוכננה מ-1960 כ׳עיר המתוכננת הראשונה בישראל׳, ביוזמת לובה אליאב, ורק ב-1995 הוכרזה כעיר. ב-2010 נבחרה בה טלי פלוסקוב, יוצאת חבר המדינות הראשונה בראשות עיר בישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%A8%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-eba2cecee5",
+      "street_name": "תדהר",
+      "status": "approved",
+      "fact": "שם מושב תדהר לקוח מישעיהו — ׳אשים בערבה ברוש תדהר ותאשור יחדו׳ — ומכאן גם שמות היישובים הסמוכים ברוש ותאשור. תדהר הוא היישוב המערבי ביותר במועצה אזורית בני שמעון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%93%D7%94%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-140702125f",
+      "street_name": "חלץ",
+      "status": "approved",
+      "fact": "מושב חלץ נקרא על שם חלץ הפלטי, מגיבורי דוד המלך. לידו התגלה ב-1955 שדה הנפט הראשון שהצליח בישראל, והאירוע הונצח אפילו בשירים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%9C%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7fb0164f9cb8",
+      "street_name": "אילת",
+      "status": "approved",
+      "fact": "אילת היא העיר היחידה בישראל השוכנת על חופי ים סוף, ונמלה החל לפעול ב-1950. עוד ב-1934, לפני קום המדינה, הגיע דוד בן־גוריון לאום־רשרש וחלם על עיר נמל בין־לאומית.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%9C%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8b7c3b8e9f",
+      "street_name": "באר שבע",
+      "status": "approved",
+      "fact": "באר שבע הוכרזה כעיר ב-1950, ובטקס החנוכה בדצמבר אותה שנה השתתפה גולדה מאיר. ב-20 בפברואר 2015 ירד בה שלג — לראשונה מאז שנת 2000.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%90%D7%A8_%D7%A9%D7%91%D7%A2"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a693024807",
+      "street_name": "ברעם",
+      "status": "approved",
+      "fact": "קיבוץ ברעם, בגליל העליון, נקרא על שם כפר ברעם — יישוב יהודי קדום מימי בית שני, שבו שרידי בית כנסת מהמפוארים בארץ. הקיבוץ עלה לקרקע ב-14 ביוני 1949.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A2%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-59c70cad58d7",
+      "street_name": "גבעון",
+      "status": "approved",
+      "fact": "גבעון הייתה עיר מקראית בנחלת בנימין, ועירם הראשית של הגבעונים. היא שימשה מקום מושבו האחרון של המשכן לפני הקמת בית המקדש, ושם נראה ה׳ לשלמה בחלום.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%92%D7%91%D7%A2%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-55d4d2f60aa3",
+      "street_name": "יראון",
+      "status": "approved",
+      "fact": "קיבוץ יראון נקרא על שם יראון המקראית, מערי המבצר שבצפון נחלת נפתלי. הוא הוקם ב-20 במאי 1949 בידי 74 חברים מהכשרת הצופים ה׳.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%90%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cf10ae57d0",
+      "street_name": "כורזין",
+      "status": "approved",
+      "fact": "כורזים היה יישוב קדום ליד הכנרת, שפעל מהמאה הראשונה עד השמינית, ובו בית כנסת מבזלת. שמו השתמר בשם חירבת כראזה, וב-2019 נמצאה בו גת עם רצפת פסיפס.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%95%D7%A8%D7%96%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-dfd2862ba9",
+      "street_name": "נוב",
+      "status": "approved",
+      "fact": "מושב נוב שבדרום הגולן נקרא על שם נוב, עיר הכוהנים בארץ יהודה; החוקר שמואל קליין הציע שיושביו הראשונים היו פליטים שהגיעו משם. בחנוכה תשל״ד נכנסו לבתיהם 14 המשפחות הראשונות.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%95%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-99548aff20d8",
+      "street_name": "תקוע",
+      "status": "approved",
+      "fact": "תקוע הוקמה ב-1975 כהיאחזות נח״ל בידי גרעין שח״ם כפר עציון, ואוזרחה כעבור שנתיים. ב-2024 הכיר משרד התרבות בגלריה במרכז האומנים שלה — הראשונה ביהודה ושומרון.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%A7%D7%95%D7%A2"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3d61fd6cca",
+      "street_name": "אלישר",
+      "status": "approved",
+      "fact": "משפחת אלישר היא משפחת רבנים ספרדית; לפי המסורת דבק בה הכינוי בשל ישרותה. הרב יעקב שאול אלישר הוכתר ב-1893 לראשון לציון וכיהן בתפקיד עד 1906.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A9%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-63fae144fe",
+      "street_name": "התקופה",
+      "status": "approved",
+      "fact": "התקופה היה מאסף ספרותי עברי שראה אור מ-1918 עד 1950 בהוצאת שטיבל, בעריכת דוד פרישמן ואחריו פישל לחובר ויעקב פיכמן. הוא שימש במה מרכזית לספרות העברית החדשה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%AA%D7%A7%D7%95%D7%A4%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ddd24204b2",
+      "street_name": "טבי",
+      "status": "approved",
+      "fact": "טבי, עבדו הכנעני של רבן גמליאל, היה תלמיד חכם שהכיר את ההלכות. במסכת סוכה מסופר שישן תחת המיטה, משום שידע שעבדים פטורים מן הסוכה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%98%D7%91%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-2687f1ee97",
+      "street_name": "אופירה",
+      "status": "approved",
+      "fact": "אופירה הייתה העיר הישראלית הראשונה במרחב שלמה שבסיני, ויועדה להיות שנייה לאילת במערך האזורי. ב-1981 נערכה בה פסגת אופירה, בהשתתפות סאדאת ובגין.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A4%D7%99%D7%A8%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-197cbfcc54",
+      "street_name": "מיכל",
+      "status": "approved",
+      "fact": "מיכל, בת שאול ואשת דוד, היא הדמות הנשית היחידה במקרא שנאמר עליה במפורש שאהבה את בן זוגה: ׳וַתֶּאֱהַב מִיכַל בַּת שָׁאוּל אֶת דָּוִד׳.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a41edc7ba7",
+      "street_name": "אורוגואי",
+      "status": "approved",
+      "fact": "אורוגוואי אירחה וזכתה בגביע העולם הראשון בכדורגל, ב-1930. ב-2013 הייתה המדינה הראשונה בעולם שהכשירה מריחואנה באופן מלא.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%95%D7%92%D7%95%D7%90%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-bd9d9ea314",
+      "street_name": "וולטה עילית",
+      "status": "approved",
+      "fact": "וולטה עילית קיבלה עצמאות ב-1960, וב-1984 שינתה את שמה לבורקינה פאסו — ארץ האנשים הישרים. ביולי 1961, בביקור הנשיא יאמאוגו בישראל, נקרא רחוב בקרית היובל על שמה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%95%D7%95%D7%9C%D7%98%D7%94_%D7%A2%D7%99%D7%9C%D7%99%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c70e6dccf1",
+      "street_name": "מחנה יצחק",
+      "status": "approved",
+      "fact": "מחנה יצחק, הידוע כמחנה נפח, נקרא על שם סגן־אלוף יצחק חלפון, שנפל ברמת הגולן במלחמת ששת הימים. הוא יושב בהצטלבות כביש 91 וכביש הנפט, ומשמש מפקדת אוגדה 210.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%97%D7%A0%D7%94_%D7%99%D7%A6%D7%97%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-00f17e2baf",
+      "street_name": "החיל",
+      "status": "approved",
+      "fact": "החיל היה שטח סמוך לחומת בית המקדש, בין הסורג לכותלי העזרה — מתחם ברוחב עשר אמות סביב הכותלים. העולים לרגל עלו ממנו במדרגות אל הר הבית.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%97%D7%99%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-789ae977eb",
+      "street_name": "בארות יצחק",
+      "status": "approved",
+      "fact": "בארות יצחק הוקם ב-1943 מדרום־מזרח לעזה, ומ-15 במאי 1948 הופגז בידי הצבא המצרי. ב-1952 עברו חבריו צפונה והקימו את הקיבוץ מחדש ליד יהוד.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%90%D7%A8%D7%95%D7%AA_%D7%99%D7%A6%D7%97%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cbbb614ef8",
+      "street_name": "יד מרדכי",
+      "status": "approved",
+      "fact": "קיבוץ יד מרדכי נוסד ב-1943 בשם מצפה הים, וב-1946 הוחלף שמו ליד מרדכי. ב-1951 הוקמה במרכזו אנדרטה לזכרו של מרדכי אנילביץ׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%93_%D7%9E%D7%A8%D7%93%D7%9B%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5d9f9fa353",
+      "street_name": "נגבה",
+      "status": "approved",
+      "fact": "קיבוץ נגבה הוקם ב-12 ביולי 1939 כיישוב חומה ומגדל, ונקרא תחילה גבעת גנים. כעבור שנה הוסב שמו לנגבה, לסמל את השאיפה להתיישבות יהודית בנגב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%92%D7%91%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0f4ac712fd",
+      "street_name": "ברזיל",
+      "status": "approved",
+      "fact": "ברזיל היא היחידה שהשתתפה בכל המונדיאלים, עם חמישה גביעי עולם. ב-1636 נבנה בה בית הכנסת הראשון ביבשת אמריקה — קהל צור ישראל ברסיפה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%96%D7%99%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b59502716c",
+      "street_name": "צ'ילה",
+      "status": "approved",
+      "fact": "צ׳ילה זכתה לראשונה בקופה אמריקה ב-2015, בטורניר שאירחה. ב-1973 נרצח המשורר ויקטור חרה במהלך ההפיכה הצבאית.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6'%D7%99%D7%9C%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-77dc186ce9",
+      "street_name": "הרפובליקה הדומיניקנית",
+      "status": "approved",
+      "fact": "הרפובליקה הדומיניקנית שוכנת בחלקו המזרחי של האי היספניולה; בה הוקמה סנטו דומינגו, העיר הראשונה בעולם החדש. בין 1930 ל-1961 שלט בה הרודן רפאל לאונידס טרוחיו.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%A4%D7%95%D7%91%D7%9C%D7%99%D7%A7%D7%94_%D7%94%D7%93%D7%95%D7%9E%D7%99%D7%A0%D7%99%D7%A7%D7%A0%D7%99%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-58d013f631",
+      "street_name": "ניקרגואה",
+      "status": "approved",
+      "fact": "בניקרגואה הגיעה האינפלציה ב-1988 ל-14,000%. בשיאה מנתה הקהילה היהודית כמה מאות נפשות, וב-1972 הוקם בה בית כנסת.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A7%D7%A8%D7%92%D7%95%D7%90%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-dfc00a5b19",
+      "street_name": "פנמה",
+      "status": "approved",
+      "fact": "פנמה השיגה עצמאות ב-1903 בתמיכת ארצות הברית, לאחר שסירבה לתנאי חפירת התעלה. התעלה הושלמה ב-1914, ובהסכמי 1977 נקבע שתעבור לידיה ב-1999.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%A0%D7%9E%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-2c2a25e87f",
+      "street_name": "קולומביה",
+      "status": "approved",
+      "fact": "לקולומביה הגיע הספרדי הראשון ב-1499, אלונסו דה אוחדה, וב-1533 נוסדה קרטחנה. במאה ה-20 נודעה בקרטלי הסמים: פבלו אסקובר גורש מהקונגרס ב-1984.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%9C%D7%95%D7%9E%D7%91%D7%99%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0e61830e21",
+      "street_name": "בזל",
+      "status": "approved",
+      "fact": "בבזל התכנס ב-1897 הקונגרס הציוני העולמי הראשון, בהנחיית תיאודור הרצל. אוניברסיטת בזל, שנוסדה ב-1460, היא העתיקה ביותר בשווייץ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%96%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d98456e1f2",
+      "street_name": "ברודי",
+      "status": "approved",
+      "fact": "מברודי יצא ב-19 בספטמבר 1942 המשלוח הראשון של כ-2,500 יהודים למחנה המוות בלזץ — עוד לפני שהוקם בה גטו. עד מאי 1943 נותרו בגטו בין 2,000 ל-3,000 יהודים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%95%D7%93%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d145af79e8",
+      "street_name": "אריאל",
+      "status": "approved",
+      "fact": "אריאל הוקמה ב-1978 בשם הזמני חרס, ורק ב-31 בדצמבר 1978 ניתן לה שמה, בהצעת זאב וילנאי. ב-1998 הוכרזה כעיר.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a8633533d7",
+      "street_name": "תובל",
+      "status": "approved",
+      "fact": "קיבוץ תובל קרוי על שם תובל קין, בנו של למך. הוא אוכלס ב-1980 בידי גרעין נח״ל ואוזרח ב-1981 בידי חברי הצופים והבונים מאנגליה.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%91%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e4e4b4df238c",
+      "street_name": "אביעזר",
+      "status": "approved",
+      "fact": "מושב אביעזר, מדרום לבית שמש, הוקם באפריל 1958 על אדמות הכפר בית נטיף. ב-2018 נקבעו בו שמות רחובות חדשים, והנושא המרכזי שלהם הוא עצים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%A2%D7%96%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-92cc02156d5b",
+      "street_name": "טללים",
+      "status": "approved",
+      "fact": "קיבוץ טללים נקרא על שם הטל הרב שיורד בו במהלך השנה. מייסדיו היו גרעיני נח״ל של הצופים, שעלו לנקודת הקבע בראשית 1980.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%98%D7%9C%D7%9C%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-758440c185",
+      "street_name": "כיסופים",
+      "status": "approved",
+      "fact": "קיבוץ כיסופים נוסד ב-1951 בידי עולים מארצות הברית ודרום אמריקה. שמו מן השורש כס״ף — ערגה וכמיהה, כבפסוק ׳נִכְסְפָה וְגַם כָּלְתָה נַפְשִׁי׳.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%99%D7%A1%D7%95%D7%A4%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-875a891987cf",
+      "street_name": "צפרירים",
+      "status": "approved",
+      "fact": "מושב צפרירים נקרא על שם רוחות הבוקר הנושבות בו, בשל מיקומו על הר גבוה. הוא הוקם על אדמות הכפר עג׳ור, שתושביו נמלטו ב-1948.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%A4%D7%A8%D7%99%D7%A8%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4678888ea8db",
+      "street_name": "רביבים",
+      "status": "approved",
+      "fact": "קיבוץ רביבים עלה לקרקע ב-7 ביולי 1943 בשם תל צופים, כאחד משלושת המצפים בנגב. ב-1947 ביקרה בו ועדת אונסקו״פ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99%D7%91%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f2ae20050a",
+      "street_name": "אבן שמואל",
+      "status": "approved",
+      "fact": "היישוב אבן שמואל נקרא על שמו של הנדבן היהודי־קנדי שמואל ברונפמן, שתרם להקמת בית הספר ומועדון הנוער. ב-1965 עמד בפני פירוק, כש-15 המשפחות האחרונות ביקשו לעזוב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%9F_%D7%A9%D7%9E%D7%95%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-da492dcf54d6",
+      "street_name": "גיזה",
+      "status": "approved",
+      "fact": "גיזה, בגדה המערבית של הנילוס, היא בירת המחוז הקרוי על שמה; ברמת גיזה נמצאות הפירמידות, שנבנו מול ממפיס. אוכלוסייתה מוערכת בכ-4.46 מיליון נפש.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%96%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e2898f7f8f47",
+      "street_name": "שאר ישוב",
+      "status": "approved",
+      "fact": "מושב שאר ישוב נקרא על שם בנו של ישעיהו הנביא. באסון המסוקים ב-1997 התנגשו מעליו שני מסוקי יסעור, ובחורשה ביישוב ניצבים 73 עצים לזכר 73 החללים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%A8_%D7%99%D7%A9%D7%95%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-57f777c932",
+      "street_name": "המיתלה",
+      "status": "approved",
+      "fact": "מעבר המיתלה היה אחד משני המעברים היחידים שאפשרו תנועה רכובה מדרום סואץ לסיני. ב-1956 הוצנח בפתחו גדוד 890 — הצניחה הקרבית הראשונה של צה״ל.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%99%D7%AA%D7%9C%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a241794d56",
+      "street_name": "יטבתה",
+      "status": "approved",
+      "fact": "יטבתה עלתה על הקרקע ב-30 באוקטובר 1951 כהיאחזות הנח״ל השלישית, סמוך לקידוח שהזרים מים לאילת. היא נועדה לשמור על הצינור ולאבטח את הדרך לנגב.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%98%D7%91%D7%AA%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cebb4f8c59",
+      "street_name": "עציון גבר",
+      "status": "approved",
+      "fact": "עציון גבר נזכרת בתנ״ך כתחנה במסעי בני ישראל, ואחר כך כעיר נמל שממנה שלח שלמה אניות לאופיר. החוקרים חלוקים על זיהויה: תל אל־חליפה, אי פרעה או אי האלמוגים.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%A6%D7%99%D7%95%D7%9F_%D7%92%D7%91%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e8f998cef8",
+      "street_name": "פארן",
+      "status": "approved",
+      "fact": "מושב פארן קרוי על שם נחל פארן הזורם מצפון לו. הוא הוקם בנובמבר 1971 בידי גרעיני נח״ל של בני המושבים, ותחילה חי בצורה שיתופית שנקראה מושבו״צ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%90%D7%A8%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-db01a25e6b",
+      "street_name": "בנין",
+      "status": "approved",
+      "fact": "בנין הייתה רפובליקת דהומיי עד 1975, когда שמה הוסב על שם מפרץ בנין. ב-1990 אושרה במשאל עם חוקה חדשה, והמדינה עברה לדמוקרטיה רב־מפלגתית.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cca49c3527",
+      "street_name": "אושה",
+      "status": "approved",
+      "fact": "קיבוץ אושה נוסד בקיץ 1937 והיה הראשון של תנועת הנוער הציוני. שמו מן העיר הקדומה אושא, שבה ישבה הסנהדרין לאחר מרד בר כוכבא.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A9%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d00cff68da",
+      "street_name": "טבריה",
+      "status": "approved",
+      "fact": "טבריה נכבשה ב-1099 בידי טנקרד הצלבני והפכה לבירת נסיכות הגליל. ב-1837 החריד אותה רעש אדמה חזק, וב-1924 החל לכהן בה זאכי אלחדיף, ראש העיר היהודי הראשון בארץ.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%98%D7%91%D7%A8%D7%99%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0e6cc1e207",
+      "street_name": "צפת",
+      "status": "approved",
+      "fact": "בצפת הוקם ב-1576 בית הדפוס הראשון במזרח התיכון. ב-1188 נכנעו הטמפלרים לסלאח א־דין ומסרו לו את המצודה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%A4%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-17e0f94dbc",
+      "street_name": "שפרעם",
+      "status": "approved",
+      "fact": "שפרעם היא עיר ערבית בצפון הארץ; במפקד שערך משה מונטיפיורי ב-1839 נמנו בה 107 יהודים, כולם ספרדים. ב-1948 נכבשה העיר במבצע דקל.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%A4%D7%A8%D7%A2%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5716cad357",
+      "street_name": "אלקנה",
+      "status": "approved",
+      "fact": "אלקנה הוקמה בידי גרעין מערב שומרון, שהתארגן מ-1973 ביוזמת הלל ויס; שכונת הקבע הראשונה נבנתה ב-1983 מעברו הדרומי של כביש 5. ב-1974 נעצרה בדרכה למקום שיירה ובה כ-200 איש.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A7%D7%A0%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d05784a8e3",
+      "street_name": "ברוכים",
+      "status": "approved",
+      "fact": "היישוב ברמת הנשיא טראמפ הוקם במקום שבו שכן היישוב ברוכים, שהוקם ב-1991 וננטש ברובו. ביוני 2023 שינתה ועדת השמות הממלכתית את שמו.",
+      "confidence": "medium",
+      "method": "topic-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%95%D7%9B%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9893270ba3",
+      "street_name": "מחניים",
+      "status": "approved",
+      "fact": "אדמות מחניים נרכשו ב-1891 בידי אגודת אהבת ציון מגליציה, וב-1898 התיישבו בהן משפחות מבוצ׳אץ׳. ב-1901 קרסה המושבה, וב-1903 נמכרה אדמתה לחקלאי ראש פינה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%97%D7%A0%D7%99%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות, המקום או המוסד; לא נמצא מאמר רחוב ישיר."
+    }
+  ]
+}

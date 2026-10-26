@@ -1,0 +1,9 @@
+street_id: jlm-17e0f94dbc
+street_name: שפרעם
+area: שערי חסד
+fact: שפרעם היא עיר ערבית בצפון הארץ; במפקד שערך משה מונטיפיורי ב-1839 נמנו בה 107 יהודים, כולם ספרדים. ב-1948 נכבשה העיר במבצע דקל.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%A4%D7%A8%D7%A2%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

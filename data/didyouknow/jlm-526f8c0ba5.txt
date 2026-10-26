@@ -1,0 +1,9 @@
+street_id: jlm-526f8c0ba5
+street_name: לשם
+area: גילה
+fact: לשם היא האבן הראשונה בטור השלישי בחושן הכהן הגדול, המיוחסת לשבט דן. אין במקורות פרטים מזהים לאבני החושן, ולכן יש שזיהו אותה בענבר ואחרים ראו בה ליגוריוס.
+source: https://he.wikipedia.org/wiki/%D7%9C%D7%A9%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

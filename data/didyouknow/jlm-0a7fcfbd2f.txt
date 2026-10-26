@@ -1,0 +1,9 @@
+street_id: jlm-0a7fcfbd2f
+street_name: בליליוס
+area: מאה שערים
+fact: משפחת בליליוס, משפחה יהודית ספרדית, נמלטה מהאינקוויזיציה לוונציה: רפאל בליליוס, שנודע בפורטוגל כפיליפו טרסו, הוריש לבנותיו את כלי הכסף שהביא מליסבון.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%9C%D7%99%D7%9C%D7%99%D7%95%D7%A1
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

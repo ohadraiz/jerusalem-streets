@@ -1,0 +1,9 @@
+street_id: jlm-0e6cc1e207
+street_name: צפת
+area: שערי חסד
+fact: בצפת הוקם ב-1576 בית הדפוס הראשון במזרח התיכון. ב-1188 נכנעו הטמפלרים לסלאח א־דין ומסרו לו את המצודה.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%A4%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article
