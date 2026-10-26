@@ -1,0 +1,81 @@
+{
+  "street_id": "al-gai",
+  "street_name": "הגיא",
+  "area": "נחלת שבעה",
+  "lat": 31.778826,
+  "lng": 35.220664,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1032,
+      "name": "הגיא",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "רחוב הגיא (העיר העתיקה)",
+    "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%92%D7%99%D7%90_(%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94)",
+    "score": 9,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים"
+    ],
+    "extract": "רחוב הגיא (בערבית: الواد; נהגה: אל וואד; נקרא גם רחוב העמק) הוא רחוב ברובע המוסלמי בעיר העתיקה בירושלים. תוואי הרחוב נמצא בעמק הגיא המרכזי על גבי תוואי קדום. רחוב הגיא מתחיל בשער שכם ומסתיים בכניסה הצפונית לרחבת הכותל המערבי.",
+    "wikibase_item": "Q7069145",
+    "coordinates": {
+      "lat": 31.780002,
+      "lon": 35.231953,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Al-Wad Street",
+    "url": "https://en.wikipedia.org/wiki/Al-Wad_Street",
+    "score": 6,
+    "extract": "Al-Wad Street (Arabic: طريق الواد, or \"Hagai street\" Hebrew: רחוב הגיא) is a street in the Old City of Jerusalem stretching from Damascus Gate to Chain Gate street. The street dates back to the Roman rule of Jerusalem, and is home to many religious and historic sites. It has been described as a \"microcosm of the Israeli-Palestine Conflict\". Many religious and historic sites on the street are located in close proximity, often within a few metres of one another, despite their association with different religious and ethnic communities. Israeli settlers and Palestinian Arabs also reside in close proximity along the street.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q1593768",
+      "label": "הגיאס",
+      "description": "",
+      "birth": 500,
+      "death": 600,
+      "url": "https://www.wikidata.org/wiki/Q1593768",
+      "hewiki": null,
+      "enwiki": "Hegias"
+    }
+  },
+  "osm": null,
+  "fact": "רחוב הגיא (בערבית: الواد; נהגה: אל וואד; נקרא גם רחוב העמק) הוא רחוב ברובע המוסלמי בעיר העתיקה בירושלים. תוואי הרחוב נמצא בעמק הגיא המרכזי על גבי תוואי קדום.",
+  "fact_type": "street-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%92%D7%99%D7%90_(%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94)",
+      "kind": "content"
+    },
+    {
+      "label": "Wikipedia (EN)",
+      "url": "https://en.wikipedia.org/wiki/Al-Wad_Street",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים"
+  ],
+  "needs_review": true
+}

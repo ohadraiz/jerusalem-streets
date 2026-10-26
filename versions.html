@@ -86,14 +86,28 @@
 
 <script>
 /* ===== מקור הנתונים — לעדכן בכל גרסה חדשה ===== */
-const CURRENT_VERSION = "1.2";
+const CURRENT_VERSION = "1.2.1";
 
 const VERSIONS = [
+  {
+    version: "1.2.1",
+    date: "2026-10-25",
+    label: "הפרדת דף הנחיתה מהיומן",
+    status: "active",
+    changes: [
+      "נוספה כתובת קבועה ליומן: app.html; welcome.html נשאר דף הנחיתה",
+      "דף הכניסה מנתב מבקרים לדף הנחיתה והתקנות PWA ליומן",
+      "עודכנו manifest, Service Worker ומפת האתר לנתיבים החדשים"
+    ],
+    backup: "אין עותק מקומי נפרד; שחזור מהקומיט Git",
+    commit: "1f9c155",
+    note: "תיעוד של שחרור קיים, לא הכרזה על שחרור חדש. נתוני הרחובות, מזהיהם ומפתחות האחסון נשארו ללא שינוי."
+  },
   {
     version: "1.2",
     date: "2026-10-25",
     label: "SEO, דף נחיתה, מיקוד מפה ופישוט ממשק",
-    status: "active",
+    status: "archived",
     changes: [
       "SEO: canonical, Open Graph/Twitter, JSON-LD WebApplication ותיאור מורחב",
       "דף נחיתה נגיש (welcome.html + assets/landing.css) עם הסבר, נתונים וקרדיט OSM/ODbL",

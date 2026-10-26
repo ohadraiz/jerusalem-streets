@@ -1,4 +1,4 @@
 @echo off
-cd /d "C:\Users\ohadr\Documents\Default Project"
+cd /d "%~dp0"
 node serve.js
 pause

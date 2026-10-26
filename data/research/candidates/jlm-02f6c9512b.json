@@ -1,0 +1,92 @@
+{
+  "street_id": "jlm-02f6c9512b",
+  "street_name": "אבטליון",
+  "area": "בקעה",
+  "lat": 31.759939,
+  "lng": 35.222669,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1762,
+      "name": "אבטליון",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "אבטליון (זוגות)",
+    "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%98%D7%9C%D7%99%D7%95%D7%9F_(%D7%96%D7%95%D7%92%D7%95%D7%AA)",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "אַבְטַלְיוֹן היה אב בית דין בסוף תקופת הזוגות, חברו של שמעיה שהיה נשיא הסנהדרין. אחריהם באו הלל ושמאי, שחתמו את תקופת הזוגות.\nשמעיה ואבטליון היו גרים, הם עצמם, או שהיו רק בני גרים. לפי דברי התלמוד הבבלי היו מבני בניו של סנחריב, שהיה אחד ממלכי אשור.",
+    "wikibase_item": "Q2750624",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Abtalion",
+    "url": "https://en.wikipedia.org/wiki/Abtalion",
+    "score": 4,
+    "extract": "Abtalion (Hebrew: אַבְטַלְיוֹן ʾAḇṭalyōn) or Avtalyon (Modern Hebrew) was a rabbinic sage in the early pre-Mishnaic era. He was a leader of the Pharisees during the 1st century BCE, and by tradition the vice-president of the great Sanhedrin of Jerusalem. He lived at the same time as Sh'maya. They are known as one of the zugot (\"couples\"): Shmaya and Avtalyon. Abtalion lived approximately from 90 BCE - 20 BCE."
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q2750624",
+      "label": "אבטליון (זוגות)",
+      "description": "תנא בתקופת הזוגות",
+      "birth": null,
+      "death": null,
+      "url": "https://www.wikidata.org/wiki/Q2750624",
+      "hewiki": "אבטליון (זוגות)",
+      "enwiki": "Abtalion"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 186368669,
+    "name": "אבטליון",
+    "display_name": "אבטליון, ירושלים, בקעה, ירושלים, נפת ירושלים, מחוז ירושלים, 9347102, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7599393,
+    "lon": 35.2226694,
+    "distance": 0.050427969765123086,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/186368669"
+  },
+  "fact": "הרחוב קרוי על שם אבטליון (זוגות), תנא בתקופת הזוגות.",
+  "fact_type": "person",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q2750624",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%98%D7%9C%D7%99%D7%95%D7%9F_(%D7%96%D7%95%D7%92%D7%95%D7%AA)",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/186368669",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": true
+}

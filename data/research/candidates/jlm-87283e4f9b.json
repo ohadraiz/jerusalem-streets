@@ -1,0 +1,87 @@
+{
+  "street_id": "jlm-87283e4f9b",
+  "street_name": "אבן ספיר",
+  "area": "שערי חסד",
+  "lat": 31.779955,
+  "lng": 35.211291,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 652,
+      "name": "אבן ספיר",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "יעקב ספיר",
+    "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A1%D7%A4%D7%99%D7%A8",
+    "score": 7,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "ישות ויקינתונים"
+    ],
+    "extract": "הרב יעקב הלוי ספיר (התקפ\"ב, 1822 אשמיאני, האימפריה הרוסית – ה'תרמ\"ה, 1885 ירושלים) היה תלמיד חכם, שד\"ר, חוקר כתבי יד, אתנוגרף ותייר. מחבר הספר אבן ספיר על מסעו חוצה היבשות לקהילות יהודיות רחוקות, בהן תימן. על שמו נקרא מושב אבן ספיר.\n\n",
+    "wikibase_item": "Q467529",
+    "coordinates": null
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q467529",
+      "label": "יעקב ספיר",
+      "description": "רב ונוסע",
+      "birth": 1822,
+      "death": 1885,
+      "url": "https://www.wikidata.org/wiki/Q467529",
+      "hewiki": "יעקב ספיר",
+      "enwiki": "Jacob Saphir"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 4719709,
+    "name": "אבן ספיר",
+    "display_name": "אבן ספיר, ירושלים, שערי חסד, ירושלים, נפת ירושלים, מחוז ירושלים, 9107202, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7793309,
+    "lon": 35.2113463,
+    "distance": 69.5933411809509,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/4719709"
+  },
+  "fact": "הרחוב קרוי על שם יעקב ספיר (1822–1885), רב ונוסע.",
+  "fact_type": "person",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q467529",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A1%D7%A4%D7%99%D7%A8",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/4719709",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "ישות ויקינתונים",
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": true
+}

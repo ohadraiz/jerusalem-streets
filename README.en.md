@@ -49,6 +49,16 @@ node tools/make-beta.js
 node tools/make-beta.js --check
 ```
 
+## Workflow architecture
+
+- `build` is the primary implementation role and handles research, testing, documentation, and integration directly.
+- `review` is an independent, read-only reviewer with a defined scope.
+- `gabbai` performs release operations only, after explicit approval for the specific action.
+- Domain expertise is loaded on demand as hats from `docs/agents/HATS.md`; hats are not additional agents.
+- The internal workflow center and task dashboard are generated from source documents by `tools/guli-room.js` and `tools/tasks-dashboard.js`.
+
+Decision and task history remains under `docs/agents/` for lookup, but it is not active routing configuration.
+
 ## Project structure
 
 ```

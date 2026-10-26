@@ -1,0 +1,10 @@
+street_id: jlm-fddcfc6246
+street_name: היהודים
+area: הרובע היהודי
+fact: רחוב היהודים ברובע היהודי נקרא על שם הקהילה היהודית שחיה בעיר העתיקה. הוא עובר בלב הרובע, סמוך לאתרים ולבתי הכנסת ההיסטוריים, ומשמר בשמו את הזהות הקהילתית של האזור.
+source: https://he.wikipedia.org/wiki/רחוב_היהודים_(ירושלים)
+source: https://he.wikipedia.org/wiki/העיר_העתיקה
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: street-article

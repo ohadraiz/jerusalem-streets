@@ -1,0 +1,22 @@
+{
+  "street_id": "jlm-9d0f515a39",
+  "street_name": "אברהם אליצר",
+  "area": "ארנונה",
+  "lat": 31.747886,
+  "lng": 35.223072,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": null,
+  "fact": null,
+  "fact_type": "none",
+  "confidence": "none",
+  "sources": [],
+  "notes": [],
+  "needs_review": true
+}

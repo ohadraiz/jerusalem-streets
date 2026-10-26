@@ -70,6 +70,10 @@
   var TILE_ERROR_THRESHOLD = 3;
   var LOD_STREET_LIMIT = 1500; // מעל: בזום נמוך (לפני LOD_ZOOM) מוצגים רק מבוקרים
   var LOD_ZOOM = 12;
+  var MAIN_STREET_ZOOM = 13; // מתחת לזום הזה בחירת רחוב ללחיצה מעדיפה ציר ראשי
+  var MAIN_STREET_MIN_METERS = 1000; // מתחת לזה לא נחשב ציר ראשי גם בזום נמוך
+  var MAIN_STREET_FULL_METERS = 4000; // מאורך זה והלאה העדיפות המרבית
+  var MAIN_STREET_SCORE_BOOST = 0.3; // 30% שיפור בניקוד המרחק לרחוב ראשי (זום נמוך בלבד)
   var HIT_TOLERANCE_PX = 22;
   var HIT_TOLERANCE_COARSE_PX = 30;
   var LEAFLET_HIT_WEIGHT = 24;
@@ -683,6 +687,7 @@
   var tileErrors = 0;
   var tileBannerShown = false;
   var lodAllMode = true;
+  var mainPriorityMode = false;
   var retries = 0; // ניסיונות אתחול חוזרים של Leaflet לפני מעבר לגיבוי
 
   var palette = null;
@@ -746,14 +751,77 @@
         state.className = "map-popup__state" + (visited ? " is-visited" : "");
         state.textContent = visited ? "ביקרתם כאן ✓" : "עוד לא ביקרתם";
         toggle.textContent = visited ? "בטל סימון ביקור" : "סמן שביקרתי";
+        details.hidden = !visited;
+        if (visited && API && typeof API.getVisit === "function") {
+          var visit = API.getVisit(street.id) || {};
+          noteInput.value = visit.note || "";
+          var rating = Number(visit.rating) || 0;
+          ratingStatus.textContent = rating ? rating + " מתוך 5" : "עדיין לא דירגתם";
+          stars.forEach(function (star) {
+            var on = Number(star.dataset.rating) <= rating;
+            star.textContent = on ? "★" : "☆";
+            star.classList.toggle("is-on", on);
+            star.setAttribute("aria-pressed", on ? "true" : "false");
+          });
+        }
       }
 
+      var details = document.createElement("div");
+      details.className = "map-popup__details";
+      var detailsTitle = document.createElement("strong");
+      detailsTitle.className = "map-popup__details-title";
+      detailsTitle.textContent = "פרטי ביקור (אופציונלי)";
+      details.appendChild(detailsTitle);
+      var noteLabel = document.createElement("label");
+      noteLabel.className = "map-popup__note-field";
+      noteLabel.textContent = "הערה";
+      var noteInput = document.createElement("input");
+      noteInput.type = "text";
+      noteInput.maxLength = 500;
+      noteInput.placeholder = "מה אתה חושב על הרחוב";
+      noteInput.setAttribute("aria-label", "הערה על " + street.name);
+      noteInput.addEventListener("input", function () {
+        if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "note", noteInput.value);
+      });
+      noteLabel.appendChild(noteInput);
+      details.appendChild(noteLabel);
+
+      var rating = document.createElement("div");
+      rating.className = "map-popup__rating";
+      rating.setAttribute("role", "group");
+      rating.setAttribute("aria-label", "דירוג הביקור ב" + street.name);
+      var ratingLabel = document.createElement("span");
+      ratingLabel.className = "map-popup__rating-label";
+      ratingLabel.textContent = "דירוג";
+      rating.appendChild(ratingLabel);
+      var stars = [];
+      [1, 2, 3, 4, 5].forEach(function (value) {
+        var star = document.createElement("button");
+        star.type = "button";
+        star.className = "map-popup__star";
+        star.dataset.rating = String(value);
+        star.textContent = "☆";
+        star.setAttribute("aria-label", "דירוג " + value + " מתוך 5");
+        star.setAttribute("aria-pressed", "false");
+        star.addEventListener("click", function () {
+          if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "rating", value);
+          syncPopupUI();
+        });
+        stars.push(star);
+        rating.appendChild(star);
+      });
+      var ratingStatus = document.createElement("span");
+      ratingStatus.className = "map-popup__rating-status";
+      ratingStatus.setAttribute("aria-live", "polite");
+      rating.appendChild(ratingStatus);
+      details.appendChild(rating);
       toggle.addEventListener("click", function () {
         if (toggleStreetSafe(street.id)) syncPopupUI();
       });
 
       syncPopupUI();
       wrap.appendChild(toggle);
+      wrap.appendChild(details);
     } else {
       var note = document.createElement("span");
       note.className = "map-popup__note";
@@ -791,38 +859,11 @@
     return wrap;
   }
 
-  /** פופאפ נשאר נגיש, אך מצטמצם כשהרחוב יוצא מהמרכז או כשהזום מתרחק. */
+  /** משאיר את הפופאפ פתוח בזמן תנועת המפה כדי לא לקטוע דירוג או הערה. */
   function compactPopupIfContextLost() {
     if (!map || !openPopupContext || !map.getSize || !map.latLngToContainerPoint) return;
-    // במסך מגע הכרטיס קטן מאוד מלכתחילה, ופאנינג/auto-pan בזמן פתיחה
-    // עלול להפעיל בטעות את מצב הצמצום ולהשאיר רק את פעולת הביקור.
-    // במובייל עדיף להשאיר את הכרטיס המלא; המשתמש יכול לסגור אותו במפורש.
-    if (usesCoarsePointer()) return;
-
-    var street = cachedStreetById(openPopupContext.id);
-    var center = street && streetCenter(street);
-    var size = map.getSize();
-    if (!center || !size || !isFinite(size.x) || !isFinite(size.y)) return;
-
-    var point = map.latLngToContainerPoint(center);
-    var centerPoint = { x: size.x / 2, y: size.y / 2 };
-    var distance = Math.sqrt(
-      Math.pow(point.x - centerPoint.x, 2) + Math.pow(point.y - centerPoint.y, 2)
-    );
-    var movedAway = distance > Math.min(size.x, size.y) * 0.48;
-    var zoomedOut = map.getZoom() <= openPopupContext.zoom - 2;
-
-    if (!(movedAway || zoomedOut) || openPopupContext.compact) return;
-
-    var popup = openPopupContext.popup;
-    var popupElement = popup && typeof popup.getElement === "function" ? popup.getElement() : null;
-    var popupContent = popupElement && popupElement.querySelector
-      ? popupElement.querySelector(".map-popup")
-      : null;
-    if (popupContent) {
-      popupContent.classList.add("map-popup--compact");
-      openPopupContext.compact = true;
-    }
+    /* לא מצמצמים ולא סוגרים: המשתמש יכול לגלול/להתקרב בזמן שהוא מדרג.
+       Leaflet מזיז את הפופאפ יחד עם הרחוב, והכרטיס נשאר זמין עד לסגירה מפורשת. */
   }
 
   /**
@@ -910,7 +951,6 @@
         // לחיצה חוזרת על אותו רחוב היא בקשה לכרטיס המלא, גם אם הוא הצטמצם
         // אחרי גרירה/זום כדי לא להסתיר את המפה.
         expandOpenPopupFor(street.id);
-        if (!usesCoarsePointer()) toggleStreetSafe(street.id);
       });
       layer.on("popupopen", function (event) {
         var popup = event && event.popup ? event.popup : null;
@@ -939,24 +979,38 @@
     metaById[street.id] = { hasPaths: Boolean(street.paths.length) };
   }
 
-  /** טווח גיאומטרי בגרדיאנטים — לצורך סדר ציור בלבד, לא למדידה מדויקת */
-  function geometrySpan(street) {
-    var minLat = Infinity, maxLat = -Infinity, minLng = Infinity, maxLng = -Infinity;
+  /* אורך הפוליליינים במטרים (קירוב equirectangular) — מדד לעדיפות "רחוב ראשי".
+     מחושב פעם אחת לכל רחוב; הגיאומטריה אינה משתנה בזמן ריצה. */
+  var lengthById = Object.create(null);
+
+  function streetLength(street) {
+    var id = street.id;
+    if (lengthById[id] !== undefined) return lengthById[id];
+
+    var total = 0;
     (street.paths || []).forEach(function (line) {
-      line.forEach(function (point) {
-        if (point[0] < minLat) minLat = point[0];
-        if (point[0] > maxLat) maxLat = point[0];
-        if (point[1] < minLng) minLng = point[1];
-        if (point[1] > maxLng) maxLng = point[1];
-      });
+      for (var i = 1; i < line.length; i += 1) {
+        var dLat = (line[i][0] - line[i - 1][0]) * 111320;
+        var dLng = (line[i][1] - line[i - 1][1]) * 111320 *
+          Math.cos((line[i][0] + line[i - 1][0]) / 2 * Math.PI / 180);
+        total += Math.sqrt(dLat * dLat + dLng * dLng);
+      }
     });
-    if (minLat === Infinity) return 0;
-    return maxLat - minLat + maxLng - minLng;
+    lengthById[id] = total;
+    return total;
+  }
+
+  /** בזום נמוך רחובות נדחסים לאותו אזור, ולכן סדר הציור צריך להעדיף צירים ראשיים */
+  function usesMainStreetPriority() {
+    return Boolean(map && map.getZoom && map.getZoom() < MAIN_STREET_ZOOM);
   }
 
   function drawLeaflet() {
     if (!map || !group || !window.L) return;
 
+    /* שמירת הכרטיס הפתוח חשובה במיוחד במעבר LOD בזמן זום: בלי זה
+       Leaflet סוגר את הפופאפ כי שכבות הרחובות נבנות מחדש. */
+    var popupToRestore = openPopupContext ? openPopupContext.id : null;
     if (map.closePopup) {
       try { map.closePopup(); } catch (e) { /* לא קריטי */ }
     }
@@ -965,19 +1019,28 @@
     hitById = Object.create(null);
     metaById = Object.create(null);
     lodAllMode = shouldShowAll();
+    mainPriorityMode = usesMainStreetPriority();
 
-    // ציור צירים ארוכים קודם: שכבת הפגיעה של רחוב צר וקרוב (למשל סמטה
-    // סמוכה לרחוב יפו) נשארת מעליהם, ולכן לחיצה ליד הסמטה בוחרת אותה ולא את הציר.
+    // סדר הציור קובע איזו שכבת פגיעה חופפת מקבלת את הלחיצה (האחרונה למעלה).
+    // בזום רגיל: צירים ארוכים קודם, כדי שסמטה סמוכה לרחוב יפו תיבחר ולא הציר.
+    // בזום נמוך: ההפך — הרחובות הארוכים/הראשיים נשארים למעלה, כדי שלא תיתפס דווקא סמטה.
     var drawOrder = streetsCache.slice().sort(function (a, b) {
-      return geometrySpan(b) - geometrySpan(a);
+      var diff = streetLength(a) - streetLength(b);
+      return mainPriorityMode ? diff : -diff;
     });
 
     drawOrder.forEach(function (street) {
       // LOD: בזום נמוך — לדלג על רחובות שלא ביקרנו בהם
-      if (!lodAllMode && !isVisited(street.id)) return;
+      if (!lodAllMode && !isVisited(street.id) && street.id !== popupToRestore) return;
 
       mountLeafletStreet(street, isVisited(street.id));
     });
+
+    if (popupToRestore && hitById[popupToRestore] && hitById[popupToRestore][0]) {
+      /* פתיחה מחדש לאחר שהשכבות מוכנות מחזירה את הכרטיס לאותו רחוב,
+         כולל הערה ודירוג שכבר נשמרו ב-state. */
+      hitById[popupToRestore][0].openPopup();
+    }
   }
 
   /** רחוב מ-streetsCache לפי מזהה (מעט קריאות — סיבוב ליניארי מקובל) */
@@ -1160,7 +1223,8 @@
 
   function onLeafletZoomEnd() {
     var showAll = shouldShowAll();
-    if (showAll !== lodAllMode) drawLeaflet();
+    // גם כש-LOD לא השתנה, חציית סף "רחוב ראשי" דורשת סדר ציור אחר
+    if (showAll !== lodAllMode || usesMainStreetPriority() !== mainPriorityMode) drawLeaflet();
     compactPopupIfContextLost();
   }
 

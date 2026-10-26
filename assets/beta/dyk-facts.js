@@ -194,18 +194,6 @@
       frag.appendChild(srcBox);
     }
 
-    var meta = [];
-    if (fact.date_researched) meta.push("תאריך מחקר: " + fact.date_researched);
-    if (fact.researcher) meta.push("חוקר: " + fact.researcher);
-    if (fact.method) meta.push("שיטה: " + fact.method);
-
-    if (meta.length) {
-      var metaBox = document.createElement("p");
-      metaBox.className = "dyk-modal__meta";
-      metaBox.textContent = meta.join(" · ");
-      frag.appendChild(metaBox);
-    }
-
     if (fact.confidence && fact.confidence !== "high") {
       var note = document.createElement("p");
       note.className = "dyk-modal__note";

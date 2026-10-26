@@ -1,0 +1,72 @@
+{
+  "street_id": "jlm-cff0b78f9c",
+  "street_name": "אבינדב",
+  "area": "הבוכרים",
+  "lat": 31.793872,
+  "lng": 35.22022,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 202,
+      "name": "אבינדב",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q6039896",
+      "label": "אבינדב בן שאול",
+      "description": "בנו של שאול המלך",
+      "birth": null,
+      "death": null,
+      "url": "https://www.wikidata.org/wiki/Q6039896",
+      "hewiki": "אבינדב בן שאול",
+      "enwiki": null
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 259782883,
+    "name": "אבינדב",
+    "display_name": "אבינדב, ירושלים, הבוכרים, ירושלים, נפת ירושלים, מחוז ירושלים, 9534811, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7944196,
+    "lon": 35.219251,
+    "distance": 109.97508424017138,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/259782883"
+  },
+  "fact": "הרחוב קרוי על שם אבינדב בן שאול, בנו של שאול המלך.",
+  "fact_type": "person",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q6039896",
+      "kind": "content"
+    },
+    {
+      "label": "ויקיפדיה העברית",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%A0%D7%93%D7%91_%D7%91%D7%9F_%D7%A9%D7%90%D7%95%D7%9C",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/259782883",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": true
+}

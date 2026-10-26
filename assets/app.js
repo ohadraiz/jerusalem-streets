@@ -42,6 +42,8 @@
   var listView = "areas"; // "areas" | "all"
   var streetSortMode = "asc"; // "asc" (א–ת) | "desc" (ת–א)
   var flatListPage = 1; // for paginated flat list
+  /* כרטיס ביקור מורחב זמנית — לחיצה מחוץ לו מצמצמת אותו */
+  var expandedVisitId = null;
 
   /* שכונות שכבר חוגגו כ"הושלמה" בסשן הנוכחי — מונע חגיגה כפולה */
   var celebratedAreas = new Set();
@@ -132,6 +134,14 @@
     setVisited: function (id, visited) {
       if (visited === isVisited(id)) return;
       toggleStreet(id);
+    },
+    updateVisit: function (id, field, value) {
+      if (field !== "note" && field !== "rating") return false;
+      if (!isVisited(id)) return false;
+      if (field === "note") value = String(value || "").slice(0, MAX_NOTE);
+      if (field === "rating") value = Math.max(0, Math.min(5, Number(value) || 0));
+      updateRecord(id, field, value);
+      return true;
     },
     focusStreet: focusStreet
   };
@@ -902,6 +912,7 @@
       ? state.visited[street.id]
       : null;
     var visited = Boolean(record);
+    var detailsExpanded = visited && expandedVisitId === street.id;
     var name = escapeHtml(street.name);
     var area = escapeHtml(street.area || "אחר");
     var mapsUrl =
@@ -928,26 +939,20 @@
               ' aria-label="מחק את הרחוב ' + name + ' מהרשימה ומהמפה" title="מחיקת הרחוב מהרשימה ומהמפה">מחק</button>' +
           "</div>" +
           (visited
-            ? '<div class="street__details">' +
+             ? '<div class="street__details' + (detailsExpanded ? " is-expanded" : "") + '">' +
                 '<label class="street__field">' +
                   '<span>תאריך ביקור</span>' +
                   '<input type="date" data-action="date" aria-label="תאריך ביקור ב' + name + '" value="' + escapeHtml(record.date || "") + '" />' +
                 "</label>" +
                 '<label class="street__field street__field--grow">' +
                   "<span>הערה</span>" +
-                  '<input type="text" data-action="note" maxlength="500" aria-label="הערה על ' + name + '" placeholder="מה זכור לכם מהמקום?" value="' +
+                  '<input type="text" data-action="note" maxlength="500" aria-label="הערה על ' + name + '" placeholder="מה אתה חושב על הרחוב" value="' +
                     escapeHtml(record.note || "") + '" />' +
                 "</label>" +
                 '<div class="street__rating" role="group" aria-label="דירוג הביקור ב' + name + '">' +
                   [1, 2, 3, 4, 5].map(function (n) {
                     var on = record.rating >= n;
                     return '<button type="button" class="street__star' + (on ? " is-on" : "") + '" data-action="rate" data-id="' + escapeHtml(street.id) + '" data-rating="' + n + '" aria-pressed="' + (on ? "true" : "false") + '" aria-label="דירוג ' + n + ' מתוך 5">' + (on ? "★" : "☆") + "</button>";
-                  }).join("") +
-                "</div>" +
-                '<div class="street__moods" role="group" aria-label="הרגשה ב' + name + '">' +
-                  [["😊", "נהדר"], ["🙂", "טוב"], ["😐", "בסדר"], ["😕", "פחות"]].map(function (m) {
-                    var on = record.mood === m[1];
-                    return '<button type="button" class="street__mood' + (on ? " is-on" : "") + '" data-action="mood" data-id="' + escapeHtml(street.id) + '" data-mood="' + escapeHtml(m[1]) + '" aria-pressed="' + (on ? "true" : "false") + '"><span class="street__mood__emoji" aria-hidden="true">' + m[0] + "</span> " + m[1] + "</button>";
                   }).join("") +
                 "</div>" +
               "</div>"
@@ -1914,9 +1919,11 @@
     var message;
     if (wasVisited) {
       delete state.visited[id];
+      if (expandedVisitId === id) expandedVisitId = null;
       message = "הביקור ב" + street.name + " בוטל";
     } else {
       state.visited[id] = { date: today(), note: "", rating: 0, mood: "" };
+      expandedVisitId = id;
       message = "סומן ביקור ב" + street.name;
     }
 
@@ -2446,27 +2453,6 @@
       return;
     }
 
-    var mood = target.closest('[data-action="mood"]');
-    if (mood) {
-      event.preventDefault();
-      var moodRow = mood.closest(".street");
-      if (moodRow) {
-        var mid = moodRow.dataset.id;
-        var moodVal = mood.dataset.mood;
-        if (state.visited[mid]) {
-          state.visited[mid].mood = moodVal;
-          persist();
-          var chips = moodRow.querySelectorAll(".street__mood");
-          chips.forEach(function (chip) {
-            var on = chip.dataset.mood === moodVal;
-            chip.classList.toggle("is-on", on);
-            chip.setAttribute("aria-pressed", on ? "true" : "false");
-          });
-        }
-      }
-      return;
-    }
-
     var visit = target.closest('[data-action="toggle-visit"]');
     if (visit) {
       event.preventDefault();
@@ -2503,11 +2489,27 @@
       return;
     }
 
-    /* קליק על שורת רחוב — ניווט למפה. קישורים ושדות לא מפעילים את הקפיצה. */
+    /* קליק על שורת רחוב — כרטיס ביקור נפתח/נסגר; שורה שלא ביקרנו בה מנווטת למפה. */
     var row = target.closest(".street[data-id]");
     if (!row) return;
     if (target.closest("a, input, textarea, select, button, label")) return;
-    gotoStreet(row.dataset.id);
+    if (isVisited(row.dataset.id)) {
+      expandedVisitId = expandedVisitId === row.dataset.id ? null : row.dataset.id;
+      renderList();
+    } else {
+      gotoStreet(row.dataset.id);
+    }
+  });
+
+  /* לחיצה מחוץ לכרטיס המורחב מחזירה אותו לתצוגת "ביקרתי" המצומצמת. */
+  document.addEventListener("click", function (event) {
+    if (!expandedVisitId) return;
+    var expandedRow = findRow(expandedVisitId);
+    var clickedRow = event.target.closest ? event.target.closest(".street[data-id]") : null;
+    if (expandedRow && (!clickedRow || clickedRow.dataset.id !== expandedVisitId)) {
+      expandedRow.querySelector(".street__details").classList.remove("is-expanded");
+      expandedVisitId = null;
+    }
   });
 
   el.list.addEventListener("change", function (event) {

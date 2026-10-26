@@ -1,7 +1,10 @@
 const fs = require('fs');
-const files = fs.readdirSync('data/didyouknow').filter(x => x.endsWith('.txt')).slice(0, 3);
+const path = require('path');
+const root = path.resolve(__dirname, '..');
+const factsDir = path.join(root, 'data', 'didyouknow');
+const files = fs.readdirSync(factsDir).filter(x => x.endsWith('.txt')).slice(0, 3);
 for (const f of files) {
-  const lines = fs.readFileSync('data/didyouknow/' + f, 'utf8').split(/\r?\n/);
+  const lines = fs.readFileSync(path.join(factsDir, f), 'utf8').split(/\r?\n/);
   const obj = {};
   for (const line of lines) {
     const m = line.match(/^([a-z_]+):\s?(.*)$/);

@@ -38,6 +38,7 @@ This is the only automatically loaded project instruction file. Other workflow n
 
 ## On-demand references
 
+- Repository architecture and data ownership: `docs/ARCHITECTURE.md`
 - Hat selection: `docs/agents/HATS.md` (then open only the relevant hat)
 - Request workflow: `docs/agents/PROTOCOL.md`
 - Historical records: `docs/agents/archive/README.md`

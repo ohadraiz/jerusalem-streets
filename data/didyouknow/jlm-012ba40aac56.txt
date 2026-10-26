@@ -1,0 +1,10 @@
+street_id: jlm-012ba40aac56
+street_name: הבורסקאים
+area: הרובע הנוצרי
+fact: רחוב הבורסקאים ברובע הנוצרי נקרא על שם בתי המלאכה שבהם עיבדו עורות. הוא נמצא באזור השווקים של העיר העתיקה, סמוך לרחובות המסחר המובילים אל כנסיית הקבר ואל שוקי הרובע המוסלמי.
+source: https://he.wikipedia.org/wiki/קטגוריה:העיר_העתיקה:_רחובות
+source: https://he.wikipedia.org/wiki/שוק_העיר_העתיקה_בירושלים
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updatedAt": "2026-10-26",
-  "count": 900,
+  "count": 910,
   "ids": [
     "agripas",
     "agron",
@@ -902,6 +902,16 @@
     "usishkin",
     "weizmann",
     "yafo",
-    "yirmiyahu"
+    "yirmiyahu",
+    "jlm-02f6c9512b",
+    "jlm-cff0b78f9c",
+    "jlm-87283e4f9b",
+    "jlm-e76571562f",
+    "jlm-8de17f15f6",
+    "jlm-fddcfc6246",
+    "jlm-012ba40aac56",
+    "jlm-40510a8277",
+    "jlm-1d109426a3",
+    "jlm-468881e5cb"
   ]
 }

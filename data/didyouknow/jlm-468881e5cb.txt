@@ -1,0 +1,10 @@
+street_id: jlm-468881e5cb
+street_name: שוק הקצבים
+area: הרובע הנוצרי
+fact: רחוב שוק הקצבים בעיר העתיקה נקרא על שם בעלי המלאכה שפעלו בו. הוא חלק ממערכת השווקים הצפופה של העיר העתיקה, ובסביבתו נשמר עד היום האופי המסחרי והקולינרי של הרחובות המקורים.
+source: https://he.wikipedia.org/wiki/שוק_העיר_העתיקה_בירושלים
+source: https://www.haatika.co.il/category/שוק-הקצבים
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

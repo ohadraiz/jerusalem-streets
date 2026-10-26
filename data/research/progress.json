@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T07:01:25.382Z",
+  "updatedAt": "2026-10-26T07:52:00.915Z",
   "streets": {
     "jlm-49d0327d14": {
       "id": "jlm-49d0327d14",
@@ -16450,6 +16450,241 @@
       "attempts": 0,
       "lastError": null,
       "review_status": "approved"
+    },
+    "jlm-02f6c9512b": {
+      "id": "jlm-02f6c9512b",
+      "name": "אבטליון",
+      "area": "בקעה",
+      "status": "ok",
+      "fact_type": "person",
+      "confidence": "medium",
+      "content_sources": 2,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q2750624",
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%98%D7%9C%D7%99%D7%95%D7%9F_(%D7%96%D7%95%D7%92%D7%95%D7%AA)",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/186368669"
+      ],
+      "candidate": "data/research/candidates/jlm-02f6c9512b.json",
+      "lastRun": "2026-10-26T07:34:08.231Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-cff0b78f9c": {
+      "id": "jlm-cff0b78f9c",
+      "name": "אבינדב",
+      "area": "הבוכרים",
+      "status": "ok",
+      "fact_type": "person",
+      "confidence": "medium",
+      "content_sources": 2,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q6039896",
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%A0%D7%93%D7%91_%D7%91%D7%9F_%D7%A9%D7%90%D7%95%D7%9C",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/259782883"
+      ],
+      "candidate": "data/research/candidates/jlm-cff0b78f9c.json",
+      "lastRun": "2026-10-26T07:35:06.028Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-87283e4f9b": {
+      "id": "jlm-87283e4f9b",
+      "name": "אבן ספיר",
+      "area": "שערי חסד",
+      "status": "ok",
+      "fact_type": "person",
+      "confidence": "medium",
+      "content_sources": 2,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q467529",
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A1%D7%A4%D7%99%D7%A8",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/4719709"
+      ],
+      "candidate": "data/research/candidates/jlm-87283e4f9b.json",
+      "lastRun": "2026-10-26T07:37:01.065Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-e76571562f": {
+      "id": "jlm-e76571562f",
+      "name": "אביזוהר",
+      "area": "רמת בית הכרם",
+      "status": "ok",
+      "fact_type": "person",
+      "confidence": "medium",
+      "content_sources": 1,
+      "sources": [
+        "https://www.wikidata.org/wiki/Q118925116",
+        "https://data.gov.il/dataset/321",
+        "https://www.openstreetmap.org/way/640749556"
+      ],
+      "candidate": "data/research/candidates/jlm-e76571562f.json",
+      "lastRun": "2026-10-26T07:38:06.200Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-9f6b8b5090": {
+      "id": "jlm-9f6b8b5090",
+      "name": "אביטל",
+      "area": "תלפיות",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [
+        "https://www.openstreetmap.org/way/119754499"
+      ],
+      "candidate": "data/research/candidates/jlm-9f6b8b5090.json",
+      "lastRun": "2026-10-26T07:40:02.174Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "al-gai": {
+      "id": "al-gai",
+      "name": "הגיא",
+      "area": "נחלת שבעה",
+      "status": "ok",
+      "fact_type": "street-article",
+      "confidence": "medium",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%92%D7%99%D7%90_(%D7%94%D7%A2%D7%99%D7%A8_%D7%94%D7%A2%D7%AA%D7%99%D7%A7%D7%94)",
+        "https://en.wikipedia.org/wiki/Al-Wad_Street",
+        "https://data.gov.il/dataset/321"
+      ],
+      "candidate": "data/research/candidates/al-gai.json",
+      "lastRun": "2026-10-26T07:42:02.137Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-c80d9462ea": {
+      "id": "jlm-c80d9462ea",
+      "name": "דרך בית חורון",
+      "area": "אזור תעשיה עטרות",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-c80d9462ea.json",
+      "lastRun": "2026-10-26T07:43:02.413Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-d9ca3bc64f": {
+      "id": "jlm-d9ca3bc64f",
+      "name": "דרך גן החיות",
+      "area": "מלחה",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-d9ca3bc64f.json",
+      "lastRun": "2026-10-26T07:44:02.537Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-27e0794983": {
+      "id": "jlm-27e0794983",
+      "name": "המעפילים",
+      "area": "סן סימון",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-27e0794983.json",
+      "lastRun": "2026-10-26T07:45:01.938Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-38432456f3": {
+      "id": "jlm-38432456f3",
+      "name": "הנשיא",
+      "area": "קרית שמואל",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-38432456f3.json",
+      "lastRun": "2026-10-26T07:47:00.786Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-17123e1a261f": {
+      "id": "jlm-17123e1a261f",
+      "name": "החרמון",
+      "area": "מחנה ישראל",
+      "status": "no-fact",
+      "fact_type": "none",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-17123e1a261f.json",
+      "lastRun": "2026-10-26T07:48:04.185Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-36ee0e2b1b": {
+      "id": "jlm-36ee0e2b1b",
+      "name": "אוצר הספרים",
+      "area": "בתי אונגרין",
+      "status": "no-fact",
+      "fact_type": "related-place",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-36ee0e2b1b.json",
+      "lastRun": "2026-10-26T07:49:05.124Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-871c2e121ea5": {
+      "id": "jlm-871c2e121ea5",
+      "name": "אבן יהושע",
+      "area": "מאה שערים",
+      "status": "no-fact",
+      "fact_type": "none",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-871c2e121ea5.json",
+      "lastRun": "2026-10-26T07:50:05.878Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-f2ae20050a": {
+      "id": "jlm-f2ae20050a",
+      "name": "אבן שמואל",
+      "area": "רמות ב'",
+      "status": "no-fact",
+      "fact_type": "none",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-f2ae20050a.json",
+      "lastRun": "2026-10-26T07:51:04.744Z",
+      "attempts": 1,
+      "lastError": null
+    },
+    "jlm-9d0f515a39": {
+      "id": "jlm-9d0f515a39",
+      "name": "אברהם אליצר",
+      "area": "ארנונה",
+      "status": "no-fact",
+      "fact_type": "none",
+      "confidence": "none",
+      "content_sources": 0,
+      "sources": [],
+      "candidate": "data/research/candidates/jlm-9d0f515a39.json",
+      "lastRun": "2026-10-26T07:52:00.903Z",
+      "attempts": 1,
+      "lastError": null
     }
   }
 }

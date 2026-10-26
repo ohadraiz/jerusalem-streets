@@ -1,0 +1,10 @@
+street_id: jlm-1d109426a3
+street_name: הפטריארכיה היוונית
+area: הרובע הנוצרי
+fact: רחוב הפטריארכיה היוונית ברובע הנוצרי מוביל משער יפו דרך מתחם הפטריארכיה היוונית־אורתודוקסית ועד אזור כנסיית הקבר. הרחוב מחבר בין מוקדי עלייה לרגל מרכזיים בעיר העתיקה.
+source: https://web.pinsteps.com/place/9cdd0d0c?l=he
+source: https://he.wikipedia.org/wiki/הפטריארכיה_היוונית-אורתודוקסית
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

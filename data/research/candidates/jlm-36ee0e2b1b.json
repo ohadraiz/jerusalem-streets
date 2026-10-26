@@ -1,0 +1,62 @@
+{
+  "street_id": "jlm-36ee0e2b1b",
+  "street_name": "אוצר הספרים",
+  "area": "בתי אונגרין",
+  "lat": 31.786225,
+  "lng": 35.225594,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 208,
+      "name": "אוצר הספרים",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "אוצר הספרים של ישיבת חברון",
+    "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A6%D7%A8_%D7%94%D7%A1%D7%A4%D7%A8%D7%99%D7%9D_%D7%A9%D7%9C_%D7%99%D7%A9%D7%99%D7%91%D7%AA_%D7%97%D7%91%D7%A8%D7%95%D7%9F",
+    "score": 11,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "אוצר הספרים של ישיבת חברון הוא ספרייה תורנית ותיקה הממוקמת סמוך לבית המדרש של ישיבת חברון בירושלים. כיום האוצר אינו משמש כספריית השאלה ונועד לעיון במקום בלבד.",
+    "wikibase_item": "Q125144534",
+    "coordinates": {
+      "lat": 31.76527778,
+      "lon": 35.19583333,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q1673364",
+      "label": "יצחק אייזיק בן יעקב",
+      "description": "ביבליוגרף יהודי ליטאי",
+      "birth": 1801,
+      "death": 1863,
+      "url": "https://www.wikidata.org/wiki/Q1673364",
+      "hewiki": "יצחק אייזיק בן יעקב",
+      "enwiki": "Isaac ben Jacob Benjacob"
+    }
+  },
+  "osm": null,
+  "fact": null,
+  "fact_type": "related-place",
+  "confidence": "none",
+  "sources": [],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "הערך \"אוצר הספרים של ישיבת חברון\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
+    "קיים ברשימה הרשמית: סמל רחוב 208"
+  ],
+  "needs_review": true
+}

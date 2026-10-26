@@ -1,0 +1,51 @@
+{
+  "street_id": "jlm-d9ca3bc64f",
+  "street_name": "דרך גן החיות",
+  "area": "מלחה",
+  "lat": 31.754601,
+  "lng": 35.181127,
+  "researched_at": "2026-10-22",
+  "official": [],
+  "wikipedia": {
+    "title": "גן החיות התנ\"כי",
+    "url": "https://he.wikipedia.org/wiki/%D7%92%D7%9F_%D7%94%D7%97%D7%99%D7%95%D7%AA_%D7%94%D7%AA%D7%A0%22%D7%9B%D7%99",
+    "score": 9,
+    "reasons": [
+      "מזכיר את השם",
+      "מזכיר ירושלים",
+      "מילות רחוב",
+      "ישות ויקינתונים"
+    ],
+    "extract": "גן החיות התנ\"כי בירושלים על שם משפחת טיש, או בקיצור גן החיות התנ\"כי, הוא גן חיות, שהוקם בשנת 1940, ומאז 1993 הוא שוכן ברחוב דרך אהרן שולוב 1 בירושלים, על מדרונותיו הצפוניים של נחל רפאים בקרבת מעיין עין יעל ועין לבן. ייחודו של גן החיות הוא בהצגת אוסף זואולוגי של חיות ארץ ישראליות שחלקן אף הוזכרו בתנ\"ך. גן החיות שותף לפרויקטים של השבה לטבע של מינים ארץ ישראליים בסכנת הכחדה.\nגן חיות זה הוא אחד משישה גני החיות החברים בארגון גני החיות הישראלי. על-פי דירוג \"דן אנד ברדסטריט\" - גן החיות התנ\"כי היה האטרקציה הפופולרית ביותר בישראל בין השנים 2005–2007, וב-2009 נרשמו 738 אלף מבקרים.",
+    "wikibase_item": "Q2915736",
+    "coordinates": {
+      "lat": 31.74944444,
+      "lon": 35.17694444,
+      "primary": true,
+      "globe": "earth"
+    }
+  },
+  "wikipedia_en": {
+    "title": "Jerusalem Biblical Zoo",
+    "url": "https://en.wikipedia.org/wiki/Jerusalem_Biblical_Zoo",
+    "score": 7,
+    "extract": "The Tisch Family Biblical Zoo in Jerusalem (Hebrew: גן החיות התנ\"כי בירושלים על שם משפחת טיש, Arabic: حديقة الحيوان الكتابية في أورشليم القدس), popularly known as the Jerusalem Biblical Zoo, is a zoo located in the Malha neighborhood of Jerusalem. It is famous for its Afro-Asiatic collection of wildlife, many of which are described in the Hebrew Bible, as well as for its success in breeding endangered species. According to Dun and Bradstreet, the Biblical Zoo was the most popular tourist attraction in Israel from 2005 to 2007, and logged a record 738,000 visitors in 2009. The zoo had about 55,000 members in 2009.\n\n"
+  },
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": null,
+  "fact": null,
+  "fact_type": "related-place",
+  "confidence": "none",
+  "sources": [],
+  "notes": [
+    "מזכיר את השם",
+    "מזכיר ירושלים",
+    "מילות רחוב",
+    "ישות ויקינתונים",
+    "הערך \"גן החיות התנ\"כי\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב."
+  ],
+  "needs_review": true
+}

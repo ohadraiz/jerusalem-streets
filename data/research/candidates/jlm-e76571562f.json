@@ -1,0 +1,67 @@
+{
+  "street_id": "jlm-e76571562f",
+  "street_name": "אביזוהר",
+  "area": "רמת בית הכרם",
+  "lat": 31.774676,
+  "lng": 35.187235,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1093,
+      "name": "אביזוהר",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q118925116",
+      "label": "אביזהר, יהושע, 1882-1967",
+      "description": "",
+      "birth": null,
+      "death": 1967,
+      "url": "https://www.wikidata.org/wiki/Q118925116",
+      "hewiki": null,
+      "enwiki": null
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 640749556,
+    "name": "אביזוהר",
+    "display_name": "אביזוהר, ירושלים, יפה נוף, ירושלים, נפת ירושלים, מחוז ירושלים, 9546105, ישראל",
+    "category": "highway",
+    "type": "tertiary",
+    "lat": 31.7744977,
+    "lon": 35.1868986,
+    "distance": 37.473990309218394,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/640749556"
+  },
+  "fact": "הרחוב קרוי על שם אביזהר, יהושע, 1882-1967 (?–1967).",
+  "fact_type": "person",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q118925116",
+      "kind": "content"
+    },
+    {
+      "label": "רשימת הרחובות הרשמית (data.gov.il)",
+      "url": "https://data.gov.il/dataset/321",
+      "kind": "identity"
+    },
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/640749556",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "השם תואם לדמות; נדרש אימות שהרחוב אכן נקרא על שמה."
+  ],
+  "needs_review": true
+}

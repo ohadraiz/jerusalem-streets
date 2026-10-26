@@ -99,8 +99,8 @@ async function syncProfile(key) {
     "- גבולות קבועים בלי אישור מפורש: חוזי JLMAPI/JLMBus/JLM_GEO, מזהי DOM, LOD 12, סכמת האחסון jlm-street-journal-v1.",
     "- מקור האריחים והנתונים המאושר היחיד: OpenStreetMap (ODbL). אין רשת חיצונית מעבר ל־OSM בקוד האפליקציה.",
     "- עבודה ממוקדת וחסכונית בטוקנים: חיפושים ממוקדים, קריאות מינימליות, handoffs קצרים (100–250 מילים).",
-    "- הודעות של סוכני משנה שמיועדות לאהד עוברות מילה במילה דרך הסוכן הראשי, ואז עצירה להמתנה.",
-    "- מיפוי סוכנים: tsibi=UI, tsiri=מפה, mappy=נתונים, chiki=חוקר, shifu=סוקר, mobi=PWA, pitchei=בטא, gabbai=commit/push, guli/inspector=לוחות."
+     "- build עובד ישירות; review הוא ביקורת עצמאית לקריאה בלבד; gabbai מבצע release רק לאחר אישור מפורש לפעולה הספציפית.",
+     "- מומחיות תחומית נטענת לפי צורך ככובעים מתוך docs/agents/HATS.md; אין סוכנים מומחים נוספים או תיאום בין ערוצים כחלק מהארכיטקטורה הפעילה."
   ].join("\n");
   const out = await smFetch(NS.profile, "document", {
     content,

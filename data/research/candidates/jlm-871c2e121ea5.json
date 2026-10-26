@@ -1,0 +1,30 @@
+{
+  "street_id": "jlm-871c2e121ea5",
+  "street_name": "אבן יהושע",
+  "area": "מאה שערים",
+  "lat": 31.7867843,
+  "lng": 35.2194923,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 184,
+      "name": "אבן יהושע",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": null,
+  "fact": null,
+  "fact_type": "none",
+  "confidence": "none",
+  "sources": [],
+  "notes": [
+    "קיים ברשימה הרשמית: סמל רחוב 184"
+  ],
+  "needs_review": true
+}

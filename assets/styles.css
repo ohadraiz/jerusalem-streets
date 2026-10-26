@@ -980,7 +980,11 @@ summary,
 .map-popup {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 0.15rem;
+  text-align: right;
+  min-width: 15rem;
+  padding: 0.2rem 0.1rem;
 }
 
 /* לאחר התרחקות הפופאפ נשאר זמין לסימון, אך לא מכסה את המפה. */
@@ -991,7 +995,8 @@ summary,
 
 .map-popup--compact .map-popup__area,
 .map-popup--compact .map-popup__find,
-.map-popup--compact .map-popup__dyk {
+.map-popup--compact .map-popup__dyk,
+.map-popup--compact .map-popup__details {
   display: none;
 }
 
@@ -1018,6 +1023,98 @@ summary,
 .map-popup__state.is-visited {
   color: var(--good);
   font-weight: 600;
+}
+
+.map-popup__toggle {
+  width: 100%;
+  margin-top: 0.55rem;
+  min-height: 2.75rem;
+  font-weight: 700;
+}
+
+.map-popup__details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 0.45rem;
+  padding: 0.55rem 0 0.1rem;
+  border-top: 1px solid var(--line);
+}
+
+/* display:flex אחרת גובר על מנגנון hidden המובנה */
+.map-popup__details[hidden] {
+  display: none;
+}
+
+.map-popup__details-title {
+  color: var(--ink);
+  font-size: 0.82rem;
+}
+
+.map-popup__note-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+}
+
+.map-popup__note-field input {
+  min-height: 2.5rem;
+  width: min(16rem, 100%);
+  padding: 0.35rem 0.5rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--stone-50);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+}
+
+.map-popup__rating {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  direction: ltr;
+}
+
+.map-popup__rating-label,
+.map-popup__rating-status {
+  direction: rtl;
+  color: var(--ink-soft);
+  font-size: 0.76rem;
+}
+
+.map-popup__rating-label {
+  margin-inline-end: 0.25rem;
+  font-weight: 600;
+}
+
+.map-popup__rating-status {
+  margin-inline-start: 0.35rem;
+  white-space: nowrap;
+}
+
+.map-popup__star {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.1rem 0.25rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.map-popup__star.is-on {
+  color: var(--accent-text);
+}
+
+.map-popup__star:hover,
+.map-popup__star:focus-visible {
+  border-color: var(--focus);
 }
 
 /* קישור קטן ל"הידעת?" בחלון הרחוב במפה */
@@ -1817,10 +1914,14 @@ body.dyk-modal-open {
 }
 
 .street__details {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   gap: 0.6rem;
   margin-top: 0.6rem;
+}
+
+.street__details.is-expanded {
+  display: flex;
 }
 
 .street__field {

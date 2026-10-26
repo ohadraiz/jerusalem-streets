@@ -1,0 +1,10 @@
+street_id: jlm-e76571562f
+street_name: אביזוהר
+area: רמת בית הכרם
+fact: רחוב אביזוהר ברמת בית הכרם קרוי על שם יהושע אביזוהר (1882–1967). זהו אחד הרחובות הקטנים בשכונה הנושאים שמות של אנשי ציבור, לצד רחובות שנקראו על שם דמויות מן הציונות והיישוב.
+source: https://www.wikidata.org/wiki/Q118925116
+source: https://www.openstreetmap.org/way/640749556
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person

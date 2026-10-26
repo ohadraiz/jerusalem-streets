@@ -15,3 +15,11 @@ Thumbs.db
 # מטמון מחקר — נבנה מחדש אוטומטית; לא נשמר בגיט
 data/research/cache/
 data/research/street-list-raw.csv
+
+# Local credentials; keep only explicit, secret-free example templates tracked.
+.env
+.env.*
+!.env.example
+
+# Output of the optional local static-copy helper.
+/publish/

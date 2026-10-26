@@ -1,0 +1,10 @@
+street_id: jlm-cff0b78f9c
+street_name: אבינדב
+area: הבוכרים
+fact: רחוב אבינדב בשכונת הבוכרים קרוי על שם אבינדב בן שאול, בנו של שאול המלך. לפי ספר שמואל, אבינדב נמנה עם בני שאול שנהרגו בקרב בגלבוע — פרט שהופך את שם הרחוב לאחד משמות הרחובות המקראיים בשכונה.
+source: https://he.wikipedia.org/wiki/אבינדב_בן_שאול
+source: https://www.wikidata.org/wiki/Q6039896
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person

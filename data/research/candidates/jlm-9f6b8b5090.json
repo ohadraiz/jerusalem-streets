@@ -1,0 +1,78 @@
+{
+  "street_id": "jlm-9f6b8b5090",
+  "street_name": "אביטל",
+  "area": "תלפיות",
+  "lat": 31.751748,
+  "lng": 35.211714,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 1796,
+      "name": "אביטל",
+      "score": 4
+    }
+  ],
+  "wikipedia": {
+    "title": "אביטל ענבר",
+    "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%98%D7%9C_%D7%A2%D7%A0%D7%91%D7%A8",
+    "score": 8,
+    "reasons": [
+      "מזכיר את השם",
+      "כותרת תואמת",
+      "ישות ויקינתונים"
+    ],
+    "extract": "אביטל ענבר (נולד ב-29 בספטמבר 1944) הוא סופר, מתרגם, עיתונאי ומבקר מסעדות ישראלי.",
+    "wikibase_item": "Q12403318",
+    "coordinates": null
+  },
+  "wikipedia_en": {
+    "title": "Avital Inbar",
+    "url": "https://en.wikipedia.org/wiki/Avital_Inbar",
+    "score": 4,
+    "extract": "Avital Inbar (Hebrew: אביטל ענבר; born September 29, 1944) is an Israeli author, translator, journalist, and restaurant critic."
+  },
+  "wikidata": {
+    "place": null,
+    "person": {
+      "id": "Q450663",
+      "label": "אביטל רונאל",
+      "description": "פילוסופית אמריקאית",
+      "birth": 1952,
+      "death": null,
+      "url": "https://www.wikidata.org/wiki/Q450663",
+      "hewiki": "אביטל רונאל",
+      "enwiki": "Avital Ronell"
+    }
+  },
+  "osm": {
+    "osm_type": "way",
+    "osm_id": 119754499,
+    "name": "אביטל",
+    "display_name": "אביטל, ירושלים, מקור חיים, ירושלים, נפת ירושלים, מחוז ירושלים, 9339329, ישראל",
+    "category": "highway",
+    "type": "residential",
+    "lat": 31.7513305,
+    "lon": 35.2112358,
+    "distance": 64.80437730277694,
+    "nameOk": true,
+    "url": "https://www.openstreetmap.org/way/119754499"
+  },
+  "fact": null,
+  "fact_type": "related-place",
+  "confidence": "none",
+  "sources": [
+    {
+      "label": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/way/119754499",
+      "kind": "identity"
+    }
+  ],
+  "notes": [
+    "מזכיר את השם",
+    "כותרת תואמת",
+    "ישות ויקינתונים",
+    "הערך \"אביטל ענבר\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
+    "קיים ברשימה הרשמית: סמל רחוב 1796"
+  ],
+  "needs_review": true
+}

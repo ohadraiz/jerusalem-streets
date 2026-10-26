@@ -109,9 +109,9 @@ self.addEventListener("fetch", (event) => {
           return response;
         }
         // שגיאת שרת (5xx, כולל 502 מפרוקסי) — מנסים מהמטמון לפני שמחזירים אותה.
-        // לניווט עם query string (למשל ?pwa=1) אין התאמה מדויקת, ולכן נופלים למעטפת.
+        // בניווט מתעלמים משאילתה כדי לשמור על יעד הדף גם ללא רשת.
         if (response && response.status >= 500) {
-          return caches.match(request).then((cached) => {
+          return caches.match(request, { ignoreSearch: request.mode === "navigate" }).then((cached) => {
             if (cached) return cached;
             if (request.mode === "navigate") {
               return caches.match("./app.html").then((shell) => shell || response);
@@ -132,7 +132,7 @@ function isFactRequest(url) {
 
 /** מהמטמון — לניווט מחזירים את דף האפליקציה השמור */
 function fromCache(request) {
-  return caches.match(request).then((cached) => {
+  return caches.match(request, { ignoreSearch: request.mode === "navigate" }).then((cached) => {
     if (cached) return cached;
     if (request.mode === "navigate") return caches.match("./app.html");
     return Response.error();

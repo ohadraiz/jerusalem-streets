@@ -1,0 +1,10 @@
+street_id: jlm-87283e4f9b
+street_name: אבן ספיר
+area: שערי חסד
+fact: רחוב אבן ספיר בשערי חסד קרוי על שם הרב יעקב ספיר, תלמיד חכם, שד״ר, חוקר כתבי יד ואתנוגרף. ספרו "אבן ספיר" מתאר את מסעותיו לקהילות יהודיות רחוקות, ובהן קהילות תימן.
+source: https://he.wikipedia.org/wiki/יעקב_ספיר
+source: https://www.wikidata.org/wiki/Q467529
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person

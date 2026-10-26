@@ -1,0 +1,10 @@
+street_id: jlm-02f6c9512b
+street_name: אבטליון
+area: בקעה
+fact: רחוב אבטליון בבקעה קרוי על שם אבטליון, אב בית דין בסוף תקופת הזוגות וחברו של שמעיה. לפי המסורת, שמעיה ואבטליון היו גרים או בני גרים, ואבטליון הנהיג את הסנהדרין בירושלים בתקופה שקדמה להלל ושמאי.
+source: https://he.wikipedia.org/wiki/אבטליון_(זוגות)
+source: https://www.wikidata.org/wiki/Q2750624
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person

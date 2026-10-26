@@ -84,3 +84,9 @@ https://www.google.com/maps/search/?api=1&query=<lat>,<lng>
 - מספר הרחובות הייחודיים אחרי מיזוג מקטעים (9,828 מקטעים ≠ 9,828 רחובות).
 - כמה מ-75 רחובות הזרע נמצאים ב-OSM לפי שם.
 - כמה פוליגוני שכונות יש בפועל, ומה אחוז הרחובות שנופלים בהם.
+
+## Reproducibility and retained inputs
+
+`tools/build-app-data.js` requires three command-line input files: `jlm_streets_v2.json`, `jlm_seed_map.json`, and `osm-paths.json`; it also reads the tracked `tools/retired-seed-ids.json`. A filename search of the current repository, local backup snapshots, and Git objects found none of the three command-line inputs. `data/research/official-streets-jerusalem.json` (data.gov.il) and `tools/seed-ids.json` (seed IDs only) do not establish substitutes for them.
+
+`assets/data.js` and `assets/geo.js` remain tracked recovery artifacts. Their metadata identifies a Geofabrik Israel-and-Palestine extract dated 2026-10-20, but the exact download URL, source-file checksums, and three input files are not retained. The generator also stamps `updatedAt` with the run date, so output is not byte-for-byte reproducible across dates. Until the original inputs and provenance are preserved, treat regeneration as blocked; restore a known release artifact from Git instead of attempting to reconstruct inputs by guesswork.

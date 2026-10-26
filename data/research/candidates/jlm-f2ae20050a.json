@@ -1,0 +1,30 @@
+{
+  "street_id": "jlm-f2ae20050a",
+  "street_name": "אבן שמואל",
+  "area": "רמות ב'",
+  "lat": 31.810669,
+  "lng": 35.195381,
+  "researched_at": "2026-10-22",
+  "official": [
+    {
+      "code": 4478,
+      "name": "אבן שמואל",
+      "score": 4
+    }
+  ],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": {
+    "place": null,
+    "person": null
+  },
+  "osm": null,
+  "fact": null,
+  "fact_type": "none",
+  "confidence": "none",
+  "sources": [],
+  "notes": [
+    "קיים ברשימה הרשמית: סמל רחוב 4478"
+  ],
+  "needs_review": true
+}
