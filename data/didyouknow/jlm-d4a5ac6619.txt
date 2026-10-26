@@ -1,0 +1,9 @@
+street_id: jlm-d4a5ac6619
+street_name: ים סוף
+area: סנהדריה
+fact: ים סוף הוא אחד מארבעה ימים הנקראים על שם צבעים, לצד הים השחור, הלבן והצהוב. הים נקרא לראשונה אדום בשמו היווני, ומכאן עבר השם ללטינית ולערבית; יש סברה שהצבע האדום סימל את כיוון דרום.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%9D_%D7%A1%D7%95%D7%A3
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: al-gai
+street_name: הגיא
+area: נחלת שבעה
+fact: הגיא המרכזי חוצה את אגן העיר העתיקה מצפון לדרום, ובמקורות מימי הבית הראשון הוא קרוי בפשטות "הגיא". שמו היווני, טירופויאון, שנוי במחלוקת: יש הקוראים אותו "עמק עושי הגבינה", ויש שמוצאים בו את שמה של העיר צור.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%92%D7%99%D7%90_%D7%94%D7%9E%D7%A8%D7%9B%D7%96%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

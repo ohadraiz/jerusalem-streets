@@ -1,0 +1,9 @@
+street_id: jlm-758fd84937
+street_name: מרווה
+area: גילה
+fact: הסוג מרווה כולל 1,049 מינים ו-78 תת-מינים. בישראל בולטת מרווה רחבת-גביע, בן-שיח נדיר מאוד ובסכנת הכחדה חמורה: האוכלוסייה שהייתה בגבעת רם הועתקה לגן הבוטני עם סלילת כביש בגין ב-1994.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%95%D7%95%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

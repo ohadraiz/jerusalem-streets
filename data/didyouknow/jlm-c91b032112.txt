@@ -1,0 +1,9 @@
+street_id: jlm-c91b032112
+street_name: דגניה
+area: קרית משה
+fact: דגניה א', בקצהו הדרומי של ים כנרת, הייתה הקבוצה הראשונה שאליה נהרו חלוצים עוד לפני מלחמת העולם הראשונה. בשנת 1913 עבדה בה קבוצת חברי ההסתדרות המצומצמת, בוגרי המחזור הראשון של הגימנסיה הרצליה.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%92%D7%A0%D7%99%D7%94_%D7%90'
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

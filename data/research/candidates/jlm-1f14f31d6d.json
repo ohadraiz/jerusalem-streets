@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1f14f31d6d",
+  "street_name": "עוזיה",
+  "area": "המושבה היוונית",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עוזיהו נמנה עם 53 הדמויות המקראיות שאושרו במחקר כאישים היסטוריים. ספר מלכים מספר עליו רק את כיבוש אילת ובנייתה, ואילו שרידי המצודה בתל אל-חלייפה מעידים על מצודה או אכסניה מבוצרת ששמרה על צומת הדרכים.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עוזיהו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%96%D7%99%D7%94%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

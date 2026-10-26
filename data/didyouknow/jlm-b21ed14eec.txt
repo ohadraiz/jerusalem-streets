@@ -1,0 +1,9 @@
+street_id: jlm-b21ed14eec
+street_name: תרצה
+area: יפה נוף
+fact: תרצה, ששימשה תקופה כבירת ממלכת ישראל, זוהתה בידי הארכאולוג ויליאם אולברייט בתל אל-פארעה שמצפון-מזרח לשכם. חפירות שנערכו במקום בשנים 1946–1960 חשפו מקדש, רחובות עם מערכת ניקוז ובתים מלבניים.
+source: https://he.wikipedia.org/wiki/%D7%AA%D7%A8%D7%A6%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

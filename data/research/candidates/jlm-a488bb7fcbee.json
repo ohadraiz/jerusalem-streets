@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a488bb7fcbee",
+  "street_name": "לבונה",
+  "area": "גילה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הלבונה היא שרף ריחני המופק מעצי הסוג Boswellia. בחפירות בתל ערד נמצא מקדש מימי בית ראשון ולו שני מזבחות: על האחד הונחה לבונה שנשרפה בשומן, ועל השני שרף קנביס. דרך הבשמים הוכרזה אתר מורשת עולמית ב-2005.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — לבונה",
+      "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%91%D7%95%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

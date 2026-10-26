@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-368f8ddf43",
+  "street_name": "קציעה",
+  "area": "גבעת המטוס",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "קציעה, בת איוב, נולדה לאחר שה׳ השיב לאיוב את רכושו ומעמדו. המקרא מציין דווקא את שמות הבנות — ימימה, קציעה וקרן הפוך — ומוסיף שניתנה להן נחלה בתוך אחיהן.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — קציעה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A7%D7%A6%D7%99%D7%A2%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

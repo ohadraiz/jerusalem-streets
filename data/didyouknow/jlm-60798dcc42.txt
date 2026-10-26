@@ -1,0 +1,9 @@
+street_id: jlm-60798dcc42
+street_name: גד
+area: בקעה
+fact: פירוש המילה גד הוא מזל, ולכן בא גד משמעו בא המזל. השם נזכר גם כשמו של אל ארמי בספר ישעיהו, בברכת יעקב נאמר גד גדוד יגודנו והוא יגוד עקב, וייתכן שגדיאל הוא גד בתוספת אל.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

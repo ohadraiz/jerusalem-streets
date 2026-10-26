@@ -1,0 +1,9 @@
+street_id: jlm-a488bb7fcbee
+street_name: לבונה
+area: גילה
+fact: הלבונה היא שרף ריחני המופק מעצי הסוג Boswellia. בחפירות בתל ערד נמצא מקדש מימי בית ראשון ולו שני מזבחות: על האחד הונחה לבונה שנשרפה בשומן, ועל השני שרף קנביס. דרך הבשמים הוכרזה אתר מורשת עולמית ב-2005.
+source: https://he.wikipedia.org/wiki/%D7%9C%D7%91%D7%95%D7%A0%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-ddbc6b20d0
+street_name: קוסטה ריקה
+area: גבעת משואה
+fact: קולומבוס נחת בחוף המזרחי של קוסטה ריקה ב-1502, במסעו הרביעי, והתרשם מהעושר שהציגו ראשי השבטים — ומכאן השם, החוף העשיר. בפועל היה זה אזור קשה למחיה ונטול אוצרות טבע.
+source: https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%A1%D7%98%D7%94_%D7%A8%D7%99%D7%A7%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3ad0aee914",
+  "street_name": "אוריאל",
+  "area": "סנהדריה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אוריאל הוא אחד מחמשת המלאכים הנכבדים ביותר לפני כיסא הכבוד, שאותיות שמם הראשונות יוצרות את הראשי תיבות ארגמ״ן. על פי הזוהר הוא רב החוכמה ובעל דיוקן של אריה, והוא מופיע בקריאת שמע על המיטה כמגן על האדם.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אוריאל",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%99%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

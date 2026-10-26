@@ -1,0 +1,9 @@
+street_id: jlm-d7fd548dca
+street_name: אסטורה
+area: קרית קמניץ
+fact: ד"ר אסטורה מאייר, מהנדס ותעשיין יהודי-איטלקי, כיהן כקונסול כבוד של ישראל במילאנו בשנותיה הראשונות של המדינה. ב-1968 נמנה עם מייסדי החברה לישראל, בעקבות הוועידה הכלכלית הראשונה בירושלים.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A1%D7%98%D7%95%D7%A8%D7%94_%D7%9E%D7%90%D7%99%D7%99%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-cb889482d0
+street_name: נשר
+area: גילה
+fact: הנשר הוא שם כולל ל-23 מיני עופות דורסים הניזונים מפגרים, ובהם גם הקונדורים. מחוץ לאוקיינוסים נחשבים הנשרים לבעלי החוליות היחידים המוכרים כאוכלי נבלות בלעדיים.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%A9%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

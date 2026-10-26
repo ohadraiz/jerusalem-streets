@@ -1,0 +1,9 @@
+street_id: jlm-45ddc922bd
+street_name: אדם
+area: תלפיות מזרח
+fact: האדם נבדל מקופי האדם בהליכה זקופה, בידיים המותאמות לשימוש בכלים וביכולת הדיבור, והוא משנה בתי גידול כך שיתאימו לצרכיו — ולכן נחשב למין מהנדס סביבה. לפני כעשרת אלפים שנה החל לביית צמחים ובעלי חיים.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%93%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-97d5f77ecc",
+  "street_name": "עמוס",
+  "area": "גאולה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עמוס מתואר כמי שהיה מהנוקדים מתקוע, ויש הסבורים שהיה מומחה בהכלאת זנים של כבשים לצמר משובח. חז״ל אמרו שנקרא עמוס משום שהיה מגמגם, כלומר עמוס בלשונו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עמוס",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%A1",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-4a0483aa2d
+street_name: הושע
+area: גאולה
+fact: הושע בן בארי ניבא בממלכת ישראל לקראת חורבנה. בימיו גדלה עוצמתה של ממלכת אשור, וחייליה צעדו לראשונה בארץ ישראל — רקע לנבואות התוכחה שלו, שכיוונו בעיקר לאנשי ממלכת ישראל.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%95%D7%A9%D7%A2_%D7%91%D7%9F_%D7%91%D7%90%D7%A8%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

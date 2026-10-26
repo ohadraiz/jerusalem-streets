@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d4a5ac6619",
+  "street_name": "ים סוף",
+  "area": "סנהדריה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ים סוף הוא אחד מארבעה ימים הנקראים על שם צבעים, לצד הים השחור, הלבן והצהוב. הים נקרא לראשונה אדום בשמו היווני, ומכאן עבר השם ללטינית ולערבית; יש סברה שהצבע האדום סימל את כיוון דרום.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ים סוף",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%9D_%D7%A1%D7%95%D7%A3",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

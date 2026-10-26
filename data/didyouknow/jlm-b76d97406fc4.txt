@@ -1,0 +1,9 @@
+street_id: jlm-b76d97406fc4
+street_name: אליפז
+area: רוממה
+fact: אליפז, בנו הבכור של עשו, היה אביהם של שישה בנים — ובהם עמלק, שהיה אבי העם הראשון שנלחם בישראל. כך מייחס המקרא את ראשית העימות עם עמלק דווקא לשושלת עשו.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A4%D7%96_%D7%91%D7%9F_%D7%A2%D7%A9%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

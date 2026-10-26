@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-049c2ec431",
+  "street_name": "ברכיהו",
+  "area": "בית הכרם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מרדכי ברכיהו, רופא איש העלייה השנייה, נחשב למי שהניח את היסודות להחדרת המודעות להיגיינה ולרפואה מונעת בארץ. עם פרוץ מלחמת העולם הראשונה התנדב לצבא העות'מאני ושירת בו כרופא עד 1918.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מרדכי ברכיהו",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%91%D7%A8%D7%9B%D7%99%D7%94%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

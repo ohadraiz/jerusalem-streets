@@ -1,0 +1,9 @@
+street_id: jlm-892b8a8da4
+street_name: דניאל
+area: מורשה
+fact: דניאל, שנקרא בבבל בלטשאצר, פירש לנבוכדנאצר את חלום הצלם — ארבע מלכויות המתנפצות בידי אבן ההופכת להר גדול. לאחר מכן מינה אותו המלך לרב החרטומים, ולפי הספר ביקש אף לסגוד לו.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%A0%D7%99%D7%90%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-08a8c79ad8
+street_name: האומה
+area: אבו בסל (שערי ירושלים)
+fact: האומה, רבעון למחשבה לאומית של מסדר ז׳בוטינסקי, רואה אור מאז 1962, ועורכו הראשון היה דוד ניב, היסטוריון האצ״ל. מאז 1999 עורך אותו יוסי אחימאיר, ורבים ממאמריו ואיגרותיו של ז׳בוטינסקי פורסמו בו לראשונה בעברית.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%95%D7%9E%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

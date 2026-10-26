@@ -1,0 +1,9 @@
+street_id: jlm-c6a20b09d5
+street_name: איסלנד
+area: קרית מנחם
+fact: האלת'ינגי האיסלנדי נחשב לאחד מגופי המחוקקים העתיקים בעולם שעדיין פועלים, אף שפעילותו הושעתה בין 1799 ל-1845. איסלנד מונה כ-404 אלף תושבים בלבד, צפיפות האוכלוסין הנמוכה ביותר באירופה.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%9C%D7%A0%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-fb74f45fd1
+street_name: מנשה
+area: בקעה
+fact: פירוש השם מנשה קשור לשכחה: סבלו של יוסף נשכח עם הולדת בנו. כאשר בירך יעקב את שני בני יוסף לפני מותו הוא הקדים את אפרים הצעיר למנשה הבכור, ובירך את שניהם יחד כדי למנוע קנאה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%A9%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

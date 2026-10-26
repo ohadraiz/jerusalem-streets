@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-4ec6e7c020",
+  "street_name": "בוליביה",
+  "area": "רמת דניה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בוליביה קרויה על שמו של סימון בוליבר, משחרר דרום אמריקה. ספרדית היא אחת מ-37 השפות הרשמיות במדינה, לצד שפות ילידיות כמו גוארני, איימרה וקצ'ואה, ואוכלוסייתה מוערכת בכ-12 מיליון תושבים.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בוליביה",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%9C%D7%99%D7%91%D7%99%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

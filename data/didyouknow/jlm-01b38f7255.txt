@@ -1,0 +1,9 @@
+street_id: jlm-01b38f7255
+street_name: צרויה
+area: גבעת חנניה
+fact: בניה של צרויה נקראים על שמה, בשונה מהמקובל במקרא שבו נקראים האישים על שם אביהם. המלבי״ם מסביר זאת בכך שהייתה אישה חזקה וראויה לציון, או שמשפחתה הייתה מיוחסת הרבה יותר מזו של בעלה.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%A8%D7%95%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

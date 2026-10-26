@@ -1,0 +1,9 @@
+street_id: jlm-c3701ed319
+street_name: בת שבע
+area: גבעת חנניה
+fact: בת שבע הייתה אשת אוריה החתי, ולאחר שדוד שלח את אוריה אל חזית המלחמה נשא אותה לאישה — והיא ילדה את שלמה. הסופר המקראי מגנה את המעשה בחריפות, ובפרק הבא מוכיח נתן הנביא את דוד על כך.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%AA_%D7%A9%D7%91%D7%A2
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

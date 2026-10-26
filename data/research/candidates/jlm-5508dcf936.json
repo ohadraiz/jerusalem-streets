@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5508dcf936",
+  "street_name": "שמעון בן שטח",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "לפי התלמוד הבבלי היה זה שמעון בן שטח שהקים מחדש את עולם התורה לאחר שינאי המלך הרג את החכמים, והוא נזכר כמי שהביא לדומיננטיות של הפרושים בסנהדרין. הסכוליון למגילת תענית מציין את כ״ח בטבת כמועד שמחה לניצחון זה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמעון בן שטח",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%91%D7%9F_%D7%A9%D7%98%D7%97",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-c04449a1c3
+street_name: פתח תקוה
+area: רוממה
+fact: השם פתח תקווה לקוח מספר הושע, וביטא תקווה להפוך מקום מקולל ליישוב פורח. הקרקע בעמק עכור לא נרכשה בסופו של דבר, והמתיישבים הגיעו לאדמות הכפר אומלבס בשפלה — אך שמרו על השם שתוכנן למושבה ביריחו.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%AA%D7%97_%D7%AA%D7%A7%D7%95%D7%95%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

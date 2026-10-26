@@ -1,0 +1,9 @@
+street_id: jlm-b6ab452744
+street_name: תורה ועבודה
+area: רמת דניה
+fact: הרמב״ם פסק שיש לקיים תלמוד תורה עם דרך ארץ, כלומר לצד עבודה לפרנסה. אחרים פסקו להפך — שבדורנו אם ינהגו תורה עם עבודה אין התורה מתקיימת, ולכן נסמכו על הסכם יששכר וזבולון.
+source: https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%A8%D7%94_%D7%95%D7%A2%D7%91%D7%95%D7%93%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

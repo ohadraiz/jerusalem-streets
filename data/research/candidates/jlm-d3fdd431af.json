@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d3fdd431af",
+  "street_name": "בונבנטורה",
+  "area": "מחנה אלנבי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אנצו יוסף בונבנטורה, פרופסור לפסיכולוגיה יליד פיזה, ייסד את המחלקה לפסיכולוגיה באוניברסיטה העברית. הוא נרצח ב-13 באפריל 1948 בשיירת הדסה, בדרכו להר הצופים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אנצו יוסף בונבנטורה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A0%D7%A6%D7%95_%D7%99%D7%95%D7%A1%D7%A3_%D7%91%D7%95%D7%A0%D7%91%D7%A0%D7%98%D7%95%D7%A8%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

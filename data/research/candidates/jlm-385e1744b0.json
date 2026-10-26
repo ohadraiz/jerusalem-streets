@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-385e1744b0",
+  "street_name": "ליכטנשטיין",
+  "area": "חומת שמואל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "נסיכות ליכטנשטיין קרויה על שם שושלת שמקורה בטירת ליכטנשטיין באוסטריה התחתית. בני המשפחה רכשו אדמות רבות כדי לבסס מעמד פוליטי, אך במשך דורות לא דרכה כף רגלם בנסיכות — הם התגוררו בווינה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ליכטנשטיין",
+      "url": "https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%9B%D7%98%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

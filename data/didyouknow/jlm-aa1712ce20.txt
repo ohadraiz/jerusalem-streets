@@ -1,0 +1,9 @@
+street_id: jlm-aa1712ce20
+street_name: ש"ץ
+area: שערי חסד
+fact: עד להתגבשות המחזורים והמנהגים במאה ה-14 היה שליח הציבור בוחר או מחבר בעצמו את פיוטי המועדים והסליחות. כיום נהוג שכל הקהל אומר אף קטעים השייכים לשליח הציבור בלבד.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%99%D7%97_%D7%A6%D7%99%D7%91%D7%95%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

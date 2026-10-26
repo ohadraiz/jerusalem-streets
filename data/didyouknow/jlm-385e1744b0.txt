@@ -1,0 +1,9 @@
+street_id: jlm-385e1744b0
+street_name: ליכטנשטיין
+area: חומת שמואל
+fact: נסיכות ליכטנשטיין קרויה על שם שושלת שמקורה בטירת ליכטנשטיין באוסטריה התחתית. בני המשפחה רכשו אדמות רבות כדי לבסס מעמד פוליטי, אך במשך דורות לא דרכה כף רגלם בנסיכות — הם התגוררו בווינה.
+source: https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%9B%D7%98%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

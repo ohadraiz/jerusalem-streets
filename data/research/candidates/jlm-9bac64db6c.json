@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9bac64db6c",
+  "street_name": "נחום איש גמזו",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "נחום איש גמזו היה תנא בן הדור השני ואחד מרבותיו של רבי עקיבא, שהתפרסם במנהגו לומר על כל דבר גם זו לטובה. באגדה הוא נקשר לשאלת ההשגחה הפרטית ולעניין השכר והעונש.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נחום איש גמזו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D_%D7%90%D7%99%D7%A9_%D7%92%D7%9E%D7%96%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

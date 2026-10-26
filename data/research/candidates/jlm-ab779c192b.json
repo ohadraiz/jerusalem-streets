@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ab779c192b",
+  "street_name": "בית שערים",
+  "area": "גבעת שאול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בית שערים נזכרת לראשונה אצל יוסף בן מתתיהו כמרכז אחוזותיה של הנסיכה ברניקי, אחות אגריפס השני. שיא פריחתה היה בין המאות ה-2 וה-4, כששכנה בה הסנהדרין בראשות רבי יהודה הנשיא, וב-2015 הוכרזה אתר מורשת עולמית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בית שערים",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-de0b285850
+street_name: בוקסבוים
+area: רמת שלמה
+fact: מרדכי בוקסבוים היה משפטן יהודי-הונגרי ואיש ציבור חרדי, מעוזריו של בלה קון בהונגריה, ולאחר עלייתו ארצה שימש יועץ משפטי של אגודת ישראל. בנו, הרב יוסף בוקסבוים, ייסד את מכון ירושלים.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%91%D7%95%D7%A7%D7%A1%D7%91%D7%95%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

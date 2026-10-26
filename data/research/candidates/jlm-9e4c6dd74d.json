@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-9e4c6dd74d",
+  "street_name": "צדקיהו",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "צדקיהו, המלך האחרון של יהודה, הומלך בידי נבוכדנאצר שהסב את שמו ממתניה. לאחר חורבן הבית הרג נבוכדנאצר את בניו לעיניו, עקר את עיניו והוביל אותו בנחושתיים לבבל, ושם נכלא עד מותו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — צדקיהו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A6%D7%93%D7%A7%D7%99%D7%94%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

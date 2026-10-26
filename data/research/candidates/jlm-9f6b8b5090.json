@@ -4,7 +4,7 @@
   "area": "תלפיות",
   "lat": 31.751748,
   "lng": 35.211714,
-  "researched_at": "2026-10-22",
+  "researched_at": "2026-10-26",
   "official": [
     {
       "code": 1796,
@@ -57,10 +57,15 @@
     "nameOk": true,
     "url": "https://www.openstreetmap.org/way/119754499"
   },
-  "fact": null,
-  "fact_type": "related-place",
-  "confidence": "none",
+  "fact": "שם המושב אביטל ניתן בעקבות קינת דוד על מות שאול ויהונתן בגלבוע, וייתכן שמקורו בשמה של אביטל אשת דוד. המושב הוקם ב-1953 בידי עולים מפרס ומטורקיה, אליהם הצטרפו עולים מכורדיסטן.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
   "sources": [
+    {
+      "label": "ויקיפדיה העברית — אביטל",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%98%D7%9C",
+      "kind": "content"
+    },
     {
       "label": "OpenStreetMap",
       "url": "https://www.openstreetmap.org/way/119754499",
@@ -72,7 +77,11 @@
     "כותרת תואמת",
     "ישות ויקינתונים",
     "הערך \"אביטל ענבר\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
-    "קיים ברשימה הרשמית: סמל רחוב 1796"
+    "קיים ברשימה הרשמית: סמל רחוב 1796",
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
   ],
-  "needs_review": true
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
 }

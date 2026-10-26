@@ -1,0 +1,9 @@
+street_id: jlm-bc384a0f3a
+street_name: רפפורט
+area: בית ישראל
+fact: משפחת רפפורט היא משפחת כהנים, ואבי המשפחה היה הרב אברהם מנחם הכהן רפפורט, רב קהילת קרמונה באיטליה ומחבר מנחה בלולה. היא נחשבת למשפחה מיוחסת כל כך שיש המקפידים לקיים בה מצוות פדיון הבן.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%A4%D7%A4%D7%95%D7%A8%D7%98
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

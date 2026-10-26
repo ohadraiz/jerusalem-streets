@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2719144582",
+  "street_name": "מקסיקו",
+  "area": "קרית מנחם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מקור השם מקסיקו בשפת הנאוואטל, שבה בוטא משיקו והיה שמו של העמק שבו שוכנת היום מקסיקו סיטי. אחת התיאוריות קושרת אותו למשיטל, אחד משמותיו של ויצילופוצ'טלי, האלוהות המרכזית באימפריה האצטקית.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מקסיקו",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%A1%D7%99%D7%A7%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

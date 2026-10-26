@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-45785acdcb",
+  "street_name": "אליעזר הגדול",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי אליעזר הגדול בן יצחק, שחי בערך בשנים 990–1060, נחשב מגדולי חכמי אשכנז בראשית המאה ה-11. אבי סבו היה רבי אבון הגדול ממגנצא, וסבו היה אחיו של רבי שמעון ממגנצא.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אליעזר הגדול בן יצחק",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%94%D7%92%D7%93%D7%95%D7%9C_%D7%91%D7%9F_%D7%99%D7%A6%D7%97%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

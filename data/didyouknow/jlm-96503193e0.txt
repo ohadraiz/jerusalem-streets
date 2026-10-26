@@ -1,0 +1,9 @@
+street_id: jlm-96503193e0
+street_name: ציפורה
+area: מחנה אלנבי
+fact: צפורה, בתו של רעואל כהן מדין, הייתה אשת משה, ולהם נולדו גרשם ואליעזר. היא מוזכרת במקרא פעמים בודדות בלבד, אך חכמי ישראל ייחדו לה מדרשים שונים שהרחיבו את דמותה.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%A4%D7%95%D7%A8%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

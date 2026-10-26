@@ -1,0 +1,9 @@
+street_id: jlm-1f14f31d6d
+street_name: עוזיה
+area: המושבה היוונית
+fact: עוזיהו נמנה עם 53 הדמויות המקראיות שאושרו במחקר כאישים היסטוריים. ספר מלכים מספר עליו רק את כיבוש אילת ובנייתה, ואילו שרידי המצודה בתל אל-חלייפה מעידים על מצודה או אכסניה מבוצרת ששמרה על צומת הדרכים.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%96%D7%99%D7%94%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

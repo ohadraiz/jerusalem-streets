@@ -1,0 +1,9 @@
+street_id: jlm-7f7d8c9eb7
+street_name: יוסי בן יועזר
+area: קטמונים (גוננים)
+fact: יוסי בן יועזר איש צרדה היה נשיא הסנהדרין הראשון בתקופת הזוגות. בשל היותו הראשון לחלוק במחלוקת על הסמיכה ביום טוב נחשב לראשון שחלק בתולדות ההלכה, ובשל הקפדתו בדיני טומאה כונה חסיד שבכהונה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%91%D7%9F_%D7%99%D7%95%D7%A2%D7%96%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

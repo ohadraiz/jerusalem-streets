@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e9ad99c661",
+  "street_name": "בועז",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בועז, סבא רבא של דוד המלך, הקפיד שלא לתת מקום לרכל: לאחר שרות לנו לרגליו בגורן, שלח אותה בצנעה לבל ייוודע הדבר. הוא נשא אותה לאישה לפי מצוות הייבום, והם הולידו את עובד, אבי ישי.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — בעז",
+      "url": "https://he.wikipedia.org/wiki/%D7%91%D7%A2%D7%96",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

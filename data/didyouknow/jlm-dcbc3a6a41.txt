@@ -1,0 +1,9 @@
+street_id: jlm-dcbc3a6a41
+street_name: גואטמלה
+area: עיר גנים
+fact: השם גואטמלה בא מנאוואטל — קואאוטמלאן, מקום של עצים רבים. כמעט כל הספרות הפרה-קולומבינית של האזור הושמדה בידי הספרדים, אך ספר אחד שרד: הפופול וו, ספר המועצה בשפת הקיצ'ה.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%95%D7%90%D7%98%D7%9E%D7%9C%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

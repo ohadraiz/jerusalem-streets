@@ -1,0 +1,9 @@
+street_id: jlm-9f6b8b5090
+street_name: אביטל
+area: תלפיות
+fact: שם המושב אביטל ניתן בעקבות קינת דוד על מות שאול ויהונתן בגלבוע, וייתכן שמקורו בשמה של אביטל אשת דוד. המושב הוקם ב-1953 בידי עולים מפרס ומטורקיה, אליהם הצטרפו עולים מכורדיסטן.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%98%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

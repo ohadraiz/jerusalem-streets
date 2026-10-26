@@ -1,0 +1,9 @@
+street_id: jlm-7dc6f36945
+street_name: שמשון
+area: בקעה
+fact: שמשון גדל כנזיר אלוהים, וכל זמן שנזירותו נשמרה חנן אותו האלוהים בכוח על-טבעי, שבו הכה בפלשתים. שמה של אמו אינו נזכר, ובמקרא היא מכונה אשת מנוח.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A9%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

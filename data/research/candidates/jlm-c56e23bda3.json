@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c56e23bda3",
+  "street_name": "יואל",
+  "area": "בית ישראל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "על יואל אין במקרא מידע על התקופה שבה פעל, ולכן גם הרקע לנבואותיו אינו ידוע. בתלמוד נקבע שכל מקום שבו נזכר שם הנביא ושם אביו בלא שם עירו, בידוע שהוא מירושלים — ומכאן ההנחה שיואל חי בעיר.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יואל הנביא",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%9C_%D7%94%D7%A0%D7%91%D7%99%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

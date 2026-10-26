@@ -1,0 +1,9 @@
+street_id: jlm-b301da67c0
+street_name: יששכר
+area: בקעה
+fact: לפי מדרש תדשא נולד יששכר בי׳ באב ומת בגיל 122. את שמו יש לקרוא לפי אהרן בן אשר כ-ישכר, ואילו לפי משה בן נפתלי דווקא יששכר — וכך נוהגות עדות רבות בקריאת התורה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A9%D7%9B%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

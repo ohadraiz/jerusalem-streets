@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c6a20b09d5",
+  "street_name": "איסלנד",
+  "area": "קרית מנחם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "האלת'ינגי האיסלנדי נחשב לאחד מגופי המחוקקים העתיקים בעולם שעדיין פועלים, אף שפעילותו הושעתה בין 1799 ל-1845. איסלנד מונה כ-404 אלף תושבים בלבד, צפיפות האוכלוסין הנמוכה ביותר באירופה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — איסלנד",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A1%D7%9C%D7%A0%D7%93",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-4ec6e7c020
+street_name: בוליביה
+area: רמת דניה
+fact: בוליביה קרויה על שמו של סימון בוליבר, משחרר דרום אמריקה. ספרדית היא אחת מ-37 השפות הרשמיות במדינה, לצד שפות ילידיות כמו גוארני, איימרה וקצ'ואה, ואוכלוסייתה מוערכת בכ-12 מיליון תושבים.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%9C%D7%99%D7%91%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

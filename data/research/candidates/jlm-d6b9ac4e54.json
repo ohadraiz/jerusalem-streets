@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-d6b9ac4e54",
+  "street_name": "כמון",
+  "area": "גילה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הכמון, תבלין חד-שנתי ממשפחת הסוככיים, גדל בקרקע חולית ומנוקזת היטב, במקומות חמים ובשמש מלאה. פירות הצמח משמשים להפקת התבלין, ובכל פרי זרע אחד בלבד.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כמון",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%9E%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

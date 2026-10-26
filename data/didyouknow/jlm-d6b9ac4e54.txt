@@ -1,0 +1,9 @@
+street_id: jlm-d6b9ac4e54
+street_name: כמון
+area: גילה
+fact: הכמון, תבלין חד-שנתי ממשפחת הסוככיים, גדל בקרקע חולית ומנוקזת היטב, במקומות חמים ובשמש מלאה. פירות הצמח משמשים להפקת התבלין, ובכל פרי זרע אחד בלבד.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%9E%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

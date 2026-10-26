@@ -1,0 +1,9 @@
+street_id: jlm-8090dd7d43
+street_name: אליאשברג
+area: המושבה הגרמנית
+fact: הרב מרדכי אליאשברג, שנודע בכינוי ר' מרדכי'לה בויסקר, היה רב ואב בית דין בבויסק שבלטביה. ב-1846 נפגש עם משה מונטפיורי בביקור שעשה עליו רושם רב.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%90%D7%9C%D7%99%D7%90%D7%A9%D7%91%D7%A8%D7%92
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

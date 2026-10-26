@@ -1,0 +1,9 @@
+street_id: jlm-970c98b6f3
+street_name: הציונות
+area: עיר גנים
+fact: מקור השם ציונות במילה ציון, שמה האחר של ירושלים במקרא. עם מטרותיה הראשונות נמנו שיבת ציון, קיבוץ גלויות, החייאת התרבות והשפה העברית ויצירת יהודי חדש — יהדות השרירים על פי מקס נורדאו.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

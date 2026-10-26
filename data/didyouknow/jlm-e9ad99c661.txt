@@ -1,0 +1,9 @@
+street_id: jlm-e9ad99c661
+street_name: בועז
+area: בקעה
+fact: בועז, סבא רבא של דוד המלך, הקפיד שלא לתת מקום לרכל: לאחר שרות לנו לרגליו בגורן, שלח אותה בצנעה לבל ייוודע הדבר. הוא נשא אותה לאישה לפי מצוות הייבום, והם הולידו את עובד, אבי ישי.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A2%D7%96
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-2053f937a5
+street_name: אודם
+area: גילה
+fact: האודם הוא הראשון מבין 12 אבני החושן של הכהן הגדול, כמתואר בספר שמות. צבעו האדום נובע מיוני כרום הפזורים בגביש הקורונדום, ועל אודם סינתטי התבסס גם הלייזר הראשון, שנבנה ב-1960.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%93%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

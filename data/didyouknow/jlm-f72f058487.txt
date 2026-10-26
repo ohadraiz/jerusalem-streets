@@ -1,0 +1,9 @@
+street_id: jlm-f72f058487
+street_name: ראש פינה
+area: קריית מטרסדורף
+fact: ראש פינה נוסדה ב-12 בדצמבר 1882 בידי עולים מרומניה, והיא המושבה הראשונה בצפון הארץ בעת החדשה. קדם לה ניסיון התיישבות כושל מ-1878 בשם גיא-אוני, שבמקומו נותרו שלוש משפחות בלבד.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%A9_%D7%A4%D7%99%D7%A0%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

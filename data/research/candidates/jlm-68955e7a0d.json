@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-68955e7a0d",
+  "street_name": "מחוזא",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מחוזא הייתה מטרופולין לאורך החידקל, שכלל את קטסיפון וסלאוקיה. ישיבתה הגיעה לפרסומה בידי רבא, שהעמיד אותה לצד ישיבת פומבדיתא של אביי, ועם כיבוש העיר ב-637 ברחו רוב אנשי החצר הסאסאנית.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מחוזא",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%97%D7%95%D7%96%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

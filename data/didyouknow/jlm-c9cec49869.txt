@@ -1,0 +1,9 @@
+street_id: jlm-c9cec49869
+street_name: עלמא
+area: נחלאות
+fact: באתר עלמא שבגליל העליון שרידים של שני בתי כנסת מהמאה ה-3. רבי בנימין מטודלה, שביקר במקום במאה ה-12, מצא בו 50 משפחות יהודיות ובית קברות גדול; במאה ה-16 נמנו בעלמא שבע משפחות יהודיות בלבד.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%9C%D7%9E%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,9 @@
+street_id: jlm-a6f39665df
+street_name: מזל תאומים
+area: פסגת זאב צפון
+fact: במיתולוגיה היוונית מסופר על קסטור ופולוקס, בני לדה, שכונו דיוסקורים, כלומר בני זאוס. פולוקס, שהיה בן אלמוות, התאבל על אחיו כל כך עד שביקש להצטרף אליו בשאול של האדס; במסורת היהודית מזל תאומים הוא מזלו של חודש סיוון.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%96%D7%9C_%D7%AA%D7%90%D7%95%D7%9E%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

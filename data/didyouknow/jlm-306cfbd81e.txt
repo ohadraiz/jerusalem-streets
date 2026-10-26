@@ -1,0 +1,9 @@
+street_id: jlm-306cfbd81e
+street_name: אלטמן
+area: פסגת זאב מרכז
+fact: טוסיה אלטמן, חברת ההנהגה המרכזית של "השומר הצעיר" בפולין, נפלה במרד גטו ורשה והיא בת 24. בגיל 11 הצטרפה לתנועה, וב-1934 קיבלה לידיה את הקבוצה הראשונה של בנות בהדרכתה.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%95%D7%A1%D7%99%D7%94_%D7%90%D7%9C%D7%98%D7%9E%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

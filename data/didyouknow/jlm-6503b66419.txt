@@ -1,0 +1,9 @@
+street_id: jlm-6503b66419
+street_name: נתן הנביא
+area: מורשה
+fact: נתן הנביא מופיע בשלושה רגעים מכריעים בחיי דוד: הוא מונע ממנו לבנות את המקדש, מוכיח אותו במשל כבשת הרש, ובסוף ימיו מסכל את הכתרת אדוניה בן חגית ומביא להמלכת שלמה.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%AA%D7%9F_%D7%94%D7%A0%D7%91%D7%99%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f72f058487",
+  "street_name": "ראש פינה",
+  "area": "קריית מטרסדורף",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ראש פינה נוסדה ב-12 בדצמבר 1882 בידי עולים מרומניה, והיא המושבה הראשונה בצפון הארץ בעת החדשה. קדם לה ניסיון התיישבות כושל מ-1878 בשם גיא-אוני, שבמקומו נותרו שלוש משפחות בלבד.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ראש פינה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%A9_%D7%A4%D7%99%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

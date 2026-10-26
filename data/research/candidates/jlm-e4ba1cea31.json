@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e4ba1cea31",
+  "street_name": "שבת צדק",
+  "area": "אבו בסל (שערי ירושלים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "נחלאות הוא גוש שכונות ותיקות בלב ירושלים, שנבנו בין הרבע האחרון של המאה ה-19 לאמצע המאה ה-20, רובן במתכונת של שכונות חצר. השכונה הראשונה בגוש הייתה אבן ישראל, שנבנתה ממערב לנחלת שבעה על רחוב יפו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נחלאות",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C%D7%90%D7%95%D7%AA",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

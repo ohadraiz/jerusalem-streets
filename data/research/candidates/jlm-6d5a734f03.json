@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-6d5a734f03",
+  "street_name": "הרדוף",
+  "area": "גילה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "כל חלקי ההרדוף הנחלים מכילים מוהל חלבי רעיל במיוחד. למרות פריחתו הוורודה בקיץ הוא אינו מושך מאביקים רבים: בסקרים שנערכו בשנים 1991–1994 נמצא שהפרחים זוכים לביקורים מעטים מאוד.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הרדוף הנחלים",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%93%D7%95%D7%A3_%D7%94%D7%A0%D7%97%D7%9C%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-c5acf3532d",
+  "street_name": "הורקניה",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הורקניה, מבצר במדבר יהודה, נחפרה לראשונה רק במאי 2023 — עד אז התבסס הידע על סקרים ומדידות. יוסף בן מתתיהו מספר שהייתה אחת משלושת המבצרים שעליהם לא ויתרה שלומציון המלכה, משום ששם היו אוצרותיה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הורקניה (מבצר)",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%95%D7%A8%D7%A7%D7%A0%D7%99%D7%94_(%D7%9E%D7%91%D7%A6%D7%A8)",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

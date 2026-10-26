@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-82e4a041d2",
+  "street_name": "מבקר המדינה",
+  "area": "קרית הממשלה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מבקר המדינה נבחר בהצבעה חשאית בכנסת לכהונה אחת של שבע שנים. ב-2026 הפרת חשאיות ההצבעה הביאה לפסילתה בבג״ץ, ומאז 4 ביולי 2026 המשרה אינה מאוישת.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מבקר המדינה",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%91%D7%A7%D7%A8_%D7%94%D7%9E%D7%93%D7%99%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-f1d7554222
+street_name: יוכבד
+area: בקעה
+fact: הרכיב יו בשם יוכבד הוא קיצור של שם יהוה, וכבד משמעו מכובד — ולכן נחשב יוכבד לשם הראשון במקרא שנושא את שם ה׳. היא החביאה את משה בתיבה, ולאחר שבת פרעה מצאה אותו שבה והניקה אותו בביתה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%9B%D7%91%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

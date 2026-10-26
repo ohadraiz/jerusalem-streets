@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-60798dcc42",
+  "street_name": "גד",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "פירוש המילה גד הוא מזל, ולכן בא גד משמעו בא המזל. השם נזכר גם כשמו של אל ארמי בספר ישעיהו, בברכת יעקב נאמר גד גדוד יגודנו והוא יגוד עקב, וייתכן שגדיאל הוא גד בתוספת אל.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — גד",
+      "url": "https://he.wikipedia.org/wiki/%D7%92%D7%93",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

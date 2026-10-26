@@ -1,0 +1,9 @@
+street_id: jlm-ca88800caa
+street_name: ימימה
+area: רמת דניה
+fact: ימימה, בתו הבכורה של איוב, מוזכרת בתנ״ך פעם אחת בלבד. חז״ל פירשו את שמה — שדומה ליום — והמקרא מספר שניתנה לה ולאחיותיה נחלה בתוך אחיהן, דבר יוצא דופן ביחס לבנות.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%9E%D7%99%D7%9E%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

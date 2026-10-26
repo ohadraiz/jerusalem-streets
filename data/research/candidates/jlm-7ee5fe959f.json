@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7ee5fe959f",
+  "street_name": "מיכה",
+  "area": "גאולה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מיכה המרשתי נמנה עם ארבעה נביאים שנתנבאו באותו פרק — הושע, ישעיהו, עמוס ומיכה — וכנראה היה הצעיר שבהם. הוא ניבא בימי יותם, אחז וחזקיהו, ונבואתו על כתית חרבות לאתים מוכרת עד היום.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מיכה",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

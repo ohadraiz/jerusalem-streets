@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-80ef534513",
+  "street_name": "אסא",
+  "area": "המושבה היוונית",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אסא, מלך יהודה בין 908 ל-867 לפנה״ס, הדף את התקפת זרח הכושי ורדף אחריו עד גרר, ואף כרת ברית עם ארם דמשק כדי לבלום את בעשא מלך ישראל. לפי דברי הימים הוא הראשון שטיהר את הפולחן האלילי ביהודה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אסא",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A1%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-db66bf7824",
+  "street_name": "הכנסת אורחים",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "המילה אשפוז נגזרה מאותו מקור ארמי שהעניק לנו את אושפיזין — אורחים. בתלמוד נאמר שגדולה הכנסת אורחים מקבלת פני שכינה, ובמדרש מוסבר שאברהם המתין לאורחים ביום השלישי למילתו למרות חולשתו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הכנסת אורחים",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%90%D7%95%D7%A8%D7%97%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

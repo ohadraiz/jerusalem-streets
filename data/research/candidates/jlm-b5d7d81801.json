@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b5d7d81801",
+  "street_name": "איש מצליח",
+  "area": "חומת שמואל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הסידור \"איש מצליח\" יוצא לאור בידי מכון הרב מצליח שליד ישיבת כסא רחמים, בעריכת הרב אדיר עמרוצי, לפי שיטתו ונוסחאותיו של הרב מאיר מאזוז. בסופו מופיע קונטרס \"לאוקמי גרסה\" עם הכרעות הנוסח.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — איש מצליח (סידור)",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%A9_%D7%9E%D7%A6%D7%9C%D7%99%D7%97_(%D7%A1%D7%99%D7%93%D7%95%D7%A8)",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

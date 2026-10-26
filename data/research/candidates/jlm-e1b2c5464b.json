@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e1b2c5464b",
+  "street_name": "מלכיצדק",
+  "area": "הרובע היהודי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מלכי-צדק, מלך שלם וכהן לאל עליון, קיבל את אברהם בלחם ויין ובירך אותו לאחר שניצח את ארבעת מלכי המזרח. חז״ל זיהו את אל עליון עם אלוהי האבות, והמסורת היהודית רואה במלכי-צדק את שם בן נח.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מלכי-צדק",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%9C%D7%9B%D7%99-%D7%A6%D7%93%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

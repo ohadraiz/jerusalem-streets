@@ -1,0 +1,9 @@
+street_id: jlm-e5bcb624ee
+street_name: תמנע
+area: סנהדריה
+fact: בקעת תמנע היא חלון גאולוגי שבו נחשפים סלעים מגוונים ובהם נחושת, ברזל ומנגן. התרוממות האזור לפני כ-550 מיליון שנה לוותה בסחיפה אינטנסיבית, שחשפה סלעי יסוד מגמתיים קדומים.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A7%D7%A2%D7%AA_%D7%AA%D7%9E%D7%A0%D7%A2
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

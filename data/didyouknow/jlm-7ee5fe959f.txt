@@ -1,0 +1,9 @@
+street_id: jlm-7ee5fe959f
+street_name: מיכה
+area: גאולה
+fact: מיכה המרשתי נמנה עם ארבעה נביאים שנתנבאו באותו פרק — הושע, ישעיהו, עמוס ומיכה — וכנראה היה הצעיר שבהם. הוא ניבא בימי יותם, אחז וחזקיהו, ונבואתו על כתית חרבות לאתים מוכרת עד היום.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

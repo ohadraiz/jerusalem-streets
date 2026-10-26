@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bfa2a53e9b",
+  "street_name": "גדרה",
+  "area": "קריית מטרסדורף",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "גדרה, מושבת הביל״ויים, נוסדה ב-13 בדצמבר 1884 והיא המושבה היחידה שהקימה תנועת ביל״ו. עד 1948 שכן במקום הכפר קאטרה, ויש סברה ששם זה שימר את שמה של העיר קדרון מימי החשמונאים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — גדרה",
+      "url": "https://he.wikipedia.org/wiki/%D7%92%D7%93%D7%A8%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

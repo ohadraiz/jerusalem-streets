@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7dc6f36945",
+  "street_name": "שמשון",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שמשון גדל כנזיר אלוהים, וכל זמן שנזירותו נשמרה חנן אותו האלוהים בכוח על-טבעי, שבו הכה בפלשתים. שמה של אמו אינו נזכר, ובמקרא היא מכונה אשת מנוח.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שמשון",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A9%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

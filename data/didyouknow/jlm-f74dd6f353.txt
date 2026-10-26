@@ -1,0 +1,9 @@
+street_id: jlm-f74dd6f353
+street_name: נחום
+area: גאולה
+fact: השם נחום מופיע בתנ״ך הופעה יחידה, בפסוק הפותח את ספר נחום. יש חוקרים הסבורים ששם כזה מרמז על אסון שאירע במשפחה לפני לידת הילד, ויש מסורת המזהה את נחום עם אחד מגולי עשרת השבטים.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%95%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

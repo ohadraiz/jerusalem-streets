@@ -1,0 +1,9 @@
+street_id: jlm-68955e7a0d
+street_name: מחוזא
+area: בתי אונגרין
+fact: מחוזא הייתה מטרופולין לאורך החידקל, שכלל את קטסיפון וסלאוקיה. ישיבתה הגיעה לפרסומה בידי רבא, שהעמיד אותה לצד ישיבת פומבדיתא של אביי, ועם כיבוש העיר ב-637 ברחו רוב אנשי החצר הסאסאנית.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%97%D7%95%D7%96%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

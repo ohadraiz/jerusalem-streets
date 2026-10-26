@@ -1,0 +1,9 @@
+street_id: jlm-6cbe5b3487
+street_name: עברונה
+area: סנהדריה
+fact: עברונה הייתה תחנת דרכים בתקופה המוסלמית הקדומה, על דרך החג' שחיברה את צפון אפריקה לחצי ערב. במקום שכנה חווה חקלאית בת כאלפיים דונם, ומערכת המים שלה נחשבת עדות כמעט יחידה לפעילות חקלאית בתקופה זו.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%91%D7%A8%D7%95%D7%A0%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

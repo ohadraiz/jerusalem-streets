@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-bb26eac9d3",
+  "street_name": "הורקנוס",
+  "area": "נחלת שבעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הורקנוס השני, כהן גדול ומלך יהודה מבית חשמונאי, הוצא להורג בשנת 30 לפנה\"ס. אמו, שלומציון, הייתה האישה היחידה מלבד עתליה אשר הייתה למלכה — פרט נדיר בתולדות ממלכת יהודה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — הורקנוס השני",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%95%D7%A8%D7%A7%D7%A0%D7%95%D7%A1_%D7%94%D7%A9%D7%A0%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

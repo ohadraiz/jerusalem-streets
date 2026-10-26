@@ -1,0 +1,9 @@
+street_id: jlm-a0130d8674
+street_name: אמרי נועם
+area: רמות
+fact: ישיבת אמרי נועם היא ישיבה קטנה חרדית-ליטאית בשכונת רמות אלון בירושלים, היושבת ברחוב הקרוי על שמה. בשנת 2026 ערכה כנס בוגרים לרגל 30 שנות קיום.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%99%D7%91%D7%AA_%D7%90%D7%9E%D7%A8%D7%99_%D7%A0%D7%95%D7%A2%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

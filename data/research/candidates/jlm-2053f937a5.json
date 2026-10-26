@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2053f937a5",
+  "street_name": "אודם",
+  "area": "גילה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "האודם הוא הראשון מבין 12 אבני החושן של הכהן הגדול, כמתואר בספר שמות. צבעו האדום נובע מיוני כרום הפזורים בגביש הקורונדום, ועל אודם סינתטי התבסס גם הלייזר הראשון, שנבנה ב-1960.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אודם",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%93%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

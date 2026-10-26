@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-892b8a8da4",
+  "street_name": "דניאל",
+  "area": "מורשה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דניאל, שנקרא בבבל בלטשאצר, פירש לנבוכדנאצר את חלום הצלם — ארבע מלכויות המתנפצות בידי אבן ההופכת להר גדול. לאחר מכן מינה אותו המלך לרב החרטומים, ולפי הספר ביקש אף לסגוד לו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דניאל",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%A0%D7%99%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

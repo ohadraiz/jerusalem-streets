@@ -1,0 +1,9 @@
+street_id: jlm-915f91bf33
+street_name: המשלט
+area: ימין משה
+fact: המשלט המשותף נקרא כך משום שבסיום מבצע דני, ב-18 ביולי 1948, שלטו בחלקו הצפוני של הרכס אנשי חטיבת הראל, ואילו בחלקו הדרומי החזיק כוח אחר. במקום שבו עמד המשלט הוקמה לימים העיר בית שמש.
+source: https://he.wikipedia.org/wiki/%D7%94%D7%9E%D7%A9%D7%9C%D7%98_%D7%94%D7%9E%D7%A9%D7%95%D7%AA%D7%A3
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

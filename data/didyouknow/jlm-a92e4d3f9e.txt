@@ -1,0 +1,9 @@
+street_id: jlm-a92e4d3f9e
+street_name: רבקה
+area: תלפיות
+fact: רבקה נזכרת במקרא בשמה 30 פעמים בלבד — המספר הקטן ביותר מבין האמהות בספר בראשית. שמה נגזר מלשון מרבק, מקום פיטום העגלים, והיא נקברה במערת המכפלה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A7%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

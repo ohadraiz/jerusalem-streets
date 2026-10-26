@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8457f34ef62c",
+  "street_name": "אהרן כהן",
+  "area": "חומת שמואל - הר חומה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "אהרן כהן, מזרחן ואיש מפ\"ם, הורשע וריצה עונש מאסר באשמת מסירת מידע לסוכן זר, עד שזכה לחנינה. עשר שנים לאחר מותו, ב-1990, הופיע לזכרו ספר.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אהרן כהן (מפ\"ם)",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%9B%D7%94%D7%9F_(%D7%9E%D7%A4%22%D7%9D)",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-bfa2a53e9b
+street_name: גדרה
+area: קריית מטרסדורף
+fact: גדרה, מושבת הביל״ויים, נוסדה ב-13 בדצמבר 1884 והיא המושבה היחידה שהקימה תנועת ביל״ו. עד 1948 שכן במקום הכפר קאטרה, ויש סברה ששם זה שימר את שמה של העיר קדרון מימי החשמונאים.
+source: https://he.wikipedia.org/wiki/%D7%92%D7%93%D7%A8%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

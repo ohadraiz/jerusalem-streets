@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-01b38f7255",
+  "street_name": "צרויה",
+  "area": "גבעת חנניה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בניה של צרויה נקראים על שמה, בשונה מהמקובל במקרא שבו נקראים האישים על שם אביהם. המלבי״ם מסביר זאת בכך שהייתה אישה חזקה וראויה לציון, או שמשפחתה הייתה מיוחסת הרבה יותר מזו של בעלה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — צרויה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A6%D7%A8%D7%95%D7%99%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

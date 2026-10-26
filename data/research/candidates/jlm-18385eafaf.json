@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-18385eafaf",
+  "street_name": "ים המלח",
+  "area": "ארנונה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "האגן הצפוני של ים המלח עמוק בממוצע כ-200 מטרים, וקרקעיתו נמצאת כ-730 מטרים מתחת לפני הים. עם התייבשות האגן הדרומי נבנו בו בריכות אידוי להפקת אשלג, ושאיבת המים אליהן היא אחת הסיבות לירידת המפלס.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ים המלח",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%9D_%D7%94%D7%9E%D7%9C%D7%97",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

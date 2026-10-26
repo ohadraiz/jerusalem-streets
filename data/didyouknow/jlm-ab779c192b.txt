@@ -1,0 +1,9 @@
+street_id: jlm-ab779c192b
+street_name: בית שערים
+area: גבעת שאול
+fact: בית שערים נזכרת לראשונה אצל יוסף בן מתתיהו כמרכז אחוזותיה של הנסיכה ברניקי, אחות אגריפס השני. שיא פריחתה היה בין המאות ה-2 וה-4, כששכנה בה הסנהדרין בראשות רבי יהודה הנשיא, וב-2015 הוכרזה אתר מורשת עולמית.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

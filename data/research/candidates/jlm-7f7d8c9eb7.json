@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7f7d8c9eb7",
+  "street_name": "יוסי בן יועזר",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יוסי בן יועזר איש צרדה היה נשיא הסנהדרין הראשון בתקופת הזוגות. בשל היותו הראשון לחלוק במחלוקת על הסמיכה ביום טוב נחשב לראשון שחלק בתולדות ההלכה, ובשל הקפדתו בדיני טומאה כונה חסיד שבכהונה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסי בן יועזר",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%91%D7%9F_%D7%99%D7%95%D7%A2%D7%96%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

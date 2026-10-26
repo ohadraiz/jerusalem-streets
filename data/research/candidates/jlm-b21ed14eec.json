@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-b21ed14eec",
+  "street_name": "תרצה",
+  "area": "יפה נוף",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "תרצה, ששימשה תקופה כבירת ממלכת ישראל, זוהתה בידי הארכאולוג ויליאם אולברייט בתל אל-פארעה שמצפון-מזרח לשכם. חפירות שנערכו במקום בשנים 1946–1960 חשפו מקדש, רחובות עם מערכת ניקוז ובתים מלבניים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — תרצה",
+      "url": "https://he.wikipedia.org/wiki/%D7%AA%D7%A8%D7%A6%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

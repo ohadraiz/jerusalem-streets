@@ -1,0 +1,9 @@
+street_id: jlm-b5cb8caf42
+street_name: חנה
+area: תל ארזה
+fact: חנה, אמו של שמואל, התפללה בלחש עד שעלי הכהן חשב אותה לשיכורה. תפילתה שימשה לחז״ל מקור להלכות רבות, ומן הפסוק וחנה היא מדברת על ליבה למדו שצריך המתפלל לכוון את ליבו.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

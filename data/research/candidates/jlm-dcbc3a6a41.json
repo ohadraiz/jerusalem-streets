@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-dcbc3a6a41",
+  "street_name": "גואטמלה",
+  "area": "עיר גנים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "השם גואטמלה בא מנאוואטל — קואאוטמלאן, מקום של עצים רבים. כמעט כל הספרות הפרה-קולומבינית של האזור הושמדה בידי הספרדים, אך ספר אחד שרד: הפופול וו, ספר המועצה בשפת הקיצ'ה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — גואטמלה",
+      "url": "https://he.wikipedia.org/wiki/%D7%92%D7%95%D7%90%D7%98%D7%9E%D7%9C%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

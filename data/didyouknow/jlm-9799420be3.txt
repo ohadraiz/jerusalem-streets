@@ -1,0 +1,9 @@
+street_id: jlm-9799420be3
+street_name: פיק
+area: קרית משה
+fact: בפיק שבדרום הגולן התגלו עמודים ואבני בזלת עם סמלים יהודיים, ובהם עמוד עם חריטת מנורה. הכתובת שעליו פוענחה לימים כ-אני יהודה החזן, ולאחר מלחמת ששת הימים נמצא העמוד משמש לעיטור בית הקברות הצבאי בקוניטרה.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%99%D7%A7
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

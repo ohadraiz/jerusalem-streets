@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-7130aaccee",
+  "street_name": "אפרים",
+  "area": "בקעה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מקור שמו של אפרים מוסבר בספר בראשית בלשון של פריה וריבוי. החוקרים סבורים שזהו שם גאוגרפי בסיומת ־ים, ומכאן שהשבט נקרא על שם חבל הארץ שהתיישב בו, ולא על שם אדם ממשי.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אפרים",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%A8%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

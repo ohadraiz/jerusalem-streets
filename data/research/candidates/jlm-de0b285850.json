@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-de0b285850",
+  "street_name": "בוקסבוים",
+  "area": "רמת שלמה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מרדכי בוקסבוים היה משפטן יהודי-הונגרי ואיש ציבור חרדי, מעוזריו של בלה קון בהונגריה, ולאחר עלייתו ארצה שימש יועץ משפטי של אגודת ישראל. בנו, הרב יוסף בוקסבוים, ייסד את מכון ירושלים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מרדכי בוקסבוים",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%91%D7%95%D7%A7%D7%A1%D7%91%D7%95%D7%99%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

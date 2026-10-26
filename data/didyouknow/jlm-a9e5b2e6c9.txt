@@ -1,0 +1,9 @@
+street_id: jlm-a9e5b2e6c9
+street_name: אפרסמון
+area: גבעת המטוס
+fact: האפרסמון, הנקרא בלשונות רבות בשמו היפני "קאקי", מוצאו מדרום-מזרח סין. פירותיו אינם ראויים לאכילה לפני שהבשילו כליל, משום שהטאנין שבהם מעניק להם עפיצות ומרירות.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%A8%D7%A1%D7%9E%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

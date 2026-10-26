@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a92e4d3f9e",
+  "street_name": "רבקה",
+  "area": "תלפיות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבקה נזכרת במקרא בשמה 30 פעמים בלבד — המספר הקטן ביותר מבין האמהות בספר בראשית. שמה נגזר מלשון מרבק, מקום פיטום העגלים, והיא נקברה במערת המכפלה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבקה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A7%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

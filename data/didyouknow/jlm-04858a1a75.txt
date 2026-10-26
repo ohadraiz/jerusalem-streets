@@ -1,0 +1,9 @@
+street_id: jlm-04858a1a75
+street_name: פטרייה
+area: מלחה
+fact: הפטריות הן ממלכה בפני עצמה, ובה החל משמרים ועובשים ועד פטריות כובע. ב-2018 הודיעה רשת איקאה שתחליף את אריזות הפוליסטירן שלה באריזות מתכלות העשויות מתפטיר של פטריות.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%98%D7%A8%D7%99%D7%95%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

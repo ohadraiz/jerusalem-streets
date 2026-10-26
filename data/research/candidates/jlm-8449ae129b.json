@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8449ae129b",
+  "street_name": "נחל צין",
+  "area": "רמת אשכול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "בנחל צין מתרחשים בממוצע כארבעה שיטפונות בזק בשנה. ב-2004 נמדדה בו ספיקת שיא ישראלית של 1,280 מטר מעוקב לשנייה — שיא שנשבר רק ב-2010, בנחל ניצנה. אורכו של הנחל כ-120 קילומטר.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נחל צין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9C_%D7%A6%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

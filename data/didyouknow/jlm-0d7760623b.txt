@@ -1,0 +1,9 @@
+street_id: jlm-0d7760623b
+street_name: פנינה
+area: תל ארזה
+fact: פנינה נוצרת ברכיכה: החלבון קונכיולין מופרש יחד עם קלציט וארגוניט — שני פולימורפים של סידן פחמתי — ומתגבש לשכבות. בשונה מרוב אבני החן, מקור הפנינה ביולוגי.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%A0%D7%99%D7%A0%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

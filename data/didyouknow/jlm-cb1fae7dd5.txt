@@ -1,0 +1,9 @@
+street_id: jlm-cb1fae7dd5
+street_name: ברקת
+area: גילה
+fact: הברקת היא תצורה של המינרל בריל, שצבעו הירוק נובע מחדירת כרום וונדיום לגביש. בתנ"ך היא האבן השלישית בטור הראשון של החושן ומיוחסת לשבט לוי, וב-1927 התגלה המקור הראשון שלה באפריקה.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A7%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

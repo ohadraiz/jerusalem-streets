@@ -1,0 +1,9 @@
+street_id: jlm-49e051220a
+street_name: עונג שבת
+area: בתי אונגרין
+fact: בתלמוד מסופר על יוסף מוקיר שבת, שהקדיש ממון ומאמצים לדגים גדולים לסעודות השבת וזכה במרגלית שנמצאה בבטן הדג. באחד מפיוטי ליל שבת נאמר: להתענג בתענוגים, ברבורים ושליו ודגים.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%A0%D7%92_%D7%A9%D7%91%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

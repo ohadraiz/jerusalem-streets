@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-63b298333b",
+  "street_name": "סולם יעקב",
+  "area": "רמות א'",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "המילה סולם מופיעה בתנ״ך פעם אחת בלבד — בחלום יעקב. חוקרים משערים שהיא נגזרה מהשורש ס-ל-מ, שפירושו באכדית גרם מדרגות, או מהשורש ס-ל-ל במשמעות דרך סלולה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — חלום יעקב",
+      "url": "https://he.wikipedia.org/wiki/%D7%97%D7%9C%D7%95%D7%9D_%D7%99%D7%A2%D7%A7%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

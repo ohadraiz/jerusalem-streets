@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-0c134350cd",
+  "street_name": "נרות שבת",
+  "area": "רמות א'",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הדלקת נר בשבת מוגדרת בתלמוד כחובה, ומכאן נפסק שיש לברך עליה. היו שטענו שהברכה הותקנה בימי הגאונים דווקא כנגד הקראים, שפירשו את הפסוק לא תבערו אש בכל מושבותיכם כפשוטו.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נרות שבת ויום טוב",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%A8%D7%95%D7%AA_%D7%A9%D7%91%D7%AA_%D7%95%D7%99%D7%95%D7%9D_%D7%98%D7%95%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-f366f2da3a
+street_name: צפניה
+area: הבוכרים
+fact: השם צפניה הוא שם תאופורי מהשורש צ-פ-ן, שמשמעו להניח דבר יקר במסתור, בתוספת מרכיב שם האלוהים. השם צפניהו נמצא על גבי חותם מתקופת מלכי יהודה ובמכתבי יב.
+source: https://he.wikipedia.org/wiki/%D7%A1%D7%A4%D7%A8_%D7%A6%D7%A4%D7%A0%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

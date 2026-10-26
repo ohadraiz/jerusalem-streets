@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a384340f5f",
+  "street_name": "ארונה היבוסי",
+  "area": "ימין משה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ארונה היבוסי מכר לדוד את הגורן שעל הר המוריה: בשמואל שילם עליו דוד חמישים שקלי כסף, ואילו בדברי הימים נמסר ששילם שש מאות שקלי זהב. עם הקמת המזבח נעצרה המגפה, ועל פי המסורת שם נבנה המקדש.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ארוונה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%95%D7%95%D7%A0%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

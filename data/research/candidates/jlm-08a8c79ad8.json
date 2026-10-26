@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-08a8c79ad8",
+  "street_name": "האומה",
+  "area": "אבו בסל (שערי ירושלים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "האומה, רבעון למחשבה לאומית של מסדר ז׳בוטינסקי, רואה אור מאז 1962, ועורכו הראשון היה דוד ניב, היסטוריון האצ״ל. מאז 1999 עורך אותו יוסי אחימאיר, ורבים ממאמריו ואיגרותיו של ז׳בוטינסקי פורסמו בו לראשונה בעברית.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — האומה",
+      "url": "https://he.wikipedia.org/wiki/%D7%94%D7%90%D7%95%D7%9E%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

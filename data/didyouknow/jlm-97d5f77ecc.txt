@@ -1,0 +1,9 @@
+street_id: jlm-97d5f77ecc
+street_name: עמוס
+area: גאולה
+fact: עמוס מתואר כמי שהיה מהנוקדים מתקוע, ויש הסבורים שהיה מומחה בהכלאת זנים של כבשים לצמר משובח. חז״ל אמרו שנקרא עמוס משום שהיה מגמגם, כלומר עמוס בלשונו.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%A1
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

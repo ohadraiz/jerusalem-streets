@@ -1,0 +1,9 @@
+street_id: jlm-e1438de5d8
+street_name: בית יעקב
+area: אבו בסל (שערי ירושלים)
+fact: תנועת בית יעקב, הגדולה בעולם בחינוך החרדי לבנות, הוקמה ב-1918 בקרקוב בידי שרה שנירר. הכיתה הראשונה נפתחה בביתה, וכיום פועלים תחת השם הזה בתי ספר, גנים ומעונות בישראל וברחבי העולם.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%99%D7%A2%D7%A7%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

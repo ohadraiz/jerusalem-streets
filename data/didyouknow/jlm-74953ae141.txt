@@ -1,0 +1,9 @@
+street_id: jlm-74953ae141
+street_name: פרנס
+area: הר נוף
+fact: בקהילות הספרדיות באירופה מי שמונה למעמד היה חייב לקבל את התפקיד, ואם סירב נדרש לתרום לקהילה סכום כסף כדי להשתחרר ממנו. הבחירה נעשתה בידי הציבור, לפי הכלל שאין מעמידין פרנס על הציבור אלא אם כן נמלכים בציבור.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A0%D7%A1
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-45ddc922bd",
+  "street_name": "אדם",
+  "area": "תלפיות מזרח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "האדם נבדל מקופי האדם בהליכה זקופה, בידיים המותאמות לשימוש בכלים וביכולת הדיבור, והוא משנה בתי גידול כך שיתאימו לצרכיו — ולכן נחשב למין מהנדס סביבה. לפני כעשרת אלפים שנה החל לביית צמחים ובעלי חיים.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אדם",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%93%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

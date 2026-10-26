@@ -1,0 +1,9 @@
+street_id: jlm-46b80b63ca
+street_name: אלבק
+area: מחנה אלנבי
+fact: שלום אלבק, פרופסור לחקר התלמוד והמשפט העברי, עלה עם משפחתו מגרמניה לארץ ישראל בשנת 1935 והתגורר בשכונת רחביה בירושלים. רחוב אלבק במחנה אלנבי נושא את שמו.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%95%D7%9D_%D7%90%D7%9C%D7%91%D7%A7
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

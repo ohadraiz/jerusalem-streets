@@ -1,0 +1,9 @@
+street_id: jlm-2719144582
+street_name: מקסיקו
+area: קרית מנחם
+fact: מקור השם מקסיקו בשפת הנאוואטל, שבה בוטא משיקו והיה שמו של העמק שבו שוכנת היום מקסיקו סיטי. אחת התיאוריות קושרת אותו למשיטל, אחד משמותיו של ויצילופוצ'טלי, האלוהות המרכזית באימפריה האצטקית.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%A1%D7%99%D7%A7%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

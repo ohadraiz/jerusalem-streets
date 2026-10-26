@@ -1,0 +1,9 @@
+street_id: jlm-aab8b4b85f
+street_name: נחמיה
+area: הבוכרים
+fact: נחמיה שימש שר המשקים של המלך הפרסי ארתחשסתא הראשון, תפקיד שניתן רק למי שהמלך בוטח בו, וב-445 או 444 לפנה״ס מונה לפחה של יהודה. בכמה מקומות הוא מכונה התרשתא, וחז״ל דרשו זאת כמי שהותר לו לשתות יין נסך.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9E%D7%99%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-6503b66419",
+  "street_name": "נתן הנביא",
+  "area": "מורשה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "נתן הנביא מופיע בשלושה רגעים מכריעים בחיי דוד: הוא מונע ממנו לבנות את המקדש, מוכיח אותו במשל כבשת הרש, ובסוף ימיו מסכל את הכתרת אדוניה בן חגית ומביא להמלכת שלמה.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נתן הנביא",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%AA%D7%9F_%D7%94%D7%A0%D7%91%D7%99%D7%90",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

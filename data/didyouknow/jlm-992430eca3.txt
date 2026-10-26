@@ -1,0 +1,9 @@
+street_id: jlm-992430eca3
+street_name: שמעון
+area: בקעה
+fact: בתאריך לידתו של שמעון חולקים המקורות: לפי הילקוט שמעוני נולד בכ״ח בטבת ומת בן 120, ולפי ספר היובלים דווקא בכ״א בטבת ומת בן 127. לאה קראה לו שמעון כי שמע ה׳ כי שנואה אנוכי.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A2%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: topic-article

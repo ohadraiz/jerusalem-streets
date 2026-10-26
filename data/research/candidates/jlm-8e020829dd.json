@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-8e020829dd",
+  "street_name": "אל סלבדור",
+  "area": "גבעת משואה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "השם אל סלוודור, המושיע, ניתן לאזור בידי הכובשים הספרדים הקתולים על שם ישו. שמו המקורי היה קוסקטלאן, וב-1524 נתקל הקונקיסטאדור פדרו דה אלוואראדו בהתנגדות כה קשה עד שנאלץ לסגת.",
+  "fact_type": "topic-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אל סלוודור",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%9C_%D7%A1%D7%9C%D7%95%D7%95%D7%93%D7%95%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}
