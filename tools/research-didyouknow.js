@@ -37,6 +37,7 @@ const REVIEW_FILE = path.join(RESEARCH_DIR, 'pilot-50-review.json');
 const OFFICIAL_FILE = path.join(RESEARCH_DIR, 'official-streets-jerusalem.json');
 const LOG_FILE = path.join(RESEARCH_DIR, 'pipeline.log');
 const ACCESS_DATE = '2026-10-22';
+const MAX_FACT_CHARS = 500;
 
 const CFG = {
   userAgent: 'JLM-Street-Journal-Research/1.0 (local civic project; contact: project owner)',
@@ -111,7 +112,7 @@ function splitSentences(text) {
     .filter(s => s.length > 20);
 }
 
-function clampFact(text, max = 340) {
+function clampFact(text, max = MAX_FACT_CHARS) {
   let t = String(text || '')
     .replace(/[\u0591-\u05BD\u05BF-\u05C7]/g, '')
     .replace(/\u05BE/g, '-')
@@ -766,7 +767,7 @@ function validateManualFact(id, entry, seenFacts) {
   if (!entry) return ['אין רשומה בקובץ העובדות הידניות'];
   const fact = String(entry.fact || '').replace(/\s+/g, ' ').trim();
   if (fact.length < 30) errors.push('העובדה קצרה מדי');
-  if (fact.length > 340) errors.push('העובדה ארוכה מדי');
+  if (fact.length > MAX_FACT_CHARS) errors.push('העובדה ארוכה מדי');
   if (/^(none|null|missing)$/i.test(fact)) errors.push('עובדה חסרה');
   if (!['high', 'medium', 'low'].includes(entry.confidence)) errors.push('דירוג ביטחון לא תקין');
   if (!entry.method || !String(entry.method).trim()) errors.push('חסר method');

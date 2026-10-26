@@ -1,0 +1,10 @@
+street_id: jlm-adf6d5ec5c73
+street_name: מעלות המדרשה
+area: הרובע המוסלמי
+fact: במרחק קצר ממעלות המדרשה נמצאת מדרסת א-טנקיזיה, שנבנתה בשנים 1328–1330 ביוזמת האמיר הממלוכי טנקיז. היא שימשה לא רק ללימוד: במתחם פעלו גם בית ספר לחדית׳, ח׳אנקה לסופים ובית ספר ליתומים; המבנה הוא חלק מהחומה המערבית של מתחם אל-אקצא.
+source: https://en.wikipedia.org/wiki/Tankiziyya
+source: https://www.archnet.org/sites/1792
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

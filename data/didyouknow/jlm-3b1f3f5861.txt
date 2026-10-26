@@ -1,0 +1,10 @@
+street_id: jlm-3b1f3f5861
+street_name: דרך הטרסות
+area: עין כרם
+fact: בדרך הטרסות בעין כרם רואים חקלאות עתיקה על המדרון: שביל סובב עין כרם עובר לצד טרסות, בורות מים, מערות ששימשו לאחסון תוצרת ומחצבות קדומות. אלה שרידים של נוף חקלאי שעוצב סביב הכפר לאורך דורות.
+source: https://www.parks.org.il/trip/encarem
+source: https://tiulim.education.gov.il/ale/articles-stock/ein-carem
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article

@@ -1,0 +1,10 @@
+street_id: jlm-3b972acac14e
+street_name: הרודיוני
+area: הרובע היהודי
+fact: מתחת לרובע היהודי נמצא הרובע ההרודיאני, שכונת פאר מלפני כ-2,000 שנה שבה חיו עשירי ירושלים, מנהיגיה וכוהניה. החפירות מאפשרות לרדת כמה מטרים מתחת לפני הקרקע ולשוטט בין שרידי בתי העיר העליונה של ימי הבית השני.
+source: https://www.itraveljerusalem.com/he/attraction/the-herodian-quarter
+source: https://he.wikipedia.org/wiki/%D7%94%D7%A8%D7%95%D7%91%D7%A2_%D7%94%D7%99%D7%94%D7%95%D7%93%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article

@@ -1,0 +1,9 @@
+street_id: jlm-2381c1eb65
+street_name: הטחנה
+area: ימין משה
+fact: טחנת הרוח של מונטיפיורי הוקמה ב-1858 כדי לספק לתושבי משכנות שאננים פרנסה ולקמח לעניי ירושלים במחיר זול. למרות מראה הכנפיים המרשים, היא פעלה כטחנת רוח רק עד 1876: מחסור ברוח, תקלות ועלויות גבוהות הביאו להפסקת הטחינה.
+source: https://he.wikipedia.org/wiki/%D7%98%D7%97%D7%A0%D7%AA_%D7%94%D7%A8%D7%95%D7%97_%D7%91%D7%9E%D7%A9%D7%9B%D7%A0%D7%95%D7%AA_%D7%A9%D7%90%D7%A0%D7%A0%D7%99%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article

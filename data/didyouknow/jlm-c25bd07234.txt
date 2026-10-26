@@ -1,0 +1,9 @@
+street_id: jlm-c25bd07234
+street_name: רחבת ארמון בית אומיה
+area: הרובע היהודי
+fact: בסמוך לרחבת ארמון בית אומיה נחשפו בגן הארכאולוגי ארבעה מבנים גדולים של ארמון אומיי. אחד מהם, כ-80 על 80 מטרים, נבנה מעל רחוב מרוצף מהמאה הראשונה לספירה; יסודותיו אף חתכו בתעלת ניקוז עתיקה — שכבה עירונית אחת ממש על גבי קודמתה.
+source: https://hadashot.iaa.org.il/report_detail_eng.aspx?id=26273&mag_id=135
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article
