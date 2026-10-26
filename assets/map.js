@@ -73,7 +73,7 @@
   var MAIN_STREET_ZOOM = 13; // מתחת לזום הזה בחירת רחוב ללחיצה מעדיפה ציר ראשי
   var MAIN_STREET_MIN_METERS = 1000; // מתחת לזה לא נחשב ציר ראשי גם בזום נמוך
   var MAIN_STREET_FULL_METERS = 4000; // מאורך זה והלאה העדיפות המרבית
-  var MAIN_STREET_SCORE_BOOST = 0.3; // 30% שיפור בניקוד המרחק לרחוב ראשי (זום נמוך בלבד)
+  var MAIN_STREET_SCORE_BOOST = 0.3; // בין צירים ראשיים: הארוך מקבל עד 30% עדיפות בניקוד המרחק
   var HIT_TOLERANCE_PX = 22;
   var HIT_TOLERANCE_COARSE_PX = 30;
   var LEAFLET_HIT_WEIGHT = 24;
@@ -858,12 +858,8 @@
     return wrap;
   }
 
-  /** משאיר את הפופאפ פתוח בזמן תנועת המפה כדי לא לקטוע דירוג או הערה. */
-  function compactPopupIfContextLost() {
-    if (!map || !openPopupContext || !map.getSize || !map.latLngToContainerPoint) return;
-    /* לא מצמצמים ולא סוגרים: המשתמש יכול לגלול/להתקרב בזמן שהוא מדרג.
-       Leaflet מזיז את הפופאפ יחד עם הרחוב, והכרטיס נשאר זמין עד לסגירה מפורשת. */
-  }
+  /* הכרטיס נשאר פתוח בזמן גרירה/זום: Leaflet מזיז אותו יחד עם הרחוב,
+     והמשתמש יכול להמשיך בדירוג או בהערה עד לסגירה מפורשת. */
 
   /** בזום נמוך וברשימות גדולות מוצגים רק מבוקרים — חיסכון ציור משמעותי */
   function shouldShowAll() {
@@ -953,9 +949,9 @@
     return box;
   }
 
-  /* 1 = ללא העדפה; ככל שהרחוב ארוך יותר, ניקוד המרחק שלו משתפר עד 30% */
-  function mainStreetScoreFactor(length, preferMain) {
-    if (!preferMain || length <= MAIN_STREET_MIN_METERS) return 1;
+  /* 1 = ללא העדפה; בין צירים ראשיים בלבד, הארוך מקבל ניקוד מרחק טוב יותר */
+  function mainStreetScoreFactor(length) {
+    if (length <= MAIN_STREET_MIN_METERS) return 1;
     var range = MAIN_STREET_FULL_METERS - MAIN_STREET_MIN_METERS;
     var weight = Math.min(1, (length - MAIN_STREET_MIN_METERS) / range);
     return 1 - MAIN_STREET_SCORE_BOOST * weight;
@@ -994,8 +990,9 @@
 
   /**
    * הרחוב הקרוב לנקודה, בתוך רדיוס הלחיצה של Leaflet.
-   * בזום נמוך ניקוד המרחק של ציר ראשי משתפר, כך שבחפיפה/קרבה הוא מנצח
-   * סמטה — בלי לאבד בחירה מדויקת כשהקליק נופל ממש על הסמטה.
+   * בזום נמוך: ציר ראשי שנמצא ברדיוס הפגיעה גובר על סמטה, גם אם הסמטה
+   * קרובה יותר — בחירה עירונית מכוונת ולא בחירת פיקסל.
+   * בזום 13 ומעלה: המרחק בלבד; שוויון הולך לסמטה המקומית.
    */
   function streetAtContainerPoint(point) {
     if (!map || !window.L) return null;
@@ -1011,8 +1008,11 @@
     var preferLonger = usesMainStreetPriority();
 
     var best = null;
-    var bestScore = Infinity;
+    var bestDistance = Infinity;
     var bestLength = -1;
+    var bestMain = null;
+    var bestMainScore = Infinity;
+    var bestMainLength = -1;
 
     for (var i = 0; i < streetsCache.length; i += 1) {
       var street = streetsCache[i];
@@ -1028,18 +1028,31 @@
       if (distance > limit) continue;
 
       var length = streetLength(street);
-      var score = distance * mainStreetScoreFactor(length, preferLonger);
-      var better = score < bestScore - 0.05;
-      var tied = Math.abs(score - bestScore) <= 0.05;
+      var better = distance < bestDistance - 0.05;
+      var tied = Math.abs(distance - bestDistance) <= 0.05;
       // שוויון: בזום נמוך מעדיפים את הציר הארוך, בזום רגיל את הסמטה המקומית
       if (better || (tied && (preferLonger ? length > bestLength : length < bestLength))) {
         best = street;
-        bestScore = score;
+        bestDistance = distance;
         bestLength = length;
+      }
+
+      if (preferLonger && length >= MAIN_STREET_MIN_METERS) {
+        var mainScore = distance * mainStreetScoreFactor(length);
+        var mainBetter = mainScore < bestMainScore - 0.05;
+        var mainTied = Math.abs(mainScore - bestMainScore) <= 0.05;
+        if (mainBetter || (mainTied && length > bestMainLength)) {
+          bestMain = street;
+          bestMainScore = mainScore;
+          bestMainLength = length;
+        }
       }
     }
 
-    return best;
+    /* בזום נמוך ציר ראשי שקרוב מספיק לנקודה גובר על סמטה, גם אם הסמטה
+       מעט קרובה יותר: זו בחירת "עירונית" ולא בחירת פיקסל מדויקת.
+       בזום 13 ומעלה נשמרת הבחירה המדויקת לפי המרחק בלבד. */
+    return preferLonger && bestMain ? bestMain : best;
   }
 
   function openStreetPopup(street, latlng) {
@@ -1056,10 +1069,8 @@
 
     openPopupContext = {
       id: street.id,
-      zoom: map.getZoom ? map.getZoom() : 0,
       latlng: latlng,
-      popup: popup,
-      compact: false
+      popup: popup
     };
   }
 
@@ -1079,6 +1090,38 @@
     if (!event || !event.popup || event.popup === openPopupContext.popup) {
       openPopupContext = null;
     }
+  }
+
+  /* Cursor מרמז על אפשרות לחיצה גם בלי שכבות פגיעה נפרדות. הבדיקה מדודה
+     ומדולגת במגע. במכשיר איטי המרווח גדל אוטומטית — הרמז אף פעם לא מאיץ גלילה. */
+  function nowMs() {
+    return window.performance && typeof window.performance.now === "function"
+      ? window.performance.now()
+      : Date.now();
+  }
+
+  var hoverCheckAt = 0;
+  var hoverInterval = 150;
+
+  function onLeafletMouseMove(event) {
+    if (!map || !el.canvas || usesCoarsePointer()) return;
+    if (map.dragging && typeof map.dragging.moving === "function" && map.dragging.moving()) {
+      el.canvas.style.cursor = "";
+      return;
+    }
+    var now = nowMs();
+    if (now - hoverCheckAt < hoverInterval) return;
+    hoverCheckAt = now;
+
+    var started = nowMs();
+    var street = streetAtContainerPoint(map.latLngToContainerPoint(event.latlng));
+    el.canvas.style.cursor = street ? "pointer" : "";
+    // מסך איטי או מפה צפופה: מפחיתים את קצב הבדיקה כדי לא לפגוע בגרירה
+    if (nowMs() - started > 12) hoverInterval = 400;
+  }
+
+  function onLeafletMouseOut() {
+    if (el.canvas) el.canvas.style.cursor = "";
   }
 
   function drawLeaflet() {
@@ -1304,11 +1347,6 @@
     var showAll = shouldShowAll();
     // גם כש-LOD לא השתנה, חציית סף "רחוב ראשי" דורשת סדר ציור אחר
     if (showAll !== lodAllMode || usesMainStreetPriority() !== mainPriorityMode) drawLeaflet();
-    compactPopupIfContextLost();
-  }
-
-  function onLeafletMoveEnd() {
-    compactPopupIfContextLost();
   }
 
   function onTileError() {
@@ -1369,8 +1407,9 @@
     drawLeaflet();
     map.on("click", onLeafletStreetClick);
     map.on("popupclose", onLeafletPopupClose);
+    map.on("mousemove", onLeafletMouseMove);
+    map.on("mouseout", onLeafletMouseOut);
     map.on("zoomend", onLeafletZoomEnd);
-    map.on("moveend", onLeafletMoveEnd);
 
     // ה-canvas נוצר לפני שהמכל קיבל מידות סופיות. invalidateSize לבדו לא מרענן
     // את שכבת ה-canvas; panBy(0,0) מאלץ רינדור מלא אחרי שהמידות התייצבו.
@@ -1709,25 +1748,40 @@
 
   function fallbackHitTest(px, py) {
     var best = null;
-    var bestScore = Infinity;
+    var bestDistance = Infinity;
     var bestLength = -1;
+    var bestMain = null;
+    var bestMainScore = Infinity;
+    var bestMainLength = -1;
     var tolerance = fallbackHitTolerance();
+
     F.proj.forEach(function (street) {
       if (!fallbackVisible(street.bbox, 0)) return;
       var distance = Math.sqrt(squaredDistanceToStreet(street, px, py));
       if (distance > tolerance) return;
 
-      // מסלול הגיבוי מוגבל לזום עירוני, ולכן מעדיף תמיד ציר ראשי בקרבה
-      var score = distance * mainStreetScoreFactor(street.length, true);
-      var better = score < bestScore - 0.05;
-      var tied = Math.abs(score - bestScore) <= 0.05;
+      var better = distance < bestDistance - 0.05;
+      var tied = Math.abs(distance - bestDistance) <= 0.05;
       if (better || (tied && street.length > bestLength)) {
         best = street;
-        bestScore = score;
+        bestDistance = distance;
         bestLength = street.length;
       }
+
+      // מסלול הגיבוי מוגבל לזום עירוני: ציר ראשי קרוב גובר על סמטה
+      if (street.length >= MAIN_STREET_MIN_METERS) {
+        var mainScore = distance * mainStreetScoreFactor(street.length);
+        var mainBetter = mainScore < bestMainScore - 0.05;
+        var mainTied = Math.abs(mainScore - bestMainScore) <= 0.05;
+        if (mainBetter || (mainTied && street.length > bestMainLength)) {
+          bestMain = street;
+          bestMainScore = mainScore;
+          bestMainLength = street.length;
+        }
+      }
     });
-    return best;
+
+    return bestMain || best;
   }
 
   function initFallback() {
