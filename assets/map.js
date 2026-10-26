@@ -718,6 +718,118 @@
         };
   }
 
+  var activeReviewPanel = null;
+
+  function closeReviewPanel() {
+    if (!activeReviewPanel) return;
+    var panel = activeReviewPanel;
+    activeReviewPanel = null;
+    document.removeEventListener("keydown", panel.onKeydown);
+    if (panel.backdrop.parentNode) panel.backdrop.parentNode.removeChild(panel.backdrop);
+    if (panel.opener && typeof panel.opener.focus === "function") panel.opener.focus();
+  }
+
+  function openReviewPanel(street, opener) {
+    closeReviewPanel();
+    var visit = API && typeof API.getVisit === "function" ? API.getVisit(street.id) : null;
+    if (!visit) return;
+
+    var backdrop = document.createElement("div");
+    backdrop.className = "map-review-backdrop";
+    var dialog = document.createElement("div");
+    dialog.className = "map-review-panel";
+    dialog.setAttribute("role", "dialog");
+    dialog.setAttribute("aria-modal", "true");
+    dialog.setAttribute("aria-labelledby", "map-review-title");
+    dialog.dir = "rtl";
+    var close = document.createElement("button");
+    close.type = "button";
+    close.className = "map-review-panel__close";
+    close.textContent = "×";
+    close.setAttribute("aria-label", "סגירת דירוג והערה");
+    close.addEventListener("click", closeReviewPanel);
+    var title = document.createElement("h2");
+    title.id = "map-review-title";
+    title.textContent = "הביקור ב" + street.name;
+    var subtitle = document.createElement("p");
+    subtitle.className = "map-review-panel__hint";
+    subtitle.textContent = "אפשר לבחור דירוג ולהוסיף הערה — שניהם אופציונליים.";
+    var ratingLabel = document.createElement("p");
+    ratingLabel.className = "map-review-panel__label";
+    ratingLabel.textContent = "איך היה ברחוב?";
+    var stars = document.createElement("div");
+    stars.className = "map-review-panel__stars";
+    stars.setAttribute("role", "group");
+    stars.setAttribute("aria-label", "דירוג הביקור ב" + street.name);
+    var ratingStatus = document.createElement("span");
+    ratingStatus.className = "map-review-panel__status";
+    ratingStatus.setAttribute("aria-live", "polite");
+    var currentRating = Number(visit.rating) || 0;
+    function syncRating() {
+      ratingStatus.textContent = currentRating ? currentRating + " מתוך 5" : "עדיין לא דירגתם";
+      Array.prototype.forEach.call(stars.querySelectorAll("button"), function (star) {
+        var on = Number(star.dataset.rating) <= currentRating;
+        star.textContent = on ? "★" : "☆";
+        star.classList.toggle("is-on", on);
+        star.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    }
+    [1, 2, 3, 4, 5].forEach(function (value) {
+      var star = document.createElement("button");
+      star.type = "button";
+      star.className = "map-review-panel__star";
+      star.dataset.rating = String(value);
+      star.setAttribute("aria-label", "דירוג " + value + " מתוך 5");
+      star.addEventListener("click", function () {
+        currentRating = value;
+        if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "rating", value);
+        syncRating();
+      });
+      stars.appendChild(star);
+    });
+    var noteLabel = document.createElement("label");
+    noteLabel.className = "map-review-panel__note";
+    noteLabel.textContent = "מה אתה חושב על הרחוב";
+    var note = document.createElement("textarea");
+    note.rows = 3;
+    note.maxLength = 500;
+    note.placeholder = "אפשר לכתוב כאן משהו קצר...";
+    note.value = visit.note || "";
+    note.setAttribute("aria-label", "הערה על " + street.name);
+    note.addEventListener("input", function () {
+      if (API && typeof API.updateVisit === "function") API.updateVisit(street.id, "note", note.value);
+    });
+    noteLabel.appendChild(note);
+    var done = document.createElement("button");
+    done.type = "button";
+    done.className = "btn map-review-panel__done";
+    done.textContent = "סיום";
+    done.addEventListener("click", closeReviewPanel);
+    stars.appendChild(ratingStatus);
+    dialog.appendChild(close);
+    dialog.appendChild(title);
+    dialog.appendChild(subtitle);
+    dialog.appendChild(ratingLabel);
+    dialog.appendChild(stars);
+    dialog.appendChild(noteLabel);
+    dialog.appendChild(done);
+    backdrop.appendChild(dialog);
+    backdrop.addEventListener("click", function (event) {
+      if (event.target === backdrop) closeReviewPanel();
+    });
+    document.body.appendChild(backdrop);
+    var onKeydown = function (event) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        closeReviewPanel();
+      }
+    };
+    document.addEventListener("keydown", onKeydown);
+    activeReviewPanel = { backdrop: backdrop, opener: opener, onKeydown: onKeydown };
+    syncRating();
+    close.focus();
+  }
+
   /** פופאפ נבנה ב-DOM ישירות (textContent) — אין innerHTML, אין הזרקת משתמשים */
   function popupContent(street) {
     var wrap = document.createElement("div");
@@ -750,7 +862,8 @@
         state.className = "map-popup__state" + (visited ? " is-visited" : "");
         state.textContent = visited ? "ביקרתם כאן ✓" : "עוד לא ביקרתם";
         toggle.textContent = visited ? "בטל סימון ביקור" : "סמן שביקרתי";
-        details.hidden = !visited;
+        details.hidden = true;
+        reviewButton.hidden = !visited;
         if (visited && API && typeof API.getVisit === "function") {
           var visit = API.getVisit(street.id) || {};
           noteInput.value = visit.note || "";
@@ -764,6 +877,14 @@
           });
         }
       }
+
+      var reviewButton = document.createElement("button");
+      reviewButton.type = "button";
+      reviewButton.className = "btn map-popup__review";
+      reviewButton.textContent = "דירוג והערה";
+      reviewButton.addEventListener("click", function () {
+        if (isVisited(street.id)) openReviewPanel(street, reviewButton);
+      });
 
       var details = document.createElement("div");
       details.className = "map-popup__details";
@@ -820,6 +941,8 @@
 
       syncPopupUI();
       wrap.appendChild(toggle);
+      wrap.appendChild(reviewButton);
+      /* נשמר כגיבוי פנימי, אך חוויית העריכה נפתחת בחלונית נפרדת. */
       wrap.appendChild(details);
     } else {
       var note = document.createElement("span");
@@ -1421,10 +1544,17 @@
 
     // שינוי גודל מאוחר (פריסה/מובייל): ליישר את הקנבס בלי לאבד את המיקום
     if (window.ResizeObserver && el.canvas) {
+      var resizeFrame = 0;
       var resizeObserver = new window.ResizeObserver(function () {
-        if (!map) return;
-        map.invalidateSize({ animate: false });
-        map.panBy([0, 0], { animate: false });
+        if (!map || resizeFrame) return;
+        // פריסת מובייל יכולה לשנות גובה כמה פעמים ברצף (סרגל כתובת/מקלדת).
+        // מאחדים את הרענונים לפריים אחד כדי לא להרעיד את המפה בזמן גלילה.
+        resizeFrame = window.requestAnimationFrame(function () {
+          resizeFrame = 0;
+          if (!map) return;
+          map.invalidateSize({ animate: false });
+          map.panBy([0, 0], { animate: false });
+        });
       });
       resizeObserver.observe(el.canvas);
     }

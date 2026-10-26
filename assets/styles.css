@@ -1032,6 +1032,12 @@ summary,
   font-weight: 700;
 }
 
+.map-popup__review {
+  width: 100%;
+  margin-top: 0.35rem;
+  min-height: 2.65rem;
+}
+
 .map-popup__details {
   display: flex;
   flex-direction: column;
@@ -1046,6 +1052,125 @@ summary,
 /* display:flex אחרת גובר על מנגנון hidden המובנה */
 .map-popup__details[hidden] {
   display: none;
+}
+
+.map-review-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgb(0 0 0 / 55%);
+}
+
+.map-review-panel {
+  position: relative;
+  width: min(100%, 25rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--stone-50);
+  color: var(--ink);
+  box-shadow: 0 18px 50px rgb(0 0 0 / 28%);
+}
+
+.map-review-panel h2 {
+  margin: 0;
+  padding-inline-end: 2rem;
+  font-size: 1.2rem;
+}
+
+.map-review-panel__close {
+  position: absolute;
+  inset-block-start: 0.65rem;
+  inset-inline-end: 0.65rem;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.map-review-panel__hint,
+.map-review-panel__label,
+.map-review-panel__status {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.map-review-panel__label {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.map-review-panel__stars {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  direction: ltr;
+}
+
+.map-review-panel__star {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--ink-soft);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.map-review-panel__star.is-on {
+  color: var(--accent-text);
+}
+
+.map-review-panel__star:hover,
+.map-review-panel__star:focus-visible {
+  border-color: var(--focus);
+}
+
+.map-review-panel__status {
+  direction: rtl;
+  margin-inline-start: 0.35rem;
+  white-space: nowrap;
+}
+
+.map-review-panel__note {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.map-review-panel__note textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 0.65rem;
+  font: inherit;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--stone-50);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.map-review-panel__done {
+  align-self: flex-start;
+  min-height: 44px;
+  margin-top: 0.2rem;
 }
 
 .map-popup__details-title {
@@ -2544,7 +2669,8 @@ body.dyk-modal-open {
 
   /* המפה: 30% מגובה המסך (לכל היותר 280px) — נוחה לגלול סביבה ולא בולעת את המסך */
   #map-canvas {
-    height: clamp(200px, 30vh, 280px);
+    height: clamp(220px, 38svh, 340px);
+    min-height: 220px;
   }
 
   /* כותרת שכונה בשתי שורות — בלי גלילה אופקית ב-360px */
@@ -2639,6 +2765,21 @@ body.dyk-modal-open {
   #list-title {
     scroll-margin-block-start: calc(var(--sticky-h, 4.5rem) + 0.5rem);
   }
+
+  /* במגע, חלונית הדירוג עולה מלמטה ונשארת נגישה גם כשהמקלדת פתוחה. */
+  .map-review-backdrop {
+    align-items: end;
+    padding: 0.5rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .map-review-panel {
+    width: 100%;
+    max-height: min(85svh, 34rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border-radius: 18px 18px 12px 12px;
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2721,6 +2862,15 @@ body.dyk-modal-open {
 
 /* בפלאפון כרטיס הרחוב נשאר קריא אך לא משתלט על שטח המפה. */
 @media (max-width: 620px) {
+  html {
+    overflow-x: clip;
+    overscroll-behavior-x: none;
+  }
+
+  body {
+    min-width: 0;
+    overscroll-behavior-x: none;
+  }
   .leaflet-popup-content {
     max-width: 220px;
     margin: 0.45rem 0.6rem;
