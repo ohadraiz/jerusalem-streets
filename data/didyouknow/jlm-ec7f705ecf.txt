@@ -1,0 +1,9 @@
+street_id: jlm-ec7f705ecf
+street_name: יעקב מאיר
+area: זכרון משה
+fact: הרב יעקב מאיר, הראשון לציון והרב הראשי הספרדי הראשון, כתב ב-1920 שגם אם מתן זכות בחירה לנשים אינו ראוי בעיניו, אין זו סיבה הכרחית לפרוש מהבחירות.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%9E%D7%90%D7%99%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

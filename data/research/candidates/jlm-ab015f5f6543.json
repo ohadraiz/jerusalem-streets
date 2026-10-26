@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ab015f5f6543",
+  "street_name": "משה ולאך",
+  "area": "רוממה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ד״ר משה וולך, מייסד בית החולים שערי צדק, פגש בבית חולים בהמבורג את האחות זלמה מאיר ושכנע אותה לבוא לירושלים ולשמש אחות ראשית בבית החולים שלו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — משה וולך",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%95%D7%95%D7%9C%D7%9A",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

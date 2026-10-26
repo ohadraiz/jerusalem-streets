@@ -1,0 +1,9 @@
+street_id: jlm-72f8c8da0b
+street_name: יוסף בורג
+area: אבו בסל (שערי ירושלים)
+fact: יוסף בורג כיהן כשר כמעט ברציפות מ-1951 עד 1986 — האדם שכיהן הכי הרבה שנים כשר בממשלות ישראל.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%91%D7%95%D7%A8%D7%92
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

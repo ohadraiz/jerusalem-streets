@@ -1,0 +1,9 @@
+street_id: jlm-1d066d5f2b
+street_name: יצחק רובינשטיין
+area: קרית היובל
+fact: הרב יצחק רובינשטיין היה חבר הסנאט הפולני; בחירתו לרבה של וילנה עוררה פולמוס חריף, ובסוף ימיו עמד בראש ישיבת רבי יצחק אלחנן בניו יורק.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%95%D7%91%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

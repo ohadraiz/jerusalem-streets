@@ -1,0 +1,9 @@
+street_id: jlm-3f4d63f325
+street_name: רבינו תם
+area: זכרון משה
+fact: רבנו תם, נכדו של רש״י וראש בעלי התוספות, חיבר את ׳ספר הישר׳ וספר על הדקדוק העברי — וכינויו נגזר מהפסוק ׳ויעקב איש תם׳.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A0%D7%95_%D7%AA%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

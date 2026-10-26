@@ -1,0 +1,9 @@
+street_id: jlm-480aad8302
+street_name: רבי חיסדא
+area: המושבה היוונית
+fact: רב חסדא עמד בראש ישיבת סורא עשר שנים, נפטר בגיל 92 — ונודע בשקדנותו, עד שמעט ישן בלילות.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91_%D7%97%D7%A1%D7%93%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

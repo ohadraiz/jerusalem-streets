@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-596cc14c88",
+  "street_name": "פליקס פרנקפורטר",
+  "area": "רמות א'",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "פליקס פרנקפורטר היה היהודי השלישי שכיהן כשופט בבית המשפט העליון של ארצות הברית — אחרי ברנדייס וקרדוזו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פליקס פרנקפורטר",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%9C%D7%99%D7%A7%D7%A1_%D7%A4%D7%A8%D7%A0%D7%A7%D7%A4%D7%95%D7%A8%D7%98%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-41cfbe98f2",
+  "street_name": "קוטלר הרב אהרן",
+  "area": "גבעת שאול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב אהרן קוטלר עמד בראש ישיבת קלצק בבלארוס, ולאחר מכן ייסד בארצות הברית את ישיבת לייקווד.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אהרן קוטלר",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%A7%D7%95%D7%98%D7%9C%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

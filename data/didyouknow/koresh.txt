@@ -1,0 +1,9 @@
+street_id: koresh
+street_name: כורש
+area: מגרש הרוסים
+fact: כורש הגדול, מלך פרס האחמנית, זכור במסורת היהודית בזכות הכרזת כורש — שהעניקה לגולי בבל את הזכות לשוב לארץ ולבנות את בית המקדש השני.
+source: https://he.wikipedia.org/wiki/%D7%9B%D7%95%D7%A8%D7%A9
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

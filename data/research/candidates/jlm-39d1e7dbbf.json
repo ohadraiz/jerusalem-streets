@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-39d1e7dbbf",
+  "street_name": "מרדכי עליאש",
+  "area": "נחלאות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מרדכי עליאש, הציר הראשון של ישראל בבריטניה, העסיק במשרדו בירושלים שלושה משפטנים שהיו לימים שופטי עליון — ובהם שני נשיאי בית המשפט.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מרדכי עליאש",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A2%D7%9C%D7%99%D7%90%D7%A9",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

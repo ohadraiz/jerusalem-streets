@@ -1,0 +1,2619 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-26T06:09:34.949Z",
+  "accessDate": "2026-10-22",
+  "list": "data/research/batch-200.json",
+  "summary": {
+    "total": 200,
+    "approved": 200,
+    "rejected": 0,
+    "high": 0,
+    "medium": 200,
+    "low": 0,
+    "contentSources": 202
+  },
+  "streets": [
+    {
+      "street_id": "jlm-61720af346",
+      "street_name": "יאנוש קורצ'אק",
+      "status": "approved",
+      "fact": "יאנוש קורצ׳אק, המחנך שבבית היתומים שלו פעל בית דין של ילדים, קיבל את שמו המפורסם מטעות דפוס: בתחרות כתיבה הודפס ׳יאנוש׳ במקום ׳יאנאש׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A0%D7%95%D7%A9_%D7%A7%D7%95%D7%A8%D7%A6'%D7%90%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3bc01e544a",
+      "street_name": "יגאל ידין",
+      "status": "approved",
+      "fact": "יגאל ידין, הרמטכ״ל השני של צה״ל, הוא הרמטכ״ל הצעיר ביותר בתולדותיו — ולימים היה גם פרופ׳ לארכאולוגיה וסגן ראש הממשלה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%92%D7%90%D7%9C_%D7%99%D7%93%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-bd3dd7a298",
+      "street_name": "יהודה בורלא",
+      "status": "approved",
+      "fact": "יהודה בורלא, חתן פרס ישראל לספרות, נחשב לאחד מסופרי ׳כותל המזרח׳; יצירתו פרשה את הווי יהודי המזרח וירושלים העתיקה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%91%D7%95%D7%A8%D7%9C%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8c533772b0",
+      "street_name": "יהודה המכבי",
+      "status": "approved",
+      "fact": "יהודה המכבי עמד בראש מרד החשמונאים נגד גזירות אנטיוכוס, ונהרג ב-160 לפנה״ס — אחרי שהוביל את המרד להישגים שסללו את הקמת ממלכת החשמונאים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%94%D7%9E%D7%9B%D7%91%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c178274f13",
+      "street_name": "יהודה הנשיא",
+      "status": "approved",
+      "fact": "רבי יהודה הנשיא, עורך המשנה, חי בציפורי ונקבר בבית שערים; הוא היה נצר להלל הזקן וחתם את תקופת התנאים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%94%D7%A0%D7%A9%D7%99%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-298a66162b",
+      "street_name": "יהודה לאו פיקרד",
+      "status": "approved",
+      "fact": "ליאו פיקרד, מחשובי הגאולוגים בישראל, היה הנשיא הראשון של החברה הגיאולוגית הישראלית, וב-1955 עמד בראש ועדת המומחים של אונסק״ו לאזורים צחיחים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%90%D7%95_%D7%A4%D7%99%D7%A7%D7%A8%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d2f385ef47",
+      "street_name": "יהודה מרגולין",
+      "status": "approved",
+      "fact": "יהודה מרגולין, עיתונאי ופילוסוף יהודי, נשלח ללא משפט לחמש שנים בגולאג הסובייטי — כ׳גורם סיכון סוציאלי׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%9E%D7%A8%D7%92%D7%95%D7%9C%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-80ded0b53c",
+      "street_name": "יהודה קרני",
+      "status": "approved",
+      "fact": "יהודה קרני, משורר ועיתונאי ירושלמי, זכה להכרה מביאליק: ב-1908 פרסם ביאליק את שירו ׳יש נערה תמימה׳ בכתב העת ׳השילוח׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%A7%D7%A8%D7%A0%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f430f09f25",
+      "street_name": "יהוסף שוארץ",
+      "status": "approved",
+      "fact": "הרב יהוסף שוורץ, מחלוצי חקר ארץ ישראל, לימד ב-1856 בבית הספר למל בירושלים — אך נאלץ להתפטר בשל התנגדות רבנים ללימודים הכלליים שנלמדו בו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%A1%D7%A3_%D7%A9%D7%95%D7%95%D7%A8%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9b2896257a",
+      "street_name": "יהושוע בן גמלא",
+      "status": "approved",
+      "fact": "לפי התלמוד, יהושע בן גמלא ייסד את החינוך הציבורי בישראל; אשתו מרתא בת ביתוס קנתה עבורו את הכהונה הגדולה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%A9%D7%A2_%D7%91%D7%9F_%D7%92%D7%9E%D7%9C%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3c6128c285",
+      "street_name": "יהושע בן נון",
+      "status": "approved",
+      "fact": "לפי רוב החוקרים, הממצא הארכאולוגי אינו תומך בסיפורי כיבוש כנען בימי יהושע — חלק מהערים המתוארות לא התקיימו אז.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%A9%D7%A2_%D7%91%D7%9F_%D7%A0%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d83c4ca512",
+      "street_name": "יהושע פראוור",
+      "status": "approved",
+      "fact": "יהושע פראוור, חתן פרס ישראל, היה מגדולי חוקרי ממלכת ירושלים הצלבנית — ואף ערך תקופה את האנציקלופדיה העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%A9%D7%A2_%D7%A4%D7%A8%D7%90%D7%95%D7%95%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cc848620ff",
+      "street_name": "יובל נאמן",
+      "status": "approved",
+      "fact": "יובל נאמן, פיזיקאי ושר המדע לשעבר, זכה בפרס ישראל ב-1969; בטקס של 1992 הניף את תעודת הפרס והכריז שהוא מחזיר אותו במחאה על הפרס לאמיל חביבי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%91%D7%9C_%D7%A0%D7%90%D7%9E%D7%9F",
+        "https://www.nli.org.il/he/newspapers/hadashot/1992/05/08/01/article/28"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-711a52a359",
+      "street_name": "יום טוב אלגזי",
+      "status": "approved",
+      "fact": "הרב יום טוב אלגאזי, הראשון לציון וראש ישיבת המקובלים בית אל, איתר בכתבי יד אבודים את ספר ׳יד רמה׳ — שנדפס לראשונה על פי העתק שמצא.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%9D-%D7%98%D7%95%D7%91_%D7%90%D7%9C%D7%92%D7%90%D7%96%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e087ec83c7",
+      "street_name": "יונה קרמנצקי",
+      "status": "approved",
+      "fact": "יונה קרמנצקי, מחלוצי תעשיית החשמל באירופה, היה יושב הראש הראשון של קק״ל, בשנים 1902–1907.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%94_%D7%A7%D7%A8%D7%9E%D7%A0%D7%A6%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1a67edecc3",
+      "street_name": "יונתן בן עוזיאל",
+      "status": "approved",
+      "fact": "יונתן בן עוזיאל, מגדולי תלמידי הלל, חיבר את תרגום יונתן לנביאים; רבים עולים לקברו בעמוקה כסגולה לזיווג ופריון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%91%D7%9F_%D7%A2%D7%95%D7%96%D7%99%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1b376d8d71",
+      "street_name": "יוסל'ה רוזנבלט",
+      "status": "approved",
+      "fact": "החזן יוסל'ה רוזנבלט הלחין יותר מ-600 יצירות, ותרם את קולו לפסקול הסרט המדבר הראשון — ׳זמר הג׳אז׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%9C'%D7%94_%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%9C%D7%98"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c210ba46b4",
+      "street_name": "יוסף אבידר",
+      "status": "approved",
+      "fact": "יוסף אבידר, מראשי ההגנה ומאלופי צה״ל הראשונים, היה המבקר הראשון של ההסתדרות — ודו״חותיו עוררו תרעומת כה רבה, עד שהוקמה ועדה לצמצום סמכויותיו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%90%D7%91%D7%99%D7%93%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-72f8c8da0b",
+      "street_name": "יוסף בורג",
+      "status": "approved",
+      "fact": "יוסף בורג כיהן כשר כמעט ברציפות מ-1951 עד 1986 — האדם שכיהן הכי הרבה שנים כשר בממשלות ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%91%D7%95%D7%A8%D7%92"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-56e1c61e57",
+      "street_name": "יוסף וייץ",
+      "status": "approved",
+      "fact": "יוסף וייץ, ׳אבי היערות׳ ומראשי קק״ל, קרא לבנו יחיעם על שם תרועת ׳יחי-עם׳ שפרצה עם לידתו — והבן נהרג בליל הגשרים ביוני 1946.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%95%D7%99%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9efb7c18aa",
+      "street_name": "יוסף חיים",
+      "status": "approved",
+      "fact": "הרב יוסף חיים מבגדאד, ה׳בן איש חי׳, חיבר את הפיוט ׳ואמרתם כה לחי׳ בציון רבי שמעון בר יוחאי בארץ ישראל ב-1869; הפיוט התקבל בקהילות רבות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%99%D7%99%D7%9D_%D7%9E%D7%91%D7%92%D7%93%D7%90%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f18deb136c",
+      "street_name": "יוסף לוריא",
+      "status": "approved",
+      "fact": "יוסף לוריא היה ציר לקונגרס הציוני הראשון ומראשי החינוך העברי בארץ; מ-1919 ניהל את מחלקת החינוך של ההסתדרות הציונית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%9C%D7%95%D7%A8%D7%99%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3b64c1d427",
+      "street_name": "יוסף נדבה",
+      "status": "approved",
+      "fact": "יוסף נדבה, היסטוריון ופרופסור למדע המדינה, חקר את תולדות הציונות והיה מזוהה עם התנועה הרוויזיוניסטית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A0%D7%93%D7%91%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5244029744",
+      "street_name": "יוסף ריבלין",
+      "status": "approved",
+      "fact": "יוסף ריבלין, ממובילי היציאה מחומות ירושלים במאה ה-19, נקשר להקמת שכונות רבות; יש המייחסים לו את הקמתן של לא פחות מ-16 שכונות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A8%D7%99%D7%91%D7%9C%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4709cd2ba5",
+      "street_name": "יורדי הסירה",
+      "status": "approved",
+      "fact": "כ״ג יורדי הסירה היו 23 לוחמי ההגנה שנעלמו במאי 1941 בדרכם לחבל בבתי הזיקוק בטריפולי שבלבנון, יחד עם קצין בריטי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%22%D7%92_%D7%99%D7%95%D7%A8%D7%93%D7%99_%D7%94%D7%A1%D7%99%D7%A8%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c312255a3d",
+      "street_name": "יחזקאל קוטשר",
+      "status": "approved",
+      "fact": "יחזקאל קוטשר, בלשן וחתן פרס ישראל, ייסד גם עמותה לסיוע למשפחות נזקקות בירושלים וכיהן כנשיאה הראשון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C_%D7%A7%D7%95%D7%98%D7%A9%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-2802bc4896",
+      "street_name": "יחזקאל קויפמן",
+      "status": "approved",
+      "fact": "יחזקאל קויפמן, חוקר מקרא ופילוסוף, זכה בפרס ישראל ובפרס ביאליק פעמיים, ועמד בראש החוג למקרא באוניברסיטה העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%96%D7%A7%D7%90%D7%9C_%D7%A7%D7%95%D7%99%D7%A4%D7%9E%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-dcf8656772",
+      "street_name": "יחיאל צ׳לנוב",
+      "status": "approved",
+      "fact": "יחיאל צ׳לנוב, רופא ומנהיג ציוני, הקים עם אוסישקין את החוג הציוני הראשון במוסקבה — ועמד בראש חברת ׳גאולת הארץ׳ שיסד אוטו ורבורג.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%99%D7%90%D7%9C_%D7%A6'%D7%9C%D7%A0%D7%95%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3bc82865d0",
+      "street_name": "יחיל חיים",
+      "status": "approved",
+      "fact": "חיים יחיל, שגריר ישראל בשוודיה ומנכ״ל משרד החוץ, היה חבר בקבוצת המייסדים של קיבוץ גבעת חיים — ולימים יושב ראש רשות השידור.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%97%D7%99%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8176634437b8",
+      "street_name": "יעבץ",
+      "status": "approved",
+      "fact": "רבי יעקב עמדין, היעב״ץ, היה מגדולי הלוחמים בשבתאות — ופולמוסן וחבר פורה באשכנז של המאה ה-18.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A2%D7%9E%D7%93%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-98e0a3e208",
+      "street_name": "יעקב אבן חן",
+      "status": "approved",
+      "fact": "יעקב אבן חן, מייסדו ועורכו של ׳מבוע׳ לספרות דתית, הגיע לארץ ב-1941 בדרך מפותלת: מווילנה דרך רוסיה, טורקיה וסוריה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%90%D7%91%D7%9F_%D7%97%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3620ecea64",
+      "street_name": "יעקב אליאב",
+      "status": "approved",
+      "fact": "יעקב אליאב, ממייסדי לח״י שכונה באנגליה ׳הטרוריסט בעל עיני הקטיפה׳, ברח ב-1943 מהכלא המרכזי בירושלים — ולא נתפס עד סוף המנדט, אף שפרס כספי הוצב על ראשו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%90%D7%9C%D7%99%D7%90%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-96ab64c507",
+      "street_name": "יעקב ארנון",
+      "status": "approved",
+      "fact": "יעקב ארנון, הממונה הראשון על התקציבים ומנכ״ל משרד האוצר לשעבר, נפגש ב-1983 בתוניס עם יאסר ערפאת, לצד אורי אבנרי ומתי פלד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%90%D7%A8%D7%A0%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-045ec4e862",
+      "street_name": "יעקב ברמן",
+      "status": "approved",
+      "fact": "הרב יעקב ברמן, חתן פרס ישראל לחינוך, ייסד את המכון התורני הפדגוגי וניהל אותו עד מותו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%91%D7%A8%D7%9E%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-81549e94b2",
+      "street_name": "יעקב דוד קמזון",
+      "status": "approved",
+      "fact": "יעקב דוד קמזון, משורר וסופר עברי, כתב בעיקר לילדים — אך שירתו למבוגרים הוקדשה במידה רבה לירושלים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%93%D7%95%D7%93_%D7%A7%D7%9E%D7%96%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3e7cd6c29d",
+      "street_name": "יעקב וייס",
+      "status": "approved",
+      "fact": "יעקב וייס, לוחם אצ״ל שנתפס בפריצה לכלא עכו ונתלה ב-1947, עלה לגרדום עם חבריו כשהם שרים ׳התקווה׳ — וקרא ׳טוב למות בעד ארצנו׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%95%D7%99%D7%99%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ec7f705ecf",
+      "street_name": "יעקב מאיר",
+      "status": "approved",
+      "fact": "הרב יעקב מאיר, הראשון לציון והרב הראשי הספרדי הראשון, כתב ב-1920 שגם אם מתן זכות בחירה לנשים אינו ראוי בעיניו, אין זו סיבה הכרחית לפרוש מהבחירות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%9E%D7%90%D7%99%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1c25f44c70",
+      "street_name": "יצחק אלחנן",
+      "status": "approved",
+      "fact": "הרב יצחק אלחנן ספקטור, רבה של קובנה, כונה ׳רשכבה״ג׳ ונחשב לאוטוריטה בהתרת עגונות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%90%D7%9C%D7%97%D7%A0%D7%9F_%D7%A1%D7%A4%D7%A7%D7%98%D7%95%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4f5b40ca03",
+      "street_name": "יצחק ברויאר",
+      "status": "approved",
+      "fact": "הרב ד״ר יצחק ברויאר היה ממייסדי אגודת ישראל וממתנגדיה החריפים של הציונות — הוגה שהציג את עם ישראל כ׳עם התורה׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%91%D7%A8%D7%95%D7%99%D7%90%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5fbb511c0a3c",
+      "street_name": "יצחק למפרונטי",
+      "status": "approved",
+      "fact": "הרב יצחק למפרונטי, רב ורופא בפדובה, חיבר את ׳פחד יצחק׳ — האנציקלופדיה ההלכתית הראשונה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%9C%D7%9E%D7%A4%D7%A8%D7%95%D7%A0%D7%98%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3c2757ab69",
+      "street_name": "יצחק מ. בודנהיימר",
+      "status": "approved",
+      "fact": "מקס בודנהיימר, ממייסדי ההסתדרות הציונית העולמית, היה יושב הראש השני של קק״ל — ולפני כן עמד בראש ציוני גרמניה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%A1_%D7%91%D7%95%D7%93%D7%A0%D7%94%D7%99%D7%99%D7%9E%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e29d6cb6f0",
+      "street_name": "יצחק מולכו",
+      "status": "approved",
+      "fact": "יצחק רפאל מולכו, היסטוריון יליד סלוניקי, ייסד בה שבועון ציוני בצרפתית שהופיע עשר שנים — וב-1918 התקבל אצל המלך אלכסנדרוס הראשון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%A4%D7%90%D7%9C_%D7%9E%D7%95%D7%9C%D7%9B%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4166f4f6a9",
+      "street_name": "יצחק קצנלסון",
+      "status": "approved",
+      "fact": "יצחק קצנלסון, מחבר ׳השיר על העם היהודי שנהרג׳, כתב את הפואמה במחנה ויטל בצרפת; את הבית האחרון השלים ב-18 בינואר 1944, חודשים לפני שנרצח באושוויץ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A7%D7%A6%D7%A0%D7%9C%D7%A1%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d7764e6820",
+      "street_name": "יצחק קריב",
+      "status": "approved",
+      "fact": "יצחק קריב, ראש עיריית ירושלים מטעם המזרחי בשנים 1952–1955, סיים את תפקידו כשמונתה ועדה קרואה — לאחר שהעירייה כשלה בהעברת תקציב.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A7%D7%A8%D7%99%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1d066d5f2b",
+      "street_name": "יצחק רובינשטיין",
+      "status": "approved",
+      "fact": "הרב יצחק רובינשטיין היה חבר הסנאט הפולני; בחירתו לרבה של וילנה עוררה פולמוס חריף, ובסוף ימיו עמד בראש ישיבת רבי יצחק אלחנן בניו יורק.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%95%D7%91%D7%99%D7%A0%D7%A9%D7%98%D7%99%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1b1af70f0a",
+      "street_name": "יצחק רפאל",
+      "status": "approved",
+      "fact": "יצחק רפאל, ממנהיגי המפד״ל, עמד בראש מוסד הרב קוק וזכה בפרס ביאליק ובפרס הרב קוק על מפעלו בספרות התורנית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A8%D7%A4%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d0009cfbd4",
+      "street_name": "יצחק שמי",
+      "status": "approved",
+      "fact": "יצחק שמי, סופר יליד חברון, כתב את הנובלה ׳נקמת האבות׳ — שגרשון שקד תיאר כאחת היצירות החשובות בספרות העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A9%D7%9E%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-420295c35851",
+      "street_name": "ירחמיאל אמדורסקי",
+      "status": "approved",
+      "fact": "ירחמיאל אמדורסקי, מחלוצי המלונאות וממייסדי רוממה, מקור ברוך, גאולה ובית וגן; ב-1921 הסתער המון ערבי על מלונו בעת הכתרת הנציב העליון הרברט סמואל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%97%D7%9E%D7%99%D7%90%D7%9C_%D7%90%D7%9E%D7%93%D7%95%D7%A8%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f625495450",
+      "street_name": "ישעיהו ליבוביץ'",
+      "status": "approved",
+      "fact": "ישעיהו ליבוביץ, פרופסור לביוכימיה והוגה דעות, עבר את בחינות הבגרות בגיל 16 בלי שלמד בבית ספר; בגיל 18 כבר למד כימיה ופילוסופיה בברלין.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A2%D7%99%D7%94%D7%95_%D7%9C%D7%99%D7%91%D7%95%D7%91%D7%99%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a587d9485c",
+      "street_name": "ישראל אלדד",
+      "status": "approved",
+      "fact": "ישראל אלדד, ממנהיגי לח״י ומתרגם ניטשה לעברית, נפצע קשה בגבו ב-1944 כשנפל מהקומה הרביעית בניסיון להימלט משוטרים בריטים בבית הספר שבו לימד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%90%D7%9C%D7%93%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1197b73897",
+      "street_name": "כהנמן הרב יוסף",
+      "status": "approved",
+      "fact": "הרב יוסף שלמה כהנמן כיהן בסיימאס הליטאי בשנים 1923–1925, ולאחר השואה ייסד את ישיבת פוניבז׳ בארץ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A9%D7%9C%D7%9E%D7%94_%D7%9B%D7%94%D7%A0%D7%9E%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "koresh",
+      "street_name": "כורש",
+      "status": "approved",
+      "fact": "כורש הגדול, מלך פרס האחמנית, זכור במסורת היהודית בזכות הכרזת כורש — שהעניקה לגולי בבל את הזכות לשוב לארץ ולבנות את בית המקדש השני.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%95%D7%A8%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-28d3e4764c",
+      "street_name": "כי\"ח",
+      "status": "approved",
+      "fact": "כל ישראל חברים (כי״ח), הארגון היהודי שנוסד בפריז, פתח ב-1862 בית ספר בתטואן שבמרוקו — הראשון ברשת חינוך שחצתה יבשות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%9C_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%97%D7%91%D7%A8%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-397f064fa5",
+      "street_name": "כיכר אמיל גרינצווייג",
+      "status": "approved",
+      "fact": "אמיל גרינצווייג נהרג מרימון שנזרק להפגנת ׳שלום עכשיו׳ בירושלים ב-1983; המפגינים דרשו ליישם את מסקנות ועדת כהן על הטבח בסברה ושתילה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9E%D7%99%D7%9C_%D7%92%D7%A8%D7%99%D7%A0%D7%A6%D7%95%D7%95%D7%99%D7%99%D7%92"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-334064395b",
+      "street_name": "כיכר אריסטידס דה סוזה",
+      "status": "approved",
+      "fact": "אריסטידס דה סוזה מנדש, קונסול פורטוגל בבורדו, הנפיק כ-30,000 אשרות ליהודים ולנרדפים בניגוד להוראות ממשלתו — וב-1966 הוכר כחסיד אומות העולם.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%A9%D7%98%D7%99%D7%93%D7%A9_%D7%93%D7%94_%D7%A1%D7%95%D7%96%D7%94_%D7%9E%D7%A0%D7%93%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-37574f5d0c",
+      "street_name": "כיכר דניאל אוסטר",
+      "status": "approved",
+      "fact": "דניאל אוסטר היה היהודי הראשון שכיהן כראש עיריית ירושלים, ומחותמי מגילת העצמאות; כהונתו התחלקה לשלוש תקופות לא רצופות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%A0%D7%99%D7%90%D7%9C_%D7%90%D7%95%D7%A1%D7%98%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-6d172580df",
+      "street_name": "כיכר הרב אלישע וישליצקי",
+      "status": "approved",
+      "fact": "הרב אלישע וישליצקי היה ממייסדי בית המדרש ׳מהו״ת׳ וממייסדי הגרעינים התורנים, ולימד בישיבת מרכז הרב.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A9%D7%A2_%D7%95%D7%99%D7%A9%D7%9C%D7%99%D7%A6%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ef113cf313",
+      "street_name": "כיכר השופטת מרים בן פורת",
+      "status": "approved",
+      "fact": "מרים בן-פורת הייתה האישה הראשונה שכיהנה כשופטת בית המשפט העליון וכמבקרת המדינה, וכלת פרס ישראל לשנת 1991.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%99%D7%9D_%D7%91%D7%9F-%D7%A4%D7%95%D7%A8%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-41123da3b0",
+      "street_name": "כיכר יהודה עמיחי",
+      "status": "approved",
+      "fact": "יהודה עמיחי, חתן פרס ישראל לשירה, נחשב לפורץ דרך שחולל מהפכה בשירה העברית החדשה — ואף נמנה בין הבולטים בשירה העולמית של המאה ה-20.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%A2%D7%9E%D7%99%D7%97%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b3e4a01931",
+      "street_name": "כיכר יוסי בנאי",
+      "status": "approved",
+      "fact": "יוסי בנאי, שחקן וזמר יליד ירושלים, גילם בתפקידו האחרון בתיאטרון את דוד המלך במחזה ׳כתר בראש׳; על התפקיד זכה בפרס השחקן הטוב ביותר ב-2004.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%91%D7%A0%D7%90%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0e94580deb",
+      "street_name": "כיכר מיכאל הלפרין",
+      "status": "approved",
+      "fact": "מיכאל הלפרין, ממייסדי פועלי ציון, היה השראה למייסדי ארגון השומר — ופעל גם להגנה יהודית ולהפצת העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%94%D7%9C%D7%A4%D7%A8%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7481eea9f0",
+      "street_name": "כיכר נתן אנדרה שוראקי",
+      "status": "approved",
+      "fact": "אנדרה שוראקי תרגם לצרפתית את הקוראן, הברית החדשה והתנ״ך, והיה יועצו של בן-גוריון למיזוג גלויות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%A0%D7%93%D7%A8%D7%94_%D7%A9%D7%95%D7%A8%D7%90%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d1e785f9d9",
+      "street_name": "כיכר נתן גולדבלום",
+      "status": "approved",
+      "fact": "נתן גולדבלום ועמיתיו ייצרו בישראל תרכיב נגד שיתוק ילדים; בראשית 1957 הוא הוזרק לראשונה לכ-60 אלף תינוקות וילדים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%AA%D7%9F_%D7%92%D7%95%D7%9C%D7%93%D7%91%D7%9C%D7%95%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e90b8c0944",
+      "street_name": "כיכר פלורה ששון",
+      "status": "approved",
+      "fact": "פלורה ששון, פילנתרופית ומלומדת בת למשפחת ששון, נהגה לקחת איתה שוחט יהודי במסעותיה ברחבי אירופה, אסיה והמזרח התיכון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%9C%D7%95%D7%A8%D7%94_%D7%A9%D7%A9%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-291d27bdde",
+      "street_name": "כיכר רחה פריאר",
+      "status": "approved",
+      "fact": "רחה פריאר ייסדה את עליית הנוער, ואף ייסדה את הקרן למלחינים ישראלים; ב-1981 זכתה בפרס ישראל על מפעל חיים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%94_%D7%A4%D7%A8%D7%99%D7%90%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-534b506fc5",
+      "street_name": "כיכר שמשון רפאל הירש",
+      "status": "approved",
+      "fact": "הרב שמשון רפאל הירש, מאבות הנאו-אורתודוקסיה, עמד בראש המאבק ברפורמים — ודגל בשילוב של ׳תורה עם דרך ארץ׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%A9%D7%95%D7%9F_%D7%A8%D7%A4%D7%90%D7%9C_%D7%94%D7%99%D7%A8%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e5df7cccce",
+      "street_name": "כתב סופר",
+      "status": "approved",
+      "fact": "הרב אברהם שמואל בנימין סופר, ה׳כתב סופר׳, היה בין הרבנים הראשונים באירופה שהתירו ב-1856 לאפות מצות במכונה — חידוש שעורר מחלוקת.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%A1%D7%95%D7%A4%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-fe58133a51",
+      "street_name": "כתריאל טחורש",
+      "status": "approved",
+      "fact": "הרב כתריאל פישל טחורש היה רב שכונת שפירא, חבר מועצת הרבנות הראשית וממייסדי חבר הרבנים של הפועל המזרחי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9B%D7%AA%D7%A8%D7%99%D7%90%D7%9C_%D7%A4%D7%99%D7%A9%D7%9C_%D7%98%D7%9B%D7%95%D7%A8%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d0db709846",
+      "street_name": "לואי ליפסקי",
+      "status": "approved",
+      "fact": "לואי ליפסקי, מראשי הציונות בארצות הברית, היה ממייסדי קרן היסוד, הסוכנות היהודית והקונגרס היהודי העולמי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%90%D7%99_%D7%9C%D7%99%D7%A4%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-edb5116534",
+      "street_name": "לואיג'י לוצאטי",
+      "status": "approved",
+      "fact": "לואיג'י לוצאטי, מדינאי וכלכלן יהודי-איטלקי, כיהן חמש פעמים כשר האוצר של איטליה — ושנה אחת כראש ממשלתה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%90%D7%99%D7%92'%D7%99_%D7%9C%D7%95%D7%A6%D7%90%D7%98%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1cf14b3fb2",
+      "street_name": "לוי יצחק מברדיצ'ב",
+      "status": "approved",
+      "fact": "רבי לוי יצחק מברדיצ׳ב, מחבר ׳קדושת לוי׳, כונה ׳סנגורם של ישראל׳ בזכות אהבת ישראל העצומה שלו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%99_%D7%99%D7%A6%D7%97%D7%A7_%D7%9E%D7%91%D7%A8%D7%93%D7%99%D7%A6'%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-2e811db78a",
+      "street_name": "לויד ג'ורג'",
+      "status": "approved",
+      "fact": "דייוויד לויד ג׳ורג׳, ראש ממשלת בריטניה במלחמת העולם הראשונה, דחף לפרסום הצהרת בלפור ולקידום כיבוש ארץ ישראל מידי העות׳מאנים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%99%D7%99%D7%95%D7%95%D7%99%D7%93_%D7%9C%D7%95%D7%99%D7%93_%D7%92'%D7%95%D7%A8%D7%92'"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-96bac3cba2",
+      "street_name": "לונץ",
+      "status": "approved",
+      "fact": "אברהם משה לונץ, סופר ומו״ל ירושלמי, נחשב לראשון חוקרי ארץ ישראל בעת החדשה — ומ-1895 עד 1915 הוציא מדי שנה את ׳לוח ארץ ישראל׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%9E%D7%A9%D7%94_%D7%9C%D7%95%D7%A0%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8a18a139d6",
+      "street_name": "לח\"י",
+      "status": "approved",
+      "fact": "לח״י הוכרז כארגון טרור בידי ממשלת המנדט, ואחרי רצח ברנדוט — גם בידי ממשלת ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%97%D7%9E%D7%99_%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%99%D7%A9%D7%A8%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ce25b9039d",
+      "street_name": "לינקולן",
+      "status": "approved",
+      "fact": "אברהם לינקולן, הנשיא ה-16 של ארצות הברית, ביטל את העבדות וחיזק את אחדות המדינה במלחמת האזרחים — עד הירצחו באפריל 1865.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%9C%D7%99%D7%A0%D7%A7%D7%95%D7%9C%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9a33a2ea2e",
+      "street_name": "ליפקין-שחק",
+      "status": "approved",
+      "fact": "אמנון ליפקין-שחק, הרמטכ״ל ה-15 של צה״ל, עוטר פעמיים בעיטור העוז — ובמבצע אביב נעורים פיקד על כוח הצנחנים שתקף את מפקדת החזית העממית בלב ביירות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9E%D7%A0%D7%95%D7%9F_%D7%9C%D7%99%D7%A4%D7%A7%D7%99%D7%9F-%D7%A9%D7%97%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5db528d9a3",
+      "street_name": "לפיאן הרב אליהו",
+      "status": "approved",
+      "fact": "הרב אליהו לופיאן, מראשי תנועת המוסר, סירב בגיל תשע להצטרף למשפחתו שהיגרה לארצות הברית — משום שלא היו שם די מוסדות חינוך תורניים עבורו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%9C%D7%90%D7%A4%D7%99%D7%90%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8072422eee",
+      "street_name": "מאיר וייס",
+      "status": "approved",
+      "fact": "הרב פרופ׳ מאיר וייס, חתן פרס ישראל, נודע בפיתוח ׳האינטרפרטציה הכוליית׳ — שיטה לניתוח הספרותי של המקרא, ובעיקר של תהלים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%95%D7%99%D7%99%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a713c1166e79",
+      "street_name": "מאיר ולנה טוביאנסקי",
+      "status": "approved",
+      "fact": "מאיר טוביאנסקי הואשם בבגידה, הורשע בבית דין שדה והוצא להורג ב-1948 — מקרה יחיד מסוגו בתולדות המדינה, שהתברר לאחר מעשה כטעות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%98%D7%95%D7%91%D7%99%D7%90%D7%A0%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4aeed7bbe6",
+      "street_name": "מאיר שמגר",
+      "status": "approved",
+      "fact": "מאיר שמגר כיהן כנשיא בית המשפט העליון 11 שנים ו-295 ימים — התקופה הארוכה ביותר בתולדות בית המשפט.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%A9%D7%9E%D7%92%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0b87ca53f259",
+      "street_name": "מבוא יזהר ערמוני",
+      "status": "approved",
+      "fact": "יזהר ערמוני, לוחם פלמ״ח בן 18, נהרג בהתקפה על משטרת נבי יושע ב-1948; אף כשהכוח החל לסגת הוא נשאר לחפות על איסוף הפצועים, ועל כך עוטר בגבורה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%96%D7%94%D7%A8_%D7%A2%D7%A8%D7%9E%D7%95%D7%A0%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e8f7d806a1",
+      "street_name": "מוהליבר",
+      "status": "approved",
+      "fact": "הרב שמואל מוהליבר, ממייסדי חובבי ציון, נפטר ב-1898 בפולין; עצמותיו הועלו לישראל רק ב-1991 ונטמנו ליד מייסדי מזכרת בתיה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%9E%D7%95%D7%94%D7%9C%D7%99%D7%91%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b64361c6bc",
+      "street_name": "מונבז",
+      "status": "approved",
+      "fact": "מונבז השני, בנה של הלני המלכה, התגייר בעקבות אמו — ובימי המרד הגדול שלח סיוע למורדים היהודים נגד רומא.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A0%D7%91%D7%96_%D7%94%D7%A9%D7%A0%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b0a4b90136",
+      "street_name": "מוריס בורג'ס מונורי",
+      "status": "approved",
+      "fact": "מוריס בורז׳ס-מונורי, ראש ממשלת צרפת ב-1957, חתם על הסכם מכירת כור גרעיני צבאי לישראל — והיה שר ההגנה בתקופת מבצע סיני.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%99%D7%A1_%D7%91%D7%95%D7%A8%D7%96'%D7%A1-%D7%9E%D7%95%D7%A0%D7%95%D7%A8%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c72d72f41ac8",
+      "street_name": "מוריס פישר",
+      "status": "approved",
+      "fact": "מוריס פישר, ציר ישראל הראשון בצרפת, שירת כקצין מודיעין בסוריה ובלבנון תחת השם הבדוי אדואר לָבֶרן — ולימים תיווך בין היישוב למודיעין הצרפתי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%99%D7%A1_%D7%A4%D7%99%D7%A9%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-52f6ff4220",
+      "street_name": "מיכאל בן חנן זמל",
+      "status": "approved",
+      "fact": "מיכאל בן-חנן, מראשי ההגנה בירושלים, העיר את מאזיני הרדיו בישראל בתוכנית התעמלות בוקר — מ-1945 עד 1970.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%91%D7%9F-%D7%97%D7%A0%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0c93eb497bff",
+      "street_name": "מנדל בייליס",
+      "status": "approved",
+      "fact": "מנחם מנדל בייליס הואשם ב-1911 בעלילת דם בקייב וזוכה ב-1913; פרשתו עוררה ביקורת עולמית, והיא עובדה לרומן ׳יום הדין׳ של ברנרד מלמוד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%97%D7%9D_%D7%9E%D7%A0%D7%93%D7%9C_%D7%91%D7%99%D7%99%D7%9C%D7%99%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a067f55e95",
+      "street_name": "מנחם מנדל מקמיניץ",
+      "status": "approved",
+      "fact": "מנחם מנדל מקמיניץ ואשתו פתחו ב-1842 בירושלים את ׳בית הכנסת אורחים׳ — המלון היהודי הראשון בארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%97%D7%9D_%D7%9E%D7%A0%D7%93%D7%9C_%D7%9E%D7%A7%D7%90%D7%9E%D7%99%D7%A0%D7%99%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-eb199f00a8",
+      "street_name": "מנחת יצחק",
+      "status": "approved",
+      "fact": "הרב יצחק יעקב וייס, מחבר שו״ת ׳מנחת יצחק׳ ורבה של העדה החרדית, קיבל סמיכת ׳יורה יורה׳ בגיל 16 — ובגיל 19 כבר הוסמך ל׳ידין ידין׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%99%D7%A2%D7%A7%D7%91_%D7%95%D7%99%D7%99%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f31f8ed811",
+      "street_name": "מניה שוחט",
+      "status": "approved",
+      "fact": "מניה שוחט, ממנהיגות ארגון ׳השומר׳, יצאה ב-1898 עם משלחת של 25 איש לסייע לכפרי הטאטרים ברוסיה בעת רעב והפעילה שם מטבח ציבורי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%99%D7%94_%D7%A9%D7%95%D7%97%D7%98"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "mesilat-yesharim",
+      "street_name": "מסילת ישרים",
+      "status": "approved",
+      "fact": "׳מסילת ישרים׳ של הרמח״ל נדפס לראשונה באמסטרדם ב-1740; הגאון מווילנה אמר שאילו הרמח״ל היה חי בדורו, היה הולך ברגל לקבל פניו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A1%D7%99%D7%9C%D7%AA_%D7%99%D7%A9%D7%A8%D7%99%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cbc8dfbbac67",
+      "street_name": "מעלה אהרון ראובני",
+      "status": "approved",
+      "fact": "אהרן ראובני, סופר ומתרגם, זכה בפרס ביאליק ב-1969 על ׳עד ירושלים׳ — אחרי שנים של אבטלה ורעב, שבהן לעיתים ישן ברחוב.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%A8%D7%90%D7%95%D7%91%D7%A0%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4aee318c7a4f",
+      "street_name": "מעלות דושינסקי",
+      "status": "approved",
+      "fact": "הרב יוסף צבי דושינסקי, לימים גאב״ד העדה החרדית בירושלים, צוטט ב-1934 כאומר שאילו גר ברחביה היה מצביע ליצחק בן-צבי בבחירות לעירייה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A6%D7%91%D7%99_%D7%93%D7%95%D7%A9%D7%99%D7%A0%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3e892a1e303e",
+      "street_name": "מעלות הרב גורן",
+      "status": "approved",
+      "fact": "הרב שלמה גורן, הרב הצבאי הראשי הראשון של צה״ל, הוסמך לרבנות בגיל 17 — ובאותו גיל פרסם את ספרו הראשון, ׳נזר הקודש׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%92%D7%95%D7%A8%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-51997479b023",
+      "street_name": "מעלות חנה סנש",
+      "status": "approved",
+      "fact": "חנה סנש, משוררת וצנחנית שנתפסה בהונגריה ב-1944 והוצאה להורג, הותירה בבגדיה את השיר האחרון שכתבה — ימים אחדים אחרי מעצרה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%94_%D7%A1%D7%A0%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0d225c0baa86",
+      "street_name": "מעלות חנינה מזרחי",
+      "status": "approved",
+      "fact": "חנינא מזרחי, מחנך וציר באספת הנבחרים הראשונה, תרגם לעברית גם את ׳גולסתאן׳ — יצירתו של המשורר הפרסי סעדי מן המאה ה-13.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%99%D7%A0%D7%90_%D7%9E%D7%96%D7%A8%D7%97%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c1e0f38937",
+      "street_name": "מרדכי בן הלל",
+      "status": "approved",
+      "fact": "מרדכי בן הלל הכהן היה איש ציבור, עיתונאי וסופר — וממייסדי תל אביב.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%91%D7%9F_%D7%94%D7%9C%D7%9C_%D7%94%D7%9B%D7%94%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-792b2f9343",
+      "street_name": "מרדכי כספי",
+      "status": "approved",
+      "fact": "מרדכי כספי שימש מזכירו האישי של חיים ויצמן, היה ממקימי שכונת תלפיות בירושלים — וחבר אספת הנבחרים הראשונה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%9B%D7%A1%D7%A4%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-39d1e7dbbf",
+      "street_name": "מרדכי עליאש",
+      "status": "approved",
+      "fact": "מרדכי עליאש, הציר הראשון של ישראל בבריטניה, העסיק במשרדו בירושלים שלושה משפטנים שהיו לימים שופטי עליון — ובהם שני נשיאי בית המשפט.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A2%D7%9C%D7%99%D7%90%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-405a816c0e",
+      "street_name": "מרדכי שטנר",
+      "status": "approved",
+      "fact": "מרדכי שטנר, מחותמי מגילת העצמאות וממייסדי יד ושם, ייסד ב-1955 תפקיד חדש במשרד האוצר: הממונה על החיסכון, שנועד לעודד את הציבור לחסוך.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A9%D7%98%D7%A0%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f3e417c853",
+      "street_name": "מרקו ברוך",
+      "status": "approved",
+      "fact": "מרקו ברוך, מחובבי ציון שיזם צבא יהודי לכיבוש הארץ, גורש מאלג׳יריה ב-1894 — לאחר שהקהילה היהודית התלוננה שהוא ׳משחית את הנוער׳ בסיפורי גבורה מופרזים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%A7%D7%95_%D7%91%D7%A8%D7%95%D7%9A"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b8c0438cec",
+      "street_name": "מרתין לותר קינג",
+      "status": "approved",
+      "fact": "מרטין לותר קינג הוביל ב-1955 את חרם האוטובוסים במונטגומרי, וב-1963 נשא את נאומו ׳יש לי חלום׳ — וזכה בפרס נובל לשלום.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%98%D7%99%D7%9F_%D7%9C%D7%95%D7%AA%D7%A8_%D7%A7%D7%99%D7%A0%D7%92"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e55cb7f382a1",
+      "street_name": "משה אלשיך",
+      "status": "approved",
+      "fact": "רבי משה אלשיך, בעל דרשות ה׳אלשיך׳, היה תלמידם של רבי יוסף קארו ורבי יוסף טאיטאצאק — ורבו של חיים ויטאל בתלמוד ובהלכה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%90%D7%9C%D7%A9%D7%99%D7%9A"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-63269e77dc",
+      "street_name": "משה ברזני",
+      "status": "approved",
+      "fact": "משה ברזני, לוחם לח״י מעולי הגרדום, התאבד בצינוק בגיל 20 — בטרם הועלה לגרדום בידי הבריטים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%91%D7%A8%D7%96%D7%A0%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-874f15817e",
+      "street_name": "משה גסטר",
+      "status": "approved",
+      "fact": "משה גסטר גורש מרומניה ב-1885 עם עיתונאים יהודים נוספים; ב-1891 בוטל צו הגירוש, והוא קיבל מהמלך את העיטור הלאומי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%92%D7%A1%D7%98%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-33f08aa97900",
+      "street_name": "משה דוד גאון",
+      "status": "approved",
+      "fact": "משה דוד גאון, מחלוצי חוקרי הלאדינו, היה אביהם של איש העסקים בני גאון ושל הזמר יהורם גאון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%93%D7%95%D7%93_%D7%92%D7%90%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "has",
+      "street_name": "משה הס",
+      "status": "approved",
+      "fact": "משה הס, ממבשרי הסוציאליזם הציוני, נמנה עם מקימי ברית הקומוניסטים לצד מרקס ואנגלס — אך סולק ממנה במהפכות 1848 בגלל השקפתו האידיאליסטית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%94%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ab015f5f6543",
+      "street_name": "משה ולאך",
+      "status": "approved",
+      "fact": "ד״ר משה וולך, מייסד בית החולים שערי צדק, פגש בבית חולים בהמבורג את האחות זלמה מאיר ושכנע אותה לבוא לירושלים ולשמש אחות ראשית בבית החולים שלו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%95%D7%95%D7%9C%D7%9A"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8726bef907",
+      "street_name": "משה זילברג",
+      "status": "approved",
+      "fact": "משה זילברג, פרופסור למשפטים וראש המכון לחקר המשפט העברי, כיהן כשופט בבית המשפט העליון בשנים 1950–1970.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%96%D7%99%D7%9C%D7%91%D7%A8%D7%92"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-dffbc9d80c",
+      "street_name": "משה זמורה",
+      "status": "approved",
+      "fact": "משה זמורה היה נשיא בית המשפט העליון הראשון של מדינת ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%96%D7%9E%D7%95%D7%A8%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7cf249af14",
+      "street_name": "משה קליינמן",
+      "status": "approved",
+      "fact": "משה קליינמן ערך את ׳העולם׳, ביטאונה הרשמי של ההסתדרות הציונית, מ-1923 ועד מותו ב-1948.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A7%D7%9C%D7%99%D7%99%D7%A0%D7%9E%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b2e72bbde9",
+      "street_name": "משה קראוס",
+      "status": "approved",
+      "fact": "משה קראוס, ראש המשרד הארצישראלי בבודפשט בזמן השואה, פעל להפיץ למערב את דו״ח ורבה–וצלר — עדותם של שני נמלטים מאושוויץ.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A7%D7%A8%D7%90%D7%95%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-57f478282b9c",
+      "street_name": "משיח ברוכוף",
+      "status": "approved",
+      "fact": "משיח ברוכוף, סוחר ועסקן יהודי-בוכרי בירושלים, היה ממייסדי בית היתומים הספרדי ומנהלו — וציר באספת הנבחרים הראשונה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%99%D7%97_%D7%91%D7%A8%D7%95%D7%9B%D7%95%D7%A3"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e4ba6cbdb4",
+      "street_name": "נאה",
+      "status": "approved",
+      "fact": "הרב אברהם חיים נאה, ׳בעל השיעורים׳, פיתח שיטה הלכתית למידות ושיעורי תורה — וזכה בפרס הרב קוק לספרות תורנית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%90%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7256317638",
+      "street_name": "נהגי הפרדות",
+      "status": "approved",
+      "fact": "גדוד נהגי הפרדות, שפעל עם הצבא הבריטי במלחמת העולם הראשונה, נחשב ליחידה הסדירה הראשונה זה כ-1,800 שנה שהורכבה כולה מיהודים ושפתה עברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%92%D7%93%D7%95%D7%93_%D7%A0%D7%94%D7%92%D7%99_%D7%94%D7%A4%D7%A8%D7%93%D7%95%D7%AA"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9b70ab297c",
+      "street_name": "נחמן אביגד",
+      "status": "approved",
+      "fact": "נחמן אביגד, חתן פרס ישראל לחקר ארץ ישראל, היה מהארכאולוגים הבולטים שחפרו את הרובע היהודי בעיר העתיקה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9E%D7%9F_%D7%90%D7%91%D7%99%D7%92%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e81c903db1",
+      "street_name": "ניל\"י",
+      "status": "approved",
+      "fact": "ניל״י הייתה רשת ריגול יהודית שסייעה לבריטים נגד השלטון העות׳מאני במלחמת העולם הראשונה; אבשלום פיינברג כתב דו״ח מודיעין כבר ב-1915 — אך הדו״ח מעולם לא הגיע ליעדו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%9C%22%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9c5914e1b2",
+      "street_name": "ניסן ב\"ק",
+      "status": "approved",
+      "fact": "ניסן ב״ק היה מדפיס ספרים ביישוב הישן; לפי המסורת שמו הוא ראשי תיבות של ׳בעל קורא׳ — או ׳בן קדושים׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A1%D7%9F_%D7%91%22%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d355885897",
+      "street_name": "ניקנור",
+      "status": "approved",
+      "fact": "ניקנור, מצביא סלאוקי, נהרג בקרב חדשה ב-161 לפנה״ס — אחרי שהובס בידי יהודה המכבי בקרב כפר שלם.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A7%D7%A0%D7%95%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-53a10fb83f",
+      "street_name": "ניתאי הארבלי",
+      "status": "approved",
+      "fact": "ניתאי הארבלי היה אב בית הדין לצידו של יהושע בן פרחיה — הזוג השני בתקופת הזוגות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%AA%D7%90%D7%99_%D7%94%D7%90%D7%A8%D7%91%D7%9C%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-27808ac5ce",
+      "street_name": "נלסון גליק",
+      "status": "approved",
+      "fact": "הרב נלסון גליק, ארכאולוג ורב רפורמי, היה תלמידו של ויליאם אולברייט ומראשוני הארכאולוגים של ארץ ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%9C%D7%A1%D7%95%D7%9F_%D7%92%D7%9C%D7%99%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7f058302a1",
+      "street_name": "נסים בכר",
+      "status": "approved",
+      "fact": "נסים בכר, מאבות שיטת ׳עברית בעברית׳, נמנה עם השלושה שקדמו לאליעזר בן-יהודה בהחייאת השפה העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%A1%D7%99%D7%9D_%D7%91%D7%9B%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-17bd35e625",
+      "street_name": "נתן שלם",
+      "status": "approved",
+      "fact": "נתן שלם, מראשוני חוקרי הטבע בארץ, היה בין הראשונים לחקר רעידות אדמה — ובין מקימי אגודת המשוטטים הארץ-ישראלית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%AA%D7%9F_%D7%A9%D7%9C%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-35e76ef3db83",
+      "street_name": "סוקניק",
+      "status": "approved",
+      "fact": "אלעזר ליפא סוקניק היה הראשון שעמד על חשיבותן של המגילות הגנוזות; הוא ייסד עם קאסוטו את האנציקלופדיה המקראית וזכה בפרס ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%A2%D7%96%D7%A8_%D7%9C%D7%99%D7%A4%D7%90_%D7%A1%D7%95%D7%A7%D7%A0%D7%99%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5cae747914",
+      "street_name": "סימה בליליוס",
+      "status": "approved",
+      "fact": "קרן סימה בליליוס עמדה במרכז סכסוך ממושך בין העדה הספרדית לעדה האשכנזית בירושלים בתקופת המנדט.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%94_%D7%91%D7%9C%D7%99%D7%9C%D7%99%D7%95%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1fdea07fa6",
+      "street_name": "סמולנסקין",
+      "status": "approved",
+      "fact": "פרץ סמולנסקין, מראשי חיבת ציון, סבר שעם ישראל מתאחד דווקא באמצעות תרבותו, היסטורייתו ושפת התנ״ך — והוציא בווינה את ׳השחר׳ מ-1868 עד מותו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A5_%D7%A1%D7%9E%D7%95%D7%9C%D7%A0%D7%A1%D7%A7%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a0d978b6e1",
+      "street_name": "סן מרטין",
+      "status": "approved",
+      "fact": "חוסה דה סן מרטין סייע לשחרר את דרום אמריקה משלטון ספרד; אף שהיה מצביא ארגנטינאי, רק אחד מקרבותיו נערך על אדמת ארגנטינה — קרב סן לורנסו ב-1813.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%95%D7%A1%D7%94_%D7%93%D7%94_%D7%A1%D7%9F_%D7%9E%D7%A8%D7%98%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8e30b424c5",
+      "street_name": "סעדיה גאון",
+      "status": "approved",
+      "fact": "רב סעדיה גאון מונה בגיל 46 לראש ישיבת סורא; בהשראת מדקדקי הערבית היה הראשון שעסק בדקדוק העברית באופן שיטתי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A1%D7%A2%D7%93%D7%99%D7%94_%D7%92%D7%90%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-196fda7012",
+      "street_name": "עובדיה מברטנורה",
+      "status": "approved",
+      "fact": "רבי עובדיה מברטנורא הגיע לירושלים ב-1488 והתקבל בה בכבוד רב; פירושו למשנה, שנדפס לראשונה בוונציה ב-1548, הפך לחיבור המרכזי בפרשנות המשנה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%94_%D7%9E%D7%91%D7%A8%D7%98%D7%A0%D7%95%D7%A8%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cbd7177a76",
+      "street_name": "עולי הגרדום",
+      "status": "approved",
+      "fact": "עולי הגרדום הם 12 חברי אצ״ל ולח״י שהוצאו להורג או התאבדו בסמוך להוצאתם להורג בידי הבריטים; יש המוסיפים למניין גם את אנשי ניל״י וחנה סנש.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%9C%D7%99_%D7%94%D7%92%D7%A8%D7%93%D7%95%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b61b23dcc3",
+      "street_name": "עומר בן אל-ח'טאב",
+      "status": "approved",
+      "fact": "עומר בן אל-ח׳טאב, הח׳ליפה השני, כבש את ירושלים במאה ה-7 — ומסגד עומר ברובע הנוצרי קרוי על שמו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%9E%D7%A8_%D7%91%D7%9F_%D7%90%D7%9C-%D7%97'%D7%98%D7%90%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e597b92c06",
+      "street_name": "עזרא אהרון (שעשוע)",
+      "status": "approved",
+      "fact": "עזרא אהרון, נגן עוד ומלחין עיראקי-ישראלי, ייצג את עיראק בשם ׳עזורי אפנדי׳ בקונגרס הבין-לאומי הראשון למוזיקה ערבית, שנערך בקהיר ב-1932.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%96%D7%A8%D7%90_%D7%90%D7%94%D7%A8%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-35f7a6f938",
+      "street_name": "עמיחי פאגלין",
+      "status": "approved",
+      "fact": "עמיחי פאגלין, ׳גידי׳, היה קצין המבצעים של האצ״ל ומפקד התקפת האצ״ל על יפו — ולימים יועץ ראש הממשלה לענייני טרור.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%A4%D7%90%D7%92%D7%9C%D7%99%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d587bc2f5a",
+      "street_name": "עמנואל נח",
+      "status": "approved",
+      "fact": "מרדכי מנואל נח, עיתונאי ודיפלומט יהודי-אמריקאי, פעל להקמת עיר מקלט ליהודים בשם ׳אררט׳ באי גרנד איילנד שבניו יורק.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%9E%D7%A0%D7%95%D7%90%D7%9C_%D7%A0%D7%97"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-2d29d586c6",
+      "street_name": "עמרם גאון",
+      "status": "approved",
+      "fact": "סדר רב עמרם גאון, שערך רב עמרם בבחרותו לבקשת קהילת ברצלונה, היה הסידור הראשון מסוגו — והשפיע על נוסח התפילה ברוב קהילות ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%A8%D7%9D_%D7%92%D7%90%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-de9ad5ab70",
+      "street_name": "ענתבי",
+      "status": "approved",
+      "fact": "אלברט ענתבי, מהנדס וממנהיגי היישוב, עמד ב-1909 במרכז ׳פרשת ענתבי׳ — מסע השמצה שניהלו נגדו אליעזר בן-יהודה ובנו, שכלל גם עצרת מחאה בת כ-200 איש.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%91%D7%A8%D7%98_%D7%A2%D7%A0%D7%AA%D7%91%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-cfb3d5fdff",
+      "street_name": "פול אמיל בוטה",
+      "status": "approved",
+      "fact": "פול-אמיל בוטה גילה את ארמונו של סרגון השני בדור שרוכין בחיפושיו אחר נינוה — והיה קונסול צרפת בירושלים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%95%D7%9C-%D7%90%D7%9E%D7%99%D7%9C_%D7%91%D7%95%D7%98%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-bcebf0fa36",
+      "street_name": "פטרסון",
+      "status": "approved",
+      "fact": "ג׳ון הנרי פטרסון פיקד על גדוד נהגי הפרדות ועל הגדוד ה-38 של קלעי המלך; ספרו ׳אוכלי האדם של צאבו׳ עובד לשלושה סרטים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%92'%D7%95%D7%9F_%D7%94%D7%A0%D7%A8%D7%99_%D7%A4%D7%98%D7%A8%D7%A1%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "pierre-koenig",
+      "street_name": "פייר קניג",
+      "status": "approved",
+      "fact": "פייר קניג, מרשל צרפת, הצטיין כמפקד בצבא צרפת החופשית במלחמת העולם השנייה — ולימים כיהן כשר ההגנה של צרפת.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%99%D7%99%D7%A8_%D7%A7%D7%A0%D7%99%D7%92"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-584b6d4990",
+      "street_name": "פינס",
+      "status": "approved",
+      "fact": "יחיאל מיכל פינס, סופר ומאבות הציונות הדתית, היה ממיישבי הארץ; מושב כפר פינס קרוי על שמו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%99%D7%90%D7%9C_%D7%9E%D7%99%D7%9B%D7%9C_%D7%A4%D7%99%D7%A0%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-26b10d5236",
+      "street_name": "פלא יועץ",
+      "status": "approved",
+      "fact": "הרב אליעזר פאפו נודע בזכות ספר המוסר ׳פלא יועץ׳, שעל שמו הוא מכונה; הוא שימש רב הקהילה הספרדית בסיליסטרה ובוקרשט.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%A4%D7%90%D7%A4%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8077ccafe1",
+      "street_name": "פלים",
+      "status": "approved",
+      "fact": "כ-200 מימאי הפלי״ם השתתפו במבצע נחשון להסרת המצור מעל ירושלים, וכ-70 מהם נקברו בבית הקברות בקריית ענבים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%9C%D7%99%22%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-596cc14c88",
+      "street_name": "פליקס פרנקפורטר",
+      "status": "approved",
+      "fact": "פליקס פרנקפורטר היה היהודי השלישי שכיהן כשופט בבית המשפט העליון של ארצות הברית — אחרי ברנדייס וקרדוזו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%9C%D7%99%D7%A7%D7%A1_%D7%A4%D7%A8%D7%A0%D7%A7%D7%A4%D7%95%D7%A8%D7%98%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-0964253a8a",
+      "street_name": "פרופ' יעקב פולוצקי",
+      "status": "approved",
+      "fact": "יעקב פולוצקי, בלשן ומזרחן, היה פרופסור לאגיפטולוגיה ולשפות שמיות באוניברסיטה העברית וחתן פרס ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%A4%D7%95%D7%9C%D7%95%D7%A6%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-4750dc6601",
+      "street_name": "פרופסור רקח",
+      "status": "approved",
+      "fact": "יואל רקח, מאבות הספקטרוסקופיה ואבי הפיזיקה העיונית בישראל, היה רקטור האוניברסיטה העברית ונשיאה בפועל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%9C_%D7%A8%D7%A7%D7%97"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-246f294cc4",
+      "street_name": "פרימו לוי",
+      "status": "approved",
+      "fact": "פרימו לוי, סופר וכימאי ניצול אושוויץ, תיאר את מחנה העבודה בספרו ׳הזהו אדם?׳ — שנחשב לאחד הספרים החשובים של המאה ה-20.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%99%D7%9E%D7%95_%D7%9C%D7%95%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-40825a8811",
+      "street_name": "פרל ויליאם",
+      "status": "approved",
+      "fact": "ויליאם פרל, מטאורולוג אמריקאי, פיתח תיאוריות על תאי מחזור האוויר — ותא פרל נקרא על שמו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%9C%D7%99%D7%90%D7%9D_%D7%A4%D7%A8%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ed148b3ee5",
+      "street_name": "צבי גרץ",
+      "status": "approved",
+      "fact": "צבי גרץ, מחבר ׳דברי ימי ישראל׳, כתב את עבודת הדוקטורט שלו על ׳גנוסיס והיהדות׳ בלטינית — השפה האקדמית שבה פורסמה ב-1846.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%92%D7%A8%D7%A5"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-efb39830ad",
+      "street_name": "צבי מסליאנסקי",
+      "status": "approved",
+      "fact": "צבי הירש מסליאנסקי, דרשן שכונה ׳המטיף הלאומי׳, היה ב-1902 ממייסדי העיתון היהודי ׳די וועלט׳ בניו יורק — ועורכו הראשון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%94%D7%99%D7%A8%D7%A9_%D7%9E%D7%A1%D7%9C%D7%99%D7%90%D7%A0%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-2ff8ac4765",
+      "street_name": "צבי שפירא",
+      "status": "approved",
+      "fact": "צבי הרמן שפירא, מתמטיקאי ומראשוני חובבי ציון, היה יוזם הקרן הקיימת לישראל והוגה רעיון האוניברסיטה העברית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%94%D7%A8%D7%9E%D7%9F_%D7%A9%D7%A4%D7%99%D7%A8%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-825967316a",
+      "street_name": "צונדק",
+      "status": "approved",
+      "fact": "ברנהרד צונדק, אנדוקרינולוג וגינקולוג, היה ממפתחי מבחן אשהיים-צונדק לבדיקת היריון — וחתן פרס ישראל לרפואה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%94%D7%A8%D7%93_%D7%A6%D7%95%D7%A0%D7%93%D7%A7"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-499bdd935d",
+      "street_name": "קאסוטו",
+      "status": "approved",
+      "fact": "הרב משה דוד קאסוטו היה רב בפירנצה ופרופסור למקרא באוניברסיטה העברית; הוא עסק גם באשורולוגיה ובייסד עם סוקניק את האנציקלופדיה המקראית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%93%D7%95%D7%93_%D7%A7%D7%90%D7%A1%D7%95%D7%98%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-132429938e",
+      "street_name": "קדושי סטרומה",
+      "status": "approved",
+      "fact": "אוניית המעפילים סטרומה נשאה כ-768 יהודים שברחו מרומניה, והוטבעה בידי צוללת סובייטית בפברואר 1942 — האסון הגדול בתולדות ההעפלה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A1%D7%98%D7%A8%D7%95%D7%9E%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c7fd96ed2a",
+      "street_name": "קהילות יעקב",
+      "status": "approved",
+      "fact": "הרב יעקב ישראל קניבסקי, ׳הסטייפלר׳, היה ממנהיגי הציבור החרדי-ליטאי ומחבר ׳קהלות יעקב׳ — ונכנס לישיבת נובהרדוק עוד לפני שמלאו לו 12.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%A7%D7%A0%D7%99%D7%91%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-9ee7947cfba1",
+      "street_name": "קהילות שום",
+      "status": "approved",
+      "fact": "תקנות שו״ם נכתבו בקהילות שפיירא, ורמייזא ומגנצא; הן עסקו גם באיסור שיוף מטבעות כדי להפיק מהן זהב — מעשה שנחשב בעיני חכמיהן לגזל ולסכנת נפשות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%A7%D7%A0%D7%95%D7%AA_%D7%A9%D7%95%22%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-41cfbe98f2",
+      "street_name": "קוטלר הרב אהרן",
+      "status": "approved",
+      "fact": "הרב אהרן קוטלר עמד בראש ישיבת קלצק בבלארוס, ולאחר מכן ייסד בארצות הברית את ישיבת לייקווד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%A7%D7%95%D7%98%D7%9C%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ea7e3a02db",
+      "street_name": "קוסובסקי",
+      "status": "approved",
+      "fact": "הרב חיים יהושע קוסובסקי נודע בכינוי ׳בעל הקונקורדנציות׳ בזכות מפעליו בתחום מפתחות וקונקורדנציות לתלמוד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%94%D7%95%D7%A9%D7%A2_%D7%A7%D7%95%D7%A1%D7%95%D7%91%D7%A1%D7%A7%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-99240cb363",
+      "street_name": "קלוזנר",
+      "status": "approved",
+      "fact": "יוסף קלוזנר, ממקימי האוניברסיטה העברית, העדיף ללמד תולדות עם ישראל — אך ב-1925 קיבל את ראשות החוג לספרות עברית בעקבות ספרו האוהד על ישו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%9C%D7%95%D7%96%D7%A0%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-91f00901cc",
+      "street_name": "קפאח יחיא",
+      "status": "approved",
+      "fact": "הרב יחיא קאפח ייסד את תנועת ׳דור דעה׳, שנלחמה בזוהר ובקבלה וקראה לחזור לפסיקת הרמב״ם; הוא היה סבו ורבו של הרב יוסף קאפח.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%99%D7%90_%D7%A7%D7%90%D7%A4%D7%97"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c7ab447a34",
+      "street_name": "קפלן",
+      "status": "approved",
+      "fact": "אליעזר קפלן היה שר האוצר הראשון של ישראל ומחותמי מגילת העצמאות; לפני כן ניהל את מחלקת הכספים של הסוכנות היהודית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%A2%D7%96%D7%A8_%D7%A7%D7%A4%D7%9C%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a815254a84",
+      "street_name": "קצנלסון",
+      "status": "approved",
+      "fact": "ברל כצנלסון, ממנהיגי תנועת העבודה, חיבר את תפילת ׳יזכור׳ לחללי מערכות ישראל — וערך את ׳דבר׳ מ-1925 עד מותו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%9C_%D7%9B%D7%A6%D7%A0%D7%9C%D7%A1%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-5be76e659f",
+      "street_name": "קרית עמנואל מורנו",
+      "status": "approved",
+      "fact": "עמנואל מורנו, קצין בסיירת מטכ״ל, הוא החייל הראשון בתולדות צה״ל שתמונתו אסורה בפרסום גם לאחר מותו — בשל תפקיד רגיש שמילא.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C_%D7%9E%D7%95%D7%A8%D7%A0%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1c3b3ca548",
+      "street_name": "קרל נטר",
+      "status": "approved",
+      "fact": "קרל נטר, ממייסדי כל ישראל חברים, ייסד את מקוה ישראל — בית הספר החקלאי הראשון בארץ; עד שהושלמו מבני המגורים הוא וצוותו גרו במערה חצובה בכורכר סמוך ליפו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A7%D7%A8%D7%9C_%D7%A0%D7%98%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-ac129c2637",
+      "street_name": "רא\"ל משה לוי",
+      "status": "approved",
+      "fact": "משה לוי, שכונה ׳מושֶה וחצי׳, היה הרמטכ״ל ה-12 של צה״ל בשנים 1983–1987 — תקופת שלהי מלחמת שלום הגליל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%9C%D7%95%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d33abf5428",
+      "street_name": "ראובן מס",
+      "status": "approved",
+      "fact": "ראובן מס, מייסד הוצאת ראובן מס, היה מראשוני המתיישבים היהודים בטלביה — ועד סתיו 1948 פעל למנוע השתלטות פרועה על בתים שנעזבו בידי תושביהם הערבים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%95%D7%91%D7%9F_%D7%9E%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-714804b7b3",
+      "street_name": "ראול ולנברג",
+      "status": "approved",
+      "fact": "ראול ולנברג הנפיק אלפי דרכוני חסות ליהודי בודפשט והקים רשת בתי מחסה שוודיים; עם שחרור הונגריה נעצר בידי הסובייטים ומאז נעלמו עקבותיו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%90%D7%95%D7%9C_%D7%95%D7%9C%D7%A0%D7%91%D7%A8%D7%92"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-c2cff92bca",
+      "street_name": "רבי זעירא",
+      "status": "approved",
+      "fact": "רבי זירא היה אמורא בבלי שעבר לארץ ישראל בדור השלישי; מעתיקים החליפו בינו לבין רבי זעירא השני, שחי בדור החמישי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%96%D7%99%D7%A8%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-480aad8302",
+      "street_name": "רבי חיסדא",
+      "status": "approved",
+      "fact": "רב חסדא עמד בראש ישיבת סורא עשר שנים, נפטר בגיל 92 — ונודע בשקדנותו, עד שמעט ישן בלילות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91_%D7%97%D7%A1%D7%93%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-075fa86663",
+      "street_name": "רבי חנינא",
+      "status": "approved",
+      "fact": "על רבי חנינא בר חמא, תלמיד רבי יהודה הנשיא, מסופר שגם בגיל 80 יכול היה לעמוד על רגל אחת בזמן שחלץ ונעל שוב את נעלו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 2,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%97%D7%A0%D7%99%D7%A0%D7%90_%D7%91%D7%A8_%D7%97%D7%9E%D7%90",
+        "https://he.wikisource.org/wiki/%D7%97%D7%95%D7%9C%D7%99%D7%9F_%D7%9B%D7%93_%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f1e43f60f8",
+      "street_name": "רבי טרפון",
+      "status": "approved",
+      "fact": "רבי טרפון, חברו ובר הפלוגתא של רבי עקיבא, כונה בתלמוד הירושלמי ׳אביהן של כל ישראל׳; בית מדרשו שכן בלוד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%98%D7%A8%D7%A4%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-df092ea6ca",
+      "street_name": "רבי נחמן מברסלב",
+      "status": "approved",
+      "fact": "רבי נחמן מברסלב לא מינה יורש, ולכן חסידות ברסלב המשיכה לפעול כתנועה עם מורים הבקיאים בתורתו — ולא כחצר בראשות שושלת אדמו״רים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9E%D7%9F_%D7%9E%D7%91%D7%A8%D7%A1%D7%9C%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-33ac0eb5b0",
+      "street_name": "רבי תנחומא",
+      "status": "approved",
+      "fact": "רבי תנחומא בר אבא, מגדולי בעלי האגדה, כונה בירושלמי ׳איסכוליסטיקא׳ — מלומד ביוונית; מדרש תנחומא מיוחס לו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%AA%D7%A0%D7%97%D7%95%D7%9E%D7%90_%D7%91%D7%A8_%D7%90%D7%91%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-7d1bd000fe",
+      "street_name": "רבינו גרשום",
+      "status": "approved",
+      "fact": "רבנו גרשום, ׳מאור הגולה׳, היה מגדולי חכמי ישראל ומהסמכויות הרבניות הגדולות באשכנז במאה ה-11.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A0%D7%95_%D7%92%D7%A8%D7%A9%D7%95%D7%9D_%D7%9E%D7%90%D7%95%D7%A8_%D7%94%D7%92%D7%95%D7%9C%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3f4d63f325",
+      "street_name": "רבינו תם",
+      "status": "approved",
+      "fact": "רבנו תם, נכדו של רש״י וראש בעלי התוספות, חיבר את ׳ספר הישר׳ וספר על הדקדוק העברי — וכינויו נגזר מהפסוק ׳ויעקב איש תם׳.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A0%D7%95_%D7%AA%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-19184699e4",
+      "street_name": "רבן יוחנן בן זכאי",
+      "status": "approved",
+      "fact": "רבן יוחנן בן זכאי נמלט מירושלים הנצורה ושכנע את אספסיאנוס להתיר לו להקים את הסנהדרין מחדש ביבנה — ושם שיקם את חיי התורה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%9F_%D7%99%D7%95%D7%97%D7%A0%D7%9F_%D7%91%D7%9F_%D7%96%D7%9B%D7%90%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e8fc2bdee9",
+      "street_name": "רוזאניס",
+      "status": "approved",
+      "fact": "שלמה רוזאניס, מגדולי ההיסטוריונים של יהדות ספרד, תיעד את גנזי קהילת סלוניקי לפני השרפה הגדולה ב-1917 — ורוב כתבי היד שתיאר אבדו באש.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A8%D7%95%D7%96%D7%90%D7%A0%D7%99%D7%A1"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8cc5646330",
+      "street_name": "רוטשילד",
+      "status": "approved",
+      "fact": "הברון רוטשילד, ׳הנדיב הידוע׳, תמך במושבות העלייה הראשונה; מזכרת בתיה קרויה על שם אמו, ואשדות יעקב — על שם בנו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%90%D7%93%D7%9E%D7%95%D7%A0%D7%93_%D7%92'%D7%99%D7%99%D7%9E%D7%A1_%D7%93%D7%94_%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3dee2a080e",
+      "street_name": "רינה ניקובה",
+      "status": "approved",
+      "fact": "רינה ניקובה, חלוצת הבלט הקלאסי בארץ, הקימה את להקת הבלט התימני — וב-1928 הופיעה במטרופוליטן אופרה בניו יורק, לפני ששבה ארצה ב-1932.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%99%D7%A0%D7%94_%D7%A0%D7%99%D7%A7%D7%95%D7%91%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a973a702ce",
+      "street_name": "ריש לקיש",
+      "status": "approved",
+      "fact": "ריש לקיש, מגדולי אמוראי ארץ ישראל, פעל בטבריה והיה תלמיד-חבר ובר הפלוגתא המרכזי של גיסו רבי יוחנן.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%99%D7%A9_%D7%9C%D7%A7%D7%99%D7%A9"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e41b37c9e3",
+      "street_name": "רלב\"ח",
+      "status": "approved",
+      "fact": "הרב לוי בן חביב, הרלב״ח, היה ראש חכמי ירושלים ומנהיגהּ בימי עליות מגורשי ספרד ופורטוגל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%99_%D7%91%D7%9F_%D7%97%D7%91%D7%99%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-b5df1dab68",
+      "street_name": "רש\"י",
+      "status": "approved",
+      "fact": "רש״י, גדול פרשני התנ״ך והתלמוד, כונה ׳פרשנדתא׳ — פרשן הדת; פירושו לתורה נדפס לראשונה ב-1475 ברג׳ו די קלבריה שבדרום איטליה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%A9%22%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8e4d67e542",
+      "street_name": "רשב\"א",
+      "status": "approved",
+      "fact": "הרשב״א, מגדולי חכמי ספרד, נמנה עם שמונת הרבנים המוערכים בידי רבי יוסף קארו — והטיל חרם על לימוד פילוסופיה ומדעי הטבע מתחת לגיל 25, למעט ספרי הרמב״ם.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%91%22%D7%90"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-787ed05e19",
+      "street_name": "רשב\"ג",
+      "status": "approved",
+      "fact": "רבן שמעון בן גמליאל השני היה נשיא הסנהדרין באושא אחרי מרד בר כוכבא; בנו היה רבי יהודה הנשיא, עורך המשנה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%9F_%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%91%D7%9F_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e50a99aab1d2",
+      "street_name": "ש.א. נכון",
+      "status": "approved",
+      "fact": "שלמה אומברטו נכון, ממנהיגי הציונות באיטליה, עלה ארצה ב-1939 וכיהן כיו״ר ארגון יוצאי איטליה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%95%D7%9E%D7%91%D7%A8%D7%98%D7%95_%D7%A0%D7%9B%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-285c941db3",
+      "street_name": "ש.ז. שפיצר",
+      "status": "approved",
+      "fact": "שמואל זנוויל שפיצר, מעסקני היישוב הישן, ייסד את שכונת בתי נייטין והיה ממייסדי שערי חסד.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%96%D7%A0%D7%95%D7%95%D7%99%D7%9C_%D7%A9%D7%A4%D7%99%D7%A6%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-d0d4688cac",
+      "street_name": "שאול אביגור",
+      "status": "approved",
+      "fact": "שאול אביגור הקים את הש״י, עמד בראש המוסד לעלייה ב׳ — וזכה בפרס ישראל על תרומה מיוחדת לחברה ולמדינה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%95%D7%9C_%D7%90%D7%91%D7%99%D7%92%D7%95%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-eb8b8588ab",
+      "street_name": "שאול המלך",
+      "status": "approved",
+      "fact": "שאול, מלך ישראל הראשון, נמשח בידי שמואל דווקא כשחיפש את אתונות אביו שאבדו — ונלחם בעמונים ובפלשתים.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%95%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-3db8b56d3e",
+      "street_name": "שבתי פטרושקה",
+      "status": "approved",
+      "fact": "שבתי פטרושקה, מלחין ומנצח, היה מראשוני ׳קול ישראל׳ וניהל את חטיבת המוזיקה של התחנה.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%91%D7%AA%D7%99_%D7%A4%D7%98%D7%A8%D7%95%D7%A9%D7%A7%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-696453889f",
+      "street_name": "שדי חמד",
+      "status": "approved",
+      "fact": "הרב חיים חזקיהו מדיני, מחבר ׳שדי חמד׳, כיהן כרבה של קרסו-בזאר שבקרים ושל חברון.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%97%D7%96%D7%A7%D7%99%D7%94%D7%95_%D7%9E%D7%93%D7%99%D7%A0%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-17874371d4da",
+      "street_name": "שדל",
+      "status": "approved",
+      "fact": "שד״ל, ממייסדי חכמת ישראל, עמד בראש בית המדרש לרבנים בפדובה ועסק בפירוש המקרא בדרך הפשט.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%93%D7%95%D7%93_%D7%9C%D7%95%D7%A6%D7%90%D7%98%D7%95"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-f27e0a3343",
+      "street_name": "שדרות וולפסון",
+      "status": "approved",
+      "fact": "דוד וולפסון היה נשיאה השני של ההסתדרות הציונית העולמית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%95%D7%95%D7%9C%D7%A4%D7%A1%D7%95%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a3c4c46204",
+      "street_name": "שדרות צ'רצ'יל",
+      "status": "approved",
+      "fact": "וינסטון צ׳רצ׳יל כיהן כראש ממשלת בריטניה בשתי תקופות, ובראשונה — 1940–1945 — הנהיג את בריטניה במלחמה נגד גרמניה הנאצית.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%A0%D7%A1%D7%98%D7%95%D7%9F_%D7%A6'%D7%A8%D7%A6'%D7%99%D7%9C"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1ddd25bcef",
+      "street_name": "שופן",
+      "status": "approved",
+      "fact": "פרדריק שופן, מלחין ופסנתרן מהתקופה הרומנטית, כתב יצירות לפסנתר — והנוקטורנים, המזורקות והפולונזים שלו נחשבים לנכסי צאן ברזל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%93%D7%A8%D7%99%D7%A7_%D7%A9%D7%95%D7%A4%D7%9F"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-309519b436",
+      "street_name": "שילר",
+      "status": "approved",
+      "fact": "פרידריך שילר, משורר ומחזאי גרמני, נחשב עם גתה לנציג הבולט של הקלאסיקה של ויימאר — והיה רופא בהכשרתו.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%99%D7%93%D7%A8%D7%99%D7%9A_%D7%A9%D7%99%D7%9C%D7%A8"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-fe5c3c8258",
+      "street_name": "שלמה ארגוב",
+      "status": "approved",
+      "fact": "שלמה ארגוב, שגריר ישראל בבריטניה, נפצע קשה בניסיון התנקשות ב-1982 ונותר משותק; למחרת החליטה הממשלה על הפצצת ביירות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%90%D7%A8%D7%92%D7%95%D7%91"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-8fa5333890",
+      "street_name": "שלמה באום",
+      "status": "approved",
+      "fact": "שלמה באום היה סגן מפקד יחידה 101 ומיוזמי פעולות התגמול בשנות ה-50 — וממעצבי תורת הלחימה של הצנחנים והיחידות המיוחדות.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%91%D7%90%D7%95%D7%9D"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-e9a209d0ef",
+      "street_name": "שלמה בן יוסף",
+      "status": "approved",
+      "fact": "שלמה בן יוסף, לוחם בית״ר, היה ראשון שנים-עשר עולי הגרדום; הוא נתלה ב-1938 על ניסיון תקיפה באוטובוס ערבי.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%91%D7%9F-%D7%99%D7%95%D7%A1%D7%A3"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "shlomo-hamelech",
+      "street_name": "שלמה המלך",
+      "status": "approved",
+      "fact": "שלמה המלך, בנו של דוד, בנה את בית המקדש הראשון בירושלים ונחשב במקרא לחכם באדם.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-a8f8f84b88",
+      "street_name": "שלמה זלמן שרגאי",
+      "status": "approved",
+      "fact": "שלמה זלמן שרגאי, מראשי הפועל המזרחי ותנועת תורה ועבודה, כיהן כראש עיריית מערב ירושלים בשנים 1951–1952.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%A8%D7%92%D7%90%D7%99"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    },
+    {
+      "street_id": "jlm-1a546abaa3",
+      "street_name": "שלמה צמח",
+      "status": "approved",
+      "fact": "שלמה צמח, חברו מנוער של בן-גוריון, היה ממייסדי ׳הפועל הצעיר׳, בית הספר כדורי וכתב העת ׳מאזנים׳ — וחתן פרס ישראל.",
+      "confidence": "medium",
+      "method": "person-article",
+      "content_sources": 1,
+      "sources": [
+        "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A6%D7%9E%D7%97"
+      ],
+      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+    }
+  ]
+}

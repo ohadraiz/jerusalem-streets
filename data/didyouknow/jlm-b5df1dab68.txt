@@ -1,0 +1,9 @@
+street_id: jlm-b5df1dab68
+street_name: רש"י
+area: אבו בסל (שערי ירושלים)
+fact: רש״י, גדול פרשני התנ״ך והתלמוד, כונה ׳פרשנדתא׳ — פרשן הדת; פירושו לתורה נדפס לראשונה ב-1475 ברג׳ו די קלבריה שבדרום איטליה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%A9%22%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

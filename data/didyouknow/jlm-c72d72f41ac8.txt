@@ -1,0 +1,9 @@
+street_id: jlm-c72d72f41ac8
+street_name: מוריס פישר
+area: בקעה
+fact: מוריס פישר, ציר ישראל הראשון בצרפת, שירת כקצין מודיעין בסוריה ובלבנון תחת השם הבדוי אדואר לָבֶרן — ולימים תיווך בין היישוב למודיעין הצרפתי.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%95%D7%A8%D7%99%D7%A1_%D7%A4%D7%99%D7%A9%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

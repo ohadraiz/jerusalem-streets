@@ -1,0 +1,9 @@
+street_id: jlm-045ec4e862
+street_name: יעקב ברמן
+area: גילה
+fact: הרב יעקב ברמן, חתן פרס ישראל לחינוך, ייסד את המכון התורני הפדגוגי וניהל אותו עד מותו.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%91%D7%A8%D7%9E%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-3e7cd6c29d
+street_name: יעקב וייס
+area: תלפיות מזרח
+fact: יעקב וייס, לוחם אצ״ל שנתפס בפריצה לכלא עכו ונתלה ב-1947, עלה לגרדום עם חבריו כשהם שרים ׳התקווה׳ — וקרא ׳טוב למות בעד ארצנו׳.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%95%D7%99%D7%99%D7%A1
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

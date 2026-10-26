@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f430f09f25",
+  "street_name": "יהוסף שוארץ",
+  "area": "אבו בסל (שערי ירושלים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יהוסף שוורץ, מחלוצי חקר ארץ ישראל, לימד ב-1856 בבית הספר למל בירושלים — אך נאלץ להתפטר בשל התנגדות רבנים ללימודים הכלליים שנלמדו בו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יהוסף שוורץ",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%A1%D7%A3_%D7%A9%D7%95%D7%95%D7%A8%D7%A5",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-40825a8811",
+  "street_name": "פרל ויליאם",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ויליאם פרל, מטאורולוג אמריקאי, פיתח תיאוריות על תאי מחזור האוויר — ותא פרל נקרא על שמו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ויליאם פרל",
+      "url": "https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%9C%D7%99%D7%90%D7%9D_%D7%A4%D7%A8%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

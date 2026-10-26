@@ -1,0 +1,9 @@
+street_id: jlm-b8c0438cec
+street_name: מרתין לותר קינג
+area: המושבה הגרמנית
+fact: מרטין לותר קינג הוביל ב-1955 את חרם האוטובוסים במונטגומרי, וב-1963 נשא את נאומו ׳יש לי חלום׳ — וזכה בפרס נובל לשלום.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%98%D7%99%D7%9F_%D7%9C%D7%95%D7%AA%D7%A8_%D7%A7%D7%99%D7%A0%D7%92
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

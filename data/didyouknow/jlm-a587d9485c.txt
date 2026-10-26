@@ -1,0 +1,9 @@
+street_id: jlm-a587d9485c
+street_name: ישראל אלדד
+area: מחנה אלנבי
+fact: ישראל אלדד, ממנהיגי לח״י ומתרגם ניטשה לעברית, נפצע קשה בגבו ב-1944 כשנפל מהקומה הרביעית בניסיון להימלט משוטרים בריטים בבית הספר שבו לימד.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A9%D7%A8%D7%90%D7%9C_%D7%90%D7%9C%D7%93%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

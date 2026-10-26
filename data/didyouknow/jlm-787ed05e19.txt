@@ -1,0 +1,9 @@
+street_id: jlm-787ed05e19
+street_name: רשב"ג
+area: קטמונים (גוננים)
+fact: רבן שמעון בן גמליאל השני היה נשיא הסנהדרין באושא אחרי מרד בר כוכבא; בנו היה רבי יהודה הנשיא, עורך המשנה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%9F_%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%91%D7%9F_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

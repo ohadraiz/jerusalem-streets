@@ -1,0 +1,9 @@
+street_id: jlm-19184699e4
+street_name: רבן יוחנן בן זכאי
+area: קטמונים (גוננים)
+fact: רבן יוחנן בן זכאי נמלט מירושלים הנצורה ושכנע את אספסיאנוס להתיר לו להקים את הסנהדרין מחדש ביבנה — ושם שיקם את חיי התורה.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%9F_%D7%99%D7%95%D7%97%D7%A0%D7%9F_%D7%91%D7%9F_%D7%96%D7%9B%D7%90%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

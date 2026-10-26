@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-5be76e659f",
+  "street_name": "קרית עמנואל מורנו",
+  "area": "פסגת זאב מערב",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עמנואל מורנו, קצין בסיירת מטכ״ל, הוא החייל הראשון בתולדות צה״ל שתמונתו אסורה בפרסום גם לאחר מותו — בשל תפקיד רגיש שמילא.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עמנואל מורנו",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C_%D7%9E%D7%95%D7%A8%D7%A0%D7%95",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

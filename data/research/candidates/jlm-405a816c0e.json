@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-405a816c0e",
+  "street_name": "מרדכי שטנר",
+  "area": "קרית משה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מרדכי שטנר, מחותמי מגילת העצמאות וממייסדי יד ושם, ייסד ב-1955 תפקיד חדש במשרד האוצר: הממונה על החיסכון, שנועד לעודד את הציבור לחסוך.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מרדכי שטנר",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A9%D7%98%D7%A0%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

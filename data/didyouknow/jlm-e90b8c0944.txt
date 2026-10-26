@@ -1,0 +1,9 @@
+street_id: jlm-e90b8c0944
+street_name: כיכר פלורה ששון
+area: סן סימון
+fact: פלורה ששון, פילנתרופית ומלומדת בת למשפחת ששון, נהגה לקחת איתה שוחט יהודי במסעותיה ברחבי אירופה, אסיה והמזרח התיכון.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%9C%D7%95%D7%A8%D7%94_%D7%A9%D7%A9%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

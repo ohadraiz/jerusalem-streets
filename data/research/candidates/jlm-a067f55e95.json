@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a067f55e95",
+  "street_name": "מנחם מנדל מקמיניץ",
+  "area": "גבעות ארנונה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מנחם מנדל מקמיניץ ואשתו פתחו ב-1842 בירושלים את ׳בית הכנסת אורחים׳ — המלון היהודי הראשון בארץ ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מנחם מנדל מקאמיניץ",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A0%D7%97%D7%9D_%D7%9E%D7%A0%D7%93%D7%9C_%D7%9E%D7%A7%D7%90%D7%9E%D7%99%D7%A0%D7%99%D7%A5",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

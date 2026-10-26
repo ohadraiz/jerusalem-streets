@@ -1,0 +1,9 @@
+street_id: jlm-e81c903db1
+street_name: ניל"י
+area: קטמון הישנה
+fact: ניל״י הייתה רשת ריגול יהודית שסייעה לבריטים נגד השלטון העות׳מאני במלחמת העולם הראשונה; אבשלום פיינברג כתב דו״ח מודיעין כבר ב-1915 — אך הדו״ח מעולם לא הגיע ליעדו.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%9C%22%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

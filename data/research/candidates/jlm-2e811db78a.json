@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2e811db78a",
+  "street_name": "לויד ג'ורג'",
+  "area": "המושבה הגרמנית",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דייוויד לויד ג׳ורג׳, ראש ממשלת בריטניה במלחמת העולם הראשונה, דחף לפרסום הצהרת בלפור ולקידום כיבוש ארץ ישראל מידי העות׳מאנים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דייוויד לויד ג'ורג'",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%99%D7%99%D7%95%D7%95%D7%99%D7%93_%D7%9C%D7%95%D7%99%D7%93_%D7%92'%D7%95%D7%A8%D7%92'",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

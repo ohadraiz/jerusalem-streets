@@ -1,0 +1,9 @@
+street_id: jlm-1fdea07fa6
+street_name: סמולנסקין
+area: מחנה ישראל
+fact: פרץ סמולנסקין, מראשי חיבת ציון, סבר שעם ישראל מתאחד דווקא באמצעות תרבותו, היסטורייתו ושפת התנ״ך — והוציא בווינה את ׳השחר׳ מ-1868 עד מותו.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A5_%D7%A1%D7%9E%D7%95%D7%9C%D7%A0%D7%A1%D7%A7%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

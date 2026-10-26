@@ -1,0 +1,9 @@
+street_id: jlm-bd3dd7a298
+street_name: יהודה בורלא
+area: ניות
+fact: יהודה בורלא, חתן פרס ישראל לספרות, נחשב לאחד מסופרי ׳כותל המזרח׳; יצירתו פרשה את הווי יהודי המזרח וירושלים העתיקה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%94%D7%95%D7%93%D7%94_%D7%91%D7%95%D7%A8%D7%9C%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

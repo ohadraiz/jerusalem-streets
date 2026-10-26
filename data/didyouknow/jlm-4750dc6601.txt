@@ -1,0 +1,9 @@
+street_id: jlm-4750dc6601
+street_name: פרופסור רקח
+area: ניות
+fact: יואל רקח, מאבות הספקטרוסקופיה ואבי הפיזיקה העיונית בישראל, היה רקטור האוניברסיטה העברית ונשיאה בפועל.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%9C_%D7%A8%D7%A7%D7%97
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

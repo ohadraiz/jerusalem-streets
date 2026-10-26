@@ -1,0 +1,9 @@
+street_id: jlm-2e811db78a
+street_name: לויד ג'ורג'
+area: המושבה הגרמנית
+fact: דייוויד לויד ג׳ורג׳, ראש ממשלת בריטניה במלחמת העולם הראשונה, דחף לפרסום הצהרת בלפור ולקידום כיבוש ארץ ישראל מידי העות׳מאנים.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%99%D7%99%D7%95%D7%95%D7%99%D7%93_%D7%9C%D7%95%D7%99%D7%93_%D7%92'%D7%95%D7%A8%D7%92'
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

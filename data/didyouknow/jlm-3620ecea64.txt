@@ -1,0 +1,9 @@
+street_id: jlm-3620ecea64
+street_name: יעקב אליאב
+area: גבעת שאול
+fact: יעקב אליאב, ממייסדי לח״י שכונה באנגליה ׳הטרוריסט בעל עיני הקטיפה׳, ברח ב-1943 מהכלא המרכזי בירושלים — ולא נתפס עד סוף המנדט, אף שפרס כספי הוצב על ראשו.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%90%D7%9C%D7%99%D7%90%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

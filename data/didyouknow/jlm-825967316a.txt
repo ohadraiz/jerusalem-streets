@@ -1,0 +1,9 @@
+street_id: jlm-825967316a
+street_name: צונדק
+area: רמות ב'
+fact: ברנהרד צונדק, אנדוקרינולוג וגינקולוג, היה ממפתחי מבחן אשהיים-צונדק לבדיקת היריון — וחתן פרס ישראל לרפואה.
+source: https://he.wikipedia.org/wiki/%D7%91%D7%A8%D7%A0%D7%94%D7%A8%D7%93_%D7%A6%D7%95%D7%A0%D7%93%D7%A7
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

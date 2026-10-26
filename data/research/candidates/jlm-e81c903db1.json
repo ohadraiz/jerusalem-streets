@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e81c903db1",
+  "street_name": "ניל\"י",
+  "area": "קטמון הישנה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "ניל״י הייתה רשת ריגול יהודית שסייעה לבריטים נגד השלטון העות׳מאני במלחמת העולם הראשונה; אבשלום פיינברג כתב דו״ח מודיעין כבר ב-1915 — אך הדו״ח מעולם לא הגיע ליעדו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — ניל\"י",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%9C%22%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

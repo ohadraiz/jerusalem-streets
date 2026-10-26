@@ -1,0 +1,10 @@
+street_id: jlm-075fa86663
+street_name: רבי חנינא
+area: מקור חיים
+fact: על רבי חנינא בר חמא, תלמיד רבי יהודה הנשיא, מסופר שגם בגיל 80 יכול היה לעמוד על רגל אחת בזמן שחלץ ונעל שוב את נעלו.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%97%D7%A0%D7%99%D7%A0%D7%90_%D7%91%D7%A8_%D7%97%D7%9E%D7%90
+source: https://he.wikisource.org/wiki/%D7%97%D7%95%D7%9C%D7%99%D7%9F_%D7%9B%D7%93_%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-17bd35e625
+street_name: נתן שלם
+area: בית הכרם
+fact: נתן שלם, מראשוני חוקרי הטבע בארץ, היה בין הראשונים לחקר רעידות אדמה — ובין מקימי אגודת המשוטטים הארץ-ישראלית.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%AA%D7%9F_%D7%A9%D7%9C%D7%9D
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-405a816c0e
+street_name: מרדכי שטנר
+area: קרית משה
+fact: מרדכי שטנר, מחותמי מגילת העצמאות וממייסדי יד ושם, ייסד ב-1955 תפקיד חדש במשרד האוצר: הממונה על החיסכון, שנועד לעודד את הציבור לחסוך.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A9%D7%98%D7%A0%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

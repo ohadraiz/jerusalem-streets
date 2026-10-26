@@ -1,0 +1,9 @@
+street_id: jlm-39d1e7dbbf
+street_name: מרדכי עליאש
+area: נחלאות
+fact: מרדכי עליאש, הציר הראשון של ישראל בבריטניה, העסיק במשרדו בירושלים שלושה משפטנים שהיו לימים שופטי עליון — ובהם שני נשיאי בית המשפט.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%A2%D7%9C%D7%99%D7%90%D7%A9
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

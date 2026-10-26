@@ -1,0 +1,9 @@
+street_id: jlm-a3c4c46204
+street_name: שדרות צ'רצ'יל
+area: הר הצופים
+fact: וינסטון צ׳רצ׳יל כיהן כראש ממשלת בריטניה בשתי תקופות, ובראשונה — 1940–1945 — הנהיג את בריטניה במלחמה נגד גרמניה הנאצית.
+source: https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%A0%D7%A1%D7%98%D7%95%D7%9F_%D7%A6'%D7%A8%D7%A6'%D7%99%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

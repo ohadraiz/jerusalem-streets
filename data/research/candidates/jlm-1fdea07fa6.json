@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1fdea07fa6",
+  "street_name": "סמולנסקין",
+  "area": "מחנה ישראל",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "פרץ סמולנסקין, מראשי חיבת ציון, סבר שעם ישראל מתאחד דווקא באמצעות תרבותו, היסטורייתו ושפת התנ״ך — והוציא בווינה את ׳השחר׳ מ-1868 עד מותו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — פרץ סמולנסקין",
+      "url": "https://he.wikipedia.org/wiki/%D7%A4%D7%A8%D7%A5_%D7%A1%D7%9E%D7%95%D7%9C%D7%A0%D7%A1%D7%A7%D7%99%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

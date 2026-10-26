@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-1b376d8d71",
+  "street_name": "יוסל'ה רוזנבלט",
+  "area": "רמות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "החזן יוסל'ה רוזנבלט הלחין יותר מ-600 יצירות, ותרם את קולו לפסקול הסרט המדבר הראשון — ׳זמר הג׳אז׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסל'ה רוזנבלט",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%9C'%D7%94_%D7%A8%D7%95%D7%96%D7%A0%D7%91%D7%9C%D7%98",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

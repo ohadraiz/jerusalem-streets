@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f27e0a3343",
+  "street_name": "שדרות וולפסון",
+  "area": "קרית משה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "דוד וולפסון היה נשיאה השני של ההסתדרות הציונית העולמית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — דוד וולפסון",
+      "url": "https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%95%D7%95%D7%9C%D7%A4%D7%A1%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

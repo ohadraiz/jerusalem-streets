@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-3f4d63f325",
+  "street_name": "רבינו תם",
+  "area": "זכרון משה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבנו תם, נכדו של רש״י וראש בעלי התוספות, חיבר את ׳ספר הישר׳ וספר על הדקדוק העברי — וכינויו נגזר מהפסוק ׳ויעקב איש תם׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבנו תם",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%A0%D7%95_%D7%AA%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

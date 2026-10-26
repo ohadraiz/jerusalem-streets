@@ -1,0 +1,9 @@
+street_id: jlm-3dee2a080e
+street_name: רינה ניקובה
+area: פסגת זאב מזרח
+fact: רינה ניקובה, חלוצת הבלט הקלאסי בארץ, הקימה את להקת הבלט התימני — וב-1928 הופיעה במטרופוליטן אופרה בניו יורק, לפני ששבה ארצה ב-1932.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%99%D7%A0%D7%94_%D7%A0%D7%99%D7%A7%D7%95%D7%91%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

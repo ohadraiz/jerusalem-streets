@@ -1,0 +1,9 @@
+street_id: jlm-dffbc9d80c
+street_name: משה זמורה
+area: מגרש הרוסים
+fact: משה זמורה היה נשיא בית המשפט העליון הראשון של מדינת ישראל.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%96%D7%9E%D7%95%D7%A8%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

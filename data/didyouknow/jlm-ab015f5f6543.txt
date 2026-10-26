@@ -1,0 +1,9 @@
+street_id: jlm-ab015f5f6543
+street_name: משה ולאך
+area: רוממה
+fact: ד״ר משה וולך, מייסד בית החולים שערי צדק, פגש בבית חולים בהמבורג את האחות זלמה מאיר ושכנע אותה לבוא לירושלים ולשמש אחות ראשית בבית החולים שלו.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%95%D7%95%D7%9C%D7%9A
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

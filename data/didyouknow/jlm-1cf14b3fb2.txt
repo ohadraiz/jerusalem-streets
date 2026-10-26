@@ -1,0 +1,9 @@
+street_id: jlm-1cf14b3fb2
+street_name: לוי יצחק מברדיצ'ב
+area: מאה שערים
+fact: רבי לוי יצחק מברדיצ׳ב, מחבר ׳קדושת לוי׳, כונה ׳סנגורם של ישראל׳ בזכות אהבת ישראל העצומה שלו.
+source: https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%99_%D7%99%D7%A6%D7%97%D7%A7_%D7%9E%D7%91%D7%A8%D7%93%D7%99%D7%A6'%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

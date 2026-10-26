@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-291d27bdde",
+  "street_name": "כיכר רחה פריאר",
+  "area": "קטמון הישנה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רחה פריאר ייסדה את עליית הנוער, ואף ייסדה את הקרן למלחינים ישראלים; ב-1981 זכתה בפרס ישראל על מפעל חיים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רחה פריאר",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%94_%D7%A4%D7%A8%D7%99%D7%90%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

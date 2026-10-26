@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-e4ba6cbdb4",
+  "street_name": "נאה",
+  "area": "בתי אונגרין",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב אברהם חיים נאה, ׳בעל השיעורים׳, פיתח שיטה הלכתית למידות ושיעורי תורה — וזכה בפרס הרב קוק לספרות תורנית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — אברהם חיים נאה",
+      "url": "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%90%D7%94",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

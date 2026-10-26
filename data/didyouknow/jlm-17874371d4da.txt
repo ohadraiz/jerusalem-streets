@@ -1,0 +1,9 @@
+street_id: jlm-17874371d4da
+street_name: שדל
+area: אבו בסל (שערי ירושלים)
+fact: שד״ל, ממייסדי חכמת ישראל, עמד בראש בית המדרש לרבנים בפדובה ועסק בפירוש המקרא בדרך הפשט.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%95%D7%90%D7%9C_%D7%93%D7%95%D7%93_%D7%9C%D7%95%D7%A6%D7%90%D7%98%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,33 @@
+{
+  "street_id": "jlm-075fa86663",
+  "street_name": "רבי חנינא",
+  "area": "מקור חיים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "על רבי חנינא בר חמא, תלמיד רבי יהודה הנשיא, מסופר שגם בגיל 80 יכול היה לעמוד על רגל אחת בזמן שחלץ ונעל שוב את נעלו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבי חנינא בר חמא",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%97%D7%A0%D7%99%D7%A0%D7%90_%D7%91%D7%A8_%D7%97%D7%9E%D7%90",
+      "kind": "content"
+    },
+    {
+      "label": "תלמוד בבלי, חולין כד ע״ב — ויקיטקסט",
+      "url": "https://he.wikisource.org/wiki/%D7%97%D7%95%D7%9C%D7%99%D7%9F_%D7%9B%D7%93_%D7%91",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

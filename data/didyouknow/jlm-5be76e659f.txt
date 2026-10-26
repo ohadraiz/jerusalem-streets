@@ -1,0 +1,9 @@
+street_id: jlm-5be76e659f
+street_name: קרית עמנואל מורנו
+area: פסגת זאב מערב
+fact: עמנואל מורנו, קצין בסיירת מטכ״ל, הוא החייל הראשון בתולדות צה״ל שתמונתו אסורה בפרסום גם לאחר מותו — בשל תפקיד רגיש שמילא.
+source: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%A0%D7%95%D7%90%D7%9C_%D7%9E%D7%95%D7%A8%D7%A0%D7%95
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

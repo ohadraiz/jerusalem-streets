@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-792b2f9343",
+  "street_name": "מרדכי כספי",
+  "area": "מחנה אלנבי",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מרדכי כספי שימש מזכירו האישי של חיים ויצמן, היה ממקימי שכונת תלפיות בירושלים — וחבר אספת הנבחרים הראשונה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מרדכי כספי",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%93%D7%9B%D7%99_%D7%9B%D7%A1%D7%A4%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

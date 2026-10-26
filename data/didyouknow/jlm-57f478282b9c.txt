@@ -1,0 +1,9 @@
+street_id: jlm-57f478282b9c
+street_name: משיח ברוכוף
+area: נחלאות
+fact: משיח ברוכוף, סוחר ועסקן יהודי-בוכרי בירושלים, היה ממייסדי בית היתומים הספרדי ומנהלו — וציר באספת הנבחרים הראשונה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%99%D7%97_%D7%91%D7%A8%D7%95%D7%9B%D7%95%D7%A3
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

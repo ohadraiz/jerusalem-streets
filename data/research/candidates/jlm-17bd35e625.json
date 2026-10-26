@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-17bd35e625",
+  "street_name": "נתן שלם",
+  "area": "בית הכרם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "נתן שלם, מראשוני חוקרי הטבע בארץ, היה בין הראשונים לחקר רעידות אדמה — ובין מקימי אגודת המשוטטים הארץ-ישראלית.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נתן שלם",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%AA%D7%9F_%D7%A9%D7%9C%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

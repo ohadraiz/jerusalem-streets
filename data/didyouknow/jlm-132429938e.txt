@@ -1,0 +1,9 @@
+street_id: jlm-132429938e
+street_name: קדושי סטרומה
+area: מלחה
+fact: אוניית המעפילים סטרומה נשאה כ-768 יהודים שברחו מרומניה, והוטבעה בידי צוללת סובייטית בפברואר 1942 — האסון הגדול בתולדות ההעפלה.
+source: https://he.wikipedia.org/wiki/%D7%A1%D7%98%D7%A8%D7%95%D7%9E%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

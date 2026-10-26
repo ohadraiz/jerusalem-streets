@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-efb39830ad",
+  "street_name": "צבי מסליאנסקי",
+  "area": "רמות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "צבי הירש מסליאנסקי, דרשן שכונה ׳המטיף הלאומי׳, היה ב-1902 ממייסדי העיתון היהודי ׳די וועלט׳ בניו יורק — ועורכו הראשון.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — צבי הירש מסליאנסקי",
+      "url": "https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%94%D7%99%D7%A8%D7%A9_%D7%9E%D7%A1%D7%9C%D7%99%D7%90%D7%A0%D7%A1%D7%A7%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

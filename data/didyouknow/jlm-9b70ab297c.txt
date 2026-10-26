@@ -1,0 +1,9 @@
+street_id: jlm-9b70ab297c
+street_name: נחמן אביגד
+area: ניות
+fact: נחמן אביגד, חתן פרס ישראל לחקר ארץ ישראל, היה מהארכאולוגים הבולטים שחפרו את הרובע היהודי בעיר העתיקה.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9E%D7%9F_%D7%90%D7%91%D7%99%D7%92%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

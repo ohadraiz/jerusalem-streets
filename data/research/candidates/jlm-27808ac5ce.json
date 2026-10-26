@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-27808ac5ce",
+  "street_name": "נלסון גליק",
+  "area": "רמות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב נלסון גליק, ארכאולוג ורב רפורמי, היה תלמידו של ויליאם אולברייט ומראשוני הארכאולוגים של ארץ ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — נלסון גליק",
+      "url": "https://he.wikipedia.org/wiki/%D7%A0%D7%9C%D7%A1%D7%95%D7%9F_%D7%92%D7%9C%D7%99%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

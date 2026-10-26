@@ -1,0 +1,9 @@
+street_id: jlm-e41b37c9e3
+street_name: רלב"ח
+area: כרם אברהם
+fact: הרב לוי בן חביב, הרלב״ח, היה ראש חכמי ירושלים ומנהיגהּ בימי עליות מגורשי ספרד ופורטוגל.
+source: https://he.wikipedia.org/wiki/%D7%9C%D7%95%D7%99_%D7%91%D7%9F_%D7%97%D7%91%D7%99%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

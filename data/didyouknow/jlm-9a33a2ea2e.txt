@@ -1,0 +1,9 @@
+street_id: jlm-9a33a2ea2e
+street_name: ליפקין-שחק
+area: פסגת זאב מרכז
+fact: אמנון ליפקין-שחק, הרמטכ״ל ה-15 של צה״ל, עוטר פעמיים בעיטור העוז — ובמבצע אביב נעורים פיקד על כוח הצנחנים שתקף את מפקדת החזית העממית בלב ביירות.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%9E%D7%A0%D7%95%D7%9F_%D7%9C%D7%99%D7%A4%D7%A7%D7%99%D7%9F-%D7%A9%D7%97%D7%A7
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

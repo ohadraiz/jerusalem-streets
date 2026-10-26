@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-81549e94b2",
+  "street_name": "יעקב דוד קמזון",
+  "area": "רמות ב'",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יעקב דוד קמזון, משורר וסופר עברי, כתב בעיקר לילדים — אך שירתו למבוגרים הוקדשה במידה רבה לירושלים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יעקב דוד קמזון",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%93%D7%95%D7%93_%D7%A7%D7%9E%D7%96%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

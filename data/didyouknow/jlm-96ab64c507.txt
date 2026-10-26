@@ -1,0 +1,9 @@
+street_id: jlm-96ab64c507
+street_name: יעקב ארנון
+area: רמת בית הכרם
+fact: יעקב ארנון, הממונה הראשון על התקציבים ומנכ״ל משרד האוצר לשעבר, נפגש ב-1983 בתוניס עם יאסר ערפאת, לצד אורי אבנרי ומתי פלד.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%90%D7%A8%D7%A0%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

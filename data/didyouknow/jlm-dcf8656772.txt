@@ -1,0 +1,9 @@
+street_id: jlm-dcf8656772
+street_name: יחיאל צ׳לנוב
+area: קרית היובל
+fact: יחיאל צ׳לנוב, רופא ומנהיג ציוני, הקים עם אוסישקין את החוג הציוני הראשון במוסקבה — ועמד בראש חברת ׳גאולת הארץ׳ שיסד אוטו ורבורג.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%97%D7%99%D7%90%D7%9C_%D7%A6'%D7%9C%D7%A0%D7%95%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-596cc14c88
+street_name: פליקס פרנקפורטר
+area: רמות א'
+fact: פליקס פרנקפורטר היה היהודי השלישי שכיהן כשופט בבית המשפט העליון של ארצות הברית — אחרי ברנדייס וקרדוזו.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%9C%D7%99%D7%A7%D7%A1_%D7%A4%D7%A8%D7%A0%D7%A7%D7%A4%D7%95%D7%A8%D7%98%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

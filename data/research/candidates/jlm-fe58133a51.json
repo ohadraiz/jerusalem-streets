@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-fe58133a51",
+  "street_name": "כתריאל טחורש",
+  "area": "רמת בית הכרם",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב כתריאל פישל טחורש היה רב שכונת שפירא, חבר מועצת הרבנות הראשית וממייסדי חבר הרבנים של הפועל המזרחי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — כתריאל פישל טכורש",
+      "url": "https://he.wikipedia.org/wiki/%D7%9B%D7%AA%D7%A8%D7%99%D7%90%D7%9C_%D7%A4%D7%99%D7%A9%D7%9C_%D7%98%D7%9B%D7%95%D7%A8%D7%A9",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

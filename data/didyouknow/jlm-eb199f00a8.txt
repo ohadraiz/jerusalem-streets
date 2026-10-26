@@ -1,0 +1,9 @@
+street_id: jlm-eb199f00a8
+street_name: מנחת יצחק
+area: קרית בעלז
+fact: הרב יצחק יעקב וייס, מחבר שו״ת ׳מנחת יצחק׳ ורבה של העדה החרדית, קיבל סמיכת ׳יורה יורה׳ בגיל 16 — ובגיל 19 כבר הוסמך ל׳ידין ידין׳.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%99%D7%A2%D7%A7%D7%91_%D7%95%D7%99%D7%99%D7%A1
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

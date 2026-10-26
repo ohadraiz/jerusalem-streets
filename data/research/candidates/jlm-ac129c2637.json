@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-ac129c2637",
+  "street_name": "רא\"ל משה לוי",
+  "area": "פסגת זאב צפון",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "משה לוי, שכונה ׳מושֶה וחצי׳, היה הרמטכ״ל ה-12 של צה״ל בשנים 1983–1987 — תקופת שלהי מלחמת שלום הגליל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — משה לוי",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%9C%D7%95%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

@@ -1,0 +1,9 @@
+street_id: jlm-df092ea6ca
+street_name: רבי נחמן מברסלב
+area: מאה שערים
+fact: רבי נחמן מברסלב לא מינה יורש, ולכן חסידות ברסלב המשיכה לפעול כתנועה עם מורים הבקיאים בתורתו — ולא כחצר בראשות שושלת אדמו״רים.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%97%D7%9E%D7%9F_%D7%9E%D7%91%D7%A8%D7%A1%D7%9C%D7%91
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

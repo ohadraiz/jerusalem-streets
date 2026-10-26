@@ -1,0 +1,9 @@
+street_id: jlm-3bc82865d0
+street_name: יחיל חיים
+area: קטמונים (גוננים)
+fact: חיים יחיל, שגריר ישראל בשוודיה ומנכ״ל משרד החוץ, היה חבר בקבוצת המייסדים של קיבוץ גבעת חיים — ולימים יושב ראש רשות השידור.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%99%D7%99%D7%9D_%D7%99%D7%97%D7%99%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

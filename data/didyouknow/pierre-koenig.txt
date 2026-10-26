@@ -1,0 +1,9 @@
+street_id: pierre-koenig
+street_name: פייר קניג
+area: תלפיות
+fact: פייר קניג, מרשל צרפת, הצטיין כמפקד בצבא צרפת החופשית במלחמת העולם השנייה — ולימים כיהן כשר ההגנה של צרפת.
+source: https://he.wikipedia.org/wiki/%D7%A4%D7%99%D7%99%D7%A8_%D7%A7%D7%A0%D7%99%D7%92
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

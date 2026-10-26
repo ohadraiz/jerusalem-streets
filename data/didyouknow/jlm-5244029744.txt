@@ -1,0 +1,9 @@
+street_id: jlm-5244029744
+street_name: יוסף ריבלין
+area: נחלת שבעה
+fact: יוסף ריבלין, ממובילי היציאה מחומות ירושלים במאה ה-19, נקשר להקמת שכונות רבות; יש המייחסים לו את הקמתן של לא פחות מ-16 שכונות.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A8%D7%99%D7%91%D7%9C%D7%99%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,9 @@
+street_id: jlm-51997479b023
+street_name: מעלות חנה סנש
+area: קרית היובל
+fact: חנה סנש, משוררת וצנחנית שנתפסה בהונגריה ב-1944 והוצאה להורג, הותירה בבגדיה את השיר האחרון שכתבה — ימים אחדים אחרי מעצרה.
+source: https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%94_%D7%A1%D7%A0%D7%A9
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-711a52a359",
+  "street_name": "יום טוב אלגזי",
+  "area": "זכרון משה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "הרב יום טוב אלגאזי, הראשון לציון וראש ישיבת המקובלים בית אל, איתר בכתבי יד אבודים את ספר ׳יד רמה׳ — שנדפס לראשונה על פי העתק שמצא.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יום-טוב אלגאזי",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%9D-%D7%98%D7%95%D7%91_%D7%90%D7%9C%D7%92%D7%90%D7%96%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

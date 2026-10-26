@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-787ed05e19",
+  "street_name": "רשב\"ג",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבן שמעון בן גמליאל השני היה נשיא הסנהדרין באושא אחרי מרד בר כוכבא; בנו היה רבי יהודה הנשיא, עורך המשנה.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבן שמעון בן גמליאל",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%9F_%D7%A9%D7%9E%D7%A2%D7%95%D7%9F_%D7%91%D7%9F_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

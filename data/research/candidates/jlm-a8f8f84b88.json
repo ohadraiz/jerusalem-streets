@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-a8f8f84b88",
+  "street_name": "שלמה זלמן שרגאי",
+  "area": "שייח' ג'ראח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "שלמה זלמן שרגאי, מראשי הפועל המזרחי ותנועת תורה ועבודה, כיהן כראש עיריית מערב ירושלים בשנים 1951–1952.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — שלמה זלמן שרגאי",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%96%D7%9C%D7%9E%D7%9F_%D7%A9%D7%A8%D7%92%D7%90%D7%99",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

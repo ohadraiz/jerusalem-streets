@@ -1,0 +1,9 @@
+street_id: jlm-cbc8dfbbac67
+street_name: מעלה אהרון ראובני
+area: גבעת הורדים - רסקו
+fact: אהרן ראובני, סופר ומתרגם, זכה בפרס ביאליק ב-1969 על ׳עד ירושלים׳ — אחרי שנים של אבטלה ורעב, שבהן לעיתים ישן ברחוב.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%94%D7%A8%D7%9F_%D7%A8%D7%90%D7%95%D7%91%D7%A0%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

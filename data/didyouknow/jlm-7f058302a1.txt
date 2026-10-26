@@ -1,0 +1,9 @@
+street_id: jlm-7f058302a1
+street_name: נסים בכר
+area: נחלאות
+fact: נסים בכר, מאבות שיטת ׳עברית בעברית׳, נמנה עם השלושה שקדמו לאליעזר בן-יהודה בהחייאת השפה העברית.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%A1%D7%99%D7%9D_%D7%91%D7%9B%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

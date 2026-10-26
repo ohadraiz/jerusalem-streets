@@ -1,0 +1,9 @@
+street_id: jlm-d355885897
+street_name: ניקנור
+area: קטמונים (גוננים)
+fact: ניקנור, מצביא סלאוקי, נהרג בקרב חדשה ב-161 לפנה״ס — אחרי שהובס בידי יהודה המכבי בקרב כפר שלם.
+source: https://he.wikipedia.org/wiki/%D7%A0%D7%99%D7%A7%D7%A0%D7%95%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

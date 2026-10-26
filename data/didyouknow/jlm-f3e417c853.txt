@@ -1,0 +1,9 @@
+street_id: jlm-f3e417c853
+street_name: מרקו ברוך
+area: עיר גנים
+fact: מרקו ברוך, מחובבי ציון שיזם צבא יהודי לכיבוש הארץ, גורש מאלג׳יריה ב-1894 — לאחר שהקהילה היהודית התלוננה שהוא ׳משחית את הנוער׳ בסיפורי גבורה מופרזים.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%A7%D7%95_%D7%91%D7%A8%D7%95%D7%9A
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

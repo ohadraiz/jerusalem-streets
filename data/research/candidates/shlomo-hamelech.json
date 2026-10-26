@@ -4,7 +4,7 @@
   "area": "מגרש הרוסים",
   "lat": 31.778409,
   "lng": 35.223822,
-  "researched_at": "2026-10-22",
+  "researched_at": "2026-10-26",
   "official": [
     {
       "code": 513,
@@ -48,10 +48,15 @@
     "nameOk": true,
     "url": "https://www.openstreetmap.org/way/771909618"
   },
-  "fact": null,
-  "fact_type": "related-place",
-  "confidence": "none",
+  "fact": "שלמה המלך, בנו של דוד, בנה את בית המקדש הראשון בירושלים ונחשב במקרא לחכם באדם.",
+  "fact_type": "person-article",
+  "confidence": "medium",
   "sources": [
+    {
+      "label": "ויקיפדיה העברית — שלמה",
+      "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94",
+      "kind": "content"
+    },
     {
       "label": "OpenStreetMap",
       "url": "https://www.openstreetmap.org/way/771909618",
@@ -63,7 +68,11 @@
     "כותרת תואמת",
     "ישות ויקינתונים",
     "הערך \"שלמה המלך ושלמי הסנדלר\" עוסק במקום/נושא ששמו דומה, אך אין ודאות שהוא מקור השם של הרחוב.",
-    "קיים ברשימה הרשמית: סמל רחוב 513"
+    "קיים ברשימה הרשמית: סמל רחוב 513",
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
   ],
-  "needs_review": true
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
 }

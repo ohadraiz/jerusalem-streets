@@ -1,0 +1,9 @@
+street_id: jlm-874f15817e
+street_name: משה גסטר
+area: המושבה הגרמנית
+fact: משה גסטר גורש מרומניה ב-1885 עם עיתונאים יהודים נוספים; ב-1891 בוטל צו הגירוש, והוא קיבל מהמלך את העיטור הלאומי.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%92%D7%A1%D7%98%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

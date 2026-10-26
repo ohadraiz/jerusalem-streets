@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-2d29d586c6",
+  "street_name": "עמרם גאון",
+  "area": "גבעת שאול",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "סדר רב עמרם גאון, שערך רב עמרם בבחרותו לבקשת קהילת ברצלונה, היה הסידור הראשון מסוגו — והשפיע על נוסח התפילה ברוב קהילות ישראל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עמרם גאון",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%A8%D7%9D_%D7%92%D7%90%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

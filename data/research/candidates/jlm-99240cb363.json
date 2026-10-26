@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-99240cb363",
+  "street_name": "קלוזנר",
+  "area": "ארנונה",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יוסף קלוזנר, ממקימי האוניברסיטה העברית, העדיף ללמד תולדות עם ישראל — אך ב-1925 קיבל את ראשות החוג לספרות עברית בעקבות ספרו האוהד על ישו.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יוסף קלוזנר",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%9C%D7%95%D7%96%D7%A0%D7%A8",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

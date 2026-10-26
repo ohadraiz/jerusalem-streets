@@ -1,0 +1,9 @@
+street_id: jlm-3c2757ab69
+street_name: יצחק מ. בודנהיימר
+area: קרית היובל
+fact: מקס בודנהיימר, ממייסדי ההסתדרות הציונית העולמית, היה יושב הראש השני של קק״ל — ולפני כן עמד בראש ציוני גרמניה.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A7%D7%A1_%D7%91%D7%95%D7%93%D7%A0%D7%94%D7%99%D7%99%D7%9E%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

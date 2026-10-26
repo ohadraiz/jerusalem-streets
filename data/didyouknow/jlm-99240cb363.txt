@@ -1,0 +1,9 @@
+street_id: jlm-99240cb363
+street_name: קלוזנר
+area: ארנונה
+fact: יוסף קלוזנר, ממקימי האוניברסיטה העברית, העדיף ללמד תולדות עם ישראל — אך ב-1925 קיבל את ראשות החוג לספרות עברית בעקבות ספרו האוהד על ישו.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A7%D7%9C%D7%95%D7%96%D7%A0%D7%A8
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

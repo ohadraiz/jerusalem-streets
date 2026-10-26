@@ -1,0 +1,10 @@
+street_id: shlomo-hamelech
+street_name: שלמה המלך
+area: מגרש הרוסים
+fact: שלמה המלך, בנו של דוד, בנה את בית המקדש הראשון בירושלים ונחשב במקרא לחכם באדם.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94
+source: https://www.openstreetmap.org/way/771909618
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

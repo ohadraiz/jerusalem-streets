@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f1e43f60f8",
+  "street_name": "רבי טרפון",
+  "area": "קטמונים (גוננים)",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "רבי טרפון, חברו ובר הפלוגתא של רבי עקיבא, כונה בתלמוד הירושלמי ׳אביהן של כל ישראל׳; בית מדרשו שכן בלוד.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — רבי טרפון",
+      "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%91%D7%99_%D7%98%D7%A8%D7%A4%D7%95%D7%9F",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

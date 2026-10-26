@@ -1,0 +1,33 @@
+{
+  "street_id": "jlm-cc848620ff",
+  "street_name": "יובל נאמן",
+  "area": "פסגת זאב מזרח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יובל נאמן, פיזיקאי ושר המדע לשעבר, זכה בפרס ישראל ב-1969; בטקס של 1992 הניף את תעודת הפרס והכריז שהוא מחזיר אותו במחאה על הפרס לאמיל חביבי.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יובל נאמן",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%91%D7%9C_%D7%A0%D7%90%D7%9E%D7%9F",
+      "kind": "content"
+    },
+    {
+      "label": "חדשות, 8.5.1992 — הספרייה הלאומית",
+      "url": "https://www.nli.org.il/he/newspapers/hadashot/1992/05/08/01/article/28",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

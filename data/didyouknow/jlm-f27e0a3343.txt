@@ -1,0 +1,9 @@
+street_id: jlm-f27e0a3343
+street_name: שדרות וולפסון
+area: קרית משה
+fact: דוד וולפסון היה נשיאה השני של ההסתדרות הציונית העולמית.
+source: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93_%D7%95%D7%95%D7%9C%D7%A4%D7%A1%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

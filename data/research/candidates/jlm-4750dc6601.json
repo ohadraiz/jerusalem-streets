@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-4750dc6601",
+  "street_name": "פרופסור רקח",
+  "area": "ניות",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יואל רקח, מאבות הספקטרוסקופיה ואבי הפיזיקה העיונית בישראל, היה רקטור האוניברסיטה העברית ונשיאה בפועל.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יואל רקח",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%9C_%D7%A8%D7%A7%D7%97",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

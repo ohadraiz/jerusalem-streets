@@ -1,0 +1,9 @@
+street_id: jlm-ed148b3ee5
+street_name: צבי גרץ
+area: המושבה הגרמנית
+fact: צבי גרץ, מחבר ׳דברי ימי ישראל׳, כתב את עבודת הדוקטורט שלו על ׳גנוסיס והיהדות׳ בלטינית — השפה האקדמית שבה פורסמה ב-1846.
+source: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%92%D7%A8%D7%A5
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

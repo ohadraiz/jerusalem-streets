@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-cbd7177a76",
+  "street_name": "עולי הגרדום",
+  "area": "תלפיות מזרח",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "עולי הגרדום הם 12 חברי אצ״ל ולח״י שהוצאו להורג או התאבדו בסמוך להוצאתם להורג בידי הבריטים; יש המוסיפים למניין גם את אנשי ניל״י וחנה סנש.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — עולי הגרדום",
+      "url": "https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%9C%D7%99_%D7%94%D7%92%D7%A8%D7%93%D7%95%D7%9D",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

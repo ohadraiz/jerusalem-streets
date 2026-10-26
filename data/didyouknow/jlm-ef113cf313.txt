@@ -1,0 +1,9 @@
+street_id: jlm-ef113cf313
+street_name: כיכר השופטת מרים בן פורת
+area: קרית הממשלה
+fact: מרים בן-פורת הייתה האישה הראשונה שכיהנה כשופטת בית המשפט העליון וכמבקרת המדינה, וכלת פרס ישראל לשנת 1991.
+source: https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%99%D7%9D_%D7%91%D7%9F-%D7%A4%D7%95%D7%A8%D7%AA
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

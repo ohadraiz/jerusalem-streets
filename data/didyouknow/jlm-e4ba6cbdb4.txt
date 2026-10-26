@@ -1,0 +1,9 @@
+street_id: jlm-e4ba6cbdb4
+street_name: נאה
+area: בתי אונגרין
+fact: הרב אברהם חיים נאה, ׳בעל השיעורים׳, פיתח שיטה הלכתית למידות ושיעורי תורה — וזכה בפרס הרב קוק לספרות תורנית.
+source: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%A8%D7%94%D7%9D_%D7%97%D7%99%D7%99%D7%9D_%D7%A0%D7%90%D7%94
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

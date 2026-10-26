@@ -1,0 +1,9 @@
+street_id: jlm-4166f4f6a9
+street_name: יצחק קצנלסון
+area: סן סימון
+fact: יצחק קצנלסון, מחבר ׳השיר על העם היהודי שנהרג׳, כתב את הפואמה במחנה ויטל בצרפת; את הבית האחרון השלים ב-18 בינואר 1944, חודשים לפני שנרצח באושוויץ.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A7%D7%A6%D7%A0%D7%9C%D7%A1%D7%95%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

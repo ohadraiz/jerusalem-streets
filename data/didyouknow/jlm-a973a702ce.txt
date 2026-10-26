@@ -1,0 +1,9 @@
+street_id: jlm-a973a702ce
+street_name: ריש לקיש
+area: המושבה היוונית
+fact: ריש לקיש, מגדולי אמוראי ארץ ישראל, פעל בטבריה והיה תלמיד-חבר ובר הפלוגתא המרכזי של גיסו רבי יוחנן.
+source: https://he.wikipedia.org/wiki/%D7%A8%D7%99%D7%A9_%D7%9C%D7%A7%D7%99%D7%A9
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

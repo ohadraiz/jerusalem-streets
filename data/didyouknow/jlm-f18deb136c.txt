@@ -1,0 +1,9 @@
+street_id: jlm-f18deb136c
+street_name: יוסף לוריא
+area: גבעות ארנונה
+fact: יוסף לוריא היה ציר לקונגרס הציוני הראשון ומראשי החינוך העברי בארץ; מ-1919 ניהל את מחלקת החינוך של ההסתדרות הציונית.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%9C%D7%95%D7%A8%D7%99%D7%90
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

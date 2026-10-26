@@ -1,0 +1,9 @@
+street_id: jlm-9efb7c18aa
+street_name: יוסף חיים
+area: נחלאות
+fact: הרב יוסף חיים מבגדאד, ה׳בן איש חי׳, חיבר את הפיוט ׳ואמרתם כה לחי׳ בציון רבי שמעון בר יוחאי בארץ ישראל ב-1869; הפיוט התקבל בקהילות רבות.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%97%D7%99%D7%99%D7%9D_%D7%9E%D7%91%D7%92%D7%93%D7%90%D7%93
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

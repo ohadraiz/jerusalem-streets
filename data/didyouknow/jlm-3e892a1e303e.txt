@@ -1,0 +1,9 @@
+street_id: jlm-3e892a1e303e
+street_name: מעלות הרב גורן
+area: הרובע היהודי
+fact: הרב שלמה גורן, הרב הצבאי הראשי הראשון של צה״ל, הוסמך לרבנות בגיל 17 — ובאותו גיל פרסם את ספרו הראשון, ׳נזר הקודש׳.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%92%D7%95%D7%A8%D7%9F
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

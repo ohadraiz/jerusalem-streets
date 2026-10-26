@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-61720af346",
+  "street_name": "יאנוש קורצ'אק",
+  "area": "עיר גנים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "יאנוש קורצ׳אק, המחנך שבבית היתומים שלו פעל בית דין של ילדים, קיבל את שמו המפורסם מטעות דפוס: בתחרות כתיבה הודפס ׳יאנוש׳ במקום ׳יאנאש׳.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — יאנוש קורצ'אק",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A0%D7%95%D7%A9_%D7%A7%D7%95%D7%A8%D7%A6'%D7%90%D7%A7",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

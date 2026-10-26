@@ -1,0 +1,9 @@
+street_id: jlm-4aee318c7a4f
+street_name: מעלות דושינסקי
+area: סנהדריה
+fact: הרב יוסף צבי דושינסקי, לימים גאב״ד העדה החרדית בירושלים, צוטט ב-1934 כאומר שאילו גר ברחביה היה מצביע ליצחק בן-צבי בבחירות לעירייה.
+source: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%A3_%D7%A6%D7%91%D7%99_%D7%93%D7%95%D7%A9%D7%99%D7%A0%D7%A1%D7%A7%D7%99
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article

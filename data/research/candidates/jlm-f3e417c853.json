@@ -1,0 +1,28 @@
+{
+  "street_id": "jlm-f3e417c853",
+  "street_name": "מרקו ברוך",
+  "area": "עיר גנים",
+  "researched_at": "2026-10-26",
+  "official": [],
+  "wikipedia": null,
+  "wikipedia_en": null,
+  "wikidata": null,
+  "osm": null,
+  "notes": [
+    "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
+  ],
+  "fact": "מרקו ברוך, מחובבי ציון שיזם צבא יהודי לכיבוש הארץ, גורש מאלג׳יריה ב-1894 — לאחר שהקהילה היהודית התלוננה שהוא ׳משחית את הנוער׳ בסיפורי גבורה מופרזים.",
+  "fact_type": "person-article",
+  "confidence": "medium",
+  "sources": [
+    {
+      "label": "ויקיפדיה העברית — מרקו ברוך",
+      "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%A7%D7%95_%D7%91%D7%A8%D7%95%D7%9A",
+      "kind": "content"
+    }
+  ],
+  "needs_review": false,
+  "review_status": "approved",
+  "reviewed_at": "2026-10-26",
+  "reviewed_by": "החוקר"
+}

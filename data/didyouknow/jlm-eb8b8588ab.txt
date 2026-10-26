@@ -1,0 +1,9 @@
+street_id: jlm-eb8b8588ab
+street_name: שאול המלך
+area: סנהדריה
+fact: שאול, מלך ישראל הראשון, נמשח בידי שמואל דווקא כשחיפש את אתונות אביו שאבדו — ונלחם בעמונים ובפלשתים.
+source: https://he.wikipedia.org/wiki/%D7%A9%D7%90%D7%95%D7%9C
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: person-article
