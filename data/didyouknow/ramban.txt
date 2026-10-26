@@ -1,7 +1,7 @@
 street_id: ramban
 street_name: רמב"ן
 area: רחביה
-fact: הרחוב קרוי על שם רבי משה בן נחמן (הרמב"ן), ואורכו כ-700 מטרים — מכיכר צרפת במערב ועד כיכר ריבלין במזרח.
+fact: הרחוב קרוי על שם הרמב״ן ואורכו כ-700 מטרים; בבית רמב״ן 21 ניצב בית בונם, שנבנה ב-1935 עבור ד״ר בונם, רופא שעלה מגרמניה.
 source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%A8%D7%9E%D7%91%22%D7%9F
 source: https://data.gov.il/dataset/321
 source: https://www.openstreetmap.org/way/44128109
