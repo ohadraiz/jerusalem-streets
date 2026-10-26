@@ -1,0 +1,17 @@
+const fs = require('fs');
+const DIR = 'C:/Users/ohadr/AppData/Local/Temp/opencode/jlm';
+const ROOT = 'C:/Users/ohadr/Documents/Default Project';
+const cands = JSON.parse(fs.readFileSync(DIR + '/cand300-raw.json', 'utf8'));
+const digest = JSON.parse(fs.readFileSync(DIR + '/digest.json', 'utf8'));
+const man = JSON.parse(fs.readFileSync(ROOT + '/data/research/manual-facts.json', 'utf8'));
+const used = new Set(Object.keys(man.streets));
+const byId = new Map(cands.map((c) => [c.id, c]));
+const BAD = new Set(['jlm-fddcfc6246', 'jlm-a9b643082d', 'jlm-dda71b2125e0', 'jlm-44717bec0ba8', 'jlm-9c4fb2ee9c92']);
+const unused = digest.filter((d) => !used.has(d.id) && !BAD.has(d.id));
+const order = { s: 0, p: 1, b: 2 };
+unused.sort((a, b) => order[a.type] - order[b.type] || a.name.localeCompare(b.name, 'he'));
+const first = unused.slice(0, 200);
+fs.writeFileSync(DIR + '/next-200.json', JSON.stringify(first, null, 0), 'utf8');
+const dist = first.reduce((a, c) => ((a[c.type] = (a[c.type] || 0) + 1), a), {});
+console.log('unused usable', unused.length, 'picked', first.length, 'types', JSON.stringify(dist));
+console.log('sample:', first.slice(0, 12).map((x) => x.name + '|' + x.type).join(', '));

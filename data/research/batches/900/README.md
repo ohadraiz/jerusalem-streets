@@ -10,6 +10,9 @@ Cards are in `data/didyouknow/<street-id>.txt`; canonical records in `data/resea
 | --- | --- |
 | `evidence/facts-900-01.json` … `facts-900-07.json` | The 200 drafts (30/30/…/30 blocks) with `id`, `after` (drafted body) and `evidence` (verbatim substring of the source article). |
 | `articles-900.json.gz` | Full crawled article text for the batch, gzipped. 815,063 bytes; 2,886,242 bytes uncompressed; 201 entries (one article fetched but unused). |
+| `pool-900.json` | Candidate pool of 524 streets used for this round (covers all 200 batch streets); fields `id`, `name`, `area`, `title`, `redirect`, `disamb`, `extract`, `len`, `first`. |
+| `digest-900.json` | 200 digest blocks (one per street) in the drafting format, as strings. |
+| `digest-900.txt` | The same digest rendered as text, 1,861 lines. |
 | `scripts/` | `validate-900.js`, `integrate-900.js`, `fetch-articles-900.js`, `build-digest-900.js`, `build-batch-900.js` as run. They use absolute paths under the original temp workspace. |
 
 `data/research/batch-900.json` (the selected 200 streets) is already tracked in the repository root of `data/research/`, so it is not duplicated here.
@@ -24,4 +27,4 @@ Cards are in `data/didyouknow/<street-id>.txt`; canonical records in `data/resea
 
 ## Not preserved for this batch
 
-The candidate pool, article digests and drafting source files for batch 900 were not archived (only the drafts and the article corpus). Batches 200 and 350 likewise have no archived evidence files; their published texts are preserved in `manual-facts.json` and the per-street candidate files.
+The drafting source files (per-entry intro and sentence digest) were not archived; `pool-900.json` and `digest-900.*` cover the selection and the article digest. Batches 200 and 350 likewise have no evidence quotes; their selection, drafts and rewrite trail are in the sibling folders.
