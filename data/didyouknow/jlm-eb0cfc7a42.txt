@@ -1,7 +1,7 @@
 street_id: jlm-eb0cfc7a42
 street_name: אתיופיה
 area: מאה שערים
-fact: בתקופת המנדט הבריטי ואף לאחריה נקרא רחוב אתיופיה "רחוב החבשים" (Abyssinian Street). הוא יוצא מרחוב הנביאים ומקביל לרחוב בני ברית הסמוך.
+fact: רחוב אתיופיה היה בתקופה העות׳מאנית שביל עפר; עם הכיבוש הבריטי ב-1917 החלה בו תנופת פיתוח, והבנייה בו החלה עוד במאה ה-19.
 source: https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%AA%D7%99%D7%95%D7%A4%D7%99%D7%94
 source: https://data.gov.il/dataset/321
 date_researched: 2026-10-22

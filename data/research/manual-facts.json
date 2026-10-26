@@ -475,23 +475,7 @@
         }
       ]
     },
-    "mea-shearim": {
-      "fact": "רחוב מאה שערים הוא רחובה הראשי של השכונה; שמה נגזר מהפסוק \"וימצא... מאה שערים\" (בראשית כו, יב), וחלק ממנו נקרא בתקופת המנדט \"רחוב גאולה\".",
-      "confidence": "high",
-      "method": "street-article",
-      "sources": [
-        {
-          "label": "ויקיפדיה העברית — רחוב מאה שערים",
-          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D",
-          "kind": "content"
-        },
-        {
-          "label": "ויקיפדיה העברית — מאה שערים",
-          "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D",
-          "kind": "content"
-        }
-      ]
-    },
+    "mea-shearim": {"fact": "במרתף בית המדרש סטרופקוב ברחוב מאה שערים פועל יקב ׳ענב - כהן׳, שנוסד ב-1891; בית המדרש עצמו הוקם ב-1954.", "confidence": "high", "method": "street-article", "sources": [{"label": "ויקיפדיה העברית — רחוב מאה שערים", "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D", "kind": "content"}, {"label": "ויקיפדיה העברית — מאה שערים", "url": "https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%94_%D7%A9%D7%A2%D7%A8%D7%99%D7%9D", "kind": "content"}]},
     "harav-kook": {
       "fact": "הרחוב קרוי על שם הרב אברהם יצחק הכהן קוק (1865–1935), הרב הראשי האשכנזי הראשון בארץ ישראל ומייסד ישיבת מרכז הרב.",
       "confidence": "medium",
@@ -688,23 +672,7 @@
       ],
       "notes": "שם הרחוב זהה לשם ההר; לא נמצא מאמר רחוב ישיר."
     },
-    "jlm-eb0cfc7a42": {
-      "fact": "בתקופת המנדט הבריטי ואף לאחריה נקרא רחוב אתיופיה \"רחוב החבשים\" (Abyssinian Street). הוא יוצא מרחוב הנביאים ומקביל לרחוב בני ברית הסמוך.",
-      "confidence": "high",
-      "method": "street-article",
-      "sources": [
-        {
-          "label": "ויקיפדיה העברית — רחוב אתיופיה",
-          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%AA%D7%99%D7%95%D7%A4%D7%99%D7%94",
-          "kind": "content"
-        },
-        {
-          "label": "data.gov.il — מאגר הרחובות",
-          "url": "https://data.gov.il/dataset/321",
-          "kind": "identity"
-        }
-      ]
-    },
+    "jlm-eb0cfc7a42": {"fact": "רחוב אתיופיה היה בתקופה העות׳מאנית שביל עפר; עם הכיבוש הבריטי ב-1917 החלה בו תנופת פיתוח, והבנייה בו החלה עוד במאה ה-19.", "confidence": "high", "method": "street-article", "sources": [{"label": "ויקיפדיה העברית — רחוב אתיופיה", "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%90%D7%AA%D7%99%D7%95%D7%A4%D7%99%D7%94", "kind": "content"}, {"label": "data.gov.il — מאגר הרחובות", "url": "https://data.gov.il/dataset/321", "kind": "identity"}]},
     "agripas": {
       "fact": "רחוב אגריפס בנחלאות קרוי על שם המלך אגריפס הראשון, נכדו של הורדוס ובונה החומה השלישית. הוא מתחיל במפגש עם רחוב המלך ג'ורג', יורד במקביל לרחוב יפו, ובקצהו משתנה שמו לרחוב הרב שמואל ברוך.",
       "confidence": "high",
@@ -739,23 +707,7 @@
         }
       ]
     },
-    "jlm-d3ede95084": {
-      "fact": "רחוב השלשלת עובר בתוואי נחל צולב, מרחוב דוד במערב עד שער השלשלת במזרח. הרחוב נקרא על שם השער, ששמו נגזר מכיפת השלשלת שעל הר הבית.",
-      "confidence": "high",
-      "method": "street-article",
-      "sources": [
-        {
-          "label": "ויקיפדיה העברית — רחוב השלשלת",
-          "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A9%D7%9C%D7%A9%D7%9C%D7%AA",
-          "kind": "content"
-        },
-        {
-          "label": "data.gov.il — מאגר הרחובות",
-          "url": "https://data.gov.il/dataset/321",
-          "kind": "identity"
-        }
-      ]
-    },
+    "jlm-d3ede95084": {"fact": "במפקד הטורקי של 1905 נמנו באזור רחוב השלשלת 1,259 משפחות — 711 יהודיות ו-548 מוסלמיות.", "confidence": "high", "method": "street-article", "sources": [{"label": "ויקיפדיה העברית — רחוב השלשלת", "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%97%D7%95%D7%91_%D7%94%D7%A9%D7%9C%D7%A9%D7%9C%D7%AA", "kind": "content"}, {"label": "data.gov.il — מאגר הרחובות", "url": "https://data.gov.il/dataset/321", "kind": "identity"}]},
     "jlm-1b4bc5edd7": {
       "fact": "רחוב הנוצרים ברובע הנוצרי הוא ציר מסחר עתיק, שרווח לפחות מאז התקופה הרומית. שמו הערבי \"אלבטרק\" הוא שיבוש של \"פטריארך\", בעקבות מרחץ הפטריארך היווני-אורתודוקסי שפעל בו.",
       "confidence": "high",
@@ -1132,23 +1084,7 @@
         }
       ]
     },
-    "jlm-a7ce72f236": {
-      "fact": "שער יפו, \"באב אל-ח'ליל\" בערבית, הוא אחד משמונת שערי העיר העתיקה. בתקופה הצלבנית נקרא \"שער דוד\" על שם המצודה הסמוכה, וכיום הוא נקרא על שם הדרך ההיסטורית ליפו ולנמלה.",
-      "confidence": "medium",
-      "method": "place-article",
-      "sources": [
-        {
-          "label": "ויקיפדיה העברית — שער יפו",
-          "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95",
-          "kind": "content"
-        },
-        {
-          "label": "data.gov.il — מאגר הרחובות",
-          "url": "https://data.gov.il/dataset/321",
-          "kind": "identity"
-        }
-      ]
-    },
+    "jlm-a7ce72f236": {"fact": "שער יפו היה הראשון שנפתח גם בלילות, החל ב-1860 — לאחר שהרוסים בנו את מגרש הרוסים ולחצו לאפשר לצליינים גישה בכל שעה.", "confidence": "medium", "method": "place-article", "sources": [{"label": "ויקיפדיה העברית — שער יפו", "url": "https://he.wikipedia.org/wiki/%D7%A9%D7%A2%D7%A8_%D7%99%D7%A4%D7%95", "kind": "content"}, {"label": "data.gov.il — מאגר הרחובות", "url": "https://data.gov.il/dataset/321", "kind": "identity"}]},
     "jlm-dd5bbaf6f2": {
       "fact": "שער שכם נבנה ב-1538 בהוראת הסולטאן סולימאן המפואר. בעברית הוא קרוי על שם הדרך לשכם, ברוב השפות \"שער דמשק\", ובערבית \"שער העמוד\" על שם עמוד רומי שניצב בכיכר שלפניו. לידו מערת צדקיהו.",
       "confidence": "medium",
@@ -1744,23 +1680,7 @@
         }
       ]
     },
-    "jlm-6cd4696548": {
-      "fact": "רבי ישראל בן אליעזר, הבעל שם טוב, היה מקובל ומנהיג ציבור במזרח אירופה, הנחשב לאבי תנועת החסידות. הוא הדגיש את כוונת התפילה, קדושת האותיות ואת השמחה כדרך לדבקות באל.",
-      "confidence": "medium",
-      "method": "person-article",
-      "sources": [
-        {
-          "label": "ויקיפדיה העברית — הבעל שם טוב",
-          "url": "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%A2%D7%9C_%D7%A9%D7%9D_%D7%98%D7%95%D7%91",
-          "kind": "content"
-        },
-        {
-          "label": "data.gov.il — מאגר הרחובות",
-          "url": "https://data.gov.il/dataset/321",
-          "kind": "identity"
-        }
-      ]
-    },
+    "jlm-6cd4696548": {"fact": "רחוב הבעל שם טוב קרוי על שם אבי החסידות, שהתגורר במז׳יבוז׳ מ-1740 ועד פטירתו ב-1760.", "confidence": "medium", "method": "person-article", "sources": [{"label": "ויקיפדיה העברית — הבעל שם טוב", "url": "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%A2%D7%9C_%D7%A9%D7%9D_%D7%98%D7%95%D7%91", "kind": "content"}, {"label": "data.gov.il — מאגר הרחובות", "url": "https://data.gov.il/dataset/321", "kind": "identity"}]},
     "jlm-b43cc12398": {
       "fact": "הגאון מווילנה, הרב אליהו בן שלמה זלמן (1720–1797), היה פוסק, מקובל ואיש אשכולות, סמכות רבנית עליונה בתקופת האחרונים. הוא סירב לשמש רב בווילנה והנהיג את ההתנגדות לחסידות.",
       "confidence": "medium",
@@ -11497,19 +11417,7 @@
       ],
       "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
     },
-    "jlm-0615d3713d": {
-      "fact": "שכונת בית הכרם קרויה על שם היישוב המקראי שנזכר בירמיהו ו׳ — והיא מקום ילדותו של גיבור ׳ספר הדקדוק הפנימי׳ של דויד גרוסמן.",
-      "confidence": "medium",
-      "method": "topic-article",
-      "sources": [
-        {
-          "label": "ויקיפדיה העברית — בית הכרם",
-          "url": "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%94%D7%9B%D7%A8%D7%9D",
-          "kind": "content"
-        }
-      ],
-      "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."
-    },
+    "jlm-0615d3713d": {"fact": "שכונת בית הכרם, הקרויה על שם היישוב המקראי, מנתה 29 בתים ב-1924 — ו-67 בתים כבר ב-1927.", "confidence": "medium", "method": "topic-article", "sources": [{"label": "ויקיפדיה העברית — בית הכרם", "url": "https://he.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_%D7%94%D7%9B%D7%A8%D7%9D", "kind": "content"}], "notes": "שם הרחוב זהה לשם האישיות או המוסד; לא נמצא מאמר רחוב ישיר."},
     "jlm-17b231f4878d": {
       "fact": "בית צור, עיר עתיקה על הדרך מירושלים לחברון, הייתה בעלת חשיבות אסטרטגית ראשונה במעלה בימי מרד החשמונאים.",
       "confidence": "medium",
