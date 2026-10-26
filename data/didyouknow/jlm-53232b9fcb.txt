@@ -1,0 +1,10 @@
+street_id: jlm-53232b9fcb
+street_name: בוני החומה
+area: הרובע היהודי
+fact: רחוב בוני החומה מוביל אל סיפורם של האנשים שבנו, שיקמו ושמרו על ירושלים המבוצרת. בקרבתו נמצא גן בוני החומה, מתחת לפינה הדרום־מערבית של החומה, עם תצפית אל משכנות שאננים וימין משה — העיר העתיקה והעיר החדשה באותה תמונה.
+source: https://www.haatika.co.il/category/רחוב-בוני-החומה
+source: https://allaboutjerusalem.com/he/גן-בוני-החומה
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

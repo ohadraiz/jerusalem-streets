@@ -1,0 +1,10 @@
+street_id: jlm-d8f6724455
+street_name: ואדי חילווה
+area: הרובע היהודי
+fact: ואדי חילווה הוא הרחוב והשכונה שמעל אחת מירושלים הקדומות ביותר. מתחת לבתים נמצאת עיר דוד, ובאזור נחשף רחוב מדורג מימי הבית השני — הדרך שבה צעדו עולי הרגל אל הר הבית. כאן הרחוב של היום יושב ממש מעל שכבות של אלפי שנים.
+source: https://www.jerusalem.muni.il/he/neighborhoods/silwan/about
+source: https://www.parks.org.il/reserve-park/גן-לאומי-עיר-דוד
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: municipal+place-article

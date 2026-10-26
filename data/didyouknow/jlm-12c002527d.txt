@@ -1,0 +1,10 @@
+street_id: jlm-12c002527d
+street_name: כובשי קטמון
+area: קטמון הישנה
+fact: השם כובשי קטמון מנציח את הלחימה על השכונה במלחמת העצמאות. בסוף אפריל 1948 התנהל קרב בן חמישה ימים סביב מנזר סן סימון: כוחות הפלמ״ח וההגנה נאבקו על המנזר ששלט מגובהו על קטמון. כיום גן סן סימון והאנדרטה שבו משמרים את זכר הקרב.
+source: https://he.wikipedia.org/wiki/קטמון
+source: https://he.wikipedia.org/wiki/קרב_סן_סימון
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: history-article

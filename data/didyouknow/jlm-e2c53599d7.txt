@@ -1,0 +1,10 @@
+street_id: jlm-e2c53599d7
+street_name: סנט פרנציס
+area: הרובע הנוצרי
+fact: רחוב סנט פרנציס נושא את שמו של פרנציסקוס מאסיזי, מייסד המסדר הפרנציסקני. הרחוב נמצא ברובע הנוצרי, בתוך מרחב שבו מסדרים שונים, כנסיות ואכסניות יצרו במשך מאות שנים מפת עלייה לרגל צפופה במיוחד.
+source: https://he.wikipedia.org/wiki/הרובע_הנוצרי
+source: https://he.wikipedia.org/wiki/המסדר_הפרנציסקני
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

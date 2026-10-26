@@ -1,0 +1,10 @@
+street_id: jlm-4d642a0d49c8
+street_name: המלאך
+area: הרובע היהודי
+fact: רחוב המלאך נשמע כמו שם אגדי, אבל יש לו תפקיד עירוני ברור: בתקופת המנדט הוא ציין את גבולות הרובע היהודי. כיום הוא עובר בתוך הרובע, ובשמו הקצר נשאר רמז לאופן שבו הרחובות בעיר העתיקה סימנו גבולות בין קהילות.
+source: https://www.haatika.co.il/category/רחוב-המלאך
+source: https://www.jerusalem.muni.il/he/neighborhoods/jewish-quarter/about
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

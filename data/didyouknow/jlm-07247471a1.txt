@@ -1,0 +1,10 @@
+street_id: jlm-07247471a1
+street_name: סנט מארק
+area: הרובע הנוצרי
+fact: רחוב סנט מרק נקרא על שם מרקוס, השליח והבישוף הראשון של אלכסנדריה לפי המסורת הנוצרית. ברחוב שוכנת כנסיית סנט מרק הסורית־אורתודוקסית — כך שהכרטיסייה היא גם כתובת וגם הצצה לקהילה עתיקה שחיה בתוך הרובע הארמני.
+source: https://www.haatika.co.il/category/רחוב-סנט-מרק
+source: https://he.wikipedia.org/wiki/הרובע_הארמני
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article

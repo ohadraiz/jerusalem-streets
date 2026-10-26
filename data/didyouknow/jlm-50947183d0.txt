@@ -1,0 +1,9 @@
+street_id: jlm-50947183d0
+street_name: שוק אבטימוס
+area: הרובע הנוצרי
+fact: שוק אבטימוס נבנה בראשית המאה ה־20 על ידי הכנסייה היוונית־אורתודוקסית כמתחם מסחרי מודרני. הוא תחום ברחוב המוריסטאן וברחוב הנוצרים, ולכן הליכה בו היא מפגש בין מסחר, אדריכלות כנסייתית והסמטאות הצפופות של הרובע הנוצרי.
+source: https://www.itraveljerusalem.com/he/attraction/avtimus-market
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

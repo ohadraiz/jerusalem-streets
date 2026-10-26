@@ -1,0 +1,10 @@
+street_id: jlm-f5f6b19a17f0
+street_name: חאן אל סולטאן
+area: הרובע המוסלמי
+fact: חאן אל־סולטאן הוא לא סתם שם של סמטה: זהו חאן מהמאה ה־14 שבו התאכסנו סוחרים, עולי רגל ועוברי אורח. הוא נמצא בלב העיר העתיקה, בקצה מעבר מקורה היוצא מרחוב השלשלת — תחנת דרכים היסטורית שהפכה לחלק מהמבוך העירוני.
+source: https://he.wikipedia.org/wiki/חאן_אל-סולטאן
+source: https://hadashot.iaa.org.il/report_detail.aspx?id=25380&mag_id=126
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article

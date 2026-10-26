@@ -1,0 +1,10 @@
+street_id: jlm-270c4ef559b5
+street_name: אהל משה
+area: מחנה ישראל
+fact: מה הקשר בין סמטה בנחלאות ל"בוסתן ספרדי"? שכונת אהל משה הוקמה ב־1882 בכספי קרן שהנציחה את משה מונטיפיורי. הבתים נבנו סביב חצר משותפת ושערים שננעלו בלילה; ההווי הספרדי של סמטאותיה נתן ליצחק נבון השראה למחזה הירושלמי האהוב.
+source: https://he.wikipedia.org/wiki/אהל_משה
+source: https://he.wikipedia.org/wiki/בוסתן_ספרדי
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: place-article

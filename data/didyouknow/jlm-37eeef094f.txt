@@ -1,0 +1,10 @@
+street_id: jlm-37eeef094f
+street_name: עץ חיים
+area: נחלאות
+fact: ישיבה שהפכה למנוע של מסחר: עץ חיים נוסדה ב־1841, ובתחילת המאה ה־20 בנתה חנויות ליד שוק מחנה יהודה כדי לממן את פעילותה ולספק פרנסה לסוחרים יהודים. שורות החנויות פנו אל השוק; חלקן נהרסו ב־2002 לקראת מעבר הרכבת הקלה. הרחוב הסמוך נושא את שם המוסד הוותיק.
+source: https://he.wikipedia.org/wiki/ישיבת_עץ_חיים
+source: https://he.wikipedia.org/wiki/שוק_מחנה_יהודה
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: high
+method: street-article

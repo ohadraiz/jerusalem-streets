@@ -1,0 +1,10 @@
+street_id: jlm-8337f4d581a5
+street_name: הקופטים
+area: הרובע הנוצרי
+fact: רחוב הקופטים נקרא על שם הקהילה הקופטית, אחת הקהילות הנוצריות העתיקות בירושלים. הוא נמצא ברובע הנוצרי, באזור שבו סמטאות קצרות מובילות אל מנזרים, כנסיות וכניסות צדדיות של מתחם כנסיית הקבר.
+source: https://he.wikipedia.org/wiki/הרובע_הנוצרי
+source: https://he.wikipedia.org/wiki/כנסיית_הקבר
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article

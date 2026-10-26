@@ -1,0 +1,10 @@
+street_id: jlm-0112cd7967
+street_name: סנט הלנה
+area: הרובע הנוצרי
+fact: רחוב סנט הלנה מנציח את הלנה הקדושה, שעל פי המסורת הנוצרית זוהתה עם גילוי הצלב בירושלים. הרחוב הקצר ברובע הנוצרי מוביל אל אזור כנסיית הקבר, ולכן השם שלו מחבר בין דמות קדושה, מסורת עלייה לרגל והמרחב שבו הסיפור התרחש.
+source: https://he.wikipedia.org/wiki/הרובע_הנוצרי
+source: https://he.wikipedia.org/wiki/כנסיית_הקבר
+date_researched: 2026-10-26
+researcher: החוקר
+confidence: medium
+method: place-article
