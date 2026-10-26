@@ -29,6 +29,33 @@
   window.addEventListener("resize", syncStickyOffset);
   window.addEventListener("orientationchange", syncStickyOffset);
 
+  /* בטלפון הסרגל מתקפל בזמן גלילה מטה, ונפתח מיד כשחוזרים מעלה.
+     כך נשאר יותר מקום לתוכן בלי לאבד חיפוש מהיר. */
+  var scrollFrame = 0;
+  var lastScrollY = window.scrollY || 0;
+  function syncScrollVisibility() {
+    scrollFrame = 0;
+    if (!stickyQuery || !stickyQuery.matches) {
+      bar.classList.remove("is-scroll-hidden");
+      return;
+    }
+    var currentY = Math.max(0, window.scrollY || 0);
+    var movingDown = currentY > lastScrollY + 4;
+    var movingUp = currentY < lastScrollY - 4;
+    if (currentY < 80 || movingUp || document.activeElement === bar.querySelector("input")) {
+      bar.classList.remove("is-scroll-hidden");
+    } else if (movingDown) {
+      bar.classList.add("is-scroll-hidden");
+    }
+    lastScrollY = currentY;
+  }
+  function onScroll() {
+    if (scrollFrame) return;
+    scrollFrame = window.requestAnimationFrame(syncScrollVisibility);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  bar.addEventListener("focusin", function () { bar.classList.remove("is-scroll-hidden"); });
+
   syncStickyOffset();
   window.setTimeout(syncStickyOffset, 400);
 })();

@@ -103,7 +103,8 @@
     empty: document.getElementById("map-empty"),
     banner: document.getElementById("map-banner"),
     status: document.getElementById("map-status"),
-    toggle: document.getElementById("map-network-toggle")
+    toggle: document.getElementById("map-network-toggle"),
+    section: document.getElementById("map-section")
   };
 
   if (!el.canvas) return;
@@ -720,6 +721,10 @@
 
   var activeReviewPanel = null;
 
+  function ratingDescription(value) {
+    return ["", "לא בשבילי", "בסדר", "נחמד", "אהבתי", "נהדר"][value] || "";
+  }
+
   function closeReviewPanel() {
     if (!activeReviewPanel) return;
     var panel = activeReviewPanel;
@@ -766,7 +771,9 @@
     ratingStatus.setAttribute("aria-live", "polite");
     var currentRating = Number(visit.rating) || 0;
     function syncRating() {
-      ratingStatus.textContent = currentRating ? currentRating + " מתוך 5" : "עדיין לא דירגתם";
+      ratingStatus.textContent = currentRating
+        ? currentRating + " מתוך 5 — " + ratingDescription(currentRating)
+        : "עדיין לא דירגתם";
       Array.prototype.forEach.call(stars.querySelectorAll("button"), function (star) {
         var on = Number(star.dataset.rating) <= currentRating;
         star.textContent = on ? "★" : "☆";
@@ -803,8 +810,14 @@
     var done = document.createElement("button");
     done.type = "button";
     done.className = "btn map-review-panel__done";
-    done.textContent = "סיום";
-    done.addEventListener("click", closeReviewPanel);
+    done.textContent = "שמירת דירוג";
+    var saved = document.createElement("span");
+    saved.className = "map-review-panel__saved";
+    saved.setAttribute("aria-live", "polite");
+    done.addEventListener("click", function () {
+      saved.textContent = "הדירוג נשמר";
+      window.setTimeout(closeReviewPanel, 500);
+    });
     stars.appendChild(ratingStatus);
     dialog.appendChild(close);
     dialog.appendChild(title);
@@ -813,6 +826,7 @@
     dialog.appendChild(stars);
     dialog.appendChild(noteLabel);
     dialog.appendChild(done);
+    dialog.appendChild(saved);
     backdrop.appendChild(dialog);
     backdrop.addEventListener("click", function (event) {
       if (event.target === backdrop) closeReviewPanel();
@@ -868,7 +882,9 @@
           var visit = API.getVisit(street.id) || {};
           noteInput.value = visit.note || "";
           var rating = Number(visit.rating) || 0;
-          ratingStatus.textContent = rating ? rating + " מתוך 5" : "עדיין לא דירגתם";
+          ratingStatus.textContent = rating
+            ? rating + " מתוך 5 — " + ratingDescription(rating)
+            : "עדיין לא דירגתם";
           stars.forEach(function (star) {
             var on = Number(star.dataset.rating) <= rating;
             star.textContent = on ? "★" : "☆";
@@ -2132,6 +2148,7 @@
   /* ---------- אתחול ---------- */
 
   function init() {
+    if (mode !== null) return;
     streetsCache = geoStreets();
 
     if (streetsCache.length === 0) {
@@ -2249,5 +2266,19 @@
     }
   };
 
-  init();
+  function scheduleInit() {
+    var mobile = window.matchMedia && window.matchMedia("(max-width: 620px)").matches;
+    if (!mobile || !window.IntersectionObserver || !el.section) {
+      init();
+      return;
+    }
+    var observer = new window.IntersectionObserver(function (entries) {
+      if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+      observer.disconnect();
+      init();
+    }, { rootMargin: "180px 0px" });
+    observer.observe(el.section);
+  }
+
+  scheduleInit();
 })();

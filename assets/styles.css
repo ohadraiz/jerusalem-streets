@@ -1173,6 +1173,32 @@ summary,
   margin-top: 0.2rem;
 }
 
+.map-review-panel__saved {
+  min-height: 1.2rem;
+  color: var(--good);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .map-review-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .map-review-panel {
+    width: 100%;
+    max-height: min(82vh, 36rem);
+    overflow: auto;
+    padding: 1.25rem 1rem calc(1rem + env(safe-area-inset-bottom));
+    border-radius: 18px 18px 0 0;
+  }
+
+  .map-review-panel__done {
+    align-self: stretch;
+  }
+}
+
 .map-popup__details-title {
   color: var(--ink);
   font-size: 0.82rem;
@@ -2569,6 +2595,13 @@ body.dyk-modal-open {
     border-inline: 0;
     border-top: 0;
     box-shadow: 0 6px 16px rgba(60, 44, 27, 0.14);
+    transform: translateY(0);
+    transition: transform 180ms ease;
+    will-change: transform;
+  }
+
+  .searchbar.is-scroll-hidden {
+    transform: translateY(calc(-100% - 0.5rem));
   }
 
   /* התווית נשארת לקוראי מסך אך מוסתרת מעיניים — הסרגל צריך להיות קצר כדי לא לכסות */
