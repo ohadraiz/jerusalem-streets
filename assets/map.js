@@ -821,6 +821,26 @@
     }
   }
 
+  /**
+   * החזרה לאותו רחוב צריכה לפתוח מחדש את הכרטיס המלא. אם הפופאפ כבר פתוח,
+   * Leaflet לא תמיד מפעיל שוב את `popupopen`, ולכן הכרטיס עלול להישאר במצב
+   * המצומצם שמיועד רק למצב שבו התרחקנו ממנו.
+   */
+  function expandOpenPopupFor(id) {
+    if (!openPopupContext || openPopupContext.id !== id) return;
+
+    var popup = openPopupContext.popup;
+    var popupElement = popup && typeof popup.getElement === "function" ? popup.getElement() : null;
+    var content = popupElement && popupElement.querySelector
+      ? popupElement.querySelector(".map-popup")
+      : null;
+
+    if (!content) return;
+    content.classList.remove("map-popup--compact");
+    openPopupContext.compact = false;
+    openPopupContext.zoom = map && map.getZoom ? map.getZoom() : openPopupContext.zoom;
+  }
+
   /** בזום נמוך וברשימות גדולות מוצגים רק מבוקרים — חיסכון ציור משמעותי */
   function shouldShowAll() {
     if (!map) return true;
@@ -883,6 +903,9 @@
     // במכשיר מגע הסימון לא מתבצע כאן — ההקשה רק פותחת את הכרטיס, והמשתמש מסמן בו במפורש.
     hits.forEach(function (layer) {
       layer.on("click", function () {
+        // לחיצה חוזרת על אותו רחוב היא בקשה לכרטיס המלא, גם אם הוא הצטמצם
+        // אחרי גרירה/זום כדי לא להסתיר את המפה.
+        expandOpenPopupFor(street.id);
         if (!usesCoarsePointer()) toggleStreetSafe(street.id);
       });
       layer.on("popupopen", function (event) {
