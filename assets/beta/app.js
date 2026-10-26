@@ -44,6 +44,7 @@
   var flatListPage = 1; // for paginated flat list
   /* כרטיס ביקור מורחב זמנית — לחיצה מחוץ לו מצמצמת אותו */
   var expandedVisitId = null;
+  var listReturnScrollY = 0;
 
   /* שכונות שכבר חוגגו כ"הושלמה" בסשן הנוכחי — מונע חגיגה כפולה */
   var celebratedAreas = new Set();
@@ -105,6 +106,7 @@
     themeToggle: document.getElementById("theme-toggle"),
     randomBtn: document.getElementById("random-street"),
     celebration: document.getElementById("celebration"),
+    backToTop: document.getElementById("back-to-top"),
     achievementsList: document.getElementById("achievements-list"),
     achievementsCount: document.getElementById("achievements-count"),
     achievementsDetails: document.getElementById("achievements-details"),
@@ -136,12 +138,12 @@
       toggleStreet(id);
     },
     updateVisit: function (id, field, value) {
-      if (field !== "note" && field !== "rating") return false;
+      if (field !== "note" && field !== "rating" && field !== "date") return false;
       if (!isVisited(id)) return false;
       if (field === "note") value = String(value || "").slice(0, MAX_NOTE);
       if (field === "rating") value = Math.max(0, Math.min(5, Number(value) || 0));
-      updateRecord(id, field, value);
-      return true;
+      if (field === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(String(value || ""))) return false;
+      return updateRecord(id, field, value) !== false;
     },
     focusStreet: focusStreet
   };
@@ -1425,6 +1427,12 @@
   }
 
   function scrollToList() {
+    if (listReturnScrollY > 0) {
+      var returnY = listReturnScrollY;
+      listReturnScrollY = 0;
+      window.scrollTo({ top: returnY, behavior: scrollBehaviorFor(returnY - (window.scrollY || 0)) });
+      return;
+    }
     var title = document.getElementById("list-title");
     if (title && typeof title.scrollIntoView === "function") {
       var top = title.getBoundingClientRect().top;
@@ -1433,6 +1441,7 @@
   }
 
   function scrollToMap() {
+    listReturnScrollY = window.scrollY || 0;
     var section = el.mapSection;
     if (section && typeof section.scrollIntoView === "function") {
       var top = section.getBoundingClientRect().top;
@@ -2164,8 +2173,9 @@
     var record = state.visited[id];
     if (!record) return;
     record[field] = value;
-    persist();
+    var saved = persist();
     renderStats();
+    return saved;
   }
 
   function syncStatusButtons() {
@@ -3381,6 +3391,20 @@
   el.bannerClose.addEventListener("click", hideBanner);
 
   window.addEventListener("pagehide", flushPendingNotes);
+  if (el.backToTop) {
+    var topFrame = 0;
+    function syncBackToTop() {
+      topFrame = 0;
+      el.backToTop.hidden = (window.scrollY || 0) < 520;
+    }
+    window.addEventListener("scroll", function () {
+      if (topFrame) return;
+      topFrame = window.requestAnimationFrame(syncBackToTop);
+    }, { passive: true });
+    el.backToTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: scrollBehavior() });
+    });
+  }
   document.addEventListener("visibilitychange", function () {
     if (document.visibilityState === "hidden") flushPendingNotes();
   });

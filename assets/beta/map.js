@@ -74,6 +74,7 @@
   var MAIN_STREET_MIN_METERS = 1000; // מתחת לזה לא נחשב ציר ראשי גם בזום נמוך
   var MAIN_STREET_FULL_METERS = 4000; // מאורך זה והלאה העדיפות המרבית
   var MAIN_STREET_SCORE_BOOST = 0.3; // בין צירים ראשיים: הארוך מקבל עד 30% עדיפות בניקוד המרחק
+  var MAIN_TIER_FACTOR = { 1: 0.55, 2: 0.75, 3: 0.9 }; // ניקוד מרחק לפי דירוג OSM (זום נמוך)
   var HIT_TOLERANCE_PX = 22;
   var HIT_TOLERANCE_COARSE_PX = 30;
   var LEAFLET_HIT_WEIGHT = 24;
@@ -103,6 +104,7 @@
     empty: document.getElementById("map-empty"),
     banner: document.getElementById("map-banner"),
     status: document.getElementById("map-status"),
+    loading: document.getElementById("map-loading"),
     toggle: document.getElementById("map-network-toggle"),
     section: document.getElementById("map-section")
   };
@@ -113,6 +115,7 @@
 
   var mode = null; // "leaflet" | "fallback"
   var networkOff = false;
+  var autoNetworkOff = false;
   var streetsCache = [];
 
   /* ---------- עזרים ---------- */
@@ -730,8 +733,11 @@
     var panel = activeReviewPanel;
     activeReviewPanel = null;
     document.removeEventListener("keydown", panel.onKeydown);
-    if (panel.backdrop.parentNode) panel.backdrop.parentNode.removeChild(panel.backdrop);
-    if (panel.opener && typeof panel.opener.focus === "function") panel.opener.focus();
+    panel.dialog.classList.add("is-closing");
+    window.setTimeout(function () {
+      if (panel.backdrop.parentNode) panel.backdrop.parentNode.removeChild(panel.backdrop);
+      if (panel.opener && typeof panel.opener.focus === "function") panel.opener.focus();
+    }, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180);
   }
 
   function openReviewPanel(street, opener) {
@@ -747,6 +753,20 @@
     dialog.setAttribute("aria-modal", "true");
     dialog.setAttribute("aria-labelledby", "map-review-title");
     dialog.dir = "rtl";
+    var handle = document.createElement("button");
+    handle.type = "button";
+    handle.className = "map-review-panel__handle";
+    handle.setAttribute("aria-label", "סגירת החלונית בהחלקה או בלחיצה");
+    handle.addEventListener("click", closeReviewPanel);
+    var startY = 0;
+    dialog.addEventListener("pointerdown", function (event) {
+      if (!event.target.closest(".map-review-panel__handle")) return;
+      startY = event.clientY;
+    });
+    dialog.addEventListener("pointerup", function (event) {
+      if (startY && event.clientY - startY > 48) closeReviewPanel();
+      startY = 0;
+    });
     var close = document.createElement("button");
     close.type = "button";
     close.className = "map-review-panel__close";
@@ -820,15 +840,43 @@
       saved.textContent = "הדירוג נשמר";
       window.setTimeout(closeReviewPanel, 500);
     });
+    var clearRating = document.createElement("button");
+    clearRating.type = "button";
+    clearRating.className = "map-review-panel__clear";
+    clearRating.textContent = "ביטול דירוג";
+    clearRating.addEventListener("click", function () {
+      currentRating = 0;
+      var ok = API && typeof API.updateVisit === "function" && API.updateVisit(street.id, "rating", 0);
+      saved.textContent = ok ? "הדירוג בוטל" : "לא ניתן לשמור כרגע";
+      syncRating();
+    });
+    var dateLabel = document.createElement("label");
+    dateLabel.className = "map-review-panel__date";
+    dateLabel.textContent = "תאריך ביקור";
+    var date = document.createElement("input");
+    date.type = "date";
+    date.value = visit.date || "";
+    date.setAttribute("aria-label", "תאריך הביקור ב" + street.name);
+    date.addEventListener("change", function () {
+      var ok = API && typeof API.updateVisit === "function" && API.updateVisit(street.id, "date", date.value);
+      saved.textContent = ok ? "נשמר אוטומטית" : "לא ניתן לשמור כרגע";
+    });
+    dateLabel.appendChild(date);
+    var footer = document.createElement("div");
+    footer.className = "map-review-panel__footer";
     stars.appendChild(ratingStatus);
+    dialog.appendChild(handle);
     dialog.appendChild(close);
     dialog.appendChild(title);
     dialog.appendChild(subtitle);
     dialog.appendChild(ratingLabel);
     dialog.appendChild(stars);
+    dialog.appendChild(clearRating);
+    dialog.appendChild(dateLabel);
     dialog.appendChild(noteLabel);
-    dialog.appendChild(done);
-    dialog.appendChild(saved);
+    footer.appendChild(saved);
+    footer.appendChild(done);
+    dialog.appendChild(footer);
     backdrop.appendChild(dialog);
     backdrop.addEventListener("click", function (event) {
       if (event.target === backdrop) closeReviewPanel();
@@ -841,7 +889,7 @@
       }
     };
     document.addEventListener("keydown", onKeydown);
-    activeReviewPanel = { backdrop: backdrop, opener: opener, onKeydown: onKeydown };
+    activeReviewPanel = { backdrop: backdrop, dialog: dialog, opener: opener, onKeydown: onKeydown };
     syncRating();
     close.focus();
   }
@@ -883,8 +931,10 @@
         if (visited && API && typeof API.getVisit === "function") {
           var visit = API.getVisit(street.id) || {};
           var savedRating = Number(visit.rating) || 0;
-          reviewButton.textContent = savedRating
-            ? savedRating + " מתוך 5 — " + ratingDescription(savedRating)
+          var notePreview = String(visit.note || "").trim();
+          reviewButton.textContent = savedRating || notePreview
+            ? (savedRating ? savedRating + " מתוך 5 — " + ratingDescription(savedRating) : "יש הערה") +
+              (notePreview ? " · " + notePreview.slice(0, 28) : "")
             : "דירוג והערה";
           noteInput.value = visit.note || "";
           var rating = savedRating;
@@ -1070,6 +1120,14 @@
     return Boolean(map && map.getZoom && map.getZoom() < MAIN_STREET_ZOOM);
   }
 
+  /* דירוג רחובות ראשיים מתוך assets/main-streets.js (OSM, ODbL):
+     1 = trunk/primary, 2 = secondary, 3 = tertiary. הקובץ אופציונלי —
+     בלעדיו נשאר מדד האורך בלבד. */
+  function streetTier(street) {
+    var tiers = window.JLM_MAIN_STREETS && window.JLM_MAIN_STREETS.tiers;
+    return tiers && tiers[street.id] ? tiers[street.id] : 0;
+  }
+
   /* מארז תוחם לקליק (lat/lng) — מסנן רחובות רחוקים לפני חישוב מרחק מדויק */
   var boundsById = Object.create(null);
 
@@ -1137,8 +1195,9 @@
 
   /**
    * הרחוב הקרוב לנקודה, בתוך רדיוס הלחיצה של Leaflet.
-   * בזום נמוך: ציר ראשי שנמצא ברדיוס הפגיעה גובר על סמטה, גם אם הסמטה
-   * קרובה יותר — בחירה עירונית מכוונת ולא בחירת פיקסל.
+   * בזום נמוך: רחוב שדורג ב-OSM (ציר ראשי) גובר על סמטה לא-מדורגת, גם אם
+   * הסמטה קרובה יותר — בחירה עירונית מכוונת ולא בחירת פיקסל. בין המדורגים
+   * מכריע ניקוד מרחק משוקלל לפי הדירוג; ללא דירוג נשאר מדד האורך.
    * בזום 13 ומעלה: המרחק בלבד; שוויון הולך לסמטה המקומית.
    */
   function streetAtContainerPoint(point) {
@@ -1152,7 +1211,7 @@
     var north = Math.max(sw.lat, ne.lat);
     var west = Math.min(sw.lng, ne.lng);
     var east = Math.max(sw.lng, ne.lng);
-    var preferLonger = usesMainStreetPriority();
+    var preferMain = usesMainStreetPriority();
 
     var best = null;
     var bestDistance = Infinity;
@@ -1160,6 +1219,10 @@
     var bestMain = null;
     var bestMainScore = Infinity;
     var bestMainLength = -1;
+    var bestTiered = null;
+    var bestTieredScore = Infinity;
+    var bestTieredRank = 4;
+    var bestTieredLength = -1;
 
     for (var i = 0; i < streetsCache.length; i += 1) {
       var street = streetsCache[i];
@@ -1178,13 +1241,32 @@
       var better = distance < bestDistance - 0.05;
       var tied = Math.abs(distance - bestDistance) <= 0.05;
       // שוויון: בזום נמוך מעדיפים את הציר הארוך, בזום רגיל את הסמטה המקומית
-      if (better || (tied && (preferLonger ? length > bestLength : length < bestLength))) {
+      if (better || (tied && (preferMain ? length > bestLength : length < bestLength))) {
         best = street;
         bestDistance = distance;
         bestLength = length;
       }
 
-      if (preferLonger && length >= MAIN_STREET_MIN_METERS) {
+      if (!preferMain) continue;
+
+      /* רחוב שדורג ב-OSM גובר על סמטה לא-מדורגת, גם אם הסמטה קרובה יותר;
+         בין המדורגים מכריע ניקוד מרחק משוקלל לפי הדירוג. */
+      var tier = streetTier(street);
+      if (tier) {
+        var tierScore = distance * (MAIN_TIER_FACTOR[tier] || 1);
+        var tierBetter = tierScore < bestTieredScore - 0.05;
+        var tierTied = Math.abs(tierScore - bestTieredScore) <= 0.05;
+        var tierRanked = tier < bestTieredRank || (tier === bestTieredRank && length > bestTieredLength);
+        if (tierBetter || (tierTied && tierRanked)) {
+          bestTiered = street;
+          bestTieredScore = tierScore;
+          bestTieredRank = tier;
+          bestTieredLength = length;
+        }
+        continue;
+      }
+
+      if (length >= MAIN_STREET_MIN_METERS) {
         var mainScore = distance * mainStreetScoreFactor(length);
         var mainBetter = mainScore < bestMainScore - 0.05;
         var mainTied = Math.abs(mainScore - bestMainScore) <= 0.05;
@@ -1199,7 +1281,7 @@
     /* בזום נמוך ציר ראשי שקרוב מספיק לנקודה גובר על סמטה, גם אם הסמטה
        מעט קרובה יותר: זו בחירת "עירונית" ולא בחירת פיקסל מדויקת.
        בזום 13 ומעלה נשמרת הבחירה המדויקת לפי המרחק בלבד. */
-    return preferLonger && bestMain ? bestMain : best;
+    return preferMain ? (bestTiered || bestMain || best) : best;
   }
 
   /** תוויות בעברית לכפתור הסגירה של Leaflet (ברירת המחדל: "Close popup") */
@@ -1695,7 +1777,8 @@
         lines: lines,
         center: center,
         bbox: bbox,
-        length: streetLength(street)
+        length: streetLength(street),
+        tier: streetTier(street)
       };
     });
 
@@ -1937,6 +2020,10 @@
     var bestMain = null;
     var bestMainScore = Infinity;
     var bestMainLength = -1;
+    var bestTiered = null;
+    var bestTieredScore = Infinity;
+    var bestTieredRank = 4;
+    var bestTieredLength = -1;
     var tolerance = fallbackHitTolerance();
 
     F.proj.forEach(function (street) {
@@ -1952,7 +2039,22 @@
         bestLength = street.length;
       }
 
-      // מסלול הגיבוי מוגבל לזום עירוני: ציר ראשי קרוב גובר על סמטה
+      // מסלול הגיבוי מוגבל לזום עירוני: ציר מדורג ב-OSM גובר על סמטה
+      if (street.tier) {
+        var tierScore = distance * (MAIN_TIER_FACTOR[street.tier] || 1);
+        var tierBetter = tierScore < bestTieredScore - 0.05;
+        var tierTied = Math.abs(tierScore - bestTieredScore) <= 0.05;
+        var tierRanked = street.tier < bestTieredRank ||
+          (street.tier === bestTieredRank && street.length > bestTieredLength);
+        if (tierBetter || (tierTied && tierRanked)) {
+          bestTiered = street;
+          bestTieredScore = tierScore;
+          bestTieredRank = street.tier;
+          bestTieredLength = street.length;
+        }
+        return;
+      }
+
       if (street.length >= MAIN_STREET_MIN_METERS) {
         var mainScore = distance * mainStreetScoreFactor(street.length);
         var mainBetter = mainScore < bestMainScore - 0.05;
@@ -1965,7 +2067,7 @@
       }
     });
 
-    return bestMain || best;
+    return bestTiered || bestMain || best;
   }
 
   function initFallback() {
@@ -2183,10 +2285,25 @@
     setNetwork(!networkOff);
   });
 
+  function syncConnectionNotice() {
+    if (!navigator.onLine) {
+      autoNetworkOff = true;
+      setNetwork(true);
+      showBanner("אין חיבור לרשת. המפה ממשיכה להציג את קווי הרחובות שנשמרו.", "network");
+    } else if (autoNetworkOff) {
+      autoNetworkOff = false;
+      setNetwork(false);
+      showBanner("החיבור חזר. מנסים לטעון את שכבת המפה מחדש.", "plain");
+    }
+  }
+  window.addEventListener("offline", syncConnectionNotice);
+  window.addEventListener("online", syncConnectionNotice);
+
   /* ---------- אתחול ---------- */
 
   function init() {
     if (mode !== null) return;
+    if (el.loading) el.loading.hidden = true;
     streetsCache = geoStreets();
 
     if (streetsCache.length === 0) {

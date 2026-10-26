@@ -987,6 +987,42 @@ summary,
   padding: 0.2rem 0.1rem;
 }
 
+.map-loading {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--stone-200);
+  border-radius: 10px;
+  background: var(--stone-50);
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+.map-loading[hidden] {
+  display: none;
+}
+
+.back-to-top {
+  position: fixed;
+  inset-inline-end: max(1rem, env(safe-area-inset-right, 0px));
+  inset-block-end: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-fg);
+  font: inherit;
+  font-size: 1.35rem;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.back-to-top:hover {
+  filter: var(--btn-primary-hover);
+}
+
 .map-popup__title {
   font-size: 1rem;
 }
@@ -1047,6 +1083,7 @@ summary,
 }
 
 .map-review-panel {
+  animation: map-review-in 180ms ease;
   position: relative;
   width: min(100%, 25rem);
   display: flex;
@@ -1058,6 +1095,21 @@ summary,
   background: var(--stone-50);
   color: var(--ink);
   box-shadow: 0 18px 50px rgb(0 0 0 / 28%);
+}
+
+.map-review-panel.is-closing {
+  animation: map-review-out 180ms ease forwards;
+}
+
+.map-review-panel__handle {
+  align-self: center;
+  width: 3.2rem;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  background:
+    linear-gradient(var(--line), var(--line)) center / 2.4rem 4px no-repeat;
+  cursor: grab;
 }
 
 .map-review-panel h2 {
@@ -1097,7 +1149,7 @@ summary,
   display: flex;
   align-items: center;
   gap: 0.15rem;
-  direction: ltr;
+  direction: rtl; /* כוכב 1 בימין, 5 בשמאל — סדר קריאה עברי */
 }
 
 .map-review-panel__star {
@@ -1149,6 +1201,50 @@ summary,
   border-radius: 9px;
 }
 
+.map-review-panel__clear,
+.map-review-panel__date {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
+.map-review-panel__clear {
+  align-self: flex-start;
+  min-height: 44px;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.map-review-panel__date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.map-review-panel__date input {
+  min-height: 44px;
+  width: 100%;
+  padding: 0.35rem 0.55rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--stone-50);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.map-review-panel__footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding-top: 0.45rem;
+  background: var(--stone-50);
+}
+
 .map-review-panel__done {
   align-self: flex-start;
   min-height: 44px;
@@ -1160,6 +1256,22 @@ summary,
   color: var(--good);
   font-size: 0.82rem;
   font-weight: 700;
+}
+
+@keyframes map-review-in {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes map-review-out {
+  to { opacity: 0; transform: translateY(1rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .map-review-panel,
+  .map-review-panel.is-closing {
+    animation: none;
+  }
 }
 
 @media (max-width: 620px) {
