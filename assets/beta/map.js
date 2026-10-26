@@ -794,6 +794,10 @@
   /** פופאפ נשאר נגיש, אך מצטמצם כשהרחוב יוצא מהמרכז או כשהזום מתרחק. */
   function compactPopupIfContextLost() {
     if (!map || !openPopupContext || !map.getSize || !map.latLngToContainerPoint) return;
+    // במסך מגע הכרטיס קטן מאוד מלכתחילה, ופאנינג/auto-pan בזמן פתיחה
+    // עלול להפעיל בטעות את מצב הצמצום ולהשאיר רק את פעולת הביקור.
+    // במובייל עדיף להשאיר את הכרטיס המלא; המשתמש יכול לסגור אותו במפורש.
+    if (usesCoarsePointer()) return;
 
     var street = cachedStreetById(openPopupContext.id);
     var center = street && streetCenter(street);
