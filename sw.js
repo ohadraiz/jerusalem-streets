@@ -12,7 +12,7 @@
  */
 "use strict";
 
-const CACHE_NAME = "jlm-shell-v4";
+const CACHE_NAME = "jlm-shell-v5";
 
 /* מעטפת האפליקציה + נתוני הרחובות והגיאומטריה — מטמונים כבר בהתקנה,
    כדי שביקור ראשון יספיק לפתיחה מלאה במצב לא מקוון */
@@ -27,6 +27,7 @@ const PRECACHE = [
   "./assets/pwa.js",
   "./assets/data.js",
   "./assets/geo.js",
+  "./assets/main-streets.js",
   "./assets/app.js",
   "./assets/store.js",
   "./assets/map.js",

@@ -206,6 +206,7 @@
         </p>
 
         <div class="map-wrap">
+          <p class="map-loading" id="map-loading" role="status">המפה נטענת…</p>
           <div
             id="map-canvas"
             dir="ltr"
@@ -392,10 +393,12 @@
 
     <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true" id="live"></p>
     <div class="celebration" id="celebration" aria-hidden="true" hidden></div>
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="חזרה לראש העמוד" hidden>↑</button>
 
     <script src="assets/data.js" defer></script>
     <script src="assets/store.js" defer></script>
     <script src="assets/geo.js" defer></script>
+    <script src="assets/main-streets.js" defer></script>
     <script src="assets/app.js" defer></script>
     <script src="assets/vendor/leaflet/leaflet.js" defer></script>
     <script src="assets/map.js" defer></script>
