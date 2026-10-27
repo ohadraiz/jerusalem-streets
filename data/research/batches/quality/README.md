@@ -15,8 +15,8 @@ Working list for the editorial upgrade pass: not more cards, better ones. Every 
 
 ## Result of the pass
 
-- **25 cards upgraded**, each with a verbatim quote from its own source kept in the research batch files: קרליבך, מל״ל, מסריק, פינס, פרל, רוטשילד, פאפו, קרן היסוד, שמואל הנביא, שדרות בן־צבי, כיכר אלנבי, בית ישראל, חב״ד, אתיופיה, מאה שערים, שער יפו, הבעל שם טוב, בית הכרם, השלשלת, טובלר, רמב״ן, פלוסר, שלומציון המלכה, דוד המלך, ביל״ו.
-- 74 further cards have a Wikipedia person/place source. Spot checks of 30 of them found only 4 with an unused dated detail that improves the card; the rest already carry an anchor or their article adds nothing verifiable about the street.
+- **27 cards upgraded**, each with a verbatim quote from its own source kept in the research batch files: קרליבך, מל״ל, מסריק, פינס, פרל, רוטשילד, פאפו, קרן היסוד, שמואל הנביא, שדרות בן־צבי, כיכר אלנבי, בית ישראל, חב״ד, אתיופיה, מאה שערים, שער יפו, הבעל שם טוב, בית הכרם, השלשלת, טובלר, רמב״ן, פלוסר, שלומציון המלכה, דוד המלך, ביל״ו, שדרות בן מימון, טללים.
+- 74 further cards have a Wikipedia person/place source. Spot checks of 55 of them produced 8 usable upgrades; the rest already carry an anchor or their article adds nothing verifiable about the street.
 - Cards sourced from "שמות רחובות בירושלים" cannot be upgraded this way: that article documents the theme, not the individual street. They stay short on purpose.
 
 ## Two findings from the pass
