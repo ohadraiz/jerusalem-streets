@@ -24,7 +24,7 @@ const TARGET = path.join(ROOT, "beta.html");
 const ASSETS = path.join(ROOT, "assets");
 const BETA_ASSETS = path.join(ASSETS, "beta");
 
-const BETA_TITLE = "סביבת בטא — רחובות ירושלים";
+const BETA_TITLE = "סביבת בטא — ירושלים ברגל";
 const BETA_HEAD =
   '<meta charset="utf-8" />\n' +
   '    <meta name="robots" content="noindex" />\n' +
