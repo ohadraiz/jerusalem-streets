@@ -3124,3 +3124,808 @@ body.dyk-modal-open {
 .journal__stars { font-variant-numeric: tabular-nums; letter-spacing: 0.05em; white-space: nowrap; }
 .journal__note { font-size: 0.85rem; color: var(--ink); margin: 0.3rem 0 0; padding: 0.35rem 0.55rem; background: var(--stone-50); border-inline-start: 3px solid var(--accent); border-radius: 6px; }
 @media (max-width: 560px) { .badge-group__list { grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); } }
+
+/* ==================================================================
+   פריסת מפה במסך מלא — app.html (body.app-shell)
+   המפה ממלאת את הבמה; הכלים חיים בסרגל עליון צף, סרגל גישה (רשימה)
+   ופאנל מידע. הסגנונות מוגדרים בהיקף .app-shell כדי לא לגעת
+   בסגנונות העמודים הגלילים (welcome וכדומה).
+   ================================================================== */
+
+body.app-shell {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+}
+
+.app-shell a {
+  color: var(--accent-text);
+}
+
+/* ---------- סרגל עליון ---------- */
+
+.app-shell .topbar {
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.75rem calc(0.45rem + 3px);
+  padding-top: calc(0.45rem + env(safe-area-inset-top, 0px));
+  background: var(--stone-50);
+  border-block-end: 1px solid var(--stone-300);
+  min-width: 0;
+}
+
+.app-shell .topbar__brand {
+  min-width: 0;
+  margin-inline-end: 0.2rem;
+}
+
+.app-shell .topbar__title {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.app-shell .topbar__title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.app-shell .topbar__title a:hover,
+.app-shell .topbar__title a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.app-shell .topbar__tagline {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+@media (max-width: 1250px) {
+  .app-shell .topbar__tagline {
+    display: none;
+  }
+}
+
+.app-shell .searchbar {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  position: relative;
+}
+
+.app-shell .searchbar .field__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.app-shell .searchbar__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.15rem 0 0;
+  min-height: 1.4rem;
+}
+
+/* שבב התוצאות במחשב: כתובית קטנה בלבד (היעד נלכד במכשירי מגע בגלילה של הרשימה) */
+.app-shell .searchbar .result-count {
+  min-height: 1.5rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.72rem;
+  border-radius: 999px;
+  align-self: flex-start;
+}
+
+.app-shell .searchbar__hint {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+}
+
+.app-shell .topbar__progress {
+  position: relative;
+  align-self: flex-start;
+  margin-inline-start: 0.35rem;
+  max-width: 13rem;
+  min-width: 0;
+}
+
+.app-shell .topbar__progress .progress__text {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.app-shell .topbar__progress .progress {
+  margin: 0.2rem 0 0;
+  padding: 0;
+  background: transparent;
+}
+
+.app-shell .topbar__progress .progress__track {
+  height: 0.35rem;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.app-shell .topbar__progress .progress__track span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.app-shell .topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-inline-start: auto;
+}
+
+.app-shell .topbar__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.4rem 0.7rem;
+  white-space: nowrap;
+}
+
+.app-shell .topbar__toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+/* ---------- הבמה ---------- */
+
+.app-shell .stage {
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--stone-100);
+}
+
+.app-shell .banner {
+  position: absolute;
+  inset-block-start: 0.6rem;
+  inset-inline: 0;
+  margin: 0 auto;
+  width: min(92%, 34rem);
+  z-index: 65;
+}
+
+/* המפה במסך מלא */
+.app-shell .map-section {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  max-width: none;
+}
+
+.app-shell .map-section__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.app-shell .map-section .map-wrap {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--stone-100);
+}
+
+.app-shell #map-canvas {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.app-shell .map-loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  z-index: 5;
+  color: var(--ink);
+  background: transparent;
+}
+
+.app-shell .map-empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 1.5rem;
+  z-index: 6;
+  background: var(--stone-50);
+  text-align: center;
+}
+
+.app-shell .map-loading[hidden],
+.app-shell .map-empty[hidden] {
+  display: none;
+}
+
+/* מקרא צף — פיזית למטה משמאל מעל שורת הייחוס */
+.app-shell .map-legend {
+  position: absolute;
+  inset-block-end: calc(2.4rem + env(safe-area-inset-bottom, 0px));
+  inset-inline-end: 0.6rem;
+  z-index: 20;
+  display: flex;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.3rem 0.65rem;
+  list-style: none;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-300);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: var(--ink);
+}
+
+/* הודעת מצב מפה צפה */
+.app-shell .map-banner {
+  position: absolute;
+  inset-block-end: calc(4.8rem + env(safe-area-inset-bottom, 0px));
+  inset-inline-start: 50%;
+  transform: translateX(50%);
+  width: min(92%, 30rem);
+  margin: 0;
+  z-index: 25;
+  box-shadow: var(--shadow);
+}
+
+.app-shell .map-banner[hidden] {
+  width: 0;
+  max-height: 0;
+  transform: none;
+  inset-inline-start: -9999px;
+}
+
+/* הייחוס של OSM עובר פיזית לפינה הימנית-תחתונה כדי שהסרגל לא יכסה אותו
+   (ה-קאנבס של המפה dir=ltr, ולכן ברירת המחדל היא פיזית מתחת לסרגל) */
+.app-shell .leaflet-bottom.leaflet-right {
+  right: auto;
+  left: 0;
+}
+
+/* ---------- סרגל גישה (רשימת הרחובות) ---------- */
+
+.app-shell .rail {
+  position: absolute;
+  inset-block: 0.6rem;
+  inset-inline-start: 0.6rem;
+  width: clamp(19rem, 26vw, 24rem);
+  max-height: calc(100% - 1.2rem);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  overflow: hidden;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-300);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 0.4rem 0.5rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+.app-shell .rail.is-closed {
+  transform: translateX(110%);
+  visibility: hidden;
+}
+
+.app-shell .rail__top {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.app-shell .rail__top #random-street {
+  margin-inline-start: auto;
+}
+
+.rail__close,
+#info-close {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1;
+  border: 1px solid var(--stone-300);
+  border-radius: 10px;
+  background: var(--stone-50);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.rail__close:hover,
+#info-close:hover {
+  border-color: var(--accent);
+}
+
+/* במחשב שולחני אין כפתור סגירה לסרגל הרשימה (הוא נפתח ונסגר מהסרגל העליון) */
+@media (min-width: 901px) {
+  #rail-close { display: none; }
+}
+
+.app-shell .rail .toolbar,
+.app-shell .rail .list-section {
+  background: transparent;
+  border: 0;
+  padding: 0.25rem 0.35rem;
+  margin: 0;
+  max-width: none;
+  min-height: 0;
+}
+
+.app-shell .rail .toolbar__row {
+  gap: 0.4rem;
+}
+
+.app-shell .rail .segmented__btn,
+.app-shell .rail .segmented__btn.is-active {
+  min-height: 44px;
+}
+
+.app-shell .rail #filter-summary,
+.app-shell .rail .list-hint {
+  font-size: 0.72rem;
+  margin: 0.15rem 0 0;
+}
+
+.app-shell .rail .list-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.app-shell .rail .list-section__head {
+  flex: none;
+}
+
+.app-shell .rail .list-controls {
+  flex: none;
+}
+
+.app-shell .rail .street-list {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-inline-end: 0.15rem;
+}
+
+.app-shell .rail .add-wrap {
+  flex: none;
+}
+
+/* ---------- פאנל מידע ---------- */
+
+.app-shell .scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 60;
+  background: rgba(20, 14, 8, 0.45);
+  border: 0;
+  padding: 0;
+}
+
+.app-shell .info-drawer {
+  position: absolute;
+  inset-block: 0.6rem;
+  inset-inline-end: 0.6rem;
+  width: clamp(19rem, 34vw, 27rem);
+  max-height: calc(100% - 1.2rem);
+  z-index: 70;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--stone-50);
+  border: 1px solid var(--stone-300);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+}
+
+.app-shell .info-drawer[hidden] {
+  display: none;
+}
+
+.app-shell .info-drawer .info-drawer__scroll > * {
+  flex: none;
+  margin: 0.35rem 0.85rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+/* אזור הגלילה של פאנל המידע: במכשירי מגע גולשים במקום להאפשר לתוכן להיחתך */
+.app-shell .info-drawer .info-drawer__scroll:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+}
+
+.app-shell .info-drawer > .info-drawer__top {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border-block-end: 1px solid var(--stone-200);
+  margin: 0 0 0.25rem;
+}
+
+.app-shell .info-drawer__title {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.app-shell .info-drawer__scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.app-shell .info-drawer .stats,
+.app-shell .info-drawer .info-prefs,
+.app-shell .info-drawer .info-about,
+.app-shell .info-drawer .faq,
+.app-shell .info-drawer .info-footer {
+  border-block-end: 1px solid var(--stone-200);
+  padding-block-end: 0.7rem;
+}
+
+.app-shell .info-drawer .stats:last-child,
+.app-shell .info-drawer .info-prefs:last-child,
+.app-shell .info-drawer .info-about:last-child,
+.app-shell .info-drawer .faq:last-child,
+.app-shell .info-drawer .info-footer:last-child {
+  border-block-end: 0;
+}
+
+.app-shell .info-prefs__title {
+  font-size: 0.85rem;
+  margin: 0 0 0.4rem;
+}
+
+.app-shell .info-drawer .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.app-shell .info-about .map-hint {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0.82rem;
+}
+
+.app-shell .info-about__privacy,
+.app-shell .info-about__links,
+.app-shell .info-footer__copyright,
+.app-shell .info-footer__attribution {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+}
+
+.app-shell .info-drawer .faq__title {
+  font-size: 0.9rem;
+}
+
+/* ---------- מסך מוצע (מובייל): סרגל הרשימה הופך למגירה תחתונה ---------- */
+
+@media (max-width: 900px) {
+  .app-shell .rail,
+  .app-shell .info-drawer {
+    inset-block: auto 0;
+    inset-inline: 0;
+    width: auto;
+    max-height: min(78dvh, 40rem);
+    max-width: none;
+    border-radius: 14px 14px 0 0;
+    border-inline: 0;
+    border-block: 1px solid var(--stone-300);
+    padding-bottom: calc(0.6rem + env(safe-area-inset-bottom, 0px));
+    z-index: 80;
+    transform: translateY(110%);
+    visibility: hidden;
+  }
+
+  .app-shell .rail:not(.is-closed),
+  .app-shell .info-drawer:not(.is-closed) {
+    transform: none;
+    visibility: visible;
+  }
+
+  .app-shell .rail__top {
+    display: flex;
+  }
+
+  .app-shell .topbar {
+    flex-wrap: wrap;
+  }
+
+  .app-shell .topbar__tagline {
+    display: none;
+  }
+
+  .app-shell .topbar__toggle .topbar__toggle-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .app-shell .topbar__progress {
+    display: none;
+  }
+
+  .app-shell .searchbar__hint {
+    display: none;
+  }
+
+  .app-shell .searchbar__meta {
+    display: none;
+  }
+
+  /* ערימה פיזית-שמאלית בתחתית המפה במובייל:
+     ייחוס OSM (0) ← מקרא (~2rem) ← הודעת מצב (חוק הבסיס) */
+  .app-shell .map-legend {
+    inset-block-end: calc(2rem + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.app-shell .back-to-top {
+  display: none;
+}
+
+/* ---------- תנועות (רק למי שלא דורש תנועה מופחתת) ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  .app-shell .rail,
+  .app-shell .info-drawer {
+    transition: transform 0.24s ease, visibility 0.24s, height 0.24s ease;
+  }
+
+  .app-shell .scrim {
+    transition: opacity 0.18s ease;
+  }
+
+  .app-shell .scrim.is-hidden {
+    opacity: 0;
+  }
+}
+
+/* ---------- ויסות מסכים בינוניים ---------- */
+
+@media (max-width: 1200px) {
+  .app-shell .topbar__progress .progress__text {
+    max-width: 9rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .app-shell .searchbar__hint {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .app-shell .topbar__title {
+    font-size: 0.9rem;
+  }
+
+  .app-shell .searchbar__meta #result-count {
+    font-size: 0.78rem;
+  }
+}
+
+/* ה-toast נשאר מעל כל שכבה בפריסה החדשה */
+.app-shell .toast {
+  z-index: 120;
+}
+
+/* ---------- גיליון תחתון במובייל: מצבים מקופל / חצי / רחב ----------
+   ידית המשיכה היא כפתור תמידי (הקשה מעבירה מצב) וגם משטח גרירה מתון.
+   בשולחני הידית ושורת הסיכום נעלמים — הסרגל נשאר עמודה צפה. */
+
+.sheet-handle {
+  display: none;
+}
+
+.app-shell .rail .sheet-peek {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .sheet-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 100%;
+    height: 2.75rem; /* 44px — עוגן מגע תקני */
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 10px;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .sheet-handle:active {
+    cursor: grabbing;
+  }
+
+  .sheet-handle:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: -2px;
+  }
+
+  .sheet-handle__grip {
+    display: block;
+    width: 4.25rem;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--stone-300);
+    border: 1px solid var(--line); /* גבול נראה בלפחות 3:1 (WCAG 1.4.11) */
+  }
+
+  /* שורת סיכום של המצב המקופל: משמרת חי של מונה התוצאות מ-app.js */
+  .app-shell .rail .sheet-peek {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    color: var(--ink-soft);
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* גובה לכל מצב — קבוע כדי שהצמדה למצב תישאר צפויה. יש fallback גם ל-vh */
+  .app-shell .rail:not(.is-closed),
+  .app-shell .info-drawer:not(.is-closed) {
+    height: min(56vh, 34rem);
+    height: min(56dvh, 34rem);
+    max-height: min(86vh, 46rem);
+    max-height: min(86dvh, 46rem);
+  }
+
+  .app-shell .rail[data-sheet="collapsed"]:not(.is-closed) {
+    height: calc(7.6rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .app-shell .rail[data-sheet="expanded"]:not(.is-closed),
+  .app-shell .info-drawer[data-sheet="expanded"]:not(.is-closed) {
+    height: min(86vh, 46rem);
+    height: min(86dvh, 46rem);
+  }
+
+  .app-shell .rail[data-sheet="half"]:not(.is-closed),
+  .app-shell .info-drawer[data-sheet="half"]:not(.is-closed) {
+    height: min(56vh, 34rem);
+    height: min(56dvh, 34rem);
+  }
+
+  /* מקופל: רק ידית המשיכה, שורת הפעולות והסיכום נשארים */
+  .app-shell .rail[data-sheet="collapsed"] .toolbar,
+  .app-shell .rail[data-sheet="collapsed"] .list-section {
+    display: none;
+  }
+
+  /* יעד המגע של קישור המיתוג — התרחבות שקופה לגובה 44px בלי לשנות פריסה */
+  .app-shell .topbar__title a {
+    display: inline-block;
+    padding: 0.85rem 0.4rem;
+    margin: -0.85rem -0.4rem;
+  }
+
+  /* בזמן גרירה משאירים תזוזה מיידית בלי מעברים */
+  .app-shell .rail.is-dragging,
+  .app-shell .info-drawer.is-dragging {
+    transition: none !important;
+  }
+
+  /* במצב המקופל המפה נשארת חופשית: הסרגל מרחף ואין מיסוך */
+
+  /* כשגיליון פתוח מכסה את תחתית המפה — ייחוס OSM עולה לפינה העליונה כדי להישאר גלוי ולא חסום */
+  .app-shell .map-section:has(~ #rail:not(.is-closed)) .leaflet-bottom.leaflet-right,
+  .app-shell .map-section:has(~ #info-drawer:not(.is-closed)) .leaflet-bottom.leaflet-right {
+    inset-block-start: 0.5rem;
+    inset-block-end: auto;
+  }
+}
+
+/* ייחוס OSM נגיש גם למגע: פקד זום Leaflet מוגדל ליעד 44px */
+.app-shell .leaflet-control-zoom a {
+  width: 44px;
+  height: 44px;
+  line-height: 42px;
+  font-size: 1.2rem;
+}
+
+/* קישור המיתוג נשאר יעד הוגן גם בשולחני (מעל 24px, WCAG 2.5.8) בלי לפגוע בשורות;
+   החוק מוגבל לשולחני — בטווח המובייל (עד 900px) יעד המיתוג גדל ל-44px דרך כלל המדיות הקודם */
+@media (min-width: 901px) {
+  .app-shell .topbar__title a {
+    display: inline-block;
+    padding: 0.55rem 0.35rem;
+    margin: -0.35rem -0.35rem;
+  }
+}
+
+/* מסכים בשולחן שעובדים במקלדת/מגע — יעדי מגע מלחימים בפאנלים */
+@media (hover: none) and (pointer: coarse) {
+  .app-shell .topbar__title a {
+    padding: 0.7rem 0.5rem;
+    margin: -0.55rem -0.5rem;
+  }
+
+  .app-shell .result-count,
+  .app-shell .info-drawer .faq__question,
+  .app-shell .info-drawer .achievements__summary,
+  .app-shell .info-drawer .breakdown__summary,
+  .app-shell .info-drawer .shortcuts__summary {
+    min-height: 44px;
+  }
+}
+

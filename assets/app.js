@@ -2731,10 +2731,22 @@
   function toggleShortcuts() {
     var box = document.getElementById("shortcuts-details");
     if (!box) return;
-    box.open = !box.open;
+    if (box.open) {
+      box.open = false;
+      announce("רשימת קיצורי המקלדת נסגרה.");
+      return;
+    }
+    /* רשימת הקיצורים חיה בפאנל המידע — כשהפאנל סגור פוקוס אליו מתבטל בשקט.
+       פותחים את הפאנל דרך כפתור החלפת הפאנל (ללא פנייה לפנים ה-UI) ורק אז מעבירים פוקוס. */
+    var drawer = document.getElementById("info-drawer");
+    if (drawer && drawer.hidden) {
+      var drawerToggle = document.getElementById("info-toggle");
+      if (drawerToggle) drawerToggle.click();
+    }
+    box.open = true;
     var summary = box.querySelector("summary");
-    if (box.open && summary) summary.focus();
-    announce(box.open ? "רשימת קיצורי המקלדת נפתחה." : "רשימת קיצורי המקלדת נסגרה.");
+    if (summary) summary.focus();
+    announce("רשימת קיצורי המקלדת נפתחה.");
   }
 
   /**
