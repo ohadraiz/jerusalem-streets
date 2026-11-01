@@ -2517,7 +2517,8 @@
     var expandedRow = findRow(expandedVisitId);
     var clickedRow = event.target.closest ? event.target.closest(".street[data-id]") : null;
     if (expandedRow && (!clickedRow || clickedRow.dataset.id !== expandedVisitId)) {
-      expandedRow.querySelector(".street__details").classList.remove("is-expanded");
+      var details = expandedRow.querySelector(".street__details");
+      if (details) details.classList.remove("is-expanded");
       expandedVisitId = null;
     }
   });
