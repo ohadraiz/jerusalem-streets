@@ -1624,6 +1624,7 @@
     resetTileChainState();
 
     map = window.L.map(el.canvas, {
+      zoomControl: false,
       preferCanvas: true,
       scrollWheelZoom: true, // גלגלת מעל המפה מקרבת; Leaflet עושה preventDefault — העמוד לא נגלל
       // Leaflet 1.9: ה-tap המדומה הישן גורם התנגשויות לחיצה במובייל מודרני — אירועי מגע אמתיים בלבד;
@@ -1631,6 +1632,10 @@
       tap: false,
       worldCopyJump: true
     });
+    window.L.control.zoom({
+      zoomInTitle: "התקרבות",
+      zoomOutTitle: "התרחקות"
+    }).addTo(map);
 
     // מובייל: המיכל מוקדש למחוות המפה — touch-action מונע לדפדפן לגלול העמוד בזמן
     // גרירה בתוך המפה (Leaflet מטופל בעצמו את ה-events); גלילת העמוד מחוץ למפה לא מושפעת.

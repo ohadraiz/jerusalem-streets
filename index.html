@@ -11,12 +11,12 @@
       content="יומן הליכות חינמי ל־2,424 רחובות ב־95 שכונות בירושלים: מסמנים בדרך את הרחובות שצעדתם בהם, מוסיפים תאריך והערה ורואים התקדמות לפי שכונה. ללא הרשמה."
     />
     <!--
-      דף הכניסה של האתר (/). אין בו תוכן אמיתי — רק הפניה חד-פעמית:
+      דף הכניסה של האתר (/) משמש לניתוב:
       מבקרים מנותבים ל-welcome.html, והתקנות PWA במצב standalone ל-app.html.
-      לכן הוא אינו לאינדוקס: שתי הכתובות האמיתיות (welcome.html, app.html)
-      רשומות ב-sitemap.xml וכל אחת מהן מצהירה canonical לעצמה.
+      ה-canonical מצביע על דף הבית הציבורי, בלי לחסום עיבוד באמצעות noindex.
+      דף הבית והיומן רשומים ב-sitemap.xml וכל אחד מצהיר canonical לעצמו.
     -->
-    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href="https://ohadraiz.github.io/jerusalem-streets/welcome.html" />
     <meta name="author" content="אהד רייז" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="ירושלים ברגל" />

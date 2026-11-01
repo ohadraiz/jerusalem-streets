@@ -822,6 +822,17 @@
   text-underline-offset: 3px;
 }
 
+/* Source links remain usable as touch targets, including wrapped Hebrew text. */
+.l-fact-item a,
+.l-fact__source a,
+.l-footer__meta a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
 /* ---------- שאלות נפוצות ---------- */
 
 .l-faq {

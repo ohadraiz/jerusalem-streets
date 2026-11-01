@@ -386,6 +386,8 @@ body {
 }
 
 .result-count {
+  min-height: 44px;
+  min-width: 44px;
   font: inherit;
   font-weight: 700;
   color: var(--accent-text);
@@ -518,6 +520,8 @@ summary,
 }
 
 .segmented__btn {
+  min-height: 44px;
+  min-width: 44px;
   font: inherit;
   font-size: 0.9rem;
   border: 0;
@@ -542,6 +546,8 @@ summary,
 }
 
 .btn {
+  min-height: 44px;
+  min-width: 44px;
   font: inherit;
   font-size: 0.9rem;
   font-weight: 600;
@@ -727,7 +733,7 @@ summary,
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  min-height: 2.4rem;
+  min-height: 44px;
   border-radius: 8px;
   list-style-position: inside;
 }
@@ -763,6 +769,7 @@ summary,
 }
 
 .breakdown__row {
+  min-height: 44px;
   display: grid;
   grid-template-columns: 9rem 1fr 3.2rem;
   align-items: center;
@@ -829,6 +836,16 @@ summary,
   margin: -0.4rem 0 0.75rem;
   font-size: 0.82rem;
   color: var(--ink-soft);
+}
+
+.map-hint a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .map-wrap {
@@ -1486,6 +1503,7 @@ summary,
 }
 
 .area-group__name {
+  min-height: 44px;
   grid-area: name;
   font: inherit;
   font-size: 1rem;
@@ -1847,6 +1865,7 @@ summary,
 
 /* שם הרחוב — כפתור ניווט: קופץ למפה ומדגיש את השורה */
 .street__name {
+  min-height: 44px;
   font: inherit;
   font-size: 1rem;
   font-weight: 600;
@@ -2209,7 +2228,7 @@ body.dyk-modal-open {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  min-height: 2.4rem;
+  min-height: 44px;
   list-style-position: inside;
 }
 
@@ -2359,6 +2378,7 @@ body.dyk-modal-open {
 }
 
 .achievements__summary {
+  min-height: 44px;
   cursor: pointer;
   font-weight: 600;
   display: flex;
@@ -2459,7 +2479,7 @@ body.dyk-modal-open {
   cursor: pointer;
   font-weight: 600;
   color: var(--ink);
-  min-height: 2.4rem;
+  min-height: 44px;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -2646,9 +2666,21 @@ body.dyk-modal-open {
 }
 
 .footer__attribution a {
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  color: var(--accent-text);
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+.leaflet-control-attribution a {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .footer__attribution abbr {

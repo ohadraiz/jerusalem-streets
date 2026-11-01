@@ -24,7 +24,19 @@ async function main() {
     } });
     assert.strictEqual(actual, expected + "?pwa=1#faq");
   }
-  assert.match(index, /name="robots" content="noindex,follow"/);
+  assert.doesNotMatch(index, /name="robots" content="[^"]*noindex/);
+  assert.match(index, /rel="canonical" href="https:\/\/ohadraiz.github.io\/jerusalem-streets\/welcome.html"/);
+  // Older browsers may lack matchMedia; iOS standalone detection still works.
+  for (const [ios, expected] of [[false, "welcome.html"], [true, "app.html"]]) {
+    let actual;
+    vm.runInNewContext(redirect, { window: {
+      navigator: { standalone: ios },
+      location: { search: "?q=%D7%99&source=home", hash: "#map-section", replace: (url) => { actual = url; } }
+    } });
+    assert.strictEqual(actual, expected + "?q=%D7%99&source=home#map-section");
+    assert.strictEqual(new URL(actual, "https://test/jerusalem-streets/").pathname,
+      "/jerusalem-streets/" + expected);
+  }
   const manifest = JSON.parse(read("manifest.webmanifest"));
   assert.strictEqual(manifest.start_url, "./app.html");
   assert.strictEqual(manifest.id, "./");
