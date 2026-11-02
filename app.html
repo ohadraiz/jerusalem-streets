@@ -236,10 +236,12 @@
             <button type="button" class="btn btn--quiet btn--small list-section__clear" id="list-clear" hidden>חזרה לכל הרחובות</button>
           </div>
 
+          <details class="list-options">
+            <summary class="list-options__summary">תצוגה, מיון ויומן</summary>
           <div class="list-controls">
             <div class="segmented view-toggle" role="group" aria-label="תצוגת רשימת הרחובות">
-              <button type="button" class="segmented__btn is-active" data-view="areas" aria-pressed="true">לפי שכונות</button>
-              <button type="button" class="segmented__btn" data-view="all" aria-pressed="false">כל הרחובות</button>
+              <button type="button" class="segmented__btn" data-view="areas" aria-pressed="false">לפי שכונות</button>
+              <button type="button" class="segmented__btn is-active" data-view="all" aria-pressed="true">כל הרחובות</button>
             </div>
 
             <div class="field field--sort">
@@ -260,6 +262,7 @@
             </div>
             <p class="list-hint" id="list-hint">סימון ביקור או מחיקה — ישירות בכל שורה. מחיקה מסירה את הרחוב גם מהמפה, ואפשר לבטל מיד.</p>
           </div>
+          </details>
 
           <p class="list-loading" id="list-loading" role="status">טוענים את רשימת הרחובות…</p>
           <p class="empty" id="empty-state" hidden></p>

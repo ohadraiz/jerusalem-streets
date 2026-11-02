@@ -4019,6 +4019,8 @@ body.app-shell { display: block; position: relative; }
 }
 @media (min-width: 901px) {
   .app-shell .topbar__progress { inset-inline-start: auto; inset-inline-end: 0; }
+  /* Leave the progress card clear of Leaflet's zoom buttons. */
+  .app-shell .leaflet-top.leaflet-left { top: calc(var(--toolbar-bottom, 80px) + 5.5rem); }
 }
 /* In short landscape viewports the sheet leaves little vertical map space.
    Place the zoom stack between attribution and progress instead of under it. */
@@ -4148,4 +4150,17 @@ body.app-shell {
   color: var(--ink);
   font-weight: 700;
 }
+
+/* Keep the first streets visible; secondary view and sort controls open on request. */
+.app-shell .rail .list-options { flex: none; margin-block: 0.2rem 0.4rem; }
+.app-shell .rail .list-options__summary {
+  display: flex; align-items: center; min-height: 44px; padding-inline: 0.5rem;
+  border: 1px solid var(--shell-line); border-radius: 10px;
+  color: var(--ink); font-weight: 600; cursor: pointer;
+}
+.app-shell .rail .list-options__summary::after { content: "▾"; margin-inline-start: auto; }
+.app-shell .rail .list-options__summary::-webkit-details-marker { display: none; }
+.app-shell .rail .list-options[open] .list-options__summary::after { content: "▴"; }
+.app-shell .rail .list-options__summary:focus-visible { outline: 3px solid var(--shell-focus); outline-offset: 2px; }
+.app-shell .rail .list-options .list-controls { padding-block: 0.45rem; }
 

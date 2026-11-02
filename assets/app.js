@@ -2,7 +2,7 @@
  * לוגיקת המסך: סינון, סימון ביקורים, סטטיסטיקות וייבוא/ייצוא.
  * תלוי ב-window.JLM_DATA (data.js) וב-window.JLMStore (store.js).
  *
- * מבנה הרשימה: אקורדיון שכונות כברירת מחדל, או תצוגה שטוחה של כל הרחובות.
+ * מבנה הרשימה: רחובות בסדר אלפביתי כברירת מחדל, או אקורדיון שכונות.
  * רק שכונה פתוחה מרנדרת שורות רחובות — כך שלא נרנדרים 2,154 שורות בבת אחת.
  * שורת הרחוב מאפשרת גם ניווט למפה וגם סימון ביקור ישירות מהרשימה.
  */
@@ -39,7 +39,7 @@
   var openAreas = new Set();
   var areaLimit = AREA_PAGE_SIZE;
   var sortMode = "remaining";
-  var listView = "areas"; // "areas" | "all"
+  var listView = "all"; // "areas" | "all"
   var streetSortMode = "asc"; // "asc" (א–ת) | "desc" (ת–א)
   var flatListPage = 1; // for paginated flat list
   /* כרטיס ביקור מורחב זמנית — לחיצה מחוץ לו מצמצמת אותו */
@@ -1081,9 +1081,9 @@
     var nextBtn = flatListPage < totalPages
       ? '<button type="button" class="pagination__btn" data-action="flat-next" aria-label="עמוד הבא">הבא ›</button>'
       : '<span class="pagination__btn pagination__btn--disabled" aria-hidden="true">הבא ›</span>';
-    var pageInfo = '<span class="pagination__info" aria-live="polite">עמוד ' + flatListPage + " מתוך " + totalPages + "</span>";
+    var pageInfo = '<span class="pagination__info">עמוד ' + flatListPage + " מתוך " + totalPages + "</span>";
     var label = position === "top" ? "דפדוף תוצאות — למעלה" : "דפדוף תוצאות — למטה";
-    return '<li class="pagination" role="navigation" aria-label="' + label + '">' + prevBtn + pageInfo + nextBtn + "</li>";
+    return '<li class="pagination" aria-label="' + label + '">' + prevBtn + pageInfo + nextBtn + "</li>";
   }
 
   /** תצוגה שטוחה — בשימוש חיפוש פעיל */
@@ -1096,10 +1096,8 @@
     var start = (flatListPage - 1) * PAGE_SIZE;
     var slice = streets.slice(start, start + PAGE_SIZE);
 
-    var pagination = totalPages > 1 ? paginationMarkup(totalPages, "top") : "";
-
     el.list.innerHTML =
-      pagination + slice.map(streetRow).join("") + (totalPages > 1 ? paginationMarkup(totalPages, "bottom") : "");
+      slice.map(streetRow).join("") + (totalPages > 1 ? paginationMarkup(totalPages, "bottom") : "");
 
     el.count.textContent =
       formatNumber(total) + " רחובות" +
@@ -2381,6 +2379,9 @@
     if (flatPrev) {
       flatListPage = Math.max(1, flatListPage - 1);
       renderList();
+      el.list.scrollTop = 0;
+      el.list.focus({ preventScroll: true });
+      el.list.scrollIntoView({ block: "start", behavior: "auto" });
       announce("עמוד " + flatListPage);
       return;
     }
@@ -2391,6 +2392,9 @@
       var totalPages = Math.ceil(streets.length / PAGE_SIZE);
       flatListPage = Math.min(totalPages, flatListPage + 1);
       renderList();
+      el.list.scrollTop = 0;
+      el.list.focus({ preventScroll: true });
+      el.list.scrollIntoView({ block: "start", behavior: "auto" });
       announce("עמוד " + flatListPage);
       return;
     }
@@ -3117,7 +3121,15 @@
     if (el.list) el.list.hidden = true;
     renderJournal();
     host = document.getElementById("journal-view");
-    if (host) host.hidden = false;
+    if (host) {
+      var back = document.createElement("button");
+      back.type = "button";
+      back.className = "btn btn--quiet";
+      back.textContent = "חזרה לרחובות";
+      back.addEventListener("click", toggleJournal);
+      host.insertBefore(back, host.firstChild);
+      host.hidden = false;
+    }
   }
 
   function repeatText(text, count) {
