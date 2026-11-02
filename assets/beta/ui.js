@@ -434,6 +434,9 @@
   document.addEventListener('jlm-map-selection', function () {
     if (isMobile() && railIsOpen()) setSheetState(rail, 'rail', 'collapsed');
   });
+  document.addEventListener('jlm-map-navigation', function () {
+    if (isMobile() && railIsOpen()) setSheetState(rail, 'rail', 'collapsed');
+  });
   document.addEventListener('keydown', function (event) {
     var target = event.target;
     if (event.defaultPrevented || drawerIsOpen() || document.querySelector('.map-review-backdrop, .dyk-modal:not([hidden])')) return;

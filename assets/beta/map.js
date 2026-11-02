@@ -318,8 +318,7 @@
     var api = window.JLMAPI;
     if (api && typeof api.focusStreet === "function") {
       try {
-        api.focusStreet(id);
-        return;
+        if (api.focusStreet(id)) return;
       } catch (error) { /* נופלים לגיבוי ה-DOM מטה */ }
     }
 
@@ -1374,10 +1373,13 @@
   function openStreetPopup(street, latlng) {
     if (!map || !window.L) return;
     var content = popupContent(street);
+    var toolbar = document.querySelector('.topbar');
+    var toolbarBottom = toolbar ? Math.max(0, toolbar.getBoundingClientRect().bottom - el.canvas.getBoundingClientRect().top) : 0;
     var popup = window.L.popup({
       maxWidth: 280,
       minWidth: 0,
-      autoPanPadding: [18, 18]
+      autoPanPaddingTopLeft: [18, Math.ceil(toolbarBottom) + 12],
+      autoPanPaddingBottomRight: [Math.ceil(railMapInset()) + 18, 18]
     })
       .setLatLng(latlng)
       .setContent(content)
@@ -1581,6 +1583,18 @@
     );
   }
 
+  /* Give the map's right-side rail room without recreating or resizing Leaflet. */
+  function railMapInset() {
+    var rail = document.getElementById('rail');
+    if (!rail || rail.classList.contains('is-closed') || !el.canvas) return 0;
+    /* The rail's width may still be animating when map navigation begins. */
+    if (rail.dataset.sheet === 'collapsed' && window.matchMedia && window.matchMedia('(max-width: 900px)').matches) return 84;
+    var railRect = rail.getBoundingClientRect();
+    var mapRect = el.canvas.getBoundingClientRect();
+    if (railRect.right <= mapRect.left || railRect.left >= mapRect.right || railRect.bottom <= mapRect.top || railRect.top >= mapRect.bottom) return 0;
+    return Math.min(mapRect.width * 0.65, Math.max(0, mapRect.right - railRect.left));
+  }
+
   var areaHighlightTimer = null;
   var areaHighlightIds = [];
 
@@ -1613,9 +1627,19 @@
   /**
    * מפת השכונה: מרכז התצוגה על גיאומטריית כל הרחובות שבשכונה.
    * maxZoom: 16 — שכונה גדולה לא מתקרבת מדי, שכונה קטנה לא מגיעה לזום 17.
-   * מחזיר false אם אין רחובות לשכונה או שהמפה עדיין לא ב-Leaflet — אין הזזת מפה.
+   * מחזיר false אם אין רחובות לשכונה או שהמפה עדיין לא זמינה.
    */
   function zoomToArea(area) {
+    if (mode === "fallback") {
+      var fallbackArea = F.proj.filter(function (street) { return (street.area || "אחר") === (area || "אחר"); });
+      var fallbackBounds = bboxOfAll(fallbackArea);
+      if (!fallbackBounds) return false;
+      fitFallbackView(fallbackBounds);
+      F.view.x += railMapInset() / (2 * F.view.scale);
+      clampView();
+      requestFallbackDraw();
+      return true;
+    }
     if (mode !== "leaflet" || !map) return false;
 
     var target = typeof area === "string" && area ? area : "אחר";
@@ -1640,7 +1664,10 @@
     if (!bounds || typeof bounds.isValid !== "function" || !bounds.isValid()) return false;
 
     var reduce = prefersReducedMotion();
-    map.fitBounds(bounds.pad(0.08), { maxZoom: 16, animate: !reduce });
+    map.fitBounds(bounds.pad(0.08), {
+      maxZoom: 16, animate: !reduce,
+      paddingTopLeft: [24, 90], paddingBottomRight: [Math.round(railMapInset()) + 24, 24]
+    });
 
     cancelAreaHighlight();
     areaHighlightIds = ids;
@@ -1658,8 +1685,17 @@
     return true;
   }
 
-  /** מקפיץ את המפה לרחוב ומדגיש אותו לכמה שניות. מחזיר false במסלול גיבוי. */
+  /** מקפיץ את המפה לרחוב ומדגיש אותו לכמה שניות במסלול Leaflet. */
   function zoomToStreet(id, zoom) {
+    if (mode === "fallback") {
+      var fallbackStreet = F.proj.filter(function (street) { return street.id === id; })[0];
+      if (!fallbackStreet) return false;
+      fitFallbackView(fallbackStreet.bbox);
+      F.view.x += railMapInset() / (2 * F.view.scale);
+      clampView();
+      requestFallbackDraw();
+      return true;
+    }
     if (mode !== "leaflet" || !map) return false;
 
     var street = cachedStreetById(id);
@@ -1673,7 +1709,9 @@
     var targetZoom = Math.max(2, Math.min(19, Number(zoom) || 16));
     var reduce = prefersReducedMotion();
 
-    map.flyTo(center, targetZoom, { animate: !reduce, duration: 0.75 });
+    var projectedCenter = map.project(center, targetZoom);
+    var visibleCenter = map.unproject(projectedCenter.add([railMapInset() / 2, 0]), targetZoom);
+    map.flyTo(visibleCenter, targetZoom, { animate: !reduce, duration: 0.75 });
 
     // ניווט לרחוב גובר על הדגשת שכונה שטרם הוחזרה
     cancelAreaHighlight();

@@ -3948,7 +3948,7 @@ body.app-shell { display: block; position: relative; }
 }
 .app-shell .topbar__progress .progress__text { color: #143f3a; }
 .app-shell .topbar__progress .progress__track span { background: #166d61; }
-.app-shell .rail { inset-block-start: 6.5rem; width: 350px; max-height: calc(100% - 7.1rem); }
+.app-shell .rail { inset-block-start: 6.5rem; width: 410px; max-height: calc(100% - 7.1rem); }
 .app-shell .rail__title { margin: 0; font-size: 1rem; }
 .app-shell .rail-tabs, .app-shell .sheet-states { display: flex; gap: 0.25rem; flex: none; }
 .app-shell .rail-tabs button, .app-shell .sheet-states button {
@@ -4083,8 +4083,8 @@ body.app-shell {
     border: 1px solid var(--stone-300); border-radius: 16px;
     padding: 0.5rem; overflow: hidden;
   }
-  .app-shell .rail:not(.is-closed)[data-sheet="half"] { width: min(82vw, 350px); height: auto; }
-  .app-shell .rail:not(.is-closed)[data-sheet="expanded"] { width: min(94vw, 440px); height: auto; }
+  .app-shell .rail:not(.is-closed)[data-sheet="half"] { width: min(88vw, 410px); height: auto; }
+  .app-shell .rail:not(.is-closed)[data-sheet="expanded"] { width: min(96vw, 500px); height: auto; }
   .app-shell .rail:not(.is-closed)[data-sheet="collapsed"] { width: 76px; height: auto; inset-block-end: auto; }
   .app-shell .rail.is-closed { transform: translateX(110%); }
   .app-shell .rail .sheet-handle { display: none; }
@@ -4163,4 +4163,13 @@ body.app-shell {
 .app-shell .rail .list-options[open] .list-options__summary::after { content: "▴"; }
 .app-shell .rail .list-options__summary:focus-visible { outline: 3px solid var(--shell-focus); outline-offset: 2px; }
 .app-shell .rail .list-options .list-controls { padding-block: 0.45rem; }
+.app-shell .rail .street.is-highlighted {
+  border: 3px solid var(--good);
+  box-shadow: 0 0 0 3px var(--good-soft);
+}
+.app-shell .rail .street__selected-badge {
+  display: inline-flex; align-items: center; padding: 0.2rem 0.6rem;
+  border: 1px solid var(--good); border-radius: 999px;
+  background: var(--good-soft); color: var(--ink); font-size: 0.78rem; font-weight: 700;
+}
 

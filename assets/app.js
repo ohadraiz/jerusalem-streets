@@ -630,16 +630,10 @@
 
     var pick = pool[Math.floor(Math.random() * pool.length)];
     var area = pick.area || "אחר";
-    openAreas.add(area);
-    renderList();
+    focusStreet(pick.id);
 
     var row = findRow(pick.id);
     if (row) {
-      highlightRow(pick.id);
-      if (typeof row.scrollIntoView === "function") {
-        var offset = row.getBoundingClientRect().top;
-        row.scrollIntoView({ block: "center", behavior: scrollBehaviorFor(offset) });
-      }
       /* הפוקוס עובר לרחוב המוצע — כך מקלדת יכולה להמשיך משם (Enter למפה, "v" לסימון) */
       var nameButton = row.querySelector('[data-action="goto"]');
       if (nameButton) {
@@ -650,7 +644,14 @@
         nameButton.focus({ preventScroll: true });
       }
     }
+    document.dispatchEvent(new CustomEvent("jlm-map-navigation"));
+    var randomMap = window.JLMMap;
+    var randomMapFocused = false;
+    if (randomMap && typeof randomMap.zoomToStreet === "function") {
+      try { randomMapFocused = randomMap.zoomToStreet(pick.id, 16); } catch (error) { /* ההצעה עדיין זמינה ברשימה */ }
+    }
     var text = "הצעה: אולי תבקרו ברחוב " + pick.name + (pick.area ? " ב" + pick.area : "") + ". (r להצעה חדשה)";
+    if (!randomMapFocused) text += " לא ניתן למקד את הרחוב במפה כרגע.";
     showToast(text, null);
     announce(text);
     if (el.randomBtn) {
@@ -1030,7 +1031,7 @@
           areaBadgeMarkup(done, manual) +
           '<button type="button" class="area-group__toggle" data-action="area-toggle" data-area="' + escapeHtml(area.area) + '"' +
             ' aria-expanded="' + (open ? "true" : "false") + '" aria-controls="' + panelId + '"' +
-            ' aria-label="' + (open ? "סגור את הרחובות של " : "פתח את הרחובות של ") + escapeHtml(area.area) + '">' +
+             ' aria-label="' + (open ? "סגור את הרחובות של " : "פתח ומקד את המפה בשכונת ") + escapeHtml(area.area) + '">' +
             '<span aria-hidden="true">▾</span>' +
           "</button>" +
         "</div>" +
@@ -1192,6 +1193,12 @@
     visibleLimit = PAGE_SIZE;
     if (view === "all") flatListPage = 1;
     renderList();
+    var options = document.querySelector('.list-options');
+    if (options) options.open = false;
+    el.list.scrollTop = 0;
+    var panel = el.list.closest('.list-section');
+    if (panel && panel.scrollHeight > panel.clientHeight) panel.scrollTop = 0;
+    el.list.focus({ preventScroll: true });
     announce(
       view === "all"
         ? "מוצגים כל הרחובות ברשימה אחת, מסודרים א׳–ת."
@@ -1480,9 +1487,10 @@
 
   /**
    * לחיצה על שם השכונה: פותח את השכונה וממקד את המפה בה — בלי לסנן את הרשימה
-   * ובלי לגלול. החץ הנפרד פותח/סוגר בלבד, בלי להזיז את המפה.
+   * ובלי לסנן. גם פתיחה באמצעות החץ ממקדת את המפה; סגירה אינה מזיזה אותה.
    */
   function focusArea(area) {
+    document.dispatchEvent(new CustomEvent("jlm-map-navigation"));
     var map = window.JLMMap;
     var ok = false;
     if (map && typeof map.zoomToArea === "function") {
@@ -1511,7 +1519,7 @@
     announce("ממוקד בשכונה " + area + ".");
   }
 
-  /** החץ: פותח/סוגר בלבד — בלי להזיז את המפה ובלי לסנן */
+  /** סוגר שכונה פתוחה; פתיחה דרך הכותרת או החץ ממקדת גם את המפה. */
   function toggleArea(area) {
     var open = openAreas.has(area);
     if (open) {
@@ -1774,6 +1782,8 @@
     var street = findStreet(id);
     if (!street) return false;
 
+    document.dispatchEvent(new CustomEvent("jlm-map-navigation"));
+
     var map = window.JLMMap;
     var ok = false;
     if (map && typeof map.zoomToStreet === "function") {
@@ -1785,7 +1795,6 @@
     }
 
     highlightRow(id);
-    document.dispatchEvent(new CustomEvent("jlm-select-street", { detail: { id: id } }));
     scrollToMap();
 
     if (!ok) {
@@ -1803,9 +1812,22 @@
     if (!row) return;
 
     var previous = el.list.querySelector(".street.is-highlighted");
-    if (previous) previous.classList.remove("is-highlighted");
+    if (previous) {
+      previous.classList.remove("is-highlighted");
+      previous.removeAttribute("aria-current");
+      var previousBadge = previous.querySelector(".street__selected-badge");
+      if (previousBadge) previousBadge.remove();
+    }
 
     row.classList.add("is-highlighted");
+    row.setAttribute("aria-current", "true");
+    var heading = row.querySelector(".street__head");
+    if (heading) {
+      var badge = document.createElement("span");
+      badge.className = "street__selected-badge";
+      badge.textContent = "נבחר";
+      heading.appendChild(badge);
+    }
     window.clearTimeout(highlightTimer);
     // Don't auto-clear - will be cleared by clicking anywhere on screen
   }
@@ -1840,6 +1862,8 @@
   function focusStreet(id) {
     var street = findStreet(id);
     if (!street) return false;
+    if (journalActive) toggleJournal();
+    var opener = document.activeElement;
 
     var area = street.area || "אחר";
     var visible = visibleStreets().some(function (item) {
@@ -1861,13 +1885,11 @@
       if (!openAreas.has(area)) openAreas.add(area);
       ensureAreaLimit(area);
     } else {
-      /* בתצוגה שטוחה ייתכן שהרחוב מעבר לגבול העימוד — מרחיבים אותו */
+      /* בתצוגה שטוחה בוחרים את העמוד המכיל את הרחוב, לפי הסדר והסינון הנוכחיים. */
       var flat = flatStreets();
       for (var i = 0; i < flat.length; i += 1) {
         if (flat[i].id !== id) continue;
-        if (i >= visibleLimit) {
-          visibleLimit = Math.ceil((i + 1) / PAGE_SIZE) * PAGE_SIZE;
-        }
+        flatListPage = Math.floor(i / PAGE_SIZE) + 1;
         break;
       }
     }
@@ -1884,7 +1906,22 @@
     highlightRow(id);
 
     var button = row.querySelector('[data-action="goto"]');
-    if (button) button.focus({ preventScroll: true });
+    if (button) {
+      button.focus({ preventScroll: true });
+      /* The rail can still be transitioning from visibility:hidden. Retry only
+         if the user has not moved focus elsewhere while it opens. */
+      if (document.activeElement !== button) {
+        window.setTimeout(function () {
+          var active = document.activeElement;
+          if (active !== opener && active !== document.body) return;
+          var currentRow = findRow(id);
+          var currentButton = currentRow && currentRow.querySelector('[data-action="goto"]');
+          if (!currentButton) return;
+          currentRow.scrollIntoView({ block: "center", behavior: "auto" });
+          currentButton.focus({ preventScroll: true });
+        }, 300);
+      }
+    }
 
     return true;
   }
@@ -2419,7 +2456,8 @@
     var areaToggle = target.closest('[data-action="area-toggle"]');
     if (areaToggle) {
       event.preventDefault();
-      toggleArea(areaToggle.dataset.area);
+      if (openAreas.has(areaToggle.dataset.area)) toggleArea(areaToggle.dataset.area);
+      else focusArea(areaToggle.dataset.area);
       return;
     }
 
@@ -3439,7 +3477,12 @@
       var target = event.target;
       // Don't clear if clicking on the highlighted row itself or its buttons
       if (target.closest(".street.is-highlighted") === highlighted) return;
+      // These actions create the selection during the same click event.
+      if (target.closest(".map-popup__find, #random-street")) return;
       highlighted.classList.remove("is-highlighted");
+      highlighted.removeAttribute("aria-current");
+      var badge = highlighted.querySelector(".street__selected-badge");
+      if (badge) badge.remove();
     }
   });
 
