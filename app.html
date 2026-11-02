@@ -109,7 +109,7 @@
                 id="search"
                 class="field__input field__input--search"
                 type="search"
-                placeholder="חיפוש רחוב — למשל רחוב הרצל"
+                placeholder="חפשו רחוב..."
                 autocomplete="off"
                 spellcheck="false"
                 enterkeyhint="search"
@@ -140,6 +140,7 @@
       </div>
 
       <div class="topbar__actions">
+        <button type="button" class="btn topbar__toggle" id="filter-toggle" aria-controls="panel-filters" aria-expanded="false">סינון</button>
         <button type="button" class="btn topbar__toggle" id="list-toggle" aria-controls="rail" aria-expanded="false">
           <span class="topbar__toggle-icon" aria-hidden="true">☰</span>
           <span class="topbar__toggle-label">רשימה</span>
@@ -189,10 +190,24 @@
       <aside class="rail is-closed" id="rail" aria-label="סרגל רשימת הרחובות">
         <div class="rail__top">
           <button type="button" class="rail__close" id="rail-close" aria-label="סגירת סרגל הרשימה">×</button>
+          <h2 class="rail__title">הרחובות שלי</h2>
+          <button type="button" class="sheet-expand" data-sheet-target="half">הרחבה</button>
           <button type="button" class="btn btn--small" id="random-street" title="מציע רחוב שטרם ביקרתם בו" aria-keyshortcuts="r">🎲 רחוב אקראי</button>
         </div>
 
-        <section class="toolbar" aria-labelledby="toolbar-title">
+        <div class="sheet-states" role="group" aria-label="גודל מגירת הרחובות">
+          <button type="button" data-sheet-target="collapsed">צמצום</button>
+          <button type="button" data-sheet-target="half">רוחב רגיל</button>
+          <button type="button" data-sheet-target="expanded">רוחב מורחב</button>
+        </div>
+
+        <div class="rail-tabs" role="tablist" aria-label="תוכן מגירת הרחובות">
+          <button type="button" role="tab" id="tab-streets" aria-controls="panel-streets" aria-selected="true">רחובות</button>
+          <button type="button" role="tab" id="tab-filters" aria-controls="panel-filters" aria-selected="false" tabindex="-1">סינון</button>
+          <button type="button" role="tab" id="tab-progress" aria-controls="panel-progress" aria-selected="false" tabindex="-1">התקדמות</button>
+        </div>
+
+        <section class="toolbar" id="panel-filters" role="tabpanel" aria-labelledby="tab-filters" hidden>
           <h2 class="visually-hidden" id="toolbar-title">סינון</h2>
 
           <div class="toolbar__row">
@@ -210,13 +225,14 @@
             <button type="button" class="btn btn--quiet" id="clear-filters" aria-keyshortcuts="n" hidden>ניקוי סינון</button>
           </div>
 
-          <p class="toolbar__summary" id="filter-summary" hidden></p>
         </section>
 
-        <section class="list-section" aria-labelledby="list-title">
+        <section class="list-section" id="panel-streets" role="tabpanel" aria-labelledby="tab-streets">
+          <div class="street-card" id="street-card" role="region" aria-label="הרחוב שנבחר" hidden></div>
           <div class="list-section__head">
             <h2 class="list-section__title" id="list-title">הרחובות</h2>
             <p class="list-section__count" id="list-count"></p>
+            <p class="toolbar__summary" id="filter-summary" hidden></p>
             <button type="button" class="btn btn--quiet btn--small list-section__clear" id="list-clear" hidden>חזרה לכל הרחובות</button>
           </div>
 
@@ -268,6 +284,7 @@
             </form>
           </details>
         </section>
+        <section class="rail-progress" id="panel-progress" role="tabpanel" aria-labelledby="tab-progress" hidden></section>
       </aside>
 
       <!-- פאנל מידע: סטטיסטיקות, העדפות, פעולות ותוכן משלים -->
@@ -338,7 +355,7 @@
         <section class="info-about">
           <h2 class="info-prefs__title">על השימוש</h2>
           <p class="map-hint">
-            המפה ממלאת את המסך והרשימה חיה בסרגל הגישה. אזור הלחיצה על קווי הרחובות הורחב. במחשב — לחיצה סמוך לרחוב מסמנת אותו מיד; במכשיר מגע — הקשה פותחת כרטיס רחוב, והסימון נעשה בכפתור "סמן שביקרתי" שבתוכו. אפשר גם <a href="#street-list">לסמן מסרגל הרשימה ללא שימוש במפה</a>, ולבטל מיד מההודעה שמופיעה בתחתית המסך.
+            המפה ממלאת את המסך והרשימה חיה בסרגל הגישה. בחירת רחוב במפה פותחת כרטיס; סימון הביקור נעשה בפעולה נפרדת. אפשר גם <a href="#street-list">לסמן מסרגל הרשימה ללא שימוש במפה</a>, ולבטל מיד מההודעה שמופיעה בתחתית המסך.
           </p>
           <p class="info-about__privacy">רישומי הביקורים נשמרים מקומית בדפדפן שלכם בלבד (<code>localStorage</code>), ללא סנכרון לענן. האתר והמפה נטענים בבקשות רשת.</p>
           <nav class="info-about__links" aria-label="מידע על היומן">

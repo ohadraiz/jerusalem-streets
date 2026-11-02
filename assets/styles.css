@@ -3929,3 +3929,223 @@ body.app-shell {
   }
 }
 
+/* Map-first journal shell. The existing map canvas remains mounted. */
+body.app-shell { display: block; position: relative; }
+.app-shell .stage { position: absolute; inset: 0; }
+.app-shell .map-section { z-index: 0; }
+.app-shell .topbar {
+  position: absolute; inset-block-start: calc(0.6rem + env(safe-area-inset-top, 0px));
+  inset-inline: 0.6rem; z-index: 50; padding: 0.35rem; border: 1px solid #ccd8d4;
+  border-radius: 14px; background: #fff; box-shadow: 0 5px 20px #143f3a24;
+}
+.app-shell .topbar__brand { background: #143f3a; border-radius: 10px; padding: 0.65rem; }
+.app-shell .topbar__title a { color: #fff; padding: 0; margin: 0; }
+.app-shell .topbar__tagline { display: none; }
+.app-shell .topbar__progress {
+  display: block; position: absolute; inset-block-start: calc(100% + 0.5rem);
+  inset-inline-start: 0; padding: 0.55rem 0.75rem; background: #fff;
+  border: 1px solid #ccd8d4; border-radius: 10px; box-shadow: 0 3px 12px #143f3a24;
+}
+.app-shell .topbar__progress .progress__text { color: #143f3a; }
+.app-shell .topbar__progress .progress__track span { background: #166d61; }
+.app-shell .rail { inset-block-start: 6.5rem; width: 350px; max-height: calc(100% - 7.1rem); }
+.app-shell .rail__title { margin: 0; font-size: 1rem; }
+.app-shell .rail-tabs, .app-shell .sheet-states { display: flex; gap: 0.25rem; flex: none; }
+.app-shell .rail-tabs button, .app-shell .sheet-states button {
+  flex: 1; min-width: 0; min-height: 44px; border: 1px solid #9aaca6;
+  border-radius: 10px; color: #143f3a; background: #fff; cursor: pointer;
+}
+.app-shell .rail-tabs [aria-selected="true"], .app-shell .sheet-states [aria-pressed="true"] {
+  background: #166d61; border-color: #166d61; color: white;
+}
+.app-shell .sheet-states { display: none; }
+.app-shell .rail [role="tabpanel"][hidden] { display: none; }
+.app-shell .rail-progress { overflow-y: auto; min-height: 0; padding: 0.5rem; }
+.app-shell .rail-progress .stats { margin: 0; padding: 0; }
+.app-shell .rail-progress .achievements__summary,
+.app-shell .rail-progress .breakdown__summary { min-height: 44px; }
+.app-shell .sheet-expand { display: none; }
+.app-shell .leaflet-top.leaflet-left { top: 8rem; }
+.app-shell .map-popup__toggle { background: #166d61; color: #fff; }
+.app-shell .street-card { flex: none; max-height: 45%; overflow-y: auto; padding: 0.75rem; margin-block: 0.35rem; border: 1px solid #a8c8bb; border-radius: 14px; background: #e9f4ee; color: #143f3a; }
+.app-shell .street-card[hidden] { display: none; }
+.app-shell .street-card__close { min-height: 44px; padding: 0.4rem 0.7rem; border: 1px solid #658b7f; border-radius: 10px; color: #143f3a; background: #fff; cursor: pointer; }
+/* Contextual street cards: visual treatment only; the existing content and actions stay intact. */
+.app-shell .street-card {
+  padding: 0.9rem; border-color: #a2c2b5; border-radius: 16px;
+  background: #edf7f1; box-shadow: 0 3px 12px rgba(20, 63, 58, 0.08);
+}
+.app-shell .street-card .map-popup {
+  width: 100%; min-width: 0; padding: 0; gap: 0.35rem; align-items: stretch;
+}
+.app-shell .street-card .map-popup__title { color: #143f3a; font-size: 1.14rem; line-height: 1.4; }
+.app-shell .street-card .map-popup__area { color: #385e55; font-size: 0.875rem; }
+.app-shell .street-card .map-popup__state { align-self: flex-start; margin: 0.15rem 0; padding: 0.22rem 0.65rem; border-radius: 999px; background: #dcece4; color: #28594b; font-weight: 600; }
+.app-shell .street-card .map-popup__state.is-visited { background: #cce8d7; color: #145541; }
+.app-shell .street-card .map-popup__toggle { margin-top: 0.5rem; border-color: #166d61; border-radius: 11px; background: #166d61; color: #fff; }
+.app-shell .street-card .map-popup__review,
+.app-shell .street-card .map-popup__find,
+.app-shell .street-card .map-popup__dyk { min-height: 44px; border-radius: 10px; }
+.app-shell .street-card__close { margin-block-end: 0.45rem; font-weight: 600; }
+.app-shell .street-card button:focus-visible { outline: 3px solid #a44a18; outline-offset: 2px; }
+.app-shell .rail .street { border-radius: 14px; box-shadow: 0 2px 8px rgba(20, 63, 58, 0.06); }
+@media (max-width: 900px) {
+  .app-shell .topbar { flex-wrap: nowrap; gap: 0.25rem; }
+  .app-shell .topbar__brand { padding: 0.45rem; }
+  .app-shell .topbar__title { font-size: 0.8rem; }
+  .app-shell .topbar__toggle { padding: 0.35rem; }
+  .app-shell .topbar__actions { gap: 0.15rem; }
+  .app-shell .topbar__progress { inset-inline-start: 0; }
+  .app-shell .rail:not(.is-closed) { inset-block-start: auto; max-height: calc(100vh - var(--toolbar-bottom, 80px) - 8px); max-height: calc(100dvh - var(--toolbar-bottom, 80px) - 8px); width: auto; }
+  .app-shell .rail:not(.is-closed)[data-sheet="half"] { height: 54vh; height: 54dvh; }
+  .app-shell .rail:not(.is-closed)[data-sheet="expanded"] { height: 88vh; height: 88dvh; }
+  .app-shell .rail:not(.is-closed)[data-sheet="collapsed"] { height: calc(7.4rem + env(safe-area-inset-bottom, 0px)); }
+  .app-shell .sheet-states { display: flex; }
+  .app-shell .rail[data-sheet="collapsed"] .rail-tabs,
+  .app-shell .rail[data-sheet="collapsed"] .rail-progress,
+  .app-shell .rail[data-sheet="collapsed"] .sheet-states { display: none; }
+  .app-shell .rail[data-sheet="collapsed"] #random-street { display: none; }
+  .app-shell .rail[data-sheet="collapsed"] .sheet-expand { display: inline-flex; align-items: center; justify-content: center; min-width: 60px; min-height: 44px; margin-inline-start: auto; border: 1px solid #166d61; border-radius: 10px; color: #143f3a; background: #fff; }
+  .app-shell .rail__top { flex-wrap: wrap; }
+  .app-shell .rail .sheet-peek { display: none; }
+  .app-shell .rail[data-sheet="collapsed"] .sheet-peek { display: block; flex-basis: 100%; }
+  /* The whole tab scrolls: fixed controls must not squeeze the list to zero. */
+  .app-shell .rail .list-section { overflow-y: auto; overscroll-behavior: contain; }
+  .app-shell .rail .street-list { flex: none; min-height: auto; overflow: visible; }
+  .app-shell .rail .street-card { max-height: none; overflow: visible; }
+  .app-shell .map-section:has(~ #rail:not(.is-closed)) .leaflet-bottom.leaflet-right,
+  .app-shell .map-section:has(~ #info-drawer:not(.is-closed)) .leaflet-bottom.leaflet-right { inset-block-start: calc(var(--toolbar-bottom, 80px) + 4px); }
+  .app-shell .leaflet-top.leaflet-left { top: calc(var(--toolbar-bottom, 80px) + 3rem); }
+}
+@media (min-width: 901px) {
+  .app-shell .topbar__progress { inset-inline-start: auto; inset-inline-end: 0; }
+}
+/* In short landscape viewports the sheet leaves little vertical map space.
+   Place the zoom stack between attribution and progress instead of under it. */
+@media (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .app-shell .leaflet-top.leaflet-left { left: calc(50% - 22px); top: calc(var(--toolbar-bottom, 80px) + 4px); }
+}
+@media (max-width: 420px) {
+  .app-shell .topbar__brand { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .app-shell .topbar__brand:focus-within { clip: auto; width: auto; height: auto; padding: 0.65rem; z-index: 2; }
+}
+
+/* Consistent map-shell surfaces, with explicit dark-mode counterparts. */
+body.app-shell {
+  --shell-surface: #fff; --shell-ink: #143f3a; --shell-muted: #385e55;
+  --shell-line: #6f8580; --shell-card: #edf7f1; --shell-pill: #dcece4;
+  --shell-primary: #166d61; --shell-focus: #8a380c;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body.app-shell {
+    --shell-surface: #19312d; --shell-ink: #eef9f3; --shell-muted: #c3ddd0;
+    --shell-line: #96b9ac; --shell-card: #203d34; --shell-pill: #315a4a;
+    --shell-primary: #176d60; --shell-focus: #ffcf9e;
+  }
+}
+:root[data-theme="dark"] body.app-shell {
+  --shell-surface: #19312d; --shell-ink: #eef9f3; --shell-muted: #c3ddd0;
+  --shell-line: #96b9ac; --shell-card: #203d34; --shell-pill: #315a4a;
+  --shell-primary: #176d60; --shell-focus: #ffcf9e;
+}
+.app-shell .topbar, .app-shell .topbar__progress { background: var(--shell-surface); border-color: var(--shell-line); color: var(--shell-ink); }
+.app-shell .topbar__progress .progress__text { color: var(--shell-ink); white-space: normal; overflow: visible; text-overflow: clip; font-variant-numeric: tabular-nums; }
+.app-shell .rail-tabs button, .app-shell .sheet-states button, .app-shell .street-card__close {
+  background: var(--shell-surface); color: var(--shell-ink); border-color: var(--shell-line);
+}
+.app-shell .rail-tabs [aria-selected="true"], .app-shell .sheet-states [aria-pressed="true"] { background: var(--shell-primary); border-color: var(--shell-primary); color: #fff; }
+.app-shell .street-card { background: var(--shell-card); border-color: var(--shell-line); color: var(--shell-ink); }
+.app-shell .street-card .map-popup__title { color: var(--shell-ink); }
+.app-shell .street-card .map-popup__area { color: var(--shell-muted); }
+.app-shell .street-card .map-popup__state, .app-shell .street-card .map-popup__state.is-visited { background: var(--shell-pill); color: var(--shell-ink); }
+.app-shell .street-card .map-popup__state.is-visited ~ .map-popup__toggle { background: var(--shell-surface); color: var(--shell-ink); border-color: var(--shell-line); }
+.app-shell .street-card button:focus-visible, .app-shell .rail-tabs button:focus-visible,
+.app-shell .sheet-states button:focus-visible, .app-shell .topbar button:focus-visible,
+.app-shell .topbar input:focus-visible { outline: 3px solid var(--shell-focus); outline-offset: 2px; }
+.app-shell .rail .list-section, .app-shell .rail-progress { scrollbar-width: thin; scrollbar-gutter: stable; }
+@media (max-width: 900px) {
+  .app-shell .topbar__progress { max-width: max(6rem, calc(100vw - 240px)); }
+  .app-shell .topbar__progress .progress__text { max-width: none; }
+  .app-shell .rail[data-sheet="collapsed"] .sheet-expand { background: var(--shell-surface); color: var(--shell-ink); border-color: var(--shell-line); }
+}
+@media (max-width: 350px) {
+  /* The credit needs the full upper-left strip on the narrowest screens. */
+  .app-shell .topbar__progress { inset-block-start: calc(100% + 3.5rem); max-width: 11rem; }
+}
+
+/* The street rail is a right-hand side drawer on narrow screens as well. */
+@media (max-width: 900px) {
+  .app-shell .rail:not(.is-closed) {
+    inset-block: calc(var(--toolbar-bottom, 80px) + 0.5rem) calc(0.5rem + env(safe-area-inset-bottom, 0px));
+    inset-inline: 0.5rem auto; height: auto; max-height: none;
+    border: 1px solid var(--stone-300); border-radius: 16px;
+    padding: 0.5rem; overflow: hidden;
+  }
+  .app-shell .rail:not(.is-closed)[data-sheet="half"] { width: min(82vw, 350px); height: auto; }
+  .app-shell .rail:not(.is-closed)[data-sheet="expanded"] { width: min(94vw, 440px); height: auto; }
+  .app-shell .rail:not(.is-closed)[data-sheet="collapsed"] { width: 76px; height: auto; inset-block-end: auto; }
+  .app-shell .rail.is-closed { transform: translateX(110%); }
+  .app-shell .rail .sheet-handle { display: none; }
+  .app-shell .rail[data-sheet="collapsed"] .rail__title,
+  .app-shell .rail[data-sheet="collapsed"] .rail__close,
+  .app-shell .rail[data-sheet="collapsed"] .sheet-peek { display: none; }
+  .app-shell .rail[data-sheet="collapsed"] .sheet-expand { margin: 0; min-width: 0; width: 100%; }
+  .app-shell .rail[data-sheet="collapsed"] .rail__top { display: block; }
+}
+.map-fallback-card {
+  position: absolute; z-index: 700; inset-block-start: calc(var(--toolbar-bottom, 80px) + 3.5rem);
+  inset-inline-start: 0.75rem; width: min(17rem, calc(100% - 6.5rem)); max-height: min(55vh, 25rem);
+  overflow-y: auto; padding: 0.65rem; border: 1px solid var(--shell-line, #6f8580);
+  border-radius: 14px; background: var(--shell-surface, #fff); color: var(--shell-ink, #143f3a);
+  box-shadow: 0 5px 20px #143f3a35;
+}
+.map-fallback-card__close { min-width: 44px; min-height: 44px; border: 1px solid var(--shell-line, #6f8580); border-radius: 10px; background: var(--shell-surface, #fff); color: var(--shell-ink, #143f3a); cursor: pointer; }
+.map-fallback-card .map-popup { min-width: 0; }
+
+/* Drawer sizing is a secondary segmented control; tabs remain the primary navigation. */
+.app-shell .sheet-states {
+  gap: 2px;
+  padding: 2px;
+  margin-block: 0.3rem 0.5rem;
+  border: 1px solid var(--stone-300);
+  border-radius: 12px;
+  background: var(--stone-100);
+}
+.app-shell .sheet-states button {
+  min-height: 44px;
+  padding: 0.3rem 0.15rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ink);
+  font: 500 0.78rem/1.25 var(--font);
+}
+.app-shell .sheet-states button[aria-pressed="true"] {
+  border-color: var(--shell-line);
+  background: var(--shell-surface);
+  color: var(--shell-ink);
+  font-weight: 700;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+.app-shell .rail-tabs {
+  gap: 0;
+  border-block-end: 1px solid var(--shell-line);
+  margin-block-end: 0.35rem;
+}
+.app-shell .rail-tabs button {
+  min-height: 44px;
+  padding: 0.45rem 0.2rem;
+  border: 0;
+  border-block-end: 3px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 500 0.9rem/1.25 var(--font);
+}
+.app-shell .rail-tabs button[aria-selected="true"] {
+  border-color: var(--good);
+  background: transparent;
+  color: var(--ink);
+  font-weight: 700;
+}
+

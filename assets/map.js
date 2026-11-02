@@ -8,11 +8,10 @@
  * - בלי גיאומטריה כלל → הרחוב לא מצויר; הוא נשאר ברשימה.
  *
  * שני מסלולי רינדור:
- * 1) Leaflet (CDN, עם אריחי OSM) — preferCanvas, עדכון חי, פופאפים בטוחים (DOM),
- *    ולחיצה על קו/נקודה מסמנת/מבטלת ביקור דרך window.JLMAPI.toggle(id).
+ * 1) Leaflet מקומי עם אריחי OSM — בחירה פותחת כרטיס וסימון דורש פעולה נפרדת.
  * 2) גיבוי מקומי על <canvas> — כש-window.L לא נטען (חסימה/אין רשת): הטלת מרקטור,
  *    פוליליינים ונקודות עם culling, גרירה, זום בכפתורים, במקלדת ובגלגלת העכבר
- *    (זום סביב נקודת הסמן), לחיצה מסמנת דרך JLMAPI.toggle.
+ *    (זום סביב נקודת הסמן), בחירה מעבירה לרשימת הרחובות ללא סימון ביקור.
  *    בלי אריחים — המפה לא נעלמת.
  *
  * תלוי ב-window.JLM_GEO (geo.js), ב-window.JLMAPI וב-window.JLMBus (app.js).
@@ -723,6 +722,7 @@
   }
 
   var activeReviewPanel = null;
+  var reviewDoneTimer = null;
 
   function ratingDescription(value) {
     return ["", "לא בשבילי", "בסדר", "נחמד", "אהבתי", "נהדר"][value] || "";
@@ -730,13 +730,15 @@
 
   function closeReviewPanel() {
     if (!activeReviewPanel) return;
+    if (reviewDoneTimer) { window.clearTimeout(reviewDoneTimer); reviewDoneTimer = null; }
     var panel = activeReviewPanel;
     activeReviewPanel = null;
-    document.removeEventListener("keydown", panel.onKeydown);
+    document.removeEventListener("keydown", panel.onKeydown, true);
     panel.dialog.classList.add("is-closing");
     window.setTimeout(function () {
       if (panel.backdrop.parentNode) panel.backdrop.parentNode.removeChild(panel.backdrop);
-      if (panel.opener && typeof panel.opener.focus === "function") panel.opener.focus();
+      var target = panel.opener && panel.opener.isConnected ? panel.opener : el.canvas;
+      if (target && typeof target.focus === "function") target.focus();
     }, window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 180);
   }
 
@@ -838,7 +840,8 @@
     saved.setAttribute("aria-live", "polite");
     done.addEventListener("click", function () {
       saved.textContent = "הדירוג נשמר";
-      window.setTimeout(closeReviewPanel, 500);
+      if (reviewDoneTimer) window.clearTimeout(reviewDoneTimer);
+      reviewDoneTimer = window.setTimeout(closeReviewPanel, 500);
     });
     var clearRating = document.createElement("button");
     clearRating.type = "button";
@@ -885,10 +888,17 @@
     var onKeydown = function (event) {
       if (event.key === "Escape") {
         event.preventDefault();
+        event.stopPropagation();
         closeReviewPanel();
+      } else if (event.key === "Tab") {
+        var focusable = Array.prototype.filter.call(dialog.querySelectorAll('button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])'), function (node) { return node.offsetParent !== null; });
+        if (!focusable.length) { event.preventDefault(); return; }
+        var first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && (document.activeElement === first || !dialog.contains(document.activeElement))) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && (document.activeElement === last || !dialog.contains(document.activeElement))) { event.preventDefault(); first.focus(); }
       }
     };
-    document.addEventListener("keydown", onKeydown);
+    document.addEventListener("keydown", onKeydown, true);
     activeReviewPanel = { backdrop: backdrop, dialog: dialog, opener: opener, onKeydown: onKeydown };
     syncRating();
     close.focus();
@@ -949,6 +959,7 @@
           });
         }
       }
+      wrap.syncStreet = syncPopupUI;
 
       var reviewButton = document.createElement("button");
       reviewButton.type = "button";
@@ -1054,6 +1065,67 @@
 
     return wrap;
   }
+
+  /* כרטיס יחיד בפאנל נשאר מותקן גם בזמן שינוי LOD, בלי ליצור מפה נוספת. */
+  var selectedCard = null;
+  var cardHost = document.getElementById("street-card");
+  function findSelectedStreet(id) {
+    var streets = API && typeof API.getStreets === "function" ? API.getStreets() : [];
+    for (var i = 0; i < streets.length; i++) if (streets[i].id === id) return streets[i];
+    return cachedStreetById(id);
+  }
+  function closeSelectedCard(restore) {
+    if (!selectedCard || !cardHost) return;
+    var old = selectedCard;
+    selectedCard = null;
+    if (highlightTimer && highlightTimerId === old.id) { window.clearTimeout(highlightTimer); highlightTimer = null; highlightTimerId = null; }
+    paintHighlight(old.id, false);
+    cardHost.hidden = true;
+    cardHost.replaceChildren();
+    if (restore) {
+      var destination = old.opener && old.opener.isConnected ? old.opener : el.canvas;
+      if (destination && typeof destination.focus === "function") destination.focus();
+    }
+  }
+  function selectStreetCard(street) {
+    if (!street || !cardHost) return;
+    var active = document.activeElement;
+    var insideCard = cardHost.contains(active);
+    var opener = insideCard && selectedCard ? selectedCard.opener : active;
+    if (!opener || (!el.canvas.contains(opener) && !(opener.closest && opener.closest(".street")))) opener = el.canvas;
+    if (selectedCard && selectedCard.id !== street.id) paintHighlight(selectedCard.id, false);
+    var content = popupContent(street);
+    content.querySelector('.map-popup__title').id = 'street-card-title';
+    var close = document.createElement("button");
+    close.type = "button";
+    close.className = "street-card__close";
+    close.textContent = "סגירת פרטי הרחוב";
+    close.addEventListener("click", function () { closeSelectedCard(true); });
+    cardHost.replaceChildren(close, content);
+    cardHost.hidden = false;
+    cardHost.setAttribute("aria-labelledby", "street-card-title");
+    cardHost.removeAttribute("aria-label");
+    selectedCard = { id: street.id, content: content, opener: opener };
+    paintHighlight(street.id, true);
+    document.dispatchEvent(new CustomEvent("jlm-reveal-street-list"));
+    var panel = cardHost.closest('[role="tabpanel"]');
+    if (panel) panel.scrollTop = 0;
+    if (insideCard || (active && active.closest && active.closest('.street'))) close.focus({ preventScroll: true });
+    if (el.status) el.status.textContent = "נבחר הרחוב " + street.name + ". פרטי הרחוב מוצגים ברשימה.";
+  }
+  document.addEventListener("jlm-select-street", function (event) {
+    var street = event.detail && findSelectedStreet(event.detail.id);
+    if (street) selectStreetCard(street);
+  });
+  if (cardHost) cardHost.addEventListener("focusin", function () {
+    if (selectedCard && selectedCard.content.syncStreet) selectedCard.content.syncStreet();
+  });
+  if (cardHost) cardHost.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || document.querySelector('.map-review-backdrop, .dyk-modal:not([hidden])')) return;
+    event.preventDefault();
+    event.stopPropagation();
+    closeSelectedCard(true);
+  });
 
   /* הכרטיס נשאר פתוח בזמן גרירה/זום: Leaflet מזיז אותו יחד עם הרחוב,
      והמשתמש יכול להמשיך בדירוג או בהערה עד לסגירה מפורשת. */
@@ -1301,14 +1373,14 @@
 
   function openStreetPopup(street, latlng) {
     if (!map || !window.L) return;
-
+    var content = popupContent(street);
     var popup = window.L.popup({
       maxWidth: 280,
       minWidth: 0,
       autoPanPadding: [18, 18]
     })
       .setLatLng(latlng)
-      .setContent(popupContent(street))
+      .setContent(content)
       .openOn(map);
 
     localizePopupChrome(popup, street);
@@ -1321,7 +1393,8 @@
     openPopupContext = {
       id: street.id,
       latlng: latlng,
-      popup: popup
+      popup: popup,
+      content: content
     };
   }
 
@@ -1333,7 +1406,41 @@
 
     /* בחירת רחוב אינה מסמנת ביקור בכוונה: במגע ובעכבר כאחד,
        הסימון נעשה רק בכפתור המפורש בכרטיס. */
+    closeSelectedCard(false);
+    document.dispatchEvent(new CustomEvent("jlm-map-selection"));
     openStreetPopup(street, event.latlng);
+  }
+
+  var fallbackCard = null;
+  function closeFallbackStreetCard(restoreFocus) {
+    if (!fallbackCard) return;
+    var card = fallbackCard;
+    fallbackCard = null;
+    card.root.remove();
+    if (restoreFocus && el.canvas) el.canvas.focus();
+  }
+  function openFallbackStreetCard(street) {
+    closeFallbackStreetCard(false);
+    var root = document.createElement('div');
+    root.className = 'map-fallback-card';
+    root.dir = 'rtl';
+    root.setAttribute('role', 'region');
+    root.setAttribute('aria-label', 'כרטיס רחוב ' + street.name);
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'map-fallback-card__close';
+    close.textContent = '×';
+    close.setAttribute('aria-label', 'סגירת הכרטיס של ' + street.name);
+    close.addEventListener('click', function () { closeFallbackStreetCard(true); });
+    root.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') { event.preventDefault(); event.stopPropagation(); closeFallbackStreetCard(true); }
+    });
+    var content = popupContent(street);
+    root.appendChild(close);
+    root.appendChild(content);
+    el.canvas.appendChild(root);
+    fallbackCard = { id: street.id, root: root, content: content };
+    if (el.status) el.status.textContent = 'נפתח כרטיס הרחוב ' + street.name + '.';
   }
 
   function onLeafletPopupClose(event) {
@@ -1409,10 +1516,11 @@
 
     drawOrder.forEach(function (street) {
       // LOD: בזום נמוך — לדלג על רחובות שלא ביקרנו בהם (חוץ מהכרטיס הפתוח)
-      if (!lodAllMode && !isVisited(street.id) && (!popupToRestore || street.id !== popupToRestore.id)) return;
+      if (!lodAllMode && !isVisited(street.id) && (!popupToRestore || street.id !== popupToRestore.id) && (!selectedCard || street.id !== selectedCard.id)) return;
 
       mountLeafletStreet(street, isVisited(street.id));
     });
+    if (selectedCard) paintHighlight(selectedCard.id, true);
 
     if (popupToRestore) {
       /* פתיחה מחדש לאחר שהשכבות מוכנות מחזירה את הכרטיס לאותו רחוב,
@@ -1435,6 +1543,7 @@
   /* ---------- מיקוד רחוב מהרשימה או מהחיפוש ---------- */
 
   var highlightTimer = null;
+  var highlightTimerId = null;
 
   /** מרכז הרחוב: הקואורדינטה השמורה, ואם חסרה — ממוצע הנקודות בקווים */
   function streetCenter(street) {
@@ -1570,11 +1679,14 @@
     cancelAreaHighlight();
 
     if (highlightTimer) window.clearTimeout(highlightTimer);
+    if (highlightTimerId && highlightTimerId !== id) paintHighlight(highlightTimerId, !!(selectedCard && selectedCard.id === highlightTimerId));
+    highlightTimerId = id;
     highlightTimer = window.setTimeout(function () {
       paintHighlight(id, true);
       highlightTimer = window.setTimeout(function () {
-        paintHighlight(id, false);
+        paintHighlight(id, !!(selectedCard && selectedCard.id === id));
         highlightTimer = null;
+        highlightTimerId = null;
       }, 2600);
     }, reduce ? 0 : 700);
 
@@ -2123,7 +2235,7 @@
 
     // גרירה (עכבר/מגע) — פאן במרחב ההטלה
     cv.addEventListener("pointerdown", function (event) {
-      F.drag = { x: event.clientX, y: event.clientY };
+      F.drag = { x: event.clientX, y: event.clientY, startX: event.clientX, startY: event.clientY, moved: false };
       if (cv.setPointerCapture) {
         try { cv.setPointerCapture(event.pointerId); } catch (e) { /* לא קריטי */ }
       }
@@ -2133,6 +2245,7 @@
       var dx = event.clientX - F.drag.x;
       var dy = event.clientY - F.drag.y;
       if (dx === 0 && dy === 0) return;
+      if (Math.abs(event.clientX - F.drag.startX) > 8 || Math.abs(event.clientY - F.drag.startY) > 8) F.drag.moved = true;
       F.drag.x = event.clientX;
       F.drag.y = event.clientY;
       F.view.x -= dx / F.view.scale;
@@ -2141,7 +2254,7 @@
       requestFallbackDraw();
     });
     cv.addEventListener("pointerup", function (event) {
-      var dragged = F.drag && (event.clientX !== F.drag.x || event.clientY !== F.drag.y);
+      var dragged = !F.drag || F.drag.moved || Math.abs(event.clientX - F.drag.startX) > 8 || Math.abs(event.clientY - F.drag.startY) > 8;
       F.drag = null;
       if (dragged) return;
 
@@ -2149,12 +2262,10 @@
       var hit = fallbackHitTest(event.clientX - rect.left, event.clientY - rect.top);
       if (!hit) return;
 
-      // לחיצה על קו/נקודה = סימון/ביטול ביקור דרך JLMAPI, ואז הכרזה טקסטואלית
-      toggleStreetSafe(hit.id);
-      var visited = isVisited(hit.id);
-      el.status.textContent =
-        hit.name + (hit.area ? ", " + hit.area : "") + " — " +
-        (visited ? "הביקור סומן ✓" : "הביקור בוטל, טרם ביקרתם.");
+      // גם במצב גיבוי בחירת רחוב אינה רושמת ביקור.
+      closeSelectedCard(false);
+      document.dispatchEvent(new CustomEvent("jlm-map-selection"));
+      openFallbackStreetCard(hit);
     });
     cv.addEventListener("pointercancel", function () {
       F.drag = null;
@@ -2241,11 +2352,27 @@
     } else if (mode === "fallback") {
       requestFallbackDraw();
     }
+    if (selectedCard && selectedCard.id === detail.id) {
+      if (selectedCard.content.syncStreet) selectedCard.content.syncStreet();
+      paintHighlight(detail.id, true);
+    }
+    if (openPopupContext && openPopupContext.id === detail.id && openPopupContext.content.syncStreet) openPopupContext.content.syncStreet();
+    if (fallbackCard && fallbackCard.id === detail.id && fallbackCard.content.syncStreet) fallbackCard.content.syncStreet();
   }
 
   function handleVisitedReplace() {
     // ייבוא/איפוס/מחיקה משנים את כל המצב — בנייה מחדש של הגיאומטריה ושל השכבות
     streetsCache = geoStreets();
+    if (fallbackCard) {
+      var fallbackExists = API && typeof API.getStreets === 'function' && API.getStreets().some(function (street) { return street.id === fallbackCard.id; });
+      if (!fallbackExists) closeFallbackStreetCard(fallbackCard.root.contains(document.activeElement));
+      else if (fallbackCard.content.syncStreet) fallbackCard.content.syncStreet();
+    }
+    if (selectedCard) {
+      var stillExists = API && typeof API.getStreets === "function" && API.getStreets().some(function (street) { return street.id === selectedCard.id; });
+      if (!stillExists) closeSelectedCard(cardHost && cardHost.contains(document.activeElement));
+      else if (selectedCard.content.syncStreet) selectedCard.content.syncStreet();
+    }
 
     if (streetsCache.length === 0) {
       if (mode === "leaflet" && group) {

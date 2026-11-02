@@ -1787,6 +1787,7 @@
     }
 
     highlightRow(id);
+    document.dispatchEvent(new CustomEvent("jlm-select-street", { detail: { id: id } }));
     scrollToMap();
 
     if (!ok) {
@@ -2853,9 +2854,6 @@
       var focusedRow = document.activeElement && document.activeElement.closest
         ? document.activeElement.closest(".street")
         : null;
-      if (!focusedRow) {
-        focusedRow = el.list.querySelector(".street.is-highlighted");
-      }
       if (focusedRow && focusedRow.dataset.id) {
         event.preventDefault();
         toggleStreet(focusedRow.dataset.id, { focusAction: "toggle-visit" });

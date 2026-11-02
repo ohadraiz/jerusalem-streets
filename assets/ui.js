@@ -36,6 +36,13 @@
     if (btn.getAttribute("aria-expanded") !== String(open)) {
       btn.setAttribute("aria-expanded", String(open));
     }
+    if (btn === listToggle) syncFilterToggle();
+  }
+
+  function syncFilterToggle() {
+    var button = document.getElementById("filter-toggle");
+    var tab = document.getElementById("tab-filters");
+    if (button && tab) button.setAttribute("aria-expanded", String(railIsOpen() && tab.getAttribute("aria-selected") === "true"));
   }
 
   function railIsOpen() {
@@ -47,10 +54,8 @@
   }
 
   function syncScrim() {
-    /* במובייל סרגל מקופל הוא סרגל רוחף בלבד — המפה נשארת ניתנת לשימוש מתחתיו */
-    var railFloatingOnly =
-      isMobile() && railIsOpen() && sheetStateOf(rail, SHEET_RAIL_STATES) === "collapsed";
-    var needed = drawerIsOpen() || (isMobile() && railIsOpen() && !railFloatingOnly);
+    /* רק פאנל המידע הוא דיאלוג החוסם את הרקע. */
+    var needed = drawerIsOpen();
     if (needed) {
       scrim.removeAttribute("hidden");
     } else {
@@ -203,8 +208,18 @@
   function setSheetState(panel, kind, state) {
     var states = sheetStatesFor(kind);
     if (states.indexOf(state) === -1) return;
+    var restoreToExpand = kind === "rail" && state === "collapsed" && panel.contains(document.activeElement);
     panel.style.height = "";
     panel.dataset.sheet = state;
+    if (restoreToExpand) {
+      var expand = panel.querySelector('.sheet-expand');
+      if (expand) expand.focus();
+    }
+    if (kind === "rail") {
+      Array.prototype.forEach.call(rail.querySelectorAll(".sheet-states [data-sheet-target]"), function (button) {
+        button.setAttribute("aria-pressed", String(button.dataset.sheetTarget === state));
+      });
+    }
     syncHandleLabel(kind === "drawer" ? drawerHandle : railHandle, kind, state);
     syncScrim();
   }
@@ -354,6 +369,82 @@
 
   /* ---------- ארועים ---------- */
 
+  var tabs = Array.prototype.slice.call(rail.querySelectorAll('[role="tab"]'));
+  var stats = infoDrawer.querySelector('.stats');
+  var progressPanel = document.getElementById('panel-progress');
+  if (stats && progressPanel) progressPanel.appendChild(stats);
+
+  function selectTab(tab, focus) {
+    if (!tab) return;
+    tabs.forEach(function (item) {
+      var selected = item === tab;
+      item.setAttribute('aria-selected', String(selected));
+      item.tabIndex = selected ? 0 : -1;
+      var panel = document.getElementById(item.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !selected;
+    });
+    syncFilterToggle();
+    if (focus) { flushStyles(rail); tab.focus(); }
+  }
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener('click', function () { selectTab(tab, false); });
+    tab.addEventListener('keydown', function (event) {
+      var next = index;
+      if (event.key === 'ArrowLeft') next = (index + 1) % tabs.length;
+      else if (event.key === 'ArrowRight') next = (index + tabs.length - 1) % tabs.length;
+      else if (event.key === 'Home') next = 0;
+      else if (event.key === 'End') next = tabs.length - 1;
+      else return;
+      event.preventDefault();
+      selectTab(tabs[next], true);
+    });
+  });
+  rail.querySelectorAll('[data-sheet-target]').forEach(function (button) {
+    button.addEventListener('click', function () { setSheetState(rail, 'rail', button.dataset.sheetTarget); });
+  });
+  var filterToggle = document.getElementById('filter-toggle');
+  if (filterToggle) filterToggle.addEventListener('click', function () {
+    openRail();
+    selectTab(document.getElementById('tab-filters'), true);
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function () {
+    if (!search.value.trim()) return;
+    openRail();
+    selectTab(document.getElementById('tab-streets'), false);
+  });
+  document.addEventListener('click', function (event) {
+    if (event.target.closest && event.target.closest('.map-popup__find, #random-street')) {
+      openRail();
+      selectTab(document.getElementById('tab-streets'), false);
+    }
+  }, true);
+  var topbar = document.querySelector('.topbar');
+  function measureToolbar() {
+    if (topbar) document.documentElement.style.setProperty('--toolbar-bottom', Math.ceil(topbar.getBoundingClientRect().bottom) + 'px');
+  }
+  if (topbar && typeof window.ResizeObserver === 'function') new window.ResizeObserver(measureToolbar).observe(topbar);
+  window.addEventListener('resize', measureToolbar);
+  measureToolbar();
+  document.addEventListener('jlm-reveal-street-list', function () {
+    openRail();
+    selectTab(document.getElementById('tab-streets'), false);
+    flushStyles(rail);
+  });
+  document.addEventListener('jlm-map-selection', function () {
+    if (isMobile() && railIsOpen()) setSheetState(rail, 'rail', 'collapsed');
+  });
+  document.addEventListener('keydown', function (event) {
+    var target = event.target;
+    if (event.defaultPrevented || drawerIsOpen() || document.querySelector('.map-review-backdrop, .dyk-modal:not([hidden])')) return;
+    var editable = target && (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName));
+    if (!editable && !event.ctrlKey && !event.metaKey && !event.altKey && (event.code === 'KeyR' || event.key.toLowerCase() === 'r')) {
+      openRail();
+      selectTab(document.getElementById('tab-streets'), false);
+      flushStyles(rail);
+    }
+  }, true);
+
   listToggle.addEventListener("click", toggleRail);
   infoToggle.addEventListener("click", toggleDrawer);
 
@@ -366,13 +457,17 @@
   });
 
   document.addEventListener("keydown", function (event) {
+    if (event.defaultPrevented) return;
     var key = event.key;
     if (key === "Escape" || key === "Esc") {
+      if (document.querySelector('.map-review-backdrop, .dyk-modal:not([hidden])')) return;
       if (drawerIsOpen()) {
         event.stopPropagation();
         closeDrawer(true);
         return;
       }
+      var target = event.target;
+      if (target && (target.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName))) return;
       if (isMobile() && railIsOpen()) {
         event.stopPropagation();
         closeRail();
@@ -398,6 +493,10 @@
     if (href.length < 2) return;
     var targetEl = document.getElementById(href.slice(1));
     if (!targetEl) return;
+    if (rail.contains(targetEl)) {
+      var panel = targetEl.closest('[role="tabpanel"]');
+      if (panel) selectTab(document.getElementById(panel.getAttribute('aria-labelledby')), false);
+    }
     if (rail.contains(targetEl) && !railIsOpen()) openRail();
     if (infoDrawer.contains(targetEl) && infoDrawer.hidden) openDrawer(null);
   }
@@ -422,6 +521,7 @@
   if (resultCountBtn) {
     resultCountBtn.addEventListener("click", function () {
       if (!railIsOpen()) openRail();
+      selectTab(document.getElementById('tab-streets'), false);
     });
   }
 
@@ -440,7 +540,7 @@
     });
   }
 
-  /* מצב התחלתי: במחשב שולחני הסרגל פתוח; במובייל סגור.
+  /* מצב התחלתי: הסרגל פתוח ובמובייל מוצג בחצי גובה.
      ה-HTML נשלח עם is-closed לשמירה על בסיס ללא-JS, וכאן מתיישר. */
   ensureSheetChrome();
   if (typeof window.MutationObserver === "function") {
@@ -451,7 +551,8 @@
     });
   }
   refreshPeeks();
-  if (!isMobile()) openRail();
+  openRail();
+  setSheetState(rail, 'rail', 'half');
   scrim.setAttribute("hidden", "");
 
   var onBreakpointChange = function () {
